@@ -1,0 +1,5 @@
+Chunk MainChunk1 true
+Chunk MainChunk2 false
+Enabled true
+WillUpdate true
+WillDraw true
