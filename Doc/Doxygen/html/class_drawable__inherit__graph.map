@@ -1,0 +1,5 @@
+<map id="Drawable" name="Drawable">
+<area shape="rect" id="node2" href="$class_chunk.html" title="Chunk" alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$class_example_drawable.html" title="ExampleDrawable" alt="" coords="89,80,215,107"/>
+<area shape="rect" id="node4" href="$class_game_screen.html" title="GameScreen" alt="" coords="240,80,339,107"/>
+</map>

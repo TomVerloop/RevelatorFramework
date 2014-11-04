@@ -1,0 +1,111 @@
+\hypertarget{class_game_component}{\section{Game\-Component Class Reference}
+\label{class_game_component}\index{Game\-Component@{Game\-Component}}
+}
+
+
+Inheritance diagram for Game\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_game_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_component__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_component_ac1eefc88d46d10f869939a7bab5a498b}{{\bfseries Game\-Component} (float x, float y)}\label{class_game_component_ac1eefc88d46d10f869939a7bab5a498b}
+
+\item 
+\hypertarget{class_game_component_a3338305ddce8cb75296ba23e1c29cf0f}{{\bfseries Game\-Component} (sf\-::\-Vector2f Pos)}\label{class_game_component_a3338305ddce8cb75296ba23e1c29cf0f}
+
+\item 
+\hypertarget{class_game_component_a01b3434d7bf6a63552e7ea4fd68744fe}{virtual void {\bfseries Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)=0}\label{class_game_component_a01b3434d7bf6a63552e7ea4fd68744fe}
+
+\item 
+\hypertarget{class_game_component_a333932780a30df552333d02669c593bc}{virtual void {\bfseries Collide} (\hyperlink{class_game_component}{Game\-Component} $\ast$colider)=0}\label{class_game_component_a333932780a30df552333d02669c593bc}
+
+\item 
+\hypertarget{class_game_component_a63c3e40531340490712b789d0d821743}{virtual void {\bfseries Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)=0}\label{class_game_component_a63c3e40531340490712b789d0d821743}
+
+\item 
+\hypertarget{class_game_component_a5dc0e3d5d8aa6be47d4392dc0ebe566d}{virtual bool {\bfseries has\-Transaction} ()}\label{class_game_component_a5dc0e3d5d8aa6be47d4392dc0ebe566d}
+
+\item 
+\hypertarget{class_game_component_a5473b7d5e5c1e6f6c94e1d665cb4623c}{virtual void {\bfseries set\-Transaction} (\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$transaction)}\label{class_game_component_a5473b7d5e5c1e6f6c94e1d665cb4623c}
+
+\item 
+\hypertarget{class_game_component_a84b6f548c5045a179b9d2c33c3944f10}{virtual \hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ {\bfseries get\-Transaction} ()}\label{class_game_component_a84b6f548c5045a179b9d2c33c3944f10}
+
+\item 
+\hypertarget{class_game_component_aabb5e9e8ed6aa3a82f5d5b5733bf201c}{sf\-::\-Vector2f $\ast$ {\bfseries get\-Position} ()}\label{class_game_component_aabb5e9e8ed6aa3a82f5d5b5733bf201c}
+
+\item 
+\hypertarget{class_game_component_ae1218b48879f706b5686bcedd4c51022}{void {\bfseries set\-Position} (sf\-::\-Vector2f $\ast$pos)}\label{class_game_component_ae1218b48879f706b5686bcedd4c51022}
+
+\item 
+\hypertarget{class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d}{bool {\bfseries has\-Drawable} ()}\label{class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d}
+
+\item 
+\hypertarget{class_game_component_a8595ee50d296557bcf1af3ba5283c311}{bool {\bfseries has\-Collidable} ()}\label{class_game_component_a8595ee50d296557bcf1af3ba5283c311}
+
+\item 
+\hypertarget{class_game_component_af61ba1bd218ff2aca92443c89375c222}{bool {\bfseries has\-Sensor} ()}\label{class_game_component_af61ba1bd218ff2aca92443c89375c222}
+
+\item 
+\hypertarget{class_game_component_ae6e938bb93586ad8820316368065c174}{bool {\bfseries has\-Spawner} ()}\label{class_game_component_ae6e938bb93586ad8820316368065c174}
+
+\item 
+\hypertarget{class_game_component_a6b5db3e878b861296d6cc3a0f4ee6528}{\hyperlink{class_drawable}{Drawable} $\ast$ {\bfseries get\-Drawable} ()}\label{class_game_component_a6b5db3e878b861296d6cc3a0f4ee6528}
+
+\item 
+\hypertarget{class_game_component_a09eae8038373202d058179080643f75b}{\hyperlink{class_collidable}{Collidable} $\ast$ {\bfseries get\-Collidable} ()}\label{class_game_component_a09eae8038373202d058179080643f75b}
+
+\item 
+\hypertarget{class_game_component_afca864b925be82f9c54711c75dc7be12}{\hyperlink{class_sensor}{Sensor} $\ast$ {\bfseries get\-Sensor} ()}\label{class_game_component_afca864b925be82f9c54711c75dc7be12}
+
+\item 
+\hypertarget{class_game_component_ab6db9e2e5f501ca360b08a7fc6a19644}{\hyperlink{class_spawner}{Spawner} $\ast$ {\bfseries get\-Spawner} ()}\label{class_game_component_ab6db9e2e5f501ca360b08a7fc6a19644}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}{std\-::string {\bfseries Name}}\label{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}
+
+\item 
+\hypertarget{class_game_component_ac8d794e78280785eb956eaff044f74b2}{int {\bfseries I\-D}}\label{class_game_component_ac8d794e78280785eb956eaff044f74b2}
+
+\item 
+\hypertarget{class_game_component_ae8c59f47f6723d108eb481a160607e98}{\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ {\bfseries Transaction}}\label{class_game_component_ae8c59f47f6723d108eb481a160607e98}
+
+\item 
+\hypertarget{class_game_component_acc3109bb4ae36112eb8796e067160c59}{sf\-::\-Vector2f $\ast$ {\bfseries Position}}\label{class_game_component_acc3109bb4ae36112eb8796e067160c59}
+
+\item 
+\hypertarget{class_game_component_acb73190345f4933825e9c8b8d5030438}{\hyperlink{class_drawable}{Drawable} $\ast$ {\bfseries drawable}}\label{class_game_component_acb73190345f4933825e9c8b8d5030438}
+
+\item 
+\hypertarget{class_game_component_aa91bd3600bd5964b55c7806dcfd1c862}{\hyperlink{class_collidable}{Collidable} $\ast$ {\bfseries collidable}}\label{class_game_component_aa91bd3600bd5964b55c7806dcfd1c862}
+
+\item 
+\hypertarget{class_game_component_ad585bf57df228afc83fbf777142e51bd}{\hyperlink{class_sensor}{Sensor} $\ast$ {\bfseries sensor}}\label{class_game_component_ad585bf57df228afc83fbf777142e51bd}
+
+\item 
+\hypertarget{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}{\hyperlink{class_spawner}{Spawner} $\ast$ {\bfseries spawner}}\label{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Revelatorfromework/Game\-Component.\-hpp\item 
+Revelatorfromework/Game\-Component.\-cpp\end{DoxyCompactItemize}

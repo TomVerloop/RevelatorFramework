@@ -1,0 +1,8 @@
+<map id="GameComponent" name="GameComponent">
+<area shape="rect" id="node2" href="$class_screen_transaction.html" title="ScreenTransaction" alt="" coords="5,247,136,273"/>
+<area shape="rect" id="node3" href="$class_collidable.html" title="Collidable" alt="" coords="181,171,259,197"/>
+<area shape="rect" id="node6" href="$class_sensor.html" title="Sensor" alt="" coords="267,247,330,273"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="Rectangle" alt="" coords="180,81,260,108"/>
+<area shape="rect" id="node7" href="$class_spawner.html" title="Spawner" alt="" coords="355,247,427,273"/>
+<area shape="rect" id="node8" href="$class_drawable.html" title="Drawable" alt="" coords="451,247,525,273"/>
+</map>
