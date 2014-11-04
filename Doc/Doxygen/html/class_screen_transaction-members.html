@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_screen_transaction.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,26 +110,26 @@ $(document).ready(function(){initNavTree('class_screen_transaction.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>From</b> (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getFrom</b>() (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getId</b>() (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getMessage</b>() (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTo</b>() (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Id</b> (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Message</b> (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ScreenTransaction</b>(int id=0, std::string Message=&quot;&quot;, std::string from=&quot;&quot;, std::string to=&quot;&quot;) (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setFrom</b>(std::string from) (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setId</b>(int id) (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setMessage</b>(std::string mes) (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setTo</b>(std::string to) (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>To</b> (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~ScreenTransaction</b>() (defined in <a class="el" href="class_screen_transaction.html">ScreenTransaction</a>)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a6beff6473b1f9537a68feede691526e2">From</a></td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#a6da0ff4e8c5f24c405c18331df6fe5ac">getFrom</a>()</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a7a788d3562c6ea040c1a4c0165fdc32a">getId</a>()</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#af012c8b10760e5ed7baf2c62846de590">getMessage</a>()</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a5348510109e53a87cb1233660c859e00">getTo</a>()</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#acc2108d68c434499915514c1046d9806">Id</a></td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a212573d9bccda5210fb4bf82211fce07">Message</a></td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#a5776ea6c2a6b7c7ec51744831e8e63b2">ScreenTransaction</a>(int id=0, std::string Message=&quot;&quot;, std::string from=&quot;&quot;, std::string to=&quot;&quot;)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a5d652df4b9a696dbef724096b782b51e">setFrom</a>(std::string from)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#ae739629ae1f93e5754fc69f1d9ee96f7">setId</a>(int id)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#a2fde50d60fd9dfefc3f93fdb9fadf0ae">setMessage</a>(std::string mes)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#aeb8dd00f22a18d66e36453c523fe9d83">setTo</a>(std::string to)</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_transaction.html#acadac834d980c73ac6084fb52a7f882c">To</a></td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_transaction.html#a4200c29ba71151f7eb7c626d8495429e">~ScreenTransaction</a>()</td><td class="entry"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

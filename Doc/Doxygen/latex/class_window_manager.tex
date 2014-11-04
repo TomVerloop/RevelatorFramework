@@ -1,33 +1,144 @@
 \hypertarget{class_window_manager}{\section{Window\-Manager Class Reference}
 \label{class_window_manager}\index{Window\-Manager@{Window\-Manager}}
 }
+
+
+{\ttfamily \#include $<$Window\-Manager.\-hpp$>$}
+
+
+
+Collaboration diagram for Window\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_window_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_window_manager_a39b504521f91ffbabd88fa1e014d668d}{{\bfseries Window\-Manager} (sf\-::\-Video\-Mode videomode, std\-::string name, sf\-::\-Uint32 style=7\-U)}\label{class_window_manager_a39b504521f91ffbabd88fa1e014d668d}
-
+\hyperlink{class_window_manager_a39b504521f91ffbabd88fa1e014d668d}{Window\-Manager} (sf\-::\-Video\-Mode videomode, std\-::string name, sf\-::\-Uint32 style=7\-U)
 \item 
-\hypertarget{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}{{\bfseries Window\-Manager} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete}\label{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}
-
+\hyperlink{class_window_manager_a19fd6e41c42760af82460d9851780d82}{$\sim$\-Window\-Manager} ()
 \item 
-\hypertarget{class_window_manager_a11afbf3f6296341434679bbedb44c989}{\hyperlink{class_window_manager}{Window\-Manager} \& {\bfseries operator=} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete}\label{class_window_manager_a11afbf3f6296341434679bbedb44c989}
-
+\hyperlink{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}{Window\-Manager} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete
 \item 
-\hypertarget{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}{sf\-::\-Render\-Window $\ast$ {\bfseries get\-Window} ()}\label{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}
-
+\hyperlink{class_window_manager}{Window\-Manager} \& \hyperlink{class_window_manager_a11afbf3f6296341434679bbedb44c989}{operator=} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete
 \item 
-\hypertarget{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}{sf\-::\-Vector2f {\bfseries get\-Camera\-Position} ()}\label{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}
-
+sf\-::\-Render\-Window $\ast$ \hyperlink{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}{get\-Window} ()
 \item 
-\hypertarget{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}{void {\bfseries set\-Camera\-Position} (sf\-::\-Vector2f position)}\label{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}
-
+sf\-::\-Vector2f \hyperlink{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}{get\-Camera\-Position} ()
 \item 
-\hypertarget{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}{void {\bfseries Move\-Camera} (sf\-::\-Vector2f direction)}\label{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}
-
+void \hyperlink{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}{set\-Camera\-Position} (sf\-::\-Vector2f position)
+\item 
+void \hyperlink{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}{Move\-Camera} (sf\-::\-Vector2f direction)
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\-::\-Render\-Window \hyperlink{class_window_manager_a61d47c11da0af06b979ec784a21349ea}{window}
+\item 
+sf\-::\-Vector2f \hyperlink{class_window_manager_a459ad4d059f5c4f286c24af4550c6101}{Camera\-Position}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_window_manager_a39b504521f91ffbabd88fa1e014d668d}{\index{Window\-Manager@{Window\-Manager}!Window\-Manager@{Window\-Manager}}
+\index{Window\-Manager@{Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-Window\-Manager (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Video\-Mode}]{videomode, }
+\item[{std\-::string}]{name, }
+\item[{sf\-::\-Uint32}]{style = {\ttfamily 7U}}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a39b504521f91ffbabd88fa1e014d668d}
+\hypertarget{class_window_manager_a19fd6e41c42760af82460d9851780d82}{\index{Window\-Manager@{Window\-Manager}!$\sim$\-Window\-Manager@{$\sim$\-Window\-Manager}}
+\index{$\sim$\-Window\-Manager@{$\sim$\-Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{$\sim$\-Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::$\sim$\-Window\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a19fd6e41c42760af82460d9851780d82}
+\hypertarget{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}{\index{Window\-Manager@{Window\-Manager}!Window\-Manager@{Window\-Manager}}
+\index{Window\-Manager@{Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-Window\-Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Window\-Manager} \&}]{windowmanager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}{\index{Window\-Manager@{Window\-Manager}!get\-Camera\-Position@{get\-Camera\-Position}}
+\index{get\-Camera\-Position@{get\-Camera\-Position}!WindowManager@{Window\-Manager}}
+\subsubsection[{get\-Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Window\-Manager\-::get\-Camera\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}
+\hypertarget{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}{\index{Window\-Manager@{Window\-Manager}!get\-Window@{get\-Window}}
+\index{get\-Window@{get\-Window}!WindowManager@{Window\-Manager}}
+\subsubsection[{get\-Window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window $\ast$ Window\-Manager\-::get\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}
+\hypertarget{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}{\index{Window\-Manager@{Window\-Manager}!Move\-Camera@{Move\-Camera}}
+\index{Move\-Camera@{Move\-Camera}!WindowManager@{Window\-Manager}}
+\subsubsection[{Move\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Manager\-::\-Move\-Camera (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Vector2f}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_a11afbf3f6296341434679bbedb44c989}{\index{Window\-Manager@{Window\-Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!WindowManager@{Window\-Manager}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Manager}\& Window\-Manager\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Window\-Manager} \&}]{windowmanager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_window_manager_a11afbf3f6296341434679bbedb44c989}
+\hypertarget{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}{\index{Window\-Manager@{Window\-Manager}!set\-Camera\-Position@{set\-Camera\-Position}}
+\index{set\-Camera\-Position@{set\-Camera\-Position}!WindowManager@{Window\-Manager}}
+\subsubsection[{set\-Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Manager\-::set\-Camera\-Position (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Vector2f}]{position}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_window_manager_a459ad4d059f5c4f286c24af4550c6101}{\index{Window\-Manager@{Window\-Manager}!Camera\-Position@{Camera\-Position}}
+\index{Camera\-Position@{Camera\-Position}!WindowManager@{Window\-Manager}}
+\subsubsection[{Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Window\-Manager\-::\-Camera\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_window_manager_a459ad4d059f5c4f286c24af4550c6101}
+\hypertarget{class_window_manager_a61d47c11da0af06b979ec784a21349ea}{\index{Window\-Manager@{Window\-Manager}!window@{window}}
+\index{window@{window}!WindowManager@{Window\-Manager}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window Window\-Manager\-::window\hspace{0.3cm}{\ttfamily [private]}}}\label{class_window_manager_a61d47c11da0af06b979ec784a21349ea}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Revelatorfromework/Window\-Manager.\-hpp\item 
-Revelatorfromework/Window\-Manager.\-cpp\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_window_manager_8hpp}{Window\-Manager.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_window_manager_8cpp}{Window\-Manager.\-cpp}\end{DoxyCompactItemize}

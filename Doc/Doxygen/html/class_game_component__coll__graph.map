@@ -1,8 +1,8 @@
 <map id="GameComponent" name="GameComponent">
-<area shape="rect" id="node2" href="$class_screen_transaction.html" title="ScreenTransaction" alt="" coords="5,247,136,273"/>
-<area shape="rect" id="node3" href="$class_collidable.html" title="Collidable" alt="" coords="181,171,259,197"/>
-<area shape="rect" id="node6" href="$class_sensor.html" title="Sensor" alt="" coords="267,247,330,273"/>
-<area shape="rect" id="node4" href="$class_rectangle.html" title="Rectangle" alt="" coords="180,81,260,108"/>
-<area shape="rect" id="node7" href="$class_spawner.html" title="Spawner" alt="" coords="355,247,427,273"/>
-<area shape="rect" id="node8" href="$class_drawable.html" title="Drawable" alt="" coords="451,247,525,273"/>
+<area shape="rect" id="node2" href="$class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="5,531,164,784"/>
+<area shape="rect" id="node3" href="$class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# lastpos\l|+ Collidable()\l+ Collidable()\l+ ~Collidable()\l+ getCollider()\l+ isMoved()\l}" alt="" coords="207,316,314,481"/>
+<area shape="rect" id="node6" href="$class_sensor.html" title="{Sensor\n|&#45; VisionRange\l&#45; SeenObjects\l|+ Sensor()\l+ ~Sensor()\l+ addSeenObject()\l+ getSeenObject()\l+ SeenObjectCount()\l+ GetVisionRadius()\l+ DrawVision()\l}" alt="" coords="302,567,446,747"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="{Rectangle\n||+ Rectangle()\l+ Rectangle()\l+ ~Rectangle()\l+ getCenter()\l}" alt="" coords="207,132,315,253"/>
+<area shape="rect" id="node7" href="$class_spawner.html" title="{Spawner\n|&#45; Components\l|+ Spawner()\l+ ~Spawner()\l+ pushComponent()\l+ popComponent()\l+ ComponentCount()\l}" alt="" coords="471,589,613,725"/>
+<area shape="rect" id="node8" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="637,604,740,711"/>
 </map>

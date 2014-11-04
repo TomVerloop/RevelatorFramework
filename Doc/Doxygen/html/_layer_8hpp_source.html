@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: Revelatorfromework/Layer.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/Layer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('_layer_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,58 +105,79 @@ $(document).ready(function(){initNavTree('_layer_8hpp_source.html','');});
 <div class="title">Layer.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _LAYER</span></div>
+<a href="_layer_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _LAYER</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LAYER</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML\Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;GameComponent.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Drawable.hpp&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;ChunkManager.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_game_component_8hpp.html">GameComponent.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_drawable_8hpp.html">Drawable.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_chunk_manager_8hpp.html">ChunkManager.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_layer.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layer.html">Layer</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_layer.html">Layer</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    ~<a class="code" href="class_layer.html">Layer</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Update(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Draw(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> hasTransaction();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * getTransaction();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">~Layer</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_layer.html#a6db2f37689d5ee4958167e539ab4ce69">Update</a>(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Draw</a>(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#a36ea9075da50ba00ce591c365f1df947">hasTransaction</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * <a class="code" href="class_layer.html#a828daf5d76e298c41fbe1d67a680b706">getTransaction</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//getters</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> isEnabled() { <span class="keywordflow">return</span> enabled; }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> isDrawing() { <span class="keywordflow">return</span> willDraw; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> isUpdating() { <span class="keywordflow">return</span> willUpdate; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">   21</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">isEnabled</a>() { <span class="keywordflow">return</span> <a class="code" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">enabled</a>; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">   22</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">isDrawing</a>() { <span class="keywordflow">return</span> <a class="code" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">willDraw</a>; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">   23</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">isUpdating</a>() { <span class="keywordflow">return</span> <a class="code" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">willUpdate</a>; }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//setters</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setEnabled(<span class="keywordtype">bool</span> b) { enabled = b; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> setDrawing(<span class="keywordtype">bool</span> b) { willDraw = b; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setUpdating(<span class="keywordtype">bool</span> b) { willUpdate = b; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">setEnabled</a>(<span class="keywordtype">bool</span> b) { <a class="code" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">enabled</a> = b; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">   26</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">setDrawing</a>(<span class="keywordtype">bool</span> b) { <a class="code" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">willDraw</a> = b; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">setUpdating</a>(<span class="keywordtype">bool</span> b) { <a class="code" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">willUpdate</a> = b; }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_chunk_manager.html">ChunkManager</a> * getChunkManager(){ <span class="keywordflow">return</span> Chunks; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">   29</a></span>&#160;    <a class="code" href="class_chunk_manager.html">ChunkManager</a> * <a class="code" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">getChunkManager</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">Chunks</a>; }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> enabled;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> willDraw;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> willUpdate;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_chunk_manager.html">ChunkManager</a> * Chunks;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * transaction;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">   34</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">enabled</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">willDraw</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">   36</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">willUpdate</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">   37</a></span>&#160;    <a class="code" href="class_chunk_manager.html">ChunkManager</a> * <a class="code" href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">Chunks</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_layer.html#a3f0f6e109409d047c650380b6715c316">   38</a></span>&#160;    <a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * <a class="code" href="class_layer.html#a3f0f6e109409d047c650380b6715c316">transaction</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif //! _LAYER</span></div>
+<div class="ttc" id="class_layer_html_a8f623c7c4737dc29ecc86978d243ac6f"><div class="ttname"><a href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer::Layer</a></div><div class="ttdeci">Layer()</div><div class="ttdef"><b>Definition:</b> Layer.cpp:3</div></div>
+<div class="ttc" id="class_layer_html_a36ea9075da50ba00ce591c365f1df947"><div class="ttname"><a href="class_layer.html#a36ea9075da50ba00ce591c365f1df947">Layer::hasTransaction</a></div><div class="ttdeci">bool hasTransaction()</div><div class="ttdef"><b>Definition:</b> Layer.cpp:27</div></div>
+<div class="ttc" id="class_layer_html_a8c3badeb437135a265c931f4ee728a48"><div class="ttname"><a href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">Layer::willUpdate</a></div><div class="ttdeci">bool willUpdate</div><div class="ttdef"><b>Definition:</b> Layer.hpp:36</div></div>
+<div class="ttc" id="class_layer_html_a46a91415e6bdc2fdb75ae0ac8498868f"><div class="ttname"><a href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">Layer::isDrawing</a></div><div class="ttdeci">bool isDrawing()</div><div class="ttdef"><b>Definition:</b> Layer.hpp:22</div></div>
+<div class="ttc" id="class_layer_html_ab5408f6d27ad51d73df507296f16c811"><div class="ttname"><a href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">Layer::Chunks</a></div><div class="ttdeci">ChunkManager * Chunks</div><div class="ttdef"><b>Definition:</b> Layer.hpp:37</div></div>
 <div class="ttc" id="class_chunk_manager_html"><div class="ttname"><a href="class_chunk_manager.html">ChunkManager</a></div><div class="ttdef"><b>Definition:</b> ChunkManager.hpp:5</div></div>
+<div class="ttc" id="_chunk_manager_8hpp_html"><div class="ttname"><a href="_chunk_manager_8hpp.html">ChunkManager.hpp</a></div></div>
+<div class="ttc" id="class_layer_html_afbfd549c4d1da2e4a2d78a33586c95e1"><div class="ttname"><a href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">Layer::getChunkManager</a></div><div class="ttdeci">ChunkManager * getChunkManager()</div><div class="ttdef"><b>Definition:</b> Layer.hpp:29</div></div>
+<div class="ttc" id="class_layer_html_a68b9de1ac0f3eaa8274b8d0a901a825c"><div class="ttname"><a href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">Layer::setEnabled</a></div><div class="ttdeci">void setEnabled(bool b)</div><div class="ttdef"><b>Definition:</b> Layer.hpp:25</div></div>
+<div class="ttc" id="_game_component_8hpp_html"><div class="ttname"><a href="_game_component_8hpp.html">GameComponent.hpp</a></div></div>
+<div class="ttc" id="class_layer_html_ac2892b95b2df74446d89e4a6388f0c88"><div class="ttname"><a href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">Layer::isUpdating</a></div><div class="ttdeci">bool isUpdating()</div><div class="ttdef"><b>Definition:</b> Layer.hpp:23</div></div>
+<div class="ttc" id="class_layer_html_a828daf5d76e298c41fbe1d67a680b706"><div class="ttname"><a href="class_layer.html#a828daf5d76e298c41fbe1d67a680b706">Layer::getTransaction</a></div><div class="ttdeci">ScreenTransaction * getTransaction()</div><div class="ttdef"><b>Definition:</b> Layer.cpp:32</div></div>
 <div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.hpp:10</div></div>
 <div class="ttc" id="class_screen_transaction_html"><div class="ttname"><a href="class_screen_transaction.html">ScreenTransaction</a></div><div class="ttdef"><b>Definition:</b> ScreenTransaction.hpp:6</div></div>
+<div class="ttc" id="class_layer_html_a6db2f37689d5ee4958167e539ab4ce69"><div class="ttname"><a href="class_layer.html#a6db2f37689d5ee4958167e539ab4ce69">Layer::Update</a></div><div class="ttdeci">virtual void Update(UpdateData *updateobject)</div><div class="ttdef"><b>Definition:</b> Layer.cpp:14</div></div>
+<div class="ttc" id="class_layer_html_a0a4f62b4c031e7c2f2d5635ccd38ddd1"><div class="ttname"><a href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">Layer::setDrawing</a></div><div class="ttdeci">void setDrawing(bool b)</div><div class="ttdef"><b>Definition:</b> Layer.hpp:26</div></div>
+<div class="ttc" id="class_layer_html_a64902a81921ba2fc792d044392b14ecc"><div class="ttname"><a href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">Layer::willDraw</a></div><div class="ttdeci">bool willDraw</div><div class="ttdef"><b>Definition:</b> Layer.hpp:35</div></div>
+<div class="ttc" id="class_layer_html_a1b1ba4804451dfe6cc357194e42762ae"><div class="ttname"><a href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">Layer::~Layer</a></div><div class="ttdeci">~Layer()</div><div class="ttdef"><b>Definition:</b> Layer.cpp:8</div></div>
+<div class="ttc" id="class_layer_html_af9f9c9a8c4a053bd829a06273df297bd"><div class="ttname"><a href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">Layer::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> Layer.hpp:34</div></div>
+<div class="ttc" id="class_layer_html_a008068a5a6bd4dd274bb01bf0246cfaf"><div class="ttname"><a href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Layer::Draw</a></div><div class="ttdeci">virtual void Draw(sf::RenderWindow &amp;window, sf::Vector2f offset)</div><div class="ttdef"><b>Definition:</b> Layer.cpp:20</div></div>
+<div class="ttc" id="_drawable_8hpp_html"><div class="ttname"><a href="_drawable_8hpp.html">Drawable.hpp</a></div></div>
 <div class="ttc" id="class_update_data_html"><div class="ttname"><a href="class_update_data.html">UpdateData</a></div><div class="ttdef"><b>Definition:</b> UpdateData.hpp:3</div></div>
+<div class="ttc" id="class_layer_html_a0e0595efe93dbd63b05339f35399d1ad"><div class="ttname"><a href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">Layer::setUpdating</a></div><div class="ttdeci">void setUpdating(bool b)</div><div class="ttdef"><b>Definition:</b> Layer.hpp:27</div></div>
+<div class="ttc" id="class_layer_html_a57c59677e3c56a7fd5e3dc985bdb9b4c"><div class="ttname"><a href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">Layer::isEnabled</a></div><div class="ttdeci">bool isEnabled()</div><div class="ttdef"><b>Definition:</b> Layer.hpp:21</div></div>
+<div class="ttc" id="class_layer_html_a3f0f6e109409d047c650380b6715c316"><div class="ttname"><a href="class_layer.html#a3f0f6e109409d047c650380b6715c316">Layer::transaction</a></div><div class="ttdeci">ScreenTransaction * transaction</div><div class="ttdef"><b>Definition:</b> Layer.hpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1b01a5d3f4df23563f12fa02c7543f6c.html">Revelatorfromework</a></li><li class="navelem"><b>Layer.hpp</b></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:02 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_layer_8hpp.html">Layer.hpp</a></li>
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

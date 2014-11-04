@@ -1,4 +1,6 @@
 <map id="Layer" name="Layer">
-<area shape="rect" id="node2" href="$class_screen_transaction.html" title="ScreenTransaction" alt="" coords="5,5,136,32"/>
-<area shape="rect" id="node3" href="$class_chunk_manager.html" title="ChunkManager" alt="" coords="160,5,269,32"/>
+<area shape="rect" id="node2" href="$class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="5,624,164,877"/>
+<area shape="rect" id="node3" href="$class_chunk_manager.html" title="{ChunkManager\n||+ ChunkManager()\l+ ~ChunkManager()\l+ Update()\l+ Draw()\l+ setActiveChunk()\l+ setFirstChunk()\l}" alt="" coords="188,675,325,826"/>
+<area shape="rect" id="node4" href="$class_chunk.html" title="{Chunk\n|# Components\l# size\l# ChunkCoord\l# RemoveFromChunk\l&#45; PurePosition\l|+ Chunk()\l+ ~Chunk()\l+ addComponent()\l+ Update()\l+ Draw()\l+ DrawSelf()\l+ setLeftTop()\l+ setTop()\l+ setRightTop()\l+ setLeft()\land 9 more...\l&#45; Collide()\l&#45; ExtendCollide()\l&#45; Sense()\l&#45; ExtendSense()\l&#45; MoveComponentToNextChunk()\l&#45; AxisisInBounds()\l&#45; RemoveFlaggedFromChunk()\l}" alt="" coords="151,161,363,547"/>
+<area shape="rect" id="node5" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="205,5,308,112"/>
 </map>

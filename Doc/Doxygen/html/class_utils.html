@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_utils.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,30 +106,155 @@ $(document).ready(function(){initNavTree('class_utils.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_utils-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Utils Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_utils_8hpp_source.html">Utils.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Utils:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_utils__coll__graph.png" border="0" usemap="#_utils_coll__map" alt="Collaboration graph"/></div>
+<map name="_utils_coll__map" id="_utils_coll__map">
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1653aff7c075a5dd590d479d9b62242d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1653aff7c075a5dd590d479d9b62242d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Utils</b> (const <a class="el" href="class_utils.html">Utils</a> &amp;utils)=delete</td></tr>
+<tr class="memitem:afa5e70facffc286607498e7edb639b8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils.html#afa5e70facffc286607498e7edb639b8a">~Utils</a> ()</td></tr>
+<tr class="separator:afa5e70facffc286607498e7edb639b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1653aff7c075a5dd590d479d9b62242d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils.html#a1653aff7c075a5dd590d479d9b62242d">Utils</a> (const <a class="el" href="class_utils.html">Utils</a> &amp;utils)=delete</td></tr>
 <tr class="separator:a1653aff7c075a5dd590d479d9b62242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add93043cabc33d69f58b083f0e618849"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add93043cabc33d69f58b083f0e618849"></a>
-<a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_utils.html">Utils</a> &amp;utils)=delete</td></tr>
+<tr class="memitem:add93043cabc33d69f58b083f0e618849"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils.html#add93043cabc33d69f58b083f0e618849">operator=</a> (const <a class="el" href="class_utils.html">Utils</a> &amp;utils)=delete</td></tr>
 <tr class="separator:add93043cabc33d69f58b083f0e618849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad50ce773764e9114decc8c415cd38d3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad50ce773764e9114decc8c415cd38d3e"></a>
-static <a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:ad50ce773764e9114decc8c415cd38d3e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e">getInstance</a> ()</td></tr>
 <tr class="separator:ad50ce773764e9114decc8c415cd38d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a452e78692c87ed5c7c993b6c6ac4981a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a">Utils</a> ()</td></tr>
+<tr class="separator:a452e78692c87ed5c7c993b6c6ac4981a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afa5e70facffc286607498e7edb639b8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Utils::~Utils </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1653aff7c075a5dd590d479d9b62242d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Utils::Utils </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td>
+          <td class="paramname"><em>utils</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a452e78692c87ed5c7c993b6c6ac4981a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Utils::Utils </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad50ce773764e9114decc8c415cd38d3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utils.html">Utils</a> &amp; Utils::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add93043cabc33d69f58b083f0e618849"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_utils.html">Utils</a>&amp; Utils::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td>
+          <td class="paramname"><em>utils</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Revelatorfromework/<a class="el" href="_utils_8hpp_source.html">Utils.hpp</a></li>
-<li>Revelatorfromework/Utils.cpp</li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_utils_8hpp_source.html">Utils.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_utils_8cpp.html">Utils.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -136,7 +262,7 @@ static <a class="el" href="class_utils.html">Utils</a> &amp;&#160;</td><td class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_utils.html">Utils</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

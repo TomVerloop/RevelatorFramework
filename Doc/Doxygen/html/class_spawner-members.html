@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_spawner.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,17 +110,18 @@ $(document).ready(function(){initNavTree('class_spawner.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_spawner.html">Spawner</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ComponentCount</b>() (defined in <a class="el" href="class_spawner.html">Spawner</a>)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>popComponent</b>() (defined in <a class="el" href="class_spawner.html">Spawner</a>)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>pushComponent</b>(GameComponent *c) (defined in <a class="el" href="class_spawner.html">Spawner</a>)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Spawner</b>() (defined in <a class="el" href="class_spawner.html">Spawner</a>)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Spawner</b>() (defined in <a class="el" href="class_spawner.html">Spawner</a>)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583">ComponentCount</a>()</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_spawner.html#ae5e316957ac1574347ba80bac3866976">Components</a></td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0">popComponent</a>()</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_spawner.html#a56762cb03662152ffb517f44f431599b">pushComponent</a>(GameComponent *c)</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_spawner.html#a3e3aa3ccff73556625359e75f64d0dd0">Spawner</a>()</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_spawner.html#a59d8e3d4d6dc6c25f38ce5d4fcc5e8e6">~Spawner</a>()</td><td class="entry"><a class="el" href="class_spawner.html">Spawner</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

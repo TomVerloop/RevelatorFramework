@@ -7,5 +7,7 @@ var class_window_manager =
     [ "getWindow", "class_window_manager.html#a7051ab4ec34157357d2fc029b5283ba0", null ],
     [ "MoveCamera", "class_window_manager.html#abbc66e888f2a67ab0203357005bc89d8", null ],
     [ "operator=", "class_window_manager.html#a11afbf3f6296341434679bbedb44c989", null ],
-    [ "setCameraPosition", "class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1", null ]
+    [ "setCameraPosition", "class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1", null ],
+    [ "CameraPosition", "class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101", null ],
+    [ "window", "class_window_manager.html#a61d47c11da0af06b979ec784a21349ea", null ]
 ];

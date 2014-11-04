@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: Revelatorfromework/GameFactory.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/GameFactory.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('_game_factory_8hpp_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,45 +105,62 @@ $(document).ready(function(){initNavTree('_game_factory_8hpp_source.html','');})
 <div class="title">GameFactory.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="_game_factory_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;GameScreen.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Chunk.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;ChunkManager.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Layer.hpp&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;ScreenManager.hpp&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_game_screen_8hpp.html">GameScreen.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_chunk_8hpp.html">Chunk.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_chunk_manager_8hpp.html">ChunkManager.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_layer_8hpp.html">Layer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_screen_manager_8hpp.html">ScreenManager.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;MovableComponent.hpp&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;ExampleComponent.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_movable_component_8hpp.html">MovableComponent.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_example_component_8hpp.html">ExampleComponent.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_game_factory.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_factory.html">GameFactory</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    ~<a class="code" href="class_game_factory.html">GameFactory</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_game_screen.html">GameScreen</a> * ProduceScreen(std::string screenname);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_game_factory.html">GameFactory</a> * getInstance();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">~GameFactory</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_game_screen.html">GameScreen</a> * <a class="code" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">ProduceScreen</a>(std::string screenname);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_game_factory.html">GameFactory</a> * <a class="code" href="class_game_factory.html#af9b8ebc6daa14822ec704480afbc8494">getInstance</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_game_factory.html">GameFactory</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_layer.html">Layer</a> * ProduceLayer(std::string layername);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_chunk.html">Chunk</a> * ProduceChunk(std::string chunkname);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::list&lt;Layer *&gt; Layers;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::list&lt;Chunk *&gt; Chunks;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::list&lt;GameScreen *&gt; Screens;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::list&lt;GameComponent * &gt; Components;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad">ProduceLayer</a>(std::string layername);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_chunk.html">Chunk</a> * <a class="code" href="class_game_factory.html#a6d10cc5db3ba26bb6041a9449dfab92a">ProduceChunk</a>(std::string chunkname);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">   23</a></span>&#160;    std::list&lt;Layer *&gt; <a class="code" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">Layers</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">   24</a></span>&#160;    std::list&lt;Chunk *&gt; <a class="code" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">   25</a></span>&#160;    std::list&lt;GameScreen *&gt; <a class="code" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">   26</a></span>&#160;    std::list&lt;GameComponent * &gt; <a class="code" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="ttc" id="class_game_factory_html_a8fb704f6440c30dd368b409adc9fffad"><div class="ttname"><a href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad">GameFactory::ProduceLayer</a></div><div class="ttdeci">Layer * ProduceLayer(std::string layername)</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:49</div></div>
+<div class="ttc" id="_screen_manager_8hpp_html"><div class="ttname"><a href="_screen_manager_8hpp.html">ScreenManager.hpp</a></div></div>
+<div class="ttc" id="_chunk_manager_8hpp_html"><div class="ttname"><a href="_chunk_manager_8hpp.html">ChunkManager.hpp</a></div></div>
+<div class="ttc" id="_example_component_8hpp_html"><div class="ttname"><a href="_example_component_8hpp.html">ExampleComponent.hpp</a></div></div>
+<div class="ttc" id="_game_screen_8hpp_html"><div class="ttname"><a href="_game_screen_8hpp.html">GameScreen.hpp</a></div></div>
+<div class="ttc" id="class_game_factory_html_a90fc6360610babaf3d2d880f782772b3"><div class="ttname"><a href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">GameFactory::Components</a></div><div class="ttdeci">std::list&lt; GameComponent * &gt; Components</div><div class="ttdef"><b>Definition:</b> GameFactory.hpp:26</div></div>
+<div class="ttc" id="class_game_factory_html_a77496a7ea1e2fa54acb18c499b3bd3bb"><div class="ttname"><a href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">GameFactory::Chunks</a></div><div class="ttdeci">std::list&lt; Chunk * &gt; Chunks</div><div class="ttdef"><b>Definition:</b> GameFactory.hpp:24</div></div>
 <div class="ttc" id="class_game_screen_html"><div class="ttname"><a href="class_game_screen.html">GameScreen</a></div><div class="ttdef"><b>Definition:</b> GameScreen.hpp:11</div></div>
 <div class="ttc" id="class_chunk_html"><div class="ttname"><a href="class_chunk.html">Chunk</a></div><div class="ttdef"><b>Definition:</b> Chunk.hpp:12</div></div>
 <div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.hpp:10</div></div>
+<div class="ttc" id="class_game_factory_html_a16a8135f6d6b1b60c0d08b39340b34cc"><div class="ttname"><a href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">GameFactory::Screens</a></div><div class="ttdeci">std::list&lt; GameScreen * &gt; Screens</div><div class="ttdef"><b>Definition:</b> GameFactory.hpp:25</div></div>
 <div class="ttc" id="class_game_factory_html"><div class="ttname"><a href="class_game_factory.html">GameFactory</a></div><div class="ttdef"><b>Definition:</b> GameFactory.hpp:12</div></div>
+<div class="ttc" id="_movable_component_8hpp_html"><div class="ttname"><a href="_movable_component_8hpp.html">MovableComponent.hpp</a></div></div>
+<div class="ttc" id="class_game_factory_html_a7ab6a968cb7af49813407fe66927c126"><div class="ttname"><a href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">GameFactory::Layers</a></div><div class="ttdeci">std::list&lt; Layer * &gt; Layers</div><div class="ttdef"><b>Definition:</b> GameFactory.hpp:23</div></div>
+<div class="ttc" id="_chunk_8hpp_html"><div class="ttname"><a href="_chunk_8hpp.html">Chunk.hpp</a></div></div>
+<div class="ttc" id="class_game_factory_html_ad293f5a8811d9106753916cef819fbce"><div class="ttname"><a href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">GameFactory::ProduceScreen</a></div><div class="ttdeci">GameScreen * ProduceScreen(std::string screenname)</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:30</div></div>
+<div class="ttc" id="class_game_factory_html_a6d10cc5db3ba26bb6041a9449dfab92a"><div class="ttname"><a href="class_game_factory.html#a6d10cc5db3ba26bb6041a9449dfab92a">GameFactory::ProduceChunk</a></div><div class="ttdeci">Chunk * ProduceChunk(std::string chunkname)</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:148</div></div>
+<div class="ttc" id="class_game_factory_html_a0cbbb4c198cab19386d67bfe7891b785"><div class="ttname"><a href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">GameFactory::~GameFactory</a></div><div class="ttdeci">~GameFactory()</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:19</div></div>
+<div class="ttc" id="_layer_8hpp_html"><div class="ttname"><a href="_layer_8hpp.html">Layer.hpp</a></div></div>
+<div class="ttc" id="class_game_factory_html_a37c039131801be05d138bd76bb125ab3"><div class="ttname"><a href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory::GameFactory</a></div><div class="ttdeci">GameFactory()</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:14</div></div>
+<div class="ttc" id="class_game_factory_html_af9b8ebc6daa14822ec704480afbc8494"><div class="ttname"><a href="class_game_factory.html#af9b8ebc6daa14822ec704480afbc8494">GameFactory::getInstance</a></div><div class="ttdeci">static GameFactory * getInstance()</div><div class="ttdef"><b>Definition:</b> GameFactory.cpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1b01a5d3f4df23563f12fa02c7543f6c.html">Revelatorfromework</a></li><li class="navelem"><b>GameFactory.hpp</b></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:02 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_game_factory_8hpp.html">GameFactory.hpp</a></li>
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

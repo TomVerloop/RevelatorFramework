@@ -1,24 +1,172 @@
 \hypertarget{class_chunk_manager}{\section{Chunk\-Manager Class Reference}
 \label{class_chunk_manager}\index{Chunk\-Manager@{Chunk\-Manager}}
 }
+
+
+{\ttfamily \#include $<$Chunk\-Manager.\-hpp$>$}
+
+
+
+Collaboration diagram for Chunk\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_chunk_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e}{void {\bfseries Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)}\label{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e}
-
+\hyperlink{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}{Chunk\-Manager} ()
 \item 
-\hypertarget{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}{void {\bfseries Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)}\label{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}
-
+\hyperlink{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}{$\sim$\-Chunk\-Manager} ()
 \item 
-\hypertarget{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}{void {\bfseries set\-Active\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)}\label{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}
-
+void \hyperlink{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e}{Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
 \item 
-\hypertarget{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}{void {\bfseries set\-First\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)}\label{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}
-
+void \hyperlink{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)
+\item 
+void \hyperlink{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}{set\-Active\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)
+\item 
+void \hyperlink{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}{set\-First\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}{Active\-Chunk}
+\item 
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}{First\-Chunk}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}{\index{Chunk\-Manager@{Chunk\-Manager}!Chunk\-Manager@{Chunk\-Manager}}
+\index{Chunk\-Manager@{Chunk\-Manager}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Chunk\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-Chunk\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}
+\hypertarget{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}{\index{Chunk\-Manager@{Chunk\-Manager}!$\sim$\-Chunk\-Manager@{$\sim$\-Chunk\-Manager}}
+\index{$\sim$\-Chunk\-Manager@{$\sim$\-Chunk\-Manager}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{$\sim$\-Chunk\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::$\sim$\-Chunk\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}{\index{Chunk\-Manager@{Chunk\-Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window, }
+\item[{sf\-::\-Vector2f}]{offset}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}{\index{Chunk\-Manager@{Chunk\-Manager}!set\-Active\-Chunk@{set\-Active\-Chunk}}
+\index{set\-Active\-Chunk@{set\-Active\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{set\-Active\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::set\-Active\-Chunk (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}{\index{Chunk\-Manager@{Chunk\-Manager}!set\-First\-Chunk@{set\-First\-Chunk}}
+\index{set\-First\-Chunk@{set\-First\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{set\-First\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::set\-First\-Chunk (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e}{\index{Chunk\-Manager@{Chunk\-Manager}!Update@{Update}}
+\index{Update@{Update}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Update\-Data} $\ast$}]{updateobject}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_chunk_manager_a601244f4c4a114fe2a646e4b5ad32a6e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}{\index{Chunk\-Manager@{Chunk\-Manager}!Active\-Chunk@{Active\-Chunk}}
+\index{Active\-Chunk@{Active\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Active\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-Manager\-::\-Active\-Chunk\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}
+\hypertarget{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}{\index{Chunk\-Manager@{Chunk\-Manager}!First\-Chunk@{First\-Chunk}}
+\index{First\-Chunk@{First\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{First\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-Manager\-::\-First\-Chunk\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Revelatorfromework/Chunk\-Manager.\-hpp\item 
-Revelatorfromework/Chunk\-Manager.\-cpp\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_chunk_manager_8hpp}{Chunk\-Manager.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_chunk_manager_8cpp}{Chunk\-Manager.\-cpp}\end{DoxyCompactItemize}

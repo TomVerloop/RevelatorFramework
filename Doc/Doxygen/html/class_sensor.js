@@ -6,5 +6,7 @@ var class_sensor =
     [ "DrawVision", "class_sensor.html#a8ed4309852c92cdeac0152cc2f604ac8", null ],
     [ "getSeenObject", "class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14", null ],
     [ "GetVisionRadius", "class_sensor.html#ab7cc277606b8709a6df5fc53d7c0f22b", null ],
-    [ "SeenObjectCount", "class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae", null ]
+    [ "SeenObjectCount", "class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae", null ],
+    [ "SeenObjects", "class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926", null ],
+    [ "VisionRange", "class_sensor.html#af509a7308626a219e017f07c0d25a78f", null ]
 ];

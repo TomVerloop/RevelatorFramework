@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,15 +110,22 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_game_factory.html">GameFactory</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getInstance</b>() (defined in <a class="el" href="class_game_factory.html">GameFactory</a>)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ProduceScreen</b>(std::string screenname) (defined in <a class="el" href="class_game_factory.html">GameFactory</a>)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~GameFactory</b>() (defined in <a class="el" href="class_game_factory.html">GameFactory</a>)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#af9b8ebc6daa14822ec704480afbc8494">getInstance</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">Layers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a6d10cc5db3ba26bb6041a9449dfab92a">ProduceChunk</a>(std::string chunkname)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad">ProduceLayer</a>(std::string layername)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">ProduceScreen</a>(std::string screenname)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">~GameFactory</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

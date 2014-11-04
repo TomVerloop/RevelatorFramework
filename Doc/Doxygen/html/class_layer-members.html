@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_layer.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,30 +110,30 @@ $(document).ready(function(){initNavTree('class_layer.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_layer.html">Layer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Chunks</b> (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Draw</b>(sf::RenderWindow &amp;window, sf::Vector2f offset) (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>enabled</b> (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getChunkManager</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTransaction</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>hasTransaction</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>isDrawing</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>isEnabled</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>isUpdating</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Layer</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setDrawing</b>(bool b) (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setEnabled</b>(bool b) (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setUpdating</b>(bool b) (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>transaction</b> (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Update</b>(UpdateData *updateobject) (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>willDraw</b> (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>willUpdate</b> (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Layer</b>() (defined in <a class="el" href="class_layer.html">Layer</a>)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">Chunks</a></td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Draw</a>(sf::RenderWindow &amp;window, sf::Vector2f offset)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">enabled</a></td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">getChunkManager</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a828daf5d76e298c41fbe1d67a680b706">getTransaction</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a36ea9075da50ba00ce591c365f1df947">hasTransaction</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">isDrawing</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">isEnabled</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">isUpdating</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">setDrawing</a>(bool b)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">setEnabled</a>(bool b)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">setUpdating</a>(bool b)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a3f0f6e109409d047c650380b6715c316">transaction</a></td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a6db2f37689d5ee4958167e539ab4ce69">Update</a>(UpdateData *updateobject)</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">willDraw</a></td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">willUpdate</a></td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">~Layer</a>()</td><td class="entry"><a class="el" href="class_layer.html">Layer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

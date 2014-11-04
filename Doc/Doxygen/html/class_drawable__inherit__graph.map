@@ -1,5 +1,5 @@
 <map id="Drawable" name="Drawable">
-<area shape="rect" id="node2" href="$class_chunk.html" title="Chunk" alt="" coords="5,80,64,107"/>
-<area shape="rect" id="node3" href="$class_example_drawable.html" title="ExampleDrawable" alt="" coords="89,80,215,107"/>
-<area shape="rect" id="node4" href="$class_game_screen.html" title="GameScreen" alt="" coords="240,80,339,107"/>
+<area shape="rect" id="node2" href="$class_chunk.html" title="{Chunk\n|# LeftTop\l# Top\l# RightTop\l# Left\l# Right\l# LeftBottom\l# Bottom\l# RightBottom\l# Components\l# size\l# ChunkCoord\l# RemoveFromChunk\l&#45; PurePosition\l|+ Chunk()\l+ ~Chunk()\l+ addComponent()\l+ Update()\l+ Draw()\l+ DrawSelf()\l+ setLeftTop()\l+ setTop()\l+ setRightTop()\l+ setLeft()\land 9 more...\l&#45; Collide()\l&#45; ExtendCollide()\l&#45; Sense()\l&#45; ExtendSense()\l&#45; MoveComponentToNextChunk()\l&#45; AxisisInBounds()\l&#45; RemoveFlaggedFromChunk()\l}" alt="" coords="5,160,217,663"/>
+<area shape="rect" id="node3" href="$class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="241,373,368,450"/>
+<area shape="rect" id="node4" href="$class_game_screen.html" title="{GameScreen\n|# Layers\l# transaction\l|+ GameScreen()\l+ ~GameScreen()\l+ Update()\l+ Draw()\l+ addLayer()\l+ removeLayer()\l+ getLayer()\l+ setTransaction()\l+ hasTransaction()\l+ getTransaction()\l}" alt="" coords="393,299,523,523"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="GameComponent::getPosition" name="GameComponent::getPosition">
+<area shape="rect" id="node2" href="$class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="Chunk::MoveComponentToNext\lChunk" alt="" coords="249,5,453,47"/>
+<area shape="rect" id="node6" href="$class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc" title="ExampleComponent::Draw" alt="" coords="263,71,439,98"/>
+<area shape="rect" id="node7" href="$class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429" title="MovableComponent::Draw" alt="" coords="265,122,437,149"/>
+<area shape="rect" id="node3" href="$class_chunk.html#a750907d92efc9e45bfff5e280fa55afe" title="Chunk::Update" alt="" coords="501,13,609,39"/>
+<area shape="rect" id="node4" href="$class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="657,13,816,39"/>
+<area shape="rect" id="node5" href="$class_layer.html#a6db2f37689d5ee4958167e539ab4ce69" title="Layer::Update" alt="" coords="864,13,967,39"/>
+</map>

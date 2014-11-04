@@ -1,21 +1,224 @@
 \hypertarget{class_game_factory}{\section{Game\-Factory Class Reference}
 \label{class_game_factory}\index{Game\-Factory@{Game\-Factory}}
 }
+
+
+{\ttfamily \#include $<$Game\-Factory.\-hpp$>$}
+
+
+
+Collaboration diagram for Game\-Factory\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_game_factory__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_game_factory_ad293f5a8811d9106753916cef819fbce}{\hyperlink{class_game_screen}{Game\-Screen} $\ast$ {\bfseries Produce\-Screen} (std\-::string screenname)}\label{class_game_factory_ad293f5a8811d9106753916cef819fbce}
-
+\hyperlink{class_game_factory_a0cbbb4c198cab19386d67bfe7891b785}{$\sim$\-Game\-Factory} ()
+\item 
+\hyperlink{class_game_screen}{Game\-Screen} $\ast$ \hyperlink{class_game_factory_ad293f5a8811d9106753916cef819fbce}{Produce\-Screen} (std\-::string screenname)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_game_factory_af9b8ebc6daa14822ec704480afbc8494}{static \hyperlink{class_game_factory}{Game\-Factory} $\ast$ {\bfseries get\-Instance} ()}\label{class_game_factory_af9b8ebc6daa14822ec704480afbc8494}
-
+static \hyperlink{class_game_factory}{Game\-Factory} $\ast$ \hyperlink{class_game_factory_af9b8ebc6daa14822ec704480afbc8494}{get\-Instance} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_factory_a37c039131801be05d138bd76bb125ab3}{Game\-Factory} ()
+\item 
+\hyperlink{class_layer}{Layer} $\ast$ \hyperlink{class_game_factory_a8fb704f6440c30dd368b409adc9fffad}{Produce\-Layer} (std\-::string layername)
+\item 
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_game_factory_a6d10cc5db3ba26bb6041a9449dfab92a}{Produce\-Chunk} (std\-::string chunkname)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ \hyperlink{class_layer}{Layer} $\ast$ $>$ \hyperlink{class_game_factory_a7ab6a968cb7af49813407fe66927c126}{Layers}
+\item 
+std\-::list$<$ \hyperlink{class_chunk}{Chunk} $\ast$ $>$ \hyperlink{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}{Chunks}
+\item 
+std\-::list$<$ \hyperlink{class_game_screen}{Game\-Screen} $\ast$ $>$ \hyperlink{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}{Screens}
+\item 
+std\-::list$<$ \hyperlink{class_game_component}{Game\-Component} $\ast$ $>$ \hyperlink{class_game_factory_a90fc6360610babaf3d2d880f782772b3}{Components}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_factory_a0cbbb4c198cab19386d67bfe7891b785}{\index{Game\-Factory@{Game\-Factory}!$\sim$\-Game\-Factory@{$\sim$\-Game\-Factory}}
+\index{$\sim$\-Game\-Factory@{$\sim$\-Game\-Factory}!GameFactory@{Game\-Factory}}
+\subsubsection[{$\sim$\-Game\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::$\sim$\-Game\-Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_game_factory_a0cbbb4c198cab19386d67bfe7891b785}
+\hypertarget{class_game_factory_a37c039131801be05d138bd76bb125ab3}{\index{Game\-Factory@{Game\-Factory}!Game\-Factory@{Game\-Factory}}
+\index{Game\-Factory@{Game\-Factory}!GameFactory@{Game\-Factory}}
+\subsubsection[{Game\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::\-Game\-Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a37c039131801be05d138bd76bb125ab3}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_a37c039131801be05d138bd76bb125ab3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_factory_af9b8ebc6daa14822ec704480afbc8494}{\index{Game\-Factory@{Game\-Factory}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!GameFactory@{Game\-Factory}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Factory} $\ast$ Game\-Factory\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_game_factory_af9b8ebc6daa14822ec704480afbc8494}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_af9b8ebc6daa14822ec704480afbc8494_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_af9b8ebc6daa14822ec704480afbc8494_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_game_factory_a6d10cc5db3ba26bb6041a9449dfab92a}{\index{Game\-Factory@{Game\-Factory}!Produce\-Chunk@{Produce\-Chunk}}
+\index{Produce\-Chunk@{Produce\-Chunk}!GameFactory@{Game\-Factory}}
+\subsubsection[{Produce\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Game\-Factory\-::\-Produce\-Chunk (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{chunkname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a6d10cc5db3ba26bb6041a9449dfab92a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_a6d10cc5db3ba26bb6041a9449dfab92a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_a6d10cc5db3ba26bb6041a9449dfab92a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_game_factory_a8fb704f6440c30dd368b409adc9fffad}{\index{Game\-Factory@{Game\-Factory}!Produce\-Layer@{Produce\-Layer}}
+\index{Produce\-Layer@{Produce\-Layer}!GameFactory@{Game\-Factory}}
+\subsubsection[{Produce\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer} $\ast$ Game\-Factory\-::\-Produce\-Layer (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{layername}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a8fb704f6440c30dd368b409adc9fffad}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_a8fb704f6440c30dd368b409adc9fffad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_a8fb704f6440c30dd368b409adc9fffad_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_game_factory_ad293f5a8811d9106753916cef819fbce}{\index{Game\-Factory@{Game\-Factory}!Produce\-Screen@{Produce\-Screen}}
+\index{Produce\-Screen@{Produce\-Screen}!GameFactory@{Game\-Factory}}
+\subsubsection[{Produce\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Screen} $\ast$ Game\-Factory\-::\-Produce\-Screen (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{screenname}
+\end{DoxyParamCaption}
+)}}\label{class_game_factory_ad293f5a8811d9106753916cef819fbce}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_factory_ad293f5a8811d9106753916cef819fbce_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}{\index{Game\-Factory@{Game\-Factory}!Chunks@{Chunks}}
+\index{Chunks@{Chunks}!GameFactory@{Game\-Factory}}
+\subsubsection[{Chunks}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Chunk} $\ast$$>$ Game\-Factory\-::\-Chunks\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}
+\hypertarget{class_game_factory_a90fc6360610babaf3d2d880f782772b3}{\index{Game\-Factory@{Game\-Factory}!Components@{Components}}
+\index{Components@{Components}!GameFactory@{Game\-Factory}}
+\subsubsection[{Components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component} $\ast$ $>$ Game\-Factory\-::\-Components\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a90fc6360610babaf3d2d880f782772b3}
+\hypertarget{class_game_factory_a7ab6a968cb7af49813407fe66927c126}{\index{Game\-Factory@{Game\-Factory}!Layers@{Layers}}
+\index{Layers@{Layers}!GameFactory@{Game\-Factory}}
+\subsubsection[{Layers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Layer} $\ast$$>$ Game\-Factory\-::\-Layers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a7ab6a968cb7af49813407fe66927c126}
+\hypertarget{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}{\index{Game\-Factory@{Game\-Factory}!Screens@{Screens}}
+\index{Screens@{Screens}!GameFactory@{Game\-Factory}}
+\subsubsection[{Screens}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Screen} $\ast$$>$ Game\-Factory\-::\-Screens\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Revelatorfromework/Game\-Factory.\-hpp\item 
-Revelatorfromework/Game\-Factory.\-cpp\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_game_factory_8hpp}{Game\-Factory.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_game_factory_8cpp}{Game\-Factory.\-cpp}\end{DoxyCompactItemize}

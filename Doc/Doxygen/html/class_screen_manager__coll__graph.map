@@ -1,0 +1,5 @@
+<map id="ScreenManager" name="ScreenManager">
+<area shape="rect" id="node2" href="$class_game_screen.html" title="{GameScreen\n|# Layers\l|+ GameScreen()\l+ ~GameScreen()\l+ Update()\l+ Draw()\l+ addLayer()\l+ removeLayer()\l+ getLayer()\l+ setTransaction()\l+ hasTransaction()\l+ getTransaction()\l}" alt="" coords="69,321,199,531"/>
+<area shape="rect" id="node3" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="5,79,108,185"/>
+<area shape="rect" id="node4" href="$class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="132,5,291,259"/>
+</map>

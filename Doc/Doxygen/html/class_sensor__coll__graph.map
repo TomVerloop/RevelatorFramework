@@ -1,4 +1,4 @@
 <map id="Sensor" name="Sensor">
-<area shape="rect" id="node2" href="$class_collidable.html" title="Collidable" alt="" coords="23,171,102,197"/>
-<area shape="rect" id="node3" href="$class_rectangle.html" title="Rectangle" alt="" coords="23,81,103,108"/>
+<area shape="rect" id="node2" href="$class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# lastpos\l|+ Collidable()\l+ Collidable()\l+ ~Collidable()\l+ getCollider()\l+ isMoved()\l}" alt="" coords="24,316,131,481"/>
+<area shape="rect" id="node3" href="$class_rectangle.html" title="{Rectangle\n||+ Rectangle()\l+ Rectangle()\l+ ~Rectangle()\l+ getCenter()\l}" alt="" coords="23,132,131,253"/>
 </map>

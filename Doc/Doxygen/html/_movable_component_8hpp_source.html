@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: Revelatorfromework/MovableComponent.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/MovableComponent.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('_movable_component_8hpp_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,29 +105,35 @@ $(document).ready(function(){initNavTree('_movable_component_8hpp_source.html','
 <div class="title">MovableComponent.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;GameComponent.hpp&quot;</span></div>
+<a href="_movable_component_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_game_component_8hpp.html">GameComponent.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_movable_component.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_movable_component.html">MovableComponent</a> :</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">public</span> <a class="code" href="class_game_component.html">GameComponent</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_movable_component.html">MovableComponent</a>(sf::Vector2f pos);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    ~<a class="code" href="class_movable_component.html">MovableComponent</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> Collide(<a class="code" href="class_game_component.html">GameComponent</a> * colider) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> Update(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> Draw(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_movable_component.html#aea0453392e1d269a4b4c207728a3ddaf">MovableComponent</a>(sf::Vector2f pos);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_movable_component.html#aedc5ac024682262c99436b2b5fadddc1">~MovableComponent</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b">Collide</a>(<a class="code" href="class_game_component.html">GameComponent</a> * colider) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable_component.html#a6310c2306c503472873721a9756003a8">Update</a>(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429">Draw</a>(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="ttc" id="class_movable_component_html_aea0453392e1d269a4b4c207728a3ddaf"><div class="ttname"><a href="class_movable_component.html#aea0453392e1d269a4b4c207728a3ddaf">MovableComponent::MovableComponent</a></div><div class="ttdeci">MovableComponent(sf::Vector2f pos)</div><div class="ttdef"><b>Definition:</b> MovableComponent.cpp:6</div></div>
+<div class="ttc" id="class_movable_component_html_a5ab32fd53c29a29ddcd68f1bb38a5f2b"><div class="ttname"><a href="class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b">MovableComponent::Collide</a></div><div class="ttdeci">void Collide(GameComponent *colider) override</div><div class="ttdef"><b>Definition:</b> MovableComponent.cpp:20</div></div>
+<div class="ttc" id="_game_component_8hpp_html"><div class="ttname"><a href="_game_component_8hpp.html">GameComponent.hpp</a></div></div>
+<div class="ttc" id="class_movable_component_html_a75c4dad8db642791c52d7fc5e9a92429"><div class="ttname"><a href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429">MovableComponent::Draw</a></div><div class="ttdeci">void Draw(sf::RenderWindow &amp;window, sf::Vector2f offset)</div><div class="ttdef"><b>Definition:</b> MovableComponent.cpp:52</div></div>
 <div class="ttc" id="class_update_data_html"><div class="ttname"><a href="class_update_data.html">UpdateData</a></div><div class="ttdef"><b>Definition:</b> UpdateData.hpp:3</div></div>
 <div class="ttc" id="class_movable_component_html"><div class="ttname"><a href="class_movable_component.html">MovableComponent</a></div><div class="ttdef"><b>Definition:</b> MovableComponent.hpp:3</div></div>
 <div class="ttc" id="class_game_component_html"><div class="ttname"><a href="class_game_component.html">GameComponent</a></div><div class="ttdef"><b>Definition:</b> GameComponent.hpp:16</div></div>
+<div class="ttc" id="class_movable_component_html_aedc5ac024682262c99436b2b5fadddc1"><div class="ttname"><a href="class_movable_component.html#aedc5ac024682262c99436b2b5fadddc1">MovableComponent::~MovableComponent</a></div><div class="ttdeci">~MovableComponent()</div><div class="ttdef"><b>Definition:</b> MovableComponent.cpp:14</div></div>
+<div class="ttc" id="class_movable_component_html_a6310c2306c503472873721a9756003a8"><div class="ttname"><a href="class_movable_component.html#a6310c2306c503472873721a9756003a8">MovableComponent::Update</a></div><div class="ttdeci">void Update(UpdateData *updateobject) override</div><div class="ttdef"><b>Definition:</b> MovableComponent.cpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1b01a5d3f4df23563f12fa02c7543f6c.html">Revelatorfromework</a></li><li class="navelem"><b>MovableComponent.hpp</b></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:02 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_movable_component_8hpp.html">MovableComponent.hpp</a></li>
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -70,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,26 +110,26 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_game_screen.html">GameScreen</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addLayer</b>(std::string name, Layer *layer) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Draw</b>(sf::RenderWindow &amp;window, sf::Vector2f offset) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Drawable</b>() (defined in <a class="el" href="class_drawable.html">Drawable</a>)</td><td class="entry"><a class="el" href="class_drawable.html">Drawable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>GameScreen</b>() (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getLayer</b>(std::string name) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getTransaction</b>() (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>hasTransaction</b>() (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Layers</b> (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>removeLayer</b>(std::string name) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setTransaction</b>(ScreenTransaction *transaction) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>transaction</b> (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Update</b>(UpdateData *updateobject) (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Drawable</b>() (defined in <a class="el" href="class_drawable.html">Drawable</a>)</td><td class="entry"><a class="el" href="class_drawable.html">Drawable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~GameScreen</b>() (defined in <a class="el" href="class_game_screen.html">GameScreen</a>)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b">addLayer</a>(std::string name, Layer *layer)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">Draw</a>(sf::RenderWindow &amp;window, sf::Vector2f offset)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a>()</td><td class="entry"><a class="el" href="class_drawable.html">Drawable</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#ae68a867285e0aba9d2b22bff690616ac">GameScreen</a>()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#accd7cd68d80fc29593703ee1741b8996">getLayer</a>(std::string name)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#ab148b3dc8dd0921eaf90e52fb61d7817">getTransaction</a>()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a5aadb0f4d885be777b3d99f08add9f88">hasTransaction</a>()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a></td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">removeLayer</a>(std::string name)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#a1c5d1420883ee7c135747c6aadf7fae9">setTransaction</a>(ScreenTransaction *transaction)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#accd7b1f865eb3e0ab95ca4eb8b795b93">transaction</a></td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375">Update</a>(UpdateData *updateobject)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_drawable.html#a5db44942658aab760a7418e338582e0a">~Drawable</a>()</td><td class="entry"><a class="el" href="class_drawable.html">Drawable</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1">~GameScreen</a>()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:02:03 for Revelator Framework by
+    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

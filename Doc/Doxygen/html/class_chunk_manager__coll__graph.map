@@ -1,0 +1,4 @@
+<map id="ChunkManager" name="ChunkManager">
+<area shape="rect" id="node2" href="$class_chunk.html" title="{Chunk\n|# Components\l# size\l# ChunkCoord\l# RemoveFromChunk\l&#45; PurePosition\l|+ Chunk()\l+ ~Chunk()\l+ addComponent()\l+ Update()\l+ Draw()\l+ DrawSelf()\l+ setLeftTop()\l+ setTop()\l+ setRightTop()\l+ setLeft()\land 9 more...\l&#45; Collide()\l&#45; ExtendCollide()\l&#45; Sense()\l&#45; ExtendSense()\l&#45; MoveComponentToNextChunk()\l&#45; AxisisInBounds()\l&#45; RemoveFlaggedFromChunk()\l}" alt="" coords="5,161,217,547"/>
+<area shape="rect" id="node3" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/>
+</map>

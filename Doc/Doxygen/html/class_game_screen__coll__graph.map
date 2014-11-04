@@ -1,4 +1,4 @@
 <map id="GameScreen" name="GameScreen">
-<area shape="rect" id="node2" href="$class_drawable.html" title="Drawable" alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node3" href="$class_screen_transaction.html" title="ScreenTransaction" alt="" coords="104,5,235,32"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="5,79,108,185"/>
+<area shape="rect" id="node3" href="$class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="132,5,291,259"/>
 </map>

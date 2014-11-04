@@ -1,3 +1,3 @@
 <map id="ExampleComponent" name="ExampleComponent">
-<area shape="rect" id="node2" href="$class_game_component.html" title="GameComponent" alt="" coords="13,5,136,32"/>
+<area shape="rect" id="node2" href="$class_game_component.html" title="{GameComponent\n|# Name\l# ID\l# Transaction\l# Position\l# drawable\l# collidable\l# sensor\l# spawner\l|+ GameComponent()\l+ GameComponent()\l+ GameComponent()\l+ Update()\l+ Collide()\l+ Draw()\l+ hasTransaction()\l+ setTransaction()\l+ getTransaction()\l+ getPosition()\land 9 more...\l}" alt="" coords="17,5,160,332"/>
 </map>

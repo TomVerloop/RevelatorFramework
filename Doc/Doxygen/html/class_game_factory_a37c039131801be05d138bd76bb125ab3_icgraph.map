@@ -1,0 +1,5 @@
+<map id="GameFactory::GameFactory" name="GameFactory::GameFactory">
+<area shape="rect" id="node2" href="$class_game_factory.html#af9b8ebc6daa14822ec704480afbc8494" title="GameFactory::getInstance" alt="" coords="241,5,417,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="465,5,576,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="624,5,675,32"/>
+</map>
