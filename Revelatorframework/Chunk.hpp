@@ -36,6 +36,8 @@ public:
 
 	sf::Vector2i getCoords(){ return ChunkCoord; }
 
+	void SenseSingle(UpdateData * updateobject, GameComponent * comp);
+	void CollideSingle(UpdateData * updateobject, GameComponent * comp);
 protected:
 	Chunk * LeftTop;
 	Chunk * Top;
@@ -51,9 +53,7 @@ protected:
 	std::list<GameComponent*> RemoveFromChunk;
 private:
 	void Collide(UpdateData * updateobject);
-	void ExtendCollide(UpdateData * updateobject, Collidable * collidable,Position From);
 	void Sense(UpdateData * updateobject);
-	void ExtendSense(UpdateData* updateobject, Sensor * sense, Position From);
 	sf::Vector2f PurePosition;
 
 	void MoveComponentToNextChunk(GameComponent * c);

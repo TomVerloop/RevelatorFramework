@@ -30,6 +30,7 @@ GameFactory * GameFactory::getInstance()
 GameScreen * GameFactory::ProduceScreen(std::string screenname)
 {
 	GameScreen * screen = new GameScreen();
+	Screens.push_back(screen);
 	std::ifstream input("Resourses\\GameScreens\\" + screenname + ".txt");
 	std::string AddType = "";
 	while (!input.eof())
@@ -49,6 +50,7 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 Layer * GameFactory::ProduceLayer(std::string layername)
 {
 	Layer * layer = new Layer();
+	Layers.push_back(layer);
 	std::ifstream input("Resourses\\Layers\\" + layername + ".txt");
 	std::string AddType = "";
 	Chunk * lastaddedchunk = nullptr;
@@ -168,6 +170,7 @@ Chunk * GameFactory::ProduceChunk(std::string chunkname)
 		{
 			input >> size;
 			c = new Chunk(sf::Vector2i{ coordx, coordy }, static_cast<float>(size));
+			Chunks.push_back(c);
 		}
 		else if (AddType == "ExampleComponent")
 		{
@@ -178,6 +181,7 @@ Chunk * GameFactory::ProduceChunk(std::string chunkname)
 			sf::Vector2f v;
 			input >> v;
 			ExampleComponent * e = new ExampleComponent(v);
+			Components.push_back(e);
 			c->addComponent(e);
 		}
 		else if (AddType == "MovableComponent")
@@ -189,6 +193,7 @@ Chunk * GameFactory::ProduceChunk(std::string chunkname)
 			sf::Vector2f v;
 			input >> v;
 			MovableComponent * m = new MovableComponent(v);
+			Components.push_back(m);
 			c->addComponent(m);
 		}
 	}

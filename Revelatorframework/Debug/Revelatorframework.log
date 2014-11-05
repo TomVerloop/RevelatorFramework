@@ -1,4 +1,4 @@
-﻿Build started 4/11/2014 9:14:54 AM.
+﻿Build started 5/11/2014 9:20:38 AM.
      1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Revelatorframework\Revelatorframework.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Revelatorfromework.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -29,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.56
+Time Elapsed 00:00:00.98
