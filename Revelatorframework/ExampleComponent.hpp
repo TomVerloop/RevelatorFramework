@@ -1,7 +1,7 @@
 #pragma once
-#include "GameComponent.hpp"
-#include "Drawable.hpp"
-#include "Collidable.hpp"
+#include <GameComponent.hpp>
+#include <Drawable.hpp>
+#include <Collidable.hpp>
 
 class ExampleDrawable : public Drawable
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "GameComponent.hpp"
+#include <GameComponent.hpp>
 class MovableComponent :
 	public GameComponent
 {

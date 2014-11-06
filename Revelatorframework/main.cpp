@@ -1,23 +1,15 @@
 #include <SFML/Graphics.hpp>
-#include "ScreenManager.hpp"
-#include "GameFactory.hpp"
+#include <ScreenManager.hpp>
+#include <GameFactory.hpp>
 
-ScreenManager * InitializeScreen()
-{
-	GameFactory * f = GameFactory::getInstance();
-	ScreenManager * manager = new ScreenManager();
-	manager->addScreen("MainScreen", f->ProduceScreen("MainScreen"));
-	manager->setActiveScreen("MainScreen");
-	return manager;
-}
+
 
 int main(int argc, char* argv[])
 {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "AI Simulation");
 	sf::CircleShape shape(100.f);
-	ScreenManager * screenmanager = InitializeScreen();
+	ScreenManager * screenmanager = ScreenManager::getInstance();
 	shape.setFillColor(sf::Color::Green);
-	ScreenManager ScreenManager;
 	while (window.isOpen())
 	{
 		sf::Event event;

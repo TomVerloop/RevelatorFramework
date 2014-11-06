@@ -52,7 +52,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\SFML-2.1\include;$(SolutionDir)\RevelatorFramework_API</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -71,7 +71,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\SFML-2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\SFML-2.1\include;$(SolutionDir)\RevelatorFramework_API</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
@@ -84,45 +84,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="UpdateData.cpp" />
-    <ClCompile Include="Chunk.cpp" />
-    <ClCompile Include="ChunkManager.cpp" />
-    <ClCompile Include="Collidable.cpp" />
-    <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="ExampleComponent.cpp" />
-    <ClCompile Include="GameComponent.cpp" />
-    <ClCompile Include="GameFactory.cpp" />
-    <ClCompile Include="GameScreen.cpp" />
-    <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MovableComponent.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="ScreenManager.cpp" />
-    <ClCompile Include="ScreenTransaction.cpp" />
-    <ClCompile Include="Sensor.cpp" />
-    <ClCompile Include="Spawner.cpp" />
-    <ClCompile Include="Utils.cpp" />
-    <ClCompile Include="WindowManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UpdateData.hpp" />
-    <ClInclude Include="Chunk.hpp" />
-    <ClInclude Include="ChunkManager.hpp" />
-    <ClInclude Include="Collidable.hpp" />
-    <ClInclude Include="Drawable.hpp" />
     <ClInclude Include="ExampleComponent.hpp" />
-    <ClInclude Include="GameComponent.hpp" />
-    <ClInclude Include="GameFactory.hpp" />
-    <ClInclude Include="GameScreen.hpp" />
-    <ClInclude Include="Layer.hpp" />
     <ClInclude Include="MovableComponent.hpp" />
-    <ClInclude Include="Rectangle.hpp" />
-    <ClInclude Include="ScreenManager.hpp" />
-    <ClInclude Include="ScreenTransaction.hpp" />
-    <ClInclude Include="Sensor.hpp" />
-    <ClInclude Include="Spawner.hpp" />
-    <ClInclude Include="Utils.hpp" />
-    <ClInclude Include="WindowManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RevelatorFramework_API\RevelatorFramework_API.vcxproj">
+      <Project>{9d07c519-f2e5-431c-92a5-4d6f294f93c6}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
