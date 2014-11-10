@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/ScreenManager.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/ScreenManager.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_screen_manager_8hpp_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,50 +110,43 @@ $(document).ready(function(){initNavTree('_screen_manager_8hpp_source.html','');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_game_screen_8hpp.html">GameScreen.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_game_factory_8hpp.html">GameFactory.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_screen_manager.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_screen_manager.html">ScreenManager</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733">ScreenManager</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_screen_manager.html#a515ec6aabc9fefe3c1cfbe734877da1e">~ScreenManager</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9">Update</a>(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#abcf990ad052121e6ebd2ab03771657df">Draw</a>(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#a2e6e206c2ff265c534c802898c9c078b">addScreen</a>(std::string name,<a class="code" href="class_game_screen.html">GameScreen</a> * screen);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8">removeScreen</a>(std::string name);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_game_screen.html">GameScreen</a> * <a class="code" href="class_screen_manager.html#a510ee04534746a6e72fa789539dc2d83">getScreen</a>(std::string name);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#aa806de1587575859315d975daa025688">pushTransaction</a>(<a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * transaction);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_screen_manager.html#a578dea02971b86905fee58593622495b">setActiveScreen</a>(std::string name);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) ~<a class="code" href="class_screen_manager.html">ScreenManager</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keyword">static</span> <a class="code" href="class_screen_manager.html">ScreenManager</a> * getInstance();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> Update(<a class="code" href="class_update_data.html">UpdateData</a> * updateobject);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> Draw(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keywordtype">void</span> addScreen(std::string name, <a class="code" href="class_game_screen.html">GameScreen</a> * screen);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keywordtype">void</span> removeScreen(std::string name);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <a class="code" href="class_game_screen.html">GameScreen</a> * getScreen(std::string name);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keywordtype">void</span> pushTransaction(<a class="code" href="class_screen_transaction.html">ScreenTransaction</a> * transaction);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <span class="keywordtype">void</span> setActiveScreen(std::string name);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport) <a class="code" href="class_screen_manager.html">ScreenManager</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_screen_manager.html#a54eb2c9667efda525a35d0d7043e8807">   21</a></span>&#160;    std::map&lt;std::string, GameScreen *&gt; <a class="code" href="class_screen_manager.html#a54eb2c9667efda525a35d0d7043e8807">Screens</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">   22</a></span>&#160;    <a class="code" href="class_game_screen.html">GameScreen</a> * <a class="code" href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">ActiveScreen</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif //! _SCREEN_MANAGER</span></div>
-<div class="ttc" id="class_screen_manager_html_a510ee04534746a6e72fa789539dc2d83"><div class="ttname"><a href="class_screen_manager.html#a510ee04534746a6e72fa789539dc2d83">ScreenManager::getScreen</a></div><div class="ttdeci">GameScreen * getScreen(std::string name)</div></div>
-<div class="ttc" id="class_screen_manager_html_a578dea02971b86905fee58593622495b"><div class="ttname"><a href="class_screen_manager.html#a578dea02971b86905fee58593622495b">ScreenManager::setActiveScreen</a></div><div class="ttdeci">void setActiveScreen(std::string name)</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:41</div></div>
-<div class="ttc" id="class_screen_manager_html_a515ec6aabc9fefe3c1cfbe734877da1e"><div class="ttname"><a href="class_screen_manager.html#a515ec6aabc9fefe3c1cfbe734877da1e">ScreenManager::~ScreenManager</a></div><div class="ttdeci">~ScreenManager()</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:8</div></div>
-<div class="ttc" id="class_screen_manager_html_a2e6e206c2ff265c534c802898c9c078b"><div class="ttname"><a href="class_screen_manager.html#a2e6e206c2ff265c534c802898c9c078b">ScreenManager::addScreen</a></div><div class="ttdeci">void addScreen(std::string name, GameScreen *screen)</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:35</div></div>
+<div class="ttc" id="_game_factory_8hpp_html"><div class="ttname"><a href="_game_factory_8hpp.html">GameFactory.hpp</a></div></div>
 <div class="ttc" id="_game_screen_8hpp_html"><div class="ttname"><a href="_game_screen_8hpp.html">GameScreen.hpp</a></div></div>
 <div class="ttc" id="class_game_screen_html"><div class="ttname"><a href="class_game_screen.html">GameScreen</a></div><div class="ttdef"><b>Definition:</b> GameScreen.hpp:11</div></div>
 <div class="ttc" id="class_screen_manager_html_a54eb2c9667efda525a35d0d7043e8807"><div class="ttname"><a href="class_screen_manager.html#a54eb2c9667efda525a35d0d7043e8807">ScreenManager::Screens</a></div><div class="ttdeci">std::map&lt; std::string, GameScreen * &gt; Screens</div><div class="ttdef"><b>Definition:</b> ScreenManager.hpp:21</div></div>
 <div class="ttc" id="class_screen_manager_html_abb46941be1b908a2b9d8053409e89597"><div class="ttname"><a href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">ScreenManager::ActiveScreen</a></div><div class="ttdeci">GameScreen * ActiveScreen</div><div class="ttdef"><b>Definition:</b> ScreenManager.hpp:22</div></div>
 <div class="ttc" id="class_screen_transaction_html"><div class="ttname"><a href="class_screen_transaction.html">ScreenTransaction</a></div><div class="ttdef"><b>Definition:</b> ScreenTransaction.hpp:6</div></div>
-<div class="ttc" id="class_screen_manager_html_aa806de1587575859315d975daa025688"><div class="ttname"><a href="class_screen_manager.html#aa806de1587575859315d975daa025688">ScreenManager::pushTransaction</a></div><div class="ttdeci">void pushTransaction(ScreenTransaction *transaction)</div></div>
-<div class="ttc" id="class_screen_manager_html_a9bb115d54e94b72618361f4a347e26c8"><div class="ttname"><a href="class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8">ScreenManager::removeScreen</a></div><div class="ttdeci">void removeScreen(std::string name)</div></div>
-<div class="ttc" id="class_screen_manager_html_a269d1b374ba195a036f03bd3caa897d9"><div class="ttname"><a href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9">ScreenManager::Update</a></div><div class="ttdeci">virtual void Update(UpdateData *updateobject)</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:13</div></div>
+<div class="ttc" id="class_screen_manager_html_ab348f37f1c0e6324ce57c4fbd3ec7472"><div class="ttname"><a href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">ScreenManager::__declspec</a></div><div class="ttdeci">__declspec(dllexport)~ScreenManager()</div></div>
 <div class="ttc" id="class_update_data_html"><div class="ttname"><a href="class_update_data.html">UpdateData</a></div><div class="ttdef"><b>Definition:</b> UpdateData.hpp:3</div></div>
 <div class="ttc" id="class_screen_manager_html"><div class="ttname"><a href="class_screen_manager.html">ScreenManager</a></div><div class="ttdef"><b>Definition:</b> ScreenManager.hpp:7</div></div>
-<div class="ttc" id="class_screen_manager_html_ab397f82b180ee7d50cc1e305c19ed733"><div class="ttname"><a href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733">ScreenManager::ScreenManager</a></div><div class="ttdeci">ScreenManager()</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:3</div></div>
-<div class="ttc" id="class_screen_manager_html_abcf990ad052121e6ebd2ab03771657df"><div class="ttname"><a href="class_screen_manager.html#abcf990ad052121e6ebd2ab03771657df">ScreenManager::Draw</a></div><div class="ttdeci">virtual void Draw(sf::RenderWindow &amp;window, sf::Vector2f offset)</div><div class="ttdef"><b>Definition:</b> ScreenManager.cpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_screen_manager_8hpp.html">ScreenManager.hpp</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_screen_manager_8hpp.html">ScreenManager.hpp</a></li>
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:54 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

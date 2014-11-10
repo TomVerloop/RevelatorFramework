@@ -51,5 +51,5 @@ void MovableComponent::Update(UpdateData * updateobject)
 
 void MovableComponent::Draw(sf::RenderWindow & window, sf::Vector2f offset)
 {
-	drawable->Draw(window, offset + *getPosition());
+	drawable->Draw(window, offset + getPosition());
 }

@@ -1,4 +1,5 @@
 #include "GameFactory.hpp"
+#include <iostream>
 
 std::ifstream & operator>>(std::ifstream & input, sf::Vector2f & rhs)
 {
@@ -11,15 +12,125 @@ std::ifstream & operator>>(std::ifstream & input, sf::Vector2f & rhs)
 	return input;
 }
 
+std::ifstream & operator>>(std::ifstream & input, ProducerPackage & rhs)
+{
+	char c;
+	std::string Type;
+	std::string Name;
+	while (1)
+	{
+		if (!(input >> Type)){ throw std::exception("Type data not found "); }
+		if (Type != "END")
+		{
+			if (!(input >> c))
+			{
+				throw std::exception("Where is the comma");
+			}
+			if (!(input >> Name))
+			{
+				throw std::exception("Name data not found");
+			};
+			if (!(input >> c))
+			{
+				throw std::exception("Where is the comma");
+			}
+
+			if (Type == "float")
+			{
+				float f;
+				input >> f;
+				rhs.PutValue(Name, f);
+			}
+			else if (Type == "int")
+			{
+				int i;
+				input >> i;
+				rhs.PutValue(Name, i);
+			}
+			else if (Type == "string")
+			{
+				std::string s;
+				input >> s;
+				rhs.PutValue(Name, s);
+			}
+			else if (Type == "bool")
+			{
+				bool b;
+				input >> b;
+				rhs.PutValue(Name, b);
+			}
+			else if (Type == "double")
+			{
+				double d;
+				input >> d;
+				rhs.PutValue(Name, d);
+			}
+			else if (Type == "long")
+			{
+				long l;
+				input >> l;
+				rhs.PutValue(Name, l);
+			}
+
+		}
+		else
+		{
+			break;
+		}
+	}
+	return input;
+}
+
 GameFactory::GameFactory()
 {
+
 }
 
 
 GameFactory::~GameFactory()
 {
+
 }
 
+
+void GameFactory::RegisterProducer(std::string Name, GameObjectProducer * producer)
+{
+	Producers[Name] = producer;
+}
+
+GameComponent * GameFactory::ProduceGameObject(std::string Name)
+{
+	if (Producers.find(Name) != Producers.end())
+	{
+		GameComponent * temp = Producers[Name]->Produce();
+		Components.push_back(temp);
+		return temp;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+GameComponent * GameFactory::ProduceGameObject(std::string Name, ProducerPackage package)
+{
+	if (Producers.find(Name) != Producers.end())
+	{
+		GameComponent * temp = Producers[Name]->Produce(package);
+		Components.push_back(temp);
+		return temp;
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+void GameFactory::DeleteDecommisioned(GameComponent * component)
+{
+	Components.remove(component);
+	delete component;
+}
 
 GameFactory * GameFactory::getInstance()
 {
@@ -32,170 +143,85 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 	GameScreen * screen = new GameScreen();
 	Screens.push_back(screen);
 	std::ifstream input("Resourses\\GameScreens\\" + screenname + ".txt");
-	std::string AddType = "";
+	std::string AddType;
 	while (!input.eof())
 	{
+		AddType = "";
 		input >> AddType;
 		if (AddType == "LAYER")
 		{
 			std::string Layername = "";
+			int ChunkSize = 0;
+			int Chunks = 0;
+			bool enabled = true;
+			bool willupdate = true;
+			bool willdraw = true;
+			
 			input >> Layername;
-			Layer * l = ProduceLayer(Layername);
+			input >> ChunkSize;
+			input >> Chunks;
+			input >> enabled;
+			input >> willupdate;
+			input >> willdraw;
+
+			Layer * l = ProduceLayer(Layername,ChunkSize,Chunks,enabled,willupdate,willdraw);
 			screen->addLayer(Layername, l);
+			if (AddType == "END")
+			{
+				break;
+			}
 		}
 	}
 	return screen;
 }
 
-Layer * GameFactory::ProduceLayer(std::string layername)
+Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chunks,bool enabled,bool willupdate,bool willdraw)
 {
 	Layer * layer = new Layer();
+	layer->setEnabled(enabled);
+	layer->setUpdating(willupdate);
+	layer->setDrawing(willdraw);
 	Layers.push_back(layer);
 	std::ifstream input("Resourses\\Layers\\" + layername + ".txt");
 	std::string AddType = "";
-	Chunk * lastaddedchunk = nullptr;
+	std::vector<std::vector<Chunk *>> ChunkVector(Chunks, std::vector<Chunk *>(Chunks));
+	ChunkVector.resize(Chunks);
+
+	for (int i = 0; i < Chunks; i++)
+	{
+		for (int j = 0; j < Chunks; j++)
+		{
+			ChunkVector.at(i).at(j) = (new Chunk(sf::Vector2i{ i, j }, ChunkSize));
+			if (i > 0)
+			{
+				ChunkVector.at(i).at(j)->setLeft(ChunkVector.at(i - 1).at(j));
+				ChunkVector.at(i - 1).at(j)->setRight(ChunkVector.at(i).at(j));
+			}
+			if (j > 0)
+			{
+				ChunkVector.at(i).at(j)->setTop(ChunkVector.at(i).at(j - 1));
+				ChunkVector.at(i).at(j - 1)->setBottom(ChunkVector.at(i).at(j));
+			}
+			if (i > 0 && j > 0)
+			{
+				ChunkVector.at(i).at(j)->setLeftTop(ChunkVector.at(i - 1).at(j - 1));
+				ChunkVector.at(i - 1).at(j - 1)->setRightBottom(ChunkVector.at(i).at(j));
+			}
+			if (i == 0 && j == 0)
+			{
+				layer->getChunkManager()->setFirstChunk(ChunkVector.at(i).at(j));
+			}
+		}
+	}
 	while (!input.eof())
 	{
 		input >> AddType;
-		if (AddType == "Chunk")
+		if (Producers.find(AddType) != Producers.end())
 		{
-
-			std::string Chunkname = "";
-			std::string activechunk = "";
-			input >> Chunkname;
-			input >> activechunk;
-			Chunk * c = ProduceChunk(Chunkname);
-			if (lastaddedchunk != nullptr)
-			{
-				sf::Vector2i temp = lastaddedchunk->getCoords() + c->getCoords();
-				if (temp == sf::Vector2i{ 1, 0 })
-				{
-					lastaddedchunk->setRight(c);
-					c->setLeft(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ 1, 1 })
-				{
-					lastaddedchunk->setRightBottom(c);
-					c->setLeftTop(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ 0, 1 })
-				{
-					lastaddedchunk->setBottom(c);
-					c->setTop(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ -1, 1 })
-				{
-					lastaddedchunk->setLeftBottom(c);
-					c->setRightTop(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ -1, 0 })
-				{
-					lastaddedchunk->setLeft(c);
-					c->setRight(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ -1, -1 })
-				{
-					lastaddedchunk->setLeftTop(c);
-					c->setRightBottom(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ 0, -1 })
-				{
-					lastaddedchunk->setTop(c);
-					c->setBottom(lastaddedchunk);
-				}
-				else if (temp == sf::Vector2i{ 1, -1 })
-				{
-					lastaddedchunk->setRightTop(c);
-					c->setLeftBottom(lastaddedchunk);
-				}
-				else
-				{
-					throw std::exception("Chunk Does not Link check chunk hiarchy");
-				}
-
-			}
-			ChunkManager * cm = layer->getChunkManager();
-			if (activechunk == "true")
-			{
-				cm->setActiveChunk(c);
-			}if (lastaddedchunk == nullptr)
-			{
-				cm->setFirstChunk(c);
-			}
-			lastaddedchunk = c;
-
-		}
-		else if (AddType == "Enabled")
-		{
-			std::string value = "";
-			input >> value;
-			layer->setEnabled(value == "true");
-		}
-		else if (AddType == "WillUpdate")
-		{
-			std::string value = "";
-			input >> value;
-			layer->setUpdating(value == "true");
-		}
-		else if (AddType == "WillDraw")
-		{
-			std::string value = "";
-			input >> value;
-			layer->setUpdating(value == "true");
+			ProducerPackage package;
+			input >> package;
+			layer->getChunkManager()->addGameComponent(ProduceGameObject(AddType,package));
 		}
 	}
 	return layer;
-}
-
-Chunk * GameFactory::ProduceChunk(std::string chunkname)
-{
-	Chunk * c = nullptr;
-	std::ifstream input("Resourses\\Chunks\\" + chunkname + ".txt");
-	std::string AddType = "";
-	int coordx = 0;
-	int coordy = 0;
-	int size = 0;
-	while (!input.eof())
-	{
-		input >> AddType;
-		if (AddType == "COORDX")
-		{
-			input >> coordx;
-		}
-		else if (AddType == "COORDY")
-		{
-			input >> coordy;
-		}
-		else if (AddType == "SIZE")
-		{
-			input >> size;
-			c = new Chunk(sf::Vector2i{ coordx, coordy }, static_cast<float>(size));
-			Chunks.push_back(c);
-		}
-		else if (AddType == "ExampleComponent")
-		{
-			if (c == nullptr)
-			{
-				throw std::exception("order of chunk file wrong. first coords then size then components");
-			}
-			sf::Vector2f v;
-			input >> v;
-			//ExampleComponent * e = new ExampleComponent(v);
-			//Components.push_back(e);
-			//c->addComponent(e);
-		}
-		else if (AddType == "MovableComponent")
-		{
-			if (c == nullptr)
-			{
-				throw std::exception("order of chunk file wrong. first coords then size then components");
-			}
-			sf::Vector2f v;
-			input >> v;
-			//MovableComponent * m = new MovableComponent(v);
-			//Components.push_back(m);
-			//c->addComponent(m);
-		}
-	}
-	return c;
 }

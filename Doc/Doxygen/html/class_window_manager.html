@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_window_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,28 +117,17 @@ $(document).ready(function(){initNavTree('class_window_manager.html','');});
 Collaboration diagram for WindowManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_window_manager__coll__graph.png" border="0" usemap="#_window_manager_coll__map" alt="Collaboration graph"/></div>
-<map name="_window_manager_coll__map" id="_window_manager_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a39b504521f91ffbabd88fa1e014d668d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a39b504521f91ffbabd88fa1e014d668d">WindowManager</a> (sf::VideoMode videomode, std::string name, sf::Uint32 style=7U)</td></tr>
-<tr class="separator:a39b504521f91ffbabd88fa1e014d668d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19fd6e41c42760af82460d9851780d82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a19fd6e41c42760af82460d9851780d82">~WindowManager</a> ()</td></tr>
-<tr class="separator:a19fd6e41c42760af82460d9851780d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff6aee52b2c1ab9fe85027262b4b877f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#aff6aee52b2c1ab9fe85027262b4b877f">WindowManager</a> (const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;windowmanager)=delete</td></tr>
-<tr class="separator:aff6aee52b2c1ab9fe85027262b4b877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11afbf3f6296341434679bbedb44c989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_window_manager.html">WindowManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a11afbf3f6296341434679bbedb44c989">operator=</a> (const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;windowmanager)=delete</td></tr>
-<tr class="separator:a11afbf3f6296341434679bbedb44c989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7051ab4ec34157357d2fc029b5283ba0"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a7051ab4ec34157357d2fc029b5283ba0">getWindow</a> ()</td></tr>
-<tr class="separator:a7051ab4ec34157357d2fc029b5283ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6ca24d553fcbc205ca6eba14eea324"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a6c6ca24d553fcbc205ca6eba14eea324">getCameraPosition</a> ()</td></tr>
-<tr class="separator:a6c6ca24d553fcbc205ca6eba14eea324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee838ab6472ae7fcfd607831a8228d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1">setCameraPosition</a> (sf::Vector2f position)</td></tr>
-<tr class="separator:a5ee838ab6472ae7fcfd607831a8228d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbc66e888f2a67ab0203357005bc89d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#abbc66e888f2a67ab0203357005bc89d8">MoveCamera</a> (sf::Vector2f direction)</td></tr>
-<tr class="separator:abbc66e888f2a67ab0203357005bc89d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959d7ca3b42b73b1e6c17580d9593436"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <br class="typebreak"/>
+<a class="el" href="class_window_manager.html">WindowManager</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a959d7ca3b42b73b1e6c17580d9593436">__declspec</a> (dllexport)~<a class="el" href="class_window_manager.html">WindowManager</a>()</td></tr>
+<tr class="separator:a959d7ca3b42b73b1e6c17580d9593436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0119ba52296a9c80eb41a49a49270be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#af0119ba52296a9c80eb41a49a49270be">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>(const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;windowmanager)=delete</td></tr>
+<tr class="separator:af0119ba52296a9c80eb41a49a49270be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b83e3acf96e8c764f9900227a6c3bf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a6b83e3acf96e8c764f9900227a6c3bf8">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a> &amp;operator</td></tr>
+<tr class="separator:a6b83e3acf96e8c764f9900227a6c3bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -147,86 +136,15 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a459ad4d059f5c4f286c24af4550c6101"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101">CameraPosition</a></td></tr>
 <tr class="separator:a459ad4d059f5c4f286c24af4550c6101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a39b504521f91ffbabd88fa1e014d668d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WindowManager::WindowManager </td>
-          <td>(</td>
-          <td class="paramtype">sf::VideoMode&#160;</td>
-          <td class="paramname"><em>videomode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Uint32&#160;</td>
-          <td class="paramname"><em>style</em> = <code>7U</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a19fd6e41c42760af82460d9851780d82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WindowManager::~WindowManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aff6aee52b2c1ab9fe85027262b4b877f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">WindowManager::WindowManager </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>windowmanager</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6c6ca24d553fcbc205ca6eba14eea324"></a>
+<a class="anchor" id="a959d7ca3b42b73b1e6c17580d9593436"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">sf::Vector2f WindowManager::getCameraPosition </td>
+          <td class="memname">__declspec (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>(sf WindowManager::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -235,47 +153,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7051ab4ec34157357d2fc029b5283ba0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::RenderWindow * WindowManager::getWindow </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abbc66e888f2a67ab0203357005bc89d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WindowManager::MoveCamera </td>
-          <td>(</td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>direction</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph.png" border="0" usemap="#class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph" alt=""/></div>
-<map name="class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph" id="class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph">
-<area shape="rect" id="node2" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="255,5,444,47"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a11afbf3f6296341434679bbedb44c989"></a>
+<a class="anchor" id="af0119ba52296a9c80eb41a49a49270be"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -283,11 +161,11 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_window_manager.html">WindowManager</a>&amp; WindowManager::operator= </td>
+          <td class="memname">WindowManager::__declspec </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;&#160;</td>
-          <td class="paramname"><em>windowmanager</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -299,28 +177,19 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5ee838ab6472ae7fcfd607831a8228d1"></a>
+<a class="anchor" id="a6b83e3acf96e8c764f9900227a6c3bf8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WindowManager::setCameraPosition </td>
+          <td class="memname">WindowManager::__declspec </td>
           <td>(</td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph.png" border="0" usemap="#class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph" alt=""/></div>
-<map name="class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph" id="class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph">
-<area shape="rect" id="node2" href="class_window_manager.html#abbc66e888f2a67ab0203357005bc89d8" title="WindowManager::MoveCamera" alt="" coords="243,13,444,39"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -365,9 +234,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_window_manager_8hpp_source.html">WindowManager.hpp</a></li>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_window_manager_8cpp.html">WindowManager.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_window_manager_8hpp_source.html">WindowManager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -375,7 +243,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_window_manager.html">WindowManager</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:11 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

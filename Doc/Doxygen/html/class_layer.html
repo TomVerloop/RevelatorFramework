@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_layer.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,37 +118,36 @@ Collaboration diagram for Layer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer__coll__graph.png" border="0" usemap="#_layer_coll__map" alt="Collaboration graph"/></div>
 <map name="_layer_coll__map" id="_layer_coll__map">
-<area shape="rect" id="node2" href="class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="5,624,164,877"/><area shape="rect" id="node3" href="class_chunk_manager.html" title="{ChunkManager\n||+ ChunkManager()\l+ ~ChunkManager()\l+ Update()\l+ Draw()\l+ setActiveChunk()\l+ setFirstChunk()\l}" alt="" coords="188,675,325,826"/><area shape="rect" id="node4" href="class_chunk.html" title="{Chunk\n|# Components\l# size\l# ChunkCoord\l# RemoveFromChunk\l&#45; PurePosition\l|+ Chunk()\l+ ~Chunk()\l+ addComponent()\l+ Update()\l+ Draw()\l+ DrawSelf()\l+ setLeftTop()\l+ setTop()\l+ setRightTop()\l+ setLeft()\land 9 more...\l&#45; Collide()\l&#45; ExtendCollide()\l&#45; Sense()\l&#45; ExtendSense()\l&#45; MoveComponentToNextChunk()\l&#45; AxisisInBounds()\l&#45; RemoveFlaggedFromChunk()\l}" alt="" coords="151,161,363,547"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="205,5,308,112"/></map>
+<area shape="rect" id="node2" href="class_screen_transaction.html" title="{ScreenTransaction\n|+ Message\l+ from\l+ to\l# Id\l# From\l# To\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,205,136,488"/><area shape="rect" id="node6" href="class_game_component.html" title="{GameComponent\n|+ y\l# Name\l# ID\l# Position\l# DeadComponent\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 9 more...\l}" alt="" coords="278,551,407,833"/><area shape="rect" id="node3" href="class_chunk_manager.html" title="{ChunkManager\n||+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="141,1359,251,1509"/><area shape="rect" id="node4" href="class_chunk.html" title="{Chunk\n|&#45; PurePosition\l&#45; Components\l&#45; size\l&#45; ChunkCoord\l&#45; RemoveFromChunk\l&#45; offset\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 7 more...\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l}" alt="" coords="271,896,414,1281"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="553,301,661,393"/><area shape="rect" id="node7" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="189,5,297,156"/><area shape="rect" id="node8" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="289,249,397,444"/><area shape="rect" id="node9" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="421,279,529,415"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f623c7c4737dc29ecc86978d243ac6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a> ()</td></tr>
-<tr class="separator:a8f623c7c4737dc29ecc86978d243ac6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1ba4804451dfe6cc357194e42762ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">~Layer</a> ()</td></tr>
-<tr class="separator:a1b1ba4804451dfe6cc357194e42762ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db2f37689d5ee4958167e539ab4ce69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a6db2f37689d5ee4958167e539ab4ce69">Update</a> (<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)</td></tr>
-<tr class="separator:a6db2f37689d5ee4958167e539ab4ce69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008068a5a6bd4dd274bb01bf0246cfaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
-<tr class="separator:a008068a5a6bd4dd274bb01bf0246cfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ea9075da50ba00ce591c365f1df947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a36ea9075da50ba00ce591c365f1df947">hasTransaction</a> ()</td></tr>
-<tr class="separator:a36ea9075da50ba00ce591c365f1df947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828daf5d76e298c41fbe1d67a680b706"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a828daf5d76e298c41fbe1d67a680b706">getTransaction</a> ()</td></tr>
-<tr class="separator:a828daf5d76e298c41fbe1d67a680b706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c59677e3c56a7fd5e3dc985bdb9b4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">isEnabled</a> ()</td></tr>
-<tr class="separator:a57c59677e3c56a7fd5e3dc985bdb9b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46a91415e6bdc2fdb75ae0ac8498868f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">isDrawing</a> ()</td></tr>
-<tr class="separator:a46a91415e6bdc2fdb75ae0ac8498868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2892b95b2df74446d89e4a6388f0c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">isUpdating</a> ()</td></tr>
-<tr class="separator:ac2892b95b2df74446d89e4a6388f0c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b9de1ac0f3eaa8274b8d0a901a825c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">setEnabled</a> (bool b)</td></tr>
-<tr class="separator:a68b9de1ac0f3eaa8274b8d0a901a825c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4f62b4c031e7c2f2d5635ccd38ddd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">setDrawing</a> (bool b)</td></tr>
-<tr class="separator:a0a4f62b4c031e7c2f2d5635ccd38ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0595efe93dbd63b05339f35399d1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">setUpdating</a> (bool b)</td></tr>
-<tr class="separator:a0e0595efe93dbd63b05339f35399d1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbfd549c4d1da2e4a2d78a33586c95e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk_manager.html">ChunkManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">getChunkManager</a> ()</td></tr>
-<tr class="separator:afbfd549c4d1da2e4a2d78a33586c95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef82e8c88a73de071f2951744dd5fbc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aef82e8c88a73de071f2951744dd5fbc7">__declspec</a> (dllexport) <a class="el" href="class_layer.html">Layer</a>()</td></tr>
+<tr class="separator:aef82e8c88a73de071f2951744dd5fbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17eacb9709778961a8f044834963c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ae17eacb9709778961a8f044834963c92">__declspec</a> (dllexport)~<a class="el" href="class_layer.html">Layer</a>()</td></tr>
+<tr class="separator:ae17eacb9709778961a8f044834963c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53cd45edd1551626f7a9349e368e445"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aa53cd45edd1551626f7a9349e368e445">__declspec</a> (dllexport) virtual void Update(<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)</td></tr>
+<tr class="separator:aa53cd45edd1551626f7a9349e368e445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6a84b41682f21a857dfd9fdf401c05"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) virtual <br class="typebreak"/>
+void Draw(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#acb6a84b41682f21a857dfd9fdf401c05">__declspec</a> (dllexport) bool hasTransaction()</td></tr>
+<tr class="separator:acb6a84b41682f21a857dfd9fdf401c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5da63da0e6aa4ba5d401dfacda98204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aa5da63da0e6aa4ba5d401dfacda98204">__declspec</a> (dllexport) <a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *getTransaction()</td></tr>
+<tr class="separator:aa5da63da0e6aa4ba5d401dfacda98204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b16aa0abac81bb0abfed937c02374cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a7b16aa0abac81bb0abfed937c02374cf">__declspec</a> (dllexport) bool isEnabled()</td></tr>
+<tr class="separator:a7b16aa0abac81bb0abfed937c02374cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8adf7a53cb647e84d749379930d897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#adf8adf7a53cb647e84d749379930d897">__declspec</a> (dllexport) bool isDrawing()</td></tr>
+<tr class="separator:adf8adf7a53cb647e84d749379930d897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b55bc3ac94c62d356bfc30f08382d6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a4b55bc3ac94c62d356bfc30f08382d6b">__declspec</a> (dllexport) bool isUpdating()</td></tr>
+<tr class="separator:a4b55bc3ac94c62d356bfc30f08382d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabba8310bc18ddf8488cd5685baab5e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aabba8310bc18ddf8488cd5685baab5e7">__declspec</a> (dllexport) void setEnabled(bool b)</td></tr>
+<tr class="separator:aabba8310bc18ddf8488cd5685baab5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5065c5c2027ec45a40870adca41522fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a5065c5c2027ec45a40870adca41522fc">__declspec</a> (dllexport) void setDrawing(bool b)</td></tr>
+<tr class="separator:a5065c5c2027ec45a40870adca41522fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a99eb35b1d1780c45acd3af6e4ffa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a17a99eb35b1d1780c45acd3af6e4ffa2">__declspec</a> (dllexport) void setUpdating(bool b)</td></tr>
+<tr class="separator:a17a99eb35b1d1780c45acd3af6e4ffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe1685bbc80b73fe42a2cc0c58a272d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a7fe1685bbc80b73fe42a2cc0c58a272d">__declspec</a> (dllexport) <a class="el" href="class_chunk_manager.html">ChunkManager</a> *getChunkManager()</td></tr>
+<tr class="separator:a7fe1685bbc80b73fe42a2cc0c58a272d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -163,120 +162,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a3f0f6e109409d047c650380b6715c316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a3f0f6e109409d047c650380b6715c316">transaction</a></td></tr>
 <tr class="separator:a3f0f6e109409d047c650380b6715c316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8f623c7c4737dc29ecc86978d243ac6f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Layer::Layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1b1ba4804451dfe6cc357194e42762ae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Layer::~Layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a008068a5a6bd4dd274bb01bf0246cfaf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Layer::Draw </td>
-          <td>(</td>
-          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
-          <td class="paramname"><em>window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph.png" border="0" usemap="#class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph" alt=""/></div>
-<map name="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph" id="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph">
-<area shape="rect" id="node2" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="ChunkManager::Draw" alt="" coords="144,5,291,32"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="Chunk::Draw" alt="" coords="339,5,435,32"/><area shape="rect" id="node4" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="Chunk::DrawSelf" alt="" coords="483,5,601,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="afbfd549c4d1da2e4a2d78a33586c95e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chunk_manager.html">ChunkManager</a>* Layer::getChunkManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph.png" border="0" usemap="#class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph" alt=""/></div>
-<map name="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph" id="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad" title="GameFactory::ProduceLayer" alt="" coords="220,5,409,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="457,5,656,32"/><area shape="rect" id="node4" href="main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="704,5,815,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="863,5,913,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a828daf5d76e298c41fbe1d67a680b706"></a>
+<a class="anchor" id="aef82e8c88a73de071f2951744dd5fbc7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> * Layer::getTransaction </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -285,13 +179,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a36ea9075da50ba00ce591c365f1df947"></a>
+<a class="anchor" id="ae17eacb9709778961a8f044834963c92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Layer::hasTransaction </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -300,7 +195,55 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a46a91415e6bdc2fdb75ae0ac8498868f"></a>
+<a class="anchor" id="aa53cd45edd1551626f7a9349e368e445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Layer::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb6a84b41682f21a857dfd9fdf401c05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__declspec (dllexport) virtual void Draw(sf Layer::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5da63da0e6aa4ba5d401dfacda98204"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Layer::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b16aa0abac81bb0abfed937c02374cf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -308,8 +251,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Layer::isDrawing </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -323,7 +267,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a57c59677e3c56a7fd5e3dc985bdb9b4c"></a>
+<a class="anchor" id="adf8adf7a53cb647e84d749379930d897"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -331,8 +275,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Layer::isEnabled </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -346,7 +291,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac2892b95b2df74446d89e4a6388f0c88"></a>
+<a class="anchor" id="a4b55bc3ac94c62d356bfc30f08382d6b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -354,8 +299,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Layer::isUpdating </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -369,7 +315,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a0a4f62b4c031e7c2f2d5635ccd38ddd1"></a>
+<a class="anchor" id="aabba8310bc18ddf8488cd5685baab5e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -377,10 +323,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Layer::setDrawing </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -393,7 +339,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a68b9de1ac0f3eaa8274b8d0a901a825c"></a>
+<a class="anchor" id="a5065c5c2027ec45a40870adca41522fc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -401,10 +347,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Layer::setEnabled </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -415,18 +361,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph.png" border="0" usemap="#class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph" alt=""/></div>
-<map name="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph" id="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad" title="GameFactory::ProduceLayer" alt="" coords="180,5,369,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="417,5,616,32"/><area shape="rect" id="node4" href="main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="664,5,775,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="823,5,873,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="a0e0595efe93dbd63b05339f35399d1ad"></a>
+<a class="anchor" id="a17a99eb35b1d1780c45acd3af6e4ffa2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -434,10 +371,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Layer::setUpdating </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -448,18 +385,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph.png" border="0" usemap="#class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph" alt=""/></div>
-<map name="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph" id="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad" title="GameFactory::ProduceLayer" alt="" coords="184,5,373,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="421,5,620,32"/><area shape="rect" id="node4" href="main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="668,5,779,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="827,5,877,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="a6db2f37689d5ee4958167e539ab4ce69"></a>
+<a class="anchor" id="a7fe1685bbc80b73fe42a2cc0c58a272d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -467,28 +395,19 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Layer::Update </td>
+          <td class="memname">Layer::__declspec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_update_data.html">UpdateData</a> *&#160;</td>
-          <td class="paramname"><em>updateobject</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_layer_a6db2f37689d5ee4958167e539ab4ce69_cgraph.png" border="0" usemap="#class_layer_a6db2f37689d5ee4958167e539ab4ce69_cgraph" alt=""/></div>
-<map name="class_layer_a6db2f37689d5ee4958167e539ab4ce69_cgraph" id="class_layer_a6db2f37689d5ee4958167e539ab4ce69_cgraph">
-<area shape="rect" id="node2" href="class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="156,223,315,249"/><area shape="rect" id="node3" href="class_chunk.html#a750907d92efc9e45bfff5e280fa55afe" title="Chunk::Update" alt="" coords="372,147,480,173"/><area shape="rect" id="node16" href="class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf" title="Chunk::getRight" alt="" coords="369,197,483,224"/><area shape="rect" id="node17" href="class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa" title="Chunk::getLeft" alt="" coords="373,248,479,275"/><area shape="rect" id="node18" href="class_chunk.html#a59eb282f08711420c1e966e30aab47e3" title="Chunk::getBottom" alt="" coords="363,299,489,325"/><area shape="rect" id="node4" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="549,5,729,32"/><area shape="rect" id="node5" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="556,56,723,83"/><area shape="rect" id="node6" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="Chunk::MoveComponentToNext\lChunk" alt="" coords="537,107,741,149"/><area shape="rect" id="node10" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="Chunk::RemoveFlaggedFrom\lChunk" alt="" coords="545,173,734,214"/><area shape="rect" id="node11" href="class_chunk.html#a85f10ca606a2cf0eaf3f760ff0748282" title="Chunk::Collide" alt="" coords="586,239,693,265"/><area shape="rect" id="node12" href="class_chunk.html#a23684bfafa76cadb95c81ba89b039461" title="Chunk::Sense" alt="" coords="587,289,691,316"/><area shape="rect" id="node7" href="class_game_component.html#aabb5e9e8ed6aa3a82f5d5b5733bf201c" title="GameComponent::getPosition" alt="" coords="789,64,985,91"/><area shape="rect" id="node8" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="Chunk::AxisisInBounds" alt="" coords="809,115,966,141"/><area shape="rect" id="node9" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="Chunk::addComponent" alt="" coords="810,165,965,192"/><area shape="rect" id="node13" href="class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3" title="Collidable::getCollider" alt="" coords="814,239,961,265"/><area shape="rect" id="node14" href="class_rectangle.html#a35c583bfb7eb652de61b7e32895d1579" title="Rectangle::getCenter" alt="" coords="815,289,959,316"/><area shape="rect" id="node15" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="807,340,967,367"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -593,9 +512,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_layer_8hpp_source.html">Layer.hpp</a></li>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_layer_8cpp.html">Layer.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_layer_8hpp_source.html">Layer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -603,7 +521,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_layer.html">Layer</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

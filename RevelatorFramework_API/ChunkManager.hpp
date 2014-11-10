@@ -11,6 +11,7 @@ public:
 	__declspec(dllexport) void Draw(sf::RenderWindow & window, sf::Vector2f offset);
 	__declspec(dllexport) void setActiveChunk(Chunk * c);
 	__declspec(dllexport) void setFirstChunk(Chunk * c);
+	__declspec(dllexport) void addGameComponent(GameComponent * c);
 
 private:
 	Chunk * ActiveChunk;

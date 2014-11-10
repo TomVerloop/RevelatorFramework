@@ -1,5 +1,5 @@
 #include "Chunk.hpp"
-
+#include "GameFactory.hpp"
 
 Chunk::Chunk(sf::Vector2i ChunkCoord, float size) : ChunkCoord{ ChunkCoord }, size{ size }, PurePosition{ ChunkCoord.x * size, ChunkCoord.y * size }
 {
@@ -49,12 +49,17 @@ void Chunk::Update(UpdateData * updateobject)
 		if (comp->hasSpawner())
 		{
 			Spawner * s = comp->getSpawner();
+			if (comp->isDead())
+			{
+				RemoveFromChunk.push_back(comp);
+				GameFactory::getInstance()->DeleteDecommisioned(comp);
+			}
 			for (int i = 0; i < s->ComponentCount(); i++)
 			{
 				Components.push_back(s->popComponent());
 			}
 		}
-		if (comp->getPosition()->x > size + PurePosition.x || comp->getPosition()->x < PurePosition.x || comp->getPosition()->y > size + PurePosition.y || comp->getPosition()->y < PurePosition.y)
+		if (comp->getPosition().x > size + PurePosition.x || comp->getPosition().x < PurePosition.x || comp->getPosition().y > size + PurePosition.y || comp->getPosition().y < PurePosition.y)
 		{
 			MoveComponentToNextChunk(comp);
 		}
@@ -113,7 +118,7 @@ void Chunk::Collide(UpdateData * updateobject)
 		if (comp->hasCollidable() && comp->getCollidable()->isMoved())
 		{
 			CollideSingle(updateobject, comp);
-			Rectangle r{ comp->getCollidable()->getCollider() };
+			sf::Rect<float> r{ comp->getCollidable()->getCollider() };
 			if (Right != nullptr && ((r.left + r.width) > PurePosition.x + size))
 			{
 				Right->CollideSingle(updateobject, comp);
@@ -138,7 +143,7 @@ void Chunk::Sense(UpdateData * updateobject)
 		{
 			SenseSingle(updateobject, comp);
 			float rad = comp->getSensor()->GetVisionRadius();
-			sf::Vector2f v{ comp->getCollidable()->getCollider().getCenter() };
+			sf::Vector2f v{ (comp->getCollidable()->getCollider().left + comp->getCollidable()->getCollider().width / 2), (comp->getCollidable()->getCollider().top + comp->getCollidable()->getCollider().height / 2) };
 			if (Right != nullptr && v.x + rad > PurePosition.x + size)
 			{
 				Right->SenseSingle(updateobject, comp);
@@ -179,13 +184,13 @@ void Chunk::Sense(UpdateData * updateobject)
 void Chunk::SenseSingle(UpdateData * updateobject, GameComponent * comp)
 {
 	Sensor * sensor = comp->getSensor();
-	sf::Vector2f CenterOfSensor = comp->getCollidable()->getCollider().getCenter();
+	sf::Vector2f CenterOfSensor{ (comp->getCollidable()->getCollider().left + comp->getCollidable()->getCollider().width / 2), (comp->getCollidable()->getCollider().top + comp->getCollidable()->getCollider().height / 2) };
 	for (auto Sensored : Components)
 	{
 
 		if (Sensored != comp && Sensored->hasCollidable())
 		{
-			sf::Vector2f CenterOfSensed = Sensored->getCollidable()->getCollider().getCenter();
+			sf::Vector2f CenterOfSensed{ (Sensored->getCollidable()->getCollider().left + Sensored->getCollidable()->getCollider().width / 2), (Sensored->getCollidable()->getCollider().top + Sensored->getCollidable()->getCollider().height / 2) };
 			float xy = abs(CenterOfSensor.x) - abs(CenterOfSensed.x);
 			float yz = abs(CenterOfSensor.y) - abs(CenterOfSensed.x);
 			float zx = sqrt(pow(xy, 2) + pow(yz, 2));
@@ -228,15 +233,35 @@ void Chunk::DrawSelf(sf::RenderWindow & window, sf::Vector2f offset, Position po
 
 void Chunk::addComponent(GameComponent * c)
 {
-	Components.push_back(c);
+	sf::Vector2f v{ c->getPosition() };
+	if (v.x < PurePosition.x)
+	{
+		Left->addComponent(c);
+	}
+	else if (v.x >(PurePosition.x + size))
+	{
+		Right->addComponent(c);
+	}
+	else if (v.y < PurePosition.y)
+	{
+		Top->addComponent(c);
+	}
+	else if (v.y > (PurePosition.y + size))
+	{
+		Bottom->addComponent(c);
+	}
+	else
+	{
+		Components.push_back(c);
+	}
 }
 
 
 void Chunk::MoveComponentToNextChunk(GameComponent * c)
 {
-	sf::Vector2f * pos = c->getPosition();
+	sf::Vector2f pos = c->getPosition();
 
-	if (pos->x > size + PurePosition.x && AxisisInBounds(pos->y, PurePosition.x))
+	if (pos.x > size + PurePosition.x && AxisisInBounds(pos.y, PurePosition.x))
 	{
 		if (Right != nullptr)
 		{
@@ -245,10 +270,10 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->x = size;
+			pos.x = size;
 		}
 	}
-	else if (pos->x > size + PurePosition.x && pos->y > size + PurePosition.y)
+	else if (pos.x > size + PurePosition.x && pos.y > size + PurePosition.y)
 	{
 		if (RightBottom != nullptr)
 		{
@@ -257,11 +282,11 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->x = size;
-			pos->y = size;
+			pos.x = size;
+			pos.y = size;
 		}
 	}
-	else if (AxisisInBounds(pos->x, PurePosition.x) && pos->y > size + PurePosition.y)
+	else if (AxisisInBounds(pos.x, PurePosition.x) && pos.y > size + PurePosition.y)
 	{
 		if (Bottom != nullptr)
 		{
@@ -270,10 +295,10 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->y = size;
+			pos.y = size;
 		}
 	}
-	else if (pos->x <  PurePosition.x && pos->y > size + PurePosition.y)
+	else if (pos.x <  PurePosition.x && pos.y > size + PurePosition.y)
 	{
 		if (LeftBottom != nullptr)
 		{
@@ -282,11 +307,11 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->y = size;
-			pos->x = 0;
+			pos.y = size;
+			pos.x = 0;
 		}
 	}
-	else if (pos->x < PurePosition.x && AxisisInBounds(pos->y, PurePosition.y))
+	else if (pos.x < PurePosition.x && AxisisInBounds(pos.y, PurePosition.y))
 	{
 		if (Left != nullptr)
 		{
@@ -295,10 +320,10 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->x = 0;
+			pos.x = 0;
 		}
 	}
-	else if (pos->x < PurePosition.x && pos->y < PurePosition.y)
+	else if (pos.x < PurePosition.x && pos.y < PurePosition.y)
 	{
 		if (LeftTop != nullptr)
 		{
@@ -307,11 +332,11 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->x = 0;
-			pos->y = 0;
+			pos.x = 0;
+			pos.y = 0;
 		}
 	}
-	else if (AxisisInBounds(pos->x, PurePosition.x) && pos->y < PurePosition.y)
+	else if (AxisisInBounds(pos.x, PurePosition.x) && pos.y < PurePosition.y)
 	{
 		if (Top != nullptr)
 		{
@@ -320,10 +345,10 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->y = 0;
+			pos.y = 0;
 		}
 	}
-	else if (pos->x > size + PurePosition.x && pos->y < PurePosition.y)
+	else if (pos.x > size + PurePosition.x && pos.y < PurePosition.y)
 	{
 		if (RightTop != nullptr)
 		{
@@ -332,10 +357,11 @@ void Chunk::MoveComponentToNextChunk(GameComponent * c)
 		}
 		else
 		{
-			pos->y = 0;
-			pos->x = 1000;
+			pos.y = 0;
+			pos.x = 1000;
 		}
 	}
+	c->setPosition(pos);
 }
 
 bool Chunk::AxisisInBounds(float axis, float offset)
@@ -348,7 +374,6 @@ void Chunk::RemoveFlaggedFromChunk()
 	for (const auto & comp : RemoveFromChunk)
 	{
 		Components.remove(comp);
-
 	}
 	RemoveFromChunk.clear();
 }

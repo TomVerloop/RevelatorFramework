@@ -14,10 +14,11 @@ var hierarchy =
       [ "MovableComponent", "class_movable_component.html", null ]
     ] ],
     [ "GameFactory", "class_game_factory.html", null ],
-    [ "Layer", "class_layer.html", null ],
-    [ "Rect", null, [
-      [ "Rectangle", "class_rectangle.html", null ]
+    [ "GameObjectProducer", "class_game_object_producer.html", [
+      [ "ExampleComponentProducer", "class_example_component_producer.html", null ]
     ] ],
+    [ "Layer", "class_layer.html", null ],
+    [ "ProducerPackage", "class_producer_package.html", null ],
     [ "ScreenManager", "class_screen_manager.html", null ],
     [ "ScreenTransaction", "class_screen_transaction.html", null ],
     [ "Spawner", "class_spawner.html", null ],

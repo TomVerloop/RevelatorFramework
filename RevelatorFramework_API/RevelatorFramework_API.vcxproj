@@ -88,9 +88,10 @@
     <ClInclude Include="Drawable.hpp" />
     <ClInclude Include="GameComponent.hpp" />
     <ClInclude Include="GameFactory.hpp" />
+    <ClInclude Include="GameObjectProducer.hpp" />
     <ClInclude Include="GameScreen.hpp" />
     <ClInclude Include="Layer.hpp" />
-    <ClInclude Include="Rectangle.hpp" />
+    <ClInclude Include="ProducerPackage.hpp" />
     <ClInclude Include="ScreenManager.hpp" />
     <ClInclude Include="ScreenTransaction.hpp" />
     <ClInclude Include="Sensor.hpp" />
@@ -116,9 +117,10 @@
     <ClCompile Include="Drawable.cpp" />
     <ClCompile Include="GameComponent.cpp" />
     <ClCompile Include="GameFactory.cpp" />
+    <ClCompile Include="GameObjectProducer.cpp" />
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="Layer.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="ProducerPackage.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="ScreenTransaction.cpp" />
     <ClCompile Include="Sensor.cpp" />

@@ -1,6 +1,5 @@
 var class_drawable =
 [
-    [ "Drawable", "class_drawable.html#aac88608db6081da479c772c96636acb1", null ],
-    [ "~Drawable", "class_drawable.html#a5db44942658aab760a7418e338582e0a", null ],
-    [ "Draw", "class_drawable.html#a0e24de52eeb44555872c70f3adf854d2", null ]
+    [ "__declspec", "class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7", null ],
+    [ "__declspec", "class_drawable.html#ab8175a6d9337a90bd36e368bd6749579", null ]
 ];

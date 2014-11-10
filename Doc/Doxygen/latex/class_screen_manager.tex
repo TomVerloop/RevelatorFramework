@@ -18,23 +18,16 @@ Collaboration diagram for Screen\-Manager\-:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_screen_manager_ab397f82b180ee7d50cc1e305c19ed733}{Screen\-Manager} ()
+\hyperlink{class_screen_manager_ab348f37f1c0e6324ce57c4fbd3ec7472}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_screen_manager}{Screen\-Manager}()
 \item 
-\hyperlink{class_screen_manager_a515ec6aabc9fefe3c1cfbe734877da1e}{$\sim$\-Screen\-Manager} ()
+\hyperlink{class_screen_manager_aef360696d7ab6a1a1c8c19b0b056e2f7}{\-\_\-\-\_\-declspec} (dllexport) static \hyperlink{class_screen_manager}{Screen\-Manager} $\ast$get\-Instance()
 \item 
-virtual void \hyperlink{class_screen_manager_a269d1b374ba195a036f03bd3caa897d9}{Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\hyperlink{class_screen_manager_addb9590d63c0182bd97cf537898d0ae2}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{class_screen_manager_abcf990ad052121e6ebd2ab03771657df}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)
-\item 
-void \hyperlink{class_screen_manager_a2e6e206c2ff265c534c802898c9c078b}{add\-Screen} (std\-::string name, \hyperlink{class_game_screen}{Game\-Screen} $\ast$screen)
-\item 
-void \hyperlink{class_screen_manager_a9bb115d54e94b72618361f4a347e26c8}{remove\-Screen} (std\-::string name)
-\item 
-\hyperlink{class_game_screen}{Game\-Screen} $\ast$ \hyperlink{class_screen_manager_a510ee04534746a6e72fa789539dc2d83}{get\-Screen} (std\-::string name)
-\item 
-void \hyperlink{class_screen_manager_aa806de1587575859315d975daa025688}{push\-Transaction} (\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$transaction)
-\item 
-void \hyperlink{class_screen_manager_a578dea02971b86905fee58593622495b}{set\-Active\-Screen} (std\-::string name)
+\hyperlink{class_screen_manager_aaa33dec76e404bd739a754c80c4917cc}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_screen_manager}{Screen\-Manager}()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -46,141 +39,35 @@ std\-::map$<$ std\-::string, \\*
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_screen_manager_ab397f82b180ee7d50cc1e305c19ed733}{\index{Screen\-Manager@{Screen\-Manager}!Screen\-Manager@{Screen\-Manager}}
-\index{Screen\-Manager@{Screen\-Manager}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{Screen\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::\-Screen\-Manager (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_screen_manager_ab397f82b180ee7d50cc1e305c19ed733}
-\hypertarget{class_screen_manager_a515ec6aabc9fefe3c1cfbe734877da1e}{\index{Screen\-Manager@{Screen\-Manager}!$\sim$\-Screen\-Manager@{$\sim$\-Screen\-Manager}}
-\index{$\sim$\-Screen\-Manager@{$\sim$\-Screen\-Manager}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{$\sim$\-Screen\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::$\sim$\-Screen\-Manager (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_screen_manager_a515ec6aabc9fefe3c1cfbe734877da1e}
-
-
 \subsection{Member Function Documentation}
-\hypertarget{class_screen_manager_a2e6e206c2ff265c534c802898c9c078b}{\index{Screen\-Manager@{Screen\-Manager}!add\-Screen@{add\-Screen}}
-\index{add\-Screen@{add\-Screen}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{add\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::add\-Screen (
+\hypertarget{class_screen_manager_ab348f37f1c0e6324ce57c4fbd3ec7472}{\index{Screen\-Manager@{Screen\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ScreenManager@{Screen\-Manager}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{std\-::string}]{name, }
-\item[{{\bf Game\-Screen} $\ast$}]{screen}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_screen_manager_a2e6e206c2ff265c534c802898c9c078b}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_screen_manager_a2e6e206c2ff265c534c802898c9c078b_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_screen_manager_abcf990ad052121e6ebd2ab03771657df}{\index{Screen\-Manager@{Screen\-Manager}!Draw@{Draw}}
-\index{Draw@{Draw}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::\-Draw (
+)}}\label{class_screen_manager_ab348f37f1c0e6324ce57c4fbd3ec7472}
+\hypertarget{class_screen_manager_aef360696d7ab6a1a1c8c19b0b056e2f7}{\index{Screen\-Manager@{Screen\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ScreenManager@{Screen\-Manager}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
-\item[{sf\-::\-Vector2f}]{offset}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_screen_manager_abcf990ad052121e6ebd2ab03771657df}
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{class_screen_manager_abcf990ad052121e6ebd2ab03771657df_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=267pt]{class_screen_manager_abcf990ad052121e6ebd2ab03771657df_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_screen_manager_a510ee04534746a6e72fa789539dc2d83}{\index{Screen\-Manager@{Screen\-Manager}!get\-Screen@{get\-Screen}}
-\index{get\-Screen@{get\-Screen}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{get\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Screen}$\ast$ Screen\-Manager\-::get\-Screen (
+)}}\label{class_screen_manager_aef360696d7ab6a1a1c8c19b0b056e2f7}
+\hypertarget{class_screen_manager_addb9590d63c0182bd97cf537898d0ae2}{\index{Screen\-Manager@{Screen\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ScreenManager@{Screen\-Manager}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{std\-::string}]{name}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_screen_manager_a510ee04534746a6e72fa789539dc2d83}
-\hypertarget{class_screen_manager_aa806de1587575859315d975daa025688}{\index{Screen\-Manager@{Screen\-Manager}!push\-Transaction@{push\-Transaction}}
-\index{push\-Transaction@{push\-Transaction}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{push\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::push\-Transaction (
+)}}\label{class_screen_manager_addb9590d63c0182bd97cf537898d0ae2}
+\hypertarget{class_screen_manager_aaa33dec76e404bd739a754c80c4917cc}{\index{Screen\-Manager@{Screen\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ScreenManager@{Screen\-Manager}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Screen\-Manager\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Screen\-Transaction} $\ast$}]{transaction}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_screen_manager_aa806de1587575859315d975daa025688}
-\hypertarget{class_screen_manager_a9bb115d54e94b72618361f4a347e26c8}{\index{Screen\-Manager@{Screen\-Manager}!remove\-Screen@{remove\-Screen}}
-\index{remove\-Screen@{remove\-Screen}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{remove\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::remove\-Screen (
-\begin{DoxyParamCaption}
-\item[{std\-::string}]{name}
-\end{DoxyParamCaption}
-)}}\label{class_screen_manager_a9bb115d54e94b72618361f4a347e26c8}
-\hypertarget{class_screen_manager_a578dea02971b86905fee58593622495b}{\index{Screen\-Manager@{Screen\-Manager}!set\-Active\-Screen@{set\-Active\-Screen}}
-\index{set\-Active\-Screen@{set\-Active\-Screen}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{set\-Active\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::set\-Active\-Screen (
-\begin{DoxyParamCaption}
-\item[{std\-::string}]{name}
-\end{DoxyParamCaption}
-)}}\label{class_screen_manager_a578dea02971b86905fee58593622495b}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_screen_manager_a578dea02971b86905fee58593622495b_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_screen_manager_a269d1b374ba195a036f03bd3caa897d9}{\index{Screen\-Manager@{Screen\-Manager}!Update@{Update}}
-\index{Update@{Update}!ScreenManager@{Screen\-Manager}}
-\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\-Manager\-::\-Update (
-\begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_screen_manager_a269d1b374ba195a036f03bd3caa897d9}
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_screen_manager_a269d1b374ba195a036f03bd3caa897d9_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=276pt]{class_screen_manager_a269d1b374ba195a036f03bd3caa897d9_icgraph}
-\end{center}
-\end{figure}
-
-
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_screen_manager_aaa33dec76e404bd739a754c80c4917cc}
 
 
 \subsection{Member Data Documentation}
@@ -192,7 +79,6 @@ Here is the caller graph for this function\-:\nopagebreak
 \subsubsection[{Screens}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Game\-Screen} $\ast$$>$ Screen\-Manager\-::\-Screens\hspace{0.3cm}{\ttfamily [private]}}}\label{class_screen_manager_a54eb2c9667efda525a35d0d7043e8807}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_screen_manager_8hpp}{Screen\-Manager.\-hpp}\item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_screen_manager_8cpp}{Screen\-Manager.\-cpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_screen_manager_8hpp}{Screen\-Manager.\-hpp}\end{DoxyCompactItemize}

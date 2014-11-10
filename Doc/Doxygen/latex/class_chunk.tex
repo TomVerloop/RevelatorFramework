@@ -22,52 +22,70 @@ Collaboration diagram for Chunk\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=317pt]{class_chunk__coll__graph}
+\includegraphics[height=550pt]{class_chunk__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}{Chunk} (sf\-::\-Vector2i \hyperlink{class_chunk_abb5b1842148b3d7c616065766bfd2b33}{Chunk\-Coord}, float \hyperlink{class_chunk_af46410b580baf2985b01044d5c041b2e}{size}=0.f)
+\-\_\-\-\_\-declspec(dllexport) \hyperlink{class_chunk}{Chunk}(sf \hyperlink{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_chunk}{Chunk}()
 \item 
-\hyperlink{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}{$\sim$\-Chunk} ()
+\hyperlink{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}{\-\_\-\-\_\-declspec} (dllexport) void add\-Component(\hyperlink{class_game_component}{Game\-Component} $\ast$component)
 \item 
-void \hyperlink{class_chunk_aa5b5c5515c800f2171899caf704db5dc}{add\-Component} (\hyperlink{class_game_component}{Game\-Component} $\ast$component)
+\hyperlink{class_chunk_ae878d83d94ede4ee7c565a3825083439}{\-\_\-\-\_\-declspec} (dllexport) void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
 \item 
-void \hyperlink{class_chunk_a750907d92efc9e45bfff5e280fa55afe}{Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\hyperlink{class_chunk_a27a4e5721687f011d6c52624d01eca8d}{\-\_\-\-\_\-declspec} (dllexport) void set\-Top(\hyperlink{class_chunk}{Chunk} $\ast$top)
 \item 
-void \hyperlink{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset) override
+\hyperlink{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right\-Top(\hyperlink{class_chunk}{Chunk} $\ast$righttop)
 \item 
-void \hyperlink{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}{Draw\-Self} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset, \hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83}{Position} pos)
+\hyperlink{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}{\-\_\-\-\_\-declspec} (dllexport) void set\-Left(\hyperlink{class_chunk}{Chunk} $\ast$left)
 \item 
-void \hyperlink{class_chunk_ac747f2b3da1e583e3b64ca328bf04d77}{set\-Left\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$leftrop)
+\hyperlink{class_chunk_ac390d85879176e6e8a26667ba97f8eee}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right(\hyperlink{class_chunk}{Chunk} $\ast$right)
 \item 
-void \hyperlink{class_chunk_a6cc69f33389b5510766f23317ff7ae65}{set\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83a3961740aa293a50c701d278225f7050a}{top})
+\hyperlink{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}{\-\_\-\-\_\-declspec} (dllexport) void set\-Left\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$leftbottom)
 \item 
-void \hyperlink{class_chunk_a8c19057f7360349f5d214bfa50d51900}{set\-Right\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$righttop)
+\hyperlink{class_chunk_a69ed23533460c9308dc6ae6e92143e65}{\-\_\-\-\_\-declspec} (dllexport) void set\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$bottom)
 \item 
-void \hyperlink{class_chunk_aa0005654a92c0ca50f90c516d508834c}{set\-Left} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83ab0ac36b187aa60c167ffcead3d5a03c0}{left})
+\hyperlink{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$rightbottom)
 \item 
-void \hyperlink{class_chunk_a670d58217b329583811b5380f25700d6}{set\-Right} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a}{right})
+\hyperlink{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Top()
 \item 
-void \hyperlink{class_chunk_a690d801cad525f106f11fca76855c785}{set\-Left\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$leftbottom)
+\hyperlink{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Left()
 \item 
-void \hyperlink{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}{set\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83a692ac8f8a4a43ac2513ce4cd90dc3ebe}{bottom})
+\hyperlink{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Right()
 \item 
-void \hyperlink{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}{set\-Right\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$rightbottom)
+\hyperlink{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Bottom()
 \item 
-\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}{get\-Top} ()
+\hyperlink{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\-\_\-\-\_\-declspec} (dllexport) sf
 \item 
-\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}{get\-Left} ()
+\hyperlink{class_chunk_aab8f743adaa4b32ce48635069484fdf0}{\-\_\-\-\_\-declspec} (dllexport) void Sense\-Single(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject
 \item 
-\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}{get\-Right} ()
-\item 
-\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a59eb282f08711420c1e966e30aab47e3}{get\-Bottom} ()
-\item 
-sf\-::\-Vector2i \hyperlink{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}{get\-Coords} ()
+\hyperlink{class_chunk_a962c026f5ce60239b70421c195ff3f48}{\-\_\-\-\_\-declspec} (dllexport) void Collide\-Single(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_component}{Game\-Component} $\ast$ \hyperlink{class_chunk_a633545d862acb016a7081c364126c7b8}{comp}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_chunk_aef97a035105bfad38caf4f3fc3c94b23}{\-\_\-\-\_\-declspec} (dllexport) void Collide(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\item 
+\hyperlink{class_chunk_a16504fbfa3e68a59227007f80bd7d2fb}{\-\_\-\-\_\-declspec} (dllexport) void Sense(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\item 
+\hyperlink{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}{\-\_\-\-\_\-declspec} (dllexport) void Move\-Component\-To\-Next\-Chunk(\hyperlink{class_game_component}{Game\-Component} $\ast$c)
+\item 
+\hyperlink{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}{\-\_\-\-\_\-declspec} (dllexport) bool Axisis\-In\-Bounds(float axis
+\item 
+\hyperlink{class_chunk_aecb19003f0e0330920cf7695fbdc5700}{\-\_\-\-\_\-declspec} (dllexport) void Remove\-Flagged\-From\-Chunk()
+\item 
+\hyperlink{class_chunk_a718131e4230ef33fe46c6ab9bd21f4e0}{\-\_\-\-\_\-declspec} (dllexport) void Remove\-Dead\-Objects()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\-::\-Vector2f \hyperlink{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}{Pure\-Position}
 \item 
 \hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a877d51226eaa97c40c05223987514d59}{Left\-Top}
 \item 
@@ -92,568 +110,223 @@ float \hyperlink{class_chunk_af46410b580baf2985b01044d5c041b2e}{size}
 sf\-::\-Vector2i \hyperlink{class_chunk_abb5b1842148b3d7c616065766bfd2b33}{Chunk\-Coord}
 \item 
 std\-::list$<$ \hyperlink{class_game_component}{Game\-Component} $\ast$ $>$ \hyperlink{class_chunk_adf6692fdab4518524e217cc0ef09d282}{Remove\-From\-Chunk}
+\item 
+float \hyperlink{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}{offset}
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-void \hyperlink{class_chunk_a85f10ca606a2cf0eaf3f760ff0748282}{Collide} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
-\item 
-void \hyperlink{class_chunk_a2364bb0e89fae7c80d101388ffe84831}{Extend\-Collide} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject, \hyperlink{class_collidable}{Collidable} $\ast$collidable, \hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83}{Position} From)
-\item 
-void \hyperlink{class_chunk_a23684bfafa76cadb95c81ba89b039461}{Sense} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
-\item 
-void \hyperlink{class_chunk_aaa36053121ed2f73056ce8adf4586484}{Extend\-Sense} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject, \hyperlink{class_sensor}{Sensor} $\ast$sense, \hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83}{Position} From)
-\item 
-void \hyperlink{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{Move\-Component\-To\-Next\-Chunk} (\hyperlink{class_game_component}{Game\-Component} $\ast$c)
-\item 
-bool \hyperlink{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}{Axisis\-In\-Bounds} (float axis, float offset)
-\item 
-void \hyperlink{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}{Remove\-Flagged\-From\-Chunk} ()
-\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-sf\-::\-Vector2f \hyperlink{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}{Pure\-Position}
-\end{DoxyCompactItemize}
-
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}{\index{Chunk@{Chunk}!Chunk@{Chunk}}
-\index{Chunk@{Chunk}!Chunk@{Chunk}}
-\subsubsection[{Chunk}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-Chunk (
-\begin{DoxyParamCaption}
-\item[{sf\-::\-Vector2i}]{Chunk\-Coord, }
-\item[{float}]{size = {\ttfamily 0.f}}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}
-\hypertarget{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}{\index{Chunk@{Chunk}!$\sim$\-Chunk@{$\sim$\-Chunk}}
-\index{$\sim$\-Chunk@{$\sim$\-Chunk}!Chunk@{Chunk}}
-\subsubsection[{$\sim$\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::$\sim$\-Chunk (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_chunk_aa5b5c5515c800f2171899caf704db5dc}{\index{Chunk@{Chunk}!add\-Component@{add\-Component}}
-\index{add\-Component@{add\-Component}!Chunk@{Chunk}}
-\subsubsection[{add\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::add\-Component (
+\hypertarget{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Game\-Component} $\ast$}]{component}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_aa5b5c5515c800f2171899caf704db5dc}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}{\index{Chunk@{Chunk}!Axisis\-In\-Bounds@{Axisis\-In\-Bounds}}
-\index{Axisis\-In\-Bounds@{Axisis\-In\-Bounds}!Chunk@{Chunk}}
-\subsubsection[{Axisis\-In\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}bool Chunk\-::\-Axisis\-In\-Bounds (
+)}}\label{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}
+\hypertarget{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{float}]{axis, }
-\item[{float}]{offset}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a85f10ca606a2cf0eaf3f760ff0748282}{\index{Chunk@{Chunk}!Collide@{Collide}}
-\index{Collide@{Collide}!Chunk@{Chunk}}
-\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Collide (
+)}}\label{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}
+\hypertarget{class_chunk_ae878d83d94ede4ee7c565a3825083439}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a85f10ca606a2cf0eaf3f760ff0748282}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a85f10ca606a2cf0eaf3f760ff0748282_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}{\index{Chunk@{Chunk}!Draw@{Draw}}
-\index{Draw@{Draw}!Chunk@{Chunk}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Draw (
+)}}\label{class_chunk_ae878d83d94ede4ee7c565a3825083439}
+\hypertarget{class_chunk_a27a4e5721687f011d6c52624d01eca8d}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
-\item[{sf\-::\-Vector2f}]{offset}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}
-
-
-Implements \hyperlink{class_drawable_a0e24de52eeb44555872c70f3adf854d2}{Drawable}.
-
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=277pt]{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}{\index{Chunk@{Chunk}!Draw\-Self@{Draw\-Self}}
-\index{Draw\-Self@{Draw\-Self}!Chunk@{Chunk}}
-\subsubsection[{Draw\-Self}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Draw\-Self (
+)}}\label{class_chunk_a27a4e5721687f011d6c52624d01eca8d}
+\hypertarget{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
-\item[{sf\-::\-Vector2f}]{offset, }
-\item[{{\bf Position}}]{pos}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a2364bb0e89fae7c80d101388ffe84831}{\index{Chunk@{Chunk}!Extend\-Collide@{Extend\-Collide}}
-\index{Extend\-Collide@{Extend\-Collide}!Chunk@{Chunk}}
-\subsubsection[{Extend\-Collide}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Extend\-Collide (
+)}}\label{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}
+\hypertarget{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject, }
-\item[{{\bf Collidable} $\ast$}]{collidable, }
-\item[{{\bf Position}}]{From}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a2364bb0e89fae7c80d101388ffe84831}
-\hypertarget{class_chunk_aaa36053121ed2f73056ce8adf4586484}{\index{Chunk@{Chunk}!Extend\-Sense@{Extend\-Sense}}
-\index{Extend\-Sense@{Extend\-Sense}!Chunk@{Chunk}}
-\subsubsection[{Extend\-Sense}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Extend\-Sense (
+)}}\label{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}
+\hypertarget{class_chunk_ac390d85879176e6e8a26667ba97f8eee}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject, }
-\item[{{\bf Sensor} $\ast$}]{sense, }
-\item[{{\bf Position}}]{From}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aaa36053121ed2f73056ce8adf4586484}
-\hypertarget{class_chunk_a59eb282f08711420c1e966e30aab47e3}{\index{Chunk@{Chunk}!get\-Bottom@{get\-Bottom}}
-\index{get\-Bottom@{get\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{get\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Bottom (
+)}}\label{class_chunk_ac390d85879176e6e8a26667ba97f8eee}
+\hypertarget{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a59eb282f08711420c1e966e30aab47e3}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}{\index{Chunk@{Chunk}!get\-Coords@{get\-Coords}}
-\index{get\-Coords@{get\-Coords}!Chunk@{Chunk}}
-\subsubsection[{get\-Coords}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2i Chunk\-::get\-Coords (
+)}}\label{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}
+\hypertarget{class_chunk_a69ed23533460c9308dc6ae6e92143e65}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}{\index{Chunk@{Chunk}!get\-Left@{get\-Left}}
-\index{get\-Left@{get\-Left}!Chunk@{Chunk}}
-\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Left (
+)}}\label{class_chunk_a69ed23533460c9308dc6ae6e92143e65}
+\hypertarget{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}{\index{Chunk@{Chunk}!get\-Right@{get\-Right}}
-\index{get\-Right@{get\-Right}!Chunk@{Chunk}}
-\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Right (
+)}}\label{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}
+\hypertarget{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}{\index{Chunk@{Chunk}!get\-Top@{get\-Top}}
-\index{get\-Top@{get\-Top}!Chunk@{Chunk}}
-\subsubsection[{get\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Top (
+)}}\label{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}
+\hypertarget{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}
-\hypertarget{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{\index{Chunk@{Chunk}!Move\-Component\-To\-Next\-Chunk@{Move\-Component\-To\-Next\-Chunk}}
-\index{Move\-Component\-To\-Next\-Chunk@{Move\-Component\-To\-Next\-Chunk}!Chunk@{Chunk}}
-\subsubsection[{Move\-Component\-To\-Next\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Move\-Component\-To\-Next\-Chunk (
+)}}\label{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}
+\hypertarget{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Game\-Component} $\ast$}]{c}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}{\index{Chunk@{Chunk}!Remove\-Flagged\-From\-Chunk@{Remove\-Flagged\-From\-Chunk}}
-\index{Remove\-Flagged\-From\-Chunk@{Remove\-Flagged\-From\-Chunk}!Chunk@{Chunk}}
-\subsubsection[{Remove\-Flagged\-From\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Remove\-Flagged\-From\-Chunk (
+)}}\label{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}
+\hypertarget{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a23684bfafa76cadb95c81ba89b039461}{\index{Chunk@{Chunk}!Sense@{Sense}}
-\index{Sense@{Sense}!Chunk@{Chunk}}
-\subsubsection[{Sense}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Sense (
+)}}\label{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}
+\hypertarget{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a23684bfafa76cadb95c81ba89b039461}
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=314pt]{class_chunk_a23684bfafa76cadb95c81ba89b039461_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a23684bfafa76cadb95c81ba89b039461_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}{\index{Chunk@{Chunk}!set\-Bottom@{set\-Bottom}}
-\index{set\-Bottom@{set\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{set\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Bottom (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}
+\hypertarget{class_chunk_aab8f743adaa4b32ce48635069484fdf0}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{bottom}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_aa0005654a92c0ca50f90c516d508834c}{\index{Chunk@{Chunk}!set\-Left@{set\-Left}}
-\index{set\-Left@{set\-Left}!Chunk@{Chunk}}
-\subsubsection[{set\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left (
+)}}\label{class_chunk_aab8f743adaa4b32ce48635069484fdf0}
+\hypertarget{class_chunk_a962c026f5ce60239b70421c195ff3f48}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{left}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_aa0005654a92c0ca50f90c516d508834c}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_aa0005654a92c0ca50f90c516d508834c_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a690d801cad525f106f11fca76855c785}{\index{Chunk@{Chunk}!set\-Left\-Bottom@{set\-Left\-Bottom}}
-\index{set\-Left\-Bottom@{set\-Left\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{set\-Left\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left\-Bottom (
+)}}\label{class_chunk_a962c026f5ce60239b70421c195ff3f48}
+\hypertarget{class_chunk_aef97a035105bfad38caf4f3fc3c94b23}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{leftbottom}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a690d801cad525f106f11fca76855c785}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a690d801cad525f106f11fca76855c785_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_ac747f2b3da1e583e3b64ca328bf04d77}{\index{Chunk@{Chunk}!set\-Left\-Top@{set\-Left\-Top}}
-\index{set\-Left\-Top@{set\-Left\-Top}!Chunk@{Chunk}}
-\subsubsection[{set\-Left\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left\-Top (
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aef97a035105bfad38caf4f3fc3c94b23}
+\hypertarget{class_chunk_a16504fbfa3e68a59227007f80bd7d2fb}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{leftrop}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_ac747f2b3da1e583e3b64ca328bf04d77}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_ac747f2b3da1e583e3b64ca328bf04d77_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a670d58217b329583811b5380f25700d6}{\index{Chunk@{Chunk}!set\-Right@{set\-Right}}
-\index{set\-Right@{set\-Right}!Chunk@{Chunk}}
-\subsubsection[{set\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right (
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a16504fbfa3e68a59227007f80bd7d2fb}
+\hypertarget{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{right}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a670d58217b329583811b5380f25700d6}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a670d58217b329583811b5380f25700d6_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}{\index{Chunk@{Chunk}!set\-Right\-Bottom@{set\-Right\-Bottom}}
-\index{set\-Right\-Bottom@{set\-Right\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{set\-Right\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right\-Bottom (
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}
+\hypertarget{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{rightbottom}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_aadab4832f4d1c4618b7232a1503d8aed_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a8c19057f7360349f5d214bfa50d51900}{\index{Chunk@{Chunk}!set\-Right\-Top@{set\-Right\-Top}}
-\index{set\-Right\-Top@{set\-Right\-Top}!Chunk@{Chunk}}
-\subsubsection[{set\-Right\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right\-Top (
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}
+\hypertarget{class_chunk_aecb19003f0e0330920cf7695fbdc5700}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{righttop}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a8c19057f7360349f5d214bfa50d51900}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a8c19057f7360349f5d214bfa50d51900_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a6cc69f33389b5510766f23317ff7ae65}{\index{Chunk@{Chunk}!set\-Top@{set\-Top}}
-\index{set\-Top@{set\-Top}!Chunk@{Chunk}}
-\subsubsection[{set\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Top (
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aecb19003f0e0330920cf7695fbdc5700}
+\hypertarget{class_chunk_a718131e4230ef33fe46c6ab9bd21f4e0}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Chunk} $\ast$}]{top}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_a6cc69f33389b5510766f23317ff7ae65}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a6cc69f33389b5510766f23317ff7ae65_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_chunk_a750907d92efc9e45bfff5e280fa55afe}{\index{Chunk@{Chunk}!Update@{Update}}
-\index{Update@{Update}!Chunk@{Chunk}}
-\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Update (
-\begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a750907d92efc9e45bfff5e280fa55afe}
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a750907d92efc9e45bfff5e280fa55afe_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_chunk_a750907d92efc9e45bfff5e280fa55afe_icgraph}
-\end{center}
-\end{figure}
-
-
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a718131e4230ef33fe46c6ab9bd21f4e0}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_chunk_ac9ac53a727ae045b6f751ec6a68bcaca}{\index{Chunk@{Chunk}!Bottom@{Bottom}}
 \index{Bottom@{Bottom}!Chunk@{Chunk}}
-\subsubsection[{Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Bottom\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_ac9ac53a727ae045b6f751ec6a68bcaca}
+\subsubsection[{Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Bottom\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_ac9ac53a727ae045b6f751ec6a68bcaca}
 \hypertarget{class_chunk_abb5b1842148b3d7c616065766bfd2b33}{\index{Chunk@{Chunk}!Chunk\-Coord@{Chunk\-Coord}}
 \index{Chunk\-Coord@{Chunk\-Coord}!Chunk@{Chunk}}
-\subsubsection[{Chunk\-Coord}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2i Chunk\-::\-Chunk\-Coord\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_abb5b1842148b3d7c616065766bfd2b33}
+\subsubsection[{Chunk\-Coord}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2i Chunk\-::\-Chunk\-Coord\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_abb5b1842148b3d7c616065766bfd2b33}
+\hypertarget{class_chunk_a633545d862acb016a7081c364126c7b8}{\index{Chunk@{Chunk}!comp@{comp}}
+\index{comp@{comp}!Chunk@{Chunk}}
+\subsubsection[{comp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Component} $\ast$ Chunk\-::comp}}\label{class_chunk_a633545d862acb016a7081c364126c7b8}
 \hypertarget{class_chunk_a4cdf6febd96ff99b681e37d548617a38}{\index{Chunk@{Chunk}!Components@{Components}}
 \index{Components@{Components}!Chunk@{Chunk}}
-\subsubsection[{Components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component}$\ast$$>$ Chunk\-::\-Components\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_a4cdf6febd96ff99b681e37d548617a38}
+\subsubsection[{Components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component}$\ast$$>$ Chunk\-::\-Components\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a4cdf6febd96ff99b681e37d548617a38}
 \hypertarget{class_chunk_aee27c2584364a58dc8811e9ada0695dd}{\index{Chunk@{Chunk}!Left@{Left}}
 \index{Left@{Left}!Chunk@{Chunk}}
-\subsubsection[{Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_aee27c2584364a58dc8811e9ada0695dd}
+\subsubsection[{Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aee27c2584364a58dc8811e9ada0695dd}
 \hypertarget{class_chunk_af3577f37139ffeb74181d9ce3c48f5e6}{\index{Chunk@{Chunk}!Left\-Bottom@{Left\-Bottom}}
 \index{Left\-Bottom@{Left\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{Left\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\-Bottom\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_af3577f37139ffeb74181d9ce3c48f5e6}
+\subsubsection[{Left\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\-Bottom\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_af3577f37139ffeb74181d9ce3c48f5e6}
 \hypertarget{class_chunk_a877d51226eaa97c40c05223987514d59}{\index{Chunk@{Chunk}!Left\-Top@{Left\-Top}}
 \index{Left\-Top@{Left\-Top}!Chunk@{Chunk}}
-\subsubsection[{Left\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\-Top\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_a877d51226eaa97c40c05223987514d59}
+\subsubsection[{Left\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Left\-Top\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a877d51226eaa97c40c05223987514d59}
+\hypertarget{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}{\index{Chunk@{Chunk}!offset@{offset}}
+\index{offset@{offset}!Chunk@{Chunk}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}float Chunk\-::offset\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}
 \hypertarget{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}{\index{Chunk@{Chunk}!Pure\-Position@{Pure\-Position}}
 \index{Pure\-Position@{Pure\-Position}!Chunk@{Chunk}}
 \subsubsection[{Pure\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Chunk\-::\-Pure\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}
 \hypertarget{class_chunk_adf6692fdab4518524e217cc0ef09d282}{\index{Chunk@{Chunk}!Remove\-From\-Chunk@{Remove\-From\-Chunk}}
 \index{Remove\-From\-Chunk@{Remove\-From\-Chunk}!Chunk@{Chunk}}
-\subsubsection[{Remove\-From\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component}$\ast$$>$ Chunk\-::\-Remove\-From\-Chunk\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_adf6692fdab4518524e217cc0ef09d282}
+\subsubsection[{Remove\-From\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component}$\ast$$>$ Chunk\-::\-Remove\-From\-Chunk\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_adf6692fdab4518524e217cc0ef09d282}
 \hypertarget{class_chunk_a0bcf134e2aba0ca49370272c2b3f17a4}{\index{Chunk@{Chunk}!Right@{Right}}
 \index{Right@{Right}!Chunk@{Chunk}}
-\subsubsection[{Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_a0bcf134e2aba0ca49370272c2b3f17a4}
+\subsubsection[{Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a0bcf134e2aba0ca49370272c2b3f17a4}
 \hypertarget{class_chunk_afded01a9a67540c9f64dde5776021f4b}{\index{Chunk@{Chunk}!Right\-Bottom@{Right\-Bottom}}
 \index{Right\-Bottom@{Right\-Bottom}!Chunk@{Chunk}}
-\subsubsection[{Right\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\-Bottom\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_afded01a9a67540c9f64dde5776021f4b}
+\subsubsection[{Right\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\-Bottom\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_afded01a9a67540c9f64dde5776021f4b}
 \hypertarget{class_chunk_a8a7593c89d4fe5ed193e68b9ed40016b}{\index{Chunk@{Chunk}!Right\-Top@{Right\-Top}}
 \index{Right\-Top@{Right\-Top}!Chunk@{Chunk}}
-\subsubsection[{Right\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\-Top\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_a8a7593c89d4fe5ed193e68b9ed40016b}
+\subsubsection[{Right\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Right\-Top\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a8a7593c89d4fe5ed193e68b9ed40016b}
 \hypertarget{class_chunk_af46410b580baf2985b01044d5c041b2e}{\index{Chunk@{Chunk}!size@{size}}
 \index{size@{size}!Chunk@{Chunk}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}float Chunk\-::size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_af46410b580baf2985b01044d5c041b2e}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}float Chunk\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_af46410b580baf2985b01044d5c041b2e}
 \hypertarget{class_chunk_ae841d5ab24dfa5ef8865cb4fa05d089d}{\index{Chunk@{Chunk}!Top@{Top}}
 \index{Top@{Top}!Chunk@{Chunk}}
-\subsubsection[{Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Top\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_chunk_ae841d5ab24dfa5ef8865cb4fa05d089d}
+\subsubsection[{Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-::\-Top\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_ae841d5ab24dfa5ef8865cb4fa05d089d}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_chunk_8hpp}{Chunk.\-hpp}\item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_chunk_8cpp}{Chunk.\-cpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_8hpp}{Chunk.\-hpp}\end{DoxyCompactItemize}

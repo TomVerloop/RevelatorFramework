@@ -49,4 +49,11 @@ void ChunkManager::setActiveChunk(Chunk * c)
 void ChunkManager::setFirstChunk(Chunk * c)
 {
 	FirstChunk = c;
+	ActiveChunk = c;
+}
+
+
+void ChunkManager::addGameComponent(GameComponent * c)
+{
+	FirstChunk->addComponent(c);
 }

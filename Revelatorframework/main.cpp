@@ -1,11 +1,13 @@
 #include <SFML/Graphics.hpp>
 #include <ScreenManager.hpp>
 #include <GameFactory.hpp>
+#include "ExampleComponentProducer.hpp"
 
 
 
 int main(int argc, char* argv[])
 {
+	GameFactory::getInstance()->RegisterProducer("ExampleComponent", new ExampleComponentProducer());
 	sf::RenderWindow window(sf::VideoMode(800, 800), "AI Simulation");
 	sf::CircleShape shape(100.f);
 	ScreenManager * screenmanager = ScreenManager::getInstance();

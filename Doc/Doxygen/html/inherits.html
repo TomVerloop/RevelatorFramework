@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,35 +130,39 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <map name="_game_factory" id="_game_factory">
 <area shape="rect" id="node1" href="class_game_factory.html" title="GameFactory" alt="" coords="5,5,107,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_layer"/>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_game_object_producer"/>
+<map name="_game_object_producer" id="_game_object_producer">
+<area shape="rect" id="node1" href="class_game_object_producer.html" title="GameObjectProducer" alt="" coords="5,5,152,32"/><area shape="rect" id="node2" href="class_example_component_producer.html" title="ExampleComponentProducer" alt="" coords="200,5,391,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_layer"/>
 <map name="_layer" id="_layer">
 <area shape="rect" id="node1" href="class_layer.html" title="Layer" alt="" coords="5,5,60,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_rectangle"/>
-<map name="_rectangle" id="_rectangle">
-<area shape="rect" id="node2" href="class_rectangle.html" title="Rectangle" alt="" coords="103,5,183,32"/></map>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_producer_package"/>
+<map name="_producer_package" id="_producer_package">
+<area shape="rect" id="node1" href="class_producer_package.html" title="ProducerPackage" alt="" coords="5,5,131,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_screen_manager"/>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_screen_manager"/>
 <map name="_screen_manager" id="_screen_manager">
 <area shape="rect" id="node1" href="class_screen_manager.html" title="ScreenManager" alt="" coords="5,5,119,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_screen_transaction"/>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_screen_transaction"/>
 <map name="_screen_transaction" id="_screen_transaction">
 <area shape="rect" id="node1" href="class_screen_transaction.html" title="ScreenTransaction" alt="" coords="5,5,136,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_spawner"/>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_spawner"/>
 <map name="_spawner" id="_spawner">
 <area shape="rect" id="node1" href="class_spawner.html" title="Spawner" alt="" coords="5,5,77,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_update_data"/>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_update_data"/>
 <map name="_update_data" id="_update_data">
 <area shape="rect" id="node1" href="class_update_data.html" title="UpdateData" alt="" coords="5,5,96,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_utils"/>
+<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#_utils"/>
 <map name="_utils" id="_utils">
 <area shape="rect" id="node1" href="class_utils.html" title="Utils" alt="" coords="5,5,53,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#_window_manager"/>
+<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#_window_manager"/>
 <map name="_window_manager" id="_window_manager">
 <area shape="rect" id="node1" href="class_window_manager.html" title="WindowManager" alt="" coords="5,5,124,32"/></map>
 </td></tr>
@@ -168,7 +172,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:11 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

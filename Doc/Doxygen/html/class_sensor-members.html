@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_sensor.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,30 +110,26 @@ $(document).ready(function(){initNavTree('class_sensor.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_sensor.html">Sensor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c">addSeenObject</a>(GameComponent *comp)</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_collidable.html#a92ce9e2b08086bb2f466168ffc69c9ed">Collidable</a>()</td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#a71a242ba63c157ca40acbf4421c0eaf7">Collidable</a>(sf::Vector2f *position, sf::Vector2f size)</td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_collidable.html#a0a81575218d87940935d70800f7d663e">Collider</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#a8ed4309852c92cdeac0152cc2f604ac8">DrawVision</a>(sf::RenderWindow &amp;window)</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3">getCollider</a>()</td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14">getSeenObject</a>()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sensor.html#ab7cc277606b8709a6df5fc53d7c0f22b">GetVisionRadius</a>()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">hasMoved</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_collidable.html#a8cc1f09ce02e6fcf56d98f07f908a104">isMoved</a>()</td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) Sensor(float Radius</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sensor.html#abc51a9ae7218821ab1b654128c86e040">__declspec</a>(dllexport)~Sensor()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#ae45fa029bf2b21de83d61f844264737e">__declspec</a>(dllexport) void addSeenObject(GameComponent *comp)</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sensor.html#ab8b300abed2a48c4d8eb428b98f61b26">__declspec</a>(dllexport) GameComponent *getSeenObject()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#acec7b3c912027a73cf8bb6bd9b8dea93">__declspec</a>(dllexport) int SeenObjectCount()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sensor.html#ae6cb553783aed562549b97a02ba46d3d">__declspec</a>(dllexport) float GetVisionRadius()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7">Collider</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">hasMoved</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">lastpos</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae">SeenObjectCount</a>()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sensor.html#ab3b919642b59b2245ad3cf56b042ff33">Pos</a></td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a></td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">SeenObjects</a></td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#ac404bb7c1045796220e6d2997231feec">Sensor</a>(float Radius, sf::Vector2f *Pos, sf::Vector2f size)</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">size</a></td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">VisionRange</a></td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_collidable.html#a454ca1b66dd504b25fed3706914cee6e">~Collidable</a>()</td><td class="entry"><a class="el" href="class_collidable.html">Collidable</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sensor.html#aee8c70e7ef05ce65e7ee33686b5d7db2">~Sensor</a>()</td><td class="entry"><a class="el" href="class_sensor.html">Sensor</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:11 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

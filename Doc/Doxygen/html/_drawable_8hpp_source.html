@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/Drawable.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/Drawable.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_drawable_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,23 +112,21 @@ $(document).ready(function(){initNavTree('_drawable_8hpp_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_drawable.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_drawable.html">Drawable</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_drawable.html#a5db44942658aab760a7418e338582e0a">~Drawable</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2">Draw</a>(sf::RenderWindow &amp; window, sf::Vector2f offset) = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a>(dllexport) <a class="code" href="class_drawable.html">Drawable</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a>(dllexport) ~<a class="code" href="class_drawable.html">Drawable</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a>(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> Draw(sf::RenderWindow &amp; window, sf::Vector2f offset) = 0;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif //! _DRAWABLE</span></div>
-<div class="ttc" id="class_drawable_html_a5db44942658aab760a7418e338582e0a"><div class="ttname"><a href="class_drawable.html#a5db44942658aab760a7418e338582e0a">Drawable::~Drawable</a></div><div class="ttdeci">~Drawable()</div><div class="ttdef"><b>Definition:</b> Drawable.cpp:9</div></div>
-<div class="ttc" id="class_drawable_html_a0e24de52eeb44555872c70f3adf854d2"><div class="ttname"><a href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2">Drawable::Draw</a></div><div class="ttdeci">virtual void Draw(sf::RenderWindow &amp;window, sf::Vector2f offset)=0</div></div>
-<div class="ttc" id="class_drawable_html_aac88608db6081da479c772c96636acb1"><div class="ttname"><a href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable::Drawable</a></div><div class="ttdeci">Drawable()</div><div class="ttdef"><b>Definition:</b> Drawable.cpp:4</div></div>
 <div class="ttc" id="class_drawable_html"><div class="ttname"><a href="class_drawable.html">Drawable</a></div><div class="ttdef"><b>Definition:</b> Drawable.hpp:5</div></div>
+<div class="ttc" id="class_drawable_html_ac9f04cf11a84eb3cdf68ea48599648d7"><div class="ttname"><a href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">Drawable::__declspec</a></div><div class="ttdeci">__declspec(dllexport) Drawable()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_drawable_8hpp.html">Drawable.hpp</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_drawable_8hpp.html">Drawable.hpp</a></li>
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:53 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

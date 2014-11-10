@@ -6,10 +6,12 @@ d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorf
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\chunkmanager.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\collidable.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\drawable.obj
+d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\gamecomponent.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\gamefactory.obj
+d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\gameobjectproducer.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\gamescreen.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\layer.obj
-d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\rectangle.obj
+d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\producerpackage.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\screenmanager.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\screentransaction.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\sensor.obj
@@ -18,7 +20,6 @@ d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorf
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\utils.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\windowmanager.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\dllmain.obj
-d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\debug\gamecomponent.obj
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\debug\revelatorframework_api.ilk
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\debug\revelatorframework_api.dll
 d:\users\tom\documents\visual studio 2013\projects\revelatorframework\debug\revelatorframework_api.pdb

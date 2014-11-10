@@ -37,5 +37,5 @@ void ExampleComponent::Update(UpdateData * updateobject)
 
 void ExampleComponent::Draw(sf::RenderWindow & window, sf::Vector2f offset)
 {
-	drawable->Draw(window, (offset + (*getPosition())));
+	drawable->Draw(window, (offset + (getPosition())));
 }

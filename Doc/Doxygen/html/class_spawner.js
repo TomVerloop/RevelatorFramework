@@ -1,9 +1,9 @@
 var class_spawner =
 [
-    [ "Spawner", "class_spawner.html#a3e3aa3ccff73556625359e75f64d0dd0", null ],
-    [ "~Spawner", "class_spawner.html#a59d8e3d4d6dc6c25f38ce5d4fcc5e8e6", null ],
-    [ "ComponentCount", "class_spawner.html#a9b6caf4f8e980acd1537050792ab8583", null ],
-    [ "popComponent", "class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0", null ],
-    [ "pushComponent", "class_spawner.html#a56762cb03662152ffb517f44f431599b", null ],
+    [ "__declspec", "class_spawner.html#a2f9189658debef135e7ef3dae740dc60", null ],
+    [ "__declspec", "class_spawner.html#a7d9e09cf1588c58654650279268e02be", null ],
+    [ "__declspec", "class_spawner.html#a3e3afb5a4121a7c2fa6f38950c88af31", null ],
+    [ "__declspec", "class_spawner.html#aaf8e881a3933e8a582d2fe5d81abb9b1", null ],
+    [ "__declspec", "class_spawner.html#a593f6964eae5b1d47bbc82701d2aa0df", null ],
     [ "Components", "class_spawner.html#ae5e316957ac1574347ba80bac3866976", null ]
 ];

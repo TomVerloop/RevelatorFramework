@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_collidable.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,28 +118,24 @@ Inheritance diagram for Collidable:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_collidable__inherit__graph.png" border="0" usemap="#_collidable_inherit__map" alt="Inheritance graph"/></div>
 <map name="_collidable_inherit__map" id="_collidable_inherit__map">
-<area shape="rect" id="node2" href="class_sensor.html" title="{Sensor\n|&#45; VisionRange\l&#45; SeenObjects\l|+ Sensor()\l+ ~Sensor()\l+ addSeenObject()\l+ getSeenObject()\l+ SeenObjectCount()\l+ GetVisionRadius()\l+ DrawVision()\l}" alt="" coords="5,233,149,413"/></map>
+<area shape="rect" id="node2" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,204,113,399"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Collidable:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_collidable__coll__graph.png" border="0" usemap="#_collidable_coll__map" alt="Collaboration graph"/></div>
 <map name="_collidable_coll__map" id="_collidable_coll__map">
-<area shape="rect" id="node2" href="class_rectangle.html" title="{Rectangle\n||+ Rectangle()\l+ Rectangle()\l+ ~Rectangle()\l+ getCenter()\l}" alt="" coords="9,132,117,253"/></map>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92ce9e2b08086bb2f466168ffc69c9ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a92ce9e2b08086bb2f466168ffc69c9ed">Collidable</a> ()</td></tr>
-<tr class="separator:a92ce9e2b08086bb2f466168ffc69c9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a242ba63c157ca40acbf4421c0eaf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a71a242ba63c157ca40acbf4421c0eaf7">Collidable</a> (sf::Vector2f *<a class="el" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a>, sf::Vector2f size)</td></tr>
-<tr class="separator:a71a242ba63c157ca40acbf4421c0eaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a454ca1b66dd504b25fed3706914cee6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a454ca1b66dd504b25fed3706914cee6e">~Collidable</a> ()</td></tr>
-<tr class="separator:a454ca1b66dd504b25fed3706914cee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9edfccd8c5a1ea77238c0a19aa910c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rectangle.html">Rectangle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3">getCollider</a> ()</td></tr>
-<tr class="separator:ac9edfccd8c5a1ea77238c0a19aa910c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc1f09ce02e6fcf56d98f07f908a104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a8cc1f09ce02e6fcf56d98f07f908a104">isMoved</a> ()</td></tr>
-<tr class="separator:a8cc1f09ce02e6fcf56d98f07f908a104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0db0fe1eaeab29564d641d4cb2904b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a> (dllexport) <a class="el" href="class_collidable.html">Collidable</a>()</td></tr>
+<tr class="separator:ae0db0fe1eaeab29564d641d4cb2904b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab232f4b0ae1feb56a177f47311c60473"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <a class="el" href="class_collidable.html">Collidable</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#ab232f4b0ae1feb56a177f47311c60473">__declspec</a> (dllexport)~<a class="el" href="class_collidable.html">Collidable</a>()</td></tr>
+<tr class="separator:ab232f4b0ae1feb56a177f47311c60473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2116894511c75bdea4a8c939ddd93061"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a2116894511c75bdea4a8c939ddd93061">__declspec</a> (dllexport) bool isMoved()</td></tr>
+<tr class="separator:a2116894511c75bdea4a8c939ddd93061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -147,100 +143,52 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:afe5442fd3a82abe62b95e93248d5f4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c2e113d920df8c0d5da2a244f924bd"><td class="memItemLeft" align="right" valign="top">sf::Vector2f *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a></td></tr>
 <tr class="separator:aa6c2e113d920df8c0d5da2a244f924bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a81575218d87940935d70800f7d663e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rectangle.html">Rectangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a0a81575218d87940935d70800f7d663e">Collider</a></td></tr>
-<tr class="separator:a0a81575218d87940935d70800f7d663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474de18f0027a4e089be1097f6d7bcc7"><td class="memItemLeft" align="right" valign="top">sf::Rect&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7">Collider</a></td></tr>
+<tr class="separator:a474de18f0027a4e089be1097f6d7bcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50dbf8f9d1f584d3a5d5c3445fbe786"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">lastpos</a></td></tr>
 <tr class="separator:ae50dbf8f9d1f584d3a5d5c3445fbe786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a92ce9e2b08086bb2f466168ffc69c9ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Collidable::Collidable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71a242ba63c157ca40acbf4421c0eaf7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Collidable::Collidable </td>
-          <td>(</td>
-          <td class="paramtype">sf::Vector2f *&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a454ca1b66dd504b25fed3706914cee6e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Collidable::~Collidable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9edfccd8c5a1ea77238c0a19aa910c3"></a>
+<a class="anchor" id="ae0db0fe1eaeab29564d641d4cb2904b7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_rectangle.html">Rectangle</a> &amp; Collidable::getCollider </td>
+          <td class="memname">Collidable::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_collidable_ac9edfccd8c5a1ea77238c0a19aa910c3_icgraph.png" border="0" usemap="#class_collidable_ac9edfccd8c5a1ea77238c0a19aa910c3_icgraph" alt=""/></div>
-<map name="class_collidable_ac9edfccd8c5a1ea77238c0a19aa910c3_icgraph" id="class_collidable_ac9edfccd8c5a1ea77238c0a19aa910c3_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#a23684bfafa76cadb95c81ba89b039461" title="Chunk::Sense" alt="" coords="200,5,304,32"/><area shape="rect" id="node3" href="class_chunk.html#a750907d92efc9e45bfff5e280fa55afe" title="Chunk::Update" alt="" coords="352,5,460,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="508,5,667,32"/><area shape="rect" id="node5" href="class_layer.html#a6db2f37689d5ee4958167e539ab4ce69" title="Layer::Update" alt="" coords="715,5,817,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="a8cc1f09ce02e6fcf56d98f07f908a104"></a>
+<a class="anchor" id="ab232f4b0ae1feb56a177f47311c60473"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Collidable::isMoved </td>
+          <td class="memname">__declspec (dllexport) <a class="el" href="class_collidable.html">Collidable</a>(sf Collidable::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2116894511c75bdea4a8c939ddd93061"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__declspec (dllexport) sf Collidable::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -250,7 +198,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0a81575218d87940935d70800f7d663e"></a>
+<a class="anchor" id="a474de18f0027a4e089be1097f6d7bcc7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +206,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_rectangle.html">Rectangle</a> Collidable::Collider</td>
+          <td class="memname">sf::Rect&lt;float&gt; Collidable::Collider</td>
         </tr>
       </table>
   </td>
@@ -330,9 +278,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_collidable_8hpp_source.html">Collidable.hpp</a></li>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_collidable_8cpp.html">Collidable.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_collidable_8hpp_source.html">Collidable.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -340,7 +287,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_collidable.html">Collidable</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/Collidable.hpp Source File</title>
+<title>Revelator Framework: D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/Collidable.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_collidable_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,45 +109,41 @@ $(document).ready(function(){initNavTree('_collidable_8hpp_source.html','');});
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _COLLIDABLE</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;SFML\Graphics.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_drawable_8hpp.html">Drawable.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rectangle_8hpp.html">Rectangle.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_collidable.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_collidable.html">Collidable</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_collidable.html#a92ce9e2b08086bb2f466168ffc69c9ed">Collidable</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_collidable.html#a92ce9e2b08086bb2f466168ffc69c9ed">Collidable</a>(sf::Vector2f * <a class="code" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a>, sf::Vector2f size);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_collidable.html#a454ca1b66dd504b25fed3706914cee6e">~Collidable</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_rectangle.html">Rectangle</a> &amp; <a class="code" href="class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3">getCollider</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_collidable.html#a8cc1f09ce02e6fcf56d98f07f908a104">isMoved</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">   18</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">hasMoved</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">   19</a></span>&#160;    sf::Vector2f * <a class="code" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_collidable.html#a0a81575218d87940935d70800f7d663e">   20</a></span>&#160;    <a class="code" href="class_rectangle.html">Rectangle</a> <a class="code" href="class_collidable.html#a0a81575218d87940935d70800f7d663e">Collider</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">   21</a></span>&#160;    sf::Vector2f <a class="code" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">lastpos</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif //! _COLLIDABLE</span></div>
-<div class="ttc" id="_rectangle_8hpp_html"><div class="ttname"><a href="_rectangle_8hpp.html">Rectangle.hpp</a></div></div>
-<div class="ttc" id="class_collidable_html_afe5442fd3a82abe62b95e93248d5f4a1"><div class="ttname"><a href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">Collidable::hasMoved</a></div><div class="ttdeci">bool hasMoved</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:18</div></div>
-<div class="ttc" id="class_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.hpp:3</div></div>
-<div class="ttc" id="class_collidable_html_ae50dbf8f9d1f584d3a5d5c3445fbe786"><div class="ttname"><a href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">Collidable::lastpos</a></div><div class="ttdeci">sf::Vector2f lastpos</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:21</div></div>
-<div class="ttc" id="class_collidable_html_a92ce9e2b08086bb2f466168ffc69c9ed"><div class="ttname"><a href="class_collidable.html#a92ce9e2b08086bb2f466168ffc69c9ed">Collidable::Collidable</a></div><div class="ttdeci">Collidable()</div></div>
-<div class="ttc" id="class_collidable_html_a8cc1f09ce02e6fcf56d98f07f908a104"><div class="ttname"><a href="class_collidable.html#a8cc1f09ce02e6fcf56d98f07f908a104">Collidable::isMoved</a></div><div class="ttdeci">bool isMoved()</div><div class="ttdef"><b>Definition:</b> Collidable.cpp:18</div></div>
-<div class="ttc" id="class_collidable_html_aa6c2e113d920df8c0d5da2a244f924bd"><div class="ttname"><a href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">Collidable::position</a></div><div class="ttdeci">sf::Vector2f * position</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:19</div></div>
-<div class="ttc" id="class_collidable_html_ac9edfccd8c5a1ea77238c0a19aa910c3"><div class="ttname"><a href="class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3">Collidable::getCollider</a></div><div class="ttdeci">Rectangle &amp; getCollider()</div><div class="ttdef"><b>Definition:</b> Collidable.cpp:28</div></div>
-<div class="ttc" id="class_collidable_html"><div class="ttname"><a href="class_collidable.html">Collidable</a></div><div class="ttdef"><b>Definition:</b> Collidable.hpp:6</div></div>
-<div class="ttc" id="class_collidable_html_a0a81575218d87940935d70800f7d663e"><div class="ttname"><a href="class_collidable.html#a0a81575218d87940935d70800f7d663e">Collidable::Collider</a></div><div class="ttdeci">Rectangle Collider</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:20</div></div>
-<div class="ttc" id="class_collidable_html_a454ca1b66dd504b25fed3706914cee6e"><div class="ttname"><a href="class_collidable.html#a454ca1b66dd504b25fed3706914cee6e">Collidable::~Collidable</a></div><div class="ttdeci">~Collidable()</div><div class="ttdef"><b>Definition:</b> Collidable.cpp:12</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_collidable.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_collidable.html">Collidable</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a>(dllexport) <a class="code" href="class_collidable.html">Collidable</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a>(dllexport) <a class="code" href="class_collidable.html">Collidable</a>(sf::Vector2f * <a class="code" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a>, sf::Vector2f size);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a>(dllexport) ~<a class="code" href="class_collidable.html">Collidable</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a>(dllexport) sf::Rect&lt;float&gt; getCollider();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">__declspec</a>(dllexport) <span class="keywordtype">bool</span> isMoved();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">   19</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">hasMoved</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">   20</a></span>&#160;    sf::Vector2f * <a class="code" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">position</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7">   21</a></span>&#160;    sf::Rect&lt;float&gt; <a class="code" href="class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7">Collider</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">   22</a></span>&#160;    sf::Vector2f <a class="code" href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">lastpos</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif //! _COLLIDABLE</span></div>
+<div class="ttc" id="class_collidable_html_afe5442fd3a82abe62b95e93248d5f4a1"><div class="ttname"><a href="class_collidable.html#afe5442fd3a82abe62b95e93248d5f4a1">Collidable::hasMoved</a></div><div class="ttdeci">bool hasMoved</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:19</div></div>
+<div class="ttc" id="class_collidable_html_ae50dbf8f9d1f584d3a5d5c3445fbe786"><div class="ttname"><a href="class_collidable.html#ae50dbf8f9d1f584d3a5d5c3445fbe786">Collidable::lastpos</a></div><div class="ttdeci">sf::Vector2f lastpos</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:22</div></div>
+<div class="ttc" id="class_collidable_html_ae0db0fe1eaeab29564d641d4cb2904b7"><div class="ttname"><a href="class_collidable.html#ae0db0fe1eaeab29564d641d4cb2904b7">Collidable::__declspec</a></div><div class="ttdeci">__declspec(dllexport) Collidable()</div></div>
+<div class="ttc" id="class_collidable_html_a474de18f0027a4e089be1097f6d7bcc7"><div class="ttname"><a href="class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7">Collidable::Collider</a></div><div class="ttdeci">sf::Rect&lt; float &gt; Collider</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:21</div></div>
+<div class="ttc" id="class_collidable_html_aa6c2e113d920df8c0d5da2a244f924bd"><div class="ttname"><a href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">Collidable::position</a></div><div class="ttdeci">sf::Vector2f * position</div><div class="ttdef"><b>Definition:</b> Collidable.hpp:20</div></div>
+<div class="ttc" id="class_collidable_html"><div class="ttname"><a href="class_collidable.html">Collidable</a></div><div class="ttdef"><b>Definition:</b> Collidable.hpp:7</div></div>
 <div class="ttc" id="_drawable_8hpp_html"><div class="ttname"><a href="_drawable_8hpp.html">Drawable.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_162791bd1d89eec564183f4895eb6373.html">Revelatorframework</a></li><li class="navelem"><a class="el" href="_collidable_8hpp.html">Collidable.hpp</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:09 for Revelator Framework by
+    <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_collidable_8hpp.html">Collidable.hpp</a></li>
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:53 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

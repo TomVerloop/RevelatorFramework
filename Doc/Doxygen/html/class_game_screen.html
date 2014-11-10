@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_game_screen-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GameScreen Class Reference</div>  </div>
@@ -118,119 +118,43 @@ Inheritance diagram for GameScreen:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_screen__inherit__graph.png" border="0" usemap="#_game_screen_inherit__map" alt="Inheritance graph"/></div>
 <map name="_game_screen_inherit__map" id="_game_screen_inherit__map">
-<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="19,5,122,112"/></map>
+<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,5,113,97"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GameScreen:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_screen__coll__graph.png" border="0" usemap="#_game_screen_coll__map" alt="Collaboration graph"/></div>
 <map name="_game_screen_coll__map" id="_game_screen_coll__map">
-<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="5,79,108,185"/><area shape="rect" id="node3" href="class_screen_transaction.html" title="{ScreenTransaction\n|# Message\l# Id\l# From\l# To\l|+ ScreenTransaction()\l+ ~ScreenTransaction()\l+ setMessage()\l+ setId()\l+ setFrom()\l+ setTo()\l+ getMessage()\l+ getId()\l+ getFrom()\l+ getTo()\l}" alt="" coords="132,5,291,259"/></map>
+<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,101,113,193"/><area shape="rect" id="node3" href="class_screen_transaction.html" title="{ScreenTransaction\n|+ Message\l+ from\l+ to\l# Id\l# From\l# To\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="138,5,269,288"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae68a867285e0aba9d2b22bff690616ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ae68a867285e0aba9d2b22bff690616ac">GameScreen</a> ()</td></tr>
-<tr class="separator:ae68a867285e0aba9d2b22bff690616ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d25dfce42d72954aab40dbccbf1a0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1">~GameScreen</a> ()</td></tr>
-<tr class="separator:a0d25dfce42d72954aab40dbccbf1a0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa297aaa006484162d80fe2a5ea15f375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375">Update</a> (<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)</td></tr>
-<tr class="separator:aa297aaa006484162d80fe2a5ea15f375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb11360ac509f47ca47929c254a8b67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
-<tr class="separator:afb11360ac509f47ca47929c254a8b67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14685a397e9c9c0ec971f648eeb1ec8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b">addLayer</a> (std::string name, <a class="el" href="class_layer.html">Layer</a> *layer)</td></tr>
-<tr class="separator:a14685a397e9c9c0ec971f648eeb1ec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7d3aad324a781cd22599b56903fb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">removeLayer</a> (std::string name)</td></tr>
-<tr class="separator:ace7d3aad324a781cd22599b56903fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd7cd68d80fc29593703ee1741b8996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#accd7cd68d80fc29593703ee1741b8996">getLayer</a> (std::string name)</td></tr>
-<tr class="separator:accd7cd68d80fc29593703ee1741b8996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5d1420883ee7c135747c6aadf7fae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a1c5d1420883ee7c135747c6aadf7fae9">setTransaction</a> (<a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *<a class="el" href="class_game_screen.html#accd7b1f865eb3e0ab95ca4eb8b795b93">transaction</a>)</td></tr>
-<tr class="separator:a1c5d1420883ee7c135747c6aadf7fae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aadb0f4d885be777b3d99f08add9f88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a5aadb0f4d885be777b3d99f08add9f88">hasTransaction</a> ()</td></tr>
-<tr class="separator:a5aadb0f4d885be777b3d99f08add9f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab148b3dc8dd0921eaf90e52fb61d7817"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ab148b3dc8dd0921eaf90e52fb61d7817">getTransaction</a> ()</td></tr>
-<tr class="separator:ab148b3dc8dd0921eaf90e52fb61d7817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fb99405265eadec9712c99673a05f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a> (dllexport) <a class="el" href="class_game_screen.html">GameScreen</a>()</td></tr>
+<tr class="separator:a41fb99405265eadec9712c99673a05f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940d1b9790ff4b737ee4c521d10a5e08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a940d1b9790ff4b737ee4c521d10a5e08">__declspec</a> (dllexport)~<a class="el" href="class_game_screen.html">GameScreen</a>()</td></tr>
+<tr class="separator:a940d1b9790ff4b737ee4c521d10a5e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3d28d386460d2de50ab89f2b6803ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#abf3d28d386460d2de50ab89f2b6803ae">__declspec</a> (dllexport) void Update(<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)</td></tr>
+<tr class="separator:abf3d28d386460d2de50ab89f2b6803ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c4507a9836db3a91c596cfbc228a44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ae0c4507a9836db3a91c596cfbc228a44">__declspec</a> (dllexport) bool hasTransaction()</td></tr>
+<tr class="separator:ae0c4507a9836db3a91c596cfbc228a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6956b33306f1fd55ed252479ccc9d123"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a6956b33306f1fd55ed252479ccc9d123">__declspec</a> (dllexport) <a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *getTransaction()</td></tr>
+<tr class="separator:a6956b33306f1fd55ed252479ccc9d123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_drawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_drawable.html">Drawable</a></td></tr>
-<tr class="memitem:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a> ()</td></tr>
-<tr class="separator:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db44942658aab760a7418e338582e0a inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a5db44942658aab760a7418e338582e0a">~Drawable</a> ()</td></tr>
-<tr class="separator:a5db44942658aab760a7418e338582e0a inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f04cf11a84eb3cdf68ea48599648d7 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a> (dllexport) <a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
+<tr class="separator:ac9f04cf11a84eb3cdf68ea48599648d7 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8175a6d9337a90bd36e368bd6749579 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ab8175a6d9337a90bd36e368bd6749579">__declspec</a> (dllexport)~<a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
+<tr class="separator:ab8175a6d9337a90bd36e368bd6749579 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:ab134d175092c247558838f11d66e9493"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a></td></tr>
 <tr class="separator:ab134d175092c247558838f11d66e9493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd7b1f865eb3e0ab95ca4eb8b795b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#accd7b1f865eb3e0ab95ca4eb8b795b93">transaction</a> { nullptr }</td></tr>
 <tr class="separator:accd7b1f865eb3e0ab95ca4eb8b795b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae68a867285e0aba9d2b22bff690616ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameScreen::GameScreen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0d25dfce42d72954aab40dbccbf1a0b1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameScreen::~GameScreen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a14685a397e9c9c0ec971f648eeb1ec8b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameScreen::addLayer </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_layer.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>layer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph.png" border="0" usemap="#class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph" alt=""/></div>
-<map name="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph" id="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="212,5,411,32"/><area shape="rect" id="node3" href="main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="459,5,569,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="617,5,668,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="afb11360ac509f47ca47929c254a8b67d"></a>
+<a class="anchor" id="a41fb99405265eadec9712c99673a05f1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -238,69 +162,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GameScreen::Draw </td>
+          <td class="memname">GameScreen::__declspec </td>
           <td>(</td>
-          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
-          <td class="paramname"><em>window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2">Drawable</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_afb11360ac509f47ca47929c254a8b67d_icgraph.png" border="0" usemap="#class_game_screen_afb11360ac509f47ca47929c254a8b67d_icgraph" alt=""/></div>
-<map name="class_game_screen_afb11360ac509f47ca47929c254a8b67d_icgraph" id="class_game_screen_afb11360ac509f47ca47929c254a8b67d_icgraph">
-<area shape="rect" id="node2" href="class_screen_manager.html#abcf990ad052121e6ebd2ab03771657df" title="ScreenManager::Draw" alt="" coords="188,5,339,32"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="387,5,437,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="accd7cd68d80fc29593703ee1741b8996"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_layer.html">Layer</a> * GameScreen::getLayer </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab148b3dc8dd0921eaf90e52fb61d7817"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a>* GameScreen::getTransaction </td>
-          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -312,18 +176,41 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817_icgraph.png" border="0" usemap="#class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817_icgraph" alt=""/></div>
-<map name="class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817_icgraph" id="class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817_icgraph">
-<area shape="rect" id="node2" href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9" title="ScreenManager::Update" alt="" coords="244,5,407,32"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="455,5,505,32"/></map>
 </div>
-</p>
+</div>
+<a class="anchor" id="a940d1b9790ff4b737ee4c521d10a5e08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameScreen::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5aadb0f4d885be777b3d99f08add9f88"></a>
+<a class="anchor" id="abf3d28d386460d2de50ab89f2b6803ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameScreen::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0c4507a9836db3a91c596cfbc228a44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -331,8 +218,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GameScreen::hasTransaction </td>
+          <td class="memname">GameScreen::__declspec </td>
           <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -344,34 +232,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_a5aadb0f4d885be777b3d99f08add9f88_icgraph.png" border="0" usemap="#class_game_screen_a5aadb0f4d885be777b3d99f08add9f88_icgraph" alt=""/></div>
-<map name="class_game_screen_a5aadb0f4d885be777b3d99f08add9f88_icgraph" id="class_game_screen_a5aadb0f4d885be777b3d99f08add9f88_icgraph">
-<area shape="rect" id="node2" href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9" title="ScreenManager::Update" alt="" coords="248,5,411,32"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="459,5,509,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="ace7d3aad324a781cd22599b56903fb43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameScreen::removeLayer </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1c5d1420883ee7c135747c6aadf7fae9"></a>
+<a class="anchor" id="a6956b33306f1fd55ed252479ccc9d123"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -379,10 +242,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GameScreen::setTransaction </td>
+          <td class="memname">GameScreen::__declspec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td>
-          <td class="paramname"><em>transaction</em></td><td>)</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -392,49 +255,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9_icgraph.png" border="0" usemap="#class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9_icgraph" alt=""/></div>
-<map name="class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9_icgraph" id="class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9_icgraph">
-<area shape="rect" id="node2" href="class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375" title="GameScreen::Update" alt="" coords="244,5,391,32"/><area shape="rect" id="node3" href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9" title="ScreenManager::Update" alt="" coords="439,5,601,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="649,5,700,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa297aaa006484162d80fe2a5ea15f375"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameScreen::Update </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_update_data.html">UpdateData</a> *&#160;</td>
-          <td class="paramname"><em>updateobject</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_cgraph.png" border="0" usemap="#class_game_screen_aa297aaa006484162d80fe2a5ea15f375_cgraph" alt=""/></div>
-<map name="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_cgraph" id="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_cgraph">
-<area shape="rect" id="node2" href="class_game_screen.html#a1c5d1420883ee7c135747c6aadf7fae9" title="GameScreen::setTransaction" alt="" coords="200,5,391,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_icgraph.png" border="0" usemap="#class_game_screen_aa297aaa006484162d80fe2a5ea15f375_icgraph" alt=""/></div>
-<map name="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_icgraph" id="class_game_screen_aa297aaa006484162d80fe2a5ea15f375_icgraph">
-<area shape="rect" id="node2" href="class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9" title="ScreenManager::Update" alt="" coords="200,5,363,32"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="411,5,461,32"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -452,7 +272,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -472,16 +292,15 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_game_screen_8hpp_source.html">GameScreen.hpp</a></li>
-<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/Revelatorframework/<a class="el" href="_game_screen_8cpp.html">GameScreen.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_game_screen_8hpp_source.html">GameScreen.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -489,7 +308,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_screen.html">GameScreen</a></li>
-    <li class="footer">Generated on Tue Nov 4 2014 09:38:10 for Revelator Framework by
+    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

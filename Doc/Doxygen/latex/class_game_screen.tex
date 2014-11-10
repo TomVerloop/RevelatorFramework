@@ -7,46 +7,38 @@
 
 
 
-Inheritance diagram for Game\-Screen\-:\nopagebreak
+Inheritance diagram for Game\-Screen\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{class_game_screen__inherit__graph}
+\includegraphics[width=161pt]{class_game_screen__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Game\-Screen\-:\nopagebreak
+Collaboration diagram for Game\-Screen\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{class_game_screen__coll__graph}
+\includegraphics[width=278pt]{class_game_screen__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_game_screen_ae68a867285e0aba9d2b22bff690616ac}{Game\-Screen} ()
+\hyperlink{class_game_screen_a41fb99405265eadec9712c99673a05f1}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_screen}{Game\-Screen}()
 \item 
-\hyperlink{class_game_screen_a0d25dfce42d72954aab40dbccbf1a0b1}{$\sim$\-Game\-Screen} ()
+\hyperlink{class_game_screen_a940d1b9790ff4b737ee4c521d10a5e08}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_game_screen}{Game\-Screen}()
 \item 
-void \hyperlink{class_game_screen_aa297aaa006484162d80fe2a5ea15f375}{Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\hyperlink{class_game_screen_abf3d28d386460d2de50ab89f2b6803ae}{\-\_\-\-\_\-declspec} (dllexport) void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
 \item 
-void \hyperlink{class_game_screen_afb11360ac509f47ca47929c254a8b67d}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)
+\hyperlink{class_game_screen_ae0c4507a9836db3a91c596cfbc228a44}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Transaction()
 \item 
-void \hyperlink{class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b}{add\-Layer} (std\-::string name, \hyperlink{class_layer}{Layer} $\ast$layer)
-\item 
-void \hyperlink{class_game_screen_ace7d3aad324a781cd22599b56903fb43}{remove\-Layer} (std\-::string name)
-\item 
-\hyperlink{class_layer}{Layer} $\ast$ \hyperlink{class_game_screen_accd7cd68d80fc29593703ee1741b8996}{get\-Layer} (std\-::string name)
-\item 
-void \hyperlink{class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9}{set\-Transaction} (\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$\hyperlink{class_game_screen_accd7b1f865eb3e0ab95ca4eb8b795b93}{transaction})
-\item 
-bool \hyperlink{class_game_screen_a5aadb0f4d885be777b3d99f08add9f88}{has\-Transaction} ()
-\item 
-\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ \hyperlink{class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817}{get\-Transaction} ()
+\hyperlink{class_game_screen_a6956b33306f1fd55ed252479ccc9d123}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$get\-Transaction()
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\-::map$<$ std\-::string, \hyperlink{class_layer}{Layer} $\ast$ $>$ \hyperlink{class_game_screen_ab134d175092c247558838f11d66e9493}{Layers}
@@ -55,175 +47,53 @@ std\-::map$<$ std\-::string, \hyperlink{class_layer}{Layer} $\ast$ $>$ \hyperlin
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_game_screen_ae68a867285e0aba9d2b22bff690616ac}{\index{Game\-Screen@{Game\-Screen}!Game\-Screen@{Game\-Screen}}
-\index{Game\-Screen@{Game\-Screen}!GameScreen@{Game\-Screen}}
-\subsubsection[{Game\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-Game\-Screen (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_game_screen_ae68a867285e0aba9d2b22bff690616ac}
-\hypertarget{class_game_screen_a0d25dfce42d72954aab40dbccbf1a0b1}{\index{Game\-Screen@{Game\-Screen}!$\sim$\-Game\-Screen@{$\sim$\-Game\-Screen}}
-\index{$\sim$\-Game\-Screen@{$\sim$\-Game\-Screen}!GameScreen@{Game\-Screen}}
-\subsubsection[{$\sim$\-Game\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::$\sim$\-Game\-Screen (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_game_screen_a0d25dfce42d72954aab40dbccbf1a0b1}
-
-
 \subsection{Member Function Documentation}
-\hypertarget{class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b}{\index{Game\-Screen@{Game\-Screen}!add\-Layer@{add\-Layer}}
-\index{add\-Layer@{add\-Layer}!GameScreen@{Game\-Screen}}
-\subsubsection[{add\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Screen\-::add\-Layer (
+\hypertarget{class_game_screen_a41fb99405265eadec9712c99673a05f1}{\index{Game\-Screen@{Game\-Screen}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameScreen@{Game\-Screen}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{std\-::string}]{name, }
-\item[{{\bf Layer} $\ast$}]{layer}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_game_screen_afb11360ac509f47ca47929c254a8b67d}{\index{Game\-Screen@{Game\-Screen}!Draw@{Draw}}
-\index{Draw@{Draw}!GameScreen@{Game\-Screen}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Screen\-::\-Draw (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_a41fb99405265eadec9712c99673a05f1}
+\hypertarget{class_game_screen_a940d1b9790ff4b737ee4c521d10a5e08}{\index{Game\-Screen@{Game\-Screen}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameScreen@{Game\-Screen}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
-\item[{sf\-::\-Vector2f}]{offset}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_game_screen_afb11360ac509f47ca47929c254a8b67d}
-
-
-Implements \hyperlink{class_drawable_a0e24de52eeb44555872c70f3adf854d2}{Drawable}.
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_afb11360ac509f47ca47929c254a8b67d_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_game_screen_accd7cd68d80fc29593703ee1741b8996}{\index{Game\-Screen@{Game\-Screen}!get\-Layer@{get\-Layer}}
-\index{get\-Layer@{get\-Layer}!GameScreen@{Game\-Screen}}
-\subsubsection[{get\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer} $\ast$ Game\-Screen\-::get\-Layer (
+)}}\label{class_game_screen_a940d1b9790ff4b737ee4c521d10a5e08}
+\hypertarget{class_game_screen_abf3d28d386460d2de50ab89f2b6803ae}{\index{Game\-Screen@{Game\-Screen}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameScreen@{Game\-Screen}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{std\-::string}]{name}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_game_screen_accd7cd68d80fc29593703ee1741b8996}
-\hypertarget{class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817}{\index{Game\-Screen@{Game\-Screen}!get\-Transaction@{get\-Transaction}}
-\index{get\-Transaction@{get\-Transaction}!GameScreen@{Game\-Screen}}
-\subsubsection[{get\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction}$\ast$ Game\-Screen\-::get\-Transaction (
+)}}\label{class_game_screen_abf3d28d386460d2de50ab89f2b6803ae}
+\hypertarget{class_game_screen_ae0c4507a9836db3a91c596cfbc228a44}{\index{Game\-Screen@{Game\-Screen}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameScreen@{Game\-Screen}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_ab148b3dc8dd0921eaf90e52fb61d7817_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_game_screen_a5aadb0f4d885be777b3d99f08add9f88}{\index{Game\-Screen@{Game\-Screen}!has\-Transaction@{has\-Transaction}}
-\index{has\-Transaction@{has\-Transaction}!GameScreen@{Game\-Screen}}
-\subsubsection[{has\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-Screen\-::has\-Transaction (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_ae0c4507a9836db3a91c596cfbc228a44}
+\hypertarget{class_game_screen_a6956b33306f1fd55ed252479ccc9d123}{\index{Game\-Screen@{Game\-Screen}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameScreen@{Game\-Screen}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Screen\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_a5aadb0f4d885be777b3d99f08add9f88}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_a5aadb0f4d885be777b3d99f08add9f88_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_game_screen_ace7d3aad324a781cd22599b56903fb43}{\index{Game\-Screen@{Game\-Screen}!remove\-Layer@{remove\-Layer}}
-\index{remove\-Layer@{remove\-Layer}!GameScreen@{Game\-Screen}}
-\subsubsection[{remove\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Screen\-::remove\-Layer (
-\begin{DoxyParamCaption}
-\item[{std\-::string}]{name}
-\end{DoxyParamCaption}
-)}}\label{class_game_screen_ace7d3aad324a781cd22599b56903fb43}
-\hypertarget{class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9}{\index{Game\-Screen@{Game\-Screen}!set\-Transaction@{set\-Transaction}}
-\index{set\-Transaction@{set\-Transaction}!GameScreen@{Game\-Screen}}
-\subsubsection[{set\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Screen\-::set\-Transaction (
-\begin{DoxyParamCaption}
-\item[{{\bf Screen\-Transaction} $\ast$}]{transaction}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9}
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_a1c5d1420883ee7c135747c6aadf7fae9_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_game_screen_aa297aaa006484162d80fe2a5ea15f375}{\index{Game\-Screen@{Game\-Screen}!Update@{Update}}
-\index{Update@{Update}!GameScreen@{Game\-Screen}}
-\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-Screen\-::\-Update (
-\begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
-\end{DoxyParamCaption}
-)}}\label{class_game_screen_aa297aaa006484162d80fe2a5ea15f375}
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_aa297aaa006484162d80fe2a5ea15f375_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_screen_aa297aaa006484162d80fe2a5ea15f375_icgraph}
-\end{center}
-\end{figure}
-
-
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_screen_a6956b33306f1fd55ed252479ccc9d123}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_game_screen_ab134d175092c247558838f11d66e9493}{\index{Game\-Screen@{Game\-Screen}!Layers@{Layers}}
 \index{Layers@{Layers}!GameScreen@{Game\-Screen}}
-\subsubsection[{Layers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Layer}$\ast$$>$ Game\-Screen\-::\-Layers\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_screen_ab134d175092c247558838f11d66e9493}
+\subsubsection[{Layers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Layer}$\ast$$>$ Game\-Screen\-::\-Layers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_screen_ab134d175092c247558838f11d66e9493}
 \hypertarget{class_game_screen_accd7b1f865eb3e0ab95ca4eb8b795b93}{\index{Game\-Screen@{Game\-Screen}!transaction@{transaction}}
 \index{transaction@{transaction}!GameScreen@{Game\-Screen}}
-\subsubsection[{transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction}$\ast$ Game\-Screen\-::transaction \{ nullptr \}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_screen_accd7b1f865eb3e0ab95ca4eb8b795b93}
+\subsubsection[{transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction}$\ast$ Game\-Screen\-::transaction \{ nullptr \}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_screen_accd7b1f865eb3e0ab95ca4eb8b795b93}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_game_screen_8hpp}{Game\-Screen.\-hpp}\item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_game_screen_8cpp}{Game\-Screen.\-cpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_game_screen_8hpp}{Game\-Screen.\-hpp}\end{DoxyCompactItemize}

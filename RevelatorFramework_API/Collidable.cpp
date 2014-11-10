@@ -25,7 +25,7 @@ bool Collidable::isMoved()
 	return !b; 
 }
 
-Rectangle & Collidable::getCollider()
+sf::Rect<float> Collidable::getCollider()
 {
 	Collider.left = position->x;
 	Collider.top = position->y;

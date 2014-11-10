@@ -1,5 +1,0 @@
-COORDX 0
-COORDY 0
-SIZE 1000
-ExampleComponent 400.0,400.0
-MovableComponent 500.0,500.0

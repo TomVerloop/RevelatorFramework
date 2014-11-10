@@ -18,31 +18,30 @@ Collaboration diagram for Layer\-:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_layer_a8f623c7c4737dc29ecc86978d243ac6f}{Layer} ()
+\hyperlink{class_layer_aef82e8c88a73de071f2951744dd5fbc7}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_layer}{Layer}()
 \item 
-\hyperlink{class_layer_a1b1ba4804451dfe6cc357194e42762ae}{$\sim$\-Layer} ()
+\hyperlink{class_layer_ae17eacb9709778961a8f044834963c92}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_layer}{Layer}()
 \item 
-virtual void \hyperlink{class_layer_a6db2f37689d5ee4958167e539ab4ce69}{Update} (\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\hyperlink{class_layer_aa53cd45edd1551626f7a9349e368e445}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
 \item 
-virtual void \hyperlink{class_layer_a008068a5a6bd4dd274bb01bf0246cfaf}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)
+\-\_\-\-\_\-declspec(dllexport) virtual \\*
+void Draw(sf \hyperlink{class_layer_acb6a84b41682f21a857dfd9fdf401c05}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Transaction()
 \item 
-bool \hyperlink{class_layer_a36ea9075da50ba00ce591c365f1df947}{has\-Transaction} ()
+\hyperlink{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$get\-Transaction()
 \item 
-\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ \hyperlink{class_layer_a828daf5d76e298c41fbe1d67a680b706}{get\-Transaction} ()
+\hyperlink{class_layer_a7b16aa0abac81bb0abfed937c02374cf}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Enabled()
 \item 
-bool \hyperlink{class_layer_a57c59677e3c56a7fd5e3dc985bdb9b4c}{is\-Enabled} ()
+\hyperlink{class_layer_adf8adf7a53cb647e84d749379930d897}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Drawing()
 \item 
-bool \hyperlink{class_layer_a46a91415e6bdc2fdb75ae0ac8498868f}{is\-Drawing} ()
+\hyperlink{class_layer_a4b55bc3ac94c62d356bfc30f08382d6b}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Updating()
 \item 
-bool \hyperlink{class_layer_ac2892b95b2df74446d89e4a6388f0c88}{is\-Updating} ()
+\hyperlink{class_layer_aabba8310bc18ddf8488cd5685baab5e7}{\-\_\-\-\_\-declspec} (dllexport) void set\-Enabled(bool b)
 \item 
-void \hyperlink{class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c}{set\-Enabled} (bool b)
+\hyperlink{class_layer_a5065c5c2027ec45a40870adca41522fc}{\-\_\-\-\_\-declspec} (dllexport) void set\-Drawing(bool b)
 \item 
-void \hyperlink{class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1}{set\-Drawing} (bool b)
+\hyperlink{class_layer_a17a99eb35b1d1780c45acd3af6e4ffa2}{\-\_\-\-\_\-declspec} (dllexport) void set\-Updating(bool b)
 \item 
-void \hyperlink{class_layer_a0e0595efe93dbd63b05339f35399d1ad}{set\-Updating} (bool b)
-\item 
-\hyperlink{class_chunk_manager}{Chunk\-Manager} $\ast$ \hyperlink{class_layer_afbfd549c4d1da2e4a2d78a33586c95e1}{get\-Chunk\-Manager} ()
+\hyperlink{class_layer_a7fe1685bbc80b73fe42a2cc0c58a272d}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk_manager}{Chunk\-Manager} $\ast$get\-Chunk\-Manager()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -59,161 +58,91 @@ bool \hyperlink{class_layer_a8c3badeb437135a265c931f4ee728a48}{will\-Update}
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_layer_a8f623c7c4737dc29ecc86978d243ac6f}{\index{Layer@{Layer}!Layer@{Layer}}
-\index{Layer@{Layer}!Layer@{Layer}}
-\subsubsection[{Layer}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-Layer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_layer_a8f623c7c4737dc29ecc86978d243ac6f}
-\hypertarget{class_layer_a1b1ba4804451dfe6cc357194e42762ae}{\index{Layer@{Layer}!$\sim$\-Layer@{$\sim$\-Layer}}
-\index{$\sim$\-Layer@{$\sim$\-Layer}!Layer@{Layer}}
-\subsubsection[{$\sim$\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::$\sim$\-Layer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_layer_a1b1ba4804451dfe6cc357194e42762ae}
-
-
 \subsection{Member Function Documentation}
-\hypertarget{class_layer_a008068a5a6bd4dd274bb01bf0246cfaf}{\index{Layer@{Layer}!Draw@{Draw}}
-\index{Draw@{Draw}!Layer@{Layer}}
-\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Layer\-::\-Draw (
+\hypertarget{class_layer_aef82e8c88a73de071f2951744dd5fbc7}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{sf\-::\-Render\-Window \&}]{window, }
-\item[{sf\-::\-Vector2f}]{offset}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_layer_a008068a5a6bd4dd274bb01bf0246cfaf}
-
-
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_layer_afbfd549c4d1da2e4a2d78a33586c95e1}{\index{Layer@{Layer}!get\-Chunk\-Manager@{get\-Chunk\-Manager}}
-\index{get\-Chunk\-Manager@{get\-Chunk\-Manager}!Layer@{Layer}}
-\subsubsection[{get\-Chunk\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk\-Manager}$\ast$ Layer\-::get\-Chunk\-Manager (
+)}}\label{class_layer_aef82e8c88a73de071f2951744dd5fbc7}
+\hypertarget{class_layer_ae17eacb9709778961a8f044834963c92}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_afbfd549c4d1da2e4a2d78a33586c95e1}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_layer_a828daf5d76e298c41fbe1d67a680b706}{\index{Layer@{Layer}!get\-Transaction@{get\-Transaction}}
-\index{get\-Transaction@{get\-Transaction}!Layer@{Layer}}
-\subsubsection[{get\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction} $\ast$ Layer\-::get\-Transaction (
+)}}\label{class_layer_ae17eacb9709778961a8f044834963c92}
+\hypertarget{class_layer_aa53cd45edd1551626f7a9349e368e445}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_layer_a828daf5d76e298c41fbe1d67a680b706}
-\hypertarget{class_layer_a36ea9075da50ba00ce591c365f1df947}{\index{Layer@{Layer}!has\-Transaction@{has\-Transaction}}
-\index{has\-Transaction@{has\-Transaction}!Layer@{Layer}}
-\subsubsection[{has\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::has\-Transaction (
+)}}\label{class_layer_aa53cd45edd1551626f7a9349e368e445}
+\hypertarget{class_layer_acb6a84b41682f21a857dfd9fdf401c05}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) virtual void Draw(sf Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_layer_a36ea9075da50ba00ce591c365f1df947}
-\hypertarget{class_layer_a46a91415e6bdc2fdb75ae0ac8498868f}{\index{Layer@{Layer}!is\-Drawing@{is\-Drawing}}
-\index{is\-Drawing@{is\-Drawing}!Layer@{Layer}}
-\subsubsection[{is\-Drawing}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::is\-Drawing (
+)}}\label{class_layer_acb6a84b41682f21a857dfd9fdf401c05}
+\hypertarget{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a46a91415e6bdc2fdb75ae0ac8498868f}
-\hypertarget{class_layer_a57c59677e3c56a7fd5e3dc985bdb9b4c}{\index{Layer@{Layer}!is\-Enabled@{is\-Enabled}}
-\index{is\-Enabled@{is\-Enabled}!Layer@{Layer}}
-\subsubsection[{is\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::is\-Enabled (
+)}}\label{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}
+\hypertarget{class_layer_a7b16aa0abac81bb0abfed937c02374cf}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a57c59677e3c56a7fd5e3dc985bdb9b4c}
-\hypertarget{class_layer_ac2892b95b2df74446d89e4a6388f0c88}{\index{Layer@{Layer}!is\-Updating@{is\-Updating}}
-\index{is\-Updating@{is\-Updating}!Layer@{Layer}}
-\subsubsection[{is\-Updating}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::is\-Updating (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a7b16aa0abac81bb0abfed937c02374cf}
+\hypertarget{class_layer_adf8adf7a53cb647e84d749379930d897}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-{}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_ac2892b95b2df74446d89e4a6388f0c88}
-\hypertarget{class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1}{\index{Layer@{Layer}!set\-Drawing@{set\-Drawing}}
-\index{set\-Drawing@{set\-Drawing}!Layer@{Layer}}
-\subsubsection[{set\-Drawing}]{\setlength{\rightskip}{0pt plus 5cm}void Layer\-::set\-Drawing (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_adf8adf7a53cb647e84d749379930d897}
+\hypertarget{class_layer_a4b55bc3ac94c62d356bfc30f08382d6b}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{bool}]{b}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1}
-\hypertarget{class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c}{\index{Layer@{Layer}!set\-Enabled@{set\-Enabled}}
-\index{set\-Enabled@{set\-Enabled}!Layer@{Layer}}
-\subsubsection[{set\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}void Layer\-::set\-Enabled (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a4b55bc3ac94c62d356bfc30f08382d6b}
+\hypertarget{class_layer_aabba8310bc18ddf8488cd5685baab5e7}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{bool}]{b}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_layer_a0e0595efe93dbd63b05339f35399d1ad}{\index{Layer@{Layer}!set\-Updating@{set\-Updating}}
-\index{set\-Updating@{set\-Updating}!Layer@{Layer}}
-\subsubsection[{set\-Updating}]{\setlength{\rightskip}{0pt plus 5cm}void Layer\-::set\-Updating (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_aabba8310bc18ddf8488cd5685baab5e7}
+\hypertarget{class_layer_a5065c5c2027ec45a40870adca41522fc}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{bool}]{b}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a0e0595efe93dbd63b05339f35399d1ad}
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_layer_a6db2f37689d5ee4958167e539ab4ce69}{\index{Layer@{Layer}!Update@{Update}}
-\index{Update@{Update}!Layer@{Layer}}
-\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Layer\-::\-Update (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a5065c5c2027ec45a40870adca41522fc}
+\hypertarget{class_layer_a17a99eb35b1d1780c45acd3af6e4ffa2}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
-\item[{{\bf Update\-Data} $\ast$}]{updateobject}
+\item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_layer_a6db2f37689d5ee4958167e539ab4ce69}
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_layer_a6db2f37689d5ee4958167e539ab4ce69_cgraph}
-\end{center}
-\end{figure}
-
-
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a17a99eb35b1d1780c45acd3af6e4ffa2}
+\hypertarget{class_layer_a7fe1685bbc80b73fe42a2cc0c58a272d}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a7fe1685bbc80b73fe42a2cc0c58a272d}
 
 
 \subsection{Member Data Documentation}
@@ -234,7 +163,6 @@ Here is the call graph for this function\-:
 \subsubsection[{will\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::will\-Update\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_layer_a8c3badeb437135a265c931f4ee728a48}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_layer_8hpp}{Layer.\-hpp}\item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelatorframework/\hyperlink{_layer_8cpp}{Layer.\-cpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_layer_8hpp}{Layer.\-hpp}\end{DoxyCompactItemize}

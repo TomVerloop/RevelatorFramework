@@ -8,8 +8,6 @@ class ScreenTransaction
 public:
 	__declspec(dllexport) ScreenTransaction(int id = 0, std::string Message = "", std::string from = "", std::string to = "");
 	__declspec(dllexport) ~ScreenTransaction();
-
-
 	//setters
 	__declspec(dllexport) void setMessage(std::string mes){ Message = mes; }
 	__declspec(dllexport) void setId(int id){ Id = id; }

@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['d',['D',['../class_update_data.html#ad44f92d0cf0c0f4ca4ef841fa8799730',1,'UpdateData']]],
-  ['dash',['Dash',['../class_update_data.html#acc35bc3786bb4f488c0366c379106d38',1,'UpdateData']]],
-  ['delete',['Delete',['../class_update_data.html#aa2cbcf528fa3bf5e9a90f45c90e0b50b',1,'UpdateData']]],
-  ['divide',['Divide',['../class_update_data.html#a19dd2c9f092922c12318ea051db1bbf2',1,'UpdateData']]],
-  ['down',['Down',['../class_update_data.html#add2f4889014ccd62f222903b95185dde',1,'UpdateData']]],
-  ['draw',['Draw',['../class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42',1,'Chunk::Draw()'],['../class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450',1,'ChunkManager::Draw()'],['../class_drawable.html#a0e24de52eeb44555872c70f3adf854d2',1,'Drawable::Draw()'],['../class_example_drawable.html#a02efe170a267616262e1bac3d65cdf59',1,'ExampleDrawable::Draw()'],['../class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc',1,'ExampleComponent::Draw()'],['../class_game_component.html#a63c3e40531340490712b789d0d821743',1,'GameComponent::Draw()'],['../class_game_screen.html#afb11360ac509f47ca47929c254a8b67d',1,'GameScreen::Draw()'],['../class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf',1,'Layer::Draw()'],['../class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429',1,'MovableComponent::Draw()'],['../class_screen_manager.html#abcf990ad052121e6ebd2ab03771657df',1,'ScreenManager::Draw()']]],
-  ['drawable',['Drawable',['../class_drawable.html',1,'Drawable'],['../class_drawable.html#aac88608db6081da479c772c96636acb1',1,'Drawable::Drawable()'],['../class_game_component.html#acb73190345f4933825e9c8b8d5030438',1,'GameComponent::drawable()']]],
-  ['drawable_2ecpp',['Drawable.cpp',['../_drawable_8cpp.html',1,'']]],
-  ['drawable_2ehpp',['Drawable.hpp',['../_drawable_8hpp.html',1,'']]],
-  ['drawself',['DrawSelf',['../class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69',1,'Chunk']]],
-  ['drawvision',['DrawVision',['../class_sensor.html#a8ed4309852c92cdeac0152cc2f604ac8',1,'Sensor']]]
+  ['c',['C',['../class_update_data.html#a23f886eeea49c94a131db994cf40cca5',1,'UpdateData']]],
+  ['cameraposition',['CameraPosition',['../class_update_data.html#a365c2ac748b6456a70786698bef446e9',1,'UpdateData::CameraPosition()'],['../class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101',1,'WindowManager::CameraPosition()']]],
+  ['chunk',['Chunk',['../class_chunk.html',1,'']]],
+  ['chunk_2ecpp',['Chunk.cpp',['../_chunk_8cpp.html',1,'']]],
+  ['chunk_2ehpp',['Chunk.hpp',['../_chunk_8hpp.html',1,'']]],
+  ['chunkcoord',['ChunkCoord',['../class_chunk.html#abb5b1842148b3d7c616065766bfd2b33',1,'Chunk']]],
+  ['chunkmanager',['ChunkManager',['../class_chunk_manager.html',1,'']]],
+  ['chunkmanager_2ecpp',['ChunkManager.cpp',['../_chunk_manager_8cpp.html',1,'']]],
+  ['chunkmanager_2ehpp',['ChunkManager.hpp',['../_chunk_manager_8hpp.html',1,'']]],
+  ['chunks',['Chunks',['../class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb',1,'GameFactory::Chunks()'],['../class_layer.html#ab5408f6d27ad51d73df507296f16c811',1,'Layer::Chunks()']]],
+  ['collidable',['Collidable',['../class_collidable.html',1,'Collidable'],['../class_game_component.html#aa91bd3600bd5964b55c7806dcfd1c862',1,'GameComponent::collidable()']]],
+  ['collidable_2ecpp',['Collidable.cpp',['../_collidable_8cpp.html',1,'']]],
+  ['collidable_2ehpp',['Collidable.hpp',['../_collidable_8hpp.html',1,'']]],
+  ['collide',['Collide',['../class_example_component.html#a6ab733042d45aaa046201f486ece06b5',1,'ExampleComponent::Collide()'],['../class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b',1,'MovableComponent::Collide()']]],
+  ['collider',['Collider',['../class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7',1,'Collidable']]],
+  ['comma',['Comma',['../class_update_data.html#aff270a9dbf46f67b24f1f15ddb8f3bb7',1,'UpdateData']]],
+  ['comp',['comp',['../class_chunk.html#a633545d862acb016a7081c364126c7b8',1,'Chunk']]],
+  ['components',['Components',['../class_chunk.html#a4cdf6febd96ff99b681e37d548617a38',1,'Chunk::Components()'],['../class_game_factory.html#a90fc6360610babaf3d2d880f782772b3',1,'GameFactory::Components()'],['../class_spawner.html#ae5e316957ac1574347ba80bac3866976',1,'Spawner::Components()']]]
 ];

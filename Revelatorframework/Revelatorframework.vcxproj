@@ -85,11 +85,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ExampleComponent.cpp" />
+    <ClCompile Include="ExampleComponentProducer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MovableComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExampleComponent.hpp" />
+    <ClInclude Include="ExampleComponentProducer.hpp" />
     <ClInclude Include="MovableComponent.hpp" />
   </ItemGroup>
   <ItemGroup>

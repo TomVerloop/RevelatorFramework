@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['u',['U',['../class_update_data.html#a18cdd56443bc8668d067b9230b25028c',1,'UpdateData']]],
-  ['up',['Up',['../class_update_data.html#a301dedc5d2a50dcafae56ba712274b93',1,'UpdateData']]],
-  ['update',['Update',['../class_chunk.html#a750907d92efc9e45bfff5e280fa55afe',1,'Chunk::Update()'],['../class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e',1,'ChunkManager::Update()'],['../class_example_component.html#a74028c9fbf9ec0fc523e60416433eacb',1,'ExampleComponent::Update()'],['../class_game_component.html#a01b3434d7bf6a63552e7ea4fd68744fe',1,'GameComponent::Update()'],['../class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375',1,'GameScreen::Update()'],['../class_layer.html#a6db2f37689d5ee4958167e539ab4ce69',1,'Layer::Update()'],['../class_movable_component.html#a6310c2306c503472873721a9756003a8',1,'MovableComponent::Update()'],['../class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9',1,'ScreenManager::Update()']]],
-  ['updatedata',['UpdateData',['../class_update_data.html',1,'UpdateData'],['../class_update_data.html#a6882b130592cc63aa1e6f1ea36dcf349',1,'UpdateData::UpdateData()']]],
-  ['updatedata_2ecpp',['UpdateData.cpp',['../_update_data_8cpp.html',1,'']]],
-  ['updatedata_2ehpp',['UpdateData.hpp',['../_update_data_8hpp.html',1,'']]],
-  ['utils',['Utils',['../class_utils.html',1,'Utils'],['../class_utils.html#a1653aff7c075a5dd590d479d9b62242d',1,'Utils::Utils(const Utils &amp;utils)=delete'],['../class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a',1,'Utils::Utils()']]],
-  ['utils_2ecpp',['Utils.cpp',['../_utils_8cpp.html',1,'']]],
-  ['utils_2ehpp',['Utils.hpp',['../_utils_8hpp.html',1,'']]]
+  ['t',['T',['../class_update_data.html#abbe0deddc7a7d2874048501f4810a597',1,'UpdateData']]],
+  ['tab',['Tab',['../class_update_data.html#a696c64bfaec5d8d081a4c379f09918fc',1,'UpdateData']]],
+  ['targetver_2eh',['targetver.h',['../targetver_8h.html',1,'']]],
+  ['tilde',['Tilde',['../class_update_data.html#a5d670b989a2a95c590f52fb93867fae5',1,'UpdateData']]],
+  ['to',['To',['../class_screen_transaction.html#acadac834d980c73ac6084fb52a7f882c',1,'ScreenTransaction::To()'],['../class_screen_transaction.html#a00495b6a53c3cfc8bfe861138841a5c5',1,'ScreenTransaction::to()']]],
+  ['top',['Top',['../class_chunk.html#ae841d5ab24dfa5ef8865cb4fa05d089d',1,'Chunk']]],
+  ['transaction',['transaction',['../class_game_screen.html#accd7b1f865eb3e0ab95ca4eb8b795b93',1,'GameScreen::transaction()'],['../class_layer.html#a3f0f6e109409d047c650380b6715c316',1,'Layer::transaction()'],['../class_game_component.html#ae8c59f47f6723d108eb481a160607e98',1,'GameComponent::Transaction()']]]
 ];

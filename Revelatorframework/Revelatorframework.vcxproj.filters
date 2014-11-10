@@ -24,12 +24,18 @@
     <ClCompile Include="MovableComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExampleComponentProducer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExampleComponent.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MovableComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleComponentProducer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
