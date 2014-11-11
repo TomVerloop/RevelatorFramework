@@ -45,8 +45,7 @@ void MovableComponent::Update(UpdateData * updateobject)
 	{
 		GameComponent * p = sensor->getSeenObject();
 	}
-
-	updateobject->SetCameraPosition(sf::Vector2f{ this->Position->x, this->Position->y });
+	WindowManager::getInstance().setCameraPosition(sf::Vector2f{ this->Position->x, this->Position->y });
 }
 
 void MovableComponent::Draw(sf::RenderWindow & window, sf::Vector2f offset)

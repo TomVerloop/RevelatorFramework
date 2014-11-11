@@ -2,6 +2,10 @@
 #include "Chunk.hpp"
 #include "GameComponent.hpp"
 #include "Drawable.hpp"
+
+
+class Chunk;
+
 class ChunkManager
 {
 public:

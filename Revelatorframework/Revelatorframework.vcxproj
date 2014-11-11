@@ -88,16 +88,22 @@
     <ClCompile Include="ExampleComponentProducer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MovableComponent.cpp" />
+    <ClCompile Include="MovableComponentProducer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExampleComponent.hpp" />
     <ClInclude Include="ExampleComponentProducer.hpp" />
     <ClInclude Include="MovableComponent.hpp" />
+    <ClInclude Include="MovableComponentProducer.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RevelatorFramework_API\RevelatorFramework_API.vcxproj">
       <Project>{9d07c519-f2e5-431c-92a5-4d6f294f93c6}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resourses\GameScreens\MainScreen.txt" />
+    <Text Include="Resourses\Layers\MainLayer.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

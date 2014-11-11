@@ -2,7 +2,6 @@
 
 
 GameComponent::GameComponent() :
-Transaction{ nullptr },
 drawable{ nullptr },
 collidable{ nullptr },
 sensor{ nullptr },
@@ -12,7 +11,6 @@ spawner{ nullptr }
 }
 
 GameComponent::GameComponent(float x, float y) : 
-Transaction{ nullptr },
 drawable{ nullptr },
 collidable{ nullptr },
 sensor{ nullptr },
@@ -22,7 +20,6 @@ spawner{ nullptr }
 }
 
 GameComponent::GameComponent(sf::Vector2f Pos) :
-Transaction{ nullptr },
 drawable{ nullptr },
 collidable{ nullptr },
 sensor{ nullptr },

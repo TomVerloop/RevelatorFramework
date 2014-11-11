@@ -13,30 +13,56 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Producers">
+      <UniqueIdentifier>{52c6e5f3-31e4-46b2-902f-b740fd26a4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Producers">
+      <UniqueIdentifier>{ae6e6f88-db8e-4734-b075-607f94851941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{8a4a1a92-befa-4081-8d2e-b23178a93791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{b885d1f7-e0d7-489d-856c-d7db184ad3e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExampleComponentProducer.cpp">
+      <Filter>Source Files\Producers</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableComponentProducer.cpp">
+      <Filter>Source Files\Producers</Filter>
+    </ClCompile>
     <ClCompile Include="ExampleComponent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Components</Filter>
     </ClCompile>
     <ClCompile Include="MovableComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ExampleComponentProducer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExampleComponentProducer.hpp">
+      <Filter>Header Files\Producers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableComponentProducer.hpp">
+      <Filter>Header Files\Producers</Filter>
+    </ClInclude>
     <ClInclude Include="ExampleComponent.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Components</Filter>
     </ClInclude>
     <ClInclude Include="MovableComponent.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="ExampleComponentProducer.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resourses\GameScreens\MainScreen.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Resourses\Layers\MainLayer.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

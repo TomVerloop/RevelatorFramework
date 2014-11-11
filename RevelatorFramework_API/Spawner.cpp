@@ -2,18 +2,19 @@
 
 
 Spawner::Spawner()
+
+
 {
 }
-
-
 Spawner::~Spawner()
 {
 }
 
 
-void Spawner::pushComponent(GameComponent * c)
+void Spawner::pushComponent(std::string Name,ProducerPackage p)
 {
-	Components.push_back(c);
+	GameFactory * f = &GameFactory::getInstance();
+	Components.push_back(f->ProduceGameObject(Name,p));
 }
 
 GameComponent * Spawner::popComponent()

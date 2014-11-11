@@ -82,6 +82,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AudioManager.hpp" />
     <ClInclude Include="Chunk.hpp" />
     <ClInclude Include="ChunkManager.hpp" />
     <ClInclude Include="Collidable.hpp" />
@@ -90,11 +91,14 @@
     <ClInclude Include="GameFactory.hpp" />
     <ClInclude Include="GameObjectProducer.hpp" />
     <ClInclude Include="GameScreen.hpp" />
+    <ClInclude Include="Keyboard.hpp" />
     <ClInclude Include="Layer.hpp" />
+    <ClInclude Include="Mouse.hpp" />
     <ClInclude Include="ProducerPackage.hpp" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="ScreenManager.hpp" />
-    <ClInclude Include="ScreenTransaction.hpp" />
     <ClInclude Include="Sensor.hpp" />
+    <ClInclude Include="SFX.hpp" />
     <ClInclude Include="Spawner.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -103,6 +107,7 @@
     <ClInclude Include="WindowManager.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="Chunk.cpp" />
     <ClCompile Include="ChunkManager.cpp" />
     <ClCompile Include="Collidable.cpp" />
@@ -119,11 +124,13 @@
     <ClCompile Include="GameFactory.cpp" />
     <ClCompile Include="GameObjectProducer.cpp" />
     <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="ProducerPackage.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
-    <ClCompile Include="ScreenTransaction.cpp" />
     <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="SFX.cpp" />
     <ClCompile Include="Spawner.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -132,6 +139,9 @@
     <ClCompile Include="UpdateData.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="WindowManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RevelatorFramework_API.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

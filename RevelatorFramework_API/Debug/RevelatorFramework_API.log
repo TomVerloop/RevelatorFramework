@@ -1,22 +1,21 @@
-﻿Build started 10/11/2014 2:27:32 PM.
+﻿Build started 11/11/2014 11:50:14 PM.
      1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\RevelatorFramework_API\RevelatorFramework_API.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Chunk.cpp ChunkManager.cpp GameComponent.cpp GameFactory.cpp GameObjectProducer.cpp GameScreen.cpp Layer.cpp ScreenManager.cpp Spawner.cpp
-         Chunk.cpp
-         Generating Code...
-         Compiling...
          Spawner.cpp
          ScreenManager.cpp
          Layer.cpp
          GameScreen.cpp
          GameObjectProducer.cpp
          GameFactory.cpp
-     1>d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\gamefactory.cpp(196): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
          GameComponent.cpp
          ChunkManager.cpp
+         Chunk.cpp
          Generating Code...
        Link:
-         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.lib" /MACHINE:X86 /DLL Debug\Chunk.obj
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.lib" /MACHINE:X86 /DLL Debug\RevelatorFramework_API.res
+         Debug\AudioManager.obj
+         Debug\Chunk.obj
          Debug\ChunkManager.obj
          Debug\Collidable.obj
          Debug\dllmain.obj
@@ -25,19 +24,22 @@
          Debug\GameFactory.obj
          Debug\GameObjectProducer.obj
          Debug\GameScreen.obj
+         Debug\Keyboard.obj
          Debug\Layer.obj
+         Debug\Mouse.obj
          Debug\ProducerPackage.obj
          Debug\ScreenManager.obj
-         Debug\ScreenTransaction.obj
          Debug\Sensor.obj
+         Debug\SFX.obj
          Debug\Spawner.obj
          Debug\stdafx.obj
          Debug\UpdateData.obj
          Debug\Utils.obj
          Debug\WindowManager.obj
+            Creating library D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.lib and object D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.exp
          RevelatorFramework_API.vcxproj -> D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll
      1>Done Building Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\RevelatorFramework_API\RevelatorFramework_API.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.51
+Time Elapsed 00:00:07.43

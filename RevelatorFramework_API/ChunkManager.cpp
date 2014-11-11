@@ -52,7 +52,6 @@ void ChunkManager::setFirstChunk(Chunk * c)
 	ActiveChunk = c;
 }
 
-
 void ChunkManager::addGameComponent(GameComponent * c)
 {
 	FirstChunk->addComponent(c);

@@ -52,7 +52,6 @@ void Chunk::Update(UpdateData * updateobject)
 			if (comp->isDead())
 			{
 				RemoveFromChunk.push_back(comp);
-				GameFactory::getInstance()->DeleteDecommisioned(comp);
 			}
 			for (int i = 0; i < s->ComponentCount(); i++)
 			{

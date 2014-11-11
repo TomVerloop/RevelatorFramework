@@ -1,5 +1,4 @@
-#ifndef _COLLIDABLE
-#define _COLLIDABLE
+#pragma once
 #include <SFML\Graphics.hpp>
 #include "Drawable.hpp"
 
@@ -21,5 +20,3 @@ protected:
 	sf::Rect<float> Collider;
 	sf::Vector2f lastpos;
 };
-
-#endif //! _COLLIDABLE

@@ -22,14 +22,3 @@ void Layer::Draw(sf::RenderWindow & window, sf::Vector2f offset)
 
 	Chunks->Draw(window,offset);
 }
-
-
-bool Layer::hasTransaction()
-{
-	return (transaction != nullptr);
-}
-
-ScreenTransaction * Layer::getTransaction()
-{
-	return transaction;
-}

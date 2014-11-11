@@ -126,16 +126,29 @@ GameComponent * GameFactory::ProduceGameObject(std::string Name, ProducerPackage
 	}
 }
 
-void GameFactory::DeleteDecommisioned(GameComponent * component)
+void GameFactory::DeleteDecommisioned()
 {
-	Components.remove(component);
-	delete component;
+	std::list<GameComponent *> DeadComponents;
+	for (auto & comp : Components)
+	{
+		if (comp->isDead())
+		{
+			DeadComponents.push_back(comp);
+		}
+	}
+	while (DeadComponents.size() > 0)
+	{
+		auto & comp = DeadComponents.front();
+		DeadComponents.pop_front();
+		Components.remove(comp);
+		delete comp;
+	}
 }
 
-GameFactory * GameFactory::getInstance()
+GameFactory & GameFactory::getInstance()
 {
-	static GameFactory * f = new GameFactory();
-	return f;
+	static GameFactory factory;
+	return factory;
 }
 
 GameScreen * GameFactory::ProduceScreen(std::string screenname)
@@ -183,7 +196,6 @@ Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chun
 	layer->setDrawing(willdraw);
 	Layers.push_back(layer);
 	std::ifstream input("Resourses\\Layers\\" + layername + ".txt");
-	std::string AddType = "";
 	std::vector<std::vector<Chunk *>> ChunkVector(Chunks, std::vector<Chunk *>(Chunks));
 	ChunkVector.resize(Chunks);
 
@@ -191,7 +203,7 @@ Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chun
 	{
 		for (int j = 0; j < Chunks; j++)
 		{
-			ChunkVector.at(i).at(j) = (new Chunk(sf::Vector2i{ i, j }, ChunkSize));
+			ChunkVector.at(i).at(j) = new Chunk(sf::Vector2i{ i, j }, static_cast<float>(ChunkSize));
 			if (i > 0)
 			{
 				ChunkVector.at(i).at(j)->setLeft(ChunkVector.at(i - 1).at(j));
@@ -215,8 +227,9 @@ Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chun
 	}
 	while (!input.eof())
 	{
+		std::string AddType = "";
 		input >> AddType;
-		if (Producers.find(AddType) != Producers.end())
+		if (AddType != "" && Producers.find(AddType) != Producers.end())
 		{
 			ProducerPackage package;
 			input >> package;

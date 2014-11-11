@@ -1,19 +1,25 @@
 #include "WindowManager.hpp"
 
 
-WindowManager::WindowManager(sf::VideoMode videomode, std::string name, sf::Uint32 style) :window{videomode,name,style}
+WindowManager::WindowManager()
 {
+	window = nullptr;
 }
 
 
 WindowManager::~WindowManager()
 {
+	if (window != nullptr)
+	{
+		delete window;
+		window = nullptr;
+	}
 }
 
 
 sf::RenderWindow * WindowManager::getWindow()
 {
-	return &window;
+	return window;
 }
 
 sf::Vector2f WindowManager::getCameraPosition()
@@ -24,9 +30,9 @@ sf::Vector2f WindowManager::getCameraPosition()
 void WindowManager::setCameraPosition(sf::Vector2f position)
 {
 	CameraPosition = position;
-	sf::View v = window.getDefaultView();
+	sf::View v = window->getDefaultView();
 	v.setCenter(CameraPosition);
-	window.setView(v);
+	window->setView(v);
 }
 
 
@@ -36,3 +42,20 @@ void WindowManager::MoveCamera(sf::Vector2f direction)
 	setCameraPosition(CameraPosition);
 }
 
+
+WindowManager & WindowManager::getInstance()
+{
+	static WindowManager window;
+	return window;
+}
+
+
+void WindowManager::InitWindow(sf::VideoMode video,std::string Name)
+{
+	if (window != nullptr)
+	{
+		delete window;
+		window = nullptr;
+	}
+	window = new sf::RenderWindow(video, Name);
+}

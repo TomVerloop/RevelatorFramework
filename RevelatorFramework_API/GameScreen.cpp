@@ -37,10 +37,6 @@ void GameScreen::Update(UpdateData * updateobject)
 				comp.second->isEnabled())
 			{
 				comp.second->Update(updateobject);
-				if (comp.second->hasTransaction())
-				{
-					setTransaction(comp.second->getTransaction());
-				}
 			}
 		}
 	}

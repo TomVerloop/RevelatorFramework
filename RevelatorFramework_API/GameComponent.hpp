@@ -1,10 +1,8 @@
-#ifndef _GAME_COMPONENT
-#define _GAME_COMPONENT
+#pragma once
 
 #include <SFML\Graphics.hpp>
 #include <string>
 #include "UpdateData.hpp"
-#include "ScreenTransaction.hpp"
 #include <SFML\Graphics.hpp>
 #include "Drawable.hpp"
 #include "Collidable.hpp"
@@ -22,9 +20,6 @@ public:
 	__declspec(dllexport)  virtual void Update(UpdateData * updateobject) = 0;
 	__declspec(dllexport)  virtual void Collide(GameComponent * colider) = 0;
 	__declspec(dllexport)  virtual void Draw(sf::RenderWindow & window, sf::Vector2f offset) = 0;
-	__declspec(dllexport)  virtual bool hasTransaction(){ return (Transaction != nullptr); }
-	__declspec(dllexport)  virtual void setTransaction(ScreenTransaction * transaction){ Transaction = transaction; }
-	__declspec(dllexport)  virtual ScreenTransaction * getTransaction(){ return Transaction; }
 	__declspec(dllexport)  sf::Vector2f getPosition(){ return *Position; }
 	__declspec(dllexport)  void setPosition(sf::Vector2f pos){ Position->x = pos.x; Position->y = pos.y; }
 	__declspec(dllexport)  bool hasDrawable(){ return drawable != nullptr; };
@@ -42,7 +37,6 @@ protected:
 	//Standard atributes of a GameComponent
 	std::string Name;
 	int ID;
-	ScreenTransaction * Transaction;
 	sf::Vector2f * Position;
 	Drawable * drawable;
 	Collidable * collidable;
@@ -51,5 +45,3 @@ protected:
 	bool DeadComponent;
 	
 };
-
-#endif // !_GAME_COMPONENT

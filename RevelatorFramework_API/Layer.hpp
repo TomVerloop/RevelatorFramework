@@ -1,11 +1,12 @@
-#ifndef _LAYER
-#define _LAYER
+#pragma once
 
 #include <SFML\Graphics.hpp>
 #include "GameComponent.hpp"
 #include "Drawable.hpp"
 #include "ChunkManager.hpp"
 #include <list>
+
+class ChunkManager;
 
 class Layer
 {
@@ -14,8 +15,6 @@ public:
 	__declspec(dllexport) ~Layer();
 	__declspec(dllexport) virtual void Update(UpdateData * updateobject);
 	__declspec(dllexport) virtual void Draw(sf::RenderWindow & window, sf::Vector2f offset);
-	__declspec(dllexport) bool hasTransaction();
-	__declspec(dllexport) ScreenTransaction * getTransaction();
 
 	//getters
 	__declspec(dllexport) bool isEnabled() { return enabled; }
@@ -35,7 +34,4 @@ protected:
 	bool willDraw;
 	bool willUpdate;
 	ChunkManager * Chunks;
-	ScreenTransaction * transaction;
 };
-
-#endif //! _LAYER
