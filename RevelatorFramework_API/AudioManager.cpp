@@ -35,6 +35,7 @@ AudioManager::~AudioManager()
 
 bool AudioManager::PlaySFX(std::string name)
 {
+	
 	if (SoundEffects.find(name) == SoundEffects.end())
 	{
 		return false;

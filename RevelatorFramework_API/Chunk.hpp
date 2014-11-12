@@ -34,6 +34,8 @@ public:
 	__declspec(dllexport) sf::Vector2i  getCoords(){ return ChunkCoord; }
 	__declspec(dllexport) void  SenseSingle(UpdateData * updateobject, GameComponent * comp);
 	__declspec(dllexport) void  CollideSingle(UpdateData * updateobject, GameComponent * comp);
+	__declspec(dllexport) sf::Vector2f getPurePosition(){ return PurePosition; }
+	__declspec(dllexport) float getSize(){ return size; }
 private:
 
 	sf::Vector2f PurePosition;

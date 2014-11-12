@@ -14,7 +14,7 @@ public:
 	__declspec(dllexport) bool PlaySFX(std::string name);
 	__declspec(dllexport) bool PlayMusic(std::string name);
 	__declspec(dllexport) bool StopMusic();
-	__declspec(dllexport) bool musicIsPlaying(){ return PlayingMusic != nullptr; }
+	__declspec(dllexport) bool musicIsPlaying(){ return getInstance().PlayingMusic != nullptr; }
 private:
 	std::map<std::string, SFX*> SoundEffects;
 	std::map<std::string, sf::Music*> Musics;

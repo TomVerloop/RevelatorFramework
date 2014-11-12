@@ -1,13 +1,19 @@
-﻿Build started 11/11/2014 11:50:14 PM.
+﻿Build started 12/11/2014 10:35:23 AM.
      1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\RevelatorFramework_API\RevelatorFramework_API.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Chunk.cpp ChunkManager.cpp GameComponent.cpp GameFactory.cpp GameObjectProducer.cpp GameScreen.cpp Layer.cpp ScreenManager.cpp Spawner.cpp
-         Spawner.cpp
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AudioManager.cpp Chunk.cpp ChunkManager.cpp GameComponent.cpp GameFactory.cpp GameObjectProducer.cpp GameScreen.cpp Keyboard.cpp Layer.cpp Mouse.cpp ScreenManager.cpp Spawner.cpp WindowManager.cpp
+         WindowManager.cpp
          ScreenManager.cpp
+         Mouse.cpp
+         Keyboard.cpp
+         GameFactory.cpp
+         AudioManager.cpp
+         Generating Code...
+         Compiling...
+         Spawner.cpp
          Layer.cpp
          GameScreen.cpp
          GameObjectProducer.cpp
-         GameFactory.cpp
          GameComponent.cpp
          ChunkManager.cpp
          Chunk.cpp
@@ -42,4 +48,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.43
+Time Elapsed 00:00:09.39
