@@ -16,26 +16,35 @@ Collaboration diagram for Audio\-Manager\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_audio_manager__coll__graph}
+\includegraphics[width=180pt]{class_audio_manager__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_audio_manager_a2d67274eaba6212be9de8761439ad3ed}{\-\_\-\-\_\-declspec} (dllexport) static \hyperlink{class_audio_manager}{Audio\-Manager} \&get\-Instance()
-\begin{DoxyCompactList}\small\item\em This static function returns a Singleton reference to the Audiomanager. \end{DoxyCompactList}\item 
-\hyperlink{class_audio_manager_a0a4e089fd44ae9e5179fe9e0b4ea70c5}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_audio_manager}{Audio\-Manager}(const \hyperlink{class_audio_manager}{Audio\-Manager} \&audiomanager)=delete
+\hyperlink{class_audio_manager_a008a2bea57103294f092e3bd1f9d84da}{Audio\-Manager} (const \hyperlink{class_audio_manager}{Audio\-Manager} \&audiomanager)=delete
 \begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
-\hyperlink{class_audio_manager_a42776044d4549a30cc408be55678c8d2}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_audio_manager}{Audio\-Manager} \&operator
+\hyperlink{class_audio_manager}{Audio\-Manager} \& \hyperlink{class_audio_manager_af9245601e53c1584a3d7abef1aaefced}{operator=} (const \hyperlink{class_audio_manager}{Audio\-Manager} \&audiomanager)=delete
 \begin{DoxyCompactList}\small\item\em Deleted assignment opperator. \end{DoxyCompactList}\item 
-\hyperlink{class_audio_manager_a4e8c79c3166b6ce297cebeacf0323241}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_audio_manager}{Audio\-Manager}()
+\hyperlink{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}{$\sim$\-Audio\-Manager} ()
 \begin{DoxyCompactList}\small\item\em The Destructor. \end{DoxyCompactList}\item 
-\hyperlink{class_audio_manager_ae2a3f4f84432e899de52a644c5950435}{\-\_\-\-\_\-declspec} (dllexport) bool music\-Is\-Playing()
+bool \hyperlink{class_audio_manager_ad200f850f1289b15d3234d89f57206bb}{Play\-S\-F\-X} (std\-::string name)
+\begin{DoxyCompactList}\small\item\em This function plays a uninteruptable sound effect. \end{DoxyCompactList}\item 
+bool \hyperlink{class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8}{Play\-Music} (std\-::string name)
+\begin{DoxyCompactList}\small\item\em This function plays a interuptable music. If another was playing then it will stop that one. \end{DoxyCompactList}\item 
+bool \hyperlink{class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d}{Stop\-Music} ()
+\begin{DoxyCompactList}\small\item\em This function stops any playing music except sound effects. \end{DoxyCompactList}\item 
+bool \hyperlink{class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e}{music\-Is\-Playing} ()
 \begin{DoxyCompactList}\small\item\em This function checks if any music is playing at the moment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_audio_manager}{Audio\-Manager} \& \hyperlink{class_audio_manager_a03807d1257d2e07f666764dda149c47a}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em This static function returns a Singleton reference to the Audiomanager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_audio_manager_a08b3ec802ca9bdd8eda7d50e339b32ec}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_audio_manager}{Audio\-Manager}()
+\hyperlink{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}{Audio\-Manager} ()
 \begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -52,6 +61,10 @@ sf\-::\-Music $\ast$ \hyperlink{class_audio_manager_a8309e75d7e8ac5ecf53d5d8e787
 \subsection{Detailed Description}
 This Singleton Manages and plays all music and soundeffects. 
 
+An empty class for future use.
+
+This Abstract Class holds data used to manage the drawing of a gamecomponent.
+
 This Class is Singleton defined. It holds an reference to all soundeffects and music. It makes sure only one song is played at a time. sound effects however can be played multiple at a time. \begin{DoxyAuthor}{Author}
 Tom Verloop 
 \end{DoxyAuthor}
@@ -62,86 +75,108 @@ Tom Verloop
 2014-\/2015 
 \end{DoxyDate}
 \begin{DoxyWarning}{Warning}
-A Singleton 
+A Singleton
 \end{DoxyWarning}
+This class purely is used to draw a component on the screen. If a gamecomponent holds one of these it will execute the pure virtual draw method. \begin{DoxyAuthor}{Author}
+Tom Verloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2014-\/2015
+\end{DoxyDate}
+This empty class is made for future use. it will be send to a gamescreen when it becomes active. \begin{DoxyAuthor}{Author}
+Tom Verloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2014-\/2015 
+\end{DoxyDate}
 
 
-\subsection{Member Function Documentation}
-\hypertarget{class_audio_manager_a2d67274eaba6212be9de8761439ad3ed}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_audio_manager_a008a2bea57103294f092e3bd1f9d84da}{\index{Audio\-Manager@{Audio\-Manager}!Audio\-Manager@{Audio\-Manager}}
+\index{Audio\-Manager@{Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-Audio\-Manager (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const {\bf Audio\-Manager} \&}]{audiomanager}
 \end{DoxyParamCaption}
-)}}\label{class_audio_manager_a2d67274eaba6212be9de8761439ad3ed}
-
-
-This static function returns a Singleton reference to the Audiomanager. 
-
-This function plays a uninteruptable sound effect.
-
-\begin{DoxyReturn}{Returns}
-A Refrence to the Audiomanager.
-\end{DoxyReturn}
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & contains the name of the sound effect. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-returns a true if the sound is available and false if not.
-\end{DoxyReturn}
-This function plays a interuptable music. If another was playing then it will stop that one. 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em name} & contains the name of the music. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-returns a true if the sound is available and false if not.
-\end{DoxyReturn}
-This function stops any playing music except sound effects. \begin{DoxyReturn}{Returns}
-returns a true if the sound is available and false if not. 
-\end{DoxyReturn}
-\hypertarget{class_audio_manager_a0a4e089fd44ae9e5179fe9e0b4ea70c5}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_audio_manager_a0a4e089fd44ae9e5179fe9e0b4ea70c5}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_audio_manager_a008a2bea57103294f092e3bd1f9d84da}
 
 
 Deleted copy constructor. 
 
-\hypertarget{class_audio_manager_a42776044d4549a30cc408be55678c8d2}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}{\index{Audio\-Manager@{Audio\-Manager}!$\sim$\-Audio\-Manager@{$\sim$\-Audio\-Manager}}
+\index{$\sim$\-Audio\-Manager@{$\sim$\-Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{$\sim$\-Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::$\sim$\-Audio\-Manager (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_audio_manager_a42776044d4549a30cc408be55678c8d2}
-
-
-Deleted assignment opperator. 
-
-\hypertarget{class_audio_manager_a4e8c79c3166b6ce297cebeacf0323241}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_audio_manager_a4e8c79c3166b6ce297cebeacf0323241}
+)}}\label{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}
 
 
 The Destructor. 
 
-\hypertarget{class_audio_manager_ae2a3f4f84432e899de52a644c5950435}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}{\index{Audio\-Manager@{Audio\-Manager}!Audio\-Manager@{Audio\-Manager}}
+\index{Audio\-Manager@{Audio\-Manager}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Audio\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-Audio\-Manager (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_audio_manager_ae2a3f4f84432e899de52a644c5950435}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09}
+
+
+The default constructor. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_audio_manager_a03807d1257d2e07f666764dda149c47a}{\index{Audio\-Manager@{Audio\-Manager}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!AudioManager@{Audio\-Manager}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\-Manager} \& Audio\-Manager\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_audio_manager_a03807d1257d2e07f666764dda149c47a}
+
+
+This static function returns a Singleton reference to the Audiomanager. 
+
+\begin{DoxyReturn}{Returns}
+A Refrence to the Audiomanager. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_a03807d1257d2e07f666764dda149c47a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e}{\index{Audio\-Manager@{Audio\-Manager}!music\-Is\-Playing@{music\-Is\-Playing}}
+\index{music\-Is\-Playing@{music\-Is\-Playing}!AudioManager@{Audio\-Manager}}
+\subsubsection[{music\-Is\-Playing}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\-Manager\-::music\-Is\-Playing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e}
 
 
 This function checks if any music is playing at the moment. 
@@ -149,16 +184,112 @@ This function checks if any music is playing at the moment.
 \begin{DoxyReturn}{Returns}
 returns a true if the sound is available and false if not. 
 \end{DoxyReturn}
-\hypertarget{class_audio_manager_a08b3ec802ca9bdd8eda7d50e339b32ec}{\index{Audio\-Manager@{Audio\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!AudioManager@{Audio\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Audio\-Manager\-::\-\_\-\-\_\-declspec (
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_audio_manager_af9245601e53c1584a3d7abef1aaefced}{\index{Audio\-Manager@{Audio\-Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!AudioManager@{Audio\-Manager}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\-Manager}\& Audio\-Manager\-::operator= (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const {\bf Audio\-Manager} \&}]{audiomanager}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_audio_manager_a08b3ec802ca9bdd8eda7d50e339b32ec}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_audio_manager_af9245601e53c1584a3d7abef1aaefced}
 
 
-The default constructor. 
+Deleted assignment opperator. 
+
+\hypertarget{class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8}{\index{Audio\-Manager@{Audio\-Manager}!Play\-Music@{Play\-Music}}
+\index{Play\-Music@{Play\-Music}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Play\-Music}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\-Manager\-::\-Play\-Music (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8}
+
+
+This function plays a interuptable music. If another was playing then it will stop that one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & contains the name of the music. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a true if the sound is available and false if not. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_audio_manager_ad200f850f1289b15d3234d89f57206bb}{\index{Audio\-Manager@{Audio\-Manager}!Play\-S\-F\-X@{Play\-S\-F\-X}}
+\index{Play\-S\-F\-X@{Play\-S\-F\-X}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Play\-S\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\-Manager\-::\-Play\-S\-F\-X (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_ad200f850f1289b15d3234d89f57206bb}
+
+
+This function plays a uninteruptable sound effect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & contains the name of the sound effect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a true if the sound is available and false if not. 
+\end{DoxyReturn}
+\hypertarget{class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d}{\index{Audio\-Manager@{Audio\-Manager}!Stop\-Music@{Stop\-Music}}
+\index{Stop\-Music@{Stop\-Music}!AudioManager@{Audio\-Manager}}
+\subsubsection[{Stop\-Music}]{\setlength{\rightskip}{0pt plus 5cm}bool Audio\-Manager\-::\-Stop\-Music (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d}
+
+
+This function stops any playing music except sound effects. 
+
+\begin{DoxyReturn}{Returns}
+returns a true if the sound is available and false if not. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -186,6 +317,7 @@ contains a key value map of strings and sound effects.
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_audio_manager_8hpp}{Audio\-Manager.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_audio_manager_8hpp}{Audio\-Manager.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_audio_manager_8cpp}{Audio\-Manager.\-cpp}\end{DoxyCompactItemize}

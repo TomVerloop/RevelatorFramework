@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_texture_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,18 +113,19 @@ $(document).ready(function(){initNavTree('class_texture_manager.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_texture_manager.html">TextureManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport)~TextureManager()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_texture_manager.html#af49a6141f693bf983fb4ee736e84e999">__declspec</a>(dllexport) static TextureManager &amp;getInstance()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a389de71d534e5361d5c245df2b844608">__declspec</a>(dllexport) TextureManager(const TextureManager &amp;texturemanager)=delete</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_texture_manager.html#a6fa60e485c9e5d1694f99fd49ebe0f4c">__declspec</a>(dllexport) TextureManager &amp;operator</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a810093a8d9e11bbf4ac3b5b61290679f">__declspec</a>(dllexport) TextureManager()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a0a6bc63e2f6fa7e1d0aee5b24cfa089a">getInstance</a>()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_texture_manager.html#af3bb59dfc343791c8c29e7b5c5458df2">getTexture</a>(std::string name)</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a87439b6ae73b59eb3729e8af1013a790">operator=</a>(const TextureManager &amp;texturemanager)=delete</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_texture_manager.html#a1dd1edddd0c9bf3cd24848a00f1f0cf6">TextureManager</a>(const TextureManager &amp;texturemanager)=delete</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#ad76abb178b37cedf4514eb0154349935">TextureManager</a>()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_texture_manager.html#a7b3ea39ee8017ce3a7b5826bab1d2e04">Textures</a></td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_texture_manager.html#a001d6d74674961db79987e3222682576">~TextureManager</a>()</td><td class="entry"><a class="el" href="class_texture_manager.html">TextureManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:43 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

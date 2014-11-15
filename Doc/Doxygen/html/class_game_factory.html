@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,6 +108,7 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_game_factory-members.html">List of all members</a>  </div>
@@ -119,33 +122,47 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 Collaboration diagram for GameFactory:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_factory__coll__graph.png" border="0" usemap="#_game_factory_coll__map" alt="Collaboration graph"/></div>
-<map name="_game_factory_coll__map" id="_game_factory_coll__map">
-<area shape="rect" id="node2" href="class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="36,1469,144,1723"/><area shape="rect" id="node3" href="class_chunk_manager.html" title="{ChunkManager\n||+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="35,1256,145,1407"/><area shape="rect" id="node4" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="19,808,161,1179"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,257,113,349"/><area shape="rect" id="node6" href="class_game_component.html" title="{GameComponent\n|+ y\l# Name\l# ID\l# Position\l# DeadComponent\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 6 more...\l}" alt="" coords="109,463,239,745"/><area shape="rect" id="node7" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="164,5,272,156"/><area shape="rect" id="node8" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="264,205,372,400"/><area shape="rect" id="node9" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="396,242,504,363"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adaa8f1b9fe44c066743b786d1cd71bfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#adaa8f1b9fe44c066743b786d1cd71bfb">__declspec</a> (dllexport)~<a class="el" href="class_game_factory.html">GameFactory</a>()</td></tr>
-<tr class="separator:adaa8f1b9fe44c066743b786d1cd71bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9079d555495e2691cce325afe77c4785"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <br class="typebreak"/>
-<a class="el" href="class_game_screen.html">GameScreen</a> *ProduceScreen(std&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a9079d555495e2691cce325afe77c4785">__declspec</a> (dllexport) static <a class="el" href="class_game_factory.html">GameFactory</a> &amp;getInstance()</td></tr>
-<tr class="separator:a9079d555495e2691cce325afe77c4785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38779dd1a14a9e977614b14b01eb231f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a38779dd1a14a9e977614b14b01eb231f">__declspec</a> (dllexport) <a class="el" href="class_game_factory.html">GameFactory</a>(const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;utils)=delete</td></tr>
-<tr class="separator:a38779dd1a14a9e977614b14b01eb231f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0a6fccc0aec8cf4d30ba31c945f04e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a7d0a6fccc0aec8cf4d30ba31c945f04e">__declspec</a> (dllexport) <a class="el" href="class_game_factory.html">GameFactory</a> &amp;operator</td></tr>
-<tr class="separator:a7d0a6fccc0aec8cf4d30ba31c945f04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbbb4c198cab19386d67bfe7891b785"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">~GameFactory</a> ()</td></tr>
+<tr class="separator:a0cbbb4c198cab19386d67bfe7891b785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad293f5a8811d9106753916cef819fbce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">ProduceScreen</a> (std::string screenname)</td></tr>
+<tr class="separator:ad293f5a8811d9106753916cef819fbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77df8b5e97869b7d7b667c0852191e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a77df8b5e97869b7d7b667c0852191e20">RegisterObjectProducer</a> (std::string Name, <a class="el" href="class_game_object_producer.html">GameObjectProducer</a> *producer)</td></tr>
+<tr class="separator:a77df8b5e97869b7d7b667c0852191e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a20ae04c8ff992ad080b9742f5831c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a3a20ae04c8ff992ad080b9742f5831c0">RegisterLayerProducer</a> (std::string Name, <a class="el" href="class_layer_producer.html">LayerProducer</a> *producer)</td></tr>
+<tr class="separator:a3a20ae04c8ff992ad080b9742f5831c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c85f8654dd2c3aeb7a2b17df05cceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ad3c85f8654dd2c3aeb7a2b17df05cceb">RegisterScreenProducer</a> (std::string Name, <a class="el" href="class_game_screen_producer.html">GameScreenProducer</a> *producer)</td></tr>
+<tr class="separator:ad3c85f8654dd2c3aeb7a2b17df05cceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521cf5410b97240789a9cc54404d6a2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f">ProduceGameObject</a> (std::string Name)</td></tr>
+<tr class="separator:a521cf5410b97240789a9cc54404d6a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed92342411d80d6080294c29ac2c54e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0ed92342411d80d6080294c29ac2c54e">ProduceGameObject</a> (std::string Name, <a class="el" href="class_producer_package.html">ProducerPackage</a> package)</td></tr>
+<tr class="separator:a0ed92342411d80d6080294c29ac2c54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a130a6b0bff752fdd8223616a5f046f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a7a130a6b0bff752fdd8223616a5f046f">DeleteDecommisioned</a> ()</td></tr>
+<tr class="separator:a7a130a6b0bff752fdd8223616a5f046f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694a26c694da014dc5ced9d85a2aaaa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a694a26c694da014dc5ced9d85a2aaaa1">GameFactory</a> (const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;utils)=delete</td></tr>
+<tr class="separator:a694a26c694da014dc5ced9d85a2aaaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e48fb53d87829930bbc447133d9c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ac9e48fb53d87829930bbc447133d9c25">operator=</a> (const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;utils)=delete</td></tr>
+<tr class="separator:ac9e48fb53d87829930bbc447133d9c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d">getInstance</a> ()</td></tr>
+<tr class="separator:a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a6cb0bea926e68e7e2a8267e56f37b27e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a6cb0bea926e68e7e2a8267e56f37b27e">__declspec</a> (dllexport) <a class="el" href="class_game_factory.html">GameFactory</a>()</td></tr>
-<tr class="separator:a6cb0bea926e68e7e2a8267e56f37b27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c039131801be05d138bd76bb125ab3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory</a> ()</td></tr>
+<tr class="separator:a37c039131801be05d138bd76bb125ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c24ad925bf672c6fb721dfaaf993f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d">ProduceLayer</a> (std::string layername, int ChunkSize, const int <a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a>, bool enabled, bool willupdate, bool willdraw, <a class="el" href="class_producer_package.html">ProducerPackage</a> package, std::string layertype)</td></tr>
+<tr class="separator:a0c24ad925bf672c6fb721dfaaf993f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aeb0d338957100663811acae5074943ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_factory.html#adaa8f1b9fe44c066743b786d1cd71bfb">__declspec</a>(dllexport) <a class="el" href="class_layer.html">Layer</a> <br class="typebreak"/>
-*ProduceLayer(std std::list<br class="typebreak"/>
-&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#aeb0d338957100663811acae5074943ac">Layers</a></td></tr>
-<tr class="separator:aeb0d338957100663811acae5074943ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab6a968cb7af49813407fe66927c126"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">Layers</a></td></tr>
+<tr class="separator:a7ab6a968cb7af49813407fe66927c126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77496a7ea1e2fa54acb18c499b3bd3bb"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chunk.html">Chunk</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td></tr>
 <tr class="separator:a77496a7ea1e2fa54acb18c499b3bd3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a8135f6d6b1b60c0d08b39340b34cc"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_screen.html">GameScreen</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td></tr>
@@ -162,15 +179,14 @@ Private Attributes</h2></td></tr>
 <a class="el" href="class_layer_producer.html">LayerProducer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">LayerProducers</a></td></tr>
 <tr class="separator:adfadca1996a3982f4b45c67ced1520f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adaa8f1b9fe44c066743b786d1cd71bfb"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0cbbb4c198cab19386d67bfe7891b785"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GameFactory::__declspec </td>
+          <td class="memname">GameFactory::~GameFactory </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -179,23 +195,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9079d555495e2691cce325afe77c4785"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__declspec (dllexport) <a class="el" href="class_game_screen.html">GameScreen</a> * ProduceScreen(std GameFactory::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a38779dd1a14a9e977614b14b01eb231f"></a>
+<a class="anchor" id="a694a26c694da014dc5ced9d85a2aaaa1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -203,11 +203,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameFactory::__declspec </td>
+          <td class="memname">GameFactory::GameFactory </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td>
+          <td class="paramname"><em>utils</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -219,23 +219,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7d0a6fccc0aec8cf4d30ba31c945f04e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameFactory::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6cb0bea926e68e7e2a8267e56f37b27e"></a>
+<a class="anchor" id="a37c039131801be05d138bd76bb125ab3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -243,9 +227,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameFactory::__declspec </td>
+          <td class="memname">GameFactory::GameFactory </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -256,6 +239,365 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7a130a6b0bff752fdd8223616a5f046f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameFactory::DeleteDecommisioned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a7a130a6b0bff752fdd8223616a5f046f_icgraph.png" border="0" usemap="#class_game_factory_a7a130a6b0bff752fdd8223616a5f046f_icgraph" alt=""/></div>
+<map name="class_game_factory_a7a130a6b0bff752fdd8223616a5f046f_icgraph" id="class_game_factory_a7a130a6b0bff752fdd8223616a5f046f_icgraph">
+<area shape="rect" id="node2" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="292,5,455,32"/><area shape="rect" id="node3" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="503,5,641,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="689,5,740,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_factory.html">GameFactory</a> &amp; GameFactory::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a0b1eef0e66b8f6ff8277f6d5fb4b8e0d_icgraph.png" border="0" usemap="#class_game_factory_a0b1eef0e66b8f6ff8277f6d5fb4b8e0d_icgraph" alt=""/></div>
+<map name="class_game_factory_a0b1eef0e66b8f6ff8277f6d5fb4b8e0d_icgraph" id="class_game_factory_a0b1eef0e66b8f6ff8277f6d5fb4b8e0d_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="688,33,739,60"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="452,33,640,60"/><area shape="rect" id="node4" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="235,84,398,110"/><area shape="rect" id="node6" href="class_spawner.html#ae2e88e63fbb94df841800bd239d1a348" title="Spawner::pushComponent" alt="" coords="229,134,404,161"/><area shape="rect" id="node5" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="477,84,615,110"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9e48fb53d87829930bbc447133d9c25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_factory.html">GameFactory</a>&amp; GameFactory::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td>
+          <td class="paramname"><em>utils</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a521cf5410b97240789a9cc54404d6a2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_component.html">GameComponent</a> * GameFactory::ProduceGameObject </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>Name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph.png" border="0" usemap="#class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph" alt=""/></div>
+<map name="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph" id="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph">
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="245,5,435,32"/><area shape="rect" id="node6" href="class_spawner.html#ae2e88e63fbb94df841800bd239d1a348" title="Spawner::pushComponent" alt="" coords="253,56,427,83"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="483,5,681,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="729,5,917,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="965,5,1016,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ed92342411d80d6080294c29ac2c54e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_component.html">GameComponent</a> * GameFactory::ProduceGameObject </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_producer_package.html">ProducerPackage</a>&#160;</td>
+          <td class="paramname"><em>package</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c24ad925bf672c6fb721dfaaf993f9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_layer.html">Layer</a> * GameFactory::ProduceLayer </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>layername</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ChunkSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>Chunks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>willupdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>willdraw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_producer_package.html">ProducerPackage</a>&#160;</td>
+          <td class="paramname"><em>package</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>layertype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph.png" border="0" usemap="#class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph" alt=""/></div>
+<map name="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph" id="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph">
+<area shape="rect" id="node2" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="299,5,425,32"/><area shape="rect" id="node3" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="297,56,427,83"/><area shape="rect" id="node4" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="299,107,425,133"/><area shape="rect" id="node5" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="279,157,445,184"/><area shape="rect" id="node6" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="263,208,461,235"/><area shape="rect" id="node7" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="243,259,481,285"/><area shape="rect" id="node10" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="266,310,458,351"/><area shape="rect" id="node8" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="529,259,684,285"/><area shape="rect" id="node9" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="732,259,928,285"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph.png" border="0" usemap="#class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph" alt=""/></div>
+<map name="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph" id="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph">
+<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="243,5,441,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="489,5,677,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="725,5,776,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad293f5a8811d9106753916cef819fbce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_screen.html">GameScreen</a> * GameFactory::ProduceScreen </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>screenname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph.png" border="0" usemap="#class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph" alt=""/></div>
+<map name="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph" id="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph">
+<area shape="rect" id="node2" href="class_producer_package.html#aba29d881795d34f87986a1ad06de58a3" title="ProducerPackage::clear" alt="" coords="266,107,427,133"/><area shape="rect" id="node3" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="252,157,441,184"/><area shape="rect" id="node13" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="GameScreen::addLayer" alt="" coords="267,208,426,235"/><area shape="rect" id="node4" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="545,5,672,32"/><area shape="rect" id="node5" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="543,56,674,83"/><area shape="rect" id="node6" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="545,107,672,133"/><area shape="rect" id="node7" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="525,157,692,184"/><area shape="rect" id="node8" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="509,208,708,235"/><area shape="rect" id="node9" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="489,259,728,285"/><area shape="rect" id="node12" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="513,310,705,351"/><area shape="rect" id="node10" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="776,259,931,285"/><area shape="rect" id="node11" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="979,259,1175,285"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_ad293f5a8811d9106753916cef819fbce_icgraph.png" border="0" usemap="#class_game_factory_ad293f5a8811d9106753916cef819fbce_icgraph" alt=""/></div>
+<map name="class_game_factory_ad293f5a8811d9106753916cef819fbce_icgraph" id="class_game_factory_ad293f5a8811d9106753916cef819fbce_icgraph">
+<area shape="rect" id="node2" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="252,5,440,32"/><area shape="rect" id="node3" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="488,5,539,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a20ae04c8ff992ad080b9742f5831c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameFactory::RegisterLayerProducer </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_layer_producer.html">LayerProducer</a> *&#160;</td>
+          <td class="paramname"><em>producer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a3a20ae04c8ff992ad080b9742f5831c0_icgraph.png" border="0" usemap="#class_game_factory_a3a20ae04c8ff992ad080b9742f5831c0_icgraph" alt=""/></div>
+<map name="class_game_factory_a3a20ae04c8ff992ad080b9742f5831c0_icgraph" id="class_game_factory_a3a20ae04c8ff992ad080b9742f5831c0_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="243,13,293,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77df8b5e97869b7d7b667c0852191e20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameFactory::RegisterObjectProducer </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a> *&#160;</td>
+          <td class="paramname"><em>producer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_a77df8b5e97869b7d7b667c0852191e20_icgraph.png" border="0" usemap="#class_game_factory_a77df8b5e97869b7d7b667c0852191e20_icgraph" alt=""/></div>
+<map name="class_game_factory_a77df8b5e97869b7d7b667c0852191e20_icgraph" id="class_game_factory_a77df8b5e97869b7d7b667c0852191e20_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="248,13,299,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3c85f8654dd2c3aeb7a2b17df05cceb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameFactory::RegisterScreenProducer </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a> *&#160;</td>
+          <td class="paramname"><em>producer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_factory_ad3c85f8654dd2c3aeb7a2b17df05cceb_icgraph.png" border="0" usemap="#class_game_factory_ad3c85f8654dd2c3aeb7a2b17df05cceb_icgraph" alt=""/></div>
+<map name="class_game_factory_ad3c85f8654dd2c3aeb7a2b17df05cceb_icgraph" id="class_game_factory_ad3c85f8654dd2c3aeb7a2b17df05cceb_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="252,13,303,39"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -320,7 +662,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb0d338957100663811acae5074943ac"></a>
+<a class="anchor" id="a7ab6a968cb7af49813407fe66927c126"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -328,7 +670,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game_factory.html#adaa8f1b9fe44c066743b786d1cd71bfb">__declspec</a> (dllexport) <a class="el" href="class_layer.html">Layer</a> * ProduceLayer(std std::list&lt;<a class="el" href="class_layer.html">Layer</a> *&gt; GameFactory::Layers</td>
+          <td class="memname">std::list&lt;<a class="el" href="class_layer.html">Layer</a> *&gt; GameFactory::Layers</td>
         </tr>
       </table>
   </td>
@@ -400,8 +742,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_game_factory_8hpp_source.html">GameFactory.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_game_factory_8cpp.html">GameFactory.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -409,7 +752,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_factory.html">GameFactory</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

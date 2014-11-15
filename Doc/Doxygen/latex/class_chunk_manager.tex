@@ -3,12 +3,16 @@
 }
 
 
+This class contains a reference to the first chunk. and the one the camera hovers above.  
+
+
+
+
 {\ttfamily \#include $<$Chunk\-Manager.\-hpp$>$}
 
 
 
-Collaboration diagram for Chunk\-Manager\-:
-\nopagebreak
+Collaboration diagram for Chunk\-Manager\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,81 +22,249 @@ Collaboration diagram for Chunk\-Manager\-:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_chunk_manager_a5174dca056d736be1e45b71dfc0930ef}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk_manager}{Chunk\-Manager}()
-\item 
-\hyperlink{class_chunk_manager_a3ea11ca30e6e72f84a1f1bcfe6110543}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_chunk_manager}{Chunk\-Manager}()
-\item 
-\hyperlink{class_chunk_manager_a765c3019448f155961fff4dfeee300ca}{\-\_\-\-\_\-declspec} (dllexport) void Update(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
-\item 
-\-\_\-\-\_\-declspec(dllexport) void Draw(sf \hyperlink{class_chunk_manager_a1e77e66b79c2f65848acf922eceebc08}{\-\_\-\-\_\-declspec} (dllexport) void set\-Active\-Chunk(\hyperlink{class_chunk}{Chunk} $\ast$c)
-\item 
-\hyperlink{class_chunk_manager_aefbc2b592e93d6651226f055eb701d47}{\-\_\-\-\_\-declspec} (dllexport) void set\-First\-Chunk(\hyperlink{class_chunk}{Chunk} $\ast$c)
-\item 
-\hyperlink{class_chunk_manager_a132a5714695e761d05b32321c721a1d8}{\-\_\-\-\_\-declspec} (dllexport) void add\-Game\-Component(\hyperlink{class_game_component}{Game\-Component} $\ast$c)
-\end{DoxyCompactItemize}
+\hyperlink{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}{Chunk\-Manager} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}{$\sim$\-Chunk\-Manager} ()
+\begin{DoxyCompactList}\small\item\em The deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf}{Update} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
+\begin{DoxyCompactList}\small\item\em Sends the update signal to the first chunk for it to ripple through the rest. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)
+\begin{DoxyCompactList}\small\item\em Sends the draw signal to the active chunk for it to ripple through the rest. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}{set\-Active\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Sets a chunk as the active chunk. Result will probably be overridden by the camera. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}{set\-First\-Chunk} (\hyperlink{class_chunk}{Chunk} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Sets a chunk as the first chunk. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6}{add\-Game\-Component} (\hyperlink{class_game_component}{Game\-Component} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Adds a component to the first chunk which is then pushed through the chunks untill its in the correct chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}{Active\-Chunk}
-\item 
+\begin{DoxyCompactList}\small\item\em Contains a pointer to the Active \hyperlink{class_chunk}{Chunk}. \end{DoxyCompactList}\item 
 \hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}{First\-Chunk}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Contains a pointer to the First \hyperlink{class_chunk}{Chunk}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class contains a reference to the first chunk. and the one the camera hovers above. 
+
+This class contains a reference to the first chunk. and the one the camera hovers above. It sends both the update and draw signal to the chunks. although the update method goes to the firstchunk. and then is rippeled through to the others. And the draw signal goes to the active chunk and only its neighbors. Furthermore it can add components to the chunks. \begin{DoxyAuthor}{Author}
+Tom Verloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2014-\/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}{\index{Chunk\-Manager@{Chunk\-Manager}!Chunk\-Manager@{Chunk\-Manager}}
+\index{Chunk\-Manager@{Chunk\-Manager}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Chunk\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-Chunk\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a5280c6347b5aa7f85660c66e3546bf87}
+
+
+The constructor. 
+
+\hypertarget{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}{\index{Chunk\-Manager@{Chunk\-Manager}!$\sim$\-Chunk\-Manager@{$\sim$\-Chunk\-Manager}}
+\index{$\sim$\-Chunk\-Manager@{$\sim$\-Chunk\-Manager}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{$\sim$\-Chunk\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::$\sim$\-Chunk\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_manager_a675cdb47d0529eee3c878fbc25406710}
+
+
+The deconstructor. 
+
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_chunk_manager_a5174dca056d736be1e45b71dfc0930ef}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6}{\index{Chunk\-Manager@{Chunk\-Manager}!add\-Game\-Component@{add\-Game\-Component}}
+\index{add\-Game\-Component@{add\-Game\-Component}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{add\-Game\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::add\-Game\-Component (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{{\bf Game\-Component} $\ast$}]{c}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_manager_a5174dca056d736be1e45b71dfc0930ef}
-\hypertarget{class_chunk_manager_a3ea11ca30e6e72f84a1f1bcfe6110543}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6}
+
+
+Adds a component to the first chunk which is then pushed through the chunks untill its in the correct chunk. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em c} & Contains the component to add. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}{\index{Chunk\-Manager@{Chunk\-Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::\-Draw (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{sf\-::\-Render\-Window \&}]{window, }
+\item[{sf\-::\-Vector2f}]{offset}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_manager_a3ea11ca30e6e72f84a1f1bcfe6110543}
-\hypertarget{class_chunk_manager_a765c3019448f155961fff4dfeee300ca}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450}
+
+
+Sends the draw signal to the active chunk for it to ripple through the rest. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em window} & Contains the sfml renderwindow wich is drawn upon. \\
+\hline
+\mbox{\tt in}  & {\em offset} & Contains the offset used to draw the objects. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}{\index{Chunk\-Manager@{Chunk\-Manager}!set\-Active\-Chunk@{set\-Active\-Chunk}}
+\index{set\-Active\-Chunk@{set\-Active\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{set\-Active\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::set\-Active\-Chunk (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{{\bf Chunk} $\ast$}]{c}
 \end{DoxyParamCaption}
-) const}}\label{class_chunk_manager_a765c3019448f155961fff4dfeee300ca}
-\hypertarget{class_chunk_manager_a1e77e66b79c2f65848acf922eceebc08}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) void Draw(sf Chunk\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_chunk_manager_a00cea265f033fdc3b2188b1099094f08}
+
+
+Sets a chunk as the active chunk. Result will probably be overridden by the camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em c} & Contains the chunk to set as active. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}{\index{Chunk\-Manager@{Chunk\-Manager}!set\-First\-Chunk@{set\-First\-Chunk}}
+\index{set\-First\-Chunk@{set\-First\-Chunk}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{set\-First\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::set\-First\-Chunk (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{{\bf Chunk} $\ast$}]{c}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_manager_a1e77e66b79c2f65848acf922eceebc08}
-\hypertarget{class_chunk_manager_aefbc2b592e93d6651226f055eb701d47}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc}
+
+
+Sets a chunk as the first chunk. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em c} & Contains the chunk to set as first chunk. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf}{\index{Chunk\-Manager@{Chunk\-Manager}!Update@{Update}}
+\index{Update@{Update}!ChunkManager@{Chunk\-Manager}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-Manager\-::\-Update (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const {\bf Update\-Data} \&}]{updateobject}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_manager_aefbc2b592e93d6651226f055eb701d47}
-\hypertarget{class_chunk_manager_a132a5714695e761d05b32321c721a1d8}{\index{Chunk\-Manager@{Chunk\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!ChunkManager@{Chunk\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-Manager\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_manager_a132a5714695e761d05b32321c721a1d8}
+)}}\label{class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf}
+
+
+Sends the update signal to the first chunk for it to ripple through the rest. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & contains the data for the update event. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}{\index{Chunk\-Manager@{Chunk\-Manager}!Active\-Chunk@{Active\-Chunk}}
 \index{Active\-Chunk@{Active\-Chunk}!ChunkManager@{Chunk\-Manager}}
 \subsubsection[{Active\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-Manager\-::\-Active\-Chunk\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_manager_a8008f62926fe10f46ac59001aae2d372}
+
+
+Contains a pointer to the Active \hyperlink{class_chunk}{Chunk}. 
+
 \hypertarget{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}{\index{Chunk\-Manager@{Chunk\-Manager}!First\-Chunk@{First\-Chunk}}
 \index{First\-Chunk@{First\-Chunk}!ChunkManager@{Chunk\-Manager}}
 \subsubsection[{First\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk}$\ast$ Chunk\-Manager\-::\-First\-Chunk\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_manager_afb87cd5dd3cb61f09a6038d1796719ba}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+Contains a pointer to the First \hyperlink{class_chunk}{Chunk}. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_manager_8hpp}{Chunk\-Manager.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_manager_8hpp}{Chunk\-Manager.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_manager_8cpp}{Chunk\-Manager.\-cpp}\end{DoxyCompactItemize}

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_screen_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,22 +113,27 @@ $(document).ready(function(){initNavTree('class_screen_manager.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_screen_manager.html">ScreenManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a>(dllexport)~ScreenManager()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_screen_manager.html#a4c3f75679b3012b277a7d27413976ddd">__declspec</a>(dllexport) static ScreenManager &amp;getInstance()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a35e85f470e82fa773c250b1e67d1ad1b">__declspec</a>(dllexport) virtual void Update(const UpdateData &amp;updateobject)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_screen_manager.html#a21d7d26d0b547930bc87e3f4beb3c64c">__declspec</a>(dllexport) virtual void Draw()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#aa58378c4491afb6d72f4bc0b5090515f">__declspec</a>(dllexport) ScreenManager(const ScreenManager &amp;screenmanager)=delete</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_screen_manager.html#a9b42f78484e20d582fdffba182ba3763">__declspec</a>(dllexport) ScreenManager &amp;operator</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#aaa33dec76e404bd739a754c80c4917cc">__declspec</a>(dllexport) ScreenManager()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">ActiveScreen</a></td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">ActiveScreen</a></td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#a2e6e206c2ff265c534c802898c9c078b">addScreen</a>(std::string name, GameScreen *screen)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#ace42c010790b9fa5ba5e40accc56413a">Draw</a>()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd">getInstance</a>()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a510ee04534746a6e72fa789539dc2d83">getScreen</a>(std::string name)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#a04e300a0d2a9f6bdc73e4c4f75c5fbad">operator=</a>(const ScreenManager &amp;screenmanager)=delete</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8">removeScreen</a>(std::string name)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75">run</a>()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a65af2989683b8286705b5ff00b5017a7">ScreenManager</a>(const ScreenManager &amp;screenmanager)=delete</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733">ScreenManager</a>()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a54eb2c9667efda525a35d0d7043e8807">Screens</a></td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_screen_manager.html#ac7ebe41395bf83cc60c13e4fb502babd">setActiveScreen</a>(std::string name, EntryObject object)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210">Update</a>(const UpdateData &amp;updateobject)</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_screen_manager.html#a5fee528eafa1b2defad2a7c4bd6766aa">Window</a></td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_screen_manager.html#a515ec6aabc9fefe3c1cfbe734877da1e">~ScreenManager</a>()</td><td class="entry"><a class="el" href="class_screen_manager.html">ScreenManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:43 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

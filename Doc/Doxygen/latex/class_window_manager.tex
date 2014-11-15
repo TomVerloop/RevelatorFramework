@@ -11,23 +11,37 @@ Collaboration diagram for Window\-Manager\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=172pt]{class_window_manager__coll__graph}
+\includegraphics[width=194pt]{class_window_manager__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_window_manager_a28362d6854fad720a0fe21f34272522b}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_window_manager}{Window\-Manager}()
+\hyperlink{class_window_manager_a19fd6e41c42760af82460d9851780d82}{$\sim$\-Window\-Manager} ()
 \item 
-\-\_\-\-\_\-declspec(dllexport) void \\*
-Init\-Window(sf \hyperlink{class_window_manager_a353d26a2d2ca4ddb533ac80dff4cb889}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_window_manager}{Window\-Manager}(const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete
+sf\-::\-Render\-Window $\ast$ \hyperlink{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}{get\-Window} ()
 \item 
-\hyperlink{class_window_manager_a6b83e3acf96e8c764f9900227a6c3bf8}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_window_manager}{Window\-Manager} \&operator
+sf\-::\-Vector2f \hyperlink{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}{get\-Camera\-Position} ()
+\item 
+void \hyperlink{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}{set\-Camera\-Position} (sf\-::\-Vector2f position)
+\item 
+void \hyperlink{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}{Move\-Camera} (sf\-::\-Vector2f direction)
+\item 
+void \hyperlink{class_window_manager_af570f14ac975aa3073a51238f5121d79}{Init\-Window} (sf\-::\-Video\-Mode video, std\-::string Name)
+\item 
+\hyperlink{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}{Window\-Manager} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete
+\item 
+\hyperlink{class_window_manager}{Window\-Manager} \& \hyperlink{class_window_manager_a11afbf3f6296341434679bbedb44c989}{operator=} (const \hyperlink{class_window_manager}{Window\-Manager} \&windowmanager)=delete
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_window_manager}{Window\-Manager} \& \hyperlink{class_window_manager_a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb}{get\-Instance} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_window_manager_ae3aaa9726e6964bb106ff0893f3dccfa}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_window_manager}{Window\-Manager}()
+\hyperlink{class_window_manager_a3a283b34c19aaa20296befaabad4d29b}{Window\-Manager} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -38,35 +52,147 @@ sf\-::\-Vector2f \hyperlink{class_window_manager_a459ad4d059f5c4f286c24af4550c61
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_window_manager_a19fd6e41c42760af82460d9851780d82}{\index{Window\-Manager@{Window\-Manager}!$\sim$\-Window\-Manager@{$\sim$\-Window\-Manager}}
+\index{$\sim$\-Window\-Manager@{$\sim$\-Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{$\sim$\-Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::$\sim$\-Window\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a19fd6e41c42760af82460d9851780d82}
+\hypertarget{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}{\index{Window\-Manager@{Window\-Manager}!Window\-Manager@{Window\-Manager}}
+\index{Window\-Manager@{Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-Window\-Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Window\-Manager} \&}]{windowmanager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_window_manager_aff6aee52b2c1ab9fe85027262b4b877f}
+\hypertarget{class_window_manager_a3a283b34c19aaa20296befaabad4d29b}{\index{Window\-Manager@{Window\-Manager}!Window\-Manager@{Window\-Manager}}
+\index{Window\-Manager@{Window\-Manager}!WindowManager@{Window\-Manager}}
+\subsubsection[{Window\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-Window\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_window_manager_a3a283b34c19aaa20296befaabad4d29b}
+
+
 \subsection{Member Function Documentation}
-\hypertarget{class_window_manager_a28362d6854fad720a0fe21f34272522b}{\index{Window\-Manager@{Window\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!WindowManager@{Window\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}{\index{Window\-Manager@{Window\-Manager}!get\-Camera\-Position@{get\-Camera\-Position}}
+\index{get\-Camera\-Position@{get\-Camera\-Position}!WindowManager@{Window\-Manager}}
+\subsubsection[{get\-Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Window\-Manager\-::get\-Camera\-Position (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_window_manager_a28362d6854fad720a0fe21f34272522b}
-\hypertarget{class_window_manager_a353d26a2d2ca4ddb533ac80dff4cb889}{\index{Window\-Manager@{Window\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!WindowManager@{Window\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) void Init\-Window(sf Window\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_a6c6ca24d553fcbc205ca6eba14eea324_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb}{\index{Window\-Manager@{Window\-Manager}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!WindowManager@{Window\-Manager}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Manager} \& Window\-Manager\-::get\-Instance (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_window_manager_a353d26a2d2ca4ddb533ac80dff4cb889}
-\hypertarget{class_window_manager_a6b83e3acf96e8c764f9900227a6c3bf8}{\index{Window\-Manager@{Window\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!WindowManager@{Window\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_window_manager_a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}{\index{Window\-Manager@{Window\-Manager}!get\-Window@{get\-Window}}
+\index{get\-Window@{get\-Window}!WindowManager@{Window\-Manager}}
+\subsubsection[{get\-Window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window $\ast$ Window\-Manager\-::get\-Window (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_window_manager_a6b83e3acf96e8c764f9900227a6c3bf8}
-\hypertarget{class_window_manager_ae3aaa9726e6964bb106ff0893f3dccfa}{\index{Window\-Manager@{Window\-Manager}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!WindowManager@{Window\-Manager}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Window\-Manager\-::\-\_\-\-\_\-declspec (
+)}}\label{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_a7051ab4ec34157357d2fc029b5283ba0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_af570f14ac975aa3073a51238f5121d79}{\index{Window\-Manager@{Window\-Manager}!Init\-Window@{Init\-Window}}
+\index{Init\-Window@{Init\-Window}!WindowManager@{Window\-Manager}}
+\subsubsection[{Init\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Manager\-::\-Init\-Window (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{sf\-::\-Video\-Mode}]{video, }
+\item[{std\-::string}]{Name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_window_manager_ae3aaa9726e6964bb106ff0893f3dccfa}
+)}}\label{class_window_manager_af570f14ac975aa3073a51238f5121d79}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_af570f14ac975aa3073a51238f5121d79_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}{\index{Window\-Manager@{Window\-Manager}!Move\-Camera@{Move\-Camera}}
+\index{Move\-Camera@{Move\-Camera}!WindowManager@{Window\-Manager}}
+\subsubsection[{Move\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Manager\-::\-Move\-Camera (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Vector2f}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_abbc66e888f2a67ab0203357005bc89d8}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_abbc66e888f2a67ab0203357005bc89d8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_window_manager_a11afbf3f6296341434679bbedb44c989}{\index{Window\-Manager@{Window\-Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!WindowManager@{Window\-Manager}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Manager}\& Window\-Manager\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Window\-Manager} \&}]{windowmanager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_window_manager_a11afbf3f6296341434679bbedb44c989}
+\hypertarget{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}{\index{Window\-Manager@{Window\-Manager}!set\-Camera\-Position@{set\-Camera\-Position}}
+\index{set\-Camera\-Position@{set\-Camera\-Position}!WindowManager@{Window\-Manager}}
+\subsubsection[{set\-Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-Manager\-::set\-Camera\-Position (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Vector2f}]{position}
+\end{DoxyParamCaption}
+)}}\label{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_window_manager_a5ee838ab6472ae7fcfd607831a8228d1_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}
@@ -78,6 +204,7 @@ sf\-::\-Vector2f \hyperlink{class_window_manager_a459ad4d059f5c4f286c24af4550c61
 \subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Render\-Window$\ast$ Window\-Manager\-::window\hspace{0.3cm}{\ttfamily [private]}}}\label{class_window_manager_ac7ca38df4c12f4127e75939259ec108c}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_window_manager_8hpp}{Window\-Manager.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_window_manager_8hpp}{Window\-Manager.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_window_manager_8cpp}{Window\-Manager.\-cpp}\end{DoxyCompactItemize}

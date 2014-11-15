@@ -11,38 +11,41 @@ Collaboration diagram for Mouse\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=171pt]{class_mouse__coll__graph}
+\includegraphics[width=190pt]{class_mouse__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mouse_a5f8cad462f144fedf82bc54f1566e50f}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_mouse}{Mouse}()
+\hyperlink{class_mouse_afdf7d8abef29c10be77ead773f964f4f}{$\sim$\-Mouse} ()
 \item 
-\hyperlink{class_mouse_a20435d528429f91f08e2c3bd6f2e8b43}{\-\_\-\-\_\-declspec} (dllexport) static \hyperlink{class_mouse}{Mouse} \&get\-Instance()
+\hyperlink{class_mouse_a6c87ac5e0784ef185d003486c0cd97a7}{Mouse} (const \hyperlink{class_mouse}{Mouse} \&mouse)=delete
 \item 
-\hyperlink{class_mouse_a270b06a79e098e62f8a781bc069e8442}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_mouse}{Mouse}(const \hyperlink{class_mouse}{Mouse} \&mouse)=delete
+\hyperlink{class_mouse}{Mouse} \& \hyperlink{class_mouse_a0ba383d1a0ed97fcc7133baeb13dffb9}{operator=} (const \hyperlink{class_mouse}{Mouse} \&mouse)=delete
 \item 
-\hyperlink{class_mouse_a9a843be0900007698eb252574b66aaf4}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_mouse}{Mouse} \&operator
+bool \hyperlink{class_mouse_aba7bc3e6f4ea41b41d983300cafe94e3}{get\-Left} ()
 \item 
-\hyperlink{class_mouse_a8b71e01cd362bfac3b49c8f7060b326a}{\-\_\-\-\_\-declspec} (dllexport) bool get\-Left()
+bool \hyperlink{class_mouse_a57a56ce6e0c3dee5399dd8bd317f0300}{get\-Right} ()
 \item 
-\hyperlink{class_mouse_ac38020f21b0de83806790c3d3acb5971}{\-\_\-\-\_\-declspec} (dllexport) bool get\-Right()
+bool \hyperlink{class_mouse_a971194f66c07663aa9d9a1f3256a459e}{get\-Middle} ()
 \item 
-\hyperlink{class_mouse_a749c6251455f83e534e34f09b999960d}{\-\_\-\-\_\-declspec} (dllexport) bool get\-Middle()
+bool \hyperlink{class_mouse_a34e7edee2f57d2b4284e12946b945392}{get\-X\-Button1} ()
 \item 
-\hyperlink{class_mouse_a1ed05b28cf22053dcbf7f3eb798426b6}{\-\_\-\-\_\-declspec} (dllexport) bool get\-X\-Button1()
+bool \hyperlink{class_mouse_a4f61c34b9a79970983c2151698481b35}{get\-X\-Button2} ()
 \item 
-\hyperlink{class_mouse_a8e1cefd84a6ab56a54f5857a728ac7b9}{\-\_\-\-\_\-declspec} (dllexport) bool get\-X\-Button2()
+sf\-::\-Vector2f \hyperlink{class_mouse_a96a1dc1c7d7edf64110f8bc4795966e2}{get\-Mouse\-Position} ()
 \item 
-\hyperlink{class_mouse_aed195e7d0d2d1c8a9a210325e6b7035c}{\-\_\-\-\_\-declspec} (dllexport) sf
+void \hyperlink{class_mouse_add9756fabb1ae55d56e10b930e5592b6}{Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mouse_a05f36b07846e423c869ac1246fd131a2}{\-\_\-\-\_\-declspec} (dllexport) void Update()
+static \hyperlink{class_mouse}{Mouse} \& \hyperlink{class_mouse_a96ed80e3232b68b34368c8f1f79f5cff}{get\-Instance} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mouse_a3a7c4f8d10b38469887b51c324e58b41}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_mouse}{Mouse}()
+\hyperlink{class_mouse_a99024d3700d649ae19c1537b42a3e86d}{Mouse} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -61,91 +64,127 @@ sf\-::\-Vector2f \hyperlink{class_mouse_ae83f237e6ca4e0f366eb6f1a03964886}{Mouse
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mouse_afdf7d8abef29c10be77ead773f964f4f}{\index{Mouse@{Mouse}!$\sim$\-Mouse@{$\sim$\-Mouse}}
+\index{$\sim$\-Mouse@{$\sim$\-Mouse}!Mouse@{Mouse}}
+\subsubsection[{$\sim$\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::$\sim$\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mouse_afdf7d8abef29c10be77ead773f964f4f}
+\hypertarget{class_mouse_a6c87ac5e0784ef185d003486c0cd97a7}{\index{Mouse@{Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!Mouse@{Mouse}}
+\subsubsection[{Mouse}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-Mouse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mouse} \&}]{mouse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_mouse_a6c87ac5e0784ef185d003486c0cd97a7}
+\hypertarget{class_mouse_a99024d3700d649ae19c1537b42a3e86d}{\index{Mouse@{Mouse}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!Mouse@{Mouse}}
+\subsubsection[{Mouse}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_mouse_a99024d3700d649ae19c1537b42a3e86d}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 \subsection{Member Function Documentation}
-\hypertarget{class_mouse_a5f8cad462f144fedf82bc54f1566e50f}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_mouse_a96ed80e3232b68b34368c8f1f79f5cff}{\index{Mouse@{Mouse}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Mouse@{Mouse}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse} \& Mouse\-::get\-Instance (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_mouse_a5f8cad462f144fedf82bc54f1566e50f}
-\hypertarget{class_mouse_a20435d528429f91f08e2c3bd6f2e8b43}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_mouse_a96ed80e3232b68b34368c8f1f79f5cff}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_mouse_aba7bc3e6f4ea41b41d983300cafe94e3}{\index{Mouse@{Mouse}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!Mouse@{Mouse}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::get\-Left (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_mouse_a20435d528429f91f08e2c3bd6f2e8b43}
-\hypertarget{class_mouse_a270b06a79e098e62f8a781bc069e8442}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_aba7bc3e6f4ea41b41d983300cafe94e3}
+\hypertarget{class_mouse_a971194f66c07663aa9d9a1f3256a459e}{\index{Mouse@{Mouse}!get\-Middle@{get\-Middle}}
+\index{get\-Middle@{get\-Middle}!Mouse@{Mouse}}
+\subsubsection[{get\-Middle}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::get\-Middle (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_mouse_a270b06a79e098e62f8a781bc069e8442}
-\hypertarget{class_mouse_a9a843be0900007698eb252574b66aaf4}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a971194f66c07663aa9d9a1f3256a459e}
+\hypertarget{class_mouse_a96a1dc1c7d7edf64110f8bc4795966e2}{\index{Mouse@{Mouse}!get\-Mouse\-Position@{get\-Mouse\-Position}}
+\index{get\-Mouse\-Position@{get\-Mouse\-Position}!Mouse@{Mouse}}
+\subsubsection[{get\-Mouse\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Mouse\-::get\-Mouse\-Position (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_mouse_a9a843be0900007698eb252574b66aaf4}
-\hypertarget{class_mouse_a8b71e01cd362bfac3b49c8f7060b326a}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a96a1dc1c7d7edf64110f8bc4795966e2}
+\hypertarget{class_mouse_a57a56ce6e0c3dee5399dd8bd317f0300}{\index{Mouse@{Mouse}!get\-Right@{get\-Right}}
+\index{get\-Right@{get\-Right}!Mouse@{Mouse}}
+\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::get\-Right (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a8b71e01cd362bfac3b49c8f7060b326a}
-\hypertarget{class_mouse_ac38020f21b0de83806790c3d3acb5971}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a57a56ce6e0c3dee5399dd8bd317f0300}
+\hypertarget{class_mouse_a34e7edee2f57d2b4284e12946b945392}{\index{Mouse@{Mouse}!get\-X\-Button1@{get\-X\-Button1}}
+\index{get\-X\-Button1@{get\-X\-Button1}!Mouse@{Mouse}}
+\subsubsection[{get\-X\-Button1}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::get\-X\-Button1 (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_ac38020f21b0de83806790c3d3acb5971}
-\hypertarget{class_mouse_a749c6251455f83e534e34f09b999960d}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a34e7edee2f57d2b4284e12946b945392}
+\hypertarget{class_mouse_a4f61c34b9a79970983c2151698481b35}{\index{Mouse@{Mouse}!get\-X\-Button2@{get\-X\-Button2}}
+\index{get\-X\-Button2@{get\-X\-Button2}!Mouse@{Mouse}}
+\subsubsection[{get\-X\-Button2}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::get\-X\-Button2 (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a749c6251455f83e534e34f09b999960d}
-\hypertarget{class_mouse_a1ed05b28cf22053dcbf7f3eb798426b6}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a4f61c34b9a79970983c2151698481b35}
+\hypertarget{class_mouse_a0ba383d1a0ed97fcc7133baeb13dffb9}{\index{Mouse@{Mouse}!operator=@{operator=}}
+\index{operator=@{operator=}!Mouse@{Mouse}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse}\& Mouse\-::operator= (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const {\bf Mouse} \&}]{mouse}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a1ed05b28cf22053dcbf7f3eb798426b6}
-\hypertarget{class_mouse_a8e1cefd84a6ab56a54f5857a728ac7b9}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_mouse_a0ba383d1a0ed97fcc7133baeb13dffb9}
+\hypertarget{class_mouse_add9756fabb1ae55d56e10b930e5592b6}{\index{Mouse@{Mouse}!Update@{Update}}
+\index{Update@{Update}!Mouse@{Mouse}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Mouse\-::\-Update (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_a8e1cefd84a6ab56a54f5857a728ac7b9}
-\hypertarget{class_mouse_aed195e7d0d2d1c8a9a210325e6b7035c}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_mouse_aed195e7d0d2d1c8a9a210325e6b7035c}
-\hypertarget{class_mouse_a05f36b07846e423c869ac1246fd131a2}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_mouse_a05f36b07846e423c869ac1246fd131a2}
-\hypertarget{class_mouse_a3a7c4f8d10b38469887b51c324e58b41}{\index{Mouse@{Mouse}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Mouse@{Mouse}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_mouse_a3a7c4f8d10b38469887b51c324e58b41}
+)}}\label{class_mouse_add9756fabb1ae55d56e10b930e5592b6}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}
@@ -169,6 +208,7 @@ sf\-::\-Vector2f \hyperlink{class_mouse_ae83f237e6ca4e0f366eb6f1a03964886}{Mouse
 \subsubsection[{Mouse\-X\-Button2}]{\setlength{\rightskip}{0pt plus 5cm}bool Mouse\-::\-Mouse\-X\-Button2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_mouse_ade6dd013286bf4829948f8a69d9b7f8a}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_mouse_8hpp}{Mouse.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_mouse_8hpp}{Mouse.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_mouse_8cpp}{Mouse.\-cpp}\end{DoxyCompactItemize}

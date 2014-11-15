@@ -1,4 +1,4 @@
 <map id="Chunk::getBottom" name="Chunk::getBottom">
-<area shape="rect" id="node2" href="$class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="180,5,339,32"/>
-<area shape="rect" id="node3" href="$class_layer.html#a6db2f37689d5ee4958167e539ab4ce69" title="Layer::Update" alt="" coords="387,5,489,32"/>
+<area shape="rect" id="node2" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="180,5,339,32"/>
+<area shape="rect" id="node3" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="387,5,489,32"/>
 </map>

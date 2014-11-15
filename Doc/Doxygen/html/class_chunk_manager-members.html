@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_chunk_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,20 +113,21 @@ $(document).ready(function(){initNavTree('class_chunk_manager.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_chunk_manager.html">ChunkManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a5174dca056d736be1e45b71dfc0930ef">__declspec</a>(dllexport) ChunkManager()</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a3ea11ca30e6e72f84a1f1bcfe6110543">__declspec</a>(dllexport)~ChunkManager()</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a765c3019448f155961fff4dfeee300ca">__declspec</a>(dllexport) void Update(const UpdateData &amp;updateobject)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a1e77e66b79c2f65848acf922eceebc08">__declspec</a>(dllexport) void setActiveChunk(Chunk *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#aefbc2b592e93d6651226f055eb701d47">__declspec</a>(dllexport) void setFirstChunk(Chunk *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a132a5714695e761d05b32321c721a1d8">__declspec</a>(dllexport) void addGameComponent(GameComponent *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a8008f62926fe10f46ac59001aae2d372">ActiveChunk</a></td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#afb87cd5dd3cb61f09a6038d1796719ba">FirstChunk</a></td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6">addGameComponent</a>(GameComponent *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a5280c6347b5aa7f85660c66e3546bf87">ChunkManager</a>()</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450">Draw</a>(sf::RenderWindow &amp;window, sf::Vector2f offset)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#afb87cd5dd3cb61f09a6038d1796719ba">FirstChunk</a></td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a00cea265f033fdc3b2188b1099094f08">setActiveChunk</a>(Chunk *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc">setFirstChunk</a>(Chunk *c)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf">Update</a>(const UpdateData &amp;updateobject)</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_chunk_manager.html#a675cdb47d0529eee3c878fbc25406710">~ChunkManager</a>()</td><td class="entry"><a class="el" href="class_chunk_manager.html">ChunkManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:39 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

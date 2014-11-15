@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_chunk_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,131 +115,284 @@ $(document).ready(function(){initNavTree('class_chunk_manager.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class contains a reference to the first chunk. and the one the camera hovers above.  
+ <a href="class_chunk_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_chunk_manager_8hpp_source.html">ChunkManager.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ChunkManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_chunk_manager__coll__graph.png" border="0" usemap="#_chunk_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_chunk_manager_coll__map" id="_chunk_manager_coll__map">
-<area shape="rect" id="node2" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="19,808,161,1179"/><area shape="rect" id="node3" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,257,113,349"/><area shape="rect" id="node4" href="class_game_component.html" title="{GameComponent\n|+ y\l# Name\l# ID\l# Position\l# DeadComponent\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 6 more...\l}" alt="" coords="109,463,239,745"/><area shape="rect" id="node5" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="164,5,272,156"/><area shape="rect" id="node6" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="264,205,372,400"/><area shape="rect" id="node7" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="396,242,504,363"/></map>
+<area shape="rect" id="node2" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,161,217,517"/><area shape="rect" id="node3" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5174dca056d736be1e45b71dfc0930ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a5174dca056d736be1e45b71dfc0930ef">__declspec</a> (dllexport) <a class="el" href="class_chunk_manager.html">ChunkManager</a>()</td></tr>
-<tr class="separator:a5174dca056d736be1e45b71dfc0930ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea11ca30e6e72f84a1f1bcfe6110543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a3ea11ca30e6e72f84a1f1bcfe6110543">__declspec</a> (dllexport)~<a class="el" href="class_chunk_manager.html">ChunkManager</a>()</td></tr>
-<tr class="separator:a3ea11ca30e6e72f84a1f1bcfe6110543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a765c3019448f155961fff4dfeee300ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a765c3019448f155961fff4dfeee300ca">__declspec</a> (dllexport) void Update(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
-<tr class="separator:a765c3019448f155961fff4dfeee300ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e77e66b79c2f65848acf922eceebc08"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) void Draw(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a1e77e66b79c2f65848acf922eceebc08">__declspec</a> (dllexport) void setActiveChunk(<a class="el" href="class_chunk.html">Chunk</a> *c)</td></tr>
-<tr class="separator:a1e77e66b79c2f65848acf922eceebc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbc2b592e93d6651226f055eb701d47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#aefbc2b592e93d6651226f055eb701d47">__declspec</a> (dllexport) void setFirstChunk(<a class="el" href="class_chunk.html">Chunk</a> *c)</td></tr>
-<tr class="separator:aefbc2b592e93d6651226f055eb701d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132a5714695e761d05b32321c721a1d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a132a5714695e761d05b32321c721a1d8">__declspec</a> (dllexport) void addGameComponent(<a class="el" href="class_game_component.html">GameComponent</a> *c)</td></tr>
-<tr class="separator:a132a5714695e761d05b32321c721a1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5280c6347b5aa7f85660c66e3546bf87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a5280c6347b5aa7f85660c66e3546bf87">ChunkManager</a> ()</td></tr>
+<tr class="memdesc:a5280c6347b5aa7f85660c66e3546bf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="#a5280c6347b5aa7f85660c66e3546bf87">More...</a><br/></td></tr>
+<tr class="separator:a5280c6347b5aa7f85660c66e3546bf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675cdb47d0529eee3c878fbc25406710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a675cdb47d0529eee3c878fbc25406710">~ChunkManager</a> ()</td></tr>
+<tr class="memdesc:a675cdb47d0529eee3c878fbc25406710"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deconstructor.  <a href="#a675cdb47d0529eee3c878fbc25406710">More...</a><br/></td></tr>
+<tr class="separator:a675cdb47d0529eee3c878fbc25406710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6b1c312b12233d18c2bad68b933cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:a1c6b1c312b12233d18c2bad68b933cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the update signal to the first chunk for it to ripple through the rest.  <a href="#a1c6b1c312b12233d18c2bad68b933cdf">More...</a><br/></td></tr>
+<tr class="separator:a1c6b1c312b12233d18c2bad68b933cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb7e15589f54b6937a2b12711403450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
+<tr class="memdesc:a9cb7e15589f54b6937a2b12711403450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the draw signal to the active chunk for it to ripple through the rest.  <a href="#a9cb7e15589f54b6937a2b12711403450">More...</a><br/></td></tr>
+<tr class="separator:a9cb7e15589f54b6937a2b12711403450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cea265f033fdc3b2188b1099094f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a00cea265f033fdc3b2188b1099094f08">setActiveChunk</a> (<a class="el" href="class_chunk.html">Chunk</a> *c)</td></tr>
+<tr class="memdesc:a00cea265f033fdc3b2188b1099094f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a chunk as the active chunk. Result will probably be overridden by the camera.  <a href="#a00cea265f033fdc3b2188b1099094f08">More...</a><br/></td></tr>
+<tr class="separator:a00cea265f033fdc3b2188b1099094f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4794622d5e281a55f9bc99950201dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc">setFirstChunk</a> (<a class="el" href="class_chunk.html">Chunk</a> *c)</td></tr>
+<tr class="memdesc:a0b4794622d5e281a55f9bc99950201dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a chunk as the first chunk.  <a href="#a0b4794622d5e281a55f9bc99950201dc">More...</a><br/></td></tr>
+<tr class="separator:a0b4794622d5e281a55f9bc99950201dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59d1f14da9114ebcce7cefa2bbcefc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6">addGameComponent</a> (<a class="el" href="class_game_component.html">GameComponent</a> *c)</td></tr>
+<tr class="memdesc:ac59d1f14da9114ebcce7cefa2bbcefc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a component to the first chunk which is then pushed through the chunks untill its in the correct chunk.  <a href="#ac59d1f14da9114ebcce7cefa2bbcefc6">More...</a><br/></td></tr>
+<tr class="separator:ac59d1f14da9114ebcce7cefa2bbcefc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8008f62926fe10f46ac59001aae2d372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#a8008f62926fe10f46ac59001aae2d372">ActiveChunk</a></td></tr>
+<tr class="memdesc:a8008f62926fe10f46ac59001aae2d372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a pointer to the Active <a class="el" href="class_chunk.html" title="This Class represents a small portion of a screen. ">Chunk</a>.  <a href="#a8008f62926fe10f46ac59001aae2d372">More...</a><br/></td></tr>
 <tr class="separator:a8008f62926fe10f46ac59001aae2d372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb87cd5dd3cb61f09a6038d1796719ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk_manager.html#afb87cd5dd3cb61f09a6038d1796719ba">FirstChunk</a></td></tr>
+<tr class="memdesc:afb87cd5dd3cb61f09a6038d1796719ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a pointer to the First <a class="el" href="class_chunk.html" title="This Class represents a small portion of a screen. ">Chunk</a>.  <a href="#afb87cd5dd3cb61f09a6038d1796719ba">More...</a><br/></td></tr>
 <tr class="separator:afb87cd5dd3cb61f09a6038d1796719ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class contains a reference to the first chunk. and the one the camera hovers above. </p>
+<p>This class contains a reference to the first chunk. and the one the camera hovers above. It sends both the update and draw signal to the chunks. although the update method goes to the firstchunk. and then is rippeled through to the others. And the draw signal goes to the active chunk and only its neighbors. Furthermore it can add components to the chunks. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5280c6347b5aa7f85660c66e3546bf87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChunkManager::ChunkManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a675cdb47d0529eee3c878fbc25406710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChunkManager::~ChunkManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The deconstructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5174dca056d736be1e45b71dfc0930ef"></a>
+<a class="anchor" id="ac59d1f14da9114ebcce7cefa2bbcefc6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ChunkManager::__declspec </td>
+          <td class="memname">void ChunkManager::addGameComponent </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Adds a component to the first chunk which is then pushed through the chunks untill its in the correct chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">c</td><td>Contains the component to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_cgraph.png" border="0" usemap="#class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_cgraph" alt=""/></div>
+<map name="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_cgraph" id="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="292,29,447,56"/><area shape="rect" id="node3" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="495,29,691,56"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_icgraph.png" border="0" usemap="#class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_icgraph" alt=""/></div>
+<map name="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_icgraph" id="class_chunk_manager_ac59d1f14da9114ebcce7cefa2bbcefc6_icgraph">
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="292,5,481,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="529,5,728,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="776,5,964,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1012,5,1063,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a3ea11ca30e6e72f84a1f1bcfe6110543"></a>
+<a class="anchor" id="a9cb7e15589f54b6937a2b12711403450"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ChunkManager::__declspec </td>
+          <td class="memname">void ChunkManager::Draw </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends the draw signal to the active chunk for it to ripple through the rest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>Contains the sfml renderwindow wich is drawn upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Contains the offset used to draw the objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph.png" border="0" usemap="#class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph" alt=""/></div>
+<map name="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph" id="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="200,31,296,57"/><area shape="rect" id="node3" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="344,31,463,57"/><area shape="rect" id="node4" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="511,5,716,32"/><area shape="rect" id="node5" href="class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="533,56,693,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph.png" border="0" usemap="#class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph" alt=""/></div>
+<map name="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph" id="class_chunk_manager_a9cb7e15589f54b6937a2b12711403450_icgraph">
+<area shape="rect" id="node2" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="200,5,291,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a00cea265f033fdc3b2188b1099094f08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChunkManager::setActiveChunk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a765c3019448f155961fff4dfeee300ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChunkManager::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Sets a chunk as the active chunk. Result will probably be overridden by the camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">c</td><td>Contains the chunk to set as active. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a1e77e66b79c2f65848acf922eceebc08"></a>
+<a class="anchor" id="a0b4794622d5e281a55f9bc99950201dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__declspec (dllexport) void Draw(sf ChunkManager::__declspec </td>
+          <td class="memname">void ChunkManager::setFirstChunk </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets a chunk as the first chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">c</td><td>Contains the chunk to set as first chunk. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph.png" border="0" usemap="#class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph" alt=""/></div>
+<map name="class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph" id="class_chunk_manager_a0b4794622d5e281a55f9bc99950201dc_icgraph">
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="252,5,441,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="489,5,688,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="736,5,924,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="972,5,1023,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="aefbc2b592e93d6651226f055eb701d47"></a>
+<a class="anchor" id="a1c6b1c312b12233d18c2bad68b933cdf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ChunkManager::__declspec </td>
+          <td class="memname">void ChunkManager::Update </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends the update signal to the first chunk for it to ripple through the rest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains the data for the update event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_cgraph.png" border="0" usemap="#class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_cgraph" alt=""/></div>
+<map name="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_cgraph" id="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="255,147,363,173"/><area shape="rect" id="node21" href="class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf" title="This method returns the chunk to the right. " alt="" coords="251,197,366,224"/><area shape="rect" id="node22" href="class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa" title="This method returns the chunk to the left. " alt="" coords="255,248,362,275"/><area shape="rect" id="node23" href="class_chunk.html#a59eb282f08711420c1e966e30aab47e3" title="This method returns the chunk to the bottom. " alt="" coords="245,299,372,325"/><area shape="rect" id="node24" href="class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="212,349,405,376"/><area shape="rect" id="node25" href="class_window_manager.html#a6c6ca24d553fcbc205ca6eba14eea324" title="WindowManager::getCamera\lPosition" alt="" coords="214,401,403,442"/><area shape="rect" id="node26" href="class_chunk.html#a0438a8693210393fadc5105dd315adb8" title="This method returns the real position of the chunk. " alt="" coords="229,467,388,493"/><area shape="rect" id="node27" href="class_chunk.html#a331e5916d9976679df82da5764bd7d64" title="This method returns the size of the chunk. " alt="" coords="253,517,364,544"/><area shape="rect" id="node28" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="214,569,403,610"/><area shape="rect" id="node29" href="class_chunk.html#a161929ca5dcfa0e1a798999f989fe2f8" title="This method returns the chunk to the top. " alt="" coords="255,635,362,661"/><area shape="rect" id="node3" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="465,5,645,32"/><area shape="rect" id="node4" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="472,56,639,83"/><area shape="rect" id="node5" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="453,107,657,149"/><area shape="rect" id="node10" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="removes all the &quot;Dead&quot; components from the chunk but does not delete them. " alt="" coords="461,173,650,214"/><area shape="rect" id="node11" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="502,239,609,265"/><area shape="rect" id="node16" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="503,303,607,329"/><area shape="rect" id="node6" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="955,125,1151,152"/><area shape="rect" id="node7" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="725,12,882,39"/><area shape="rect" id="node8" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="726,188,881,215"/><area shape="rect" id="node9" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="GameComponent::setPosition" alt="" coords="705,63,901,89"/><area shape="rect" id="node12" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="732,239,875,265"/><area shape="rect" id="node13" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="951,283,1156,309"/><area shape="rect" id="node14" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="980,232,1127,259"/><area shape="rect" id="node15" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="968,181,1139,208"/><area shape="rect" id="node17" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="733,321,873,348"/><area shape="rect" id="node18" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="958,333,1149,360"/><area shape="rect" id="node19" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="949,384,1157,411"/><area shape="rect" id="node20" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="973,435,1133,461"/></map>
 </div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_icgraph.png" border="0" usemap="#class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_icgraph" alt=""/></div>
+<map name="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_icgraph" id="class_chunk_manager_a1c6b1c312b12233d18c2bad68b933cdf_icgraph">
+<area shape="rect" id="node2" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="212,5,315,32"/></map>
 </div>
-<a class="anchor" id="a132a5714695e761d05b32321c721a1d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChunkManager::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+</p>
 
 </div>
 </div>
@@ -260,6 +415,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Contains a pointer to the Active <a class="el" href="class_chunk.html" title="This Class represents a small portion of a screen. ">Chunk</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="afb87cd5dd3cb61f09a6038d1796719ba"></a>
@@ -280,10 +437,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Contains a pointer to the First <a class="el" href="class_chunk.html" title="This Class represents a small portion of a screen. ">Chunk</a>. </p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_chunk_manager_8hpp_source.html">ChunkManager.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_chunk_manager_8cpp.html">ChunkManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -291,7 +451,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_chunk_manager.html">ChunkManager</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:39 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

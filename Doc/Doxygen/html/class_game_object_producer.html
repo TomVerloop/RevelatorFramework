@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_game_object_producer.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,51 +130,50 @@ Collaboration diagram for GameObjectProducer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acedff5955f510b5b40ad477b6c016c1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a> (dllexport) <a class="el" href="class_game_object_producer.html">GameObjectProducer</a>()</td></tr>
-<tr class="separator:acedff5955f510b5b40ad477b6c016c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d8c68cd2ba92108dcb57f8dabca382"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a27d8c68cd2ba92108dcb57f8dabca382">__declspec</a> (dllexport)~<a class="el" href="class_game_object_producer.html">GameObjectProducer</a>()</td></tr>
-<tr class="separator:a27d8c68cd2ba92108dcb57f8dabca382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196e596ce8c691618375db29e4b6417a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a196e596ce8c691618375db29e4b6417a">__declspec</a> (dllexport) virtual <a class="el" href="class_game_component.html">GameComponent</a> *Produce()=0</td></tr>
-<tr class="separator:a196e596ce8c691618375db29e4b6417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482128af1d260a085d855b2eb4fdf024"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a482128af1d260a085d855b2eb4fdf024">__declspec</a> (dllexport) virtual <a class="el" href="class_game_component.html">GameComponent</a> *Produce(<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
-<tr class="separator:a482128af1d260a085d855b2eb4fdf024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a6d64e3232301b3cd6ee4166204edb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a44a6d64e3232301b3cd6ee4166204edb">__declspec</a> (dllexport) virtual <a class="el" href="class_game_component.html">GameComponent</a> *Produce(<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
-<tr class="separator:a44a6d64e3232301b3cd6ee4166204edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c70d3fba5ec49e549da7affbcf12d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2">GameObjectProducer</a> ()</td></tr>
+<tr class="separator:a38c70d3fba5ec49e549da7affbcf12d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c862260fa83341a0b2fc8b1cad3ca5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5">~GameObjectProducer</a> ()</td></tr>
+<tr class="separator:a77c862260fa83341a0b2fc8b1cad3ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fa0f90fc8bb4720073818298ea16be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">Produce</a> ()=0</td></tr>
+<tr class="separator:a10fa0f90fc8bb4720073818298ea16be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da5f02801c8b16cbf7b26daeade1513"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a2da5f02801c8b16cbf7b26daeade1513">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
+<tr class="separator:a2da5f02801c8b16cbf7b26daeade1513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572ce99f29ffaa2beb0231756281d403"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a572ce99f29ffaa2beb0231756281d403">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
+<tr class="separator:a572ce99f29ffaa2beb0231756281d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a38c70d3fba5ec49e549da7affbcf12d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectProducer::GameObjectProducer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77c862260fa83341a0b2fc8b1cad3ca5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectProducer::~GameObjectProducer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acedff5955f510b5b40ad477b6c016c1d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObjectProducer::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a27d8c68cd2ba92108dcb57f8dabca382"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObjectProducer::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a196e596ce8c691618375db29e4b6417a"></a>
+<a class="anchor" id="a10fa0f90fc8bb4720073818298ea16be"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -180,9 +181,8 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObjectProducer::__declspec </td>
+          <td class="memname">virtual <a class="el" href="class_game_component.html">GameComponent</a>* GameObjectProducer::Produce </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -194,9 +194,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class_example_component_producer.html#a63aba60e4b967000da407340505838de">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#afcef390a20c515da93a8ef1971e59b90">MovableComponentProducer</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a482128af1d260a085d855b2eb4fdf024"></a>
+<a class="anchor" id="a2da5f02801c8b16cbf7b26daeade1513"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -204,10 +206,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObjectProducer::__declspec </td>
+          <td class="memname">virtual <a class="el" href="class_game_component.html">GameComponent</a>* GameObjectProducer::Produce </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_producer_package.html">ProducerPackage</a>&#160;</td>
+          <td class="paramname"><em>Package</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -218,9 +220,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class_example_component_producer.html#aeb985b69039c1db83c5826c01f31f53c">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#a909d2617235b049286660251050e7e8b">MovableComponentProducer</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a44a6d64e3232301b3cd6ee4166204edb"></a>
+<a class="anchor" id="a572ce99f29ffaa2beb0231756281d403"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -228,10 +232,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObjectProducer::__declspec </td>
+          <td class="memname">virtual <a class="el" href="class_game_component.html">GameComponent</a>* GameObjectProducer::Produce </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_producer_package.html">ProducerPackage</a> *&#160;</td>
+          <td class="paramname"><em>Package</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,10 +246,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class_example_component_producer.html#a177b5d9088f69aed43d10c9b2b8f2c01">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#a1b83286374915b711d4b8f55cc024cbc">MovableComponentProducer</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_game_object_producer_8hpp_source.html">GameObjectProducer.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_game_object_producer_8cpp.html">GameObjectProducer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -253,7 +260,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['update',['Update',['../class_chunk.html#a750907d92efc9e45bfff5e280fa55afe',1,'Chunk::Update()'],['../class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e',1,'ChunkManager::Update()'],['../class_example_component.html#a74028c9fbf9ec0fc523e60416433eacb',1,'ExampleComponent::Update()'],['../class_game_component.html#a01b3434d7bf6a63552e7ea4fd68744fe',1,'GameComponent::Update()'],['../class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375',1,'GameScreen::Update()'],['../class_layer.html#a6db2f37689d5ee4958167e539ab4ce69',1,'Layer::Update()'],['../class_movable_component.html#a6310c2306c503472873721a9756003a8',1,'MovableComponent::Update()'],['../class_screen_manager.html#a269d1b374ba195a036f03bd3caa897d9',1,'ScreenManager::Update()']]],
-  ['updatedata',['UpdateData',['../class_update_data.html#a6882b130592cc63aa1e6f1ea36dcf349',1,'UpdateData']]],
-  ['utils',['Utils',['../class_utils.html#a1653aff7c075a5dd590d479d9b62242d',1,'Utils::Utils(const Utils &amp;utils)=delete'],['../class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a',1,'Utils::Utils()']]]
+  ['screenmanager',['ScreenManager',['../class_screen_manager.html#a65af2989683b8286705b5ff00b5017a7',1,'ScreenManager::ScreenManager(const ScreenManager &amp;screenmanager)=delete'],['../class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733',1,'ScreenManager::ScreenManager()']]],
+  ['seenobjectcount',['SeenObjectCount',['../class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae',1,'Sensor']]],
+  ['sense',['Sense',['../class_chunk.html#a78f140c690751b838b0a7e09a51e6936',1,'Chunk']]],
+  ['sensesingle',['SenseSingle',['../class_chunk.html#ab038489f8de577890226307499da10af',1,'Chunk']]],
+  ['sensor',['Sensor',['../class_sensor.html#ac404bb7c1045796220e6d2997231feec',1,'Sensor']]],
+  ['setactivechunk',['setActiveChunk',['../class_chunk_manager.html#a00cea265f033fdc3b2188b1099094f08',1,'ChunkManager']]],
+  ['setactivescreen',['setActiveScreen',['../class_screen_manager.html#ac7ebe41395bf83cc60c13e4fb502babd',1,'ScreenManager']]],
+  ['setbottom',['setBottom',['../class_chunk.html#a57c85ac8a8959eca362b7c3e64dc1d0d',1,'Chunk']]],
+  ['setcameraposition',['setCameraPosition',['../class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1',1,'WindowManager']]],
+  ['setdead',['setDead',['../class_game_component.html#aa5e79bc4a1927f039ce345daa1a084c5',1,'GameComponent']]],
+  ['setdrawing',['setDrawing',['../class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1',1,'Layer']]],
+  ['setenabled',['setEnabled',['../class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c',1,'Layer']]],
+  ['setfirstchunk',['setFirstChunk',['../class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc',1,'ChunkManager']]],
+  ['setleft',['setLeft',['../class_chunk.html#aa0005654a92c0ca50f90c516d508834c',1,'Chunk']]],
+  ['setleftbottom',['setLeftBottom',['../class_chunk.html#a690d801cad525f106f11fca76855c785',1,'Chunk']]],
+  ['setlefttop',['setLeftTop',['../class_chunk.html#a24564a4a5eb9e05857939e23ed213914',1,'Chunk']]],
+  ['setposition',['setPosition',['../class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d',1,'GameComponent']]],
+  ['setright',['setRight',['../class_chunk.html#a670d58217b329583811b5380f25700d6',1,'Chunk']]],
+  ['setrightbottom',['setRightBottom',['../class_chunk.html#aadab4832f4d1c4618b7232a1503d8aed',1,'Chunk']]],
+  ['setrighttop',['setRightTop',['../class_chunk.html#a8c19057f7360349f5d214bfa50d51900',1,'Chunk']]],
+  ['settop',['setTop',['../class_chunk.html#a6cc69f33389b5510766f23317ff7ae65',1,'Chunk']]],
+  ['setupdating',['setUpdating',['../class_layer.html#a0e0595efe93dbd63b05339f35399d1ad',1,'Layer']]],
+  ['sfx',['SFX',['../class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433',1,'SFX::SFX()'],['../class_s_f_x.html#ab7f079df2d4b684a0ac5246a9356390a',1,'SFX::SFX(std::string filename)']]],
+  ['spawner',['Spawner',['../class_spawner.html#a3e3aa3ccff73556625359e75f64d0dd0',1,'Spawner']]],
+  ['stopmusic',['StopMusic',['../class_audio_manager.html#a893d9756eef3f2b562b0a337227e7c9d',1,'AudioManager']]]
 ];

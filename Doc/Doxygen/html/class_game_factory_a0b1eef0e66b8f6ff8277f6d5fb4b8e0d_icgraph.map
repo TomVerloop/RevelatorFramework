@@ -1,0 +1,7 @@
+<map id="GameFactory::getInstance" name="GameFactory::getInstance">
+<area shape="rect" id="node2" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="688,33,739,60"/>
+<area shape="rect" id="node3" href="$class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="452,33,640,60"/>
+<area shape="rect" id="node4" href="$class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="235,84,398,110"/>
+<area shape="rect" id="node6" href="$class_spawner.html#ae2e88e63fbb94df841800bd239d1a348" title="Spawner::pushComponent" alt="" coords="229,134,404,161"/>
+<area shape="rect" id="node5" href="$class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="477,84,615,110"/>
+</map>

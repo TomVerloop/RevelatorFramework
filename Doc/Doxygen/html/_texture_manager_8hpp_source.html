@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_texture_manager_8hpp_source.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,27 +114,31 @@ $(document).ready(function(){initNavTree('_texture_manager_8hpp_source.html','')
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_texture_manager.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_texture_manager.html">TextureManager</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) ~<a class="code" href="class_texture_manager.html">TextureManager</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) <span class="keyword">static</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp; getInstance();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) <a class="code" href="class_texture_manager.html">TextureManager</a>(<span class="keyword">const</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp;texturemanager) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) <a class="code" href="class_texture_manager.html">TextureManager</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp;texturemanager) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) sf::Texture &amp; getTexture(std::string name);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_texture_manager.html#a001d6d74674961db79987e3222682576">~TextureManager</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <span class="keyword">static</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp; <a class="code" href="class_texture_manager.html#a0a6bc63e2f6fa7e1d0aee5b24cfa089a">getInstance</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    __declspec(dllexport) <a class="code" href="class_texture_manager.html#ad76abb178b37cedf4514eb0154349935">TextureManager</a>(<span class="keyword">const</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp;texturemanager) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <a class="code" href="class_texture_manager.html">TextureManager</a>&amp; <a class="code" href="class_texture_manager.html#a87439b6ae73b59eb3729e8af1013a790">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_texture_manager.html">TextureManager</a> &amp;texturemanager) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) sf::Texture &amp; <a class="code" href="class_texture_manager.html#af3bb59dfc343791c8c29e7b5c5458df2">getTexture</a>(std::string name);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">__declspec</a>(dllexport) <a class="code" href="class_texture_manager.html">TextureManager</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    __declspec(dllexport) <a class="code" href="class_texture_manager.html#ad76abb178b37cedf4514eb0154349935">TextureManager</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_texture_manager.html#a7b3ea39ee8017ce3a7b5826bab1d2e04">   15</a></span>&#160;    std::map&lt;std::string, sf::Texture *&gt; <a class="code" href="class_texture_manager.html#a7b3ea39ee8017ce3a7b5826bab1d2e04">Textures</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="ttc" id="class_texture_manager_html_a5fe39edfdcf5209550c7267d4831e0f0"><div class="ttname"><a href="class_texture_manager.html#a5fe39edfdcf5209550c7267d4831e0f0">TextureManager::__declspec</a></div><div class="ttdeci">__declspec(dllexport)~TextureManager()</div></div>
 <div class="ttc" id="class_texture_manager_html"><div class="ttname"><a href="class_texture_manager.html">TextureManager</a></div><div class="ttdef"><b>Definition:</b> TextureManager.hpp:4</div></div>
+<div class="ttc" id="class_texture_manager_html_a0a6bc63e2f6fa7e1d0aee5b24cfa089a"><div class="ttname"><a href="class_texture_manager.html#a0a6bc63e2f6fa7e1d0aee5b24cfa089a">TextureManager::getInstance</a></div><div class="ttdeci">static TextureManager &amp; getInstance()</div></div>
+<div class="ttc" id="class_texture_manager_html_a87439b6ae73b59eb3729e8af1013a790"><div class="ttname"><a href="class_texture_manager.html#a87439b6ae73b59eb3729e8af1013a790">TextureManager::operator=</a></div><div class="ttdeci">TextureManager &amp; operator=(const TextureManager &amp;texturemanager)=delete</div></div>
+<div class="ttc" id="class_texture_manager_html_a001d6d74674961db79987e3222682576"><div class="ttname"><a href="class_texture_manager.html#a001d6d74674961db79987e3222682576">TextureManager::~TextureManager</a></div><div class="ttdeci">~TextureManager()</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:42</div></div>
+<div class="ttc" id="class_texture_manager_html_af3bb59dfc343791c8c29e7b5c5458df2"><div class="ttname"><a href="class_texture_manager.html#af3bb59dfc343791c8c29e7b5c5458df2">TextureManager::getTexture</a></div><div class="ttdeci">sf::Texture &amp; getTexture(std::string name)</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:50</div></div>
 <div class="ttc" id="class_texture_manager_html_a7b3ea39ee8017ce3a7b5826bab1d2e04"><div class="ttname"><a href="class_texture_manager.html#a7b3ea39ee8017ce3a7b5826bab1d2e04">TextureManager::Textures</a></div><div class="ttdeci">std::map&lt; std::string, sf::Texture * &gt; Textures</div><div class="ttdef"><b>Definition:</b> TextureManager.hpp:15</div></div>
+<div class="ttc" id="class_texture_manager_html_ad76abb178b37cedf4514eb0154349935"><div class="ttname"><a href="class_texture_manager.html#ad76abb178b37cedf4514eb0154349935">TextureManager::TextureManager</a></div><div class="ttdeci">TextureManager()</div><div class="ttdef"><b>Definition:</b> TextureManager.cpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_texture_manager_8hpp.html">TextureManager.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

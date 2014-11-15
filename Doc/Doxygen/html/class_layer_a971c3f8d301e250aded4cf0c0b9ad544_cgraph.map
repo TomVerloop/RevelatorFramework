@@ -1,0 +1,31 @@
+<map id="Layer::Update" name="Layer::Update">
+<area shape="rect" id="node2" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="156,379,315,405"/>
+<area shape="rect" id="node3" href="$class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="405,147,513,173"/>
+<area shape="rect" id="node22" href="$class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf" title="This method returns the chunk to the right. " alt="" coords="402,197,517,224"/>
+<area shape="rect" id="node23" href="$class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa" title="This method returns the chunk to the left. " alt="" coords="406,248,513,275"/>
+<area shape="rect" id="node24" href="$class_chunk.html#a59eb282f08711420c1e966e30aab47e3" title="This method returns the chunk to the bottom. " alt="" coords="396,299,523,325"/>
+<area shape="rect" id="node25" href="$class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="363,349,556,376"/>
+<area shape="rect" id="node26" href="$class_window_manager.html#a6c6ca24d553fcbc205ca6eba14eea324" title="WindowManager::getCamera\lPosition" alt="" coords="365,401,554,442"/>
+<area shape="rect" id="node27" href="$class_chunk.html#a0438a8693210393fadc5105dd315adb8" title="This method returns the real position of the chunk. " alt="" coords="380,467,539,493"/>
+<area shape="rect" id="node28" href="$class_chunk.html#a331e5916d9976679df82da5764bd7d64" title="This method returns the size of the chunk. " alt="" coords="404,517,515,544"/>
+<area shape="rect" id="node29" href="$class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="365,569,554,610"/>
+<area shape="rect" id="node30" href="$class_chunk.html#a161929ca5dcfa0e1a798999f989fe2f8" title="This method returns the chunk to the top. " alt="" coords="406,635,513,661"/>
+<area shape="rect" id="node4" href="$class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="616,5,796,32"/>
+<area shape="rect" id="node5" href="$class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="623,56,789,83"/>
+<area shape="rect" id="node6" href="$class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="604,107,808,149"/>
+<area shape="rect" id="node11" href="$class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="removes all the &quot;Dead&quot; components from the chunk but does not delete them. " alt="" coords="611,173,801,214"/>
+<area shape="rect" id="node12" href="$class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="653,239,759,265"/>
+<area shape="rect" id="node17" href="$class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="654,303,758,329"/>
+<area shape="rect" id="node7" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="1106,125,1302,152"/>
+<area shape="rect" id="node8" href="$class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="875,12,1033,39"/>
+<area shape="rect" id="node9" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="877,188,1031,215"/>
+<area shape="rect" id="node10" href="$class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="GameComponent::setPosition" alt="" coords="856,63,1052,89"/>
+<area shape="rect" id="node13" href="$class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="883,239,1025,265"/>
+<area shape="rect" id="node14" href="$class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="1101,283,1307,309"/>
+<area shape="rect" id="node15" href="$class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="1131,232,1277,259"/>
+<area shape="rect" id="node16" href="$class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="1119,181,1289,208"/>
+<area shape="rect" id="node18" href="$class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="884,321,1024,348"/>
+<area shape="rect" id="node19" href="$class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="1109,333,1299,360"/>
+<area shape="rect" id="node20" href="$class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="1100,384,1308,411"/>
+<area shape="rect" id="node21" href="$class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="1124,435,1284,461"/>
+</map>

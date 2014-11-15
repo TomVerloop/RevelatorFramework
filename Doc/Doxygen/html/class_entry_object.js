@@ -1,5 +1,5 @@
 var class_entry_object =
 [
-    [ "__declspec", "class_entry_object.html#ab4e66efd2938e31fb3bf55b5a04d2c7f", null ],
-    [ "__declspec", "class_entry_object.html#a9fdcee4a71ed9a99551b512bca6da9bd", null ]
+    [ "EntryObject", "class_entry_object.html#a96dedc7047bc1d962022c91118aedc14", null ],
+    [ "~EntryObject", "class_entry_object.html#a5b6738e8fb3c234df0f24b02f21dea53", null ]
 ];

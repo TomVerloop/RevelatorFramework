@@ -1,0 +1,8 @@
+<map id="Chunk::Sense" name="Chunk::Sense">
+<area shape="rect" id="node2" href="$class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="157,107,297,133"/>
+<area shape="rect" id="node3" href="$class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="354,5,545,32"/>
+<area shape="rect" id="node4" href="$class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="347,56,552,83"/>
+<area shape="rect" id="node5" href="$class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="376,107,523,133"/>
+<area shape="rect" id="node6" href="$class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="345,157,553,184"/>
+<area shape="rect" id="node7" href="$class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="369,208,529,235"/>
+</map>

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_drawable.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,7 +110,7 @@ $(document).ready(function(){initNavTree('class_drawable.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_drawable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Drawable Class Reference</div>  </div>
+<div class="title">Drawable Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -118,7 +120,7 @@ Inheritance diagram for Drawable:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_drawable__inherit__graph.png" border="0" usemap="#_drawable_inherit__map" alt="Inheritance graph"/></div>
 <map name="_drawable_inherit__map" id="_drawable_inherit__map">
-<area shape="rect" id="node2" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,145,148,648"/><area shape="rect" id="node3" href="class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="172,358,299,435"/><area shape="rect" id="node4" href="class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="323,336,431,457"/><area shape="rect" id="node5" href="class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="293,696,460,817"/></map>
+<area shape="rect" id="node2" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,160,217,633"/><area shape="rect" id="node3" href="class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="241,358,368,435"/><area shape="rect" id="node4" href="class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ GameScreen()\l+ ~GameScreen()\l+ Update()\l+ Draw()\l+ addLayer()\l+ removeLayer()\l+ getLayer()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="392,299,519,494"/><area shape="rect" id="node5" href="class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="372,681,539,803"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Drawable:</div>
@@ -128,46 +130,109 @@ Collaboration diagram for Drawable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9f04cf11a84eb3cdf68ea48599648d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a> (dllexport) <a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
-<tr class="separator:ac9f04cf11a84eb3cdf68ea48599648d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8175a6d9337a90bd36e368bd6749579"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ab8175a6d9337a90bd36e368bd6749579">__declspec</a> (dllexport)~<a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
-<tr class="separator:ab8175a6d9337a90bd36e368bd6749579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac88608db6081da479c772c96636acb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a> ()</td></tr>
+<tr class="memdesc:aac88608db6081da479c772c96636acb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#aac88608db6081da479c772c96636acb1">More...</a><br/></td></tr>
+<tr class="separator:aac88608db6081da479c772c96636acb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db44942658aab760a7418e338582e0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a5db44942658aab760a7418e338582e0a">~Drawable</a> ()</td></tr>
+<tr class="memdesc:a5db44942658aab760a7418e338582e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="#a5db44942658aab760a7418e338582e0a">More...</a><br/></td></tr>
+<tr class="separator:a5db44942658aab760a7418e338582e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e24de52eeb44555872c70f3adf854d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)=0</td></tr>
+<tr class="memdesc:a0e24de52eeb44555872c70f3adf854d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pure virtual method will be responsible for drawing on the screen.  <a href="#a0e24de52eeb44555872c70f3adf854d2">More...</a><br/></td></tr>
+<tr class="separator:a0e24de52eeb44555872c70f3adf854d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aac88608db6081da479c772c96636acb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::Drawable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5db44942658aab760a7418e338582e0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::~Drawable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The destructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9f04cf11a84eb3cdf68ea48599648d7"></a>
+<a class="anchor" id="a0e24de52eeb44555872c70f3adf854d2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Drawable::__declspec </td>
+          <td class="memname">virtual void Drawable::Draw </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>This pure virtual method will be responsible for drawing on the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>contains the sfml renderwindow used to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contains</td><td>the offset at which the component will be drawn. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42">Chunk</a>, <a class="el" href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">GameScreen</a>, and <a class="el" href="class_example_drawable.html#a02efe170a267616262e1bac3d65cdf59">ExampleDrawable</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drawable_a0e24de52eeb44555872c70f3adf854d2_icgraph.png" border="0" usemap="#class_drawable_a0e24de52eeb44555872c70f3adf854d2_icgraph" alt=""/></div>
+<map name="class_drawable_a0e24de52eeb44555872c70f3adf854d2_icgraph" id="class_drawable_a0e24de52eeb44555872c70f3adf854d2_icgraph">
+<area shape="rect" id="node2" href="class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc" title="ExampleComponent::Draw" alt="" coords="165,5,341,32"/><area shape="rect" id="node3" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429" title="MovableComponent::Draw" alt="" coords="167,56,339,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="ab8175a6d9337a90bd36e368bd6749579"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Drawable::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_drawable_8hpp_source.html">Drawable.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_drawable_8cpp.html">Drawable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -175,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_drawable.html">Drawable</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:39 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

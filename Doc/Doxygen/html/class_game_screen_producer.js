@@ -1,8 +1,8 @@
 var class_game_screen_producer =
 [
-    [ "__declspec", "class_game_screen_producer.html#a763fe68a79dccbe05e843124ad62eb36", null ],
-    [ "__declspec", "class_game_screen_producer.html#a3b4fd8a10b2a9e9ed2b5816d464cb3bb", null ],
-    [ "__declspec", "class_game_screen_producer.html#a56e7ccd432601c6a28f714201dabc46f", null ],
-    [ "__declspec", "class_game_screen_producer.html#a7a18ea24631d12709cdf30f692802ba2", null ],
-    [ "__declspec", "class_game_screen_producer.html#a86b3d35e0edf3bdc411bb9cb79ea2647", null ]
+    [ "GameScreenProducer", "class_game_screen_producer.html#a9f6e3e5335d3b275c69b5850f57c84c3", null ],
+    [ "~GameScreenProducer", "class_game_screen_producer.html#ab0b82eada6522d3ac884eeb4bbcb4473", null ],
+    [ "Produce", "class_game_screen_producer.html#aa7973b140508ab9d820c70ac79bd39d4", null ],
+    [ "Produce", "class_game_screen_producer.html#a9b9c179df40f64aa9affa458c941f8be", null ],
+    [ "Produce", "class_game_screen_producer.html#a88c76b62dff8d5be86224ea1c735f0ca", null ]
 ];

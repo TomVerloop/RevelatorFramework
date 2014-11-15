@@ -1,5 +1,5 @@
 var class_update_data =
 [
-    [ "__declspec", "class_update_data.html#a6c196ff72aceb015ce055e2bd807e73a", null ],
-    [ "__declspec", "class_update_data.html#a5c8ec8244a43c31e16d47e3fcc430a62", null ]
+    [ "UpdateData", "class_update_data.html#a7164bb9338d6362f427d75025c9026b6", null ],
+    [ "~UpdateData", "class_update_data.html#ab2e57f8fd741b289c7719ab860706ff6", null ]
 ];

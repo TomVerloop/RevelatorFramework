@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -83,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index__"><span>_</span></a></li>
-      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,6 +152,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>Menu
 : <a class="el" href="class_keyboard.html#afaeb2278bbc8f4971d1f43cee9765900">Keyboard</a>
+</li>
+<li>Mouse()
+: <a class="el" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">Mouse</a>
 </li>
 <li>MouseLeft
 : <a class="el" href="class_mouse.html#ace644d872e798ce789726ec958236428">Mouse</a>
@@ -176,8 +180,17 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>MovableComponentProducer()
 : <a class="el" href="class_movable_component_producer.html#a07b6c93cae31db6a684257b339e330b3">MovableComponentProducer</a>
 </li>
+<li>MoveCamera()
+: <a class="el" href="class_window_manager.html#abbc66e888f2a67ab0203357005bc89d8">WindowManager</a>
+</li>
+<li>MoveComponentToNextChunk()
+: <a class="el" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0">Chunk</a>
+</li>
 <li>Multiply
 : <a class="el" href="class_keyboard.html#adedf851aed90813c23d5bb1dbc81e44f">Keyboard</a>
+</li>
+<li>musicIsPlaying()
+: <a class="el" href="class_audio_manager.html#a908b5114da8a03c6d7db0f81c4f0ec8e">AudioManager</a>
 </li>
 <li>Musics
 : <a class="el" href="class_audio_manager.html#af4fd3dd64a38f93f808955a626982cc2">AudioManager</a>
@@ -188,7 +201,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:12 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:44 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_game_object_producer_8hpp_source.html
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,17 +114,19 @@ $(document).ready(function(){initNavTree('_game_object_producer_8hpp_source.html
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_game_object_producer.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_object_producer.html">GameObjectProducer</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) <a class="code" href="class_game_object_producer.html">GameObjectProducer</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) ~<a class="code" href="class_game_object_producer.html">GameObjectProducer</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * Produce() = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * Produce(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * Produce(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2">GameObjectProducer</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <a class="code" href="class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5">~GameObjectProducer</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * <a class="code" href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">Produce</a>() = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * <a class="code" href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_game_component.html">GameComponent</a> * <a class="code" href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="ttc" id="class_game_object_producer_html_acedff5955f510b5b40ad477b6c016c1d"><div class="ttname"><a href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">GameObjectProducer::__declspec</a></div><div class="ttdeci">__declspec(dllexport) GameObjectProducer()</div></div>
 <div class="ttc" id="class_producer_package_html"><div class="ttname"><a href="class_producer_package.html">ProducerPackage</a></div><div class="ttdef"><b>Definition:</b> ProducerPackage.hpp:4</div></div>
 <div class="ttc" id="_game_component_8hpp_html"><div class="ttname"><a href="_game_component_8hpp.html">GameComponent.hpp</a></div></div>
 <div class="ttc" id="class_game_object_producer_html"><div class="ttname"><a href="class_game_object_producer.html">GameObjectProducer</a></div><div class="ttdef"><b>Definition:</b> GameObjectProducer.hpp:4</div></div>
+<div class="ttc" id="class_game_object_producer_html_a38c70d3fba5ec49e549da7affbcf12d2"><div class="ttname"><a href="class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2">GameObjectProducer::GameObjectProducer</a></div><div class="ttdeci">GameObjectProducer()</div><div class="ttdef"><b>Definition:</b> GameObjectProducer.cpp:5</div></div>
+<div class="ttc" id="class_game_object_producer_html_a10fa0f90fc8bb4720073818298ea16be"><div class="ttname"><a href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">GameObjectProducer::Produce</a></div><div class="ttdeci">virtual GameComponent * Produce()=0</div></div>
+<div class="ttc" id="class_game_object_producer_html_a77c862260fa83341a0b2fc8b1cad3ca5"><div class="ttname"><a href="class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5">GameObjectProducer::~GameObjectProducer</a></div><div class="ttdeci">~GameObjectProducer()</div><div class="ttdef"><b>Definition:</b> GameObjectProducer.cpp:10</div></div>
 <div class="ttc" id="_producer_package_8hpp_html"><div class="ttname"><a href="_producer_package_8hpp.html">ProducerPackage.hpp</a></div></div>
 <div class="ttc" id="class_game_component_html"><div class="ttname"><a href="class_game_component.html">GameComponent</a></div><div class="ttdef"><b>Definition:</b> GameComponent.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -131,7 +135,7 @@ $(document).ready(function(){initNavTree('_game_object_producer_8hpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_game_object_producer_8hpp.html">GameObjectProducer.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

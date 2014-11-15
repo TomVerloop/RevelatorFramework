@@ -7,12 +7,11 @@
 
 
 
-Inheritance diagram for Drawable\-:
-\nopagebreak
+Inheritance diagram for Drawable\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_drawable__inherit__graph}
+\includegraphics[width=350pt]{class_drawable__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,35 +20,83 @@ Collaboration diagram for Drawable\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_drawable__coll__graph}
+\includegraphics[width=157pt]{class_drawable__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_drawable_ac9f04cf11a84eb3cdf68ea48599648d7}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_drawable}{Drawable}()
-\item 
-\hyperlink{class_drawable_ab8175a6d9337a90bd36e368bd6749579}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_drawable}{Drawable}()
-\end{DoxyCompactItemize}
+\hyperlink{class_drawable_aac88608db6081da479c772c96636acb1}{Drawable} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_drawable_a5db44942658aab760a7418e338582e0a}{$\sim$\-Drawable} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_drawable_a0e24de52eeb44555872c70f3adf854d2}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset)=0
+\begin{DoxyCompactList}\small\item\em This pure virtual method will be responsible for drawing on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_drawable_aac88608db6081da479c772c96636acb1}{\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\index{Drawable@{Drawable}!Drawable@{Drawable}}
+\subsubsection[{Drawable}]{\setlength{\rightskip}{0pt plus 5cm}Drawable\-::\-Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drawable_aac88608db6081da479c772c96636acb1}
+
+
+The default constructor. 
+
+\hypertarget{class_drawable_a5db44942658aab760a7418e338582e0a}{\index{Drawable@{Drawable}!$\sim$\-Drawable@{$\sim$\-Drawable}}
+\index{$\sim$\-Drawable@{$\sim$\-Drawable}!Drawable@{Drawable}}
+\subsubsection[{$\sim$\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}Drawable\-::$\sim$\-Drawable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drawable_a5db44942658aab760a7418e338582e0a}
+
+
+The destructor. 
+
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_drawable_ac9f04cf11a84eb3cdf68ea48599648d7}{\index{Drawable@{Drawable}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Drawable@{Drawable}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Drawable\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_drawable_a0e24de52eeb44555872c70f3adf854d2}{\index{Drawable@{Drawable}!Draw@{Draw}}
+\index{Draw@{Draw}!Drawable@{Drawable}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Drawable\-::\-Draw (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{sf\-::\-Render\-Window \&}]{window, }
+\item[{sf\-::\-Vector2f}]{offset}
 \end{DoxyParamCaption}
-)}}\label{class_drawable_ac9f04cf11a84eb3cdf68ea48599648d7}
-\hypertarget{class_drawable_ab8175a6d9337a90bd36e368bd6749579}{\index{Drawable@{Drawable}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Drawable@{Drawable}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Drawable\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_drawable_ab8175a6d9337a90bd36e368bd6749579}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_drawable_a0e24de52eeb44555872c70f3adf854d2}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+This pure virtual method will be responsible for drawing on the screen. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em window} & contains the sfml renderwindow used to draw upon. \\
+\hline
+\mbox{\tt in}  & {\em contains} & the offset at which the component will be drawn. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}{Chunk}, \hyperlink{class_game_screen_afb11360ac509f47ca47929c254a8b67d}{Game\-Screen}, and \hyperlink{class_example_drawable_a02efe170a267616262e1bac3d65cdf59}{Example\-Drawable}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_drawable_a0e24de52eeb44555872c70f3adf854d2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_drawable_8hpp}{Drawable.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_drawable_8hpp}{Drawable.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_drawable_8cpp}{Drawable.\-cpp}\end{DoxyCompactItemize}

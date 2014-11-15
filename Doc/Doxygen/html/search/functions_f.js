@@ -1,20 +1,7 @@
 var searchData=
 [
-  ['_7echunk',['~Chunk',['../class_chunk.html#ad21b515f41c9a1d21740b9e7e3f8eede',1,'Chunk']]],
-  ['_7echunkmanager',['~ChunkManager',['../class_chunk_manager.html#a675cdb47d0529eee3c878fbc25406710',1,'ChunkManager']]],
-  ['_7ecollidable',['~Collidable',['../class_collidable.html#a454ca1b66dd504b25fed3706914cee6e',1,'Collidable']]],
-  ['_7edrawable',['~Drawable',['../class_drawable.html#a5db44942658aab760a7418e338582e0a',1,'Drawable']]],
-  ['_7eexamplecomponent',['~ExampleComponent',['../class_example_component.html#aa3a6265806020d1536d21272906181c6',1,'ExampleComponent']]],
-  ['_7egamefactory',['~GameFactory',['../class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785',1,'GameFactory']]],
-  ['_7egamescreen',['~GameScreen',['../class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1',1,'GameScreen']]],
-  ['_7elayer',['~Layer',['../class_layer.html#a1b1ba4804451dfe6cc357194e42762ae',1,'Layer']]],
-  ['_7emovablecomponent',['~MovableComponent',['../class_movable_component.html#aedc5ac024682262c99436b2b5fadddc1',1,'MovableComponent']]],
-  ['_7erectangle',['~Rectangle',['../class_rectangle.html#a494c076b13aadf26efdce07d23c61ddd',1,'Rectangle']]],
-  ['_7escreenmanager',['~ScreenManager',['../class_screen_manager.html#a515ec6aabc9fefe3c1cfbe734877da1e',1,'ScreenManager']]],
-  ['_7escreentransaction',['~ScreenTransaction',['../class_screen_transaction.html#a4200c29ba71151f7eb7c626d8495429e',1,'ScreenTransaction']]],
-  ['_7esensor',['~Sensor',['../class_sensor.html#aee8c70e7ef05ce65e7ee33686b5d7db2',1,'Sensor']]],
-  ['_7espawner',['~Spawner',['../class_spawner.html#a59d8e3d4d6dc6c25f38ce5d4fcc5e8e6',1,'Spawner']]],
-  ['_7eupdatedata',['~UpdateData',['../class_update_data.html#ab2e57f8fd741b289c7719ab860706ff6',1,'UpdateData']]],
-  ['_7eutils',['~Utils',['../class_utils.html#afa5e70facffc286607498e7edb639b8a',1,'Utils']]],
-  ['_7ewindowmanager',['~WindowManager',['../class_window_manager.html#a19fd6e41c42760af82460d9851780d82',1,'WindowManager']]]
+  ['update',['Update',['../class_example_component.html#a5891dd45e21cc525a275e10596ad3607',1,'ExampleComponent::Update()'],['../class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee',1,'MovableComponent::Update()'],['../class_chunk.html#a98a8a36b0197668d37994f77b2952084',1,'Chunk::Update()'],['../class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf',1,'ChunkManager::Update()'],['../class_game_component.html#af4ff61bad044ac587cf2f066d5b4afa0',1,'GameComponent::Update()'],['../class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce',1,'GameScreen::Update()'],['../class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544',1,'Layer::Update()'],['../class_mouse.html#add9756fabb1ae55d56e10b930e5592b6',1,'Mouse::Update()'],['../class_screen_manager.html#acdc42b918d0c758bba56247977003210',1,'ScreenManager::Update()'],['../class_keyboard.html#a6410f07ddc53561a82d5328d8b330aab',1,'Keyboard::update()']]],
+  ['updatedata',['UpdateData',['../class_update_data.html#a7164bb9338d6362f427d75025c9026b6',1,'UpdateData']]],
+  ['updatehandle',['UpdateHandle',['../class_example_layer.html#a97b36d082a4b5dd7e145773fca666490',1,'ExampleLayer::UpdateHandle()'],['../class_example_test_screen.html#a44f0c5ae87832e341d6eb9b44f811969',1,'ExampleTestScreen::UpdateHandle()'],['../class_game_screen.html#a5ffce37600960d6c8885bf071461998c',1,'GameScreen::UpdateHandle()'],['../class_layer.html#a1e7a6db5ee252c8ea9c44a21aaf2b0c9',1,'Layer::UpdateHandle()']]],
+  ['utils',['Utils',['../class_utils.html#a1653aff7c075a5dd590d479d9b62242d',1,'Utils::Utils(const Utils &amp;utils)=delete'],['../class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a',1,'Utils::Utils()']]]
 ];

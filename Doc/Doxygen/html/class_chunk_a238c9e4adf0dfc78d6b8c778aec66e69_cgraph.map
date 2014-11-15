@@ -1,0 +1,4 @@
+<map id="Chunk::DrawSelf" name="Chunk::DrawSelf">
+<area shape="rect" id="node2" href="$class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="172,5,377,32"/>
+<area shape="rect" id="node3" href="$class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="195,56,355,83"/>
+</map>

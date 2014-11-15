@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,24 +113,32 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_game_factory.html">GameFactory</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#adaa8f1b9fe44c066743b786d1cd71bfb">__declspec</a>(dllexport)~GameFactory()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#a9079d555495e2691cce325afe77c4785">__declspec</a>(dllexport) static GameFactory &amp;getInstance()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a38779dd1a14a9e977614b14b01eb231f">__declspec</a>(dllexport) GameFactory(const GameFactory &amp;utils)=delete</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#a7d0a6fccc0aec8cf4d30ba31c945f04e">__declspec</a>(dllexport) GameFactory &amp;operator</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a6cb0bea926e68e7e2a8267e56f37b27e">__declspec</a>(dllexport) GameFactory()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">LayerProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#aeb0d338957100663811acae5074943ac">Layers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#ab72819fc3f241243d44827f75e0a2886">ObjectProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#aa65ba67e6c3fc56ec228c801e02352c8">ScreenProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a7a130a6b0bff752fdd8223616a5f046f">DeleteDecommisioned</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a694a26c694da014dc5ced9d85a2aaaa1">GameFactory</a>(const GameFactory &amp;utils)=delete</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d">getInstance</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">LayerProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">Layers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#ab72819fc3f241243d44827f75e0a2886">ObjectProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#ac9e48fb53d87829930bbc447133d9c25">operator=</a>(const GameFactory &amp;utils)=delete</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f">ProduceGameObject</a>(std::string Name)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a0ed92342411d80d6080294c29ac2c54e">ProduceGameObject</a>(std::string Name, ProducerPackage package)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d">ProduceLayer</a>(std::string layername, int ChunkSize, const int Chunks, bool enabled, bool willupdate, bool willdraw, ProducerPackage package, std::string layertype)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">ProduceScreen</a>(std::string screenname)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a3a20ae04c8ff992ad080b9742f5831c0">RegisterLayerProducer</a>(std::string Name, LayerProducer *producer)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a77df8b5e97869b7d7b667c0852191e20">RegisterObjectProducer</a>(std::string Name, GameObjectProducer *producer)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#ad3c85f8654dd2c3aeb7a2b17df05cceb">RegisterScreenProducer</a>(std::string Name, GameScreenProducer *producer)</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#aa65ba67e6c3fc56ec228c801e02352c8">ScreenProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">~GameFactory</a>()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

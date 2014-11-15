@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_chunk.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,7 +108,6 @@ $(document).ready(function(){initNavTree('class_chunk.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_chunk-members.html">List of all members</a>  </div>
@@ -124,103 +125,112 @@ Inheritance diagram for Chunk:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_chunk__inherit__graph.png" border="0" usemap="#_chunk_inherit__map" alt="Inheritance graph"/></div>
 <map name="_chunk_inherit__map" id="_chunk_inherit__map">
-<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="23,5,131,97"/></map>
+<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Chunk:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_chunk__coll__graph.png" border="0" usemap="#_chunk_coll__map" alt="Collaboration graph"/></div>
 <map name="_chunk_coll__map" id="_chunk_coll__map">
-<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,257,113,349"/><area shape="rect" id="node3" href="class_game_component.html" title="{GameComponent\n|+ y\l# Name\l# ID\l# Position\l# DeadComponent\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 6 more...\l}" alt="" coords="109,463,239,745"/><area shape="rect" id="node4" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="164,5,272,156"/><area shape="rect" id="node5" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="264,205,372,400"/><area shape="rect" id="node6" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="396,242,504,363"/></map>
+<area shape="rect" id="node2" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab44ec5e17f0ca6096892265ebf4a448d"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <a class="el" href="class_chunk.html">Chunk</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ab44ec5e17f0ca6096892265ebf4a448d">__declspec</a> (dllexport)~<a class="el" href="class_chunk.html">Chunk</a>()</td></tr>
-<tr class="memdesc:ab44ec5e17f0ca6096892265ebf4a448d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="#ab44ec5e17f0ca6096892265ebf4a448d">More...</a><br/></td></tr>
-<tr class="separator:ab44ec5e17f0ca6096892265ebf4a448d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74827ffc5c989b29d5ee985e0df4e96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ac74827ffc5c989b29d5ee985e0df4e96">__declspec</a> (dllexport) void addComponent(<a class="el" href="class_game_component.html">GameComponent</a> *component)</td></tr>
-<tr class="memdesc:ac74827ffc5c989b29d5ee985e0df4e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds.  <a href="#ac74827ffc5c989b29d5ee985e0df4e96">More...</a><br/></td></tr>
-<tr class="separator:ac74827ffc5c989b29d5ee985e0df4e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb635e1e8318e7b3a0accd4bcf49866d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#acb635e1e8318e7b3a0accd4bcf49866d">__declspec</a> (dllexport) void Update(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
-<tr class="memdesc:acb635e1e8318e7b3a0accd4bcf49866d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method pushes the update signal to all its components.  <a href="#acb635e1e8318e7b3a0accd4bcf49866d">More...</a><br/></td></tr>
-<tr class="separator:acb635e1e8318e7b3a0accd4bcf49866d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a4e5721687f011d6c52624d01eca8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a27a4e5721687f011d6c52624d01eca8d">__declspec</a> (dllexport) void setTop(<a class="el" href="class_chunk.html">Chunk</a> *top)</td></tr>
-<tr class="memdesc:a27a4e5721687f011d6c52624d01eca8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the top.  <a href="#a27a4e5721687f011d6c52624d01eca8d">More...</a><br/></td></tr>
-<tr class="separator:a27a4e5721687f011d6c52624d01eca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164b8ab3a4d2e88b6d1bc5e6edfef100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a164b8ab3a4d2e88b6d1bc5e6edfef100">__declspec</a> (dllexport) void setRightTop(<a class="el" href="class_chunk.html">Chunk</a> *righttop)</td></tr>
-<tr class="memdesc:a164b8ab3a4d2e88b6d1bc5e6edfef100"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the top right.  <a href="#a164b8ab3a4d2e88b6d1bc5e6edfef100">More...</a><br/></td></tr>
-<tr class="separator:a164b8ab3a4d2e88b6d1bc5e6edfef100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e25de330ba7c7c2e557a823d7a8505b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a5e25de330ba7c7c2e557a823d7a8505b">__declspec</a> (dllexport) void setLeft(<a class="el" href="class_chunk.html">Chunk</a> *left)</td></tr>
-<tr class="memdesc:a5e25de330ba7c7c2e557a823d7a8505b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the left.  <a href="#a5e25de330ba7c7c2e557a823d7a8505b">More...</a><br/></td></tr>
-<tr class="separator:a5e25de330ba7c7c2e557a823d7a8505b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac390d85879176e6e8a26667ba97f8eee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ac390d85879176e6e8a26667ba97f8eee">__declspec</a> (dllexport) void setRight(<a class="el" href="class_chunk.html">Chunk</a> *right)</td></tr>
-<tr class="memdesc:ac390d85879176e6e8a26667ba97f8eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the right.  <a href="#ac390d85879176e6e8a26667ba97f8eee">More...</a><br/></td></tr>
-<tr class="separator:ac390d85879176e6e8a26667ba97f8eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f6e70225dcd2d5f2cf0c3f77abdfa4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a5f6e70225dcd2d5f2cf0c3f77abdfa4b">__declspec</a> (dllexport) void setLeftBottom(<a class="el" href="class_chunk.html">Chunk</a> *leftbottom)</td></tr>
-<tr class="memdesc:a5f6e70225dcd2d5f2cf0c3f77abdfa4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom left.  <a href="#a5f6e70225dcd2d5f2cf0c3f77abdfa4b">More...</a><br/></td></tr>
-<tr class="separator:a5f6e70225dcd2d5f2cf0c3f77abdfa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ed23533460c9308dc6ae6e92143e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a69ed23533460c9308dc6ae6e92143e65">__declspec</a> (dllexport) void setBottom(<a class="el" href="class_chunk.html">Chunk</a> *bottom)</td></tr>
-<tr class="memdesc:a69ed23533460c9308dc6ae6e92143e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom.  <a href="#a69ed23533460c9308dc6ae6e92143e65">More...</a><br/></td></tr>
-<tr class="separator:a69ed23533460c9308dc6ae6e92143e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b5a5cf3a22b7cdd14e5e16f9c74ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a42b5a5cf3a22b7cdd14e5e16f9c74ed0">__declspec</a> (dllexport) void setRightBottom(<a class="el" href="class_chunk.html">Chunk</a> *rightbottom)</td></tr>
-<tr class="memdesc:a42b5a5cf3a22b7cdd14e5e16f9c74ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom right.  <a href="#a42b5a5cf3a22b7cdd14e5e16f9c74ed0">More...</a><br/></td></tr>
-<tr class="separator:a42b5a5cf3a22b7cdd14e5e16f9c74ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023a2a543fc48c2b9ba5d2e31eb42e2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a023a2a543fc48c2b9ba5d2e31eb42e2a">__declspec</a> (dllexport) <a class="el" href="class_chunk.html">Chunk</a> *getTop()</td></tr>
-<tr class="memdesc:a023a2a543fc48c2b9ba5d2e31eb42e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the top.  <a href="#a023a2a543fc48c2b9ba5d2e31eb42e2a">More...</a><br/></td></tr>
-<tr class="separator:a023a2a543fc48c2b9ba5d2e31eb42e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1f0c64473950040eff7ac832ae07f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a9b1f0c64473950040eff7ac832ae07f7">__declspec</a> (dllexport) <a class="el" href="class_chunk.html">Chunk</a> *getLeft()</td></tr>
-<tr class="memdesc:a9b1f0c64473950040eff7ac832ae07f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the left.  <a href="#a9b1f0c64473950040eff7ac832ae07f7">More...</a><br/></td></tr>
-<tr class="separator:a9b1f0c64473950040eff7ac832ae07f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55bd34d914023066cf0bdd1297c3ae8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a55bd34d914023066cf0bdd1297c3ae8f">__declspec</a> (dllexport) <a class="el" href="class_chunk.html">Chunk</a> *getRight()</td></tr>
-<tr class="memdesc:a55bd34d914023066cf0bdd1297c3ae8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the right.  <a href="#a55bd34d914023066cf0bdd1297c3ae8f">More...</a><br/></td></tr>
-<tr class="separator:a55bd34d914023066cf0bdd1297c3ae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a65f82eed937ca57e26fbfc8b449fd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a4a65f82eed937ca57e26fbfc8b449fd2">__declspec</a> (dllexport) <a class="el" href="class_chunk.html">Chunk</a> *getBottom()</td></tr>
-<tr class="memdesc:a4a65f82eed937ca57e26fbfc8b449fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the bottom.  <a href="#a4a65f82eed937ca57e26fbfc8b449fd2">More...</a><br/></td></tr>
-<tr class="separator:a4a65f82eed937ca57e26fbfc8b449fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a11a6eb32b5444ba24bb506e1a57ad4b8">__declspec</a> (dllexport) sf</td></tr>
-<tr class="memdesc:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk coordinates.  <a href="#a11a6eb32b5444ba24bb506e1a57ad4b8">More...</a><br/></td></tr>
-<tr class="separator:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4b74bc2a675752c97407233d14cbaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a2a4b74bc2a675752c97407233d14cbaf">__declspec</a> (dllexport) void SenseSingle(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject</td></tr>
-<tr class="memdesc:a2a4b74bc2a675752c97407233d14cbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the vision of a single component.  <a href="#a2a4b74bc2a675752c97407233d14cbaf">More...</a><br/></td></tr>
-<tr class="separator:a2a4b74bc2a675752c97407233d14cbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabce986183d5f99c1c89a80b51127aa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aabce986183d5f99c1c89a80b51127aa9">__declspec</a> (dllexport) void CollideSingle(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject</td></tr>
-<tr class="memdesc:aabce986183d5f99c1c89a80b51127aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the collision of a single component.  <a href="#aabce986183d5f99c1c89a80b51127aa9">More...</a><br/></td></tr>
-<tr class="separator:aabce986183d5f99c1c89a80b51127aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a11a6eb32b5444ba24bb506e1a57ad4b8">__declspec</a> (dllexport) sf</td></tr>
-<tr class="memdesc:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the real position of the chunk.  <a href="#a11a6eb32b5444ba24bb506e1a57ad4b8">More...</a><br/></td></tr>
-<tr class="separator:a11a6eb32b5444ba24bb506e1a57ad4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf3fa4e0c9a7ef9c820c3ba001e449fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#acf3fa4e0c9a7ef9c820c3ba001e449fb">__declspec</a> (dllexport) float getSize()</td></tr>
-<tr class="memdesc:acf3fa4e0c9a7ef9c820c3ba001e449fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the size of the chunk.  <a href="#acf3fa4e0c9a7ef9c820c3ba001e449fb">More...</a><br/></td></tr>
-<tr class="separator:acf3fa4e0c9a7ef9c820c3ba001e449fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46cf5f6f874fbeff528ef237251a9f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ad46cf5f6f874fbeff528ef237251a9f2">Chunk</a> (sf::Vector2i <a class="el" href="class_chunk.html#abb5b1842148b3d7c616065766bfd2b33">ChunkCoord</a>, float <a class="el" href="class_chunk.html#af46410b580baf2985b01044d5c041b2e">size</a>=0.f)</td></tr>
+<tr class="memdesc:ad46cf5f6f874fbeff528ef237251a9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="#ad46cf5f6f874fbeff528ef237251a9f2">More...</a><br/></td></tr>
+<tr class="separator:ad46cf5f6f874fbeff528ef237251a9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21b515f41c9a1d21740b9e7e3f8eede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ad21b515f41c9a1d21740b9e7e3f8eede">~Chunk</a> ()</td></tr>
+<tr class="memdesc:ad21b515f41c9a1d21740b9e7e3f8eede"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Deconstructor.  <a href="#ad21b515f41c9a1d21740b9e7e3f8eede">More...</a><br/></td></tr>
+<tr class="separator:ad21b515f41c9a1d21740b9e7e3f8eede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b5c5515c800f2171899caf704db5dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc">addComponent</a> (<a class="el" href="class_game_component.html">GameComponent</a> *component)</td></tr>
+<tr class="memdesc:aa5b5c5515c800f2171899caf704db5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds.  <a href="#aa5b5c5515c800f2171899caf704db5dc">More...</a><br/></td></tr>
+<tr class="separator:aa5b5c5515c800f2171899caf704db5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a8a36b0197668d37994f77b2952084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:a98a8a36b0197668d37994f77b2952084"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method pushes the update signal to all its components.  <a href="#a98a8a36b0197668d37994f77b2952084">More...</a><br/></td></tr>
+<tr class="separator:a98a8a36b0197668d37994f77b2952084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3203da1471b5572e0dd2cd82e6dceb42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset) override</td></tr>
+<tr class="memdesc:a3203da1471b5572e0dd2cd82e6dceb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method pushes the DrawSelf signal to all its neighboring chunks and itself.  <a href="#a3203da1471b5572e0dd2cd82e6dceb42">More...</a><br/></td></tr>
+<tr class="separator:a3203da1471b5572e0dd2cd82e6dceb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238c9e4adf0dfc78d6b8c778aec66e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69">DrawSelf</a> (sf::RenderWindow &amp;window, sf::Vector2f offset, <a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a> pos)</td></tr>
+<tr class="memdesc:a238c9e4adf0dfc78d6b8c778aec66e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method pushes the draw signal to all its components.  <a href="#a238c9e4adf0dfc78d6b8c778aec66e69">More...</a><br/></td></tr>
+<tr class="separator:a238c9e4adf0dfc78d6b8c778aec66e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24564a4a5eb9e05857939e23ed213914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a24564a4a5eb9e05857939e23ed213914">setLeftTop</a> (<a class="el" href="class_chunk.html">Chunk</a> *lefttop)</td></tr>
+<tr class="memdesc:a24564a4a5eb9e05857939e23ed213914"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the top left.  <a href="#a24564a4a5eb9e05857939e23ed213914">More...</a><br/></td></tr>
+<tr class="separator:a24564a4a5eb9e05857939e23ed213914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc69f33389b5510766f23317ff7ae65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a6cc69f33389b5510766f23317ff7ae65">setTop</a> (<a class="el" href="class_chunk.html">Chunk</a> *<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a3961740aa293a50c701d278225f7050a">top</a>)</td></tr>
+<tr class="memdesc:a6cc69f33389b5510766f23317ff7ae65"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the top.  <a href="#a6cc69f33389b5510766f23317ff7ae65">More...</a><br/></td></tr>
+<tr class="separator:a6cc69f33389b5510766f23317ff7ae65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c19057f7360349f5d214bfa50d51900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a8c19057f7360349f5d214bfa50d51900">setRightTop</a> (<a class="el" href="class_chunk.html">Chunk</a> *righttop)</td></tr>
+<tr class="memdesc:a8c19057f7360349f5d214bfa50d51900"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the top right.  <a href="#a8c19057f7360349f5d214bfa50d51900">More...</a><br/></td></tr>
+<tr class="separator:a8c19057f7360349f5d214bfa50d51900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0005654a92c0ca50f90c516d508834c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aa0005654a92c0ca50f90c516d508834c">setLeft</a> (<a class="el" href="class_chunk.html">Chunk</a> *<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83ab0ac36b187aa60c167ffcead3d5a03c0">left</a>)</td></tr>
+<tr class="memdesc:aa0005654a92c0ca50f90c516d508834c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the left.  <a href="#aa0005654a92c0ca50f90c516d508834c">More...</a><br/></td></tr>
+<tr class="separator:aa0005654a92c0ca50f90c516d508834c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670d58217b329583811b5380f25700d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a670d58217b329583811b5380f25700d6">setRight</a> (<a class="el" href="class_chunk.html">Chunk</a> *<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a">right</a>)</td></tr>
+<tr class="memdesc:a670d58217b329583811b5380f25700d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the right.  <a href="#a670d58217b329583811b5380f25700d6">More...</a><br/></td></tr>
+<tr class="separator:a670d58217b329583811b5380f25700d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690d801cad525f106f11fca76855c785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a690d801cad525f106f11fca76855c785">setLeftBottom</a> (<a class="el" href="class_chunk.html">Chunk</a> *leftbottom)</td></tr>
+<tr class="memdesc:a690d801cad525f106f11fca76855c785"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom left.  <a href="#a690d801cad525f106f11fca76855c785">More...</a><br/></td></tr>
+<tr class="separator:a690d801cad525f106f11fca76855c785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c85ac8a8959eca362b7c3e64dc1d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a57c85ac8a8959eca362b7c3e64dc1d0d">setBottom</a> (<a class="el" href="class_chunk.html">Chunk</a> *<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a692ac8f8a4a43ac2513ce4cd90dc3ebe">bottom</a>)</td></tr>
+<tr class="memdesc:a57c85ac8a8959eca362b7c3e64dc1d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom.  <a href="#a57c85ac8a8959eca362b7c3e64dc1d0d">More...</a><br/></td></tr>
+<tr class="separator:a57c85ac8a8959eca362b7c3e64dc1d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadab4832f4d1c4618b7232a1503d8aed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aadab4832f4d1c4618b7232a1503d8aed">setRightBottom</a> (<a class="el" href="class_chunk.html">Chunk</a> *rightbottom)</td></tr>
+<tr class="memdesc:aadab4832f4d1c4618b7232a1503d8aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets a chunk as the chunk to the bottom right.  <a href="#aadab4832f4d1c4618b7232a1503d8aed">More...</a><br/></td></tr>
+<tr class="separator:aadab4832f4d1c4618b7232a1503d8aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161929ca5dcfa0e1a798999f989fe2f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a161929ca5dcfa0e1a798999f989fe2f8">getTop</a> ()</td></tr>
+<tr class="memdesc:a161929ca5dcfa0e1a798999f989fe2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the top.  <a href="#a161929ca5dcfa0e1a798999f989fe2f8">More...</a><br/></td></tr>
+<tr class="separator:a161929ca5dcfa0e1a798999f989fe2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c3b2b5995d06baec16ab9935a315fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa">getLeft</a> ()</td></tr>
+<tr class="memdesc:a43c3b2b5995d06baec16ab9935a315fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the left.  <a href="#a43c3b2b5995d06baec16ab9935a315fa">More...</a><br/></td></tr>
+<tr class="separator:a43c3b2b5995d06baec16ab9935a315fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13a4e8ac481c7de6a70b3fa461418cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf">getRight</a> ()</td></tr>
+<tr class="memdesc:ad13a4e8ac481c7de6a70b3fa461418cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the right.  <a href="#ad13a4e8ac481c7de6a70b3fa461418cf">More...</a><br/></td></tr>
+<tr class="separator:ad13a4e8ac481c7de6a70b3fa461418cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59eb282f08711420c1e966e30aab47e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a59eb282f08711420c1e966e30aab47e3">getBottom</a> ()</td></tr>
+<tr class="memdesc:a59eb282f08711420c1e966e30aab47e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk to the bottom.  <a href="#a59eb282f08711420c1e966e30aab47e3">More...</a><br/></td></tr>
+<tr class="separator:a59eb282f08711420c1e966e30aab47e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d9253e661bbaef3471b73b86f0d8c4"><td class="memItemLeft" align="right" valign="top">sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ad8d9253e661bbaef3471b73b86f0d8c4">getCoords</a> ()</td></tr>
+<tr class="memdesc:ad8d9253e661bbaef3471b73b86f0d8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the chunk coordinates.  <a href="#ad8d9253e661bbaef3471b73b86f0d8c4">More...</a><br/></td></tr>
+<tr class="separator:ad8d9253e661bbaef3471b73b86f0d8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab038489f8de577890226307499da10af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#ab038489f8de577890226307499da10af">SenseSingle</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject, <a class="el" href="class_game_component.html">GameComponent</a> *comp)</td></tr>
+<tr class="memdesc:ab038489f8de577890226307499da10af"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the vision of a single component.  <a href="#ab038489f8de577890226307499da10af">More...</a><br/></td></tr>
+<tr class="separator:ab038489f8de577890226307499da10af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f009780aa4934be3f839a4518616ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed">CollideSingle</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject, <a class="el" href="class_game_component.html">GameComponent</a> *comp)</td></tr>
+<tr class="memdesc:a41f009780aa4934be3f839a4518616ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the collision of a single component.  <a href="#a41f009780aa4934be3f839a4518616ed">More...</a><br/></td></tr>
+<tr class="separator:a41f009780aa4934be3f839a4518616ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0438a8693210393fadc5105dd315adb8"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a0438a8693210393fadc5105dd315adb8">getPurePosition</a> ()</td></tr>
+<tr class="memdesc:a0438a8693210393fadc5105dd315adb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the real position of the chunk.  <a href="#a0438a8693210393fadc5105dd315adb8">More...</a><br/></td></tr>
+<tr class="separator:a0438a8693210393fadc5105dd315adb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331e5916d9976679df82da5764bd7d64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a331e5916d9976679df82da5764bd7d64">getSize</a> ()</td></tr>
+<tr class="memdesc:a331e5916d9976679df82da5764bd7d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the size of the chunk.  <a href="#a331e5916d9976679df82da5764bd7d64">More...</a><br/></td></tr>
+<tr class="separator:a331e5916d9976679df82da5764bd7d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_drawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_drawable.html">Drawable</a></td></tr>
-<tr class="memitem:ac9f04cf11a84eb3cdf68ea48599648d7 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ac9f04cf11a84eb3cdf68ea48599648d7">__declspec</a> (dllexport) <a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
-<tr class="separator:ac9f04cf11a84eb3cdf68ea48599648d7 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8175a6d9337a90bd36e368bd6749579 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ab8175a6d9337a90bd36e368bd6749579">__declspec</a> (dllexport)~<a class="el" href="class_drawable.html">Drawable</a>()</td></tr>
-<tr class="separator:ab8175a6d9337a90bd36e368bd6749579 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a633545d862acb016a7081c364126c7b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a633545d862acb016a7081c364126c7b8">comp</a></td></tr>
-<tr class="separator:a633545d862acb016a7081c364126c7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a> ()</td></tr>
+<tr class="memdesc:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#aac88608db6081da479c772c96636acb1">More...</a><br/></td></tr>
+<tr class="separator:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db44942658aab760a7418e338582e0a inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a5db44942658aab760a7418e338582e0a">~Drawable</a> ()</td></tr>
+<tr class="memdesc:a5db44942658aab760a7418e338582e0a inherit pub_methods_class_drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="#a5db44942658aab760a7418e338582e0a">More...</a><br/></td></tr>
+<tr class="separator:a5db44942658aab760a7418e338582e0a inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a09fed540af40e1ad76e8ef2babbfe616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a09fed540af40e1ad76e8ef2babbfe616">__declspec</a> (dllexport) void Collide(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
-<tr class="memdesc:a09fed540af40e1ad76e8ef2babbfe616"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calls Chunk::CollideSingle for every component in the chunk.  <a href="#a09fed540af40e1ad76e8ef2babbfe616">More...</a><br/></td></tr>
-<tr class="separator:a09fed540af40e1ad76e8ef2babbfe616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a24db04cbc32e330b07d34caa61eeb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a8a24db04cbc32e330b07d34caa61eeb1">__declspec</a> (dllexport) void Sense(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
-<tr class="memdesc:a8a24db04cbc32e330b07d34caa61eeb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calls Chunk::SenseSingle for every component in the chunk.  <a href="#a8a24db04cbc32e330b07d34caa61eeb1">More...</a><br/></td></tr>
-<tr class="separator:a8a24db04cbc32e330b07d34caa61eeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c65ce716caab3e2c5bd9193f8e29888"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a5c65ce716caab3e2c5bd9193f8e29888">__declspec</a> (dllexport) void MoveComponentToNextChunk(<a class="el" href="class_game_component.html">GameComponent</a> *c)</td></tr>
-<tr class="memdesc:a5c65ce716caab3e2c5bd9193f8e29888"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if a component still resides inside the chunk if not it will push it to the next chunk. if no next chunk exsists it will pull the component back into its region.  <a href="#a5c65ce716caab3e2c5bd9193f8e29888">More...</a><br/></td></tr>
-<tr class="separator:a5c65ce716caab3e2c5bd9193f8e29888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad4ce00be30a71cddc9a17226a992a0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aad4ce00be30a71cddc9a17226a992a0f">__declspec</a> (dllexport) bool AxisisInBounds(float axis</td></tr>
-<tr class="memdesc:aad4ce00be30a71cddc9a17226a992a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk  <a href="#aad4ce00be30a71cddc9a17226a992a0f">More...</a><br/></td></tr>
-<tr class="separator:aad4ce00be30a71cddc9a17226a992a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb19003f0e0330920cf7695fbdc5700"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aecb19003f0e0330920cf7695fbdc5700">__declspec</a> (dllexport) void RemoveFlaggedFromChunk()</td></tr>
-<tr class="memdesc:aecb19003f0e0330920cf7695fbdc5700"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all the "Dead" components from the chunk but does not delete them.  <a href="#aecb19003f0e0330920cf7695fbdc5700">More...</a><br/></td></tr>
-<tr class="separator:aecb19003f0e0330920cf7695fbdc5700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ee3a744acf3492cdf221037f0b7822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822">Collide</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:a48ee3a744acf3492cdf221037f0b7822"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calls <a class="el" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. ">Chunk::CollideSingle</a> for every component in the chunk.  <a href="#a48ee3a744acf3492cdf221037f0b7822">More...</a><br/></td></tr>
+<tr class="separator:a48ee3a744acf3492cdf221037f0b7822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f140c690751b838b0a7e09a51e6936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936">Sense</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:a78f140c690751b838b0a7e09a51e6936"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calls <a class="el" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. ">Chunk::SenseSingle</a> for every component in the chunk.  <a href="#a78f140c690751b838b0a7e09a51e6936">More...</a><br/></td></tr>
+<tr class="separator:a78f140c690751b838b0a7e09a51e6936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749ea52ccf2c2905408c35e43545b6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0">MoveComponentToNextChunk</a> (<a class="el" href="class_game_component.html">GameComponent</a> *c)</td></tr>
+<tr class="memdesc:a749ea52ccf2c2905408c35e43545b6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if a component still resides inside the chunk if not it will push it to the next chunk. if no next chunk exsists it will pull the component back into its region.  <a href="#a749ea52ccf2c2905408c35e43545b6e0">More...</a><br/></td></tr>
+<tr class="separator:a749ea52ccf2c2905408c35e43545b6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4f8da15c8d73f2c6da55642aa8ca72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72">AxisisInBounds</a> (float axis, float offset)</td></tr>
+<tr class="memdesc:aae4f8da15c8d73f2c6da55642aa8ca72"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function to simplify the ifstatements in <a class="el" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c...">Chunk::MoveComponentToNextChunk</a>  <a href="#aae4f8da15c8d73f2c6da55642aa8ca72">More...</a><br/></td></tr>
+<tr class="separator:aae4f8da15c8d73f2c6da55642aa8ca72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f84e97b0fd555faeb811c747a6d26d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d">RemoveFlaggedFromChunk</a> ()</td></tr>
+<tr class="memdesc:aa7f84e97b0fd555faeb811c747a6d26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all the "Dead" components from the chunk but does not delete them.  <a href="#aa7f84e97b0fd555faeb811c747a6d26d">More...</a><br/></td></tr>
+<tr class="separator:aa7f84e97b0fd555faeb811c747a6d26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -263,8 +273,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:adf6692fdab4518524e217cc0ef09d282"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_component.html">GameComponent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#adf6692fdab4518524e217cc0ef09d282">RemoveFromChunk</a></td></tr>
 <tr class="memdesc:adf6692fdab4518524e217cc0ef09d282"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a list of components to remove from the chunk.  <a href="#adf6692fdab4518524e217cc0ef09d282">More...</a><br/></td></tr>
 <tr class="separator:adf6692fdab4518524e217cc0ef09d282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab7f8f3970c886a62ccc1630bc60a16"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chunk.html#a6ab7f8f3970c886a62ccc1630bc60a16">offset</a></td></tr>
-<tr class="separator:a6ab7f8f3970c886a62ccc1630bc60a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This Class represents a small portion of a screen. </p>
@@ -272,67 +280,72 @@ Private Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>anything with a vision greater that one chunk next to it is useless. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab44ec5e17f0ca6096892265ebf4a448d"></a>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd><p class="startdd">anything with a vision greater that one chunk next to it is useless. </p>
+<p class="enddd">any component given to the next chunk will be updated twice. </p>
+</dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad46cf5f6f874fbeff528ef237251a9f2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">Chunk::Chunk </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramtype">sf::Vector2i&#160;</td>
+          <td class="paramname"><em>ChunkCoord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0.f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChunkCoord</td><td>contains the coordinates used to calculate its real position on the screen. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>contains the size of the chunk used to contain its components in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad21b515f41c9a1d21740b9e7e3f8eede"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Chunk::~Chunk </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The constructor. </p>
-<p>This method pushes the DrawSelf signal to all its neighboring chunks and itself.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ChunkCoord</td><td>contains the coordinates used to calculate its real position on the screen. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>contains the size of the chunk used to contain its components in.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>The Deconstructor.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>holds an reference to the renderwindow to draw upon. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position to add to the one of the component.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method pushes the draw signal to all its components. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>holds an reference to the renderwindow to draw upon. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position to add to the one of the component. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position from where the draw method was called on the screen.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method sets a chunk as the chunk to the top left. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lefttop</td><td>contains a pointer to the chunk that should be to the top left. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The Deconstructor. </p>
 
 </div>
 </div>
-<a class="anchor" id="ac74827ffc5c989b29d5ee985e0df4e96"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa5b5c5515c800f2171899caf704db5dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::addComponent </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -346,265 +359,312 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_aa5b5c5515c800f2171899caf704db5dc_cgraph.png" border="0" usemap="#class_chunk_aa5b5c5515c800f2171899caf704db5dc_cgraph" alt=""/></div>
+<map name="class_chunk_aa5b5c5515c800f2171899caf704db5dc_cgraph" id="class_chunk_aa5b5c5515c800f2171899caf704db5dc_cgraph">
+<area shape="rect" id="node2" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="208,29,404,56"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph.png" border="0" usemap="#class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph" alt=""/></div>
+<map name="class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph" id="class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="225,5,429,47"/><area shape="rect" id="node6" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="208,71,447,98"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="535,13,643,39"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="752,13,911,39"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="1021,13,1124,39"/><area shape="rect" id="node7" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="495,71,684,98"/><area shape="rect" id="node8" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="732,71,931,98"/><area shape="rect" id="node9" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="979,71,1167,98"/><area shape="rect" id="node10" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1215,71,1265,98"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="acb635e1e8318e7b3a0accd4bcf49866d"></a>
+<a class="anchor" id="aae4f8da15c8d73f2c6da55642aa8ca72"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">bool Chunk::AxisisInBounds </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>This method pushes the update signal to all its components. </p>
+<p>a function to simplify the ifstatements in <a class="el" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c...">Chunk::MoveComponentToNextChunk</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains a reference to the updateobject containing updatedata. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>Contains the axis to check on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Contains the offset to check on. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the axis is in bounds. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph.png" border="0" usemap="#class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph" alt=""/></div>
+<map name="class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph" id="class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="211,5,415,47"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="463,13,571,39"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="619,13,777,39"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="825,13,928,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a48ee3a744acf3492cdf221037f0b7822"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::Collide </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method calls <a class="el" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. ">Chunk::CollideSingle</a> for every component in the chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains all data for the update event. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a48ee3a744acf3492cdf221037f0b7822_cgraph.png" border="0" usemap="#class_chunk_a48ee3a744acf3492cdf221037f0b7822_cgraph" alt=""/></div>
+<map name="class_chunk_a48ee3a744acf3492cdf221037f0b7822_cgraph" id="class_chunk_a48ee3a744acf3492cdf221037f0b7822_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="160,56,303,83"/><area shape="rect" id="node3" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="351,5,556,32"/><area shape="rect" id="node4" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="380,56,527,83"/><area shape="rect" id="node5" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="368,107,539,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a48ee3a744acf3492cdf221037f0b7822_icgraph.png" border="0" usemap="#class_chunk_a48ee3a744acf3492cdf221037f0b7822_icgraph" alt=""/></div>
+<map name="class_chunk_a48ee3a744acf3492cdf221037f0b7822_icgraph" id="class_chunk_a48ee3a744acf3492cdf221037f0b7822_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="160,5,268,32"/><area shape="rect" id="node3" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="316,5,475,32"/><area shape="rect" id="node4" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="523,5,625,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a27a4e5721687f011d6c52624d01eca8d"></a>
+<a class="anchor" id="a41f009780aa4934be3f839a4518616ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::CollideSingle </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method sets a chunk as the chunk to the top. </p>
+<p>This method calculates the collision of a single component. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">top</td><td>contains a pointer to the chunk that should be to the top. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains all data required for the update event. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">comp</td><td>Contains the game component who is colliding with other components. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a41f009780aa4934be3f839a4518616ed_cgraph.png" border="0" usemap="#class_chunk_a41f009780aa4934be3f839a4518616ed_cgraph" alt=""/></div>
+<map name="class_chunk_a41f009780aa4934be3f839a4518616ed_cgraph" id="class_chunk_a41f009780aa4934be3f839a4518616ed_cgraph">
+<area shape="rect" id="node2" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="196,5,401,32"/><area shape="rect" id="node3" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="225,56,372,83"/><area shape="rect" id="node4" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="213,107,384,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a41f009780aa4934be3f839a4518616ed_icgraph.png" border="0" usemap="#class_chunk_a41f009780aa4934be3f839a4518616ed_icgraph" alt=""/></div>
+<map name="class_chunk_a41f009780aa4934be3f839a4518616ed_icgraph" id="class_chunk_a41f009780aa4934be3f839a4518616ed_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="196,5,303,32"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="351,5,459,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="507,5,665,32"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="713,5,816,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a164b8ab3a4d2e88b6d1bc5e6edfef100"></a>
+<a class="anchor" id="a3203da1471b5572e0dd2cd82e6dceb42"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::Draw </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>This method sets a chunk as the chunk to the top right. </p>
+<p>This method pushes the DrawSelf signal to all its neighboring chunks and itself. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">righttop</td><td>contains a pointer to the chunk that should be to the top right. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>holds an reference to the renderwindow to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position to add to the one of the component. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2">Drawable</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph.png" border="0" usemap="#class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph" alt=""/></div>
+<map name="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph" id="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="149,31,268,57"/><area shape="rect" id="node3" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="316,5,521,32"/><area shape="rect" id="node4" href="class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="339,56,499,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph.png" border="0" usemap="#class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph" alt=""/></div>
+<map name="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph" id="class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="149,5,296,32"/><area shape="rect" id="node3" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="344,5,435,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a5e25de330ba7c7c2e557a823d7a8505b"></a>
+<a class="anchor" id="a238c9e4adf0dfc78d6b8c778aec66e69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::DrawSelf </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a>&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method sets a chunk as the chunk to the left. </p>
+<p>This method pushes the draw signal to all its components. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>contains a pointer to the chunk that should be to the left. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>holds an reference to the renderwindow to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position to add to the one of the component. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>holds an position from where the draw method was called on the screen. </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_cgraph.png" border="0" usemap="#class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_cgraph" alt=""/></div>
+<map name="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_cgraph" id="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_cgraph">
+<area shape="rect" id="node2" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="172,5,377,32"/><area shape="rect" id="node3" href="class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="195,56,355,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph.png" border="0" usemap="#class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph" alt=""/></div>
+<map name="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph" id="class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="172,5,268,32"/><area shape="rect" id="node3" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="316,5,463,32"/><area shape="rect" id="node4" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="511,5,601,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="ac390d85879176e6e8a26667ba97f8eee"></a>
+<a class="anchor" id="a59eb282f08711420c1e966e30aab47e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname"><a class="el" href="class_chunk.html">Chunk</a> * Chunk::getBottom </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method sets a chunk as the chunk to the right. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>contains a pointer to the chunk that should be to the right. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5f6e70225dcd2d5f2cf0c3f77abdfa4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method sets a chunk as the chunk to the bottom left. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">leftbottom</td><td>contains a pointer to the chunk that should be to the bottom left. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a69ed23533460c9308dc6ae6e92143e65"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method sets a chunk as the chunk to the bottom. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bottom</td><td>contains a pointer to the chunk that should be to the bottom. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a42b5a5cf3a22b7cdd14e5e16f9c74ed0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method sets a chunk as the chunk to the bottom right. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rightbottom</td><td>contains a pointer to the chunk that should be to the bottom right. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a023a2a543fc48c2b9ba5d2e31eb42e2a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method returns the chunk to the top. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the top. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9b1f0c64473950040eff7ac832ae07f7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method returns the chunk to the left. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the left. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a55bd34d914023066cf0bdd1297c3ae8f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method returns the chunk to the right. </p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the right. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4a65f82eed937ca57e26fbfc8b449fd2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -614,9 +674,18 @@ Private Attributes</h2></td></tr>
 <p>This method returns the chunk to the bottom. </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the bottom. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph.png" border="0" usemap="#class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph" alt=""/></div>
+<map name="class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph" id="class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="180,5,339,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="387,5,489,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a11a6eb32b5444ba24bb506e1a57ad4b8"></a>
+<a class="anchor" id="ad8d9253e661bbaef3471b73b86f0d8c4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -624,9 +693,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">sf::Vector2i Chunk::getCoords </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -643,57 +711,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a4b74bc2a675752c97407233d14cbaf"></a>
+<a class="anchor" id="a43c3b2b5995d06baec16ab9935a315fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname"><a class="el" href="class_chunk.html">Chunk</a> * Chunk::getLeft </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method calculates the vision of a single component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains all data required for the update event. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">comp</td><td>Contains the game component who is sensing for other components. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>This method returns the chunk to the left. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the left. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph.png" border="0" usemap="#class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph" alt=""/></div>
+<map name="class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph" id="class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="160,5,319,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="367,5,469,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="aabce986183d5f99c1c89a80b51127aa9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method calculates the collision of a single component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains all data required for the update event. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">comp</td><td>Contains the game component who is colliding with other components. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a11a6eb32b5444ba24bb506e1a57ad4b8"></a>
+<a class="anchor" id="a0438a8693210393fadc5105dd315adb8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -701,9 +746,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">sf::Vector2f Chunk::getPurePosition </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -718,9 +762,45 @@ Private Attributes</h2></td></tr>
 <p>This method returns the real position of the chunk. </p>
 <dl class="section return"><dt>Returns</dt><dd>A 2D float vector containing the position of the chunk. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a0438a8693210393fadc5105dd315adb8_icgraph.png" border="0" usemap="#class_chunk_a0438a8693210393fadc5105dd315adb8_icgraph" alt=""/></div>
+<map name="class_chunk_a0438a8693210393fadc5105dd315adb8_icgraph" id="class_chunk_a0438a8693210393fadc5105dd315adb8_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="212,5,371,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="419,5,521,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="acf3fa4e0c9a7ef9c820c3ba001e449fb"></a>
+<a class="anchor" id="ad13a4e8ac481c7de6a70b3fa461418cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chunk.html">Chunk</a> * Chunk::getRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method returns the chunk to the right. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the right. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph.png" border="0" usemap="#class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph" alt=""/></div>
+<map name="class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph" id="class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="168,5,327,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="375,5,477,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a331e5916d9976679df82da5764bd7d64"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -728,9 +808,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">float Chunk::getSize </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -745,41 +824,45 @@ Private Attributes</h2></td></tr>
 <p>This method returns the size of the chunk. </p>
 <dl class="section return"><dt>Returns</dt><dd>A float containing the size of the chunk. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a331e5916d9976679df82da5764bd7d64_icgraph.png" border="0" usemap="#class_chunk_a331e5916d9976679df82da5764bd7d64_icgraph" alt=""/></div>
+<map name="class_chunk_a331e5916d9976679df82da5764bd7d64_icgraph" id="class_chunk_a331e5916d9976679df82da5764bd7d64_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="164,5,323,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="371,5,473,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a09fed540af40e1ad76e8ef2babbfe616"></a>
+<a class="anchor" id="a161929ca5dcfa0e1a798999f989fe2f8"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname"><a class="el" href="class_chunk.html">Chunk</a> * Chunk::getTop </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>This method calls Chunk::CollideSingle for every component in the chunk. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains all data for the update event. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>This method returns the chunk to the top. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer of the chunk to the top. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a161929ca5dcfa0e1a798999f989fe2f8_icgraph.png" border="0" usemap="#class_chunk_a161929ca5dcfa0e1a798999f989fe2f8_icgraph" alt=""/></div>
+<map name="class_chunk_a161929ca5dcfa0e1a798999f989fe2f8_icgraph" id="class_chunk_a161929ca5dcfa0e1a798999f989fe2f8_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="160,5,319,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="367,5,469,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a8a24db04cbc32e330b07d34caa61eeb1"></a>
+<a class="anchor" id="a749ea52ccf2c2905408c35e43545b6e0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -787,42 +870,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::MoveComponentToNextChunk </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This method calls Chunk::SenseSingle for every component in the chunk. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains all data for the update event. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5c65ce716caab3e2c5bd9193f8e29888"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -841,9 +892,27 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph.png" border="0" usemap="#class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph" alt=""/></div>
+<map name="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph" id="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph">
+<area shape="rect" id="node2" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="501,40,697,67"/><area shape="rect" id="node3" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="277,28,434,55"/><area shape="rect" id="node4" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="278,103,433,130"/><area shape="rect" id="node5" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="GameComponent::setPosition" alt="" coords="257,154,453,180"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph.png" border="0" usemap="#class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph" alt=""/></div>
+<map name="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph" id="class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="257,13,365,39"/><area shape="rect" id="node3" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="413,13,572,39"/><area shape="rect" id="node4" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="620,13,723,39"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="aad4ce00be30a71cddc9a17226a992a0f"></a>
+<a class="anchor" id="aa7f84e97b0fd555faeb811c747a6d26d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -851,43 +920,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Chunk::__declspec </td>
+          <td class="memname">void Chunk::RemoveFlaggedFromChunk </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">axis</td><td>Contains the axis to check on. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Contains the offset to check on. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the axis is in bounds. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aecb19003f0e0330920cf7695fbdc5700"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Chunk::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -900,6 +934,352 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>removes all the "Dead" components from the chunk but does not delete them. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph.png" border="0" usemap="#class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph" alt=""/></div>
+<map name="class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph" id="class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="243,13,351,39"/><area shape="rect" id="node3" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="399,13,557,39"/><area shape="rect" id="node4" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="605,13,708,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a78f140c690751b838b0a7e09a51e6936"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::Sense </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method calls <a class="el" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. ">Chunk::SenseSingle</a> for every component in the chunk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains all data for the update event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a78f140c690751b838b0a7e09a51e6936_cgraph.png" border="0" usemap="#class_chunk_a78f140c690751b838b0a7e09a51e6936_cgraph" alt=""/></div>
+<map name="class_chunk_a78f140c690751b838b0a7e09a51e6936_cgraph" id="class_chunk_a78f140c690751b838b0a7e09a51e6936_cgraph">
+<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="157,107,297,133"/><area shape="rect" id="node3" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="354,5,545,32"/><area shape="rect" id="node4" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="347,56,552,83"/><area shape="rect" id="node5" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="376,107,523,133"/><area shape="rect" id="node6" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="345,157,553,184"/><area shape="rect" id="node7" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="369,208,529,235"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a78f140c690751b838b0a7e09a51e6936_icgraph.png" border="0" usemap="#class_chunk_a78f140c690751b838b0a7e09a51e6936_icgraph" alt=""/></div>
+<map name="class_chunk_a78f140c690751b838b0a7e09a51e6936_icgraph" id="class_chunk_a78f140c690751b838b0a7e09a51e6936_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="157,5,265,32"/><area shape="rect" id="node3" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="313,5,472,32"/><area shape="rect" id="node4" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="520,5,623,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab038489f8de577890226307499da10af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::SenseSingle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method calculates the vision of a single component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains all data required for the update event. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">comp</td><td>Contains the game component who is sensing for other components. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_ab038489f8de577890226307499da10af_cgraph.png" border="0" usemap="#class_chunk_ab038489f8de577890226307499da10af_cgraph" alt=""/></div>
+<map name="class_chunk_ab038489f8de577890226307499da10af_cgraph" id="class_chunk_ab038489f8de577890226307499da10af_cgraph">
+<area shape="rect" id="node2" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="202,5,393,32"/><area shape="rect" id="node3" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="195,56,400,83"/><area shape="rect" id="node4" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="224,107,371,133"/><area shape="rect" id="node5" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="193,157,401,184"/><area shape="rect" id="node6" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="217,208,377,235"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_ab038489f8de577890226307499da10af_icgraph.png" border="0" usemap="#class_chunk_ab038489f8de577890226307499da10af_icgraph" alt=""/></div>
+<map name="class_chunk_ab038489f8de577890226307499da10af_icgraph" id="class_chunk_ab038489f8de577890226307499da10af_icgraph">
+<area shape="rect" id="node2" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="193,5,297,32"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="345,5,453,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="501,5,660,32"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="708,5,811,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a57c85ac8a8959eca362b7c3e64dc1d0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setBottom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>bottom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the bottom. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bottom</td><td>contains a pointer to the chunk that should be to the bottom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa0005654a92c0ca50f90c516d508834c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setLeft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>left</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the left. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>contains a pointer to the chunk that should be to the left. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a690d801cad525f106f11fca76855c785"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setLeftBottom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>leftbottom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the bottom left. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">leftbottom</td><td>contains a pointer to the chunk that should be to the bottom left. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a24564a4a5eb9e05857939e23ed213914"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setLeftTop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>lefttop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the top left. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lefttop</td><td>contains a pointer to the chunk that should be to the top left. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a670d58217b329583811b5380f25700d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setRight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the right. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>contains a pointer to the chunk that should be to the right. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aadab4832f4d1c4618b7232a1503d8aed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setRightBottom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>rightbottom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the bottom right. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rightbottom</td><td>contains a pointer to the chunk that should be to the bottom right. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c19057f7360349f5d214bfa50d51900"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setRightTop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>righttop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the top right. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">righttop</td><td>contains a pointer to the chunk that should be to the top right. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6cc69f33389b5510766f23317ff7ae65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::setTop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chunk.html">Chunk</a> *&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method sets a chunk as the chunk to the top. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">top</td><td>contains a pointer to the chunk that should be to the top. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a98a8a36b0197668d37994f77b2952084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Chunk::Update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_update_data.html">UpdateData</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateobject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method pushes the update signal to all its components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains a reference to the updateobject containing updatedata. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a98a8a36b0197668d37994f77b2952084_cgraph.png" border="0" usemap="#class_chunk_a98a8a36b0197668d37994f77b2952084_cgraph" alt=""/></div>
+<map name="class_chunk_a98a8a36b0197668d37994f77b2952084_cgraph" id="class_chunk_a98a8a36b0197668d37994f77b2952084_cgraph">
+<area shape="rect" id="node2" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="173,5,353,32"/><area shape="rect" id="node3" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="180,56,347,83"/><area shape="rect" id="node4" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="161,107,365,149"/><area shape="rect" id="node9" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="removes all the &quot;Dead&quot; components from the chunk but does not delete them. " alt="" coords="169,173,358,214"/><area shape="rect" id="node10" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="210,239,317,265"/><area shape="rect" id="node15" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="211,303,315,329"/><area shape="rect" id="node5" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="663,125,859,152"/><area shape="rect" id="node6" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="433,12,590,39"/><area shape="rect" id="node7" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="434,188,589,215"/><area shape="rect" id="node8" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="GameComponent::setPosition" alt="" coords="413,63,609,89"/><area shape="rect" id="node11" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="440,239,583,265"/><area shape="rect" id="node12" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="659,283,864,309"/><area shape="rect" id="node13" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="688,232,835,259"/><area shape="rect" id="node14" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="676,181,847,208"/><area shape="rect" id="node16" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="441,321,581,348"/><area shape="rect" id="node17" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="666,333,857,360"/><area shape="rect" id="node18" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="657,384,865,411"/><area shape="rect" id="node19" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="681,435,841,461"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chunk_a98a8a36b0197668d37994f77b2952084_icgraph.png" border="0" usemap="#class_chunk_a98a8a36b0197668d37994f77b2952084_icgraph" alt=""/></div>
+<map name="class_chunk_a98a8a36b0197668d37994f77b2952084_icgraph" id="class_chunk_a98a8a36b0197668d37994f77b2952084_icgraph">
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="161,5,320,32"/><area shape="rect" id="node3" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="368,5,471,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -945,18 +1325,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>contains the coordinates of the chunk </p>
-
-</div>
-</div>
-<a class="anchor" id="a633545d862acb016a7081c364126c7b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_game_component.html">GameComponent</a> * Chunk::comp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1045,26 +1413,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>contains a pointer to the topleft chunk. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6ab7f8f3970c886a62ccc1630bc60a16"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Chunk::offset</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1222,8 +1570,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_chunk_8hpp_source.html">Chunk.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_chunk_8cpp.html">Chunk.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1231,7 +1580,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_chunk.html">Chunk</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:39 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

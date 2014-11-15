@@ -1,0 +1,14 @@
+<map id="GameComponent::getPosition" name="GameComponent::getPosition">
+<area shape="rect" id="node2" href="$class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc" title="ExampleComponent::Draw" alt="" coords="249,5,425,32"/>
+<area shape="rect" id="node3" href="$class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429" title="MovableComponent::Draw" alt="" coords="251,56,423,83"/>
+<area shape="rect" id="node4" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="260,181,415,208"/>
+<area shape="rect" id="node5" href="$class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="491,107,695,149"/>
+<area shape="rect" id="node9" href="$class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="473,181,712,208"/>
+<area shape="rect" id="node6" href="$class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="801,115,909,141"/>
+<area shape="rect" id="node7" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="1017,115,1176,141"/>
+<area shape="rect" id="node8" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="1287,115,1389,141"/>
+<area shape="rect" id="node10" href="$class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="760,181,949,208"/>
+<area shape="rect" id="node11" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="997,181,1196,208"/>
+<area shape="rect" id="node12" href="$class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="1244,181,1432,208"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1480,181,1531,208"/>
+</map>

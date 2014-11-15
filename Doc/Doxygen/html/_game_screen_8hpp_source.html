@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_game_screen_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,37 +124,45 @@ $(document).ready(function(){initNavTree('_game_screen_8hpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <a class="code" href="class_game_screen.html">GameScreen</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) ~<a class="code" href="class_game_screen.html">GameScreen</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keywordtype">void</span> Update(<span class="keyword">const</span> <a class="code" href="class_update_data.html">UpdateData</a> &amp; updateobject);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keywordtype">void</span> Draw(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keywordtype">void</span> addLayer(std::string name, <a class="code" href="class_layer.html">Layer</a> * layer);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keywordtype">void</span> removeLayer(std::string name);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <a class="code" href="class_layer.html">Layer</a> * getLayer(std::string name);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> UpdateHandle(<span class="keyword">const</span> <a class="code" href="class_update_data.html">UpdateData</a> &amp; updateobject) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> Entry(<a class="code" href="class_entry_object.html">EntryObject</a> <span class="keywordtype">object</span>) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    __declspec(dllexport) <a class="code" href="class_game_screen.html#ae68a867285e0aba9d2b22bff690616ac">GameScreen</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    __declspec(dllexport) <a class="code" href="class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1">~GameScreen</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce">Update</a>(<span class="keyword">const</span> <a class="code" href="class_update_data.html">UpdateData</a> &amp; updateobject);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">Draw</a>(sf::RenderWindow &amp; window, sf::Vector2f offset);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b">addLayer</a>(std::string name, <a class="code" href="class_layer.html">Layer</a> * layer);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">removeLayer</a>(std::string name);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_game_screen.html#accd7cd68d80fc29593703ee1741b8996">getLayer</a>(std::string name);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#a5ffce37600960d6c8885bf071461998c">UpdateHandle</a>(<span class="keyword">const</span> <a class="code" href="class_update_data.html">UpdateData</a> &amp; updateobject) = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_game_screen.html#a76e44a105b36f32b68a0ba7a325971b0">Entry</a>(<a class="code" href="class_entry_object.html">EntryObject</a> <span class="keywordtype">object</span>) = 0;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">   27</a></span>&#160;    std::map&lt;std::string, Layer*&gt; <a class="code" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="ttc" id="class_game_screen_html_accd7cd68d80fc29593703ee1741b8996"><div class="ttname"><a href="class_game_screen.html#accd7cd68d80fc29593703ee1741b8996">GameScreen::getLayer</a></div><div class="ttdeci">Layer * getLayer(std::string name)</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:25</div></div>
+<div class="ttc" id="class_game_screen_html_ad85617e2d9232b03a9a0149a9e6d43ce"><div class="ttname"><a href="class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce">GameScreen::Update</a></div><div class="ttdeci">void Update(const UpdateData &amp;updateobject)</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:30</div></div>
 <div class="ttc" id="_game_component_8hpp_html"><div class="ttname"><a href="_game_component_8hpp.html">GameComponent.hpp</a></div></div>
 <div class="ttc" id="class_game_screen_html"><div class="ttname"><a href="class_game_screen.html">GameScreen</a></div><div class="ttdef"><b>Definition:</b> GameScreen.hpp:12</div></div>
-<div class="ttc" id="class_entry_object_html"><div class="ttname"><a href="class_entry_object.html">EntryObject</a></div><div class="ttdef"><b>Definition:</b> EntryObject.hpp:2</div></div>
+<div class="ttc" id="class_entry_object_html"><div class="ttname"><a href="class_entry_object.html">EntryObject</a></div><div class="ttdef"><b>Definition:</b> EntryObject.hpp:13</div></div>
 <div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.hpp:11</div></div>
-<div class="ttc" id="class_drawable_html"><div class="ttname"><a href="class_drawable.html">Drawable</a></div><div class="ttdef"><b>Definition:</b> Drawable.hpp:4</div></div>
+<div class="ttc" id="class_drawable_html"><div class="ttname"><a href="class_drawable.html">Drawable</a></div><div class="ttdef"><b>Definition:</b> Drawable.hpp:16</div></div>
+<div class="ttc" id="class_game_screen_html_afb11360ac509f47ca47929c254a8b67d"><div class="ttname"><a href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">GameScreen::Draw</a></div><div class="ttdeci">void Draw(sf::RenderWindow &amp;window, sf::Vector2f offset)</div><div class="ttdoc">This pure virtual method will be responsible for drawing on the screen. </div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:45</div></div>
+<div class="ttc" id="class_game_screen_html_a76e44a105b36f32b68a0ba7a325971b0"><div class="ttname"><a href="class_game_screen.html#a76e44a105b36f32b68a0ba7a325971b0">GameScreen::Entry</a></div><div class="ttdeci">virtual void Entry(EntryObject object)=0</div></div>
+<div class="ttc" id="class_game_screen_html_ace7d3aad324a781cd22599b56903fb43"><div class="ttname"><a href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">GameScreen::removeLayer</a></div><div class="ttdeci">void removeLayer(std::string name)</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:20</div></div>
 <div class="ttc" id="class_game_screen_html_ab134d175092c247558838f11d66e9493"><div class="ttname"><a href="class_game_screen.html#ab134d175092c247558838f11d66e9493">GameScreen::Layers</a></div><div class="ttdeci">std::map&lt; std::string, Layer * &gt; Layers</div><div class="ttdef"><b>Definition:</b> GameScreen.hpp:27</div></div>
+<div class="ttc" id="class_game_screen_html_a5ffce37600960d6c8885bf071461998c"><div class="ttname"><a href="class_game_screen.html#a5ffce37600960d6c8885bf071461998c">GameScreen::UpdateHandle</a></div><div class="ttdeci">virtual void UpdateHandle(const UpdateData &amp;updateobject)=0</div></div>
 <div class="ttc" id="_drawable_8hpp_html"><div class="ttname"><a href="_drawable_8hpp.html">Drawable.hpp</a></div></div>
 <div class="ttc" id="_entry_object_8hpp_html"><div class="ttname"><a href="_entry_object_8hpp.html">EntryObject.hpp</a></div></div>
 <div class="ttc" id="_layer_8hpp_html"><div class="ttname"><a href="_layer_8hpp.html">Layer.hpp</a></div></div>
+<div class="ttc" id="class_game_screen_html_ae68a867285e0aba9d2b22bff690616ac"><div class="ttname"><a href="class_game_screen.html#ae68a867285e0aba9d2b22bff690616ac">GameScreen::GameScreen</a></div><div class="ttdeci">GameScreen()</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:3</div></div>
+<div class="ttc" id="class_game_screen_html_a0d25dfce42d72954aab40dbccbf1a0b1"><div class="ttname"><a href="class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1">GameScreen::~GameScreen</a></div><div class="ttdeci">~GameScreen()</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:9</div></div>
 <div class="ttc" id="class_update_data_html"><div class="ttname"><a href="class_update_data.html">UpdateData</a></div><div class="ttdef"><b>Definition:</b> UpdateData.hpp:3</div></div>
-<div class="ttc" id="class_game_screen_html_a41fb99405265eadec9712c99673a05f1"><div class="ttname"><a href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">GameScreen::__declspec</a></div><div class="ttdeci">__declspec(dllexport) GameScreen()</div></div>
+<div class="ttc" id="class_game_screen_html_a14685a397e9c9c0ec971f648eeb1ec8b"><div class="ttname"><a href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b">GameScreen::addLayer</a></div><div class="ttdeci">void addLayer(std::string name, Layer *layer)</div><div class="ttdef"><b>Definition:</b> GameScreen.cpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_game_screen_8hpp.html">GameScreen.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

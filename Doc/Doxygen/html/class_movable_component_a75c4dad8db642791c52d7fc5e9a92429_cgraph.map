@@ -1,4 +1,4 @@
 <map id="MovableComponent::Draw" name="MovableComponent::Draw">
-<area shape="rect" id="node2" href="$class_drawable.html#a0e24de52eeb44555872c70f3adf854d2" title="Drawable::Draw" alt="" coords="267,5,379,32"/>
-<area shape="rect" id="node3" href="$class_game_component.html#aabb5e9e8ed6aa3a82f5d5b5733bf201c" title="GameComponent::getPosition" alt="" coords="225,56,421,83"/>
+<area shape="rect" id="node2" href="$class_drawable.html#a0e24de52eeb44555872c70f3adf854d2" title="This pure virtual method will be responsible for drawing on the screen. " alt="" coords="267,5,379,32"/>
+<area shape="rect" id="node3" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="225,56,421,83"/>
 </map>

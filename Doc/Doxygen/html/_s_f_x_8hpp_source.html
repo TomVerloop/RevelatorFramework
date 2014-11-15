@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_s_f_x_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,28 +114,32 @@ $(document).ready(function(){initNavTree('_s_f_x_8hpp_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_s_f_x.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_f_x.html">SFX</a> : <span class="keyword">public</span> sf::Sound</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) <a class="code" href="class_s_f_x.html">SFX</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) <a class="code" href="class_s_f_x.html">SFX</a>(std::string filename);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) ~<a class="code" href="class_s_f_x.html">SFX</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) <span class="keywordtype">bool</span>  loadFromFile(<span class="keyword">const</span> std::string &amp;filename);</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">   11</a></span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) bool  loadFromMemory(const <span class="keywordtype">void</span> *data, std::<span class="keywordtype">size_t</span> <a class="code" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">sizeInBytes</a>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) <span class="keywordtype">bool</span>  loadFromStream(sf::InputStream &amp;stream);</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">   13</a></span>&#160;    <a class="code" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) <span class="keywordtype">bool</span>  loadFromSamples(const sf::Int16 *samples, std::<span class="keywordtype">size_t</span> sampleCount, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channelCount, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sampleRate);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;private:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    sf::SoundBuffer * <a class="code" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">Buffer</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433">SFX</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <a class="code" href="class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433">SFX</a>(std::string filename);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    __declspec(dllexport) <a class="code" href="class_s_f_x.html#a6d123bd5ec64f90e1e8c70e2f15f6fd4">~SFX</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <span class="keywordtype">bool</span>  <a class="code" href="class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c">loadFromFile</a>(<span class="keyword">const</span> std::string &amp;filename);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <span class="keywordtype">bool</span>  <a class="code" href="class_s_f_x.html#acc6b505cf68bbc3619ed7614739fe5bc">loadFromMemory</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *data, std::size_t sizeInBytes);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    __declspec(dllexport) <span class="keywordtype">bool</span>  <a class="code" href="class_s_f_x.html#a8df4611064786e8daf406197d2c54c0c">loadFromStream</a>(sf::InputStream &amp;stream);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    __declspec(dllexport) <span class="keywordtype">bool</span>  <a class="code" href="class_s_f_x.html#aedbae5b62b225a4e4d20dbfa11b2f0ec">loadFromSamples</a>(<span class="keyword">const</span> sf::Int16 *samples, std::size_t sampleCount, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channelCount, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sampleRate);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">   15</a></span>&#160;    sf::SoundBuffer * <a class="code" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">Buffer</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="ttc" id="class_s_f_x_html_ad0bad7013294fbf08c3cd4462a334e99"><div class="ttname"><a href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">SFX::__declspec</a></div><div class="ttdeci">__declspec(dllexport) SFX()</div></div>
-<div class="ttc" id="class_s_f_x_html_ae55cbdae082548b85511de868d03a9f2"><div class="ttname"><a href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">SFX::Buffer</a></div><div class="ttdeci">sf::SoundBuffer * Buffer</div><div class="ttdef"><b>Definition:</b> SFX.hpp:13</div></div>
-<div class="ttc" id="class_s_f_x_html_a463deda3cac1d9c45a494ba33af8a9ea"><div class="ttname"><a href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">SFX::sizeInBytes</a></div><div class="ttdeci">__declspec(dllexport) bool loadFromFile(const std std::size_t sizeInBytes</div><div class="ttdef"><b>Definition:</b> SFX.hpp:11</div></div>
+<div class="ttc" id="class_s_f_x_html_a52cafd60db60baa07853333c34f05a9c"><div class="ttname"><a href="class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c">SFX::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> SFX.cpp:20</div></div>
+<div class="ttc" id="class_s_f_x_html_ae55cbdae082548b85511de868d03a9f2"><div class="ttname"><a href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">SFX::Buffer</a></div><div class="ttdeci">sf::SoundBuffer * Buffer</div><div class="ttdef"><b>Definition:</b> SFX.hpp:15</div></div>
+<div class="ttc" id="class_s_f_x_html_aa88af2470f7f001e98f7dd512c610433"><div class="ttname"><a href="class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433">SFX::SFX</a></div><div class="ttdeci">SFX()</div><div class="ttdef"><b>Definition:</b> SFX.cpp:5</div></div>
 <div class="ttc" id="class_s_f_x_html"><div class="ttname"><a href="class_s_f_x.html">SFX</a></div><div class="ttdef"><b>Definition:</b> SFX.hpp:4</div></div>
+<div class="ttc" id="class_s_f_x_html_a6d123bd5ec64f90e1e8c70e2f15f6fd4"><div class="ttname"><a href="class_s_f_x.html#a6d123bd5ec64f90e1e8c70e2f15f6fd4">SFX::~SFX</a></div><div class="ttdeci">~SFX()</div><div class="ttdef"><b>Definition:</b> SFX.cpp:11</div></div>
+<div class="ttc" id="class_s_f_x_html_a8df4611064786e8daf406197d2c54c0c"><div class="ttname"><a href="class_s_f_x.html#a8df4611064786e8daf406197d2c54c0c">SFX::loadFromStream</a></div><div class="ttdeci">bool loadFromStream(sf::InputStream &amp;stream)</div><div class="ttdef"><b>Definition:</b> SFX.cpp:42</div></div>
+<div class="ttc" id="class_s_f_x_html_aedbae5b62b225a4e4d20dbfa11b2f0ec"><div class="ttname"><a href="class_s_f_x.html#aedbae5b62b225a4e4d20dbfa11b2f0ec">SFX::loadFromSamples</a></div><div class="ttdeci">bool loadFromSamples(const sf::Int16 *samples, std::size_t sampleCount, unsigned int channelCount, unsigned int sampleRate)</div><div class="ttdef"><b>Definition:</b> SFX.cpp:53</div></div>
+<div class="ttc" id="class_s_f_x_html_acc6b505cf68bbc3619ed7614739fe5bc"><div class="ttname"><a href="class_s_f_x.html#acc6b505cf68bbc3619ed7614739fe5bc">SFX::loadFromMemory</a></div><div class="ttdeci">bool loadFromMemory(const void *data, std::size_t sizeInBytes)</div><div class="ttdef"><b>Definition:</b> SFX.cpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_s_f_x_8hpp.html">SFX.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

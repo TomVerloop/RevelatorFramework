@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_s_f_x.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,7 +108,6 @@ $(document).ready(function(){initNavTree('class_s_f_x.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_s_f_x-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -128,32 +129,34 @@ Collaboration diagram for SFX:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0bad7013294fbf08c3cd4462a334e99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a> (dllexport) <a class="el" href="class_s_f_x.html">SFX</a>()</td></tr>
-<tr class="separator:ad0bad7013294fbf08c3cd4462a334e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cd59f6ff14fe2371dcd87dcedfd78a8"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <a class="el" href="class_s_f_x.html">SFX</a>(std&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#a8cd59f6ff14fe2371dcd87dcedfd78a8">__declspec</a> (dllexport)~<a class="el" href="class_s_f_x.html">SFX</a>()</td></tr>
-<tr class="separator:a8cd59f6ff14fe2371dcd87dcedfd78a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a463deda3cac1d9c45a494ba33af8a9ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) bool <br class="typebreak"/>
-loadFromFile(const std <br class="typebreak"/>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">sizeInBytes</a></td></tr>
-<tr class="separator:a463deda3cac1d9c45a494ba33af8a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88af2470f7f001e98f7dd512c610433"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433">SFX</a> ()</td></tr>
+<tr class="separator:aa88af2470f7f001e98f7dd512c610433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f079df2d4b684a0ac5246a9356390a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#ab7f079df2d4b684a0ac5246a9356390a">SFX</a> (std::string filename)</td></tr>
+<tr class="separator:ab7f079df2d4b684a0ac5246a9356390a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d123bd5ec64f90e1e8c70e2f15f6fd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#a6d123bd5ec64f90e1e8c70e2f15f6fd4">~SFX</a> ()</td></tr>
+<tr class="separator:a6d123bd5ec64f90e1e8c70e2f15f6fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52cafd60db60baa07853333c34f05a9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c">loadFromFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a52cafd60db60baa07853333c34f05a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6b505cf68bbc3619ed7614739fe5bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#acc6b505cf68bbc3619ed7614739fe5bc">loadFromMemory</a> (const void *data, std::size_t sizeInBytes)</td></tr>
+<tr class="separator:acc6b505cf68bbc3619ed7614739fe5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df4611064786e8daf406197d2c54c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#a8df4611064786e8daf406197d2c54c0c">loadFromStream</a> (sf::InputStream &amp;stream)</td></tr>
+<tr class="separator:a8df4611064786e8daf406197d2c54c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbae5b62b225a4e4d20dbfa11b2f0ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#aedbae5b62b225a4e4d20dbfa11b2f0ec">loadFromSamples</a> (const sf::Int16 *samples, std::size_t sampleCount, unsigned int channelCount, unsigned int sampleRate)</td></tr>
+<tr class="separator:aedbae5b62b225a4e4d20dbfa11b2f0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae55cbdae082548b85511de868d03a9f2"><td class="memItemLeft" align="right" valign="top">sf::SoundBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">Buffer</a></td></tr>
 <tr class="separator:ae55cbdae082548b85511de868d03a9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad0bad7013294fbf08c3cd4462a334e99"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa88af2470f7f001e98f7dd512c610433"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SFX::__declspec </td>
+          <td class="memname">SFX::SFX </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -162,15 +165,136 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8cd59f6ff14fe2371dcd87dcedfd78a8"></a>
+<a class="anchor" id="ab7f079df2d4b684a0ac5246a9356390a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__declspec (dllexport) <a class="el" href="class_s_f_x.html">SFX</a>(std SFX::__declspec </td>
+          <td class="memname">SFX::SFX </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d123bd5ec64f90e1e8c70e2f15f6fd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SFX::~SFX </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a52cafd60db60baa07853333c34f05a9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFX::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_s_f_x_a52cafd60db60baa07853333c34f05a9c_icgraph.png" border="0" usemap="#class_s_f_x_a52cafd60db60baa07853333c34f05a9c_icgraph" alt=""/></div>
+<map name="class_s_f_x_a52cafd60db60baa07853333c34f05a9c_icgraph" id="class_s_f_x_a52cafd60db60baa07853333c34f05a9c_icgraph">
+<area shape="rect" id="node2" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09" title="The default constructor. " alt="" coords="183,5,379,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc6b505cf68bbc3619ed7614739fe5bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFX::loadFromMemory </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>sizeInBytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aedbae5b62b225a4e4d20dbfa11b2f0ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFX::loadFromSamples </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Int16 *&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>sampleCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channelCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sampleRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8df4611064786e8daf406197d2c54c0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SFX::loadFromStream </td>
+          <td>(</td>
+          <td class="paramtype">sf::InputStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -199,20 +323,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a463deda3cac1d9c45a494ba33af8a9ea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a> (dllexport) bool loadFromFile( const std std::size_t SFX::sizeInBytes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_s_f_x_8hpp_source.html">SFX.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_s_f_x_8cpp.html">SFX.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -220,7 +333,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_s_f_x.html">SFX</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:43 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

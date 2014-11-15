@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -131,7 +133,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -203,9 +205,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>Comma
 : <a class="el" href="class_keyboard.html#a34056a5ea3c0e72446ef864a8a04cb50">Keyboard</a>
-</li>
-<li>comp
-: <a class="el" href="class_chunk.html#a633545d862acb016a7081c364126c7b8">Chunk</a>
 </li>
 <li>Components
 : <a class="el" href="class_chunk.html#a4cdf6febd96ff99b681e37d548617a38">Chunk</a>
@@ -384,7 +383,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">GameFactory</a>
 </li>
 <li>Layers
-: <a class="el" href="class_game_factory.html#aeb0d338957100663811acae5074943ac">GameFactory</a>
+: <a class="el" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">GameFactory</a>
 , <a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">GameScreen</a>
 </li>
 <li>LBracket
@@ -526,9 +525,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>ObjectProducers
 : <a class="el" href="class_game_factory.html#ab72819fc3f241243d44827f75e0a2886">GameFactory</a>
 </li>
-<li>offset
-: <a class="el" href="class_chunk.html#a6ab7f8f3970c886a62ccc1630bc60a16">Chunk</a>
-</li>
 </ul>
 
 
@@ -550,9 +546,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>PlayingMusic
 : <a class="el" href="class_audio_manager.html#a8309e75d7e8ac5ecf53d5d8e787d8dc8">AudioManager</a>
-</li>
-<li>Pos
-: <a class="el" href="class_sensor.html#ab3b919642b59b2245ad3cf56b042ff33">Sensor</a>
 </li>
 <li>position
 : <a class="el" href="class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd">Collidable</a>
@@ -636,10 +629,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>size
 : <a class="el" href="class_chunk.html#af46410b580baf2985b01044d5c041b2e">Chunk</a>
-, <a class="el" href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">Sensor</a>
-</li>
-<li>sizeInBytes
-: <a class="el" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">SFX</a>
 </li>
 <li>Slash
 : <a class="el" href="class_keyboard.html#a603303cab1a11552d040900389cfb284">Keyboard</a>
@@ -728,9 +717,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_y"></a>- y -</h3><ul>
-<li>y
-: <a class="el" href="class_game_component.html#a8a40aa75eff388a7da06668d3d2fe87c">GameComponent</a>
-</li>
 <li>Y
 : <a class="el" href="class_keyboard.html#a030813b88756995bdc8b577b3674dd0a">Keyboard</a>
 </li>
@@ -747,7 +733,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:13 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:45 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

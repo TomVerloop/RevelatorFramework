@@ -1,6 +1,7 @@
 <map id="Sensor::addSeenObject" name="Sensor::addSeenObject">
-<area shape="rect" id="node2" href="$class_chunk.html#a23684bfafa76cadb95c81ba89b039461" title="Chunk::Sense" alt="" coords="213,5,317,32"/>
-<area shape="rect" id="node3" href="$class_chunk.html#a750907d92efc9e45bfff5e280fa55afe" title="Chunk::Update" alt="" coords="365,5,473,32"/>
-<area shape="rect" id="node4" href="$class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="521,5,680,32"/>
-<area shape="rect" id="node5" href="$class_layer.html#a6db2f37689d5ee4958167e539ab4ce69" title="Layer::Update" alt="" coords="728,5,831,32"/>
+<area shape="rect" id="node2" href="$class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="213,5,353,32"/>
+<area shape="rect" id="node3" href="$class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="401,5,505,32"/>
+<area shape="rect" id="node4" href="$class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="553,5,661,32"/>
+<area shape="rect" id="node5" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="709,5,868,32"/>
+<area shape="rect" id="node6" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="916,5,1019,32"/>
 </map>

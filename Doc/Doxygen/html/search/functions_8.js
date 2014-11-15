@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['_7eexamplecomponent',['~ExampleComponent',['../class_example_component.html#aa3a6265806020d1536d21272906181c6',1,'ExampleComponent']]],
-  ['_7eexamplecomponentproducer',['~ExampleComponentProducer',['../class_example_component_producer.html#a2c090cf13157589dfcd4fd9441d4d4f3',1,'ExampleComponentProducer']]],
-  ['_7eexamplelayer',['~ExampleLayer',['../class_example_layer.html#a243387a90a54149af7d128301e836522',1,'ExampleLayer']]],
-  ['_7eexamplelayerproducer',['~ExampleLayerProducer',['../class_example_layer_producer.html#a15a878dbc6d3ecf06f5997686b1cb0a6',1,'ExampleLayerProducer']]],
-  ['_7eexamplescreenproducer',['~ExampleScreenProducer',['../class_example_screen_producer.html#a1243a0aa0a1ecd2a218f9dab7b340213',1,'ExampleScreenProducer']]],
-  ['_7eexampletestscreen',['~ExampleTestScreen',['../class_example_test_screen.html#a1b9bc6ee5fa89ce2460b2d60ee9ec924',1,'ExampleTestScreen']]],
-  ['_7emovablecomponent',['~MovableComponent',['../class_movable_component.html#aedc5ac024682262c99436b2b5fadddc1',1,'MovableComponent']]],
-  ['_7emovablecomponentproducer',['~MovableComponentProducer',['../class_movable_component_producer.html#aa4219b366ab0626663174b5da191eaad',1,'MovableComponentProducer']]]
+  ['layer',['Layer',['../class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f',1,'Layer']]],
+  ['layerproducer',['LayerProducer',['../class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f',1,'LayerProducer']]],
+  ['loadfromfile',['loadFromFile',['../class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c',1,'SFX']]],
+  ['loadfrommemory',['loadFromMemory',['../class_s_f_x.html#acc6b505cf68bbc3619ed7614739fe5bc',1,'SFX']]],
+  ['loadfromsamples',['loadFromSamples',['../class_s_f_x.html#aedbae5b62b225a4e4d20dbfa11b2f0ec',1,'SFX']]],
+  ['loadfromstream',['loadFromStream',['../class_s_f_x.html#a8df4611064786e8daf406197d2c54c0c',1,'SFX']]]
 ];

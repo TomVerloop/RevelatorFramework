@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_entry_object_8hpp_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,22 +109,24 @@ $(document).ready(function(){initNavTree('_entry_object_8hpp_source.html','');})
 </div><!--header-->
 <div class="contents">
 <a href="_entry_object_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_entry_object.html">    2</a></span>&#160;<span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="class_entry_object.html">EntryObject</a></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="class_entry_object.html#ab4e66efd2938e31fb3bf55b5a04d2c7f">__declspec</a>(dllexport) <a class="code" href="class_entry_object.html">EntryObject</a>();</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_entry_object.html#ab4e66efd2938e31fb3bf55b5a04d2c7f">__declspec</a>(dllexport) ~<a class="code" href="class_entry_object.html">EntryObject</a>();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;};</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="ttc" id="class_entry_object_html_ab4e66efd2938e31fb3bf55b5a04d2c7f"><div class="ttname"><a href="class_entry_object.html#ab4e66efd2938e31fb3bf55b5a04d2c7f">EntryObject::__declspec</a></div><div class="ttdeci">__declspec(dllexport) EntryObject()</div></div>
-<div class="ttc" id="class_entry_object_html"><div class="ttname"><a href="class_entry_object.html">EntryObject</a></div><div class="ttdef"><b>Definition:</b> EntryObject.hpp:2</div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_entry_object.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_entry_object.html">EntryObject</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>: </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    __declspec(dllexport) <a class="code" href="class_entry_object.html#a96dedc7047bc1d962022c91118aedc14">EntryObject</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    __declspec(dllexport) <a class="code" href="class_entry_object.html#a5b6738e8fb3c234df0f24b02f21dea53">~EntryObject</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="ttc" id="class_entry_object_html"><div class="ttname"><a href="class_entry_object.html">EntryObject</a></div><div class="ttdef"><b>Definition:</b> EntryObject.hpp:13</div></div>
+<div class="ttc" id="class_entry_object_html_a5b6738e8fb3c234df0f24b02f21dea53"><div class="ttname"><a href="class_entry_object.html#a5b6738e8fb3c234df0f24b02f21dea53">EntryObject::~EntryObject</a></div><div class="ttdeci">~EntryObject()</div><div class="ttdoc">The destructor. </div><div class="ttdef"><b>Definition:</b> EntryObject.cpp:10</div></div>
+<div class="ttc" id="class_entry_object_html_a96dedc7047bc1d962022c91118aedc14"><div class="ttname"><a href="class_entry_object.html#a96dedc7047bc1d962022c91118aedc14">EntryObject::EntryObject</a></div><div class="ttdeci">EntryObject()</div><div class="ttdoc">The default constructor. </div><div class="ttdef"><b>Definition:</b> EntryObject.cpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_entry_object_8hpp.html">EntryObject.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -17,6 +17,8 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -26,8 +28,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cpp.html",
-"class_game_object_producer.html#a196e596ce8c691618375db29e4b6417a",
-"class_mouse.html#a0d7dd53605221594b161f9d8e61aa345"
+"class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d",
+"class_keyboard.html#af271aa6fd76947941d20934dc86a0bb2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

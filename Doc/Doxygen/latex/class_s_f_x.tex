@@ -11,7 +11,7 @@ Inheritance diagram for S\-F\-X\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_s_f_x__inherit__graph}
+\includegraphics[width=190pt]{class_s_f_x__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -20,22 +20,25 @@ Collaboration diagram for S\-F\-X\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=161pt]{class_s_f_x__coll__graph}
+\includegraphics[width=190pt]{class_s_f_x__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_s_f_x_ad0bad7013294fbf08c3cd4462a334e99}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_s_f_x}{S\-F\-X}()
+\hyperlink{class_s_f_x_aa88af2470f7f001e98f7dd512c610433}{S\-F\-X} ()
 \item 
-\-\_\-\-\_\-declspec(dllexport) \hyperlink{class_s_f_x}{S\-F\-X}(std \hyperlink{class_s_f_x_a8cd59f6ff14fe2371dcd87dcedfd78a8}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_s_f_x}{S\-F\-X}()
-\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
+\hyperlink{class_s_f_x_ab7f079df2d4b684a0ac5246a9356390a}{S\-F\-X} (std\-::string filename)
 \item 
-\hyperlink{class_s_f_x_ad0bad7013294fbf08c3cd4462a334e99}{\-\_\-\-\_\-declspec}(dllexport) bool \\*
-load\-From\-File(const std \\*
-std\-::size\-\_\-t \hyperlink{class_s_f_x_a463deda3cac1d9c45a494ba33af8a9ea}{size\-In\-Bytes}
+\hyperlink{class_s_f_x_a6d123bd5ec64f90e1e8c70e2f15f6fd4}{$\sim$\-S\-F\-X} ()
+\item 
+bool \hyperlink{class_s_f_x_a52cafd60db60baa07853333c34f05a9c}{load\-From\-File} (const std\-::string \&filename)
+\item 
+bool \hyperlink{class_s_f_x_acc6b505cf68bbc3619ed7614739fe5bc}{load\-From\-Memory} (const void $\ast$data, std\-::size\-\_\-t size\-In\-Bytes)
+\item 
+bool \hyperlink{class_s_f_x_a8df4611064786e8daf406197d2c54c0c}{load\-From\-Stream} (sf\-::\-Input\-Stream \&stream)
+\item 
+bool \hyperlink{class_s_f_x_aedbae5b62b225a4e4d20dbfa11b2f0ec}{load\-From\-Samples} (const sf\-::\-Int16 $\ast$samples, std\-::size\-\_\-t sample\-Count, unsigned int channel\-Count, unsigned int sample\-Rate)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -44,32 +47,83 @@ sf\-::\-Sound\-Buffer $\ast$ \hyperlink{class_s_f_x_ae55cbdae082548b85511de868d0
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_s_f_x_aa88af2470f7f001e98f7dd512c610433}{\index{S\-F\-X@{S\-F\-X}!S\-F\-X@{S\-F\-X}}
+\index{S\-F\-X@{S\-F\-X}!SFX@{S\-F\-X}}
+\subsubsection[{S\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}S\-F\-X\-::\-S\-F\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_x_aa88af2470f7f001e98f7dd512c610433}
+\hypertarget{class_s_f_x_ab7f079df2d4b684a0ac5246a9356390a}{\index{S\-F\-X@{S\-F\-X}!S\-F\-X@{S\-F\-X}}
+\index{S\-F\-X@{S\-F\-X}!SFX@{S\-F\-X}}
+\subsubsection[{S\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}S\-F\-X\-::\-S\-F\-X (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_x_ab7f079df2d4b684a0ac5246a9356390a}
+\hypertarget{class_s_f_x_a6d123bd5ec64f90e1e8c70e2f15f6fd4}{\index{S\-F\-X@{S\-F\-X}!$\sim$\-S\-F\-X@{$\sim$\-S\-F\-X}}
+\index{$\sim$\-S\-F\-X@{$\sim$\-S\-F\-X}!SFX@{S\-F\-X}}
+\subsubsection[{$\sim$\-S\-F\-X}]{\setlength{\rightskip}{0pt plus 5cm}S\-F\-X\-::$\sim$\-S\-F\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_x_a6d123bd5ec64f90e1e8c70e2f15f6fd4}
+
+
 \subsection{Member Function Documentation}
-\hypertarget{class_s_f_x_ad0bad7013294fbf08c3cd4462a334e99}{\index{S\-F\-X@{S\-F\-X}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!SFX@{S\-F\-X}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}S\-F\-X\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_s_f_x_a52cafd60db60baa07853333c34f05a9c}{\index{S\-F\-X@{S\-F\-X}!load\-From\-File@{load\-From\-File}}
+\index{load\-From\-File@{load\-From\-File}!SFX@{S\-F\-X}}
+\subsubsection[{load\-From\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-X\-::load\-From\-File (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const std\-::string \&}]{filename}
 \end{DoxyParamCaption}
-)}}\label{class_s_f_x_ad0bad7013294fbf08c3cd4462a334e99}
-\hypertarget{class_s_f_x_a8cd59f6ff14fe2371dcd87dcedfd78a8}{\index{S\-F\-X@{S\-F\-X}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!SFX@{S\-F\-X}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) {\bf S\-F\-X}(std S\-F\-X\-::\-\_\-\-\_\-declspec (
+)}}\label{class_s_f_x_a52cafd60db60baa07853333c34f05a9c}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_f_x_a52cafd60db60baa07853333c34f05a9c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_f_x_acc6b505cf68bbc3619ed7614739fe5bc}{\index{S\-F\-X@{S\-F\-X}!load\-From\-Memory@{load\-From\-Memory}}
+\index{load\-From\-Memory@{load\-From\-Memory}!SFX@{S\-F\-X}}
+\subsubsection[{load\-From\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-X\-::load\-From\-Memory (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const void $\ast$}]{data, }
+\item[{std\-::size\-\_\-t}]{size\-In\-Bytes}
 \end{DoxyParamCaption}
-)}}\label{class_s_f_x_a8cd59f6ff14fe2371dcd87dcedfd78a8}
+)}}\label{class_s_f_x_acc6b505cf68bbc3619ed7614739fe5bc}
+\hypertarget{class_s_f_x_aedbae5b62b225a4e4d20dbfa11b2f0ec}{\index{S\-F\-X@{S\-F\-X}!load\-From\-Samples@{load\-From\-Samples}}
+\index{load\-From\-Samples@{load\-From\-Samples}!SFX@{S\-F\-X}}
+\subsubsection[{load\-From\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-X\-::load\-From\-Samples (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Int16 $\ast$}]{samples, }
+\item[{std\-::size\-\_\-t}]{sample\-Count, }
+\item[{unsigned int}]{channel\-Count, }
+\item[{unsigned int}]{sample\-Rate}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_x_aedbae5b62b225a4e4d20dbfa11b2f0ec}
+\hypertarget{class_s_f_x_a8df4611064786e8daf406197d2c54c0c}{\index{S\-F\-X@{S\-F\-X}!load\-From\-Stream@{load\-From\-Stream}}
+\index{load\-From\-Stream@{load\-From\-Stream}!SFX@{S\-F\-X}}
+\subsubsection[{load\-From\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-X\-::load\-From\-Stream (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Input\-Stream \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_x_a8df4611064786e8daf406197d2c54c0c}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_s_f_x_ae55cbdae082548b85511de868d03a9f2}{\index{S\-F\-X@{S\-F\-X}!Buffer@{Buffer}}
 \index{Buffer@{Buffer}!SFX@{S\-F\-X}}
 \subsubsection[{Buffer}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sound\-Buffer$\ast$ S\-F\-X\-::\-Buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_s_f_x_ae55cbdae082548b85511de868d03a9f2}
-\hypertarget{class_s_f_x_a463deda3cac1d9c45a494ba33af8a9ea}{\index{S\-F\-X@{S\-F\-X}!size\-In\-Bytes@{size\-In\-Bytes}}
-\index{size\-In\-Bytes@{size\-In\-Bytes}!SFX@{S\-F\-X}}
-\subsubsection[{size\-In\-Bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-declspec} (dllexport) bool load\-From\-File( const std std\-::size\-\_\-t S\-F\-X\-::size\-In\-Bytes}}\label{class_s_f_x_a463deda3cac1d9c45a494ba33af8a9ea}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_s_f_x_8hpp}{S\-F\-X.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_s_f_x_8hpp}{S\-F\-X.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_s_f_x_8cpp}{S\-F\-X.\-cpp}\end{DoxyCompactItemize}

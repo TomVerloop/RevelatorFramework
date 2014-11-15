@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -83,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index__"><span>_</span></a></li>
-      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -158,8 +159,26 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>RControl
 : <a class="el" href="class_keyboard.html#ab0b3b0b4d17a476568fe9994cf4ad92b">Keyboard</a>
 </li>
+<li>RegisterLayerProducer()
+: <a class="el" href="class_game_factory.html#a3a20ae04c8ff992ad080b9742f5831c0">GameFactory</a>
+</li>
+<li>RegisterObjectProducer()
+: <a class="el" href="class_game_factory.html#a77df8b5e97869b7d7b667c0852191e20">GameFactory</a>
+</li>
+<li>RegisterScreenProducer()
+: <a class="el" href="class_game_factory.html#ad3c85f8654dd2c3aeb7a2b17df05cceb">GameFactory</a>
+</li>
+<li>RemoveFlaggedFromChunk()
+: <a class="el" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d">Chunk</a>
+</li>
 <li>RemoveFromChunk
 : <a class="el" href="class_chunk.html#adf6692fdab4518524e217cc0ef09d282">Chunk</a>
+</li>
+<li>removeLayer()
+: <a class="el" href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">GameScreen</a>
+</li>
+<li>removeScreen()
+: <a class="el" href="class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8">ScreenManager</a>
 </li>
 <li>Return
 : <a class="el" href="class_keyboard.html#a145aa386b22fd7c1068a336b5e7b8022">Keyboard</a>
@@ -180,13 +199,16 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>RSystem
 : <a class="el" href="class_keyboard.html#afba86b1479dfa9fb35ace002e19d6da5">Keyboard</a>
 </li>
+<li>run()
+: <a class="el" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75">ScreenManager</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:12 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:44 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

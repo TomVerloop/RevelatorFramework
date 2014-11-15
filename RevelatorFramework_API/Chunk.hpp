@@ -22,6 +22,7 @@ enum __declspec(dllexport) Position
 * \version   1.0
 * \date      2014-2015
 * \bug anything with a vision greater that one chunk next to it is useless.
+* \bug any component given to the next chunk will be updated twice.
 */
 
 class Chunk : public Drawable
@@ -32,7 +33,6 @@ public:
 	*	\brief The constructor.
 	*	\param[in] ChunkCoord contains the coordinates used to calculate its real position on the screen.
 	*	\param[in] size contains the size of the chunk used to contain its components in.
-	*	
 	*/
 	__declspec(dllexport)  Chunk(sf::Vector2i ChunkCoord, float size = 0.f);
 

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_movable_component_producer.html'
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,22 +113,19 @@ $(document).ready(function(){initNavTree('class_movable_component_producer.html'
 
 <p>This is the complete list of members for <a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d">__declspec</a>(dllexport) GameObjectProducer()</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_object_producer.html#a27d8c68cd2ba92108dcb57f8dabca382">__declspec</a>(dllexport)~GameObjectProducer()</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_object_producer.html#a196e596ce8c691618375db29e4b6417a">__declspec</a>(dllexport) virtual GameComponent *Produce()=0</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_object_producer.html#a482128af1d260a085d855b2eb4fdf024">__declspec</a>(dllexport) virtual GameComponent *Produce(ProducerPackage Package)=0</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_object_producer.html#a44a6d64e3232301b3cd6ee4166204edb">__declspec</a>(dllexport) virtual GameComponent *Produce(ProducerPackage *Package)=0</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2">GameObjectProducer</a>()</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_movable_component_producer.html#a07b6c93cae31db6a684257b339e330b3">MovableComponentProducer</a>()</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_movable_component_producer.html#afcef390a20c515da93a8ef1971e59b90">Produce</a>()</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_movable_component_producer.html#a909d2617235b049286660251050e7e8b">Produce</a>(ProducerPackage Package)</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_movable_component_producer.html#a1b83286374915b711d4b8f55cc024cbc">Produce</a>(ProducerPackage *Package)</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_movable_component_producer.html#aa4219b366ab0626663174b5da191eaad">~MovableComponentProducer</a>()</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_movable_component_producer.html#afcef390a20c515da93a8ef1971e59b90">Produce</a>()</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_movable_component_producer.html#a909d2617235b049286660251050e7e8b">Produce</a>(ProducerPackage Package)</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_movable_component_producer.html#a1b83286374915b711d4b8f55cc024cbc">Produce</a>(ProducerPackage *Package)</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5">~GameObjectProducer</a>()</td><td class="entry"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_movable_component_producer.html#aa4219b366ab0626663174b5da191eaad">~MovableComponentProducer</a>()</td><td class="entry"><a class="el" href="class_movable_component_producer.html">MovableComponentProducer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

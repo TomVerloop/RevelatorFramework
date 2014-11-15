@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -83,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index__"><span>_</span></a></li>
-      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -149,6 +150,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>S
 : <a class="el" href="class_keyboard.html#aafafb740df9ac23e0fdbac7b85ca5902">Keyboard</a>
 </li>
+<li>ScreenManager()
+: <a class="el" href="class_screen_manager.html#a65af2989683b8286705b5ff00b5017a7">ScreenManager</a>
+</li>
 <li>ScreenProducers
 : <a class="el" href="class_game_factory.html#aa65ba67e6c3fc56ec228c801e02352c8">GameFactory</a>
 </li>
@@ -156,21 +160,83 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">GameFactory</a>
 , <a class="el" href="class_screen_manager.html#a54eb2c9667efda525a35d0d7043e8807">ScreenManager</a>
 </li>
+<li>SeenObjectCount()
+: <a class="el" href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae">Sensor</a>
+</li>
 <li>SeenObjects
 : <a class="el" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">Sensor</a>
 </li>
 <li>SemiColon
 : <a class="el" href="class_keyboard.html#a630a1f3ae35be95f2a9b4da9ccec7b65">Keyboard</a>
 </li>
+<li>Sense()
+: <a class="el" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936">Chunk</a>
+</li>
+<li>SenseSingle()
+: <a class="el" href="class_chunk.html#ab038489f8de577890226307499da10af">Chunk</a>
+</li>
 <li>sensor
 : <a class="el" href="class_game_component.html#ad585bf57df228afc83fbf777142e51bd">GameComponent</a>
 </li>
+<li>Sensor()
+: <a class="el" href="class_sensor.html#ac404bb7c1045796220e6d2997231feec">Sensor</a>
+</li>
+<li>setActiveChunk()
+: <a class="el" href="class_chunk_manager.html#a00cea265f033fdc3b2188b1099094f08">ChunkManager</a>
+</li>
+<li>setActiveScreen()
+: <a class="el" href="class_screen_manager.html#ac7ebe41395bf83cc60c13e4fb502babd">ScreenManager</a>
+</li>
+<li>setBottom()
+: <a class="el" href="class_chunk.html#a57c85ac8a8959eca362b7c3e64dc1d0d">Chunk</a>
+</li>
+<li>setCameraPosition()
+: <a class="el" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1">WindowManager</a>
+</li>
+<li>setDead()
+: <a class="el" href="class_game_component.html#aa5e79bc4a1927f039ce345daa1a084c5">GameComponent</a>
+</li>
+<li>setDrawing()
+: <a class="el" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">Layer</a>
+</li>
+<li>setEnabled()
+: <a class="el" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">Layer</a>
+</li>
+<li>setFirstChunk()
+: <a class="el" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc">ChunkManager</a>
+</li>
+<li>setLeft()
+: <a class="el" href="class_chunk.html#aa0005654a92c0ca50f90c516d508834c">Chunk</a>
+</li>
+<li>setLeftBottom()
+: <a class="el" href="class_chunk.html#a690d801cad525f106f11fca76855c785">Chunk</a>
+</li>
+<li>setLeftTop()
+: <a class="el" href="class_chunk.html#a24564a4a5eb9e05857939e23ed213914">Chunk</a>
+</li>
+<li>setPosition()
+: <a class="el" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d">GameComponent</a>
+</li>
+<li>setRight()
+: <a class="el" href="class_chunk.html#a670d58217b329583811b5380f25700d6">Chunk</a>
+</li>
+<li>setRightBottom()
+: <a class="el" href="class_chunk.html#aadab4832f4d1c4618b7232a1503d8aed">Chunk</a>
+</li>
+<li>setRightTop()
+: <a class="el" href="class_chunk.html#a8c19057f7360349f5d214bfa50d51900">Chunk</a>
+</li>
+<li>setTop()
+: <a class="el" href="class_chunk.html#a6cc69f33389b5510766f23317ff7ae65">Chunk</a>
+</li>
+<li>setUpdating()
+: <a class="el" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">Layer</a>
+</li>
+<li>SFX()
+: <a class="el" href="class_s_f_x.html#ab7f079df2d4b684a0ac5246a9356390a">SFX</a>
+</li>
 <li>size
 : <a class="el" href="class_chunk.html#af46410b580baf2985b01044d5c041b2e">Chunk</a>
-, <a class="el" href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">Sensor</a>
-</li>
-<li>sizeInBytes
-: <a class="el" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">SFX</a>
 </li>
 <li>Slash
 : <a class="el" href="class_keyboard.html#a603303cab1a11552d040900389cfb284">Keyboard</a>
@@ -184,6 +250,12 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>spawner
 : <a class="el" href="class_game_component.html#a15caaab21ec2e8eb9d438a25afbef4da">GameComponent</a>
 </li>
+<li>Spawner()
+: <a class="el" href="class_spawner.html#a3e3aa3ccff73556625359e75f64d0dd0">Spawner</a>
+</li>
+<li>StopMusic()
+: <a class="el" href="class_audio_manager.html#a893d9756eef3f2b562b0a337227e7c9d">AudioManager</a>
+</li>
 <li>Strings
 : <a class="el" href="class_producer_package.html#aaff12a94ce8d3659e6258d03d6a6121a">ProducerPackage</a>
 </li>
@@ -196,7 +268,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:12 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:44 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

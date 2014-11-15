@@ -1,6 +1,7 @@
 #include "MovableComponent.hpp"
 #include <iostream>
 #include <SFML\Graphics.hpp>
+#include <Keyboard.hpp>
 #include "ExampleComponent.hpp"
 
 MovableComponent::MovableComponent(sf::Vector2f pos) : GameComponent{ pos.x, pos.y }
@@ -24,19 +25,19 @@ void MovableComponent::Collide(GameComponent * colider)
 
 void MovableComponent::Update(const UpdateData & updateobject)
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+	if (Keyboard::getInstance().getUp() || Keyboard::getInstance().getW())
 	{
 		this->Position->y -= 0.1f;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+	if (Keyboard::getInstance().getDown() || Keyboard::getInstance().getS())
 	{
 		this->Position->y += 0.1f;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	if (Keyboard::getInstance().getLeft() || Keyboard::getInstance().getA())
 	{
 		this->Position->x -= 0.1f;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	if (Keyboard::getInstance().getRight() || Keyboard::getInstance().getD())
 	{
 		this->Position->x += 0.1f;
 	}

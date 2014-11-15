@@ -1,0 +1,7 @@
+<map id="ScreenManager::ScreenManager" name="ScreenManager::ScreenManager">
+<area shape="rect" id="node2" href="$class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="265,5,459,32"/>
+<area shape="rect" id="node3" href="$class_window_manager.html#af570f14ac975aa3073a51238f5121d79" title="WindowManager::InitWindow" alt="" coords="267,56,457,83"/>
+<area shape="rect" id="node4" href="$class_audio_manager.html#a03807d1257d2e07f666764dda149c47a" title="This static function returns a Singleton reference to the Audiomanager. " alt="" coords="272,107,452,133"/>
+<area shape="rect" id="node5" href="$class_audio_manager.html#ad408d456071f30e96a36893a0ad1d2f8" title="This function plays a interuptable music. If another was playing then it will stop that one..." alt="" coords="275,157,449,184"/>
+<area shape="rect" id="node6" href="$class_audio_manager.html#a893d9756eef3f2b562b0a337227e7c9d" title="This function stops any playing music except sound effects. " alt="" coords="507,157,681,184"/>
+</map>

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_mouse.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,30 +113,30 @@ $(document).ready(function(){initNavTree('class_mouse.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_mouse.html">Mouse</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a5f8cad462f144fedf82bc54f1566e50f">__declspec</a>(dllexport)~Mouse()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a20435d528429f91f08e2c3bd6f2e8b43">__declspec</a>(dllexport) static Mouse &amp;getInstance()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a270b06a79e098e62f8a781bc069e8442">__declspec</a>(dllexport) Mouse(const Mouse &amp;mouse)=delete</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a9a843be0900007698eb252574b66aaf4">__declspec</a>(dllexport) Mouse &amp;operator</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a8b71e01cd362bfac3b49c8f7060b326a">__declspec</a>(dllexport) bool getLeft()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#ac38020f21b0de83806790c3d3acb5971">__declspec</a>(dllexport) bool getRight()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a749c6251455f83e534e34f09b999960d">__declspec</a>(dllexport) bool getMiddle()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a1ed05b28cf22053dcbf7f3eb798426b6">__declspec</a>(dllexport) bool getXButton1()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a8e1cefd84a6ab56a54f5857a728ac7b9">__declspec</a>(dllexport) bool getXButton2()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#aed195e7d0d2d1c8a9a210325e6b7035c">__declspec</a>(dllexport) sf</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a05f36b07846e423c869ac1246fd131a2">__declspec</a>(dllexport) void Update()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a3a7c4f8d10b38469887b51c324e58b41">__declspec</a>(dllexport) Mouse()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#ace644d872e798ce789726ec958236428">MouseLeft</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a4cbf96ff26822cc0eb8ea3f73a9edc9a">MouseMiddle</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#ae83f237e6ca4e0f366eb6f1a03964886">MousePosition</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#a0d7dd53605221594b161f9d8e61aa345">MouseRight</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#af909f12e58b2b80528c5ca05d0452bda">MouseXButton1</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mouse.html#ade6dd013286bf4829948f8a69d9b7f8a">MouseXButton2</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a96ed80e3232b68b34368c8f1f79f5cff">getInstance</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#aba7bc3e6f4ea41b41d983300cafe94e3">getLeft</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a971194f66c07663aa9d9a1f3256a459e">getMiddle</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#a96a1dc1c7d7edf64110f8bc4795966e2">getMousePosition</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a57a56ce6e0c3dee5399dd8bd317f0300">getRight</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#a34e7edee2f57d2b4284e12946b945392">getXButton1</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a4f61c34b9a79970983c2151698481b35">getXButton2</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#a6c87ac5e0784ef185d003486c0cd97a7">Mouse</a>(const Mouse &amp;mouse)=delete</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">Mouse</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#ace644d872e798ce789726ec958236428">MouseLeft</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a4cbf96ff26822cc0eb8ea3f73a9edc9a">MouseMiddle</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#ae83f237e6ca4e0f366eb6f1a03964886">MousePosition</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#a0d7dd53605221594b161f9d8e61aa345">MouseRight</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#af909f12e58b2b80528c5ca05d0452bda">MouseXButton1</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#ade6dd013286bf4829948f8a69d9b7f8a">MouseXButton2</a></td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#a0ba383d1a0ed97fcc7133baeb13dffb9">operator=</a>(const Mouse &amp;mouse)=delete</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6">Update</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mouse.html#afdf7d8abef29c10be77ead773f964f4f">~Mouse</a>()</td><td class="entry"><a class="el" href="class_mouse.html">Mouse</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

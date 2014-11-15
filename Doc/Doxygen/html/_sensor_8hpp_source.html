@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_sensor_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,35 +117,39 @@ $(document).ready(function(){initNavTree('_sensor_8hpp_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_sensor.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sensor.html">Sensor</a> : <span class="keyword">public</span> <a class="code" href="class_collidable.html">Collidable</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">   10</a></span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <a class="code" href="class_sensor.html">Sensor</a>(<span class="keywordtype">float</span> Radius, sf::Vector2f * <a class="code" href="class_sensor.html#ab3b919642b59b2245ad3cf56b042ff33">Pos</a>, sf::Vector2f <a class="code" href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">size</a>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) ~<a class="code" href="class_sensor.html">Sensor</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <span class="keywordtype">void</span> addSeenObject(<a class="code" href="class_game_component.html">GameComponent</a> * comp);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <a class="code" href="class_game_component.html">GameComponent</a> * getSeenObject();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <span class="keywordtype">int</span> SeenObjectCount();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <span class="keywordtype">float</span> GetVisionRadius();</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">   16</a></span>&#160;    <a class="code" href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">__declspec</a>(dllexport) <span class="keywordtype">void</span> DrawVision(sf::RenderWindow &amp; window);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <a class="code" href="class_sensor.html#ac404bb7c1045796220e6d2997231feec">Sensor</a>(<span class="keywordtype">float</span> Radius, sf::Vector2f * Pos, sf::Vector2f size);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <a class="code" href="class_sensor.html#aee8c70e7ef05ce65e7ee33686b5d7db2">~Sensor</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c">addSeenObject</a>(<a class="code" href="class_game_component.html">GameComponent</a> * comp);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    __declspec(dllexport) <a class="code" href="class_game_component.html">GameComponent</a> * <a class="code" href="class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14">getSeenObject</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    __declspec(dllexport) <span class="keywordtype">int</span> <a class="code" href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae">SeenObjectCount</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    __declspec(dllexport) <span class="keywordtype">float</span> <a class="code" href="class_sensor.html#ab7cc277606b8709a6df5fc53d7c0f22b">GetVisionRadius</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_sensor.html#a8ed4309852c92cdeac0152cc2f604ac8">DrawVision</a>(sf::RenderWindow &amp; window);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;private:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">VisionRange</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">   20</a></span>&#160;    std::list&lt;<a class="code" href="class_game_component.html">GameComponent</a> * &gt; <a class="code" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">SeenObjects</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">VisionRange</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">   20</a></span>&#160;    std::list&lt;GameComponent * &gt; <a class="code" href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">SeenObjects</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="ttc" id="class_sensor_html"><div class="ttname"><a href="class_sensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Sensor.hpp:7</div></div>
-<div class="ttc" id="class_sensor_html_af509a7308626a219e017f07c0d25a78f"><div class="ttname"><a href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">Sensor::VisionRange</a></div><div class="ttdeci">float VisionRange</div><div class="ttdef"><b>Definition:</b> Sensor.hpp:16</div></div>
-<div class="ttc" id="class_sensor_html_a4f89a2fee3bb2c07456663cf1754349f"><div class="ttname"><a href="class_sensor.html#a4f89a2fee3bb2c07456663cf1754349f">Sensor::__declspec</a></div><div class="ttdeci">__declspec(dllexport) Sensor(float Radius</div></div>
-<div class="ttc" id="class_sensor_html_ac3268b4c0c8cee967256a622dfc5517d"><div class="ttname"><a href="class_sensor.html#ac3268b4c0c8cee967256a622dfc5517d">Sensor::size</a></div><div class="ttdeci">sf::Vector2f sf::Vector2f size</div><div class="ttdef"><b>Definition:</b> Sensor.hpp:10</div></div>
+<div class="ttc" id="class_sensor_html_af509a7308626a219e017f07c0d25a78f"><div class="ttname"><a href="class_sensor.html#af509a7308626a219e017f07c0d25a78f">Sensor::VisionRange</a></div><div class="ttdeci">float VisionRange</div><div class="ttdef"><b>Definition:</b> Sensor.hpp:19</div></div>
+<div class="ttc" id="class_sensor_html_ab7cc277606b8709a6df5fc53d7c0f22b"><div class="ttname"><a href="class_sensor.html#ab7cc277606b8709a6df5fc53d7c0f22b">Sensor::GetVisionRadius</a></div><div class="ttdeci">float GetVisionRadius()</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:33</div></div>
+<div class="ttc" id="class_sensor_html_aee8c70e7ef05ce65e7ee33686b5d7db2"><div class="ttname"><a href="class_sensor.html#aee8c70e7ef05ce65e7ee33686b5d7db2">Sensor::~Sensor</a></div><div class="ttdeci">~Sensor()</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:11</div></div>
+<div class="ttc" id="class_sensor_html_a10dcb96d63d3991eff95b47f626d0e4c"><div class="ttname"><a href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c">Sensor::addSeenObject</a></div><div class="ttdeci">void addSeenObject(GameComponent *comp)</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:16</div></div>
+<div class="ttc" id="class_sensor_html_ac707ee7af9bd9adcdcb17d126582cc14"><div class="ttname"><a href="class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14">Sensor::getSeenObject</a></div><div class="ttdeci">GameComponent * getSeenObject()</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:21</div></div>
 <div class="ttc" id="class_sensor_html_a3ed58c2bc9140a884ce86014fbfd6926"><div class="ttname"><a href="class_sensor.html#a3ed58c2bc9140a884ce86014fbfd6926">Sensor::SeenObjects</a></div><div class="ttdeci">std::list&lt; GameComponent * &gt; SeenObjects</div><div class="ttdef"><b>Definition:</b> Sensor.hpp:20</div></div>
-<div class="ttc" id="class_collidable_html"><div class="ttname"><a href="class_collidable.html">Collidable</a></div><div class="ttdef"><b>Definition:</b> Collidable.hpp:6</div></div>
-<div class="ttc" id="class_sensor_html_ab3b919642b59b2245ad3cf56b042ff33"><div class="ttname"><a href="class_sensor.html#ab3b919642b59b2245ad3cf56b042ff33">Sensor::Pos</a></div><div class="ttdeci">sf::Vector2f * Pos</div><div class="ttdef"><b>Definition:</b> Sensor.hpp:10</div></div>
+<div class="ttc" id="class_collidable_html"><div class="ttname"><a href="class_collidable.html">Collidable</a></div><div class="ttdoc">This Class holds data used to manage the collision of a gamecomponent. </div><div class="ttdef"><b>Definition:</b> Collidable.hpp:19</div></div>
+<div class="ttc" id="class_sensor_html_ade01c8ff6de8daec5755b39bf4a57eae"><div class="ttname"><a href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae">Sensor::SeenObjectCount</a></div><div class="ttdeci">int SeenObjectCount()</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:28</div></div>
+<div class="ttc" id="class_sensor_html_ac404bb7c1045796220e6d2997231feec"><div class="ttname"><a href="class_sensor.html#ac404bb7c1045796220e6d2997231feec">Sensor::Sensor</a></div><div class="ttdeci">Sensor(float Radius, sf::Vector2f *Pos, sf::Vector2f size)</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:5</div></div>
 <div class="ttc" id="_collidable_8hpp_html"><div class="ttname"><a href="_collidable_8hpp.html">Collidable.hpp</a></div></div>
 <div class="ttc" id="class_game_component_html"><div class="ttname"><a href="class_game_component.html">GameComponent</a></div><div class="ttdef"><b>Definition:</b> GameComponent.hpp:14</div></div>
+<div class="ttc" id="class_sensor_html_a8ed4309852c92cdeac0152cc2f604ac8"><div class="ttname"><a href="class_sensor.html#a8ed4309852c92cdeac0152cc2f604ac8">Sensor::DrawVision</a></div><div class="ttdeci">void DrawVision(sf::RenderWindow &amp;window)</div><div class="ttdef"><b>Definition:</b> Sensor.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_sensor_8hpp.html">Sensor.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

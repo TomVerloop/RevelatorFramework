@@ -12,8 +12,7 @@ This Class represents a small portion of a screen.
 
 
 
-Inheritance diagram for Chunk\-:
-\nopagebreak
+Inheritance diagram for Chunk\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,72 +21,74 @@ Inheritance diagram for Chunk\-:
 \end{figure}
 
 
-Collaboration diagram for Chunk\-:
-\nopagebreak
+Collaboration diagram for Chunk\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_chunk__coll__graph}
+\includegraphics[width=315pt]{class_chunk__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\-\_\-\-\_\-declspec(dllexport) \hyperlink{class_chunk}{Chunk}(sf \hyperlink{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_chunk}{Chunk}()
+\hyperlink{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}{Chunk} (sf\-::\-Vector2i \hyperlink{class_chunk_abb5b1842148b3d7c616065766bfd2b33}{Chunk\-Coord}, float \hyperlink{class_chunk_af46410b580baf2985b01044d5c041b2e}{size}=0.f)
 \begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}{\-\_\-\-\_\-declspec} (dllexport) void add\-Component(\hyperlink{class_game_component}{Game\-Component} $\ast$component)
+\hyperlink{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}{$\sim$\-Chunk} ()
+\begin{DoxyCompactList}\small\item\em The Deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_aa5b5c5515c800f2171899caf704db5dc}{add\-Component} (\hyperlink{class_game_component}{Game\-Component} $\ast$component)
 \begin{DoxyCompactList}\small\item\em This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_acb635e1e8318e7b3a0accd4bcf49866d}{\-\_\-\-\_\-declspec} (dllexport) void Update(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
+void \hyperlink{class_chunk_a98a8a36b0197668d37994f77b2952084}{Update} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
 \begin{DoxyCompactList}\small\item\em This method pushes the update signal to all its components. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a27a4e5721687f011d6c52624d01eca8d}{\-\_\-\-\_\-declspec} (dllexport) void set\-Top(\hyperlink{class_chunk}{Chunk} $\ast$top)
+void \hyperlink{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}{Draw} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset) override
+\begin{DoxyCompactList}\small\item\em This method pushes the Draw\-Self signal to all its neighboring chunks and itself. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}{Draw\-Self} (sf\-::\-Render\-Window \&window, sf\-::\-Vector2f offset, \hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83}{Position} pos)
+\begin{DoxyCompactList}\small\item\em This method pushes the draw signal to all its components. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_a24564a4a5eb9e05857939e23ed213914}{set\-Left\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$lefttop)
+\begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the top left. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_a6cc69f33389b5510766f23317ff7ae65}{set\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83a3961740aa293a50c701d278225f7050a}{top})
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the top. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right\-Top(\hyperlink{class_chunk}{Chunk} $\ast$righttop)
+void \hyperlink{class_chunk_a8c19057f7360349f5d214bfa50d51900}{set\-Right\-Top} (\hyperlink{class_chunk}{Chunk} $\ast$righttop)
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the top right. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}{\-\_\-\-\_\-declspec} (dllexport) void set\-Left(\hyperlink{class_chunk}{Chunk} $\ast$left)
+void \hyperlink{class_chunk_aa0005654a92c0ca50f90c516d508834c}{set\-Left} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83ab0ac36b187aa60c167ffcead3d5a03c0}{left})
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the left. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_ac390d85879176e6e8a26667ba97f8eee}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right(\hyperlink{class_chunk}{Chunk} $\ast$right)
+void \hyperlink{class_chunk_a670d58217b329583811b5380f25700d6}{set\-Right} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a}{right})
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the right. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}{\-\_\-\-\_\-declspec} (dllexport) void set\-Left\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$leftbottom)
+void \hyperlink{class_chunk_a690d801cad525f106f11fca76855c785}{set\-Left\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$leftbottom)
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the bottom left. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a69ed23533460c9308dc6ae6e92143e65}{\-\_\-\-\_\-declspec} (dllexport) void set\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$bottom)
+void \hyperlink{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}{set\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$\hyperlink{_chunk_8hpp_ab91b34ae619fcdfcba4522b4f335bf83a692ac8f8a4a43ac2513ce4cd90dc3ebe}{bottom})
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the bottom. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}{\-\_\-\-\_\-declspec} (dllexport) void set\-Right\-Bottom(\hyperlink{class_chunk}{Chunk} $\ast$rightbottom)
+void \hyperlink{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}{set\-Right\-Bottom} (\hyperlink{class_chunk}{Chunk} $\ast$rightbottom)
 \begin{DoxyCompactList}\small\item\em This method sets a chunk as the chunk to the bottom right. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Top()
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}{get\-Top} ()
 \begin{DoxyCompactList}\small\item\em This method returns the chunk to the top. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Left()
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}{get\-Left} ()
 \begin{DoxyCompactList}\small\item\em This method returns the chunk to the left. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Right()
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}{get\-Right} ()
 \begin{DoxyCompactList}\small\item\em This method returns the chunk to the right. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk}{Chunk} $\ast$get\-Bottom()
+\hyperlink{class_chunk}{Chunk} $\ast$ \hyperlink{class_chunk_a59eb282f08711420c1e966e30aab47e3}{get\-Bottom} ()
 \begin{DoxyCompactList}\small\item\em This method returns the chunk to the bottom. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\-\_\-\-\_\-declspec} (dllexport) sf
+sf\-::\-Vector2i \hyperlink{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}{get\-Coords} ()
 \begin{DoxyCompactList}\small\item\em This method returns the chunk coordinates. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a2a4b74bc2a675752c97407233d14cbaf}{\-\_\-\-\_\-declspec} (dllexport) void Sense\-Single(const \hyperlink{class_update_data}{Update\-Data} \&updateobject
+void \hyperlink{class_chunk_ab038489f8de577890226307499da10af}{Sense\-Single} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject, \hyperlink{class_game_component}{Game\-Component} $\ast$comp)
 \begin{DoxyCompactList}\small\item\em This method calculates the vision of a single component. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_aabce986183d5f99c1c89a80b51127aa9}{\-\_\-\-\_\-declspec} (dllexport) void Collide\-Single(const \hyperlink{class_update_data}{Update\-Data} \&updateobject
+void \hyperlink{class_chunk_a41f009780aa4934be3f839a4518616ed}{Collide\-Single} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject, \hyperlink{class_game_component}{Game\-Component} $\ast$comp)
 \begin{DoxyCompactList}\small\item\em This method calculates the collision of a single component. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\-\_\-\-\_\-declspec} (dllexport) sf
+sf\-::\-Vector2f \hyperlink{class_chunk_a0438a8693210393fadc5105dd315adb8}{get\-Pure\-Position} ()
 \begin{DoxyCompactList}\small\item\em This method returns the real position of the chunk. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_acf3fa4e0c9a7ef9c820c3ba001e449fb}{\-\_\-\-\_\-declspec} (dllexport) float get\-Size()
+float \hyperlink{class_chunk_a331e5916d9976679df82da5764bd7d64}{get\-Size} ()
 \begin{DoxyCompactList}\small\item\em This method returns the size of the chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{class_game_component}{Game\-Component} $\ast$ \hyperlink{class_chunk_a633545d862acb016a7081c364126c7b8}{comp}
-\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_chunk_a09fed540af40e1ad76e8ef2babbfe616}{\-\_\-\-\_\-declspec} (dllexport) void Collide(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
-\begin{DoxyCompactList}\small\item\em This method calls Chunk\-::\-Collide\-Single for every component in the chunk. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a8a24db04cbc32e330b07d34caa61eeb1}{\-\_\-\-\_\-declspec} (dllexport) void Sense(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
-\begin{DoxyCompactList}\small\item\em This method calls Chunk\-::\-Sense\-Single for every component in the chunk. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}{\-\_\-\-\_\-declspec} (dllexport) void Move\-Component\-To\-Next\-Chunk(\hyperlink{class_game_component}{Game\-Component} $\ast$c)
+void \hyperlink{class_chunk_a48ee3a744acf3492cdf221037f0b7822}{Collide} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
+\begin{DoxyCompactList}\small\item\em This method calls \hyperlink{class_chunk_a41f009780aa4934be3f839a4518616ed}{Chunk\-::\-Collide\-Single} for every component in the chunk. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_a78f140c690751b838b0a7e09a51e6936}{Sense} (const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
+\begin{DoxyCompactList}\small\item\em This method calls \hyperlink{class_chunk_ab038489f8de577890226307499da10af}{Chunk\-::\-Sense\-Single} for every component in the chunk. \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{Move\-Component\-To\-Next\-Chunk} (\hyperlink{class_game_component}{Game\-Component} $\ast$c)
 \begin{DoxyCompactList}\small\item\em This method checks if a component still resides inside the chunk if not it will push it to the next chunk. if no next chunk exsists it will pull the component back into its region. \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}{\-\_\-\-\_\-declspec} (dllexport) bool Axisis\-In\-Bounds(float axis
-\begin{DoxyCompactList}\small\item\em a function to simplify the ifstatements in Chunk\-::\-Move\-Component\-To\-Next\-Chunk \end{DoxyCompactList}\item 
-\hyperlink{class_chunk_aecb19003f0e0330920cf7695fbdc5700}{\-\_\-\-\_\-declspec} (dllexport) void Remove\-Flagged\-From\-Chunk()
+bool \hyperlink{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}{Axisis\-In\-Bounds} (float axis, float offset)
+\begin{DoxyCompactList}\small\item\em a function to simplify the ifstatements in \hyperlink{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{Chunk\-::\-Move\-Component\-To\-Next\-Chunk} \end{DoxyCompactList}\item 
+void \hyperlink{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}{Remove\-Flagged\-From\-Chunk} ()
 \begin{DoxyCompactList}\small\item\em removes all the \char`\"{}\-Dead\char`\"{} components from the chunk but does not delete them. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -117,9 +118,7 @@ float \hyperlink{class_chunk_af46410b580baf2985b01044d5c041b2e}{size}
 sf\-::\-Vector2i \hyperlink{class_chunk_abb5b1842148b3d7c616065766bfd2b33}{Chunk\-Coord}
 \begin{DoxyCompactList}\small\item\em contains the coordinates of the chunk \end{DoxyCompactList}\item 
 std\-::list$<$ \hyperlink{class_game_component}{Game\-Component} $\ast$ $>$ \hyperlink{class_chunk_adf6692fdab4518524e217cc0ef09d282}{Remove\-From\-Chunk}
-\begin{DoxyCompactList}\small\item\em contains a list of components to remove from the chunk. \end{DoxyCompactList}\item 
-float \hyperlink{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}{offset}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em contains a list of components to remove from the chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -135,60 +134,52 @@ Tom Verloop
 2014-\/2015 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\hyperlink{bug__bug000001}{Bug}]anything with a vision greater that one chunk next to it is useless. \end{DoxyRefDesc}
+\item[\hyperlink{bug__bug000001}{Bug}]anything with a vision greater that one chunk next to it is useless. 
+
+any component given to the next chunk will be updated twice. \end{DoxyRefDesc}
 
 
-\subsection{Member Function Documentation}
-\hypertarget{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}{\index{Chunk@{Chunk}!Chunk@{Chunk}}
+\index{Chunk@{Chunk}!Chunk@{Chunk}}
+\subsubsection[{Chunk}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-Chunk (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{sf\-::\-Vector2i}]{Chunk\-Coord, }
+\item[{float}]{size = {\ttfamily 0.f}}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_ab44ec5e17f0ca6096892265ebf4a448d}
+)}}\label{class_chunk_ad46cf5f6f874fbeff528ef237251a9f2}
 
 
 The constructor. 
-
-This method pushes the Draw\-Self signal to all its neighboring chunks and itself.
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em Chunk\-Coord} & contains the coordinates used to calculate its real position on the screen. \\
 \hline
-\mbox{\tt in}  & {\em size} & contains the size of the chunk used to contain its components in.\\
+\mbox{\tt in}  & {\em size} & contains the size of the chunk used to contain its components in. \\
 \hline
 \end{DoxyParams}
-The Deconstructor.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em window} & holds an reference to the renderwindow to draw upon. \\
-\hline
-\mbox{\tt in}  & {\em offset} & holds an position to add to the one of the component.\\
-\hline
-\end{DoxyParams}
-This method pushes the draw signal to all its components. 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em window} & holds an reference to the renderwindow to draw upon. \\
-\hline
-\mbox{\tt in}  & {\em offset} & holds an position to add to the one of the component. \\
-\hline
-\mbox{\tt in}  & {\em offset} & holds an position from where the draw method was called on the screen.\\
-\hline
-\end{DoxyParams}
-This method sets a chunk as the chunk to the top left. 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em lefttop} & contains a pointer to the chunk that should be to the top left. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
+\hypertarget{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}{\index{Chunk@{Chunk}!$\sim$\-Chunk@{$\sim$\-Chunk}}
+\index{$\sim$\-Chunk@{$\sim$\-Chunk}!Chunk@{Chunk}}
+\subsubsection[{$\sim$\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::$\sim$\-Chunk (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_chunk_ac74827ffc5c989b29d5ee985e0df4e96}
+)}}\label{class_chunk_ad21b515f41c9a1d21740b9e7e3f8eede}
+
+
+The Deconstructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_chunk_aa5b5c5515c800f2171899caf704db5dc}{\index{Chunk@{Chunk}!add\-Component@{add\-Component}}
+\index{add\-Component@{add\-Component}!Chunk@{Chunk}}
+\subsubsection[{add\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::add\-Component (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Component} $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_aa5b5c5515c800f2171899caf704db5dc}
 
 
 This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds. 
@@ -198,326 +189,39 @@ This method adds a gamecomponent to the chunk or pushes it to the next if it is 
 \mbox{\tt in}  & {\em component} & contains a pointer to the component it is supposed to hold. \\
 \hline
 \end{DoxyParams}
-\hypertarget{class_chunk_acb635e1e8318e7b3a0accd4bcf49866d}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_aa5b5c5515c800f2171899caf704db5dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_aa5b5c5515c800f2171899caf704db5dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}{\index{Chunk@{Chunk}!Axisis\-In\-Bounds@{Axisis\-In\-Bounds}}
+\index{Axisis\-In\-Bounds@{Axisis\-In\-Bounds}!Chunk@{Chunk}}
+\subsubsection[{Axisis\-In\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}bool Chunk\-::\-Axisis\-In\-Bounds (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{float}]{axis, }
+\item[{float}]{offset}
 \end{DoxyParamCaption}
-) const}}\label{class_chunk_acb635e1e8318e7b3a0accd4bcf49866d}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72}
 
 
-This method pushes the update signal to all its components. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em updateobject} & contains a reference to the updateobject containing updatedata. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a27a4e5721687f011d6c52624d01eca8d}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a27a4e5721687f011d6c52624d01eca8d}
-
-
-This method sets a chunk as the chunk to the top. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em top} & contains a pointer to the chunk that should be to the top. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a164b8ab3a4d2e88b6d1bc5e6edfef100}
-
-
-This method sets a chunk as the chunk to the top right. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em righttop} & contains a pointer to the chunk that should be to the top right. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a5e25de330ba7c7c2e557a823d7a8505b}
-
-
-This method sets a chunk as the chunk to the left. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em left} & contains a pointer to the chunk that should be to the left. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_ac390d85879176e6e8a26667ba97f8eee}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_ac390d85879176e6e8a26667ba97f8eee}
-
-
-This method sets a chunk as the chunk to the right. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em right} & contains a pointer to the chunk that should be to the right. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a5f6e70225dcd2d5f2cf0c3f77abdfa4b}
-
-
-This method sets a chunk as the chunk to the bottom left. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em leftbottom} & contains a pointer to the chunk that should be to the bottom left. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a69ed23533460c9308dc6ae6e92143e65}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a69ed23533460c9308dc6ae6e92143e65}
-
-
-This method sets a chunk as the chunk to the bottom. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em bottom} & contains a pointer to the chunk that should be to the bottom. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a42b5a5cf3a22b7cdd14e5e16f9c74ed0}
-
-
-This method sets a chunk as the chunk to the bottom right. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em rightbottom} & contains a pointer to the chunk that should be to the bottom right. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a023a2a543fc48c2b9ba5d2e31eb42e2a}
-
-
-This method returns the chunk to the top. 
-
-\begin{DoxyReturn}{Returns}
-A pointer of the chunk to the top. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a9b1f0c64473950040eff7ac832ae07f7}
-
-
-This method returns the chunk to the left. 
-
-\begin{DoxyReturn}{Returns}
-A pointer of the chunk to the left. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a55bd34d914023066cf0bdd1297c3ae8f}
-
-
-This method returns the chunk to the right. 
-
-\begin{DoxyReturn}{Returns}
-A pointer of the chunk to the right. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_chunk_a4a65f82eed937ca57e26fbfc8b449fd2}
-
-
-This method returns the chunk to the bottom. 
-
-\begin{DoxyReturn}{Returns}
-A pointer of the chunk to the bottom. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}
-
-
-This method returns the chunk coordinates. 
-
-\begin{DoxyReturn}{Returns}
-A 2d integer vector. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a2a4b74bc2a675752c97407233d14cbaf}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-) const}}\label{class_chunk_a2a4b74bc2a675752c97407233d14cbaf}
-
-
-This method calculates the vision of a single component. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em updateobject} & Contains all data required for the update event. \\
-\hline
-\mbox{\tt out}  & {\em comp} & Contains the game component who is sensing for other components. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_aabce986183d5f99c1c89a80b51127aa9}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-) const}}\label{class_chunk_aabce986183d5f99c1c89a80b51127aa9}
-
-
-This method calculates the collision of a single component. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em updateobject} & Contains all data required for the update event. \\
-\hline
-\mbox{\tt out}  & {\em comp} & Contains the game component who is colliding with other components. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_a11a6eb32b5444ba24bb506e1a57ad4b8}
-
-
-This method returns the real position of the chunk. 
-
-\begin{DoxyReturn}{Returns}
-A 2\-D float vector containing the position of the chunk. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_acf3fa4e0c9a7ef9c820c3ba001e449fb}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_acf3fa4e0c9a7ef9c820c3ba001e449fb}
-
-
-This method returns the size of the chunk. 
-
-\begin{DoxyReturn}{Returns}
-A float containing the size of the chunk. 
-\end{DoxyReturn}
-\hypertarget{class_chunk_a09fed540af40e1ad76e8ef2babbfe616}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a09fed540af40e1ad76e8ef2babbfe616}
-
-
-This method calls Chunk\-::\-Collide\-Single for every component in the chunk. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em updateobject} & contains all data for the update event. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a8a24db04cbc32e330b07d34caa61eeb1}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a8a24db04cbc32e330b07d34caa61eeb1}
-
-
-This method calls Chunk\-::\-Sense\-Single for every component in the chunk. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em updateobject} & contains all data for the update event. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a5c65ce716caab3e2c5bd9193f8e29888}
-
-
-This method checks if a component still resides inside the chunk if not it will push it to the next chunk. if no next chunk exsists it will pull the component back into its region. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em c} & Contains the component to check. \\
-\hline
-\end{DoxyParams}
-\hypertarget{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aad4ce00be30a71cddc9a17226a992a0f}
-
-
-a function to simplify the ifstatements in Chunk\-::\-Move\-Component\-To\-Next\-Chunk 
+a function to simplify the ifstatements in \hyperlink{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{Chunk\-::\-Move\-Component\-To\-Next\-Chunk} 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -529,16 +233,653 @@ a function to simplify the ifstatements in Chunk\-::\-Move\-Component\-To\-Next\
 \begin{DoxyReturn}{Returns}
 Returns true if the axis is in bounds. 
 \end{DoxyReturn}
-\hypertarget{class_chunk_aecb19003f0e0330920cf7695fbdc5700}{\index{Chunk@{Chunk}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Chunk@{Chunk}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Chunk\-::\-\_\-\-\_\-declspec (
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_aae4f8da15c8d73f2c6da55642aa8ca72_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a48ee3a744acf3492cdf221037f0b7822}{\index{Chunk@{Chunk}!Collide@{Collide}}
+\index{Collide@{Collide}!Chunk@{Chunk}}
+\subsubsection[{Collide}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Collide (
 \begin{DoxyParamCaption}
-\item[{dllexport}]{}
+\item[{const {\bf Update\-Data} \&}]{updateobject}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aecb19003f0e0330920cf7695fbdc5700}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a48ee3a744acf3492cdf221037f0b7822}
+
+
+This method calls \hyperlink{class_chunk_a41f009780aa4934be3f839a4518616ed}{Chunk\-::\-Collide\-Single} for every component in the chunk. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & contains all data for the update event. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a48ee3a744acf3492cdf221037f0b7822_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a48ee3a744acf3492cdf221037f0b7822_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a41f009780aa4934be3f839a4518616ed}{\index{Chunk@{Chunk}!Collide\-Single@{Collide\-Single}}
+\index{Collide\-Single@{Collide\-Single}!Chunk@{Chunk}}
+\subsubsection[{Collide\-Single}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Collide\-Single (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\-Data} \&}]{updateobject, }
+\item[{{\bf Game\-Component} $\ast$}]{comp}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a41f009780aa4934be3f839a4518616ed}
+
+
+This method calculates the collision of a single component. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & Contains all data required for the update event. \\
+\hline
+\mbox{\tt out}  & {\em comp} & Contains the game component who is colliding with other components. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a41f009780aa4934be3f839a4518616ed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a41f009780aa4934be3f839a4518616ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}{\index{Chunk@{Chunk}!Draw@{Draw}}
+\index{Draw@{Draw}!Chunk@{Chunk}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window, }
+\item[{sf\-::\-Vector2f}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42}
+
+
+This method pushes the Draw\-Self signal to all its neighboring chunks and itself. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em window} & holds an reference to the renderwindow to draw upon. \\
+\hline
+\mbox{\tt in}  & {\em offset} & holds an position to add to the one of the component. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawable_a0e24de52eeb44555872c70f3adf854d2}{Drawable}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a3203da1471b5572e0dd2cd82e6dceb42_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}{\index{Chunk@{Chunk}!Draw\-Self@{Draw\-Self}}
+\index{Draw\-Self@{Draw\-Self}!Chunk@{Chunk}}
+\subsubsection[{Draw\-Self}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Draw\-Self (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window, }
+\item[{sf\-::\-Vector2f}]{offset, }
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69}
+
+
+This method pushes the draw signal to all its components. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em window} & holds an reference to the renderwindow to draw upon. \\
+\hline
+\mbox{\tt in}  & {\em offset} & holds an position to add to the one of the component. \\
+\hline
+\mbox{\tt in}  & {\em offset} & holds an position from where the draw method was called on the screen. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a238c9e4adf0dfc78d6b8c778aec66e69_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a59eb282f08711420c1e966e30aab47e3}{\index{Chunk@{Chunk}!get\-Bottom@{get\-Bottom}}
+\index{get\-Bottom@{get\-Bottom}!Chunk@{Chunk}}
+\subsubsection[{get\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Bottom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a59eb282f08711420c1e966e30aab47e3}
+
+
+This method returns the chunk to the bottom. 
+
+\begin{DoxyReturn}{Returns}
+A pointer of the chunk to the bottom. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a59eb282f08711420c1e966e30aab47e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}{\index{Chunk@{Chunk}!get\-Coords@{get\-Coords}}
+\index{get\-Coords@{get\-Coords}!Chunk@{Chunk}}
+\subsubsection[{get\-Coords}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2i Chunk\-::get\-Coords (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_ad8d9253e661bbaef3471b73b86f0d8c4}
+
+
+This method returns the chunk coordinates. 
+
+\begin{DoxyReturn}{Returns}
+A 2d integer vector. 
+\end{DoxyReturn}
+\hypertarget{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}{\index{Chunk@{Chunk}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!Chunk@{Chunk}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a43c3b2b5995d06baec16ab9935a315fa}
+
+
+This method returns the chunk to the left. 
+
+\begin{DoxyReturn}{Returns}
+A pointer of the chunk to the left. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a43c3b2b5995d06baec16ab9935a315fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a0438a8693210393fadc5105dd315adb8}{\index{Chunk@{Chunk}!get\-Pure\-Position@{get\-Pure\-Position}}
+\index{get\-Pure\-Position@{get\-Pure\-Position}!Chunk@{Chunk}}
+\subsubsection[{get\-Pure\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Chunk\-::get\-Pure\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_a0438a8693210393fadc5105dd315adb8}
+
+
+This method returns the real position of the chunk. 
+
+\begin{DoxyReturn}{Returns}
+A 2\-D float vector containing the position of the chunk. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a0438a8693210393fadc5105dd315adb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}{\index{Chunk@{Chunk}!get\-Right@{get\-Right}}
+\index{get\-Right@{get\-Right}!Chunk@{Chunk}}
+\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf}
+
+
+This method returns the chunk to the right. 
+
+\begin{DoxyReturn}{Returns}
+A pointer of the chunk to the right. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_ad13a4e8ac481c7de6a70b3fa461418cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a331e5916d9976679df82da5764bd7d64}{\index{Chunk@{Chunk}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Chunk@{Chunk}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}float Chunk\-::get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_chunk_a331e5916d9976679df82da5764bd7d64}
+
+
+This method returns the size of the chunk. 
+
+\begin{DoxyReturn}{Returns}
+A float containing the size of the chunk. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a331e5916d9976679df82da5764bd7d64_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}{\index{Chunk@{Chunk}!get\-Top@{get\-Top}}
+\index{get\-Top@{get\-Top}!Chunk@{Chunk}}
+\subsubsection[{get\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chunk} $\ast$ Chunk\-::get\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8}
+
+
+This method returns the chunk to the top. 
+
+\begin{DoxyReturn}{Returns}
+A pointer of the chunk to the top. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a161929ca5dcfa0e1a798999f989fe2f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}{\index{Chunk@{Chunk}!Move\-Component\-To\-Next\-Chunk@{Move\-Component\-To\-Next\-Chunk}}
+\index{Move\-Component\-To\-Next\-Chunk@{Move\-Component\-To\-Next\-Chunk}!Chunk@{Chunk}}
+\subsubsection[{Move\-Component\-To\-Next\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Move\-Component\-To\-Next\-Chunk (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Component} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a749ea52ccf2c2905408c35e43545b6e0}
+
+
+This method checks if a component still resides inside the chunk if not it will push it to the next chunk. if no next chunk exsists it will pull the component back into its region. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & Contains the component to check. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a749ea52ccf2c2905408c35e43545b6e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a749ea52ccf2c2905408c35e43545b6e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}{\index{Chunk@{Chunk}!Remove\-Flagged\-From\-Chunk@{Remove\-Flagged\-From\-Chunk}}
+\index{Remove\-Flagged\-From\-Chunk@{Remove\-Flagged\-From\-Chunk}!Chunk@{Chunk}}
+\subsubsection[{Remove\-Flagged\-From\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Remove\-Flagged\-From\-Chunk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d}
 
 
 removes all the \char`\"{}\-Dead\char`\"{} components from the chunk but does not delete them. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_aa7f84e97b0fd555faeb811c747a6d26d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a78f140c690751b838b0a7e09a51e6936}{\index{Chunk@{Chunk}!Sense@{Sense}}
+\index{Sense@{Sense}!Chunk@{Chunk}}
+\subsubsection[{Sense}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Sense (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\-Data} \&}]{updateobject}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a78f140c690751b838b0a7e09a51e6936}
+
+
+This method calls \hyperlink{class_chunk_ab038489f8de577890226307499da10af}{Chunk\-::\-Sense\-Single} for every component in the chunk. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & contains all data for the update event. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a78f140c690751b838b0a7e09a51e6936_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a78f140c690751b838b0a7e09a51e6936_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_ab038489f8de577890226307499da10af}{\index{Chunk@{Chunk}!Sense\-Single@{Sense\-Single}}
+\index{Sense\-Single@{Sense\-Single}!Chunk@{Chunk}}
+\subsubsection[{Sense\-Single}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Sense\-Single (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\-Data} \&}]{updateobject, }
+\item[{{\bf Game\-Component} $\ast$}]{comp}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_ab038489f8de577890226307499da10af}
+
+
+This method calculates the vision of a single component. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & Contains all data required for the update event. \\
+\hline
+\mbox{\tt out}  & {\em comp} & Contains the game component who is sensing for other components. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_ab038489f8de577890226307499da10af_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_ab038489f8de577890226307499da10af_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}{\index{Chunk@{Chunk}!set\-Bottom@{set\-Bottom}}
+\index{set\-Bottom@{set\-Bottom}!Chunk@{Chunk}}
+\subsubsection[{set\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Bottom (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{bottom}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a57c85ac8a8959eca362b7c3e64dc1d0d}
+
+
+This method sets a chunk as the chunk to the bottom. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bottom} & contains a pointer to the chunk that should be to the bottom. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_aa0005654a92c0ca50f90c516d508834c}{\index{Chunk@{Chunk}!set\-Left@{set\-Left}}
+\index{set\-Left@{set\-Left}!Chunk@{Chunk}}
+\subsubsection[{set\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{left}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_aa0005654a92c0ca50f90c516d508834c}
+
+
+This method sets a chunk as the chunk to the left. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em left} & contains a pointer to the chunk that should be to the left. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a690d801cad525f106f11fca76855c785}{\index{Chunk@{Chunk}!set\-Left\-Bottom@{set\-Left\-Bottom}}
+\index{set\-Left\-Bottom@{set\-Left\-Bottom}!Chunk@{Chunk}}
+\subsubsection[{set\-Left\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left\-Bottom (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{leftbottom}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a690d801cad525f106f11fca76855c785}
+
+
+This method sets a chunk as the chunk to the bottom left. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em leftbottom} & contains a pointer to the chunk that should be to the bottom left. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a24564a4a5eb9e05857939e23ed213914}{\index{Chunk@{Chunk}!set\-Left\-Top@{set\-Left\-Top}}
+\index{set\-Left\-Top@{set\-Left\-Top}!Chunk@{Chunk}}
+\subsubsection[{set\-Left\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Left\-Top (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{lefttop}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a24564a4a5eb9e05857939e23ed213914}
+
+
+This method sets a chunk as the chunk to the top left. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lefttop} & contains a pointer to the chunk that should be to the top left. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a670d58217b329583811b5380f25700d6}{\index{Chunk@{Chunk}!set\-Right@{set\-Right}}
+\index{set\-Right@{set\-Right}!Chunk@{Chunk}}
+\subsubsection[{set\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{right}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a670d58217b329583811b5380f25700d6}
+
+
+This method sets a chunk as the chunk to the right. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em right} & contains a pointer to the chunk that should be to the right. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}{\index{Chunk@{Chunk}!set\-Right\-Bottom@{set\-Right\-Bottom}}
+\index{set\-Right\-Bottom@{set\-Right\-Bottom}!Chunk@{Chunk}}
+\subsubsection[{set\-Right\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right\-Bottom (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{rightbottom}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_aadab4832f4d1c4618b7232a1503d8aed}
+
+
+This method sets a chunk as the chunk to the bottom right. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rightbottom} & contains a pointer to the chunk that should be to the bottom right. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a8c19057f7360349f5d214bfa50d51900}{\index{Chunk@{Chunk}!set\-Right\-Top@{set\-Right\-Top}}
+\index{set\-Right\-Top@{set\-Right\-Top}!Chunk@{Chunk}}
+\subsubsection[{set\-Right\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Right\-Top (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{righttop}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a8c19057f7360349f5d214bfa50d51900}
+
+
+This method sets a chunk as the chunk to the top right. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em righttop} & contains a pointer to the chunk that should be to the top right. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a6cc69f33389b5510766f23317ff7ae65}{\index{Chunk@{Chunk}!set\-Top@{set\-Top}}
+\index{set\-Top@{set\-Top}!Chunk@{Chunk}}
+\subsubsection[{set\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::set\-Top (
+\begin{DoxyParamCaption}
+\item[{{\bf Chunk} $\ast$}]{top}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a6cc69f33389b5510766f23317ff7ae65}
+
+
+This method sets a chunk as the chunk to the top. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em top} & contains a pointer to the chunk that should be to the top. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_chunk_a98a8a36b0197668d37994f77b2952084}{\index{Chunk@{Chunk}!Update@{Update}}
+\index{Update@{Update}!Chunk@{Chunk}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Chunk\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{const {\bf Update\-Data} \&}]{updateobject}
+\end{DoxyParamCaption}
+)}}\label{class_chunk_a98a8a36b0197668d37994f77b2952084}
+
+
+This method pushes the update signal to all its components. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em updateobject} & contains a reference to the updateobject containing updatedata. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a98a8a36b0197668d37994f77b2952084_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chunk_a98a8a36b0197668d37994f77b2952084_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -557,9 +898,6 @@ contains a pointer to the bottom chunk.
 
 contains the coordinates of the chunk 
 
-\hypertarget{class_chunk_a633545d862acb016a7081c364126c7b8}{\index{Chunk@{Chunk}!comp@{comp}}
-\index{comp@{comp}!Chunk@{Chunk}}
-\subsubsection[{comp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Component} $\ast$ Chunk\-::comp}}\label{class_chunk_a633545d862acb016a7081c364126c7b8}
 \hypertarget{class_chunk_a4cdf6febd96ff99b681e37d548617a38}{\index{Chunk@{Chunk}!Components@{Components}}
 \index{Components@{Components}!Chunk@{Chunk}}
 \subsubsection[{Components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component}$\ast$$>$ Chunk\-::\-Components\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a4cdf6febd96ff99b681e37d548617a38}
@@ -588,9 +926,6 @@ contains a pointer to the bottomleft chunk.
 
 contains a pointer to the topleft chunk. 
 
-\hypertarget{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}{\index{Chunk@{Chunk}!offset@{offset}}
-\index{offset@{offset}!Chunk@{Chunk}}
-\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}float Chunk\-::offset\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_a6ab7f8f3970c886a62ccc1630bc60a16}
 \hypertarget{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}{\index{Chunk@{Chunk}!Pure\-Position@{Pure\-Position}}
 \index{Pure\-Position@{Pure\-Position}!Chunk@{Chunk}}
 \subsubsection[{Pure\-Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f Chunk\-::\-Pure\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_chunk_ace1577872b1189bc7fd88a9b3817ce98}
@@ -642,6 +977,7 @@ contains a pointer to the top chunk.
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_8hpp}{Chunk.\-hpp}\end{DoxyCompactItemize}
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_8hpp}{Chunk.\-hpp}\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_chunk_8cpp}{Chunk.\-cpp}\end{DoxyCompactItemize}

@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_s_f_x.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,16 +113,20 @@ $(document).ready(function(){initNavTree('class_s_f_x.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_s_f_x.html">SFX</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_s_f_x.html#ad0bad7013294fbf08c3cd4462a334e99">__declspec</a>(dllexport) SFX()</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_s_f_x.html#a8cd59f6ff14fe2371dcd87dcedfd78a8">__declspec</a>(dllexport)~SFX()</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_s_f_x.html#ae55cbdae082548b85511de868d03a9f2">Buffer</a></td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_s_f_x.html#a463deda3cac1d9c45a494ba33af8a9ea">sizeInBytes</a></td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c">loadFromFile</a>(const std::string &amp;filename)</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_f_x.html#acc6b505cf68bbc3619ed7614739fe5bc">loadFromMemory</a>(const void *data, std::size_t sizeInBytes)</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_f_x.html#aedbae5b62b225a4e4d20dbfa11b2f0ec">loadFromSamples</a>(const sf::Int16 *samples, std::size_t sampleCount, unsigned int channelCount, unsigned int sampleRate)</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_f_x.html#a8df4611064786e8daf406197d2c54c0c">loadFromStream</a>(sf::InputStream &amp;stream)</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_f_x.html#aa88af2470f7f001e98f7dd512c610433">SFX</a>()</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_s_f_x.html#ab7f079df2d4b684a0ac5246a9356390a">SFX</a>(std::string filename)</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_s_f_x.html#a6d123bd5ec64f90e1e8c70e2f15f6fd4">~SFX</a>()</td><td class="entry"><a class="el" href="class_s_f_x.html">SFX</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:43 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

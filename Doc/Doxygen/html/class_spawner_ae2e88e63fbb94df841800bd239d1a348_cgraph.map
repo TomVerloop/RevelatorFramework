@@ -1,0 +1,4 @@
+<map id="Spawner::pushComponent" name="Spawner::pushComponent">
+<area shape="rect" id="node2" href="$class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d" title="GameFactory::getInstance" alt="" coords="236,5,412,32"/>
+<area shape="rect" id="node3" href="$class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="228,57,420,98"/>
+</map>

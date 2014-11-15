@@ -1,6 +1,6 @@
 <map id="Drawable" name="Drawable">
-<area shape="rect" id="node2" href="$class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,145,148,648"/>
-<area shape="rect" id="node3" href="$class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="172,358,299,435"/>
-<area shape="rect" id="node4" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="323,336,431,457"/>
-<area shape="rect" id="node5" href="$class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="293,696,460,817"/>
+<area shape="rect" id="node2" href="$class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,160,217,633"/>
+<area shape="rect" id="node3" href="$class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="241,358,368,435"/>
+<area shape="rect" id="node4" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ GameScreen()\l+ ~GameScreen()\l+ Update()\l+ Draw()\l+ addLayer()\l+ removeLayer()\l+ getLayer()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="392,299,519,494"/>
+<area shape="rect" id="node5" href="$class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="372,681,539,803"/>
 </map>

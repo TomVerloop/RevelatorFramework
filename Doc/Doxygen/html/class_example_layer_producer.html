@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_example_layer_producer.html','')
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,14 +120,14 @@ Inheritance diagram for ExampleLayerProducer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_example_layer_producer__inherit__graph.png" border="0" usemap="#_example_layer_producer_inherit__map" alt="Inheritance graph"/></div>
 <map name="_example_layer_producer_inherit__map" id="_example_layer_producer_inherit__map">
-<area shape="rect" id="node2" href="class_layer_producer.html" title="{LayerProducer\n||+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="44,5,152,141"/></map>
+<area shape="rect" id="node2" href="class_layer_producer.html" title="{LayerProducer\n||+ LayerProducer()\l+ ~LayerProducer()\l+ Produce()\l+ Produce()\l+ Produce()\l}" alt="" coords="31,5,165,141"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for ExampleLayerProducer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_example_layer_producer__coll__graph.png" border="0" usemap="#_example_layer_producer_coll__map" alt="Collaboration graph"/></div>
 <map name="_example_layer_producer_coll__map" id="_example_layer_producer_coll__map">
-<area shape="rect" id="node2" href="class_layer_producer.html" title="{LayerProducer\n||+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="44,5,152,141"/></map>
+<area shape="rect" id="node2" href="class_layer_producer.html" title="{LayerProducer\n||+ LayerProducer()\l+ ~LayerProducer()\l+ Produce()\l+ Produce()\l+ Produce()\l}" alt="" coords="31,5,165,141"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -141,16 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a580af18f887042b6ef9170f92ee14b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_example_layer_producer.html#a580af18f887042b6ef9170f92ee14b8e">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package) override</td></tr>
 <tr class="separator:a580af18f887042b6ef9170f92ee14b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_layer_producer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer_producer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_layer_producer.html">LayerProducer</a></td></tr>
-<tr class="memitem:a6228aba68947885df127588e5eb81715 inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a> (dllexport) <a class="el" href="class_layer_producer.html">LayerProducer</a>()</td></tr>
-<tr class="separator:a6228aba68947885df127588e5eb81715 inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41661b95185b1bad454ccad7ca191a34 inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a41661b95185b1bad454ccad7ca191a34">__declspec</a> (dllexport)~<a class="el" href="class_layer_producer.html">LayerProducer</a>()</td></tr>
-<tr class="separator:a41661b95185b1bad454ccad7ca191a34 inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ac095d29d14c2c6d7684846362648e inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a38ac095d29d14c2c6d7684846362648e">__declspec</a> (dllexport) virtual <a class="el" href="class_layer.html">Layer</a> *Produce()=0</td></tr>
-<tr class="separator:a38ac095d29d14c2c6d7684846362648e inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f1180d7c95d164730c6104d305b583 inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a17f1180d7c95d164730c6104d305b583">__declspec</a> (dllexport) virtual <a class="el" href="class_layer.html">Layer</a> *Produce(<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
-<tr class="separator:a17f1180d7c95d164730c6104d305b583 inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e0f254e3de5e9e34075e4a4dd00dc0a inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a5e0f254e3de5e9e34075e4a4dd00dc0a">__declspec</a> (dllexport) virtual <a class="el" href="class_layer.html">Layer</a> *Produce(<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
-<tr class="separator:a5e0f254e3de5e9e34075e4a4dd00dc0a inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0301ebdf75429cfd1815ded361ff655f inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a> ()</td></tr>
+<tr class="separator:a0301ebdf75429cfd1815ded361ff655f inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3ed114fd9cae6ee77ccead38066d3b inherit pub_methods_class_layer_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a> ()</td></tr>
+<tr class="separator:a7b3ed114fd9cae6ee77ccead38066d3b inherit pub_methods_class_layer_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a46734be5040e6cfe596f8f9bfd2703cd"></a>
@@ -200,10 +196,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">LayerProducer</a>.</p>
 
 </div>
 </div>
@@ -224,10 +222,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_layer_producer.html#a20ffa919098cda78577d64bffccc3680">LayerProducer</a>.</p>
 
 </div>
 </div>
@@ -248,10 +248,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_layer_producer.html#a39650cad3ffe7017b51637072937e65a">LayerProducer</a>.</p>
 
 </div>
 </div>
@@ -265,7 +267,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_example_layer_producer.html">ExampleLayerProducer</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:40 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

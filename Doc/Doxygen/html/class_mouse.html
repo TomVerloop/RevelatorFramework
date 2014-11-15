@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_mouse.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,6 +108,7 @@ $(document).ready(function(){initNavTree('class_mouse.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mouse-members.html">List of all members</a>  </div>
@@ -123,33 +126,36 @@ Collaboration diagram for Mouse:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f8cad462f144fedf82bc54f1566e50f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a5f8cad462f144fedf82bc54f1566e50f">__declspec</a> (dllexport)~<a class="el" href="class_mouse.html">Mouse</a>()</td></tr>
-<tr class="separator:a5f8cad462f144fedf82bc54f1566e50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20435d528429f91f08e2c3bd6f2e8b43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a20435d528429f91f08e2c3bd6f2e8b43">__declspec</a> (dllexport) static <a class="el" href="class_mouse.html">Mouse</a> &amp;getInstance()</td></tr>
-<tr class="separator:a20435d528429f91f08e2c3bd6f2e8b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270b06a79e098e62f8a781bc069e8442"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a270b06a79e098e62f8a781bc069e8442">__declspec</a> (dllexport) <a class="el" href="class_mouse.html">Mouse</a>(const <a class="el" href="class_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
-<tr class="separator:a270b06a79e098e62f8a781bc069e8442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a843be0900007698eb252574b66aaf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a9a843be0900007698eb252574b66aaf4">__declspec</a> (dllexport) <a class="el" href="class_mouse.html">Mouse</a> &amp;operator</td></tr>
-<tr class="separator:a9a843be0900007698eb252574b66aaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b71e01cd362bfac3b49c8f7060b326a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a8b71e01cd362bfac3b49c8f7060b326a">__declspec</a> (dllexport) bool getLeft()</td></tr>
-<tr class="separator:a8b71e01cd362bfac3b49c8f7060b326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38020f21b0de83806790c3d3acb5971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#ac38020f21b0de83806790c3d3acb5971">__declspec</a> (dllexport) bool getRight()</td></tr>
-<tr class="separator:ac38020f21b0de83806790c3d3acb5971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a749c6251455f83e534e34f09b999960d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a749c6251455f83e534e34f09b999960d">__declspec</a> (dllexport) bool getMiddle()</td></tr>
-<tr class="separator:a749c6251455f83e534e34f09b999960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed05b28cf22053dcbf7f3eb798426b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a1ed05b28cf22053dcbf7f3eb798426b6">__declspec</a> (dllexport) bool getXButton1()</td></tr>
-<tr class="separator:a1ed05b28cf22053dcbf7f3eb798426b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1cefd84a6ab56a54f5857a728ac7b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a8e1cefd84a6ab56a54f5857a728ac7b9">__declspec</a> (dllexport) bool getXButton2()</td></tr>
-<tr class="separator:a8e1cefd84a6ab56a54f5857a728ac7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed195e7d0d2d1c8a9a210325e6b7035c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#aed195e7d0d2d1c8a9a210325e6b7035c">__declspec</a> (dllexport) sf</td></tr>
-<tr class="separator:aed195e7d0d2d1c8a9a210325e6b7035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f36b07846e423c869ac1246fd131a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a05f36b07846e423c869ac1246fd131a2">__declspec</a> (dllexport) void Update()</td></tr>
-<tr class="separator:a05f36b07846e423c869ac1246fd131a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf7d8abef29c10be77ead773f964f4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#afdf7d8abef29c10be77ead773f964f4f">~Mouse</a> ()</td></tr>
+<tr class="separator:afdf7d8abef29c10be77ead773f964f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c87ac5e0784ef185d003486c0cd97a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a6c87ac5e0784ef185d003486c0cd97a7">Mouse</a> (const <a class="el" href="class_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="separator:a6c87ac5e0784ef185d003486c0cd97a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba383d1a0ed97fcc7133baeb13dffb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a0ba383d1a0ed97fcc7133baeb13dffb9">operator=</a> (const <a class="el" href="class_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="separator:a0ba383d1a0ed97fcc7133baeb13dffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7bc3e6f4ea41b41d983300cafe94e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#aba7bc3e6f4ea41b41d983300cafe94e3">getLeft</a> ()</td></tr>
+<tr class="separator:aba7bc3e6f4ea41b41d983300cafe94e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a56ce6e0c3dee5399dd8bd317f0300"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a57a56ce6e0c3dee5399dd8bd317f0300">getRight</a> ()</td></tr>
+<tr class="separator:a57a56ce6e0c3dee5399dd8bd317f0300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971194f66c07663aa9d9a1f3256a459e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a971194f66c07663aa9d9a1f3256a459e">getMiddle</a> ()</td></tr>
+<tr class="separator:a971194f66c07663aa9d9a1f3256a459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e7edee2f57d2b4284e12946b945392"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a34e7edee2f57d2b4284e12946b945392">getXButton1</a> ()</td></tr>
+<tr class="separator:a34e7edee2f57d2b4284e12946b945392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f61c34b9a79970983c2151698481b35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a4f61c34b9a79970983c2151698481b35">getXButton2</a> ()</td></tr>
+<tr class="separator:a4f61c34b9a79970983c2151698481b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a1dc1c7d7edf64110f8bc4795966e2"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a96a1dc1c7d7edf64110f8bc4795966e2">getMousePosition</a> ()</td></tr>
+<tr class="separator:a96a1dc1c7d7edf64110f8bc4795966e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9756fabb1ae55d56e10b930e5592b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6">Update</a> ()</td></tr>
+<tr class="separator:add9756fabb1ae55d56e10b930e5592b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a96ed80e3232b68b34368c8f1f79f5cff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a96ed80e3232b68b34368c8f1f79f5cff">getInstance</a> ()</td></tr>
+<tr class="separator:a96ed80e3232b68b34368c8f1f79f5cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a3a7c4f8d10b38469887b51c324e58b41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a3a7c4f8d10b38469887b51c324e58b41">__declspec</a> (dllexport) <a class="el" href="class_mouse.html">Mouse</a>()</td></tr>
-<tr class="separator:a3a7c4f8d10b38469887b51c324e58b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99024d3700d649ae19c1537b42a3e86d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">Mouse</a> ()</td></tr>
+<tr class="separator:a99024d3700d649ae19c1537b42a3e86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -166,15 +172,14 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae83f237e6ca4e0f366eb6f1a03964886"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#ae83f237e6ca4e0f366eb6f1a03964886">MousePosition</a></td></tr>
 <tr class="separator:ae83f237e6ca4e0f366eb6f1a03964886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5f8cad462f144fedf82bc54f1566e50f"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afdf7d8abef29c10be77ead773f964f4f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Mouse::__declspec </td>
+          <td class="memname">Mouse::~Mouse </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -183,23 +188,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a20435d528429f91f08e2c3bd6f2e8b43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a270b06a79e098e62f8a781bc069e8442"></a>
+<a class="anchor" id="a6c87ac5e0784ef185d003486c0cd97a7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,11 +196,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Mouse::__declspec </td>
+          <td class="memname">Mouse::Mouse </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td>
+          <td class="paramname"><em>mouse</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -223,23 +212,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9a843be0900007698eb252574b66aaf4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8b71e01cd362bfac3b49c8f7060b326a"></a>
+<a class="anchor" id="a99024d3700d649ae19c1537b42a3e86d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -247,169 +220,8 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Mouse::__declspec </td>
+          <td class="memname">Mouse::Mouse </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac38020f21b0de83806790c3d3acb5971"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a749c6251455f83e534e34f09b999960d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1ed05b28cf22053dcbf7f3eb798426b6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e1cefd84a6ab56a54f5857a728ac7b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aed195e7d0d2d1c8a9a210325e6b7035c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a05f36b07846e423c869ac1246fd131a2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3a7c4f8d10b38469887b51c324e58b41"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mouse::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -420,6 +232,234 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph.png" border="0" usemap="#class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph" alt=""/></div>
+<map name="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph" id="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph">
+<area shape="rect" id="node2" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6" title="Mouse::Update" alt="" coords="161,5,272,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a96ed80e3232b68b34368c8f1f79f5cff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse.html">Mouse</a> &amp; Mouse::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph.png" border="0" usemap="#class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph" alt=""/></div>
+<map name="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph" id="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph">
+<area shape="rect" id="node2" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="189,5,352,32"/><area shape="rect" id="node3" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="400,5,539,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="587,5,637,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aba7bc3e6f4ea41b41d983300cafe94e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mouse::getLeft </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a971194f66c07663aa9d9a1f3256a459e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mouse::getMiddle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96a1dc1c7d7edf64110f8bc4795966e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Mouse::getMousePosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57a56ce6e0c3dee5399dd8bd317f0300"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mouse::getRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34e7edee2f57d2b4284e12946b945392"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mouse::getXButton1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f61c34b9a79970983c2151698481b35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mouse::getXButton2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ba383d1a0ed97fcc7133baeb13dffb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mouse.html">Mouse</a>&amp; Mouse::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td>
+          <td class="paramname"><em>mouse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add9756fabb1ae55d56e10b930e5592b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mouse::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph.png" border="0" usemap="#class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph" alt=""/></div>
+<map name="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph" id="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph">
+<area shape="rect" id="node2" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d" title="Mouse::Mouse" alt="" coords="191,5,299,32"/><area shape="rect" id="node3" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="164,56,327,83"/><area shape="rect" id="node4" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="375,56,513,83"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="561,56,612,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -544,8 +584,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_mouse_8hpp_source.html">Mouse.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_mouse_8cpp.html">Mouse.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -553,7 +594,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_mouse.html">Mouse</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

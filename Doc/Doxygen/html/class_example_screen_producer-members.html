@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_example_screen_producer.html',''
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,22 +113,19 @@ $(document).ready(function(){initNavTree('class_example_screen_producer.html',''
 
 <p>This is the complete list of members for <a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen_producer.html#a763fe68a79dccbe05e843124ad62eb36">__declspec</a>(dllexport) GameScreenProducer()</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_screen_producer.html#a3b4fd8a10b2a9e9ed2b5816d464cb3bb">__declspec</a>(dllexport)~GameScreenProducer()</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen_producer.html#a56e7ccd432601c6a28f714201dabc46f">__declspec</a>(dllexport) virtual GameScreen *Produce()=0</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_screen_producer.html#a7a18ea24631d12709cdf30f692802ba2">__declspec</a>(dllexport) virtual GameScreen *Produce(ProducerPackage Package)=0</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen_producer.html#a86b3d35e0edf3bdc411bb9cb79ea2647">__declspec</a>(dllexport) virtual GameScreen *Produce(ProducerPackage *Package)=0</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_example_screen_producer.html#ac33eb1451e3fbd42bb112e81233dcd31">ExampleScreenProducer</a>()</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_example_screen_producer.html#a7eff2a8dd0085b380ba3b41fbf9d0691">Produce</a>() override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_example_screen_producer.html#a085da3f4766c2511f82425f66f29e07e">Produce</a>(ProducerPackage Package) override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_example_screen_producer.html#a3c1e2f971c209bc027201a563b0c67c8">Produce</a>(ProducerPackage *Package) override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_example_screen_producer.html#ac33eb1451e3fbd42bb112e81233dcd31">ExampleScreenProducer</a>()</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen_producer.html#a9f6e3e5335d3b275c69b5850f57c84c3">GameScreenProducer</a>()</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_example_screen_producer.html#a7eff2a8dd0085b380ba3b41fbf9d0691">Produce</a>() override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_example_screen_producer.html#a085da3f4766c2511f82425f66f29e07e">Produce</a>(ProducerPackage Package) override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_example_screen_producer.html#a3c1e2f971c209bc027201a563b0c67c8">Produce</a>(ProducerPackage *Package) override</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_example_screen_producer.html#a1243a0aa0a1ecd2a218f9dab7b340213">~ExampleScreenProducer</a>()</td><td class="entry"><a class="el" href="class_example_screen_producer.html">ExampleScreenProducer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen_producer.html#ab0b82eada6522d3ac884eeb4bbcb4473">~GameScreenProducer</a>()</td><td class="entry"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:40 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

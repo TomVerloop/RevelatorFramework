@@ -1,0 +1,6 @@
+<map id="Chunk::Collide" name="Chunk::Collide">
+<area shape="rect" id="node2" href="$class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="160,56,303,83"/>
+<area shape="rect" id="node3" href="$class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="351,5,556,32"/>
+<area shape="rect" id="node4" href="$class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="380,56,527,83"/>
+<area shape="rect" id="node5" href="$class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="368,107,539,133"/>
+</map>

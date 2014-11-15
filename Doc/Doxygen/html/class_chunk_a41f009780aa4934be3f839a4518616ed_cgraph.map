@@ -1,0 +1,5 @@
+<map id="Chunk::CollideSingle" name="Chunk::CollideSingle">
+<area shape="rect" id="node2" href="$class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="196,5,401,32"/>
+<area shape="rect" id="node3" href="$class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="225,56,372,83"/>
+<area shape="rect" id="node4" href="$class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="213,107,384,133"/>
+</map>

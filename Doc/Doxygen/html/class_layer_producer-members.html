@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_layer_producer.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,17 +113,17 @@ $(document).ready(function(){initNavTree('class_layer_producer.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_layer_producer.html">LayerProducer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) LayerProducer()</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_layer_producer.html#a41661b95185b1bad454ccad7ca191a34">__declspec</a>(dllexport)~LayerProducer()</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a38ac095d29d14c2c6d7684846362648e">__declspec</a>(dllexport) virtual Layer *Produce()=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_layer_producer.html#a17f1180d7c95d164730c6104d305b583">__declspec</a>(dllexport) virtual Layer *Produce(ProducerPackage Package)=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a5e0f254e3de5e9e34075e4a4dd00dc0a">__declspec</a>(dllexport) virtual Layer *Produce(ProducerPackage *Package)=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a>()</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>()=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a20ffa919098cda78577d64bffccc3680">Produce</a>(ProducerPackage Package)=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_layer_producer.html#a39650cad3ffe7017b51637072937e65a">Produce</a>(ProducerPackage *Package)=0</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a>()</td><td class="entry"><a class="el" href="class_layer_producer.html">LayerProducer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

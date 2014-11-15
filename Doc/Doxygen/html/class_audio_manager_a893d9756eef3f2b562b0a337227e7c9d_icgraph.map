@@ -1,0 +1,4 @@
+<map id="AudioManager::StopMusic" name="AudioManager::StopMusic">
+<area shape="rect" id="node2" href="$class_audio_manager.html#ad408d456071f30e96a36893a0ad1d2f8" title="This function plays a interuptable music. If another was playing then it will stop that one..." alt="" coords="228,5,403,32"/>
+<area shape="rect" id="node3" href="$class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733" title="ScreenManager::ScreenManager" alt="" coords="451,5,663,32"/>
+</map>

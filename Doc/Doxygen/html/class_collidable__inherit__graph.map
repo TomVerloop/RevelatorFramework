@@ -1,3 +1,3 @@
 <map id="Collidable" name="Collidable">
-<area shape="rect" id="node2" href="$class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,204,113,399"/>
+<area shape="rect" id="node2" href="$class_sensor.html" title="{Sensor\n|&#45; VisionRange\l&#45; SeenObjects\l|+ Sensor()\l+ ~Sensor()\l+ addSeenObject()\l+ getSeenObject()\l+ SeenObjectCount()\l+ GetVisionRadius()\l+ DrawVision()\l}" alt="" coords="5,233,149,413"/>
 </map>

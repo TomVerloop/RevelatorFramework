@@ -1,8 +1,41 @@
-﻿Build started 13/11/2014 12:55:00 PM.
+﻿Build started 15/11/2014 10:05:31 AM.
      1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\RevelatorFramework_API\RevelatorFramework_API.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ScreenManager.cpp
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\RevelatorFramework_API.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AudioManager.cpp Chunk.cpp ChunkManager.cpp Collidable.cpp Drawable.cpp EntryObject.cpp GameComponent.cpp GameFactory.cpp GameObjectProducer.cpp GameScreen.cpp GameScreenProducer.cpp Keyboard.cpp Layer.cpp LayerProducer.cpp Mouse.cpp ProducerPackage.cpp SFX.cpp ScreenManager.cpp Sensor.cpp Spawner.cpp TextureManager.cpp UpdateData.cpp Utils.cpp WindowManager.cpp
+         WindowManager.cpp
+         Utils.cpp
+         UpdateData.cpp
+         TextureManager.cpp
+     1>d:\users\tom\documents\visual studio 2013\projects\revelatorframework\revelatorframework_api\texturemanager.cpp(56): warning C4172: returning address of local variable or temporary
+         Spawner.cpp
+         Sensor.cpp
          ScreenManager.cpp
+         SFX.cpp
+         ProducerPackage.cpp
+         Mouse.cpp
+         LayerProducer.cpp
+         Layer.cpp
+         Keyboard.cpp
+         GameScreenProducer.cpp
+         GameScreen.cpp
+         GameObjectProducer.cpp
+         GameFactory.cpp
+         GameComponent.cpp
+         EntryObject.cpp
+         Drawable.cpp
+         Generating Code...
+         Compiling...
+         Collidable.cpp
+         ChunkManager.cpp
+         Chunk.cpp
+         AudioManager.cpp
+         Generating Code...
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REVELATORFRAMEWORK_API_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\RevelatorFramework_API.res" RevelatorFramework_API.rc 
        Link:
          D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-audio-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.lib" /MACHINE:X86 /DLL Debug\RevelatorFramework_API.res
          Debug\AudioManager.obj
@@ -31,10 +64,11 @@
          Debug\UpdateData.obj
          Debug\Utils.obj
          Debug\WindowManager.obj
+         LINK : D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll not found or not built by the last incremental link; performing full link
             Creating library D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.lib and object D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.exp
          RevelatorFramework_API.vcxproj -> D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Debug\RevelatorFramework_API.dll
      1>Done Building Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\RevelatorFramework_API\RevelatorFramework_API.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.36
+Time Elapsed 00:00:20.26

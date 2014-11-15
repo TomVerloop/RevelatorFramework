@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_chunk_8hpp.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,7 +106,7 @@ $(document).ready(function(){initNavTree('_chunk_8hpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Chunk.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -136,25 +138,54 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Class represents a small portion of a screen.  <a href="class_chunk.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae8491c2d0b49e70e588b388b90a9a8ab"><td class="memItemLeft" align="right" valign="top">enum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chunk_8hpp.html#ae8491c2d0b49e70e588b388b90a9a8ab">__declspec</a> (dllexport) Position</td></tr>
-<tr class="separator:ae8491c2d0b49e70e588b388b90a9a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab91b34ae619fcdfcba4522b4f335bf83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a> { <br/>
+&#160;&#160;<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a064db191011fd8bfb6712af1aef481a7">topleft</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a3961740aa293a50c701d278225f7050a">top</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a43b33eaa6b66f3ac31b8e442fa1f195d">topright</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83ac6c4bfa285e112c6854a2d820f854e3b">center</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83ab0ac36b187aa60c167ffcead3d5a03c0">left</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a">right</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a78eabb9afa357ce312beead8cf7e670f">bottomleft</a>, 
+<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a692ac8f8a4a43ac2513ce4cd90dc3ebe">bottom</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a24620314707c0e09aee737c546427f38">bottomright</a>
+<br/>
+ }</td></tr>
+<tr class="separator:ab91b34ae619fcdfcba4522b4f335bf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae8491c2d0b49e70e588b388b90a9a8ab"></a>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum __declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a064db191011fd8bfb6712af1aef481a7"></a>topleft</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a3961740aa293a50c701d278225f7050a"></a>top</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a43b33eaa6b66f3ac31b8e442fa1f195d"></a>topright</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83ac6c4bfa285e112c6854a2d820f854e3b"></a>center</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83ab0ac36b187aa60c167ffcead3d5a03c0"></a>left</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a"></a>right</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a78eabb9afa357ce312beead8cf7e670f"></a>bottomleft</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a692ac8f8a4a43ac2513ce4cd90dc3ebe"></a>bottom</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab91b34ae619fcdfcba4522b4f335bf83a24620314707c0e09aee737c546427f38"></a>bottomright</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -164,7 +195,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_chunk_8hpp.html">Chunk.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:07 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:33 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

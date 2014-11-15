@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_example_layer.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,14 +120,14 @@ Inheritance diagram for ExampleLayer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_example_layer__inherit__graph.png" border="0" usemap="#_example_layer_inherit__map" alt="Inheritance graph"/></div>
 <map name="_example_layer_inherit__map" id="_example_layer_inherit__map">
-<area shape="rect" id="node2" href="class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l# Chunks\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="18,5,126,273"/></map>
+<area shape="rect" id="node2" href="class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l# Chunks\l|+ Layer()\l+ ~Layer()\l+ Update()\l+ Draw()\l+ isEnabled()\l+ isDrawing()\l+ isUpdating()\l+ setEnabled()\l+ setDrawing()\l+ setUpdating()\l+ getChunkManager()\l+ UpdateHandle()\l}" alt="" coords="5,5,152,288"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for ExampleLayer:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_example_layer__coll__graph.png" border="0" usemap="#_example_layer_coll__map" alt="Collaboration graph"/></div>
 <map name="_example_layer_coll__map" id="_example_layer_coll__map">
-<area shape="rect" id="node2" href="class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="36,1469,144,1723"/><area shape="rect" id="node3" href="class_chunk_manager.html" title="{ChunkManager\n||+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="35,1256,145,1407"/><area shape="rect" id="node4" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="19,808,161,1179"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,257,113,349"/><area shape="rect" id="node6" href="class_game_component.html" title="{GameComponent\n|+ y\l# Name\l# ID\l# Position\l# DeadComponent\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 6 more...\l}" alt="" coords="109,463,239,745"/><area shape="rect" id="node7" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="164,5,272,156"/><area shape="rect" id="node8" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="264,205,372,400"/><area shape="rect" id="node9" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="396,242,504,363"/></map>
+<area shape="rect" id="node2" href="class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l|+ Layer()\l+ ~Layer()\l+ Update()\l+ Draw()\l+ isEnabled()\l+ isDrawing()\l+ isUpdating()\l+ setEnabled()\l+ setDrawing()\l+ setUpdating()\l+ getChunkManager()\l+ UpdateHandle()\l}" alt="" coords="38,823,185,1091"/><area shape="rect" id="node3" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above..." alt="" coords="29,595,193,760"/><area shape="rect" id="node4" href="class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,161,217,517"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -137,29 +139,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97b36d082a4b5dd7e145773fca666490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_example_layer.html#a97b36d082a4b5dd7e145773fca666490">UpdateHandle</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject) override</td></tr>
 <tr class="separator:a97b36d082a4b5dd7e145773fca666490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_layer.html">Layer</a></td></tr>
-<tr class="memitem:aef82e8c88a73de071f2951744dd5fbc7 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aef82e8c88a73de071f2951744dd5fbc7">__declspec</a> (dllexport) <a class="el" href="class_layer.html">Layer</a>()</td></tr>
-<tr class="separator:aef82e8c88a73de071f2951744dd5fbc7 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae17eacb9709778961a8f044834963c92 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ae17eacb9709778961a8f044834963c92">__declspec</a> (dllexport)~<a class="el" href="class_layer.html">Layer</a>()</td></tr>
-<tr class="separator:ae17eacb9709778961a8f044834963c92 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4209cdfc6e8685586be81f69a8b155a inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af4209cdfc6e8685586be81f69a8b155a">__declspec</a> (dllexport) virtual void Update(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
-<tr class="separator:af4209cdfc6e8685586be81f69a8b155a inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803481a463be933245ccf8a99eda9641 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) virtual <br class="typebreak"/>
-void Draw(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a803481a463be933245ccf8a99eda9641">__declspec</a> (dllexport) bool isEnabled()</td></tr>
-<tr class="separator:a803481a463be933245ccf8a99eda9641 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8adf7a53cb647e84d749379930d897 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#adf8adf7a53cb647e84d749379930d897">__declspec</a> (dllexport) bool isDrawing()</td></tr>
-<tr class="separator:adf8adf7a53cb647e84d749379930d897 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b55bc3ac94c62d356bfc30f08382d6b inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a4b55bc3ac94c62d356bfc30f08382d6b">__declspec</a> (dllexport) bool isUpdating()</td></tr>
-<tr class="separator:a4b55bc3ac94c62d356bfc30f08382d6b inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabba8310bc18ddf8488cd5685baab5e7 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#aabba8310bc18ddf8488cd5685baab5e7">__declspec</a> (dllexport) void setEnabled(bool b)</td></tr>
-<tr class="separator:aabba8310bc18ddf8488cd5685baab5e7 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5065c5c2027ec45a40870adca41522fc inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a5065c5c2027ec45a40870adca41522fc">__declspec</a> (dllexport) void setDrawing(bool b)</td></tr>
-<tr class="separator:a5065c5c2027ec45a40870adca41522fc inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a99eb35b1d1780c45acd3af6e4ffa2 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a17a99eb35b1d1780c45acd3af6e4ffa2">__declspec</a> (dllexport) void setUpdating(bool b)</td></tr>
-<tr class="separator:a17a99eb35b1d1780c45acd3af6e4ffa2 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe1685bbc80b73fe42a2cc0c58a272d inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a7fe1685bbc80b73fe42a2cc0c58a272d">__declspec</a> (dllexport) <a class="el" href="class_chunk_manager.html">ChunkManager</a> *getChunkManager()</td></tr>
-<tr class="separator:a7fe1685bbc80b73fe42a2cc0c58a272d inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e5ac27992462570451a077f3b629ba inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ac3e5ac27992462570451a077f3b629ba">__declspec</a> (dllexport) virtual void UpdateHandle(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)=0</td></tr>
-<tr class="separator:ac3e5ac27992462570451a077f3b629ba inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f623c7c4737dc29ecc86978d243ac6f inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a> ()</td></tr>
+<tr class="separator:a8f623c7c4737dc29ecc86978d243ac6f inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1ba4804451dfe6cc357194e42762ae inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">~Layer</a> ()</td></tr>
+<tr class="separator:a1b1ba4804451dfe6cc357194e42762ae inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971c3f8d301e250aded4cf0c0b9ad544 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="separator:a971c3f8d301e250aded4cf0c0b9ad544 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008068a5a6bd4dd274bb01bf0246cfaf inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
+<tr class="separator:a008068a5a6bd4dd274bb01bf0246cfaf inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c59677e3c56a7fd5e3dc985bdb9b4c inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">isEnabled</a> ()</td></tr>
+<tr class="separator:a57c59677e3c56a7fd5e3dc985bdb9b4c inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a91415e6bdc2fdb75ae0ac8498868f inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">isDrawing</a> ()</td></tr>
+<tr class="separator:a46a91415e6bdc2fdb75ae0ac8498868f inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2892b95b2df74446d89e4a6388f0c88 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">isUpdating</a> ()</td></tr>
+<tr class="separator:ac2892b95b2df74446d89e4a6388f0c88 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b9de1ac0f3eaa8274b8d0a901a825c inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">setEnabled</a> (bool b)</td></tr>
+<tr class="separator:a68b9de1ac0f3eaa8274b8d0a901a825c inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4f62b4c031e7c2f2d5635ccd38ddd1 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">setDrawing</a> (bool b)</td></tr>
+<tr class="separator:a0a4f62b4c031e7c2f2d5635ccd38ddd1 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0595efe93dbd63b05339f35399d1ad inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">setUpdating</a> (bool b)</td></tr>
+<tr class="separator:a0e0595efe93dbd63b05339f35399d1ad inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfd549c4d1da2e4a2d78a33586c95e1 inherit pub_methods_class_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk_manager.html">ChunkManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">getChunkManager</a> ()</td></tr>
+<tr class="separator:afbfd549c4d1da2e4a2d78a33586c95e1 inherit pub_methods_class_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -222,10 +223,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_layer.html#a1e7a6db5ee252c8ea9c44a21aaf2b0c9">Layer</a>.</p>
 
 </div>
 </div>
@@ -239,7 +242,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_example_layer.html">ExampleLayer</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:40 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

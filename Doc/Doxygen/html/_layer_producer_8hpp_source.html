@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +94,7 @@ $(document).ready(function(){initNavTree('_layer_producer_8hpp_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,14 +114,16 @@ $(document).ready(function(){initNavTree('_layer_producer_8hpp_source.html','');
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_layer_producer.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layer_producer.html">LayerProducer</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) <a class="code" href="class_layer_producer.html">LayerProducer</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) ~<a class="code" href="class_layer_producer.html">LayerProducer</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * Produce() = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * Produce(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">__declspec</a>(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * Produce(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>() = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="ttc" id="class_layer_producer_html_a6228aba68947885df127588e5eb81715"><div class="ttname"><a href="class_layer_producer.html#a6228aba68947885df127588e5eb81715">LayerProducer::__declspec</a></div><div class="ttdeci">__declspec(dllexport) LayerProducer()</div></div>
+<div class="ttc" id="class_layer_producer_html_a80eaa2d71da1e4b9150a14c92516d3e2"><div class="ttname"><a href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">LayerProducer::Produce</a></div><div class="ttdeci">virtual Layer * Produce()=0</div></div>
+<div class="ttc" id="class_layer_producer_html_a7b3ed114fd9cae6ee77ccead38066d3b"><div class="ttname"><a href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">LayerProducer::~LayerProducer</a></div><div class="ttdeci">~LayerProducer()</div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:10</div></div>
+<div class="ttc" id="class_layer_producer_html_a0301ebdf75429cfd1815ded361ff655f"><div class="ttname"><a href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer::LayerProducer</a></div><div class="ttdeci">LayerProducer()</div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:5</div></div>
 <div class="ttc" id="class_producer_package_html"><div class="ttname"><a href="class_producer_package.html">ProducerPackage</a></div><div class="ttdef"><b>Definition:</b> ProducerPackage.hpp:4</div></div>
 <div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.hpp:11</div></div>
 <div class="ttc" id="class_layer_producer_html"><div class="ttname"><a href="class_layer_producer.html">LayerProducer</a></div><div class="ttdef"><b>Definition:</b> LayerProducer.hpp:4</div></div>
@@ -131,7 +135,7 @@ $(document).ready(function(){initNavTree('_layer_producer_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_layer_producer_8hpp.html">LayerProducer.hpp</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:05 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

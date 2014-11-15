@@ -1,5 +1,22 @@
 var searchData=
 [
-  ['q',['Q',['../class_keyboard.html#a73542918c6ffdd4915925fff6aea1eb5',1,'Keyboard']]],
-  ['quote',['Quote',['../class_keyboard.html#ab962f4a569eb3a171fb648c8f6df904a',1,'Keyboard']]]
+  ['r',['R',['../class_keyboard.html#a43732e3f8a2a179490d70bbca9c9cbf7',1,'Keyboard']]],
+  ['ralt',['RAlt',['../class_keyboard.html#a7b5b72389b90761733b885ebe2feaff6',1,'Keyboard']]],
+  ['rbracket',['RBracket',['../class_keyboard.html#a6924305b6bab6e1743c4f30566022e03',1,'Keyboard']]],
+  ['rcontrol',['RControl',['../class_keyboard.html#ab0b3b0b4d17a476568fe9994cf4ad92b',1,'Keyboard']]],
+  ['registerlayerproducer',['RegisterLayerProducer',['../class_game_factory.html#a3a20ae04c8ff992ad080b9742f5831c0',1,'GameFactory']]],
+  ['registerobjectproducer',['RegisterObjectProducer',['../class_game_factory.html#a77df8b5e97869b7d7b667c0852191e20',1,'GameFactory']]],
+  ['registerscreenproducer',['RegisterScreenProducer',['../class_game_factory.html#ad3c85f8654dd2c3aeb7a2b17df05cceb',1,'GameFactory']]],
+  ['removeflaggedfromchunk',['RemoveFlaggedFromChunk',['../class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d',1,'Chunk']]],
+  ['removefromchunk',['RemoveFromChunk',['../class_chunk.html#adf6692fdab4518524e217cc0ef09d282',1,'Chunk']]],
+  ['removelayer',['removeLayer',['../class_game_screen.html#ace7d3aad324a781cd22599b56903fb43',1,'GameScreen']]],
+  ['removescreen',['removeScreen',['../class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8',1,'ScreenManager']]],
+  ['resource_2eh',['resource.h',['../resource_8h.html',1,'']]],
+  ['return',['Return',['../class_keyboard.html#a145aa386b22fd7c1068a336b5e7b8022',1,'Keyboard']]],
+  ['right',['Right',['../class_chunk.html#a0bcf134e2aba0ca49370272c2b3f17a4',1,'Chunk::Right()'],['../class_keyboard.html#adf9fac46978406d8828c6699156b61d8',1,'Keyboard::Right()'],['../_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a',1,'right():&#160;Chunk.hpp']]],
+  ['rightbottom',['RightBottom',['../class_chunk.html#afded01a9a67540c9f64dde5776021f4b',1,'Chunk']]],
+  ['righttop',['RightTop',['../class_chunk.html#a8a7593c89d4fe5ed193e68b9ed40016b',1,'Chunk']]],
+  ['rshift',['RShift',['../class_keyboard.html#a24b00a96a25f3bce3d1bad1e3fc2c600',1,'Keyboard']]],
+  ['rsystem',['RSystem',['../class_keyboard.html#afba86b1479dfa9fb35ace002e19d6da5',1,'Keyboard']]],
+  ['run',['run',['../class_screen_manager.html#abd5e01420eef9552b281de8539b95c75',1,'ScreenManager']]]
 ];

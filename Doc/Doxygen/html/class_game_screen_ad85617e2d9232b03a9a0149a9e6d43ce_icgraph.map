@@ -1,0 +1,5 @@
+<map id="GameScreen::Update" name="GameScreen::Update">
+<area shape="rect" id="node2" href="$class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="200,5,363,32"/>
+<area shape="rect" id="node3" href="$class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="411,5,549,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="597,5,648,32"/>
+</map>

@@ -1,4 +1,6 @@
 <map id="ChunkManager::Draw" name="ChunkManager::Draw">
-<area shape="rect" id="node2" href="$class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="Chunk::Draw" alt="" coords="200,5,296,32"/>
-<area shape="rect" id="node3" href="$class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="Chunk::DrawSelf" alt="" coords="344,5,463,32"/>
+<area shape="rect" id="node2" href="$class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="200,31,296,57"/>
+<area shape="rect" id="node3" href="$class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="344,31,463,57"/>
+<area shape="rect" id="node4" href="$class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="511,5,716,32"/>
+<area shape="rect" id="node5" href="$class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="533,56,693,83"/>
 </map>

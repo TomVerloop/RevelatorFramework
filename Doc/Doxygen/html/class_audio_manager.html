@@ -31,7 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Logo Black Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Revelator Framework
+   &#160;<span id="projectnumber">1</span>
    </div>
+   <div id="projectbrief">A simple sfml based game engine</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +96,7 @@ $(document).ready(function(){initNavTree('class_audio_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,6 +108,7 @@ $(document).ready(function(){initNavTree('class_audio_manager.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_audio_manager-members.html">List of all members</a>  </div>
@@ -126,27 +129,39 @@ Collaboration diagram for AudioManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d67274eaba6212be9de8761439ad3ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a2d67274eaba6212be9de8761439ad3ed">__declspec</a> (dllexport) static <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;getInstance()</td></tr>
-<tr class="memdesc:a2d67274eaba6212be9de8761439ad3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static function returns a Singleton reference to the Audiomanager.  <a href="#a2d67274eaba6212be9de8761439ad3ed">More...</a><br/></td></tr>
-<tr class="separator:a2d67274eaba6212be9de8761439ad3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4e089fd44ae9e5179fe9e0b4ea70c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a0a4e089fd44ae9e5179fe9e0b4ea70c5">__declspec</a> (dllexport) <a class="el" href="class_audio_manager.html">AudioManager</a>(const <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;audiomanager)=delete</td></tr>
-<tr class="memdesc:a0a4e089fd44ae9e5179fe9e0b4ea70c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#a0a4e089fd44ae9e5179fe9e0b4ea70c5">More...</a><br/></td></tr>
-<tr class="separator:a0a4e089fd44ae9e5179fe9e0b4ea70c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42776044d4549a30cc408be55678c8d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a42776044d4549a30cc408be55678c8d2">__declspec</a> (dllexport) <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;operator</td></tr>
-<tr class="memdesc:a42776044d4549a30cc408be55678c8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted assignment opperator.  <a href="#a42776044d4549a30cc408be55678c8d2">More...</a><br/></td></tr>
-<tr class="separator:a42776044d4549a30cc408be55678c8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8c79c3166b6ce297cebeacf0323241"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a4e8c79c3166b6ce297cebeacf0323241">__declspec</a> (dllexport)~<a class="el" href="class_audio_manager.html">AudioManager</a>()</td></tr>
-<tr class="memdesc:a4e8c79c3166b6ce297cebeacf0323241"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Destructor.  <a href="#a4e8c79c3166b6ce297cebeacf0323241">More...</a><br/></td></tr>
-<tr class="separator:a4e8c79c3166b6ce297cebeacf0323241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a3f4f84432e899de52a644c5950435"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ae2a3f4f84432e899de52a644c5950435">__declspec</a> (dllexport) bool musicIsPlaying()</td></tr>
-<tr class="memdesc:ae2a3f4f84432e899de52a644c5950435"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if any music is playing at the moment.  <a href="#ae2a3f4f84432e899de52a644c5950435">More...</a><br/></td></tr>
-<tr class="separator:ae2a3f4f84432e899de52a644c5950435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008a2bea57103294f092e3bd1f9d84da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a008a2bea57103294f092e3bd1f9d84da">AudioManager</a> (const <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;audiomanager)=delete</td></tr>
+<tr class="memdesc:a008a2bea57103294f092e3bd1f9d84da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#a008a2bea57103294f092e3bd1f9d84da">More...</a><br/></td></tr>
+<tr class="separator:a008a2bea57103294f092e3bd1f9d84da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9245601e53c1584a3d7abef1aaefced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_manager.html">AudioManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#af9245601e53c1584a3d7abef1aaefced">operator=</a> (const <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;audiomanager)=delete</td></tr>
+<tr class="memdesc:af9245601e53c1584a3d7abef1aaefced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted assignment opperator.  <a href="#af9245601e53c1584a3d7abef1aaefced">More...</a><br/></td></tr>
+<tr class="separator:af9245601e53c1584a3d7abef1aaefced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a> ()</td></tr>
+<tr class="memdesc:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Destructor.  <a href="#ad94dc46723c6d7cf8c81fc3772a842aa">More...</a><br/></td></tr>
+<tr class="separator:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad200f850f1289b15d3234d89f57206bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ad200f850f1289b15d3234d89f57206bb">PlaySFX</a> (std::string name)</td></tr>
+<tr class="memdesc:ad200f850f1289b15d3234d89f57206bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function plays a uninteruptable sound effect.  <a href="#ad200f850f1289b15d3234d89f57206bb">More...</a><br/></td></tr>
+<tr class="separator:ad200f850f1289b15d3234d89f57206bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad408d456071f30e96a36893a0ad1d2f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ad408d456071f30e96a36893a0ad1d2f8">PlayMusic</a> (std::string name)</td></tr>
+<tr class="memdesc:ad408d456071f30e96a36893a0ad1d2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function plays a interuptable music. If another was playing then it will stop that one.  <a href="#ad408d456071f30e96a36893a0ad1d2f8">More...</a><br/></td></tr>
+<tr class="separator:ad408d456071f30e96a36893a0ad1d2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893d9756eef3f2b562b0a337227e7c9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a893d9756eef3f2b562b0a337227e7c9d">StopMusic</a> ()</td></tr>
+<tr class="memdesc:a893d9756eef3f2b562b0a337227e7c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops any playing music except sound effects.  <a href="#a893d9756eef3f2b562b0a337227e7c9d">More...</a><br/></td></tr>
+<tr class="separator:a893d9756eef3f2b562b0a337227e7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908b5114da8a03c6d7db0f81c4f0ec8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a908b5114da8a03c6d7db0f81c4f0ec8e">musicIsPlaying</a> ()</td></tr>
+<tr class="memdesc:a908b5114da8a03c6d7db0f81c4f0ec8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if any music is playing at the moment.  <a href="#a908b5114da8a03c6d7db0f81c4f0ec8e">More...</a><br/></td></tr>
+<tr class="separator:a908b5114da8a03c6d7db0f81c4f0ec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a03807d1257d2e07f666764dda149c47a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a03807d1257d2e07f666764dda149c47a">getInstance</a> ()</td></tr>
+<tr class="memdesc:a03807d1257d2e07f666764dda149c47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static function returns a Singleton reference to the Audiomanager.  <a href="#a03807d1257d2e07f666764dda149c47a">More...</a><br/></td></tr>
+<tr class="separator:a03807d1257d2e07f666764dda149c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a08b3ec802ca9bdd8eda7d50e339b32ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a08b3ec802ca9bdd8eda7d50e339b32ec">__declspec</a> (dllexport) <a class="el" href="class_audio_manager.html">AudioManager</a>()</td></tr>
-<tr class="memdesc:a08b3ec802ca9bdd8eda7d50e339b32ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a08b3ec802ca9bdd8eda7d50e339b32ec">More...</a><br/></td></tr>
-<tr class="separator:a08b3ec802ca9bdd8eda7d50e339b32ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59d8605c1d706e7bab47d4e8f900d09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a> ()</td></tr>
+<tr class="memdesc:ae59d8605c1d706e7bab47d4e8f900d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#ae59d8605c1d706e7bab47d4e8f900d09">More...</a><br/></td></tr>
+<tr class="separator:ae59d8605c1d706e7bab47d4e8f900d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -163,50 +178,23 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This Singleton Manages and plays all music and soundeffects. </p>
+<p>An empty class for future use.</p>
+<p>This Abstract Class holds data used to manage the drawing of a gamecomponent.</p>
 <p>This Class is Singleton defined. It holds an reference to all soundeffects and music. It makes sure only one song is played at a time. sound effects however can be played multiple at a time. </p>
 <dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>A Singleton </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2d67274eaba6212be9de8761439ad3ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AudioManager::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This static function returns a Singleton reference to the Audiomanager. </p>
-<p>This function plays a uninteruptable sound effect.</p>
-<dl class="section return"><dt>Returns</dt><dd>A Refrence to the Audiomanager.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the sound effect. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not.</dd></dl>
-<p>This function plays a interuptable music. If another was playing then it will stop that one. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the music. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not.</dd></dl>
-<p>This function stops any playing music except sound effects. </p>
-<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0a4e089fd44ae9e5179fe9e0b4ea70c5"></a>
+<dl class="section warning"><dt>Warning</dt><dd>A Singleton</dd></dl>
+<p>This class purely is used to draw a component on the screen. If a gamecomponent holds one of these it will execute the pure virtual draw method. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015</dd></dl>
+<p>This empty class is made for future use. it will be send to a gamescreen when it becomes active. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a008a2bea57103294f092e3bd1f9d84da"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -214,11 +202,11 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AudioManager::__declspec </td>
+          <td class="memname">AudioManager::AudioManager </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>audiomanager</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -232,32 +220,13 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<a class="anchor" id="a42776044d4549a30cc408be55678c8d2"></a>
+<a class="anchor" id="ad94dc46723c6d7cf8c81fc3772a842aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AudioManager::__declspec </td>
+          <td class="memname">AudioManager::~AudioManager </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deleted assignment opperator. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4e8c79c3166b6ce297cebeacf0323241"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AudioManager::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -268,7 +237,7 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<a class="anchor" id="ae2a3f4f84432e899de52a644c5950435"></a>
+<a class="anchor" id="ae59d8605c1d706e7bab47d4e8f900d09"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -276,9 +245,78 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AudioManager::__declspec </td>
+          <td class="memname">AudioManager::AudioManager </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The default constructor. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09_cgraph.png" border="0" usemap="#class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09_cgraph" alt=""/></div>
+<map name="class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09_cgraph" id="class_audio_manager_ae59d8605c1d706e7bab47d4e8f900d09_cgraph">
+<area shape="rect" id="node2" href="class_s_f_x.html#a52cafd60db60baa07853333c34f05a9c" title="SFX::loadFromFile" alt="" coords="249,5,379,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a03807d1257d2e07f666764dda149c47a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_manager.html">AudioManager</a> &amp; AudioManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This static function returns a Singleton reference to the Audiomanager. </p>
+<dl class="section return"><dt>Returns</dt><dd>A Refrence to the Audiomanager. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_a03807d1257d2e07f666764dda149c47a_icgraph.png" border="0" usemap="#class_audio_manager_a03807d1257d2e07f666764dda149c47a_icgraph" alt=""/></div>
+<map name="class_audio_manager_a03807d1257d2e07f666764dda149c47a_icgraph" id="class_audio_manager_a03807d1257d2e07f666764dda149c47a_icgraph">
+<area shape="rect" id="node2" href="class_audio_manager.html#a908b5114da8a03c6d7db0f81c4f0ec8e" title="This function checks if any music is playing at the moment. " alt="" coords="239,5,440,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733" title="ScreenManager::ScreenManager" alt="" coords="233,56,445,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a908b5114da8a03c6d7db0f81c4f0ec8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::musicIsPlaying </td>
+          <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -293,9 +331,18 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <p>This function checks if any music is playing at the moment. </p>
 <dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not. </dd></dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e_cgraph.png" border="0" usemap="#class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e_cgraph" alt=""/></div>
+<map name="class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e_cgraph" id="class_audio_manager_a908b5114da8a03c6d7db0f81c4f0ec8e_cgraph">
+<area shape="rect" id="node2" href="class_audio_manager.html#a03807d1257d2e07f666764dda149c47a" title="This static function returns a Singleton reference to the Audiomanager. " alt="" coords="255,5,435,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a08b3ec802ca9bdd8eda7d50e339b32ec"></a>
+<a class="anchor" id="af9245601e53c1584a3d7abef1aaefced"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -303,21 +350,116 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AudioManager::__declspec </td>
+          <td class="memname"><a class="el" href="class_audio_manager.html">AudioManager</a>&amp; AudioManager::operator= </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_audio_manager.html">AudioManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>audiomanager</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The default constructor. </p>
+<p>Deleted assignment opperator. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad408d456071f30e96a36893a0ad1d2f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::PlayMusic </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function plays a interuptable music. If another was playing then it will stop that one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the music. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_cgraph.png" border="0" usemap="#class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_cgraph" alt=""/></div>
+<map name="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_cgraph" id="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_cgraph">
+<area shape="rect" id="node2" href="class_audio_manager.html#a893d9756eef3f2b562b0a337227e7c9d" title="This function stops any playing music except sound effects. " alt="" coords="228,5,403,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_icgraph.png" border="0" usemap="#class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_icgraph" alt=""/></div>
+<map name="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_icgraph" id="class_audio_manager_ad408d456071f30e96a36893a0ad1d2f8_icgraph">
+<area shape="rect" id="node2" href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733" title="ScreenManager::ScreenManager" alt="" coords="228,5,440,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad200f850f1289b15d3234d89f57206bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::PlaySFX </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function plays a uninteruptable sound effect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the sound effect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a893d9756eef3f2b562b0a337227e7c9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::StopMusic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function stops any playing music except sound effects. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns a true if the sound is available and false if not. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d_icgraph.png" border="0" usemap="#class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d_icgraph" alt=""/></div>
+<map name="class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d_icgraph" id="class_audio_manager_a893d9756eef3f2b562b0a337227e7c9d_icgraph">
+<area shape="rect" id="node2" href="class_audio_manager.html#ad408d456071f30e96a36893a0ad1d2f8" title="This function plays a interuptable music. If another was playing then it will stop that one..." alt="" coords="228,5,403,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733" title="ScreenManager::ScreenManager" alt="" coords="451,5,663,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -388,8 +530,9 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_audio_manager_8hpp_source.html">AudioManager.hpp</a></li>
+<li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_audio_manager_8cpp.html">AudioManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -397,7 +540,7 @@ sf::Music * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_audio_manager.html">AudioManager</a></li>
-    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
+    <li class="footer">Generated on Sat Nov 15 2014 16:11:38 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,0 +1,4 @@
+<map id="ChunkManager::addGameComponent" name="ChunkManager::addGameComponent">
+<area shape="rect" id="node2" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="292,29,447,56"/>
+<area shape="rect" id="node3" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="495,29,691,56"/>
+</map>

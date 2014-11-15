@@ -1,8 +1,8 @@
 var class_game_object_producer =
 [
-    [ "__declspec", "class_game_object_producer.html#acedff5955f510b5b40ad477b6c016c1d", null ],
-    [ "__declspec", "class_game_object_producer.html#a27d8c68cd2ba92108dcb57f8dabca382", null ],
-    [ "__declspec", "class_game_object_producer.html#a196e596ce8c691618375db29e4b6417a", null ],
-    [ "__declspec", "class_game_object_producer.html#a482128af1d260a085d855b2eb4fdf024", null ],
-    [ "__declspec", "class_game_object_producer.html#a44a6d64e3232301b3cd6ee4166204edb", null ]
+    [ "GameObjectProducer", "class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2", null ],
+    [ "~GameObjectProducer", "class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5", null ],
+    [ "Produce", "class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be", null ],
+    [ "Produce", "class_game_object_producer.html#a2da5f02801c8b16cbf7b26daeade1513", null ],
+    [ "Produce", "class_game_object_producer.html#a572ce99f29ffaa2beb0231756281d403", null ]
 ];

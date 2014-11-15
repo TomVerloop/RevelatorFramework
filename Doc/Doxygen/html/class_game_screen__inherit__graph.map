@@ -1,4 +1,4 @@
 <map id="GameScreen" name="GameScreen">
-<area shape="rect" id="node3" href="$class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="5,315,172,436"/>
-<area shape="rect" id="node2" href="$class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="35,5,143,97"/>
+<area shape="rect" id="node3" href="$class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="5,403,172,524"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="37,5,140,112"/>
 </map>

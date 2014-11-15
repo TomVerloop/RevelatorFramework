@@ -1,4 +1,4 @@
 <map id="ScreenManager::addScreen" name="ScreenManager::addScreen">
-<area shape="rect" id="node2" href="$main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="236,5,347,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="395,5,445,32"/>
+<area shape="rect" id="node2" href="$class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="236,5,424,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="472,5,523,32"/>
 </map>
