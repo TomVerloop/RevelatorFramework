@@ -1,0 +1,4 @@
+<map id="GameObjectProducer" name="GameObjectProducer">
+<area shape="rect" id="node2" href="$class_example_component_producer.html" title="{ExampleComponentProducer\n||+ ExampleComponentProducer()\l+ ~ExampleComponentProducer()\l+ Produce()\l+ Produce()\l+ Produce()\l}" alt="" coords="5,189,224,325"/>
+<area shape="rect" id="node3" href="$class_movable_component_producer.html" title="{MovableComponentProducer\n||+ MovableComponentProducer()\l+ ~MovableComponentProducer()\l+ Produce()\l+ Produce()\l+ Produce()\l}" alt="" coords="249,189,463,325"/>
+</map>

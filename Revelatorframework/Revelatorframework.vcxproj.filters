@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GameComponents">
+      <UniqueIdentifier>{b885d1f7-e0d7-489d-856c-d7db184ad3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents">
+      <UniqueIdentifier>{8a4a1a92-befa-4081-8d2e-b23178a93791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers">
+      <UniqueIdentifier>{b5a3fcf7-c1fe-4e7c-a3f5-9a35446fc669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers">
+      <UniqueIdentifier>{82aa1438-5686-43b0-8dd0-d8e4bfe2cf46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameScreens">
+      <UniqueIdentifier>{fdc6784f-5284-420a-9587-2ddceb29d040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameScreens">
+      <UniqueIdentifier>{ca60358a-18ec-43e2-ba21-5f0a6eebfb72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameScreens\Producers">
+      <UniqueIdentifier>{a97b852e-6964-4b1b-80ad-2537c056525e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameScreens\Producers">
+      <UniqueIdentifier>{7245457b-41f8-4a86-afd0-2f2bce5ee9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers\Producers">
+      <UniqueIdentifier>{26280407-4f15-481b-beb1-f16096c9083b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers\Producers">
+      <UniqueIdentifier>{43c3138e-ce71-4230-88c4-035e3497afd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameComponents\Producers">
+      <UniqueIdentifier>{52c6e5f3-31e4-46b2-902f-b740fd26a4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents\Producers">
+      <UniqueIdentifier>{ae6e6f88-db8e-4734-b075-607f94851941}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleComponentProducer.cpp">
+      <Filter>Source Files\GameComponents\Producers</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableComponentProducer.cpp">
+      <Filter>Source Files\GameComponents\Producers</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleComponent.cpp">
+      <Filter>Source Files\GameComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableComponent.cpp">
+      <Filter>Source Files\GameComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleLayer.cpp">
+      <Filter>Source Files\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleLayerProducer.cpp">
+      <Filter>Source Files\Layers\Producers</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleTestScreen.cpp">
+      <Filter>Source Files\GameScreens</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleScreenProducer.cpp">
+      <Filter>Source Files\GameScreens\Producers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExampleComponentProducer.hpp">
+      <Filter>Header Files\GameComponents\Producers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableComponentProducer.hpp">
+      <Filter>Header Files\GameComponents\Producers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleComponent.hpp">
+      <Filter>Header Files\GameComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableComponent.hpp">
+      <Filter>Header Files\GameComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleLayer.hpp">
+      <Filter>Header Files\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleLayerProducer.hpp">
+      <Filter>Header Files\Layers\Producers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleTestScreen.hpp">
+      <Filter>Header Files\GameScreens</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleScreenProducer.hpp">
+      <Filter>Header Files\GameScreens\Producers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resourses\GameScreens\MainScreen.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Resourses\Layers\MainLayer.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

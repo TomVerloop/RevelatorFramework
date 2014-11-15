@@ -1,0 +1,5 @@
+<map id="MovableComponent::Update" name="MovableComponent::Update">
+<area shape="rect" id="node2" href="$class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae" title="Sensor::SeenObjectCount" alt="" coords="256,5,429,32"/>
+<area shape="rect" id="node3" href="$class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14" title="Sensor::getSeenObject" alt="" coords="264,56,421,83"/>
+<area shape="rect" id="node4" href="$class_update_data.html#a17324f6ed80111443fef3da6208fb6bc" title="UpdateData::SetCameraPosition" alt="" coords="237,107,448,133"/>
+</map>

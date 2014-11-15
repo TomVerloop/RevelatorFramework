@@ -1,0 +1,123 @@
+\hypertarget{class_game_factory}{\section{Game\-Factory Class Reference}
+\label{class_game_factory}\index{Game\-Factory@{Game\-Factory}}
+}
+
+
+{\ttfamily \#include $<$Game\-Factory.\-hpp$>$}
+
+
+
+Collaboration diagram for Game\-Factory\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_game_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_factory_adaa8f1b9fe44c066743b786d1cd71bfb}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_game_factory}{Game\-Factory}()
+\item 
+\-\_\-\-\_\-declspec(dllexport) \\*
+\hyperlink{class_game_screen}{Game\-Screen} $\ast$Produce\-Screen(std \hyperlink{class_game_factory_a9079d555495e2691cce325afe77c4785}{\-\_\-\-\_\-declspec} (dllexport) static \hyperlink{class_game_factory}{Game\-Factory} \&get\-Instance()
+\item 
+\hyperlink{class_game_factory_a38779dd1a14a9e977614b14b01eb231f}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_factory}{Game\-Factory}(const \hyperlink{class_game_factory}{Game\-Factory} \&utils)=delete
+\item 
+\hyperlink{class_game_factory_a7d0a6fccc0aec8cf4d30ba31c945f04e}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_factory}{Game\-Factory} \&operator
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_factory_a6cb0bea926e68e7e2a8267e56f37b27e}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_factory}{Game\-Factory}()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_factory_adaa8f1b9fe44c066743b786d1cd71bfb}{\-\_\-\-\_\-declspec}(dllexport) \hyperlink{class_layer}{Layer} \\*
+$\ast$Produce\-Layer(std std\-::list\\*
+$<$ \hyperlink{class_layer}{Layer} $\ast$ $>$ \hyperlink{class_game_factory_aeb0d338957100663811acae5074943ac}{Layers}
+\item 
+std\-::list$<$ \hyperlink{class_chunk}{Chunk} $\ast$ $>$ \hyperlink{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}{Chunks}
+\item 
+std\-::list$<$ \hyperlink{class_game_screen}{Game\-Screen} $\ast$ $>$ \hyperlink{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}{Screens}
+\item 
+std\-::list$<$ \hyperlink{class_game_component}{Game\-Component} $\ast$ $>$ \hyperlink{class_game_factory_a90fc6360610babaf3d2d880f782772b3}{Components}
+\item 
+std\-::map$<$ std\-::string, \\*
+\hyperlink{class_game_object_producer}{Game\-Object\-Producer} $\ast$ $>$ \hyperlink{class_game_factory_ab72819fc3f241243d44827f75e0a2886}{Object\-Producers}
+\item 
+std\-::map$<$ std\-::string, \\*
+\hyperlink{class_game_screen_producer}{Game\-Screen\-Producer} $\ast$ $>$ \hyperlink{class_game_factory_aa65ba67e6c3fc56ec228c801e02352c8}{Screen\-Producers}
+\item 
+std\-::map$<$ std\-::string, \\*
+\hyperlink{class_layer_producer}{Layer\-Producer} $\ast$ $>$ \hyperlink{class_game_factory_adfadca1996a3982f4b45c67ced1520f2}{Layer\-Producers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_factory_adaa8f1b9fe44c066743b786d1cd71bfb}{\index{Game\-Factory@{Game\-Factory}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameFactory@{Game\-Factory}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}}\label{class_game_factory_adaa8f1b9fe44c066743b786d1cd71bfb}
+\hypertarget{class_game_factory_a9079d555495e2691cce325afe77c4785}{\index{Game\-Factory@{Game\-Factory}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameFactory@{Game\-Factory}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) {\bf Game\-Screen} $\ast$ Produce\-Screen(std Game\-Factory\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}}\label{class_game_factory_a9079d555495e2691cce325afe77c4785}
+\hypertarget{class_game_factory_a38779dd1a14a9e977614b14b01eb231f}{\index{Game\-Factory@{Game\-Factory}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameFactory@{Game\-Factory}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [delete]}}}\label{class_game_factory_a38779dd1a14a9e977614b14b01eb231f}
+\hypertarget{class_game_factory_a7d0a6fccc0aec8cf4d30ba31c945f04e}{\index{Game\-Factory@{Game\-Factory}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameFactory@{Game\-Factory}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}}\label{class_game_factory_a7d0a6fccc0aec8cf4d30ba31c945f04e}
+\hypertarget{class_game_factory_a6cb0bea926e68e7e2a8267e56f37b27e}{\index{Game\-Factory@{Game\-Factory}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameFactory@{Game\-Factory}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Factory\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a6cb0bea926e68e7e2a8267e56f37b27e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}{\index{Game\-Factory@{Game\-Factory}!Chunks@{Chunks}}
+\index{Chunks@{Chunks}!GameFactory@{Game\-Factory}}
+\subsubsection[{Chunks}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Chunk} $\ast$$>$ Game\-Factory\-::\-Chunks\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a77496a7ea1e2fa54acb18c499b3bd3bb}
+\hypertarget{class_game_factory_a90fc6360610babaf3d2d880f782772b3}{\index{Game\-Factory@{Game\-Factory}!Components@{Components}}
+\index{Components@{Components}!GameFactory@{Game\-Factory}}
+\subsubsection[{Components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Component} $\ast$ $>$ Game\-Factory\-::\-Components\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a90fc6360610babaf3d2d880f782772b3}
+\hypertarget{class_game_factory_adfadca1996a3982f4b45c67ced1520f2}{\index{Game\-Factory@{Game\-Factory}!Layer\-Producers@{Layer\-Producers}}
+\index{Layer\-Producers@{Layer\-Producers}!GameFactory@{Game\-Factory}}
+\subsubsection[{Layer\-Producers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Layer\-Producer} $\ast$$>$ Game\-Factory\-::\-Layer\-Producers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_adfadca1996a3982f4b45c67ced1520f2}
+\hypertarget{class_game_factory_aeb0d338957100663811acae5074943ac}{\index{Game\-Factory@{Game\-Factory}!Layers@{Layers}}
+\index{Layers@{Layers}!GameFactory@{Game\-Factory}}
+\subsubsection[{Layers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-declspec} (dllexport) {\bf Layer} $\ast$ Produce\-Layer(std std\-::list$<${\bf Layer} $\ast$$>$ Game\-Factory\-::\-Layers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_aeb0d338957100663811acae5074943ac}
+\hypertarget{class_game_factory_ab72819fc3f241243d44827f75e0a2886}{\index{Game\-Factory@{Game\-Factory}!Object\-Producers@{Object\-Producers}}
+\index{Object\-Producers@{Object\-Producers}!GameFactory@{Game\-Factory}}
+\subsubsection[{Object\-Producers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Game\-Object\-Producer} $\ast$$>$ Game\-Factory\-::\-Object\-Producers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_ab72819fc3f241243d44827f75e0a2886}
+\hypertarget{class_game_factory_aa65ba67e6c3fc56ec228c801e02352c8}{\index{Game\-Factory@{Game\-Factory}!Screen\-Producers@{Screen\-Producers}}
+\index{Screen\-Producers@{Screen\-Producers}!GameFactory@{Game\-Factory}}
+\subsubsection[{Screen\-Producers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, {\bf Game\-Screen\-Producer} $\ast$$>$ Game\-Factory\-::\-Screen\-Producers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_aa65ba67e6c3fc56ec228c801e02352c8}
+\hypertarget{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}{\index{Game\-Factory@{Game\-Factory}!Screens@{Screens}}
+\index{Screens@{Screens}!GameFactory@{Game\-Factory}}
+\subsubsection[{Screens}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Game\-Screen} $\ast$$>$ Game\-Factory\-::\-Screens\hspace{0.3cm}{\ttfamily [private]}}}\label{class_game_factory_a16a8135f6d6b1b60c0d08b39340b34cc}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_game_factory_8hpp}{Game\-Factory.\-hpp}\end{DoxyCompactItemize}

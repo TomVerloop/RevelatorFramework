@@ -1,0 +1,5 @@
+<map id="GameFactory::ProduceLayer" name="GameFactory::ProduceLayer">
+<area shape="rect" id="node2" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="243,5,441,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ac0d7b22eaa3857606b17a9eece386e64" title="InitializeScreen" alt="" coords="489,5,600,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="648,5,699,32"/>
+</map>

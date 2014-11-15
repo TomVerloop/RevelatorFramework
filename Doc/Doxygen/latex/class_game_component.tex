@@ -1,0 +1,236 @@
+\hypertarget{class_game_component}{\section{Game\-Component Class Reference}
+\label{class_game_component}\index{Game\-Component@{Game\-Component}}
+}
+
+
+{\ttfamily \#include $<$Game\-Component.\-hpp$>$}
+
+
+
+Inheritance diagram for Game\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_game_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_component__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_component_aec6902a27ee66f4b1412c102277be8f9}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_component}{Game\-Component}()
+\item 
+\hyperlink{class_game_component_a2249fc751888d23760697125a6964188}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_component}{Game\-Component}(float x
+\item 
+\-\_\-\-\_\-declspec(dllexport) \\*
+\hyperlink{class_game_component}{Game\-Component}(sf \hyperlink{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)=0
+\item 
+\hyperlink{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}{\-\_\-\-\_\-declspec} (dllexport) virtual void Collide(\hyperlink{class_game_component}{Game\-Component} $\ast$colider)=0
+\item 
+\-\_\-\-\_\-declspec(dllexport) virtual \\*
+void Draw(sf \hyperlink{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}{\-\_\-\-\_\-declspec} (dllexport) sf
+\item 
+\hyperlink{class_game_component_abe485cab452953b6c1f0acba5a818cf6}{\-\_\-\-\_\-declspec} (dllexport) void set\-Position(sf
+\item 
+\hyperlink{class_game_component_a2cfb54512fe7510015f8088f7f65695e}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Drawable()
+\item 
+\hyperlink{class_game_component_a88fa0ae59963cfe37ef8c701070fb6f3}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Collidable()
+\item 
+\hyperlink{class_game_component_ac9aaef1c89eafbd0c3959a096253a402}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Sensor()
+\item 
+\hyperlink{class_game_component_a394efd23d349b977eea088fd132e7c9f}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Spawner()
+\item 
+\hyperlink{class_game_component_a08bc91b41fde1cb87b3e88d8c595222f}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_drawable}{Drawable} $\ast$get\-Drawable()
+\item 
+\hyperlink{class_game_component_ae57117756a03743effd35b247b47128d}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_collidable}{Collidable} $\ast$get\-Collidable()
+\item 
+\hyperlink{class_game_component_a415eee32585e17c54627fd8e82bafda4}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_sensor}{Sensor} $\ast$get\-Sensor()
+\item 
+\hyperlink{class_game_component_a9b1178bf248e3249d13e56e49119012d}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_spawner}{Spawner} $\ast$get\-Spawner()
+\item 
+\hyperlink{class_game_component_a52514a034b067ce785a1be3f7fc20f2a}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Dead()
+\item 
+\hyperlink{class_game_component_a5a034014ede12c085ba1b55d8fca6d1c}{\-\_\-\-\_\-declspec} (dllexport) void set\-Dead(bool dead)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_game_component_a8a40aa75eff388a7da06668d3d2fe87c}{y}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}{Name}
+\item 
+int \hyperlink{class_game_component_ac8d794e78280785eb956eaff044f74b2}{I\-D}
+\item 
+sf\-::\-Vector2f $\ast$ \hyperlink{class_game_component_acc3109bb4ae36112eb8796e067160c59}{Position}
+\item 
+\hyperlink{class_drawable}{Drawable} $\ast$ \hyperlink{class_game_component_acb73190345f4933825e9c8b8d5030438}{drawable}
+\item 
+\hyperlink{class_collidable}{Collidable} $\ast$ \hyperlink{class_game_component_aa91bd3600bd5964b55c7806dcfd1c862}{collidable}
+\item 
+\hyperlink{class_sensor}{Sensor} $\ast$ \hyperlink{class_game_component_ad585bf57df228afc83fbf777142e51bd}{sensor}
+\item 
+\hyperlink{class_spawner}{Spawner} $\ast$ \hyperlink{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}{spawner}
+\item 
+bool \hyperlink{class_game_component_a78058666ddc8662775b13b82e4b615a9}{Dead\-Component}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_component_aec6902a27ee66f4b1412c102277be8f9}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}}\label{class_game_component_aec6902a27ee66f4b1412c102277be8f9}
+\hypertarget{class_game_component_a2249fc751888d23760697125a6964188}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}}\label{class_game_component_a2249fc751888d23760697125a6964188}
+\hypertarget{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) {\bf Game\-Component}(sf Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}
+\hypertarget{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}
+\hypertarget{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) virtual void Draw(sf Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}
+\hypertarget{class_game_component_abe485cab452953b6c1f0acba5a818cf6}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_abe485cab452953b6c1f0acba5a818cf6}
+\hypertarget{class_game_component_a2cfb54512fe7510015f8088f7f65695e}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a2cfb54512fe7510015f8088f7f65695e}
+\hypertarget{class_game_component_a88fa0ae59963cfe37ef8c701070fb6f3}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a88fa0ae59963cfe37ef8c701070fb6f3}
+\hypertarget{class_game_component_ac9aaef1c89eafbd0c3959a096253a402}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_ac9aaef1c89eafbd0c3959a096253a402}
+\hypertarget{class_game_component_a394efd23d349b977eea088fd132e7c9f}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a394efd23d349b977eea088fd132e7c9f}
+\hypertarget{class_game_component_a08bc91b41fde1cb87b3e88d8c595222f}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a08bc91b41fde1cb87b3e88d8c595222f}
+\hypertarget{class_game_component_ae57117756a03743effd35b247b47128d}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_ae57117756a03743effd35b247b47128d}
+\hypertarget{class_game_component_a415eee32585e17c54627fd8e82bafda4}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a415eee32585e17c54627fd8e82bafda4}
+\hypertarget{class_game_component_a9b1178bf248e3249d13e56e49119012d}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a9b1178bf248e3249d13e56e49119012d}
+\hypertarget{class_game_component_a52514a034b067ce785a1be3f7fc20f2a}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a52514a034b067ce785a1be3f7fc20f2a}
+\hypertarget{class_game_component_a5a034014ede12c085ba1b55d8fca6d1c}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a5a034014ede12c085ba1b55d8fca6d1c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_component_aa91bd3600bd5964b55c7806dcfd1c862}{\index{Game\-Component@{Game\-Component}!collidable@{collidable}}
+\index{collidable@{collidable}!GameComponent@{Game\-Component}}
+\subsubsection[{collidable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collidable}$\ast$ Game\-Component\-::collidable\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_aa91bd3600bd5964b55c7806dcfd1c862}
+\hypertarget{class_game_component_a78058666ddc8662775b13b82e4b615a9}{\index{Game\-Component@{Game\-Component}!Dead\-Component@{Dead\-Component}}
+\index{Dead\-Component@{Dead\-Component}!GameComponent@{Game\-Component}}
+\subsubsection[{Dead\-Component}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-Component\-::\-Dead\-Component\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_a78058666ddc8662775b13b82e4b615a9}
+\hypertarget{class_game_component_acb73190345f4933825e9c8b8d5030438}{\index{Game\-Component@{Game\-Component}!drawable@{drawable}}
+\index{drawable@{drawable}!GameComponent@{Game\-Component}}
+\subsubsection[{drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Drawable}$\ast$ Game\-Component\-::drawable\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_acb73190345f4933825e9c8b8d5030438}
+\hypertarget{class_game_component_ac8d794e78280785eb956eaff044f74b2}{\index{Game\-Component@{Game\-Component}!I\-D@{I\-D}}
+\index{I\-D@{I\-D}!GameComponent@{Game\-Component}}
+\subsubsection[{I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-Component\-::\-I\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_ac8d794e78280785eb956eaff044f74b2}
+\hypertarget{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}{\index{Game\-Component@{Game\-Component}!Name@{Name}}
+\index{Name@{Name}!GameComponent@{Game\-Component}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Game\-Component\-::\-Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}
+\hypertarget{class_game_component_acc3109bb4ae36112eb8796e067160c59}{\index{Game\-Component@{Game\-Component}!Position@{Position}}
+\index{Position@{Position}!GameComponent@{Game\-Component}}
+\subsubsection[{Position}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2f$\ast$ Game\-Component\-::\-Position\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_acc3109bb4ae36112eb8796e067160c59}
+\hypertarget{class_game_component_ad585bf57df228afc83fbf777142e51bd}{\index{Game\-Component@{Game\-Component}!sensor@{sensor}}
+\index{sensor@{sensor}!GameComponent@{Game\-Component}}
+\subsubsection[{sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor}$\ast$ Game\-Component\-::sensor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_ad585bf57df228afc83fbf777142e51bd}
+\hypertarget{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}{\index{Game\-Component@{Game\-Component}!spawner@{spawner}}
+\index{spawner@{spawner}!GameComponent@{Game\-Component}}
+\subsubsection[{spawner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spawner}$\ast$ Game\-Component\-::spawner\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}
+\hypertarget{class_game_component_a8a40aa75eff388a7da06668d3d2fe87c}{\index{Game\-Component@{Game\-Component}!y@{y}}
+\index{y@{y}!GameComponent@{Game\-Component}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float Game\-Component\-::y}}\label{class_game_component_a8a40aa75eff388a7da06668d3d2fe87c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+D\-:/\-Users/tom/\-Documents/\-Visual Studio 2013/\-Projects/\-Revelatorframework/\-Revelator\-Framework\-\_\-\-A\-P\-I/\hyperlink{_game_component_8hpp}{Game\-Component.\-hpp}\end{DoxyCompactItemize}

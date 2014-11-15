@@ -1,0 +1,5 @@
+<map id="ScreenManager" name="ScreenManager">
+<area shape="rect" id="node2" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,154,113,275"/>
+<area shape="rect" id="node3" href="$class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,5,113,97"/>
+<area shape="rect" id="node4" href="$class_window_manager.html" title="{WindowManager\n|&#45; window\l&#45; CameraPosition\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l&#45; __declspec()\l}" alt="" coords="138,147,261,283"/>
+</map>

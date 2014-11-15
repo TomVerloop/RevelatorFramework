@@ -1,0 +1,6 @@
+<map id="Collidable::getCollider" name="Collidable::getCollider">
+<area shape="rect" id="node2" href="$class_chunk.html#a23684bfafa76cadb95c81ba89b039461" title="Chunk::Sense" alt="" coords="200,5,304,32"/>
+<area shape="rect" id="node3" href="$class_chunk.html#a750907d92efc9e45bfff5e280fa55afe" title="Chunk::Update" alt="" coords="352,5,460,32"/>
+<area shape="rect" id="node4" href="$class_chunk_manager.html#a601244f4c4a114fe2a646e4b5ad32a6e" title="ChunkManager::Update" alt="" coords="508,5,667,32"/>
+<area shape="rect" id="node5" href="$class_layer.html#a6db2f37689d5ee4958167e539ab4ce69" title="Layer::Update" alt="" coords="715,5,817,32"/>
+</map>

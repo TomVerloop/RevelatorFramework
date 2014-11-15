@@ -1,0 +1,8 @@
+<map id="ScreenManager::Update" name="ScreenManager::Update">
+<area shape="rect" id="node2" href="$class_game_screen.html#aa297aaa006484162d80fe2a5ea15f375" title="GameScreen::Update" alt="" coords="240,5,387,32"/>
+<area shape="rect" id="node4" href="$class_game_screen.html#a5aadb0f4d885be777b3d99f08add9f88" title="GameScreen::hasTransaction" alt="" coords="216,56,411,83"/>
+<area shape="rect" id="node5" href="$class_game_screen.html#ab148b3dc8dd0921eaf90e52fb61d7817" title="GameScreen::getTransaction" alt="" coords="218,107,409,133"/>
+<area shape="rect" id="node6" href="$class_screen_transaction.html#a5348510109e53a87cb1233660c859e00" title="ScreenTransaction::\lgetTo" alt="" coords="244,158,383,199"/>
+<area shape="rect" id="node7" href="$class_screen_manager.html#a578dea02971b86905fee58593622495b" title="ScreenManager::setActive\lScreen" alt="" coords="226,223,401,265"/>
+<area shape="rect" id="node3" href="$class_game_screen.html#a1c5d1420883ee7c135747c6aadf7fae9" title="GameScreen::setTransaction" alt="" coords="459,5,649,32"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="GameFactory::ProduceScreen" name="GameFactory::ProduceScreen">
+<area shape="rect" id="node2" href="$class_game_factory.html#a8fb704f6440c30dd368b409adc9fffad" title="GameFactory::ProduceLayer" alt="" coords="252,360,441,387"/>
+<area shape="rect" id="node19" href="$class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="GameScreen::addLayer" alt="" coords="267,411,426,437"/>
+<area shape="rect" id="node3" href="$class_game_factory.html#a6d10cc5db3ba26bb6041a9449dfab92a" title="GameFactory::ProduceChunk" alt="" coords="495,5,690,32"/>
+<area shape="rect" id="node5" href="$class_chunk.html#ad8d9253e661bbaef3471b73b86f0d8c4" title="Chunk::getCoords" alt="" coords="529,56,656,83"/>
+<area shape="rect" id="node6" href="$class_chunk.html#a670d58217b329583811b5380f25700d6" title="Chunk::setRight" alt="" coords="535,107,650,133"/>
+<area shape="rect" id="node7" href="$class_chunk.html#aa0005654a92c0ca50f90c516d508834c" title="Chunk::setLeft" alt="" coords="539,157,646,184"/>
+<area shape="rect" id="node8" href="$class_chunk.html#aadab4832f4d1c4618b7232a1503d8aed" title="Chunk::setRightBottom" alt="" coords="514,208,671,235"/>
+<area shape="rect" id="node9" href="$class_chunk.html#ac747f2b3da1e583e3b64ca328bf04d77" title="Chunk::setLeftTop" alt="" coords="529,259,656,285"/>
+<area shape="rect" id="node10" href="$class_chunk.html#a57c85ac8a8959eca362b7c3e64dc1d0d" title="Chunk::setBottom" alt="" coords="529,309,656,336"/>
+<area shape="rect" id="node11" href="$class_chunk.html#a6cc69f33389b5510766f23317ff7ae65" title="Chunk::setTop" alt="" coords="539,360,646,387"/>
+<area shape="rect" id="node12" href="$class_chunk.html#a690d801cad525f106f11fca76855c785" title="Chunk::setLeftBottom" alt="" coords="519,411,667,437"/>
+<area shape="rect" id="node13" href="$class_chunk.html#a8c19057f7360349f5d214bfa50d51900" title="Chunk::setRightTop" alt="" coords="525,461,661,488"/>
+<area shape="rect" id="node14" href="$class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="509,512,676,539"/>
+<area shape="rect" id="node15" href="$class_chunk_manager.html#a00cea265f033fdc3b2188b1099094f08" title="ChunkManager::setActiveChunk" alt="" coords="489,563,696,589"/>
+<area shape="rect" id="node16" href="$class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="ChunkManager::setFirstChunk" alt="" coords="493,613,692,640"/>
+<area shape="rect" id="node17" href="$class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="529,664,656,691"/>
+<area shape="rect" id="node18" href="$class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="527,715,658,741"/>
+<area shape="rect" id="node4" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="Chunk::addComponent" alt="" coords="744,5,899,32"/>
+</map>

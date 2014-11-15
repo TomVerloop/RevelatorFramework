@@ -1,0 +1,5 @@
+<map id="Chunk::Sense" name="Chunk::Sense">
+<area shape="rect" id="node2" href="$class_collidable.html#ac9edfccd8c5a1ea77238c0a19aa910c3" title="Collidable::getCollider" alt="" coords="164,5,311,32"/>
+<area shape="rect" id="node3" href="$class_rectangle.html#a35c583bfb7eb652de61b7e32895d1579" title="Rectangle::getCenter" alt="" coords="165,56,309,83"/>
+<area shape="rect" id="node4" href="$class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="157,107,317,133"/>
+</map>
