@@ -11,7 +11,7 @@ Layer::~Layer()
 }
 
 
-void Layer::Update(UpdateData * updateobject)
+void Layer::Update(const UpdateData & updateobject)
 {
 	
 	Chunks->Update(updateobject);

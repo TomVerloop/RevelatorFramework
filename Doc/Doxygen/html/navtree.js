@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Revelator Framework", "index.html", [
+    [ "Bug List", "bug.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -24,9 +25,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_chunk_8cpp.html",
-"class_screen_transaction.html#a0ebe388c719d9f29ba16cd79635bb9e6",
-"class_utils.html#a00abc0bf94717df92ff0f43421bbddd5"
+"_audio_manager_8cpp.html",
+"class_game_object_producer.html#a196e596ce8c691618375db29e4b6417a",
+"class_mouse.html#a0d7dd53605221594b161f9d8e61aa345"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

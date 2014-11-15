@@ -1,4 +1,4 @@
 <map id="GameComponent" name="GameComponent">
-<area shape="rect" id="node2" href="$class_example_component.html" title="{ExampleComponent\n||+ ExampleComponent()\l+ Collide()\l+ ~ExampleComponent()\l+ Update()\l+ Draw()\l}" alt="" coords="5,409,172,545"/>
-<area shape="rect" id="node3" href="$class_movable_component.html" title="{MovableComponent\n||+ MovableComponent()\l+ ~MovableComponent()\l+ Collide()\l+ Update()\l+ Draw()\l}" alt="" coords="197,409,359,545"/>
+<area shape="rect" id="node2" href="$class_example_component.html" title="{ExampleComponent\n||+ ExampleComponent()\l+ Collide()\l+ ~ExampleComponent()\l+ Update()\l+ Draw()\l}" alt="" coords="5,395,172,531"/>
+<area shape="rect" id="node3" href="$class_movable_component.html" title="{MovableComponent\n||+ MovableComponent()\l+ ~MovableComponent()\l+ Collide()\l+ Update()\l+ Draw()\l}" alt="" coords="197,395,359,531"/>
 </map>

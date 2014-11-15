@@ -31,7 +31,7 @@ void ExampleComponent::Collide(GameComponent * colider)
 
 }
 
-void ExampleComponent::Update(UpdateData * updateobject)
+void ExampleComponent::Update(const UpdateData & updateobject)
 {
 }
 

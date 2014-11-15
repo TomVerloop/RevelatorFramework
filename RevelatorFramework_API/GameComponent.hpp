@@ -17,7 +17,7 @@ public:
 	__declspec(dllexport)  GameComponent();
 	__declspec(dllexport)  GameComponent(float x, float y);
 	__declspec(dllexport)  GameComponent(sf::Vector2f Pos);
-	__declspec(dllexport)  virtual void Update(UpdateData * updateobject) = 0;
+	__declspec(dllexport)  virtual void Update(const UpdateData & updateobject) = 0;
 	__declspec(dllexport)  virtual void Collide(GameComponent * colider) = 0;
 	__declspec(dllexport)  virtual void Draw(sf::RenderWindow & window, sf::Vector2f offset) = 0;
 	__declspec(dllexport)  sf::Vector2f getPosition(){ return *Position; }

@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,19 +111,17 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_game_screen.html">GameScreen</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) GameScreen()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a41fb99405265eadec9712c99673a05f1">__declspec</a>(dllexport) GameScreen()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_game_screen.html#a940d1b9790ff4b737ee4c521d10a5e08">__declspec</a>(dllexport)~GameScreen()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#abf3d28d386460d2de50ab89f2b6803ae">__declspec</a>(dllexport) void Update(UpdateData *updateobject)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_screen.html#ae0c4507a9836db3a91c596cfbc228a44">__declspec</a>(dllexport) bool hasTransaction()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a6956b33306f1fd55ed252479ccc9d123">__declspec</a>(dllexport) ScreenTransaction *getTransaction()</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a></td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#accd7b1f865eb3e0ab95ca4eb8b795b93">transaction</a></td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#a902bce77e2df723b9547d6364b5aaadf">__declspec</a>(dllexport) void Update(const UpdateData &amp;updateobject)</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_screen.html#a03f75f898e71457324bd5f2cea6fc8a2">__declspec</a>(dllexport) virtual void Entry(EntryObject object)=0</td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a></td><td class="entry"><a class="el" href="class_game_screen.html">GameScreen</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

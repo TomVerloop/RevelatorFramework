@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['c',['C',['../class_update_data.html#a23f886eeea49c94a131db994cf40cca5',1,'UpdateData']]],
-  ['cameraposition',['CameraPosition',['../class_update_data.html#a365c2ac748b6456a70786698bef446e9',1,'UpdateData::CameraPosition()'],['../class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101',1,'WindowManager::CameraPosition()']]],
+  ['c',['C',['../class_keyboard.html#a8e9a644f450a387c8b0becfec29e0eba',1,'Keyboard']]],
+  ['cameraposition',['CameraPosition',['../class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101',1,'WindowManager']]],
   ['chunk',['Chunk',['../class_chunk.html',1,'']]],
   ['chunk_2ecpp',['Chunk.cpp',['../_chunk_8cpp.html',1,'']]],
   ['chunk_2ehpp',['Chunk.hpp',['../_chunk_8hpp.html',1,'']]],
@@ -15,7 +15,7 @@ var searchData=
   ['collidable_2ehpp',['Collidable.hpp',['../_collidable_8hpp.html',1,'']]],
   ['collide',['Collide',['../class_example_component.html#a6ab733042d45aaa046201f486ece06b5',1,'ExampleComponent::Collide()'],['../class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b',1,'MovableComponent::Collide()']]],
   ['collider',['Collider',['../class_collidable.html#a474de18f0027a4e089be1097f6d7bcc7',1,'Collidable']]],
-  ['comma',['Comma',['../class_update_data.html#aff270a9dbf46f67b24f1f15ddb8f3bb7',1,'UpdateData']]],
+  ['comma',['Comma',['../class_keyboard.html#a34056a5ea3c0e72446ef864a8a04cb50',1,'Keyboard']]],
   ['comp',['comp',['../class_chunk.html#a633545d862acb016a7081c364126c7b8',1,'Chunk']]],
   ['components',['Components',['../class_chunk.html#a4cdf6febd96ff99b681e37d548617a38',1,'Chunk::Components()'],['../class_game_factory.html#a90fc6360610babaf3d2d880f782772b3',1,'GameFactory::Components()'],['../class_spawner.html#ae5e316957ac1574347ba80bac3866976',1,'Spawner::Components()']]]
 ];

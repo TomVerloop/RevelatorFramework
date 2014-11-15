@@ -1,0 +1,4 @@
+<map id="ExampleTestScreen" name="ExampleTestScreen">
+<area shape="rect" id="node2" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="35,145,143,267"/>
+<area shape="rect" id="node3" href="$class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="35,5,143,97"/>
+</map>

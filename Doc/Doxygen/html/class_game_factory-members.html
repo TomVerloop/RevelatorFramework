@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,19 +112,23 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 <p>This is the complete list of members for <a class="el" href="class_game_factory.html">GameFactory</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#adaa8f1b9fe44c066743b786d1cd71bfb">__declspec</a>(dllexport)~GameFactory()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#a953bc9597060a20c65b2e3cafb5cb2d2">__declspec</a>(dllexport) static GameFactory *getInstance()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a9079d555495e2691cce325afe77c4785">__declspec</a>(dllexport) static GameFactory &amp;getInstance()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a38779dd1a14a9e977614b14b01eb231f">__declspec</a>(dllexport) GameFactory(const GameFactory &amp;utils)=delete</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#a7d0a6fccc0aec8cf4d30ba31c945f04e">__declspec</a>(dllexport) GameFactory &amp;operator</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a6cb0bea926e68e7e2a8267e56f37b27e">__declspec</a>(dllexport) GameFactory()</td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_game_factory.html#abe6bbfe34d73050414a71f1f454d2884">Layers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#ad00e99627ab0f6ac0dbc04c7479084bd">Producers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">LayerProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#aeb0d338957100663811acae5074943ac">Layers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_game_factory.html#ab72819fc3f241243d44827f75e0a2886">ObjectProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_game_factory.html#aa65ba67e6c3fc56ec228c801e02352c8">ScreenProducers</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td><td class="entry"><a class="el" href="class_game_factory.html">GameFactory</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

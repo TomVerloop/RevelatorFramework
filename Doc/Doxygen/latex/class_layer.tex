@@ -7,6 +7,15 @@
 
 
 
+Inheritance diagram for Layer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_layer__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Collaboration diagram for Layer\-:
 \nopagebreak
 \begin{figure}[H]
@@ -22,14 +31,10 @@ Collaboration diagram for Layer\-:
 \item 
 \hyperlink{class_layer_ae17eacb9709778961a8f044834963c92}{\-\_\-\-\_\-declspec} (dllexport)$\sim$\hyperlink{class_layer}{Layer}()
 \item 
-\hyperlink{class_layer_aa53cd45edd1551626f7a9349e368e445}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)
+\hyperlink{class_layer_af4209cdfc6e8685586be81f69a8b155a}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)
 \item 
 \-\_\-\-\_\-declspec(dllexport) virtual \\*
-void Draw(sf \hyperlink{class_layer_acb6a84b41682f21a857dfd9fdf401c05}{\-\_\-\-\_\-declspec} (dllexport) bool has\-Transaction()
-\item 
-\hyperlink{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$get\-Transaction()
-\item 
-\hyperlink{class_layer_a7b16aa0abac81bb0abfed937c02374cf}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Enabled()
+void Draw(sf \hyperlink{class_layer_a803481a463be933245ccf8a99eda9641}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Enabled()
 \item 
 \hyperlink{class_layer_adf8adf7a53cb647e84d749379930d897}{\-\_\-\-\_\-declspec} (dllexport) bool is\-Drawing()
 \item 
@@ -42,6 +47,8 @@ void Draw(sf \hyperlink{class_layer_acb6a84b41682f21a857dfd9fdf401c05}{\-\_\-\-\
 \hyperlink{class_layer_a17a99eb35b1d1780c45acd3af6e4ffa2}{\-\_\-\-\_\-declspec} (dllexport) void set\-Updating(bool b)
 \item 
 \hyperlink{class_layer_a7fe1685bbc80b73fe42a2cc0c58a272d}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_chunk_manager}{Chunk\-Manager} $\ast$get\-Chunk\-Manager()
+\item 
+\hyperlink{class_layer_ac3e5ac27992462570451a077f3b629ba}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update\-Handle(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)=0
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -53,8 +60,6 @@ bool \hyperlink{class_layer_a64902a81921ba2fc792d044392b14ecc}{will\-Draw}
 bool \hyperlink{class_layer_a8c3badeb437135a265c931f4ee728a48}{will\-Update}
 \item 
 \hyperlink{class_chunk_manager}{Chunk\-Manager} $\ast$ \hyperlink{class_layer_ab5408f6d27ad51d73df507296f16c811}{Chunks}
-\item 
-\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ \hyperlink{class_layer_a3f0f6e109409d047c650380b6715c316}{transaction}
 \end{DoxyCompactItemize}
 
 
@@ -73,34 +78,20 @@ bool \hyperlink{class_layer_a8c3badeb437135a265c931f4ee728a48}{will\-Update}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
 )}}\label{class_layer_ae17eacb9709778961a8f044834963c92}
-\hypertarget{class_layer_aa53cd45edd1551626f7a9349e368e445}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\hypertarget{class_layer_af4209cdfc6e8685586be81f69a8b155a}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_layer_aa53cd45edd1551626f7a9349e368e445}
-\hypertarget{class_layer_acb6a84b41682f21a857dfd9fdf401c05}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+) const}}\label{class_layer_af4209cdfc6e8685586be81f69a8b155a}
+\hypertarget{class_layer_a803481a463be933245ccf8a99eda9641}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) virtual void Draw(sf Layer\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
-)}}\label{class_layer_acb6a84b41682f21a857dfd9fdf401c05}
-\hypertarget{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)}}\label{class_layer_aa5da63da0e6aa4ba5d401dfacda98204}
-\hypertarget{class_layer_a7b16aa0abac81bb0abfed937c02374cf}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a7b16aa0abac81bb0abfed937c02374cf}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a803481a463be933245ccf8a99eda9641}
 \hypertarget{class_layer_adf8adf7a53cb647e84d749379930d897}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
@@ -143,6 +134,13 @@ bool \hyperlink{class_layer_a8c3badeb437135a265c931f4ee728a48}{will\-Update}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_layer_a7fe1685bbc80b73fe42a2cc0c58a272d}
+\hypertarget{class_layer_ac3e5ac27992462570451a077f3b629ba}{\index{Layer@{Layer}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!Layer@{Layer}}
+\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Layer\-::\-\_\-\-\_\-declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_layer_ac3e5ac27992462570451a077f3b629ba}
 
 
 \subsection{Member Data Documentation}
@@ -152,9 +150,6 @@ bool \hyperlink{class_layer_a8c3badeb437135a265c931f4ee728a48}{will\-Update}
 \hypertarget{class_layer_af9f9c9a8c4a053bd829a06273df297bd}{\index{Layer@{Layer}!enabled@{enabled}}
 \index{enabled@{enabled}!Layer@{Layer}}
 \subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::enabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_layer_af9f9c9a8c4a053bd829a06273df297bd}
-\hypertarget{class_layer_a3f0f6e109409d047c650380b6715c316}{\index{Layer@{Layer}!transaction@{transaction}}
-\index{transaction@{transaction}!Layer@{Layer}}
-\subsubsection[{transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction}$\ast$ Layer\-::transaction\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_layer_a3f0f6e109409d047c650380b6715c316}
 \hypertarget{class_layer_a64902a81921ba2fc792d044392b14ecc}{\index{Layer@{Layer}!will\-Draw@{will\-Draw}}
 \index{will\-Draw@{will\-Draw}!Layer@{Layer}}
 \subsubsection[{will\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}bool Layer\-::will\-Draw\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_layer_a64902a81921ba2fc792d044392b14ecc}

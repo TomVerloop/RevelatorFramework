@@ -15,7 +15,8 @@ AudioManager::AudioManager()
 		SFX * f = new SFX();
 		f->loadFromFile("Resourses\\audio\\sfx\\" + filename);
 		SoundEffects[name] = f;
-	}	while (!musicinput.eof())
+	}
+	while (!musicinput.eof())
 	{
 		std::string name;
 		std::string filename;
@@ -30,12 +31,19 @@ AudioManager::AudioManager()
 
 AudioManager::~AudioManager()
 {
-
+	for (auto & sfx : SoundEffects)
+	{
+		delete sfx.second;
+	}
+	for (auto & music : Musics)
+	{
+		delete music.second;
+	}
 }
 
 bool AudioManager::PlaySFX(std::string name)
 {
-	
+
 	if (SoundEffects.find(name) == SoundEffects.end())
 	{
 		return false;

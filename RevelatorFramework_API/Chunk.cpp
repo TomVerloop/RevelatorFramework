@@ -1,7 +1,10 @@
 #include "Chunk.hpp"
 #include "GameFactory.hpp"
 
-Chunk::Chunk(sf::Vector2i ChunkCoord, float size) : ChunkCoord{ ChunkCoord }, size{ size }, PurePosition{ ChunkCoord.x * size, ChunkCoord.y * size }
+Chunk::Chunk(sf::Vector2i ChunkCoord, float size) : 
+ChunkCoord{ ChunkCoord }, 
+size{ size }, 
+PurePosition{ ChunkCoord.x * size, ChunkCoord.y * size }
 {
 
 }
@@ -12,14 +15,45 @@ Chunk::~Chunk()
 
 }
 
-void Chunk::setLeftTop(Chunk *	leftrop){ LeftTop = leftrop; }
-void Chunk::setTop(Chunk *	top){ Top = top; }
-void Chunk::setRightTop(Chunk * righttop){ RightTop = righttop; }
-void Chunk::setLeft(Chunk * left){ Left = left; }
-void Chunk::setRight(Chunk * right){ Right = right; }
-void Chunk::setLeftBottom(Chunk * leftbottom){ LeftBottom = leftbottom; }
-void Chunk::setBottom(Chunk * bottom){ Bottom = bottom; }
-void Chunk::setRightBottom(Chunk * rightbottom){ RightBottom = rightbottom; }
+void Chunk::setLeftTop(Chunk *	leftrop)
+{ 
+	LeftTop = leftrop; 
+}
+
+void Chunk::setTop(Chunk *	top)
+{ 
+	Top = top; 
+}
+
+void Chunk::setRightTop(Chunk * righttop)
+{ 
+	RightTop = righttop; 
+}
+
+void Chunk::setLeft(Chunk * left)
+{ 
+	Left = left; 
+}
+
+void Chunk::setRight(Chunk * right)
+{ 
+	Right = right; 
+}
+
+void Chunk::setLeftBottom(Chunk * leftbottom)
+{ 
+	LeftBottom = leftbottom; 
+}
+
+void Chunk::setBottom(Chunk * bottom)
+{
+	Bottom = bottom; 
+}
+
+void Chunk::setRightBottom(Chunk * rightbottom)
+{ 
+	RightBottom = rightbottom; 
+}
 
 Chunk * Chunk::getTop()
 {
@@ -41,7 +75,7 @@ Chunk * Chunk::getBottom()
 	return Bottom;
 }
 
-void Chunk::Update(UpdateData * updateobject)
+void Chunk::Update(const UpdateData & updateobject)
 {
 	for (const auto & comp : Components)
 	{
@@ -110,7 +144,7 @@ void Chunk::Draw(sf::RenderWindow & window, sf::Vector2f offset)
 }
 
 
-void Chunk::Collide(UpdateData * updateobject)
+void Chunk::Collide(const UpdateData & updateobject)
 {
 	for (const auto & comp : Components)
 	{
@@ -134,7 +168,7 @@ void Chunk::Collide(UpdateData * updateobject)
 	}
 }
 
-void Chunk::Sense(UpdateData * updateobject)
+void Chunk::Sense(const UpdateData & updateobject)
 {
 	for (auto comp : Components)
 	{
@@ -180,7 +214,7 @@ void Chunk::Sense(UpdateData * updateobject)
 }
 
 
-void Chunk::SenseSingle(UpdateData * updateobject, GameComponent * comp)
+void Chunk::SenseSingle(const UpdateData & updateobject, GameComponent * comp)
 {
 	Sensor * sensor = comp->getSensor();
 	sf::Vector2f CenterOfSensor{ (comp->getCollidable()->getCollider().left + comp->getCollidable()->getCollider().width / 2), (comp->getCollidable()->getCollider().top + comp->getCollidable()->getCollider().height / 2) };
@@ -201,7 +235,7 @@ void Chunk::SenseSingle(UpdateData * updateobject, GameComponent * comp)
 	}
 }
 
-void Chunk::CollideSingle(UpdateData * updateobject, GameComponent * comp)
+void Chunk::CollideSingle(const UpdateData & updateobject, GameComponent * comp)
 {
 	for (const auto & collider : Components)
 	{
@@ -245,7 +279,7 @@ void Chunk::addComponent(GameComponent * c)
 	{
 		Top->addComponent(c);
 	}
-	else if (v.y > (PurePosition.y + size))
+	else if (v.y >(PurePosition.y + size))
 	{
 		Bottom->addComponent(c);
 	}

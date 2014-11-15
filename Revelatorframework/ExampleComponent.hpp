@@ -16,7 +16,7 @@ public:
 	ExampleComponent(sf::Vector2f pos = sf::Vector2f{0.f,0.f});
 	void Collide(GameComponent * colider) override;
 	~ExampleComponent();
-	void Update(UpdateData * updateobject) override;
+	void Update(const UpdateData & updateobject) override;
 	void Draw(sf::RenderWindow & window,sf::Vector2f offset);
 };
 

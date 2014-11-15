@@ -1,4 +1,3 @@
 <map id="GameScreen" name="GameScreen">
-<area shape="rect" id="node2" href="$class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,101,113,193"/>
-<area shape="rect" id="node3" href="$class_screen_transaction.html" title="{ScreenTransaction\n|+ Message\l+ from\l+ to\l# Id\l# From\l# To\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="138,5,269,288"/>
+<area shape="rect" id="node2" href="$class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,5,113,97"/>
 </map>

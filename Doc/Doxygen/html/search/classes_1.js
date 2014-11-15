@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['drawable',['Drawable',['../class_drawable.html',1,'']]]
+  ['chunk',['Chunk',['../class_chunk.html',1,'']]],
+  ['chunkmanager',['ChunkManager',['../class_chunk_manager.html',1,'']]],
+  ['collidable',['Collidable',['../class_collidable.html',1,'']]]
 ];

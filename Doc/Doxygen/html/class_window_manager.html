@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_window_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,6 +106,7 @@ $(document).ready(function(){initNavTree('class_window_manager.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_window_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -121,28 +123,33 @@ Collaboration diagram for WindowManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a959d7ca3b42b73b1e6c17580d9593436"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <br class="typebreak"/>
-<a class="el" href="class_window_manager.html">WindowManager</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a959d7ca3b42b73b1e6c17580d9593436">__declspec</a> (dllexport)~<a class="el" href="class_window_manager.html">WindowManager</a>()</td></tr>
-<tr class="separator:a959d7ca3b42b73b1e6c17580d9593436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0119ba52296a9c80eb41a49a49270be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#af0119ba52296a9c80eb41a49a49270be">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>(const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;windowmanager)=delete</td></tr>
-<tr class="separator:af0119ba52296a9c80eb41a49a49270be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28362d6854fad720a0fe21f34272522b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a28362d6854fad720a0fe21f34272522b">__declspec</a> (dllexport)~<a class="el" href="class_window_manager.html">WindowManager</a>()</td></tr>
+<tr class="separator:a28362d6854fad720a0fe21f34272522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353d26a2d2ca4ddb533ac80dff4cb889"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) void <br class="typebreak"/>
+InitWindow(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a353d26a2d2ca4ddb533ac80dff4cb889">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>(const <a class="el" href="class_window_manager.html">WindowManager</a> &amp;windowmanager)=delete</td></tr>
+<tr class="separator:a353d26a2d2ca4ddb533ac80dff4cb889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b83e3acf96e8c764f9900227a6c3bf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a6b83e3acf96e8c764f9900227a6c3bf8">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a> &amp;operator</td></tr>
 <tr class="separator:a6b83e3acf96e8c764f9900227a6c3bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae3aaa9726e6964bb106ff0893f3dccfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#ae3aaa9726e6964bb106ff0893f3dccfa">__declspec</a> (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>()</td></tr>
+<tr class="separator:ae3aaa9726e6964bb106ff0893f3dccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a61d47c11da0af06b979ec784a21349ea"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a61d47c11da0af06b979ec784a21349ea">window</a></td></tr>
-<tr class="separator:a61d47c11da0af06b979ec784a21349ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ca38df4c12f4127e75939259ec108c"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#ac7ca38df4c12f4127e75939259ec108c">window</a></td></tr>
+<tr class="separator:ac7ca38df4c12f4127e75939259ec108c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459ad4d059f5c4f286c24af4550c6101"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_window_manager.html#a459ad4d059f5c4f286c24af4550c6101">CameraPosition</a></td></tr>
 <tr class="separator:a459ad4d059f5c4f286c24af4550c6101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a959d7ca3b42b73b1e6c17580d9593436"></a>
+<a class="anchor" id="a28362d6854fad720a0fe21f34272522b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__declspec (dllexport) <a class="el" href="class_window_manager.html">WindowManager</a>(sf WindowManager::__declspec </td>
+          <td class="memname">WindowManager::__declspec </td>
           <td>(</td>
           <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -153,7 +160,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0119ba52296a9c80eb41a49a49270be"></a>
+<a class="anchor" id="a353d26a2d2ca4ddb533ac80dff4cb889"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -161,7 +168,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">WindowManager::__declspec </td>
+          <td class="memname">__declspec (dllexport) void InitWindow(sf WindowManager::__declspec </td>
           <td>(</td>
           <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -193,6 +200,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae3aaa9726e6964bb106ff0893f3dccfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WindowManager::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a459ad4d059f5c4f286c24af4550c6101"></a>
 <div class="memitem">
@@ -214,7 +245,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a61d47c11da0af06b979ec784a21349ea"></a>
+<a class="anchor" id="ac7ca38df4c12f4127e75939259ec108c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,7 +253,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">sf::RenderWindow WindowManager::window</td>
+          <td class="memname">sf::RenderWindow* WindowManager::window</td>
         </tr>
       </table>
   </td>
@@ -243,7 +274,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_window_manager.html">WindowManager</a></li>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

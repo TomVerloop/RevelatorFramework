@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_game_object_producer.html" title="GameObjectProducer" alt="" coords="5,5,152,32"/>
-<area shape="rect" id="node2" href="$class_example_component_producer.html" title="ExampleComponentProducer" alt="" coords="200,5,391,32"/>
+<area shape="rect" id="node1" href="$class_game_component.html" title="GameComponent" alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$class_example_component.html" title="ExampleComponent" alt="" coords="176,5,315,32"/>
+<area shape="rect" id="node3" href="$class_movable_component.html" title="MovableComponent" alt="" coords="178,56,313,83"/>
 </map>

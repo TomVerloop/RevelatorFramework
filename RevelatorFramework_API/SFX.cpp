@@ -10,6 +10,10 @@ SFX::SFX()
 
 SFX::~SFX()
 {
+	if (Buffer != nullptr)
+	{
+		delete Buffer;
+	}
 }
 
 

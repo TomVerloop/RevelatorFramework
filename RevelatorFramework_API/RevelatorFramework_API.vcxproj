@@ -87,12 +87,15 @@
     <ClInclude Include="ChunkManager.hpp" />
     <ClInclude Include="Collidable.hpp" />
     <ClInclude Include="Drawable.hpp" />
+    <ClInclude Include="EntryObject.hpp" />
     <ClInclude Include="GameComponent.hpp" />
     <ClInclude Include="GameFactory.hpp" />
     <ClInclude Include="GameObjectProducer.hpp" />
     <ClInclude Include="GameScreen.hpp" />
+    <ClInclude Include="GameScreenProducer.hpp" />
     <ClInclude Include="Keyboard.hpp" />
     <ClInclude Include="Layer.hpp" />
+    <ClInclude Include="LayerProducer.hpp" />
     <ClInclude Include="Mouse.hpp" />
     <ClInclude Include="ProducerPackage.hpp" />
     <ClInclude Include="resource.h" />
@@ -102,6 +105,7 @@
     <ClInclude Include="Spawner.hpp" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextureManager.hpp" />
     <ClInclude Include="UpdateData.hpp" />
     <ClInclude Include="Utils.hpp" />
     <ClInclude Include="WindowManager.hpp" />
@@ -120,12 +124,15 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="EntryObject.cpp" />
     <ClCompile Include="GameComponent.cpp" />
     <ClCompile Include="GameFactory.cpp" />
     <ClCompile Include="GameObjectProducer.cpp" />
     <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="GameScreenProducer.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LayerProducer.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="ProducerPackage.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
@@ -136,6 +143,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="UpdateData.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="WindowManager.cpp" />

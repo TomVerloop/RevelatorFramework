@@ -22,7 +22,7 @@ void MovableComponent::Collide(GameComponent * colider)
 
 }
 
-void MovableComponent::Update(UpdateData * updateobject)
+void MovableComponent::Update(const UpdateData & updateobject)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 	{

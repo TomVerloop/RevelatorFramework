@@ -12,7 +12,7 @@ ChunkManager::~ChunkManager()
 
 }
 
-void ChunkManager::Update(UpdateData * updateobject)
+void ChunkManager::Update(const UpdateData & updateobject)
 {
 	Chunk * c = FirstChunk;
 	bool GoingRight = true;

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['q',['Q',['../class_update_data.html#a50e2bebb139909dfa6ce01026197f426',1,'UpdateData']]],
-  ['quote',['Quote',['../class_update_data.html#af9d5fdc63f162316d2c9b1d4a675b355',1,'UpdateData']]]
+  ['q',['Q',['../class_keyboard.html#a73542918c6ffdd4915925fff6aea1eb5',1,'Keyboard']]],
+  ['quote',['Quote',['../class_keyboard.html#ab962f4a569eb3a171fb648c8f6df904a',1,'Keyboard']]]
 ];

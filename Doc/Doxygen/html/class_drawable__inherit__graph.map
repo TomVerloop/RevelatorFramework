@@ -1,5 +1,6 @@
 <map id="Drawable" name="Drawable">
-<area shape="rect" id="node2" href="$class_chunk.html" title="{Chunk\n|+ comp\l&#45; PurePosition\l&#45; LeftTop\l&#45; Top\l&#45; RightTop\l&#45; Left\l&#45; Right\l&#45; LeftBottom\l&#45; Bottom\l&#45; RightBottom\l&#45; Components\l&#45; size\l&#45; ChunkCoord\l&#45; RemoveFromChunk\l&#45; offset\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\land 7 more...\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l&#45; __declspec()\l}" alt="" coords="5,145,148,663"/>
-<area shape="rect" id="node3" href="$class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="172,365,299,443"/>
-<area shape="rect" id="node4" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l&#45; transaction\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="323,329,431,479"/>
+<area shape="rect" id="node2" href="$class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,145,148,648"/>
+<area shape="rect" id="node3" href="$class_example_drawable.html" title="{ExampleDrawable\n||+ Draw()\l}" alt="" coords="172,358,299,435"/>
+<area shape="rect" id="node4" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="323,336,431,457"/>
+<area shape="rect" id="node5" href="$class_example_test_screen.html" title="{ExampleTestScreen\n||+ ExampleTestScreen()\l+ ~ExampleTestScreen()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="293,696,460,817"/>
 </map>

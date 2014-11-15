@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_game_component.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,14 +120,14 @@ Inheritance diagram for GameComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component__inherit__graph.png" border="0" usemap="#_game_component_inherit__map" alt="Inheritance graph"/></div>
 <map name="_game_component_inherit__map" id="_game_component_inherit__map">
-<area shape="rect" id="node2" href="class_example_component.html" title="{ExampleComponent\n||+ ExampleComponent()\l+ Collide()\l+ ~ExampleComponent()\l+ Update()\l+ Draw()\l}" alt="" coords="5,409,172,545"/><area shape="rect" id="node3" href="class_movable_component.html" title="{MovableComponent\n||+ MovableComponent()\l+ ~MovableComponent()\l+ Collide()\l+ Update()\l+ Draw()\l}" alt="" coords="197,409,359,545"/></map>
+<area shape="rect" id="node2" href="class_example_component.html" title="{ExampleComponent\n||+ ExampleComponent()\l+ Collide()\l+ ~ExampleComponent()\l+ Update()\l+ Draw()\l}" alt="" coords="5,395,172,531"/><area shape="rect" id="node3" href="class_movable_component.html" title="{MovableComponent\n||+ MovableComponent()\l+ ~MovableComponent()\l+ Collide()\l+ Update()\l+ Draw()\l}" alt="" coords="197,395,359,531"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GameComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component__coll__graph.png" border="0" usemap="#_game_component_coll__map" alt="Collaboration graph"/></div>
 <map name="_game_component_coll__map" id="_game_component_coll__map">
-<area shape="rect" id="node2" href="class_screen_transaction.html" title="{ScreenTransaction\n|+ Message\l+ from\l+ to\l# Id\l# From\l# To\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,205,136,488"/><area shape="rect" id="node3" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="174,5,282,156"/><area shape="rect" id="node4" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="274,249,382,444"/><area shape="rect" id="node5" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="406,279,514,415"/><area shape="rect" id="node6" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="538,301,646,393"/></map>
+<area shape="rect" id="node2" href="class_collidable.html" title="{Collidable\n|# hasMoved\l# position\l# Collider\l# lastpos\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,5,113,156"/><area shape="rect" id="node3" href="class_sensor.html" title="{Sensor\n|+ Pos\l+ size\l&#45; VisionRange\l&#45; SeenObjects\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="105,205,213,400"/><area shape="rect" id="node4" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="237,242,345,363"/><area shape="rect" id="node5" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="369,257,477,349"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -135,20 +136,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aec6902a27ee66f4b1412c102277be8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2249fc751888d23760697125a6964188"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a2249fc751888d23760697125a6964188">__declspec</a> (dllexport) <a class="el" href="class_game_component.html">GameComponent</a>(float x</td></tr>
 <tr class="separator:a2249fc751888d23760697125a6964188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96aa26b5c66f4964b389013eaea8e35"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <br class="typebreak"/>
-<a class="el" href="class_game_component.html">GameComponent</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#af96aa26b5c66f4964b389013eaea8e35">__declspec</a> (dllexport) virtual void Update(<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)=0</td></tr>
-<tr class="separator:af96aa26b5c66f4964b389013eaea8e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af064c62d1379d3c3a735f394ad0c0ee9"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) <br class="typebreak"/>
+<a class="el" href="class_game_component.html">GameComponent</a>(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#af064c62d1379d3c3a735f394ad0c0ee9">__declspec</a> (dllexport) virtual void Update(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)=0</td></tr>
+<tr class="separator:af064c62d1379d3c3a735f394ad0c0ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b877f1873af198a8e62e9ac06d5a02f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a0b877f1873af198a8e62e9ac06d5a02f">__declspec</a> (dllexport) virtual void Collide(<a class="el" href="class_game_component.html">GameComponent</a> *colider)=0</td></tr>
 <tr class="separator:a0b877f1873af198a8e62e9ac06d5a02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc9c014f6823348b7b3c14a2d094def6"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) virtual <br class="typebreak"/>
-void Draw(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#afc9c014f6823348b7b3c14a2d094def6">__declspec</a> (dllexport) virtual bool hasTransaction()</td></tr>
-<tr class="separator:afc9c014f6823348b7b3c14a2d094def6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463a4133dc8265091be605987964f459"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a463a4133dc8265091be605987964f459">__declspec</a> (dllexport) virtual void setTransaction(<a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *transaction)</td></tr>
-<tr class="separator:a463a4133dc8265091be605987964f459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b242ec0a5849c9d017cdeb505cb81aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a5b242ec0a5849c9d017cdeb505cb81aa">__declspec</a> (dllexport) virtual <a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *getTransaction()</td></tr>
-<tr class="separator:a5b242ec0a5849c9d017cdeb505cb81aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a2a194cda8b2dbd409529b860c9b77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a72a2a194cda8b2dbd409529b860c9b77">__declspec</a> (dllexport) sf</td></tr>
-<tr class="separator:a72a2a194cda8b2dbd409529b860c9b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90b0af397b0dd5b6bf9841417c7af89"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) virtual <br class="typebreak"/>
+void Draw(sf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#aa90b0af397b0dd5b6bf9841417c7af89">__declspec</a> (dllexport) sf</td></tr>
+<tr class="separator:aa90b0af397b0dd5b6bf9841417c7af89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe485cab452953b6c1f0acba5a818cf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#abe485cab452953b6c1f0acba5a818cf6">__declspec</a> (dllexport) void setPosition(sf</td></tr>
 <tr class="separator:abe485cab452953b6c1f0acba5a818cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cfb54512fe7510015f8088f7f65695e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a2cfb54512fe7510015f8088f7f65695e">__declspec</a> (dllexport) bool hasDrawable()</td></tr>
@@ -183,8 +178,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab1037207fec65ac5fe65dec1e22f0566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d794e78280785eb956eaff044f74b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ac8d794e78280785eb956eaff044f74b2">ID</a></td></tr>
 <tr class="separator:ac8d794e78280785eb956eaff044f74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c59f47f6723d108eb481a160607e98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ae8c59f47f6723d108eb481a160607e98">Transaction</a></td></tr>
-<tr class="separator:ae8c59f47f6723d108eb481a160607e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3109bb4ae36112eb8796e067160c59"><td class="memItemLeft" align="right" valign="top">sf::Vector2f *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acc3109bb4ae36112eb8796e067160c59">Position</a></td></tr>
 <tr class="separator:acc3109bb4ae36112eb8796e067160c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb73190345f4933825e9c8b8d5030438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acb73190345f4933825e9c8b8d5030438">drawable</a></td></tr>
@@ -231,7 +224,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af96aa26b5c66f4964b389013eaea8e35"></a>
+<a class="anchor" id="af064c62d1379d3c3a735f394ad0c0ee9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -243,7 +236,7 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -279,7 +272,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afc9c014f6823348b7b3c14a2d094def6"></a>
+<a class="anchor" id="aa90b0af397b0dd5b6bf9841417c7af89"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -288,78 +281,6 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">__declspec (dllexport) virtual void Draw(sf GameComponent::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a463a4133dc8265091be605987964f459"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameComponent::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5b242ec0a5849c9d017cdeb505cb81aa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameComponent::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a72a2a194cda8b2dbd409529b860c9b77"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameComponent::__declspec </td>
           <td>(</td>
           <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -800,26 +721,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae8c59f47f6723d108eb481a160607e98"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_screen_transaction.html">ScreenTransaction</a>* GameComponent::Transaction</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a8a40aa75eff388a7da06668d3d2fe87c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -841,7 +742,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_component.html">GameComponent</a></li>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:56 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:10 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -13,7 +13,7 @@ class Layer
 public:
 	__declspec(dllexport) Layer();
 	__declspec(dllexport) ~Layer();
-	__declspec(dllexport) virtual void Update(UpdateData * updateobject);
+	__declspec(dllexport) virtual void Update(const UpdateData & updateobject);
 	__declspec(dllexport) virtual void Draw(sf::RenderWindow & window, sf::Vector2f offset);
 
 	//getters
@@ -27,6 +27,7 @@ public:
 
 	__declspec(dllexport) ChunkManager * getChunkManager(){ return Chunks; }
 
+	__declspec(dllexport) virtual void UpdateHandle(const UpdateData & updateobject) = 0;
 private:
 
 protected:

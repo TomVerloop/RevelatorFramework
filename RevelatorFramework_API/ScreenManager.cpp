@@ -5,7 +5,7 @@ ScreenManager & ScreenManager::getInstance()
 	GameFactory * f = &GameFactory::getInstance();
 	static ScreenManager manager;
 	manager.addScreen("MainScreen", f->ProduceScreen("MainScreen"));
-	manager.setActiveScreen("MainScreen");
+	manager.setActiveScreen("MainScreen", EntryObject{});
 	return manager;
 }
 
@@ -22,7 +22,7 @@ ScreenManager::~ScreenManager()
 }
 
 
-void ScreenManager::Update(UpdateData * updateobject)
+void ScreenManager::Update(const UpdateData & updateobject)
 {
 	Keyboard::getInstance().update();
 	Mouse::getInstance().Update();
@@ -48,9 +48,10 @@ void ScreenManager::addScreen(std::string name, GameScreen * screen)
 }
 
 
-void ScreenManager::setActiveScreen(std::string name)
+void ScreenManager::setActiveScreen(std::string name,EntryObject object)
 {
 	ActiveScreen = Screens.find(name)->second;
+	ActiveScreen->Entry(object);
 }
 
 
@@ -64,11 +65,10 @@ void ScreenManager::run()
 			if (event.type == sf::Event::Closed)
 				Window->getWindow()->close();
 		}
-		UpdateData * data = new UpdateData();
+		UpdateData data;
 		Update(data);
 		Window->getWindow()->clear();
 		Draw();
 		Window->getWindow()->display();
-		delete data;
 	}
 }

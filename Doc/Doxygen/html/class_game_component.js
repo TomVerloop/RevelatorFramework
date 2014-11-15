@@ -2,12 +2,9 @@ var class_game_component =
 [
     [ "__declspec", "class_game_component.html#aec6902a27ee66f4b1412c102277be8f9", null ],
     [ "__declspec", "class_game_component.html#a2249fc751888d23760697125a6964188", null ],
-    [ "__declspec", "class_game_component.html#af96aa26b5c66f4964b389013eaea8e35", null ],
+    [ "__declspec", "class_game_component.html#af064c62d1379d3c3a735f394ad0c0ee9", null ],
     [ "__declspec", "class_game_component.html#a0b877f1873af198a8e62e9ac06d5a02f", null ],
-    [ "__declspec", "class_game_component.html#afc9c014f6823348b7b3c14a2d094def6", null ],
-    [ "__declspec", "class_game_component.html#a463a4133dc8265091be605987964f459", null ],
-    [ "__declspec", "class_game_component.html#a5b242ec0a5849c9d017cdeb505cb81aa", null ],
-    [ "__declspec", "class_game_component.html#a72a2a194cda8b2dbd409529b860c9b77", null ],
+    [ "__declspec", "class_game_component.html#aa90b0af397b0dd5b6bf9841417c7af89", null ],
     [ "__declspec", "class_game_component.html#abe485cab452953b6c1f0acba5a818cf6", null ],
     [ "__declspec", "class_game_component.html#a2cfb54512fe7510015f8088f7f65695e", null ],
     [ "__declspec", "class_game_component.html#a88fa0ae59963cfe37ef8c701070fb6f3", null ],
@@ -27,6 +24,5 @@ var class_game_component =
     [ "Position", "class_game_component.html#acc3109bb4ae36112eb8796e067160c59", null ],
     [ "sensor", "class_game_component.html#ad585bf57df228afc83fbf777142e51bd", null ],
     [ "spawner", "class_game_component.html#a15caaab21ec2e8eb9d438a25afbef4da", null ],
-    [ "Transaction", "class_game_component.html#ae8c59f47f6723d108eb481a160607e98", null ],
     [ "y", "class_game_component.html#a8a40aa75eff388a7da06668d3d2fe87c", null ]
 ];

@@ -18,12 +18,13 @@ public:
 	__declspec(dllexport) float getFloat(std::string key){ return Floats[key]; }
 	__declspec(dllexport) double getDouble(std::string key){ return Doubles[key]; }
 	__declspec(dllexport) long getLong(std::string key){ return Longs[key]; }
+	__declspec(dllexport) void clear();
 private:
-	std::map<std::string, int> Ints;
-	std::map<std::string, std::string> Strings;
-	std::map<std::string, bool> Bools;
-	std::map<std::string, float> Floats;
-	std::map<std::string, double> Doubles;
-	std::map<std::string, long> Longs;
+	std::map<std::string, int>			Ints;
+	std::map<std::string, std::string>	Strings;
+	std::map<std::string, bool>			Bools;
+	std::map<std::string, float>		Floats;
+	std::map<std::string, double>		Doubles;
+	std::map<std::string, long>			Longs;
 };
 

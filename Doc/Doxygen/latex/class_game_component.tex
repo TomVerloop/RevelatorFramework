@@ -16,8 +16,7 @@ Inheritance diagram for Game\-Component\-:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Game\-Component\-:
-\nopagebreak
+Collaboration diagram for Game\-Component\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,18 +31,12 @@ Collaboration diagram for Game\-Component\-:
 \hyperlink{class_game_component_a2249fc751888d23760697125a6964188}{\-\_\-\-\_\-declspec} (dllexport) \hyperlink{class_game_component}{Game\-Component}(float x
 \item 
 \-\_\-\-\_\-declspec(dllexport) \\*
-\hyperlink{class_game_component}{Game\-Component}(sf \hyperlink{class_game_component_af96aa26b5c66f4964b389013eaea8e35}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(\hyperlink{class_update_data}{Update\-Data} $\ast$updateobject)=0
+\hyperlink{class_game_component}{Game\-Component}(sf \hyperlink{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}{\-\_\-\-\_\-declspec} (dllexport) virtual void Update(const \hyperlink{class_update_data}{Update\-Data} \&updateobject)=0
 \item 
 \hyperlink{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}{\-\_\-\-\_\-declspec} (dllexport) virtual void Collide(\hyperlink{class_game_component}{Game\-Component} $\ast$colider)=0
 \item 
 \-\_\-\-\_\-declspec(dllexport) virtual \\*
-void Draw(sf \hyperlink{class_game_component_afc9c014f6823348b7b3c14a2d094def6}{\-\_\-\-\_\-declspec} (dllexport) virtual bool has\-Transaction()
-\item 
-\hyperlink{class_game_component_a463a4133dc8265091be605987964f459}{\-\_\-\-\_\-declspec} (dllexport) virtual void set\-Transaction(\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$transaction)
-\item 
-\hyperlink{class_game_component_a5b242ec0a5849c9d017cdeb505cb81aa}{\-\_\-\-\_\-declspec} (dllexport) virtual \hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$get\-Transaction()
-\item 
-\hyperlink{class_game_component_a72a2a194cda8b2dbd409529b860c9b77}{\-\_\-\-\_\-declspec} (dllexport) sf
+void Draw(sf \hyperlink{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}{\-\_\-\-\_\-declspec} (dllexport) sf
 \item 
 \hyperlink{class_game_component_abe485cab452953b6c1f0acba5a818cf6}{\-\_\-\-\_\-declspec} (dllexport) void set\-Position(sf
 \item 
@@ -79,8 +72,6 @@ std\-::string \hyperlink{class_game_component_ab1037207fec65ac5fe65dec1e22f0566}
 \item 
 int \hyperlink{class_game_component_ac8d794e78280785eb956eaff044f74b2}{I\-D}
 \item 
-\hyperlink{class_screen_transaction}{Screen\-Transaction} $\ast$ \hyperlink{class_game_component_ae8c59f47f6723d108eb481a160607e98}{Transaction}
-\item 
 sf\-::\-Vector2f $\ast$ \hyperlink{class_game_component_acc3109bb4ae36112eb8796e067160c59}{Position}
 \item 
 \hyperlink{class_drawable}{Drawable} $\ast$ \hyperlink{class_game_component_acb73190345f4933825e9c8b8d5030438}{drawable}
@@ -110,13 +101,13 @@ bool \hyperlink{class_game_component_a78058666ddc8662775b13b82e4b615a9}{Dead\-Co
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
 )}}\label{class_game_component_a2249fc751888d23760697125a6964188}
-\hypertarget{class_game_component_af96aa26b5c66f4964b389013eaea8e35}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\hypertarget{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) {\bf Game\-Component}(sf Game\-Component\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_game_component_af96aa26b5c66f4964b389013eaea8e35}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_game_component_af064c62d1379d3c3a735f394ad0c0ee9}
 \hypertarget{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
@@ -124,34 +115,13 @@ bool \hyperlink{class_game_component_a78058666ddc8662775b13b82e4b615a9}{Dead\-Co
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_game_component_a0b877f1873af198a8e62e9ac06d5a02f}
-\hypertarget{class_game_component_afc9c014f6823348b7b3c14a2d094def6}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
+\hypertarget{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-declspec (dllexport) virtual void Draw(sf Game\-Component\-::\-\_\-\-\_\-declspec (
 \begin{DoxyParamCaption}
 \item[{dllexport}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_afc9c014f6823348b7b3c14a2d094def6}
-\hypertarget{class_game_component_a463a4133dc8265091be605987964f459}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a463a4133dc8265091be605987964f459}
-\hypertarget{class_game_component_a5b242ec0a5849c9d017cdeb505cb81aa}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a5b242ec0a5849c9d017cdeb505cb81aa}
-\hypertarget{class_game_component_a72a2a194cda8b2dbd409529b860c9b77}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
-\index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
-\subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
-\begin{DoxyParamCaption}
-\item[{dllexport}]{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_a72a2a194cda8b2dbd409529b860c9b77}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_game_component_aa90b0af397b0dd5b6bf9841417c7af89}
 \hypertarget{class_game_component_abe485cab452953b6c1f0acba5a818cf6}{\index{Game\-Component@{Game\-Component}!\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}}
 \index{\-\_\-\-\_\-declspec@{\-\_\-\-\_\-declspec}!GameComponent@{Game\-Component}}
 \subsubsection[{\-\_\-\-\_\-declspec}]{\setlength{\rightskip}{0pt plus 5cm}Game\-Component\-::\-\_\-\-\_\-declspec (
@@ -256,9 +226,6 @@ bool \hyperlink{class_game_component_a78058666ddc8662775b13b82e4b615a9}{Dead\-Co
 \hypertarget{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}{\index{Game\-Component@{Game\-Component}!spawner@{spawner}}
 \index{spawner@{spawner}!GameComponent@{Game\-Component}}
 \subsubsection[{spawner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spawner}$\ast$ Game\-Component\-::spawner\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_a15caaab21ec2e8eb9d438a25afbef4da}
-\hypertarget{class_game_component_ae8c59f47f6723d108eb481a160607e98}{\index{Game\-Component@{Game\-Component}!Transaction@{Transaction}}
-\index{Transaction@{Transaction}!GameComponent@{Game\-Component}}
-\subsubsection[{Transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Screen\-Transaction}$\ast$ Game\-Component\-::\-Transaction\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_game_component_ae8c59f47f6723d108eb481a160607e98}
 \hypertarget{class_game_component_a8a40aa75eff388a7da06668d3d2fe87c}{\index{Game\-Component@{Game\-Component}!y@{y}}
 \index{y@{y}!GameComponent@{Game\-Component}}
 \subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float Game\-Component\-::y}}\label{class_game_component_a8a40aa75eff388a7da06668d3d2fe87c}

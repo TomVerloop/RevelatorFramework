@@ -93,16 +93,26 @@ GameFactory::~GameFactory()
 }
 
 
-void GameFactory::RegisterProducer(std::string Name, GameObjectProducer * producer)
+void GameFactory::RegisterObjectProducer(std::string Name, GameObjectProducer * producer)
 {
-	Producers[Name] = producer;
+	ObjectProducers[Name] = producer;
+}
+
+void GameFactory::RegisterLayerProducer(std::string Name, LayerProducer * producer)
+{
+	LayerProducers[Name] = producer;
+}
+
+void GameFactory::RegisterScreenProducer(std::string Name, GameScreenProducer * producer)
+{
+	ScreenProducers[Name] = producer;
 }
 
 GameComponent * GameFactory::ProduceGameObject(std::string Name)
 {
-	if (Producers.find(Name) != Producers.end())
+	if (ObjectProducers.find(Name) != ObjectProducers.end())
 	{
-		GameComponent * temp = Producers[Name]->Produce();
+		GameComponent * temp = ObjectProducers[Name]->Produce();
 		Components.push_back(temp);
 		return temp;
 	}
@@ -114,9 +124,9 @@ GameComponent * GameFactory::ProduceGameObject(std::string Name)
 
 GameComponent * GameFactory::ProduceGameObject(std::string Name, ProducerPackage package)
 {
-	if (Producers.find(Name) != Producers.end())
+	if (ObjectProducers.find(Name) != ObjectProducers.end())
 	{
-		GameComponent * temp = Producers[Name]->Produce(package);
+		GameComponent * temp = ObjectProducers[Name]->Produce(package);
 		Components.push_back(temp);
 		return temp;
 	}
@@ -153,7 +163,29 @@ GameFactory & GameFactory::getInstance()
 
 GameScreen * GameFactory::ProduceScreen(std::string screenname)
 {
-	GameScreen * screen = new GameScreen();
+	std::string name;
+	std::string type;
+	ProducerPackage package;
+	std::ifstream screensinput("Resourses\\GameScreens\\Screens.txt");
+	do
+	{
+		package.clear();
+		screensinput >> name;
+		screensinput >> type;
+		screensinput >> package;
+
+	} while (name != screenname);
+
+	GameScreen * screen;
+	if (ScreenProducers.find(type) != ScreenProducers.end())
+	{
+		screen = ScreenProducers[type]->Produce(package);
+		Screens.push_back(screen);
+	}
+	else
+	{
+		return nullptr;
+	}
 	Screens.push_back(screen);
 	std::ifstream input("Resourses\\GameScreens\\" + screenname + ".txt");
 	std::string AddType;
@@ -161,7 +193,7 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 	{
 		AddType = "";
 		input >> AddType;
-		if (AddType == "LAYER")
+		if (LayerProducers.find(AddType) != LayerProducers.end())
 		{
 			std::string Layername = "";
 			int ChunkSize = 0;
@@ -169,6 +201,7 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 			bool enabled = true;
 			bool willupdate = true;
 			bool willdraw = true;
+			ProducerPackage package;
 			
 			input >> Layername;
 			input >> ChunkSize;
@@ -176,8 +209,8 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 			input >> enabled;
 			input >> willupdate;
 			input >> willdraw;
-
-			Layer * l = ProduceLayer(Layername,ChunkSize,Chunks,enabled,willupdate,willdraw);
+			input >> package;
+			Layer * l = ProduceLayer(Layername,ChunkSize,Chunks,enabled,willupdate,willdraw,package,AddType);
 			screen->addLayer(Layername, l);
 			if (AddType == "END")
 			{
@@ -188,9 +221,9 @@ GameScreen * GameFactory::ProduceScreen(std::string screenname)
 	return screen;
 }
 
-Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chunks,bool enabled,bool willupdate,bool willdraw)
+Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chunks,bool enabled,bool willupdate,bool willdraw,ProducerPackage package,std::string layertype)
 {
-	Layer * layer = new Layer();
+	Layer * layer = LayerProducers[layertype]->Produce(package);
 	layer->setEnabled(enabled);
 	layer->setUpdating(willupdate);
 	layer->setDrawing(willdraw);
@@ -229,7 +262,7 @@ Layer * GameFactory::ProduceLayer(std::string layername, int ChunkSize, int Chun
 	{
 		std::string AddType = "";
 		input >> AddType;
-		if (AddType != "" && Producers.find(AddType) != Producers.end())
+		if (AddType != "" && ObjectProducers.find(AddType) != ObjectProducers.end())
 		{
 			ProducerPackage package;
 			input >> package;

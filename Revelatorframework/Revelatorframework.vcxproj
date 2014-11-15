@@ -86,6 +86,10 @@
   <ItemGroup>
     <ClCompile Include="ExampleComponent.cpp" />
     <ClCompile Include="ExampleComponentProducer.cpp" />
+    <ClCompile Include="ExampleLayer.cpp" />
+    <ClCompile Include="ExampleLayerProducer.cpp" />
+    <ClCompile Include="ExampleScreenProducer.cpp" />
+    <ClCompile Include="ExampleTestScreen.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MovableComponent.cpp" />
     <ClCompile Include="MovableComponentProducer.cpp" />
@@ -93,6 +97,10 @@
   <ItemGroup>
     <ClInclude Include="ExampleComponent.hpp" />
     <ClInclude Include="ExampleComponentProducer.hpp" />
+    <ClInclude Include="ExampleLayer.hpp" />
+    <ClInclude Include="ExampleLayerProducer.hpp" />
+    <ClInclude Include="ExampleScreenProducer.hpp" />
+    <ClInclude Include="ExampleTestScreen.hpp" />
     <ClInclude Include="MovableComponent.hpp" />
     <ClInclude Include="MovableComponentProducer.hpp" />
   </ItemGroup>

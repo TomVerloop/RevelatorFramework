@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_spawner.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,10 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f9189658debef135e7ef3dae740dc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9e09cf1588c58654650279268e02be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawner.html#a7d9e09cf1588c58654650279268e02be">__declspec</a> (dllexport)~<a class="el" href="class_spawner.html">Spawner</a>()</td></tr>
 <tr class="separator:a7d9e09cf1588c58654650279268e02be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e3afb5a4121a7c2fa6f38950c88af31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawner.html#a3e3afb5a4121a7c2fa6f38950c88af31">__declspec</a> (dllexport) void pushComponent(<a class="el" href="class_game_component.html">GameComponent</a> *c)</td></tr>
-<tr class="separator:a3e3afb5a4121a7c2fa6f38950c88af31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf8e881a3933e8a582d2fe5d81abb9b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawner.html#aaf8e881a3933e8a582d2fe5d81abb9b1">__declspec</a> (dllexport) <a class="el" href="class_game_component.html">GameComponent</a> *popComponent()</td></tr>
-<tr class="separator:aaf8e881a3933e8a582d2fe5d81abb9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0bb0cd4d53bd1ad8b6600f2b597bde"><td class="memItemLeft" align="right" valign="top">__declspec(dllexport) void <br class="typebreak"/>
+pushComponent(std&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawner.html#ace0bb0cd4d53bd1ad8b6600f2b597bde">__declspec</a> (dllexport) <a class="el" href="class_game_component.html">GameComponent</a> *popComponent()</td></tr>
+<tr class="separator:ace0bb0cd4d53bd1ad8b6600f2b597bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593f6964eae5b1d47bbc82701d2aa0df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawner.html#a593f6964eae5b1d47bbc82701d2aa0df">__declspec</a> (dllexport) int ComponentCount()</td></tr>
 <tr class="separator:a593f6964eae5b1d47bbc82701d2aa0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,28 +170,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3e3afb5a4121a7c2fa6f38950c88af31"></a>
+<a class="anchor" id="ace0bb0cd4d53bd1ad8b6600f2b597bde"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Spawner::__declspec </td>
-          <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aaf8e881a3933e8a582d2fe5d81abb9b1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Spawner::__declspec </td>
+          <td class="memname">__declspec (dllexport) void pushComponent(std Spawner::__declspec </td>
           <td>(</td>
           <td class="paramtype">dllexport&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -248,7 +232,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_spawner.html">Spawner</a></li>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

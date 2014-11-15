@@ -27,7 +27,7 @@ Layer * GameScreen::getLayer(std::string name)
 	return Layers[name];
 }
 
-void GameScreen::Update(UpdateData * updateobject)
+void GameScreen::Update(const UpdateData & updateobject)
 {
 	if (!Layers.empty())
 	{

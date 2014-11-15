@@ -14,6 +14,7 @@ var class_producer_package =
     [ "__declspec", "class_producer_package.html#a221db83e45bf2d09b9797d25162a426c", null ],
     [ "__declspec", "class_producer_package.html#a399c024c0e554336e5c0369dc7d74461", null ],
     [ "__declspec", "class_producer_package.html#a40658b15d517e4f55bee133bad696814", null ],
+    [ "__declspec", "class_producer_package.html#a4f6a87b50796da3ed4dcc33fe8a410b9", null ],
     [ "Bools", "class_producer_package.html#a469d2ff5c8995155c4ea3047e000e031", null ],
     [ "Doubles", "class_producer_package.html#a39d4f108a360af494d93a62b2fab66e8", null ],
     [ "Floats", "class_producer_package.html#a255443b4b56e2b9e5d012d567f08ab1a", null ],

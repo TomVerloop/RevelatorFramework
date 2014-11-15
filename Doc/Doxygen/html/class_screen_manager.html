@@ -45,6 +45,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +94,7 @@ $(document).ready(function(){initNavTree('class_screen_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,17 +120,23 @@ Collaboration diagram for ScreenManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_screen_manager__coll__graph.png" border="0" usemap="#_screen_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_screen_manager_coll__map" id="_screen_manager_coll__map">
-<area shape="rect" id="node2" href="class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="77,351,185,487"/><area shape="rect" id="node3" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,101,113,193"/><area shape="rect" id="node4" href="class_screen_transaction.html" title="{ScreenTransaction\n|+ Message\l+ from\l+ to\l# Id\l# From\l# To\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="138,5,269,288"/></map>
+<area shape="rect" id="node2" href="class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l+ __declspec()\l}" alt="" coords="5,154,113,275"/><area shape="rect" id="node3" href="class_drawable.html" title="{Drawable\n||+ __declspec()\l+ __declspec()\l}" alt="" coords="5,5,113,97"/><area shape="rect" id="node4" href="class_window_manager.html" title="{WindowManager\n|&#45; window\l&#45; CameraPosition\l|+ __declspec()\l+ __declspec()\l+ __declspec()\l&#45; __declspec()\l}" alt="" coords="138,147,261,283"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab348f37f1c0e6324ce57c4fbd3ec7472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#ab348f37f1c0e6324ce57c4fbd3ec7472">__declspec</a> (dllexport)~<a class="el" href="class_screen_manager.html">ScreenManager</a>()</td></tr>
 <tr class="separator:ab348f37f1c0e6324ce57c4fbd3ec7472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef360696d7ab6a1a1c8c19b0b056e2f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#aef360696d7ab6a1a1c8c19b0b056e2f7">__declspec</a> (dllexport) static <a class="el" href="class_screen_manager.html">ScreenManager</a> *getInstance()</td></tr>
-<tr class="separator:aef360696d7ab6a1a1c8c19b0b056e2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb9590d63c0182bd97cf537898d0ae2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#addb9590d63c0182bd97cf537898d0ae2">__declspec</a> (dllexport) virtual void Update(<a class="el" href="class_update_data.html">UpdateData</a> *updateobject)</td></tr>
-<tr class="separator:addb9590d63c0182bd97cf537898d0ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3f75679b3012b277a7d27413976ddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#a4c3f75679b3012b277a7d27413976ddd">__declspec</a> (dllexport) static <a class="el" href="class_screen_manager.html">ScreenManager</a> &amp;getInstance()</td></tr>
+<tr class="separator:a4c3f75679b3012b277a7d27413976ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e85f470e82fa773c250b1e67d1ad1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#a35e85f470e82fa773c250b1e67d1ad1b">__declspec</a> (dllexport) virtual void Update(const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="separator:a35e85f470e82fa773c250b1e67d1ad1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d7d26d0b547930bc87e3f4beb3c64c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#a21d7d26d0b547930bc87e3f4beb3c64c">__declspec</a> (dllexport) virtual void Draw()</td></tr>
+<tr class="separator:a21d7d26d0b547930bc87e3f4beb3c64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58378c4491afb6d72f4bc0b5090515f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#aa58378c4491afb6d72f4bc0b5090515f">__declspec</a> (dllexport) <a class="el" href="class_screen_manager.html">ScreenManager</a>(const <a class="el" href="class_screen_manager.html">ScreenManager</a> &amp;screenmanager)=delete</td></tr>
+<tr class="separator:aa58378c4491afb6d72f4bc0b5090515f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b42f78484e20d582fdffba182ba3763"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#a9b42f78484e20d582fdffba182ba3763">__declspec</a> (dllexport) <a class="el" href="class_screen_manager.html">ScreenManager</a> &amp;operator</td></tr>
+<tr class="separator:a9b42f78484e20d582fdffba182ba3763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -143,6 +150,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a54eb2c9667efda525a35d0d7043e8807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb46941be1b908a2b9d8053409e89597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#abb46941be1b908a2b9d8053409e89597">ActiveScreen</a></td></tr>
 <tr class="separator:abb46941be1b908a2b9d8053409e89597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fee528eafa1b2defad2a7c4bd6766aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_window_manager.html">WindowManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_screen_manager.html#a5fee528eafa1b2defad2a7c4bd6766aa">Window</a></td></tr>
+<tr class="separator:a5fee528eafa1b2defad2a7c4bd6766aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab348f37f1c0e6324ce57c4fbd3ec7472"></a>
@@ -161,7 +170,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aef360696d7ab6a1a1c8c19b0b056e2f7"></a>
+<a class="anchor" id="a4c3f75679b3012b277a7d27413976ddd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -177,7 +186,63 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="addb9590d63c0182bd97cf537898d0ae2"></a>
+<a class="anchor" id="a35e85f470e82fa773c250b1e67d1ad1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenManager::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21d7d26d0b547930bc87e3f4beb3c64c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenManager::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa58378c4491afb6d72f4bc0b5090515f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScreenManager::__declspec </td>
+          <td>(</td>
+          <td class="paramtype">dllexport&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b42f78484e20d582fdffba182ba3763"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -258,6 +323,26 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5fee528eafa1b2defad2a7c4bd6766aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_window_manager.html">WindowManager</a>* ScreenManager::Window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>D:/Users/tom/Documents/Visual Studio 2013/Projects/Revelatorframework/RevelatorFramework_API/<a class="el" href="_screen_manager_8hpp_source.html">ScreenManager.hpp</a></li>
 </ul>
@@ -267,7 +352,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_screen_manager.html">ScreenManager</a></li>
-    <li class="footer">Generated on Mon Nov 10 2014 14:31:57 for Revelator Framework by
+    <li class="footer">Generated on Fri Nov 14 2014 14:54:11 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
