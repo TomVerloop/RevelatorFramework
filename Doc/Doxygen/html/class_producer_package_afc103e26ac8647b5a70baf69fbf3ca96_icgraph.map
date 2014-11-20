@@ -1,4 +1,4 @@
 <map id="ProducerPackage::getFloat" name="ProducerPackage::getFloat">
-<area shape="rect" id="node2" href="$class_example_component_producer.html#aeb985b69039c1db83c5826c01f31f53c" title="ExampleComponentProducer\l::Produce" alt="" coords="233,5,424,47"/>
-<area shape="rect" id="node3" href="$class_movable_component_producer.html#a909d2617235b049286660251050e7e8b" title="MovableComponentProducer\l::Produce" alt="" coords="235,71,422,112"/>
+<area shape="rect" id="node2" href="$class_example_component_producer.html#aeb985b69039c1db83c5826c01f31f53c" title="A pure virtual function for producing game components with producer packages. " alt="" coords="233,5,424,47"/>
+<area shape="rect" id="node3" href="$class_movable_component_producer.html#a909d2617235b049286660251050e7e8b" title="A pure virtual function for producing game components with producer packages. " alt="" coords="235,71,422,112"/>
 </map>

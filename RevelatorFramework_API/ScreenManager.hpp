@@ -29,6 +29,7 @@ public:
 	__declspec(dllexport) ScreenManager& operator=(const ScreenManager &screenmanager) = delete;
 private:
 	__declspec(dllexport) ScreenManager();
+	__declspec(dllexport) void DrawThread();
 	std::map<std::string, GameScreen *> Screens;
 	GameScreen * ActiveScreen;
 	WindowManager * Window;

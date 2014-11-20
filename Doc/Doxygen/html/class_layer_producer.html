@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ $(document).ready(function(){initNavTree('class_layer_producer.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This Abstract class is used to produce any LAyer.  
+ <a href="class_layer_producer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_layer_producer_8hpp_source.html">LayerProducer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LayerProducer:</div>
@@ -131,17 +134,28 @@ Collaboration diagram for LayerProducer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0301ebdf75429cfd1815ded361ff655f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a> ()</td></tr>
+<tr class="memdesc:a0301ebdf75429cfd1815ded361ff655f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default contstructor.  <a href="#a0301ebdf75429cfd1815ded361ff655f">More...</a><br/></td></tr>
 <tr class="separator:a0301ebdf75429cfd1815ded361ff655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3ed114fd9cae6ee77ccead38066d3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a> ()</td></tr>
+<tr class="memdesc:a7b3ed114fd9cae6ee77ccead38066d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the destructor.  <a href="#a7b3ed114fd9cae6ee77ccead38066d3b">More...</a><br/></td></tr>
 <tr class="separator:a7b3ed114fd9cae6ee77ccead38066d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80eaa2d71da1e4b9150a14c92516d3e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a> ()=0</td></tr>
+<tr class="memdesc:a80eaa2d71da1e4b9150a14c92516d3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing layers without producer packages.  <a href="#a80eaa2d71da1e4b9150a14c92516d3e2">More...</a><br/></td></tr>
 <tr class="separator:a80eaa2d71da1e4b9150a14c92516d3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ffa919098cda78577d64bffccc3680"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a20ffa919098cda78577d64bffccc3680">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
+<tr class="memdesc:a20ffa919098cda78577d64bffccc3680"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing layers with producer packages.  <a href="#a20ffa919098cda78577d64bffccc3680">More...</a><br/></td></tr>
 <tr class="separator:a20ffa919098cda78577d64bffccc3680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39650cad3ffe7017b51637072937e65a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer_producer.html#a39650cad3ffe7017b51637072937e65a">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
+<tr class="memdesc:a39650cad3ffe7017b51637072937e65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing layers with producer packages.  <a href="#a39650cad3ffe7017b51637072937e65a">More...</a><br/></td></tr>
 <tr class="separator:a39650cad3ffe7017b51637072937e65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Abstract class is used to produce any LAyer. </p>
+<p>By implementing this abstract class you can register that class to create custom Layers for your game. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0301ebdf75429cfd1815ded361ff655f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +168,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the default contstructor. </p>
 
 </div>
 </div>
@@ -169,6 +185,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the destructor. </p>
 
 </div>
 </div>
@@ -193,6 +211,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A pure virtual function for producing layers without producer packages. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed layer.  </dd></dl>
 
 <p>Implemented in <a class="el" href="class_example_layer_producer.html#add9cb70333ae10c7a1c58d7e4d8f64fc">ExampleLayerProducer</a>.</p>
 
@@ -220,6 +241,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing layers with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a reference to a producerpackage used to construct the layer with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed layer.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_layer_producer.html#adb3d15b45aeaaebcf381c33972858811">ExampleLayerProducer</a>.</p>
 
 </div>
@@ -246,6 +276,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing layers with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a pointer to a producerpackage used to construct the layer with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed layer.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_layer_producer.html#a580af18f887042b6ef9170f92ee14b8e">ExampleLayerProducer</a>.</p>
 
 </div>
@@ -260,7 +299,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_layer_producer.html">LayerProducer</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

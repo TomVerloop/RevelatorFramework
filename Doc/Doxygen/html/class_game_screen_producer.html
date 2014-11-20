@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ $(document).ready(function(){initNavTree('class_game_screen_producer.html','');}
 </div><!--header-->
 <div class="contents">
 
+<p>This class is responsible for producing custom gamescreens.  
+ <a href="class_game_screen_producer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_screen_producer_8hpp_source.html">GameScreenProducer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GameScreenProducer:</div>
@@ -131,17 +134,28 @@ Collaboration diagram for GameScreenProducer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f6e3e5335d3b275c69b5850f57c84c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen_producer.html#a9f6e3e5335d3b275c69b5850f57c84c3">GameScreenProducer</a> ()</td></tr>
+<tr class="memdesc:a9f6e3e5335d3b275c69b5850f57c84c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a9f6e3e5335d3b275c69b5850f57c84c3">More...</a><br/></td></tr>
 <tr class="separator:a9f6e3e5335d3b275c69b5850f57c84c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b82eada6522d3ac884eeb4bbcb4473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen_producer.html#ab0b82eada6522d3ac884eeb4bbcb4473">~GameScreenProducer</a> ()</td></tr>
+<tr class="memdesc:ab0b82eada6522d3ac884eeb4bbcb4473"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="#ab0b82eada6522d3ac884eeb4bbcb4473">More...</a><br/></td></tr>
 <tr class="separator:ab0b82eada6522d3ac884eeb4bbcb4473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7973b140508ab9d820c70ac79bd39d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen_producer.html#aa7973b140508ab9d820c70ac79bd39d4">Produce</a> ()=0</td></tr>
+<tr class="memdesc:aa7973b140508ab9d820c70ac79bd39d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing gamescreen without a producer packages.  <a href="#aa7973b140508ab9d820c70ac79bd39d4">More...</a><br/></td></tr>
 <tr class="separator:aa7973b140508ab9d820c70ac79bd39d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9c179df40f64aa9affa458c941f8be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen_producer.html#a9b9c179df40f64aa9affa458c941f8be">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
+<tr class="memdesc:a9b9c179df40f64aa9affa458c941f8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing gamescreen with producer packages.  <a href="#a9b9c179df40f64aa9affa458c941f8be">More...</a><br/></td></tr>
 <tr class="separator:a9b9c179df40f64aa9affa458c941f8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c76b62dff8d5be86224ea1c735f0ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen_producer.html#a88c76b62dff8d5be86224ea1c735f0ca">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
+<tr class="memdesc:a88c76b62dff8d5be86224ea1c735f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing gamescreen with producer packages.  <a href="#a88c76b62dff8d5be86224ea1c735f0ca">More...</a><br/></td></tr>
 <tr class="separator:a88c76b62dff8d5be86224ea1c735f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is responsible for producing custom gamescreens. </p>
+<p>This abstract class is responsible for the creation of custom game screens. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9f6e3e5335d3b275c69b5850f57c84c3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +168,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The default constructor. </p>
 
 </div>
 </div>
@@ -169,6 +185,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The destructor. </p>
 
 </div>
 </div>
@@ -193,6 +211,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A pure virtual function for producing gamescreen without a producer packages. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamescreen.  </dd></dl>
 
 <p>Implemented in <a class="el" href="class_example_screen_producer.html#a7eff2a8dd0085b380ba3b41fbf9d0691">ExampleScreenProducer</a>.</p>
 
@@ -220,6 +241,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing gamescreen with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a reference to a producerpackage used to construct the gamescreen with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamescreen.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_screen_producer.html#a085da3f4766c2511f82425f66f29e07e">ExampleScreenProducer</a>.</p>
 
 </div>
@@ -246,6 +276,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing gamescreen with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a pointer to a producerpackage used to construct the gamescreen with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamescreen.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_screen_producer.html#a3c1e2f971c209bc027201a563b0c67c8">ExampleScreenProducer</a>.</p>
 
 </div>
@@ -260,7 +299,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_screen_producer.html">GameScreenProducer</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

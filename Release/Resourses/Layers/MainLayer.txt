@@ -1,2 +1,2 @@
-ExampleComponent 	float:VectorX:400.0 float:VectorY:400.0 END
-MovableComponent 	float:VectorX:500.0 float:VectorY:500.0 END
+ExampleComponent 	float : VectorX : 100.0 float : VectorY : 100.0 END
+MovableComponent 	float : VectorX : 100.0 float : VectorY : 100.0 END

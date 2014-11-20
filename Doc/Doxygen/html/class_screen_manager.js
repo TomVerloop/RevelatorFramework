@@ -5,6 +5,7 @@ var class_screen_manager =
     [ "ScreenManager", "class_screen_manager.html#ab397f82b180ee7d50cc1e305c19ed733", null ],
     [ "addScreen", "class_screen_manager.html#a2e6e206c2ff265c534c802898c9c078b", null ],
     [ "Draw", "class_screen_manager.html#ace42c010790b9fa5ba5e40accc56413a", null ],
+    [ "DrawThread", "class_screen_manager.html#a1407b46f253f0041b2ac78006e8273d6", null ],
     [ "getInstance", "class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd", null ],
     [ "getScreen", "class_screen_manager.html#a510ee04534746a6e72fa789539dc2d83", null ],
     [ "operator=", "class_screen_manager.html#a04e300a0d2a9f6bdc73e4c4f75c5fbad", null ],

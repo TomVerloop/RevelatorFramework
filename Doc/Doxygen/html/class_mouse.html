@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_mouse.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This Singleton Manages the mouse clicks and positions.  
+ <a href="class_mouse.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_mouse_8hpp_source.html">Mouse.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Mouse:</div>
@@ -127,52 +130,76 @@ Collaboration diagram for Mouse:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afdf7d8abef29c10be77ead773f964f4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#afdf7d8abef29c10be77ead773f964f4f">~Mouse</a> ()</td></tr>
+<tr class="memdesc:afdf7d8abef29c10be77ead773f964f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Destructor.  <a href="#afdf7d8abef29c10be77ead773f964f4f">More...</a><br/></td></tr>
 <tr class="separator:afdf7d8abef29c10be77ead773f964f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c87ac5e0784ef185d003486c0cd97a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a6c87ac5e0784ef185d003486c0cd97a7">Mouse</a> (const <a class="el" href="class_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="memdesc:a6c87ac5e0784ef185d003486c0cd97a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#a6c87ac5e0784ef185d003486c0cd97a7">More...</a><br/></td></tr>
 <tr class="separator:a6c87ac5e0784ef185d003486c0cd97a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba383d1a0ed97fcc7133baeb13dffb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a0ba383d1a0ed97fcc7133baeb13dffb9">operator=</a> (const <a class="el" href="class_mouse.html">Mouse</a> &amp;mouse)=delete</td></tr>
+<tr class="memdesc:a0ba383d1a0ed97fcc7133baeb13dffb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted assignment opperator.  <a href="#a0ba383d1a0ed97fcc7133baeb13dffb9">More...</a><br/></td></tr>
 <tr class="separator:a0ba383d1a0ed97fcc7133baeb13dffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba7bc3e6f4ea41b41d983300cafe94e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#aba7bc3e6f4ea41b41d983300cafe94e3">getLeft</a> ()</td></tr>
+<tr class="memdesc:aba7bc3e6f4ea41b41d983300cafe94e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the button is pressed.  <a href="#aba7bc3e6f4ea41b41d983300cafe94e3">More...</a><br/></td></tr>
 <tr class="separator:aba7bc3e6f4ea41b41d983300cafe94e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a56ce6e0c3dee5399dd8bd317f0300"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a57a56ce6e0c3dee5399dd8bd317f0300">getRight</a> ()</td></tr>
+<tr class="memdesc:a57a56ce6e0c3dee5399dd8bd317f0300"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the button is pressed.  <a href="#a57a56ce6e0c3dee5399dd8bd317f0300">More...</a><br/></td></tr>
 <tr class="separator:a57a56ce6e0c3dee5399dd8bd317f0300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971194f66c07663aa9d9a1f3256a459e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a971194f66c07663aa9d9a1f3256a459e">getMiddle</a> ()</td></tr>
+<tr class="memdesc:a971194f66c07663aa9d9a1f3256a459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the button is pressed.  <a href="#a971194f66c07663aa9d9a1f3256a459e">More...</a><br/></td></tr>
 <tr class="separator:a971194f66c07663aa9d9a1f3256a459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e7edee2f57d2b4284e12946b945392"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a34e7edee2f57d2b4284e12946b945392">getXButton1</a> ()</td></tr>
+<tr class="memdesc:a34e7edee2f57d2b4284e12946b945392"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the button is pressed.  <a href="#a34e7edee2f57d2b4284e12946b945392">More...</a><br/></td></tr>
 <tr class="separator:a34e7edee2f57d2b4284e12946b945392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f61c34b9a79970983c2151698481b35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a4f61c34b9a79970983c2151698481b35">getXButton2</a> ()</td></tr>
+<tr class="memdesc:a4f61c34b9a79970983c2151698481b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the button is pressed.  <a href="#a4f61c34b9a79970983c2151698481b35">More...</a><br/></td></tr>
 <tr class="separator:a4f61c34b9a79970983c2151698481b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a1dc1c7d7edf64110f8bc4795966e2"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a96a1dc1c7d7edf64110f8bc4795966e2">getMousePosition</a> ()</td></tr>
 <tr class="separator:a96a1dc1c7d7edf64110f8bc4795966e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9756fabb1ae55d56e10b930e5592b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6">Update</a> ()</td></tr>
+<tr class="memdesc:add9756fabb1ae55d56e10b930e5592b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all values that this object holds.  <a href="#add9756fabb1ae55d56e10b930e5592b6">More...</a><br/></td></tr>
 <tr class="separator:add9756fabb1ae55d56e10b930e5592b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a96ed80e3232b68b34368c8f1f79f5cff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_mouse.html">Mouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a96ed80e3232b68b34368c8f1f79f5cff">getInstance</a> ()</td></tr>
+<tr class="memdesc:a96ed80e3232b68b34368c8f1f79f5cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This static function returns a Singleton reference to the <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a>.  <a href="#a96ed80e3232b68b34368c8f1f79f5cff">More...</a><br/></td></tr>
 <tr class="separator:a96ed80e3232b68b34368c8f1f79f5cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a99024d3700d649ae19c1537b42a3e86d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">Mouse</a> ()</td></tr>
+<tr class="memdesc:a99024d3700d649ae19c1537b42a3e86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a99024d3700d649ae19c1537b42a3e86d">More...</a><br/></td></tr>
 <tr class="separator:a99024d3700d649ae19c1537b42a3e86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ace644d872e798ce789726ec958236428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#ace644d872e798ce789726ec958236428">MouseLeft</a></td></tr>
+<tr class="memdesc:ace644d872e798ce789726ec958236428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button.  <a href="#ace644d872e798ce789726ec958236428">More...</a><br/></td></tr>
 <tr class="separator:ace644d872e798ce789726ec958236428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7dd53605221594b161f9d8e61aa345"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a0d7dd53605221594b161f9d8e61aa345">MouseRight</a></td></tr>
+<tr class="memdesc:a0d7dd53605221594b161f9d8e61aa345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button.  <a href="#a0d7dd53605221594b161f9d8e61aa345">More...</a><br/></td></tr>
 <tr class="separator:a0d7dd53605221594b161f9d8e61aa345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbf96ff26822cc0eb8ea3f73a9edc9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a4cbf96ff26822cc0eb8ea3f73a9edc9a">MouseMiddle</a></td></tr>
+<tr class="memdesc:a4cbf96ff26822cc0eb8ea3f73a9edc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Middle <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button.  <a href="#a4cbf96ff26822cc0eb8ea3f73a9edc9a">More...</a><br/></td></tr>
 <tr class="separator:a4cbf96ff26822cc0eb8ea3f73a9edc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af909f12e58b2b80528c5ca05d0452bda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#af909f12e58b2b80528c5ca05d0452bda">MouseXButton1</a></td></tr>
+<tr class="memdesc:af909f12e58b2b80528c5ca05d0452bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the First Extra <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button.  <a href="#af909f12e58b2b80528c5ca05d0452bda">More...</a><br/></td></tr>
 <tr class="separator:af909f12e58b2b80528c5ca05d0452bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6dd013286bf4829948f8a69d9b7f8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#ade6dd013286bf4829948f8a69d9b7f8a">MouseXButton2</a></td></tr>
+<tr class="memdesc:ade6dd013286bf4829948f8a69d9b7f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Second Extra <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button.  <a href="#ade6dd013286bf4829948f8a69d9b7f8a">More...</a><br/></td></tr>
 <tr class="separator:ade6dd013286bf4829948f8a69d9b7f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83f237e6ca4e0f366eb6f1a03964886"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#ae83f237e6ca4e0f366eb6f1a03964886">MousePosition</a></td></tr>
+<tr class="memdesc:ae83f237e6ca4e0f366eb6f1a03964886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the position of the mouse.  <a href="#ae83f237e6ca4e0f366eb6f1a03964886">More...</a><br/></td></tr>
 <tr class="separator:ae83f237e6ca4e0f366eb6f1a03964886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Singleton Manages the mouse clicks and positions. </p>
+<p>This Class is Singleton defined. It holds it manages all mouse buttons and the position relative to the screen of it. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>A Singleton </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afdf7d8abef29c10be77ead773f964f4f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +212,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The Destructor. </p>
 
 </div>
 </div>
@@ -210,6 +239,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Deleted copy constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a99024d3700d649ae19c1537b42a3e86d"></a>
@@ -233,12 +264,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The default constructor. </p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph.png" border="0" usemap="#class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph" alt=""/></div>
 <map name="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph" id="class_mouse_a99024d3700d649ae19c1537b42a3e86d_cgraph">
-<area shape="rect" id="node2" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6" title="Mouse::Update" alt="" coords="161,5,272,32"/></map>
+<area shape="rect" id="node2" href="class_mouse.html#add9756fabb1ae55d56e10b930e5592b6" title="Updates all values that this object holds. " alt="" coords="161,5,272,32"/></map>
 </div>
 </p>
 
@@ -266,14 +299,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph.png" border="0" usemap="#class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph" alt=""/></div>
-<map name="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph" id="class_mouse_a96ed80e3232b68b34368c8f1f79f5cff_icgraph">
-<area shape="rect" id="node2" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="189,5,352,32"/><area shape="rect" id="node3" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="400,5,539,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="587,5,637,32"/></map>
-</div>
-</p>
+<p>This static function returns a Singleton reference to the <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A Refrence to the <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a>. </dd></dl>
 
 </div>
 </div>
@@ -298,6 +325,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the button is pressed. </p>
+<p>returns true if the Left <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> button ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a971194f66c07663aa9d9a1f3256a459e"></a>
@@ -321,6 +351,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the button is pressed. </p>
+<p>returns true if the middle <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> button ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a96a1dc1c7d7edf64110f8bc4795966e2"></a>
@@ -343,6 +376,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns the position of the mouse relative to the screen. </p>
+<dl class="section return"><dt>Returns</dt><dd>a 2d float vector containing the position. </dd></dl>
 
 </div>
 </div>
@@ -367,6 +402,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the button is pressed. </p>
+<p>returns true if the right <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> button ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a34e7edee2f57d2b4284e12946b945392"></a>
@@ -390,6 +428,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the button is pressed. </p>
+<p>returns true if the first extra mouse button ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4f61c34b9a79970983c2151698481b35"></a>
@@ -412,6 +453,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the button is pressed. </p>
+<p>returns true if the second extra mouse button ispressed. </p>
 
 </div>
 </div>
@@ -437,6 +481,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Deleted assignment opperator. </p>
+
 </div>
 </div>
 <a class="anchor" id="add9756fabb1ae55d56e10b930e5592b6"></a>
@@ -452,12 +498,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Updates all values that this object holds. </p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph.png" border="0" usemap="#class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph" alt=""/></div>
 <map name="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph" id="class_mouse_add9756fabb1ae55d56e10b930e5592b6_icgraph">
-<area shape="rect" id="node2" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d" title="Mouse::Mouse" alt="" coords="191,5,299,32"/><area shape="rect" id="node3" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="164,56,327,83"/><area shape="rect" id="node4" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="375,56,513,83"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="561,56,612,83"/></map>
+<area shape="rect" id="node2" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d" title="The default constructor. " alt="" coords="164,5,272,32"/></map>
 </div>
 </p>
 
@@ -482,6 +530,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Left <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4cbf96ff26822cc0eb8ea3f73a9edc9a"></a>
@@ -501,6 +551,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Middle <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button. </p>
 
 </div>
 </div>
@@ -522,6 +574,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains the position of the mouse. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0d7dd53605221594b161f9d8e61aa345"></a>
@@ -541,6 +595,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Right <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button. </p>
 
 </div>
 </div>
@@ -562,6 +618,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the First Extra <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button. </p>
+
 </div>
 </div>
 <a class="anchor" id="ade6dd013286bf4829948f8a69d9b7f8a"></a>
@@ -582,6 +640,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Second Extra <a class="el" href="class_mouse.html" title="This Singleton Manages the mouse clicks and positions. ">Mouse</a> Button. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -594,7 +654,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_mouse.html">Mouse</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

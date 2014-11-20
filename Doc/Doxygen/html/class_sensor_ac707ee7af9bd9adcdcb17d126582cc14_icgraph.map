@@ -1,3 +1,3 @@
 <map id="Sensor::getSeenObject" name="Sensor::getSeenObject">
-<area shape="rect" id="node2" href="$class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="MovableComponent::Update" alt="" coords="211,5,395,32"/>
+<area shape="rect" id="node2" href="$class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="The Update interface method. Used to act on the update signal. " alt="" coords="211,5,395,32"/>
 </map>

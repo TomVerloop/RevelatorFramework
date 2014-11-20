@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -109,30 +109,44 @@ $(document).ready(function(){initNavTree('_utils_8hpp_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="_utils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="class_utils.html">    2</a></span>&#160;<span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="class_utils.html">Utils</a></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html#afa5e70facffc286607498e7edb639b8a">~Utils</a>();</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    __declspec(dllexport) <span class="keyword">static</span> <a class="code" href="class_utils.html">Utils</a> &amp; <a class="code" href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e">getInstance</a>();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a">Utils</a>(<span class="keyword">const</span> <a class="code" href="class_utils.html">Utils</a> &amp;utils) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html">Utils</a>&amp; <a class="code" href="class_utils.html#add93043cabc33d69f58b083f0e618849">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_utils.html">Utils</a> &amp;utils) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a">Utils</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="ttc" id="class_utils_html"><div class="ttname"><a href="class_utils.html">Utils</a></div><div class="ttdef"><b>Definition:</b> Utils.hpp:2</div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_utils.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_utils.html">Utils</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html#afa5e70facffc286607498e7edb639b8a">~Utils</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <span class="keyword">static</span> <a class="code" href="class_utils.html">Utils</a> &amp; <a class="code" href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e">getInstance</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a">Utils</a>(<span class="keyword">const</span> <a class="code" href="class_utils.html">Utils</a> &amp;utils) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html">Utils</a>&amp; <a class="code" href="class_utils.html#add93043cabc33d69f58b083f0e618849">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_utils.html">Utils</a> &amp;utils) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    __declspec(dllexport) <span class="keywordtype">void</span> <a class="code" href="class_utils.html#aede459dfa214e6c0b6f49e768a0616ac">log</a>(std::string place, std::string message);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_utils.html#a007d375c12ff44326f963c9dccfb9e4f">   16</a></span>&#160;    __declspec(dllexport) void <a class="code" href="class_utils.html#a007d375c12ff44326f963c9dccfb9e4f">setPrintLog</a>(<span class="keywordtype">bool</span> b){ <a class="code" href="class_utils.html#ab51aed3a77f526fdd1dbc2e2e4c25a9b">PrintLog</a> = b; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    __declspec(dllexport) <a class="code" href="class_utils.html">Utils</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_utils.html#ab51aed3a77f526fdd1dbc2e2e4c25a9b">   20</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_utils.html#ab51aed3a77f526fdd1dbc2e2e4c25a9b">PrintLog</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_utils.html#a33ac4dc7346ca5b73af9d4a3821bd282">   21</a></span>&#160;    std::ofstream <a class="code" href="class_utils.html#a33ac4dc7346ca5b73af9d4a3821bd282">output</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="ttc" id="class_utils_html"><div class="ttname"><a href="class_utils.html">Utils</a></div><div class="ttdef"><b>Definition:</b> Utils.hpp:7</div></div>
+<div class="ttc" id="class_utils_html_aede459dfa214e6c0b6f49e768a0616ac"><div class="ttname"><a href="class_utils.html#aede459dfa214e6c0b6f49e768a0616ac">Utils::log</a></div><div class="ttdeci">void log(std::string place, std::string message)</div><div class="ttdef"><b>Definition:</b> Utils.cpp:22</div></div>
+<div class="ttc" id="class_utils_html_a33ac4dc7346ca5b73af9d4a3821bd282"><div class="ttname"><a href="class_utils.html#a33ac4dc7346ca5b73af9d4a3821bd282">Utils::output</a></div><div class="ttdeci">std::ofstream output</div><div class="ttdef"><b>Definition:</b> Utils.hpp:21</div></div>
+<div class="ttc" id="class_utils_html_ab51aed3a77f526fdd1dbc2e2e4c25a9b"><div class="ttname"><a href="class_utils.html#ab51aed3a77f526fdd1dbc2e2e4c25a9b">Utils::PrintLog</a></div><div class="ttdeci">bool PrintLog</div><div class="ttdef"><b>Definition:</b> Utils.hpp:20</div></div>
 <div class="ttc" id="class_utils_html_add93043cabc33d69f58b083f0e618849"><div class="ttname"><a href="class_utils.html#add93043cabc33d69f58b083f0e618849">Utils::operator=</a></div><div class="ttdeci">Utils &amp; operator=(const Utils &amp;utils)=delete</div></div>
-<div class="ttc" id="class_utils_html_afa5e70facffc286607498e7edb639b8a"><div class="ttname"><a href="class_utils.html#afa5e70facffc286607498e7edb639b8a">Utils::~Utils</a></div><div class="ttdeci">~Utils()</div><div class="ttdef"><b>Definition:</b> Utils.cpp:9</div></div>
+<div class="ttc" id="class_utils_html_afa5e70facffc286607498e7edb639b8a"><div class="ttname"><a href="class_utils.html#afa5e70facffc286607498e7edb639b8a">Utils::~Utils</a></div><div class="ttdeci">~Utils()</div><div class="ttdef"><b>Definition:</b> Utils.cpp:11</div></div>
 <div class="ttc" id="class_utils_html_a452e78692c87ed5c7c993b6c6ac4981a"><div class="ttname"><a href="class_utils.html#a452e78692c87ed5c7c993b6c6ac4981a">Utils::Utils</a></div><div class="ttdeci">Utils()</div><div class="ttdef"><b>Definition:</b> Utils.cpp:4</div></div>
-<div class="ttc" id="class_utils_html_ad50ce773764e9114decc8c415cd38d3e"><div class="ttname"><a href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e">Utils::getInstance</a></div><div class="ttdeci">static Utils &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> Utils.cpp:14</div></div>
+<div class="ttc" id="class_utils_html_ad50ce773764e9114decc8c415cd38d3e"><div class="ttname"><a href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e">Utils::getInstance</a></div><div class="ttdeci">static Utils &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> Utils.cpp:16</div></div>
+<div class="ttc" id="class_utils_html_a007d375c12ff44326f963c9dccfb9e4f"><div class="ttname"><a href="class_utils.html#a007d375c12ff44326f963c9dccfb9e4f">Utils::setPrintLog</a></div><div class="ttdeci">void setPrintLog(bool b)</div><div class="ttdef"><b>Definition:</b> Utils.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_utils_8hpp.html">Utils.hpp</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:34 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

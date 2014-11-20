@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_keyboard.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This Singleton Manages any key presses.  
+ <a href="class_keyboard.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_keyboard_8hpp_source.html">Keyboard.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Keyboard:</div>
@@ -127,130 +130,193 @@ Collaboration diagram for Keyboard:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af6a99ec66c8c722a45b967bf79167038"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af6a99ec66c8c722a45b967bf79167038">~Keyboard</a> ()</td></tr>
+<tr class="memdesc:af6a99ec66c8c722a45b967bf79167038"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deconstructor.  <a href="#af6a99ec66c8c722a45b967bf79167038">More...</a><br/></td></tr>
 <tr class="separator:af6a99ec66c8c722a45b967bf79167038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d15d5289af582f6f247ae333034db02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6d15d5289af582f6f247ae333034db02">Keyboard</a> (const <a class="el" href="class_keyboard.html">Keyboard</a> &amp;keyboard)=delete</td></tr>
+<tr class="memdesc:a6d15d5289af582f6f247ae333034db02"><td class="mdescLeft">&#160;</td><td class="mdescRight">the deleted copy constructor.  <a href="#a6d15d5289af582f6f247ae333034db02">More...</a><br/></td></tr>
 <tr class="separator:a6d15d5289af582f6f247ae333034db02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fe736c2e88e5ed828dd985c857da0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_keyboard.html">Keyboard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a92fe736c2e88e5ed828dd985c857da0a">operator=</a> (const <a class="el" href="class_keyboard.html">Keyboard</a> &amp;keyboard)=delete</td></tr>
+<tr class="memdesc:a92fe736c2e88e5ed828dd985c857da0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">the deleted assignment opperator.  <a href="#a92fe736c2e88e5ed828dd985c857da0a">More...</a><br/></td></tr>
 <tr class="separator:a92fe736c2e88e5ed828dd985c857da0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6410f07ddc53561a82d5328d8b330aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6410f07ddc53561a82d5328d8b330aab">update</a> ()</td></tr>
+<tr class="memdesc:a6410f07ddc53561a82d5328d8b330aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The update method to recheck every key.  <a href="#a6410f07ddc53561a82d5328d8b330aab">More...</a><br/></td></tr>
 <tr class="separator:a6410f07ddc53561a82d5328d8b330aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb69c710e18e3578fa5ed66e07e6b766"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#acb69c710e18e3578fa5ed66e07e6b766">getA</a> ()</td></tr>
+<tr class="memdesc:acb69c710e18e3578fa5ed66e07e6b766"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#acb69c710e18e3578fa5ed66e07e6b766">More...</a><br/></td></tr>
 <tr class="separator:acb69c710e18e3578fa5ed66e07e6b766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe467d1841c9c0b89c5856e9b3259980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#abe467d1841c9c0b89c5856e9b3259980">getB</a> ()</td></tr>
+<tr class="memdesc:abe467d1841c9c0b89c5856e9b3259980"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#abe467d1841c9c0b89c5856e9b3259980">More...</a><br/></td></tr>
 <tr class="separator:abe467d1841c9c0b89c5856e9b3259980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14994ae9d4a753c90511eee46f9b8eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ae14994ae9d4a753c90511eee46f9b8eb">getC</a> ()</td></tr>
+<tr class="memdesc:ae14994ae9d4a753c90511eee46f9b8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ae14994ae9d4a753c90511eee46f9b8eb">More...</a><br/></td></tr>
 <tr class="separator:ae14994ae9d4a753c90511eee46f9b8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e7561799ddc1941283333dcd50c5e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab9e7561799ddc1941283333dcd50c5e1">getD</a> ()</td></tr>
+<tr class="memdesc:ab9e7561799ddc1941283333dcd50c5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ab9e7561799ddc1941283333dcd50c5e1">More...</a><br/></td></tr>
 <tr class="separator:ab9e7561799ddc1941283333dcd50c5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fbe5b7e31739174b7cd810521a2e9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac1fbe5b7e31739174b7cd810521a2e9d">getE</a> ()</td></tr>
+<tr class="memdesc:ac1fbe5b7e31739174b7cd810521a2e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ac1fbe5b7e31739174b7cd810521a2e9d">More...</a><br/></td></tr>
 <tr class="separator:ac1fbe5b7e31739174b7cd810521a2e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fec87afe52371c8a264745a5c487d06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6fec87afe52371c8a264745a5c487d06">getF</a> ()</td></tr>
+<tr class="memdesc:a6fec87afe52371c8a264745a5c487d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a6fec87afe52371c8a264745a5c487d06">More...</a><br/></td></tr>
 <tr class="separator:a6fec87afe52371c8a264745a5c487d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31aae98dfbc61407fa004ae2f7595452"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a31aae98dfbc61407fa004ae2f7595452">getG</a> ()</td></tr>
+<tr class="memdesc:a31aae98dfbc61407fa004ae2f7595452"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a31aae98dfbc61407fa004ae2f7595452">More...</a><br/></td></tr>
 <tr class="separator:a31aae98dfbc61407fa004ae2f7595452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0deba682104bf09a85d23ab4085d53f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0deba682104bf09a85d23ab4085d53f8">getH</a> ()</td></tr>
+<tr class="memdesc:a0deba682104bf09a85d23ab4085d53f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a0deba682104bf09a85d23ab4085d53f8">More...</a><br/></td></tr>
 <tr class="separator:a0deba682104bf09a85d23ab4085d53f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533b9c9ea72e078a6ed1081e0293a457"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a533b9c9ea72e078a6ed1081e0293a457">getI</a> ()</td></tr>
+<tr class="memdesc:a533b9c9ea72e078a6ed1081e0293a457"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a533b9c9ea72e078a6ed1081e0293a457">More...</a><br/></td></tr>
 <tr class="separator:a533b9c9ea72e078a6ed1081e0293a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d68d720a385e1b58d28ecffbf97964"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a47d68d720a385e1b58d28ecffbf97964">getJ</a> ()</td></tr>
+<tr class="memdesc:a47d68d720a385e1b58d28ecffbf97964"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a47d68d720a385e1b58d28ecffbf97964">More...</a><br/></td></tr>
 <tr class="separator:a47d68d720a385e1b58d28ecffbf97964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac512b5cbd9f8c229a6a4c81c0ca12f91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac512b5cbd9f8c229a6a4c81c0ca12f91">getK</a> ()</td></tr>
+<tr class="memdesc:ac512b5cbd9f8c229a6a4c81c0ca12f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ac512b5cbd9f8c229a6a4c81c0ca12f91">More...</a><br/></td></tr>
 <tr class="separator:ac512b5cbd9f8c229a6a4c81c0ca12f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bb30d06c8ed37ae9e0e55135f2b7170"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0bb30d06c8ed37ae9e0e55135f2b7170">getL</a> ()</td></tr>
+<tr class="memdesc:a0bb30d06c8ed37ae9e0e55135f2b7170"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a0bb30d06c8ed37ae9e0e55135f2b7170">More...</a><br/></td></tr>
 <tr class="separator:a0bb30d06c8ed37ae9e0e55135f2b7170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06888fa46c0dc92103a4d7416bfb474e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a06888fa46c0dc92103a4d7416bfb474e">getM</a> ()</td></tr>
+<tr class="memdesc:a06888fa46c0dc92103a4d7416bfb474e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a06888fa46c0dc92103a4d7416bfb474e">More...</a><br/></td></tr>
 <tr class="separator:a06888fa46c0dc92103a4d7416bfb474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5d31dc62328f59af7ff137de090818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0b5d31dc62328f59af7ff137de090818">getN</a> ()</td></tr>
+<tr class="memdesc:a0b5d31dc62328f59af7ff137de090818"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a0b5d31dc62328f59af7ff137de090818">More...</a><br/></td></tr>
 <tr class="separator:a0b5d31dc62328f59af7ff137de090818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d52718b43926378944d3ec1ab4ef245"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a1d52718b43926378944d3ec1ab4ef245">getO</a> ()</td></tr>
+<tr class="memdesc:a1d52718b43926378944d3ec1ab4ef245"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a1d52718b43926378944d3ec1ab4ef245">More...</a><br/></td></tr>
 <tr class="separator:a1d52718b43926378944d3ec1ab4ef245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c96638ce77e4a6bfee3f7c18bcb9b63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a9c96638ce77e4a6bfee3f7c18bcb9b63">getP</a> ()</td></tr>
+<tr class="memdesc:a9c96638ce77e4a6bfee3f7c18bcb9b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a9c96638ce77e4a6bfee3f7c18bcb9b63">More...</a><br/></td></tr>
 <tr class="separator:a9c96638ce77e4a6bfee3f7c18bcb9b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3960e897150ae3121301bff4381e56a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad3960e897150ae3121301bff4381e56a">getQ</a> ()</td></tr>
+<tr class="memdesc:ad3960e897150ae3121301bff4381e56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ad3960e897150ae3121301bff4381e56a">More...</a><br/></td></tr>
 <tr class="separator:ad3960e897150ae3121301bff4381e56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42d4db82a7ea40418c831a8d68719ca6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a42d4db82a7ea40418c831a8d68719ca6">getR</a> ()</td></tr>
+<tr class="memdesc:a42d4db82a7ea40418c831a8d68719ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a42d4db82a7ea40418c831a8d68719ca6">More...</a><br/></td></tr>
 <tr class="separator:a42d4db82a7ea40418c831a8d68719ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c76aa89c02ba8a98b81299278f813c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a38c76aa89c02ba8a98b81299278f813c">getS</a> ()</td></tr>
+<tr class="memdesc:a38c76aa89c02ba8a98b81299278f813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a38c76aa89c02ba8a98b81299278f813c">More...</a><br/></td></tr>
 <tr class="separator:a38c76aa89c02ba8a98b81299278f813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2d380e26575a378431edf4a9fe9e5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7d2d380e26575a378431edf4a9fe9e5b">getT</a> ()</td></tr>
+<tr class="memdesc:a7d2d380e26575a378431edf4a9fe9e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a7d2d380e26575a378431edf4a9fe9e5b">More...</a><br/></td></tr>
 <tr class="separator:a7d2d380e26575a378431edf4a9fe9e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a217742d32bedc411969d0b9fc8695d0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a217742d32bedc411969d0b9fc8695d0c">getU</a> ()</td></tr>
+<tr class="memdesc:a217742d32bedc411969d0b9fc8695d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a217742d32bedc411969d0b9fc8695d0c">More...</a><br/></td></tr>
 <tr class="separator:a217742d32bedc411969d0b9fc8695d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742945eb88fc6f0a080b4caea661a64f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a742945eb88fc6f0a080b4caea661a64f">getV</a> ()</td></tr>
+<tr class="memdesc:a742945eb88fc6f0a080b4caea661a64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a742945eb88fc6f0a080b4caea661a64f">More...</a><br/></td></tr>
 <tr class="separator:a742945eb88fc6f0a080b4caea661a64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbfd652fcf142863462910076a5298dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#abbfd652fcf142863462910076a5298dd">getW</a> ()</td></tr>
+<tr class="memdesc:abbfd652fcf142863462910076a5298dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#abbfd652fcf142863462910076a5298dd">More...</a><br/></td></tr>
 <tr class="separator:abbfd652fcf142863462910076a5298dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa058729c91b1233101d408d77985f87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#afa058729c91b1233101d408d77985f87">getX</a> ()</td></tr>
+<tr class="memdesc:afa058729c91b1233101d408d77985f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#afa058729c91b1233101d408d77985f87">More...</a><br/></td></tr>
 <tr class="separator:afa058729c91b1233101d408d77985f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15b70f1cb6b0cbecdeed7c363922411"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac15b70f1cb6b0cbecdeed7c363922411">getY</a> ()</td></tr>
+<tr class="memdesc:ac15b70f1cb6b0cbecdeed7c363922411"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ac15b70f1cb6b0cbecdeed7c363922411">More...</a><br/></td></tr>
 <tr class="separator:ac15b70f1cb6b0cbecdeed7c363922411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9855a7877c01f7d29f4a4d10217bfc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac9855a7877c01f7d29f4a4d10217bfc1">getZ</a> ()</td></tr>
+<tr class="memdesc:ac9855a7877c01f7d29f4a4d10217bfc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ac9855a7877c01f7d29f4a4d10217bfc1">More...</a><br/></td></tr>
 <tr class="separator:ac9855a7877c01f7d29f4a4d10217bfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5ecb4909477ec4a5173353171912bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a1c5ecb4909477ec4a5173353171912bd">getNum0</a> ()</td></tr>
+<tr class="memdesc:a1c5ecb4909477ec4a5173353171912bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a1c5ecb4909477ec4a5173353171912bd">More...</a><br/></td></tr>
 <tr class="separator:a1c5ecb4909477ec4a5173353171912bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d7ebfb0172d399530245cd00243fb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a27d7ebfb0172d399530245cd00243fb0">getNum1</a> ()</td></tr>
+<tr class="memdesc:a27d7ebfb0172d399530245cd00243fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a27d7ebfb0172d399530245cd00243fb0">More...</a><br/></td></tr>
 <tr class="separator:a27d7ebfb0172d399530245cd00243fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5e05e63ae1cfb59ca375b05dcbe688"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6e5e05e63ae1cfb59ca375b05dcbe688">getNum2</a> ()</td></tr>
+<tr class="memdesc:a6e5e05e63ae1cfb59ca375b05dcbe688"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a6e5e05e63ae1cfb59ca375b05dcbe688">More...</a><br/></td></tr>
 <tr class="separator:a6e5e05e63ae1cfb59ca375b05dcbe688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb62d27041dd2d39968c2d2fe424155d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#acb62d27041dd2d39968c2d2fe424155d">getNum3</a> ()</td></tr>
+<tr class="memdesc:acb62d27041dd2d39968c2d2fe424155d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#acb62d27041dd2d39968c2d2fe424155d">More...</a><br/></td></tr>
 <tr class="separator:acb62d27041dd2d39968c2d2fe424155d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf405bac73bbe34b554b452ce531fd09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adf405bac73bbe34b554b452ce531fd09">getNum4</a> ()</td></tr>
+<tr class="memdesc:adf405bac73bbe34b554b452ce531fd09"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#adf405bac73bbe34b554b452ce531fd09">More...</a><br/></td></tr>
 <tr class="separator:adf405bac73bbe34b554b452ce531fd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a172c6bab05bb95d20ddb80a2d23d95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a5a172c6bab05bb95d20ddb80a2d23d95">getNum5</a> ()</td></tr>
+<tr class="memdesc:a5a172c6bab05bb95d20ddb80a2d23d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a5a172c6bab05bb95d20ddb80a2d23d95">More...</a><br/></td></tr>
 <tr class="separator:a5a172c6bab05bb95d20ddb80a2d23d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af08887ae78e829222420acada6707ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af08887ae78e829222420acada6707ac8">getNum6</a> ()</td></tr>
+<tr class="memdesc:af08887ae78e829222420acada6707ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#af08887ae78e829222420acada6707ac8">More...</a><br/></td></tr>
 <tr class="separator:af08887ae78e829222420acada6707ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d1067ac6b0c8836f01608e60842625"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a08d1067ac6b0c8836f01608e60842625">getNum7</a> ()</td></tr>
+<tr class="memdesc:a08d1067ac6b0c8836f01608e60842625"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a08d1067ac6b0c8836f01608e60842625">More...</a><br/></td></tr>
 <tr class="separator:a08d1067ac6b0c8836f01608e60842625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e119a74e4fcca0bbda53d885bd4245"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af0e119a74e4fcca0bbda53d885bd4245">getNum8</a> ()</td></tr>
+<tr class="memdesc:af0e119a74e4fcca0bbda53d885bd4245"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#af0e119a74e4fcca0bbda53d885bd4245">More...</a><br/></td></tr>
 <tr class="separator:af0e119a74e4fcca0bbda53d885bd4245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e1c476a2d5e4c9c0f9a7a2c97356bfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0e1c476a2d5e4c9c0f9a7a2c97356bfa">getNum9</a> ()</td></tr>
+<tr class="memdesc:a0e1c476a2d5e4c9c0f9a7a2c97356bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a0e1c476a2d5e4c9c0f9a7a2c97356bfa">More...</a><br/></td></tr>
 <tr class="separator:a0e1c476a2d5e4c9c0f9a7a2c97356bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994ab28476380c8233e80cb0f349bdb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a994ab28476380c8233e80cb0f349bdb8">getEscape</a> ()</td></tr>
+<tr class="memdesc:a994ab28476380c8233e80cb0f349bdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a994ab28476380c8233e80cb0f349bdb8">More...</a><br/></td></tr>
 <tr class="separator:a994ab28476380c8233e80cb0f349bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f60b99ed9f012e78629acfe1f795be3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a5f60b99ed9f012e78629acfe1f795be3">getLControl</a> ()</td></tr>
+<tr class="memdesc:a5f60b99ed9f012e78629acfe1f795be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a5f60b99ed9f012e78629acfe1f795be3">More...</a><br/></td></tr>
 <tr class="separator:a5f60b99ed9f012e78629acfe1f795be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a410f25adf92d4120faeab8334ededba9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a410f25adf92d4120faeab8334ededba9">getLShift</a> ()</td></tr>
+<tr class="memdesc:a410f25adf92d4120faeab8334ededba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a410f25adf92d4120faeab8334ededba9">More...</a><br/></td></tr>
 <tr class="separator:a410f25adf92d4120faeab8334ededba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ad4b6abd18ebd2a6c69da2de338265c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a2ad4b6abd18ebd2a6c69da2de338265c">getLAlt</a> ()</td></tr>
+<tr class="memdesc:a2ad4b6abd18ebd2a6c69da2de338265c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a2ad4b6abd18ebd2a6c69da2de338265c">More...</a><br/></td></tr>
 <tr class="separator:a2ad4b6abd18ebd2a6c69da2de338265c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab58d4d9bb82bf64de46fa1792fd80086"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab58d4d9bb82bf64de46fa1792fd80086">getLSystem</a> ()</td></tr>
+<tr class="memdesc:ab58d4d9bb82bf64de46fa1792fd80086"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ab58d4d9bb82bf64de46fa1792fd80086">More...</a><br/></td></tr>
 <tr class="separator:ab58d4d9bb82bf64de46fa1792fd80086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428d96963222eff1fefb15198403c14c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a428d96963222eff1fefb15198403c14c">getRControl</a> ()</td></tr>
+<tr class="memdesc:a428d96963222eff1fefb15198403c14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a428d96963222eff1fefb15198403c14c">More...</a><br/></td></tr>
 <tr class="separator:a428d96963222eff1fefb15198403c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a412703b9a1957036c6ef559e804aed91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a412703b9a1957036c6ef559e804aed91">getRShift</a> ()</td></tr>
+<tr class="memdesc:a412703b9a1957036c6ef559e804aed91"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a412703b9a1957036c6ef559e804aed91">More...</a><br/></td></tr>
 <tr class="separator:a412703b9a1957036c6ef559e804aed91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670aae3f40bf02f26fb966f25ff06234"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a670aae3f40bf02f26fb966f25ff06234">getRAlt</a> ()</td></tr>
+<tr class="memdesc:a670aae3f40bf02f26fb966f25ff06234"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a670aae3f40bf02f26fb966f25ff06234">More...</a><br/></td></tr>
 <tr class="separator:a670aae3f40bf02f26fb966f25ff06234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8659cc000033848acae7c18683886a92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8659cc000033848acae7c18683886a92">getRSystem</a> ()</td></tr>
+<tr class="memdesc:a8659cc000033848acae7c18683886a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a8659cc000033848acae7c18683886a92">More...</a><br/></td></tr>
 <tr class="separator:a8659cc000033848acae7c18683886a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c31b46ab392c8cfeb4f060ce346e22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad5c31b46ab392c8cfeb4f060ce346e22">getMenu</a> ()</td></tr>
+<tr class="memdesc:ad5c31b46ab392c8cfeb4f060ce346e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ad5c31b46ab392c8cfeb4f060ce346e22">More...</a><br/></td></tr>
 <tr class="separator:ad5c31b46ab392c8cfeb4f060ce346e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62d0bd6e13a7c2ef5d70f0c63c7b6104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a62d0bd6e13a7c2ef5d70f0c63c7b6104">getLBracket</a> ()</td></tr>
+<tr class="memdesc:a62d0bd6e13a7c2ef5d70f0c63c7b6104"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a62d0bd6e13a7c2ef5d70f0c63c7b6104">More...</a><br/></td></tr>
 <tr class="separator:a62d0bd6e13a7c2ef5d70f0c63c7b6104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065e43a5ece4a6a8790e3f8a8817ea23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a065e43a5ece4a6a8790e3f8a8817ea23">getRBracket</a> ()</td></tr>
+<tr class="memdesc:a065e43a5ece4a6a8790e3f8a8817ea23"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a065e43a5ece4a6a8790e3f8a8817ea23">More...</a><br/></td></tr>
 <tr class="separator:a065e43a5ece4a6a8790e3f8a8817ea23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add5ee27f0c650e722f0c6666ed57b022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#add5ee27f0c650e722f0c6666ed57b022">getSemiColon</a> ()</td></tr>
+<tr class="memdesc:add5ee27f0c650e722f0c6666ed57b022"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#add5ee27f0c650e722f0c6666ed57b022">More...</a><br/></td></tr>
 <tr class="separator:add5ee27f0c650e722f0c6666ed57b022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec17bf7d0b87ccdd5020ab9fa3b94413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#aec17bf7d0b87ccdd5020ab9fa3b94413">getComma</a> ()</td></tr>
+<tr class="memdesc:aec17bf7d0b87ccdd5020ab9fa3b94413"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#aec17bf7d0b87ccdd5020ab9fa3b94413">More...</a><br/></td></tr>
 <tr class="separator:aec17bf7d0b87ccdd5020ab9fa3b94413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc2692d8e1006b086a82678aabdbad3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6fc2692d8e1006b086a82678aabdbad3">getPeriod</a> ()</td></tr>
+<tr class="memdesc:a6fc2692d8e1006b086a82678aabdbad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a6fc2692d8e1006b086a82678aabdbad3">More...</a><br/></td></tr>
 <tr class="separator:a6fc2692d8e1006b086a82678aabdbad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b58b89fb75696031d097278eac0ec7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a09b58b89fb75696031d097278eac0ec7">getQuote</a> ()</td></tr>
+<tr class="memdesc:a09b58b89fb75696031d097278eac0ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a09b58b89fb75696031d097278eac0ec7">More...</a><br/></td></tr>
 <tr class="separator:a09b58b89fb75696031d097278eac0ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af84d491804fc8be29f3646251faf1611"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af84d491804fc8be29f3646251faf1611">getSlash</a> ()</td></tr>
+<tr class="memdesc:af84d491804fc8be29f3646251faf1611"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#af84d491804fc8be29f3646251faf1611">More...</a><br/></td></tr>
 <tr class="separator:af84d491804fc8be29f3646251faf1611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57019e241d4e3413ee6bd68e6a6a3d79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a57019e241d4e3413ee6bd68e6a6a3d79">getBackSlash</a> ()</td></tr>
+<tr class="memdesc:a57019e241d4e3413ee6bd68e6a6a3d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a57019e241d4e3413ee6bd68e6a6a3d79">More...</a><br/></td></tr>
 <tr class="separator:a57019e241d4e3413ee6bd68e6a6a3d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e0b87609daf296416a181d2aa327cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab0e0b87609daf296416a181d2aa327cb">getTilde</a> ()</td></tr>
+<tr class="memdesc:ab0e0b87609daf296416a181d2aa327cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ab0e0b87609daf296416a181d2aa327cb">More...</a><br/></td></tr>
 <tr class="separator:ab0e0b87609daf296416a181d2aa327cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33d990d565c0e9e6de234c2ccd847fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab33d990d565c0e9e6de234c2ccd847fd">getEqual</a> ()</td></tr>
+<tr class="memdesc:ab33d990d565c0e9e6de234c2ccd847fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ab33d990d565c0e9e6de234c2ccd847fd">More...</a><br/></td></tr>
 <tr class="separator:ab33d990d565c0e9e6de234c2ccd847fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b629ac3f7efb81b4dd6091894261900"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a2b629ac3f7efb81b4dd6091894261900">getDash</a> ()</td></tr>
+<tr class="memdesc:a2b629ac3f7efb81b4dd6091894261900"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a2b629ac3f7efb81b4dd6091894261900">More...</a><br/></td></tr>
 <tr class="separator:a2b629ac3f7efb81b4dd6091894261900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8dc7b677742e216c75f4e4c739bed12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab8dc7b677742e216c75f4e4c739bed12">getSpace</a> ()</td></tr>
+<tr class="memdesc:ab8dc7b677742e216c75f4e4c739bed12"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#ab8dc7b677742e216c75f4e4c739bed12">More...</a><br/></td></tr>
 <tr class="separator:ab8dc7b677742e216c75f4e4c739bed12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04482f34bbd2f5d2463acbe07e8b2e56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a04482f34bbd2f5d2463acbe07e8b2e56">getReturn</a> ()</td></tr>
+<tr class="memdesc:a04482f34bbd2f5d2463acbe07e8b2e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the key is pressed.  <a href="#a04482f34bbd2f5d2463acbe07e8b2e56">More...</a><br/></td></tr>
 <tr class="separator:a04482f34bbd2f5d2463acbe07e8b2e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab425b0b196ffde8d878097b71884702a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab425b0b196ffde8d878097b71884702a">getBackSpace</a> ()</td></tr>
 <tr class="separator:ab425b0b196ffde8d878097b71884702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,219 +406,328 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a09fc76a431abc21dba175b10bc4a1ec8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_keyboard.html">Keyboard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8">getInstance</a> ()</td></tr>
+<tr class="memdesc:a09fc76a431abc21dba175b10bc4a1ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="class_keyboard.html" title="This Singleton Manages any key presses. ">Keyboard</a> instance.  <a href="#a09fc76a431abc21dba175b10bc4a1ec8">More...</a><br/></td></tr>
 <tr class="separator:a09fc76a431abc21dba175b10bc4a1ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad6b0bb849d6bb7cdf63091e40b5f5f7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad6b0bb849d6bb7cdf63091e40b5f5f7f">Keyboard</a> ()</td></tr>
+<tr class="memdesc:ad6b0bb849d6bb7cdf63091e40b5f5f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default Constructor.  <a href="#ad6b0bb849d6bb7cdf63091e40b5f5f7f">More...</a><br/></td></tr>
 <tr class="separator:ad6b0bb849d6bb7cdf63091e40b5f5f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a33ee9c98d3b2426fec7b69fd4f42fb9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a33ee9c98d3b2426fec7b69fd4f42fb9a">A</a></td></tr>
+<tr class="memdesc:a33ee9c98d3b2426fec7b69fd4f42fb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the A Key.  <a href="#a33ee9c98d3b2426fec7b69fd4f42fb9a">More...</a><br/></td></tr>
 <tr class="separator:a33ee9c98d3b2426fec7b69fd4f42fb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6386fea4a95993853302e9bafb520eca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6386fea4a95993853302e9bafb520eca">B</a></td></tr>
+<tr class="memdesc:a6386fea4a95993853302e9bafb520eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the B Key.  <a href="#a6386fea4a95993853302e9bafb520eca">More...</a><br/></td></tr>
 <tr class="separator:a6386fea4a95993853302e9bafb520eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e9a644f450a387c8b0becfec29e0eba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8e9a644f450a387c8b0becfec29e0eba">C</a></td></tr>
+<tr class="memdesc:a8e9a644f450a387c8b0becfec29e0eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the C Key.  <a href="#a8e9a644f450a387c8b0becfec29e0eba">More...</a><br/></td></tr>
 <tr class="separator:a8e9a644f450a387c8b0becfec29e0eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913ff21c18119ddf7a4185c84e0e7449"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a913ff21c18119ddf7a4185c84e0e7449">D</a></td></tr>
+<tr class="memdesc:a913ff21c18119ddf7a4185c84e0e7449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the D Key.  <a href="#a913ff21c18119ddf7a4185c84e0e7449">More...</a><br/></td></tr>
 <tr class="separator:a913ff21c18119ddf7a4185c84e0e7449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f9fdb7927cb81bba0d054c26509a7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a10f9fdb7927cb81bba0d054c26509a7a">E</a></td></tr>
+<tr class="memdesc:a10f9fdb7927cb81bba0d054c26509a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the E Key.  <a href="#a10f9fdb7927cb81bba0d054c26509a7a">More...</a><br/></td></tr>
 <tr class="separator:a10f9fdb7927cb81bba0d054c26509a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af271aa6fd76947941d20934dc86a0bb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af271aa6fd76947941d20934dc86a0bb2">F</a></td></tr>
+<tr class="memdesc:af271aa6fd76947941d20934dc86a0bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F Key.  <a href="#af271aa6fd76947941d20934dc86a0bb2">More...</a><br/></td></tr>
 <tr class="separator:af271aa6fd76947941d20934dc86a0bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c602997ff88ff6b54a696397e5478f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a2c602997ff88ff6b54a696397e5478f9">G</a></td></tr>
+<tr class="memdesc:a2c602997ff88ff6b54a696397e5478f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the G Key.  <a href="#a2c602997ff88ff6b54a696397e5478f9">More...</a><br/></td></tr>
 <tr class="separator:a2c602997ff88ff6b54a696397e5478f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5756caddc794320748593954cbd35a2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a5756caddc794320748593954cbd35a2a">H</a></td></tr>
+<tr class="memdesc:a5756caddc794320748593954cbd35a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the H Key.  <a href="#a5756caddc794320748593954cbd35a2a">More...</a><br/></td></tr>
 <tr class="separator:a5756caddc794320748593954cbd35a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f5f1879a371a750deaef44730f6c8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a59f5f1879a371a750deaef44730f6c8e">I</a></td></tr>
+<tr class="memdesc:a59f5f1879a371a750deaef44730f6c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the I Key.  <a href="#a59f5f1879a371a750deaef44730f6c8e">More...</a><br/></td></tr>
 <tr class="separator:a59f5f1879a371a750deaef44730f6c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e10d1e2486a150419889ac513386b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a79e10d1e2486a150419889ac513386b9">J</a></td></tr>
+<tr class="memdesc:a79e10d1e2486a150419889ac513386b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the J Key.  <a href="#a79e10d1e2486a150419889ac513386b9">More...</a><br/></td></tr>
 <tr class="separator:a79e10d1e2486a150419889ac513386b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805724edf1245e28598089225bcae72e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a805724edf1245e28598089225bcae72e">K</a></td></tr>
+<tr class="memdesc:a805724edf1245e28598089225bcae72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the K Key.  <a href="#a805724edf1245e28598089225bcae72e">More...</a><br/></td></tr>
 <tr class="separator:a805724edf1245e28598089225bcae72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad314cbbe55e6d9d699f9c4a3d673dc0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad314cbbe55e6d9d699f9c4a3d673dc0e">L</a></td></tr>
+<tr class="memdesc:ad314cbbe55e6d9d699f9c4a3d673dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the L Key.  <a href="#ad314cbbe55e6d9d699f9c4a3d673dc0e">More...</a><br/></td></tr>
 <tr class="separator:ad314cbbe55e6d9d699f9c4a3d673dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655e239c891a0c77273f5651f77d752b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a655e239c891a0c77273f5651f77d752b">M</a></td></tr>
+<tr class="memdesc:a655e239c891a0c77273f5651f77d752b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the M Key.  <a href="#a655e239c891a0c77273f5651f77d752b">More...</a><br/></td></tr>
 <tr class="separator:a655e239c891a0c77273f5651f77d752b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c13f7665efcec0323466f50080dd90f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a9c13f7665efcec0323466f50080dd90f">N</a></td></tr>
+<tr class="memdesc:a9c13f7665efcec0323466f50080dd90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the N Key.  <a href="#a9c13f7665efcec0323466f50080dd90f">More...</a><br/></td></tr>
 <tr class="separator:a9c13f7665efcec0323466f50080dd90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ef655c59d2d20ca9ac14b38281bd2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac2ef655c59d2d20ca9ac14b38281bd2b">O</a></td></tr>
+<tr class="memdesc:ac2ef655c59d2d20ca9ac14b38281bd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the O Key.  <a href="#ac2ef655c59d2d20ca9ac14b38281bd2b">More...</a><br/></td></tr>
 <tr class="separator:ac2ef655c59d2d20ca9ac14b38281bd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1ccbf5bdd2ca101d91f6aeb12b0003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0a1ccbf5bdd2ca101d91f6aeb12b0003">P</a></td></tr>
+<tr class="memdesc:a0a1ccbf5bdd2ca101d91f6aeb12b0003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the P Key.  <a href="#a0a1ccbf5bdd2ca101d91f6aeb12b0003">More...</a><br/></td></tr>
 <tr class="separator:a0a1ccbf5bdd2ca101d91f6aeb12b0003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73542918c6ffdd4915925fff6aea1eb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a73542918c6ffdd4915925fff6aea1eb5">Q</a></td></tr>
+<tr class="memdesc:a73542918c6ffdd4915925fff6aea1eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Q Key.  <a href="#a73542918c6ffdd4915925fff6aea1eb5">More...</a><br/></td></tr>
 <tr class="separator:a73542918c6ffdd4915925fff6aea1eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43732e3f8a2a179490d70bbca9c9cbf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a43732e3f8a2a179490d70bbca9c9cbf7">R</a></td></tr>
+<tr class="memdesc:a43732e3f8a2a179490d70bbca9c9cbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the R Key.  <a href="#a43732e3f8a2a179490d70bbca9c9cbf7">More...</a><br/></td></tr>
 <tr class="separator:a43732e3f8a2a179490d70bbca9c9cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafafb740df9ac23e0fdbac7b85ca5902"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#aafafb740df9ac23e0fdbac7b85ca5902">S</a></td></tr>
+<tr class="memdesc:aafafb740df9ac23e0fdbac7b85ca5902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the S Key.  <a href="#aafafb740df9ac23e0fdbac7b85ca5902">More...</a><br/></td></tr>
 <tr class="separator:aafafb740df9ac23e0fdbac7b85ca5902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a8270c2f89be1d02deff45e5b05423"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a82a8270c2f89be1d02deff45e5b05423">T</a></td></tr>
+<tr class="memdesc:a82a8270c2f89be1d02deff45e5b05423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the T Key.  <a href="#a82a8270c2f89be1d02deff45e5b05423">More...</a><br/></td></tr>
 <tr class="separator:a82a8270c2f89be1d02deff45e5b05423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a0cb0a587e4aea584d64486c95996b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a73a0cb0a587e4aea584d64486c95996b">U</a></td></tr>
+<tr class="memdesc:a73a0cb0a587e4aea584d64486c95996b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the U Key.  <a href="#a73a0cb0a587e4aea584d64486c95996b">More...</a><br/></td></tr>
 <tr class="separator:a73a0cb0a587e4aea584d64486c95996b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae41741f501d169e8671242bae37c608f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ae41741f501d169e8671242bae37c608f">V</a></td></tr>
+<tr class="memdesc:ae41741f501d169e8671242bae37c608f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the V Key.  <a href="#ae41741f501d169e8671242bae37c608f">More...</a><br/></td></tr>
 <tr class="separator:ae41741f501d169e8671242bae37c608f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c1dbac444af2066b65cb5f73cfeb00e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7c1dbac444af2066b65cb5f73cfeb00e">W</a></td></tr>
+<tr class="memdesc:a7c1dbac444af2066b65cb5f73cfeb00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the W Key.  <a href="#a7c1dbac444af2066b65cb5f73cfeb00e">More...</a><br/></td></tr>
 <tr class="separator:a7c1dbac444af2066b65cb5f73cfeb00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde15308c9554c8abaf8054b105b9507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#afde15308c9554c8abaf8054b105b9507">X</a></td></tr>
+<tr class="memdesc:afde15308c9554c8abaf8054b105b9507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the X Key.  <a href="#afde15308c9554c8abaf8054b105b9507">More...</a><br/></td></tr>
 <tr class="separator:afde15308c9554c8abaf8054b105b9507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a030813b88756995bdc8b577b3674dd0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a030813b88756995bdc8b577b3674dd0a">Y</a></td></tr>
+<tr class="memdesc:a030813b88756995bdc8b577b3674dd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Y Key.  <a href="#a030813b88756995bdc8b577b3674dd0a">More...</a><br/></td></tr>
 <tr class="separator:a030813b88756995bdc8b577b3674dd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbae1e2f05e366553c81c136a0f3f970"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#abbae1e2f05e366553c81c136a0f3f970">Z</a></td></tr>
+<tr class="memdesc:abbae1e2f05e366553c81c136a0f3f970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Z Key.  <a href="#abbae1e2f05e366553c81c136a0f3f970">More...</a><br/></td></tr>
 <tr class="separator:abbae1e2f05e366553c81c136a0f3f970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcaa025a0862c4ef0b915a39f095f86c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adcaa025a0862c4ef0b915a39f095f86c">Num0</a></td></tr>
+<tr class="memdesc:adcaa025a0862c4ef0b915a39f095f86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num0 Key.  <a href="#adcaa025a0862c4ef0b915a39f095f86c">More...</a><br/></td></tr>
 <tr class="separator:adcaa025a0862c4ef0b915a39f095f86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835bf1e4085d8f539a374f38fcf44a52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a835bf1e4085d8f539a374f38fcf44a52">Num1</a></td></tr>
+<tr class="memdesc:a835bf1e4085d8f539a374f38fcf44a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num1 Key.  <a href="#a835bf1e4085d8f539a374f38fcf44a52">More...</a><br/></td></tr>
 <tr class="separator:a835bf1e4085d8f539a374f38fcf44a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ec2c5721ec5c013867e16d3b37dd0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#af4ec2c5721ec5c013867e16d3b37dd0b">Num2</a></td></tr>
+<tr class="memdesc:af4ec2c5721ec5c013867e16d3b37dd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num2 Key.  <a href="#af4ec2c5721ec5c013867e16d3b37dd0b">More...</a><br/></td></tr>
 <tr class="separator:af4ec2c5721ec5c013867e16d3b37dd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd66a6febc527dd70cfec532efb4cbba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#acd66a6febc527dd70cfec532efb4cbba">Num3</a></td></tr>
+<tr class="memdesc:acd66a6febc527dd70cfec532efb4cbba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num3 Key.  <a href="#acd66a6febc527dd70cfec532efb4cbba">More...</a><br/></td></tr>
 <tr class="separator:acd66a6febc527dd70cfec532efb4cbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283eb8a0d196bab3d7a6cdc78152e317"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a283eb8a0d196bab3d7a6cdc78152e317">Num4</a></td></tr>
+<tr class="memdesc:a283eb8a0d196bab3d7a6cdc78152e317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num4 Key.  <a href="#a283eb8a0d196bab3d7a6cdc78152e317">More...</a><br/></td></tr>
 <tr class="separator:a283eb8a0d196bab3d7a6cdc78152e317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e89c0853c5b83cb0cb33243c161c93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a54e89c0853c5b83cb0cb33243c161c93">Num5</a></td></tr>
+<tr class="memdesc:a54e89c0853c5b83cb0cb33243c161c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num5 Key.  <a href="#a54e89c0853c5b83cb0cb33243c161c93">More...</a><br/></td></tr>
 <tr class="separator:a54e89c0853c5b83cb0cb33243c161c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99ba505684c08d85ab93fa340e97460"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#aa99ba505684c08d85ab93fa340e97460">Num6</a></td></tr>
+<tr class="memdesc:aa99ba505684c08d85ab93fa340e97460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num6 Key.  <a href="#aa99ba505684c08d85ab93fa340e97460">More...</a><br/></td></tr>
 <tr class="separator:aa99ba505684c08d85ab93fa340e97460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab22734e5959de997b58bc1b2c8a63b1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab22734e5959de997b58bc1b2c8a63b1e">Num7</a></td></tr>
+<tr class="memdesc:ab22734e5959de997b58bc1b2c8a63b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num7 Key.  <a href="#ab22734e5959de997b58bc1b2c8a63b1e">More...</a><br/></td></tr>
 <tr class="separator:ab22734e5959de997b58bc1b2c8a63b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37e82bad8ef3f8a43eca409836d164bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a37e82bad8ef3f8a43eca409836d164bf">Num8</a></td></tr>
+<tr class="memdesc:a37e82bad8ef3f8a43eca409836d164bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num8 Key.  <a href="#a37e82bad8ef3f8a43eca409836d164bf">More...</a><br/></td></tr>
 <tr class="separator:a37e82bad8ef3f8a43eca409836d164bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a946af06657d756d7a2eeebd4c7435af9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a946af06657d756d7a2eeebd4c7435af9">Num9</a></td></tr>
+<tr class="memdesc:a946af06657d756d7a2eeebd4c7435af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Num9 Key.  <a href="#a946af06657d756d7a2eeebd4c7435af9">More...</a><br/></td></tr>
 <tr class="separator:a946af06657d756d7a2eeebd4c7435af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e951ed09368ad149881cd7b775020aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8e951ed09368ad149881cd7b775020aa">Escape</a></td></tr>
+<tr class="memdesc:a8e951ed09368ad149881cd7b775020aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Escape Key.  <a href="#a8e951ed09368ad149881cd7b775020aa">More...</a><br/></td></tr>
 <tr class="separator:a8e951ed09368ad149881cd7b775020aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17b8ff4a74d829f5eea1b87ea9fda13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad17b8ff4a74d829f5eea1b87ea9fda13">LControl</a></td></tr>
+<tr class="memdesc:ad17b8ff4a74d829f5eea1b87ea9fda13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left Control Key.  <a href="#ad17b8ff4a74d829f5eea1b87ea9fda13">More...</a><br/></td></tr>
 <tr class="separator:ad17b8ff4a74d829f5eea1b87ea9fda13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8455f8596760ac41c64d659ffa6b0c60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8455f8596760ac41c64d659ffa6b0c60">LShift</a></td></tr>
+<tr class="memdesc:a8455f8596760ac41c64d659ffa6b0c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left Shift Key.  <a href="#a8455f8596760ac41c64d659ffa6b0c60">More...</a><br/></td></tr>
 <tr class="separator:a8455f8596760ac41c64d659ffa6b0c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ac170a9119716e18ceabf92679e95c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a31ac170a9119716e18ceabf92679e95c">LAlt</a></td></tr>
+<tr class="memdesc:a31ac170a9119716e18ceabf92679e95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left Alt Key.  <a href="#a31ac170a9119716e18ceabf92679e95c">More...</a><br/></td></tr>
 <tr class="separator:a31ac170a9119716e18ceabf92679e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d39d5e2e0573e00fa0fb331baf08d39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a0d39d5e2e0573e00fa0fb331baf08d39">LSystem</a></td></tr>
+<tr class="memdesc:a0d39d5e2e0573e00fa0fb331baf08d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left System Key.  <a href="#a0d39d5e2e0573e00fa0fb331baf08d39">More...</a><br/></td></tr>
 <tr class="separator:a0d39d5e2e0573e00fa0fb331baf08d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b3b0b4d17a476568fe9994cf4ad92b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab0b3b0b4d17a476568fe9994cf4ad92b">RControl</a></td></tr>
+<tr class="memdesc:ab0b3b0b4d17a476568fe9994cf4ad92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right Control Key.  <a href="#ab0b3b0b4d17a476568fe9994cf4ad92b">More...</a><br/></td></tr>
 <tr class="separator:ab0b3b0b4d17a476568fe9994cf4ad92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b00a96a25f3bce3d1bad1e3fc2c600"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a24b00a96a25f3bce3d1bad1e3fc2c600">RShift</a></td></tr>
+<tr class="memdesc:a24b00a96a25f3bce3d1bad1e3fc2c600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right Shift Key.  <a href="#a24b00a96a25f3bce3d1bad1e3fc2c600">More...</a><br/></td></tr>
 <tr class="separator:a24b00a96a25f3bce3d1bad1e3fc2c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b5b72389b90761733b885ebe2feaff6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7b5b72389b90761733b885ebe2feaff6">RAlt</a></td></tr>
+<tr class="memdesc:a7b5b72389b90761733b885ebe2feaff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right Alt Key.  <a href="#a7b5b72389b90761733b885ebe2feaff6">More...</a><br/></td></tr>
 <tr class="separator:a7b5b72389b90761733b885ebe2feaff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba86b1479dfa9fb35ace002e19d6da5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#afba86b1479dfa9fb35ace002e19d6da5">RSystem</a></td></tr>
+<tr class="memdesc:afba86b1479dfa9fb35ace002e19d6da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right System Key.  <a href="#afba86b1479dfa9fb35ace002e19d6da5">More...</a><br/></td></tr>
 <tr class="separator:afba86b1479dfa9fb35ace002e19d6da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaeb2278bbc8f4971d1f43cee9765900"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#afaeb2278bbc8f4971d1f43cee9765900">Menu</a></td></tr>
+<tr class="memdesc:afaeb2278bbc8f4971d1f43cee9765900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Menu Key.  <a href="#afaeb2278bbc8f4971d1f43cee9765900">More...</a><br/></td></tr>
 <tr class="separator:afaeb2278bbc8f4971d1f43cee9765900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9d2e47356ccdeb8cf9b6380b91c2d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a2f9d2e47356ccdeb8cf9b6380b91c2d7">LBracket</a></td></tr>
+<tr class="memdesc:a2f9d2e47356ccdeb8cf9b6380b91c2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left Bracket Key.  <a href="#a2f9d2e47356ccdeb8cf9b6380b91c2d7">More...</a><br/></td></tr>
 <tr class="separator:a2f9d2e47356ccdeb8cf9b6380b91c2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6924305b6bab6e1743c4f30566022e03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6924305b6bab6e1743c4f30566022e03">RBracket</a></td></tr>
+<tr class="memdesc:a6924305b6bab6e1743c4f30566022e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right Bracket Key.  <a href="#a6924305b6bab6e1743c4f30566022e03">More...</a><br/></td></tr>
 <tr class="separator:a6924305b6bab6e1743c4f30566022e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630a1f3ae35be95f2a9b4da9ccec7b65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a630a1f3ae35be95f2a9b4da9ccec7b65">SemiColon</a></td></tr>
+<tr class="memdesc:a630a1f3ae35be95f2a9b4da9ccec7b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Semicolon Key.  <a href="#a630a1f3ae35be95f2a9b4da9ccec7b65">More...</a><br/></td></tr>
 <tr class="separator:a630a1f3ae35be95f2a9b4da9ccec7b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34056a5ea3c0e72446ef864a8a04cb50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a34056a5ea3c0e72446ef864a8a04cb50">Comma</a></td></tr>
+<tr class="memdesc:a34056a5ea3c0e72446ef864a8a04cb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Comma Key.  <a href="#a34056a5ea3c0e72446ef864a8a04cb50">More...</a><br/></td></tr>
 <tr class="separator:a34056a5ea3c0e72446ef864a8a04cb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab214ea962d31b8437bc0b162001574dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab214ea962d31b8437bc0b162001574dc">Period</a></td></tr>
+<tr class="memdesc:ab214ea962d31b8437bc0b162001574dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Period Key.  <a href="#ab214ea962d31b8437bc0b162001574dc">More...</a><br/></td></tr>
 <tr class="separator:ab214ea962d31b8437bc0b162001574dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab962f4a569eb3a171fb648c8f6df904a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ab962f4a569eb3a171fb648c8f6df904a">Quote</a></td></tr>
+<tr class="memdesc:ab962f4a569eb3a171fb648c8f6df904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Quote Key.  <a href="#ab962f4a569eb3a171fb648c8f6df904a">More...</a><br/></td></tr>
 <tr class="separator:ab962f4a569eb3a171fb648c8f6df904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603303cab1a11552d040900389cfb284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a603303cab1a11552d040900389cfb284">Slash</a></td></tr>
+<tr class="memdesc:a603303cab1a11552d040900389cfb284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Slash Key.  <a href="#a603303cab1a11552d040900389cfb284">More...</a><br/></td></tr>
 <tr class="separator:a603303cab1a11552d040900389cfb284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78eb7c6bed698fe88c89ef8ce2071eab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a78eb7c6bed698fe88c89ef8ce2071eab">BackSlash</a></td></tr>
+<tr class="memdesc:a78eb7c6bed698fe88c89ef8ce2071eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Backslash Key.  <a href="#a78eb7c6bed698fe88c89ef8ce2071eab">More...</a><br/></td></tr>
 <tr class="separator:a78eb7c6bed698fe88c89ef8ce2071eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb679f7bd4eecbc6c7ca03e6e47e346"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#aafb679f7bd4eecbc6c7ca03e6e47e346">Tilde</a></td></tr>
+<tr class="memdesc:aafb679f7bd4eecbc6c7ca03e6e47e346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Tilde Key.  <a href="#aafb679f7bd4eecbc6c7ca03e6e47e346">More...</a><br/></td></tr>
 <tr class="separator:aafb679f7bd4eecbc6c7ca03e6e47e346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c78877a504143da05ecc16cae24a05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a88c78877a504143da05ecc16cae24a05">Equal</a></td></tr>
+<tr class="memdesc:a88c78877a504143da05ecc16cae24a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Equal Key.  <a href="#a88c78877a504143da05ecc16cae24a05">More...</a><br/></td></tr>
 <tr class="separator:a88c78877a504143da05ecc16cae24a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6807fa4583f3ff608a2b1d138ffdd94f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6807fa4583f3ff608a2b1d138ffdd94f">Dash</a></td></tr>
+<tr class="memdesc:a6807fa4583f3ff608a2b1d138ffdd94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Dash Key.  <a href="#a6807fa4583f3ff608a2b1d138ffdd94f">More...</a><br/></td></tr>
 <tr class="separator:a6807fa4583f3ff608a2b1d138ffdd94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26cccfd7aa8895b3ce90eef7bf78aa28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a26cccfd7aa8895b3ce90eef7bf78aa28">Space</a></td></tr>
+<tr class="memdesc:a26cccfd7aa8895b3ce90eef7bf78aa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Space Key.  <a href="#a26cccfd7aa8895b3ce90eef7bf78aa28">More...</a><br/></td></tr>
 <tr class="separator:a26cccfd7aa8895b3ce90eef7bf78aa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145aa386b22fd7c1068a336b5e7b8022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a145aa386b22fd7c1068a336b5e7b8022">Return</a></td></tr>
+<tr class="memdesc:a145aa386b22fd7c1068a336b5e7b8022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Return Key.  <a href="#a145aa386b22fd7c1068a336b5e7b8022">More...</a><br/></td></tr>
 <tr class="separator:a145aa386b22fd7c1068a336b5e7b8022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf79ea45e1815dad75cda6933a61cdc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adf79ea45e1815dad75cda6933a61cdc7">BackSpace</a></td></tr>
+<tr class="memdesc:adf79ea45e1815dad75cda6933a61cdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Backspace Key.  <a href="#adf79ea45e1815dad75cda6933a61cdc7">More...</a><br/></td></tr>
 <tr class="separator:adf79ea45e1815dad75cda6933a61cdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67632f0d061db111d70a6909387c61d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a67632f0d061db111d70a6909387c61d2">Tab</a></td></tr>
+<tr class="memdesc:a67632f0d061db111d70a6909387c61d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Tab Key.  <a href="#a67632f0d061db111d70a6909387c61d2">More...</a><br/></td></tr>
 <tr class="separator:a67632f0d061db111d70a6909387c61d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7250e2957e758f84c12fe70fed725f8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7250e2957e758f84c12fe70fed725f8c">PageUp</a></td></tr>
+<tr class="memdesc:a7250e2957e758f84c12fe70fed725f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the PageUp Key.  <a href="#a7250e2957e758f84c12fe70fed725f8c">More...</a><br/></td></tr>
 <tr class="separator:a7250e2957e758f84c12fe70fed725f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01dbe3ee9ed6e45d787ba89e7f7b8e46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a01dbe3ee9ed6e45d787ba89e7f7b8e46">PageDown</a></td></tr>
+<tr class="memdesc:a01dbe3ee9ed6e45d787ba89e7f7b8e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the PageDown Key.  <a href="#a01dbe3ee9ed6e45d787ba89e7f7b8e46">More...</a><br/></td></tr>
 <tr class="separator:a01dbe3ee9ed6e45d787ba89e7f7b8e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07897d6a729a6da93f08d8a05d51d32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac07897d6a729a6da93f08d8a05d51d32">End</a></td></tr>
+<tr class="memdesc:ac07897d6a729a6da93f08d8a05d51d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the End Key.  <a href="#ac07897d6a729a6da93f08d8a05d51d32">More...</a><br/></td></tr>
 <tr class="separator:ac07897d6a729a6da93f08d8a05d51d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b423efd9af41af9e712fa40bd7ac03f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7b423efd9af41af9e712fa40bd7ac03f">Home</a></td></tr>
+<tr class="memdesc:a7b423efd9af41af9e712fa40bd7ac03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Home Key.  <a href="#a7b423efd9af41af9e712fa40bd7ac03f">More...</a><br/></td></tr>
 <tr class="separator:a7b423efd9af41af9e712fa40bd7ac03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf0d9fd5dc41eec57541d114295ca58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adbf0d9fd5dc41eec57541d114295ca58">Insert</a></td></tr>
+<tr class="memdesc:adbf0d9fd5dc41eec57541d114295ca58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Insert Key.  <a href="#adbf0d9fd5dc41eec57541d114295ca58">More...</a><br/></td></tr>
 <tr class="separator:adbf0d9fd5dc41eec57541d114295ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12aee03fe365cff63bda09114de1f6ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a12aee03fe365cff63bda09114de1f6ba">Delete</a></td></tr>
+<tr class="memdesc:a12aee03fe365cff63bda09114de1f6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Delete Key.  <a href="#a12aee03fe365cff63bda09114de1f6ba">More...</a><br/></td></tr>
 <tr class="separator:a12aee03fe365cff63bda09114de1f6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54476dd4f2f090740aa42dd230b9f24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ae54476dd4f2f090740aa42dd230b9f24">Add</a></td></tr>
+<tr class="memdesc:ae54476dd4f2f090740aa42dd230b9f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Add Key.  <a href="#ae54476dd4f2f090740aa42dd230b9f24">More...</a><br/></td></tr>
 <tr class="separator:ae54476dd4f2f090740aa42dd230b9f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc099cfa6a8396bf58f59d6464a159ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#acc099cfa6a8396bf58f59d6464a159ee">Subtract</a></td></tr>
+<tr class="memdesc:acc099cfa6a8396bf58f59d6464a159ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Substract Key.  <a href="#acc099cfa6a8396bf58f59d6464a159ee">More...</a><br/></td></tr>
 <tr class="separator:acc099cfa6a8396bf58f59d6464a159ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adedf851aed90813c23d5bb1dbc81e44f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adedf851aed90813c23d5bb1dbc81e44f">Multiply</a></td></tr>
+<tr class="memdesc:adedf851aed90813c23d5bb1dbc81e44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Multiply Key.  <a href="#adedf851aed90813c23d5bb1dbc81e44f">More...</a><br/></td></tr>
 <tr class="separator:adedf851aed90813c23d5bb1dbc81e44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac967c214a690a18fe1868416fcba381e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac967c214a690a18fe1868416fcba381e">Divide</a></td></tr>
+<tr class="memdesc:ac967c214a690a18fe1868416fcba381e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Devide Key.  <a href="#ac967c214a690a18fe1868416fcba381e">More...</a><br/></td></tr>
 <tr class="separator:ac967c214a690a18fe1868416fcba381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac77efb57a3008e9694cc2da7b3230c77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac77efb57a3008e9694cc2da7b3230c77">Left</a></td></tr>
+<tr class="memdesc:ac77efb57a3008e9694cc2da7b3230c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Left Key.  <a href="#ac77efb57a3008e9694cc2da7b3230c77">More...</a><br/></td></tr>
 <tr class="separator:ac77efb57a3008e9694cc2da7b3230c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9fac46978406d8828c6699156b61d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adf9fac46978406d8828c6699156b61d8">Right</a></td></tr>
+<tr class="memdesc:adf9fac46978406d8828c6699156b61d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Right Key.  <a href="#adf9fac46978406d8828c6699156b61d8">More...</a><br/></td></tr>
 <tr class="separator:adf9fac46978406d8828c6699156b61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a365fe429b712c368311716ea0e6ec61a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a365fe429b712c368311716ea0e6ec61a">Up</a></td></tr>
+<tr class="memdesc:a365fe429b712c368311716ea0e6ec61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Up Key.  <a href="#a365fe429b712c368311716ea0e6ec61a">More...</a><br/></td></tr>
 <tr class="separator:a365fe429b712c368311716ea0e6ec61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93e12f7dfbb6bdb55e48b4b39d13bcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac93e12f7dfbb6bdb55e48b4b39d13bcb">Down</a></td></tr>
+<tr class="memdesc:ac93e12f7dfbb6bdb55e48b4b39d13bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Down Key.  <a href="#ac93e12f7dfbb6bdb55e48b4b39d13bcb">More...</a><br/></td></tr>
 <tr class="separator:ac93e12f7dfbb6bdb55e48b4b39d13bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcec243a50c73730ba5e61700e2c9958"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#abcec243a50c73730ba5e61700e2c9958">Numpad0</a></td></tr>
+<tr class="memdesc:abcec243a50c73730ba5e61700e2c9958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad0 Key.  <a href="#abcec243a50c73730ba5e61700e2c9958">More...</a><br/></td></tr>
 <tr class="separator:abcec243a50c73730ba5e61700e2c9958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a942433aebf6d02e99dff569c2e79b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a7a942433aebf6d02e99dff569c2e79b2">Numpad1</a></td></tr>
+<tr class="memdesc:a7a942433aebf6d02e99dff569c2e79b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad1 Key.  <a href="#a7a942433aebf6d02e99dff569c2e79b2">More...</a><br/></td></tr>
 <tr class="separator:a7a942433aebf6d02e99dff569c2e79b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d59e04f32a45b19d54d84f33fd36261"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6d59e04f32a45b19d54d84f33fd36261">Numpad2</a></td></tr>
+<tr class="memdesc:a6d59e04f32a45b19d54d84f33fd36261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad2 Key.  <a href="#a6d59e04f32a45b19d54d84f33fd36261">More...</a><br/></td></tr>
 <tr class="separator:a6d59e04f32a45b19d54d84f33fd36261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1b251e798213a691b706356852d437"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#adc1b251e798213a691b706356852d437">Numpad3</a></td></tr>
+<tr class="memdesc:adc1b251e798213a691b706356852d437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad3 Key.  <a href="#adc1b251e798213a691b706356852d437">More...</a><br/></td></tr>
 <tr class="separator:adc1b251e798213a691b706356852d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35293bca2a90c438813555c49b3d80a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a35293bca2a90c438813555c49b3d80a3">Numpad4</a></td></tr>
+<tr class="memdesc:a35293bca2a90c438813555c49b3d80a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad4 Key.  <a href="#a35293bca2a90c438813555c49b3d80a3">More...</a><br/></td></tr>
 <tr class="separator:a35293bca2a90c438813555c49b3d80a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9881923cbed6c05b9b406c63a1eddb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac9881923cbed6c05b9b406c63a1eddb0">Numpad5</a></td></tr>
+<tr class="memdesc:ac9881923cbed6c05b9b406c63a1eddb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad5 Key.  <a href="#ac9881923cbed6c05b9b406c63a1eddb0">More...</a><br/></td></tr>
 <tr class="separator:ac9881923cbed6c05b9b406c63a1eddb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b1472b443fefd85324452e23c0ed29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ae4b1472b443fefd85324452e23c0ed29">Numpad6</a></td></tr>
+<tr class="memdesc:ae4b1472b443fefd85324452e23c0ed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad6 Key.  <a href="#ae4b1472b443fefd85324452e23c0ed29">More...</a><br/></td></tr>
 <tr class="separator:ae4b1472b443fefd85324452e23c0ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78f281e5bd1f8fd60539eeeee66d75d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ae78f281e5bd1f8fd60539eeeee66d75d">Numpad7</a></td></tr>
+<tr class="memdesc:ae78f281e5bd1f8fd60539eeeee66d75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad7 Key.  <a href="#ae78f281e5bd1f8fd60539eeeee66d75d">More...</a><br/></td></tr>
 <tr class="separator:ae78f281e5bd1f8fd60539eeeee66d75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ece43e8ea3914544e4c014f95be2f07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6ece43e8ea3914544e4c014f95be2f07">Numpad8</a></td></tr>
+<tr class="memdesc:a6ece43e8ea3914544e4c014f95be2f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad8 Key.  <a href="#a6ece43e8ea3914544e4c014f95be2f07">More...</a><br/></td></tr>
 <tr class="separator:a6ece43e8ea3914544e4c014f95be2f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a52aa251bd832db1a472db757276e7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a5a52aa251bd832db1a472db757276e7e">Numpad9</a></td></tr>
+<tr class="memdesc:a5a52aa251bd832db1a472db757276e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the Numpad9 Key.  <a href="#a5a52aa251bd832db1a472db757276e7e">More...</a><br/></td></tr>
 <tr class="separator:a5a52aa251bd832db1a472db757276e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230cedc083e5e797586368406006f715"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a230cedc083e5e797586368406006f715">F1</a></td></tr>
+<tr class="memdesc:a230cedc083e5e797586368406006f715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F1 Key.  <a href="#a230cedc083e5e797586368406006f715">More...</a><br/></td></tr>
 <tr class="separator:a230cedc083e5e797586368406006f715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a7dbacf30af45e575a5952a9bd3e11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a60a7dbacf30af45e575a5952a9bd3e11">F2</a></td></tr>
+<tr class="memdesc:a60a7dbacf30af45e575a5952a9bd3e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F2 Key.  <a href="#a60a7dbacf30af45e575a5952a9bd3e11">More...</a><br/></td></tr>
 <tr class="separator:a60a7dbacf30af45e575a5952a9bd3e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4851d2aad6287c28d4be87b38715e09b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a4851d2aad6287c28d4be87b38715e09b">F3</a></td></tr>
+<tr class="memdesc:a4851d2aad6287c28d4be87b38715e09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F3 Key.  <a href="#a4851d2aad6287c28d4be87b38715e09b">More...</a><br/></td></tr>
 <tr class="separator:a4851d2aad6287c28d4be87b38715e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad567868b7540f6444aecc59a57caa0e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad567868b7540f6444aecc59a57caa0e7">F4</a></td></tr>
+<tr class="memdesc:ad567868b7540f6444aecc59a57caa0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F4 Key.  <a href="#ad567868b7540f6444aecc59a57caa0e7">More...</a><br/></td></tr>
 <tr class="separator:ad567868b7540f6444aecc59a57caa0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b6d5bd9c4d91754cea4365439c4145a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8b6d5bd9c4d91754cea4365439c4145a">F5</a></td></tr>
+<tr class="memdesc:a8b6d5bd9c4d91754cea4365439c4145a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F5 Key.  <a href="#a8b6d5bd9c4d91754cea4365439c4145a">More...</a><br/></td></tr>
 <tr class="separator:a8b6d5bd9c4d91754cea4365439c4145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14117686ee73113ceed8b565f588eb57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a14117686ee73113ceed8b565f588eb57">F6</a></td></tr>
+<tr class="memdesc:a14117686ee73113ceed8b565f588eb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F6 Key.  <a href="#a14117686ee73113ceed8b565f588eb57">More...</a><br/></td></tr>
 <tr class="separator:a14117686ee73113ceed8b565f588eb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ea74cf4ee8b232d1603055c3baaf9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a27ea74cf4ee8b232d1603055c3baaf9c">F7</a></td></tr>
+<tr class="memdesc:a27ea74cf4ee8b232d1603055c3baaf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F7 Key.  <a href="#a27ea74cf4ee8b232d1603055c3baaf9c">More...</a><br/></td></tr>
 <tr class="separator:a27ea74cf4ee8b232d1603055c3baaf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e13ef0dff941442273b33bb27e120e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a1e13ef0dff941442273b33bb27e120e5">F8</a></td></tr>
+<tr class="memdesc:a1e13ef0dff941442273b33bb27e120e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F8 Key.  <a href="#a1e13ef0dff941442273b33bb27e120e5">More...</a><br/></td></tr>
 <tr class="separator:a1e13ef0dff941442273b33bb27e120e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8a5f933309045eb8b04f7fe1631f1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a6a8a5f933309045eb8b04f7fe1631f1a">F9</a></td></tr>
+<tr class="memdesc:a6a8a5f933309045eb8b04f7fe1631f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F9 Key.  <a href="#a6a8a5f933309045eb8b04f7fe1631f1a">More...</a><br/></td></tr>
 <tr class="separator:a6a8a5f933309045eb8b04f7fe1631f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8841fc2609bc03c43c671943cdb7c2b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a8841fc2609bc03c43c671943cdb7c2b3">F10</a></td></tr>
+<tr class="memdesc:a8841fc2609bc03c43c671943cdb7c2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F10 Key.  <a href="#a8841fc2609bc03c43c671943cdb7c2b3">More...</a><br/></td></tr>
 <tr class="separator:a8841fc2609bc03c43c671943cdb7c2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78bb167a053765400b29d98a99d2f0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ac78bb167a053765400b29d98a99d2f0a">F11</a></td></tr>
+<tr class="memdesc:ac78bb167a053765400b29d98a99d2f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F11 Key.  <a href="#ac78bb167a053765400b29d98a99d2f0a">More...</a><br/></td></tr>
 <tr class="separator:ac78bb167a053765400b29d98a99d2f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847021f30ace74ea8044195ecf4cf259"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a847021f30ace74ea8044195ecf4cf259">F12</a></td></tr>
+<tr class="memdesc:a847021f30ace74ea8044195ecf4cf259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F12 Key.  <a href="#a847021f30ace74ea8044195ecf4cf259">More...</a><br/></td></tr>
 <tr class="separator:a847021f30ace74ea8044195ecf4cf259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd5b83f4f3dadebbb759e9770428caa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a2bd5b83f4f3dadebbb759e9770428caa">F13</a></td></tr>
+<tr class="memdesc:a2bd5b83f4f3dadebbb759e9770428caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F13 Key.  <a href="#a2bd5b83f4f3dadebbb759e9770428caa">More...</a><br/></td></tr>
 <tr class="separator:a2bd5b83f4f3dadebbb759e9770428caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29758ef282c8d9bf2f37aff7dd72187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#ad29758ef282c8d9bf2f37aff7dd72187">F14</a></td></tr>
+<tr class="memdesc:ad29758ef282c8d9bf2f37aff7dd72187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F14 Key.  <a href="#ad29758ef282c8d9bf2f37aff7dd72187">More...</a><br/></td></tr>
 <tr class="separator:ad29758ef282c8d9bf2f37aff7dd72187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46dfde14483d2a67e5da167cde929f01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a46dfde14483d2a67e5da167cde929f01">F15</a></td></tr>
+<tr class="memdesc:a46dfde14483d2a67e5da167cde929f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains The status of the F15 Key.  <a href="#a46dfde14483d2a67e5da167cde929f01">More...</a><br/></td></tr>
 <tr class="separator:a46dfde14483d2a67e5da167cde929f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2de2903baee8b62c0dd9995b0882c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard.html#a1b2de2903baee8b62c0dd9995b0882c1">Pause</a></td></tr>
 <tr class="separator:a1b2de2903baee8b62c0dd9995b0882c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Singleton Manages any key presses. </p>
+<p>This Class is Singleton defined. It is an boundary object which keeps track of any pressed keys per update cycle. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>A Singleton </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af6a99ec66c8c722a45b967bf79167038"></a>
 <div class="memitem">
 <div class="memproto">
@@ -565,6 +740,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The deconstructor. </p>
 
 </div>
 </div>
@@ -590,6 +767,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>the deleted copy constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad6b0bb849d6bb7cdf63091e40b5f5f7f"></a>
@@ -613,12 +792,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The default Constructor. </p>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_keyboard_ad6b0bb849d6bb7cdf63091e40b5f5f7f_cgraph.png" border="0" usemap="#class_keyboard_ad6b0bb849d6bb7cdf63091e40b5f5f7f_cgraph" alt=""/></div>
 <map name="class_keyboard_ad6b0bb849d6bb7cdf63091e40b5f5f7f_cgraph" id="class_keyboard_ad6b0bb849d6bb7cdf63091e40b5f5f7f_cgraph">
-<area shape="rect" id="node2" href="class_keyboard.html#a6410f07ddc53561a82d5328d8b330aab" title="Keyboard::update" alt="" coords="193,5,317,32"/></map>
+<area shape="rect" id="node2" href="class_keyboard.html#a6410f07ddc53561a82d5328d8b330aab" title="The update method to recheck every key. " alt="" coords="193,5,317,32"/></map>
 </div>
 </p>
 
@@ -646,6 +827,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the A key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="aafc539a77070e0d53551199bf69877d8"></a>
@@ -668,6 +852,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Add key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -692,6 +878,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the B key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a57019e241d4e3413ee6bd68e6a6a3d79"></a>
@@ -715,6 +904,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Backslash key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab425b0b196ffde8d878097b71884702a"></a>
@@ -737,6 +929,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Backspace key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -761,6 +955,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the C key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="aec17bf7d0b87ccdd5020ab9fa3b94413"></a>
@@ -783,6 +980,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Comma key ispressed. </p>
 
 </div>
 </div>
@@ -807,6 +1007,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the D key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a2b629ac3f7efb81b4dd6091894261900"></a>
@@ -830,6 +1033,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Dash key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="aa65d80a94c32f9a3180d4c73049165fd"></a>
@@ -852,6 +1058,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Delete key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -875,6 +1083,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Divide key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -898,6 +1108,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Down key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -922,6 +1134,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the E key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="adbbf01e7ad22f2c1f1253053a90524c2"></a>
@@ -944,6 +1159,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the End key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -968,6 +1185,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Equal key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a994ab28476380c8233e80cb0f349bdb8"></a>
@@ -990,6 +1210,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Escape key ispressed. </p>
 
 </div>
 </div>
@@ -1014,6 +1237,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the F key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a89d9b338c53114a8a736b33e9767f72e"></a>
@@ -1036,6 +1262,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F1 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1059,6 +1287,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F10 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1082,6 +1312,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F11 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1105,6 +1337,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F12 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1128,6 +1362,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F13 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1151,6 +1387,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F14 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1174,6 +1412,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the 15 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1197,6 +1437,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F2 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1220,6 +1462,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F3 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1243,6 +1487,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F4 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1266,6 +1512,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F5 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1289,6 +1537,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F6 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1312,6 +1562,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F7 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1335,6 +1587,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F8 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1358,6 +1612,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the F9 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1382,6 +1638,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the G key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0deba682104bf09a85d23ab4085d53f8"></a>
@@ -1405,6 +1664,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the H key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="aaa8d566aa66eddbe2a3a3ce5565cb34f"></a>
@@ -1427,6 +1689,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Home key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1451,6 +1715,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the I key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a78814c54bdbb71866480a73bec46c1da"></a>
@@ -1473,6 +1740,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Insert key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1497,12 +1766,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the <a class="el" href="class_keyboard.html" title="This Singleton Manages any key presses. ">Keyboard</a> instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a reference to the keyboard object. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_keyboard_a09fc76a431abc21dba175b10bc4a1ec8_icgraph.png" border="0" usemap="#class_keyboard_a09fc76a431abc21dba175b10bc4a1ec8_icgraph" alt=""/></div>
 <map name="class_keyboard_a09fc76a431abc21dba175b10bc4a1ec8_icgraph" id="class_keyboard_a09fc76a431abc21dba175b10bc4a1ec8_icgraph">
-<area shape="rect" id="node2" href="class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="MovableComponent::Update" alt="" coords="205,5,389,32"/><area shape="rect" id="node3" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="216,56,379,83"/><area shape="rect" id="node4" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="437,56,576,83"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="624,56,675,83"/></map>
+<area shape="rect" id="node2" href="class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="The Update interface method. Used to act on the update signal. " alt="" coords="205,5,389,32"/></map>
 </div>
 </p>
 
@@ -1529,6 +1801,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the J key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac512b5cbd9f8c229a6a4c81c0ca12f91"></a>
@@ -1551,6 +1826,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the K key ispressed. </p>
 
 </div>
 </div>
@@ -1575,6 +1853,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the L key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a2ad4b6abd18ebd2a6c69da2de338265c"></a>
@@ -1597,6 +1878,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Left Alt key ispressed. </p>
 
 </div>
 </div>
@@ -1621,6 +1905,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Left Bracket key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5f60b99ed9f012e78629acfe1f795be3"></a>
@@ -1644,6 +1931,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Left Control key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac8b072ea0e90e87b10470bc92cec1a5c"></a>
@@ -1666,6 +1956,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Left key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1690,6 +1982,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Left Shift key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab58d4d9bb82bf64de46fa1792fd80086"></a>
@@ -1712,6 +2007,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Left System key ispressed. </p>
 
 </div>
 </div>
@@ -1736,6 +2034,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the M key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad5c31b46ab392c8cfeb4f060ce346e22"></a>
@@ -1759,6 +2060,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Menu key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9971de37c9040738efa45a0e51aee175"></a>
@@ -1781,6 +2085,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Multiply key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -1805,6 +2111,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the N key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a1c5ecb4909477ec4a5173353171912bd"></a>
@@ -1827,6 +2136,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad0 key ispressed. </p>
 
 </div>
 </div>
@@ -1851,6 +2163,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad1 key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6e5e05e63ae1cfb59ca375b05dcbe688"></a>
@@ -1873,6 +2188,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad2 key ispressed. </p>
 
 </div>
 </div>
@@ -1897,6 +2215,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad3 key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="adf405bac73bbe34b554b452ce531fd09"></a>
@@ -1919,6 +2240,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad4 key ispressed. </p>
 
 </div>
 </div>
@@ -1943,6 +2267,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad5 key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="af08887ae78e829222420acada6707ac8"></a>
@@ -1965,6 +2292,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad6 key ispressed. </p>
 
 </div>
 </div>
@@ -1989,6 +2319,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad7 key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="af0e119a74e4fcca0bbda53d885bd4245"></a>
@@ -2011,6 +2344,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad8 key ispressed. </p>
 
 </div>
 </div>
@@ -2035,6 +2371,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Numpad9 key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a909c70a8e72b75c9515441651b88372d"></a>
@@ -2057,6 +2396,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad0 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2080,6 +2421,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad1 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2103,6 +2446,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad2 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2126,6 +2471,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad3 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2149,6 +2496,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad4 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2172,6 +2521,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad5 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2195,6 +2546,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad6 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2218,6 +2571,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad7 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2241,6 +2596,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad8 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2264,6 +2621,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Numpad9 key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2288,6 +2647,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the O key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9c96638ce77e4a6bfee3f7c18bcb9b63"></a>
@@ -2311,6 +2673,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the P key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac2a759e6f55eb9faf0fe483df06f0adb"></a>
@@ -2333,6 +2698,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the PageDown key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2356,6 +2723,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the PageUp key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2379,6 +2748,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Pause key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2403,6 +2774,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Period key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad3960e897150ae3121301bff4381e56a"></a>
@@ -2425,6 +2799,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Q key ispressed. </p>
 
 </div>
 </div>
@@ -2449,6 +2826,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Quote key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a42d4db82a7ea40418c831a8d68719ca6"></a>
@@ -2471,6 +2851,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the R key ispressed. </p>
 
 </div>
 </div>
@@ -2495,6 +2878,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Right Alt key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a065e43a5ece4a6a8790e3f8a8817ea23"></a>
@@ -2517,6 +2903,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Right Bracket key ispressed. </p>
 
 </div>
 </div>
@@ -2541,6 +2930,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Right Control key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a04482f34bbd2f5d2463acbe07e8b2e56"></a>
@@ -2564,6 +2956,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Return key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a33607f70dec11df2ea88dfe7e49d40ef"></a>
@@ -2586,6 +2981,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Right key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2610,6 +3007,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Right Shift key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8659cc000033848acae7c18683886a92"></a>
@@ -2632,6 +3032,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Right System key ispressed. </p>
 
 </div>
 </div>
@@ -2656,6 +3059,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the S key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="add5ee27f0c650e722f0c6666ed57b022"></a>
@@ -2678,6 +3084,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Semicolon key ispressed. </p>
 
 </div>
 </div>
@@ -2702,6 +3111,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Slash key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab8dc7b677742e216c75f4e4c739bed12"></a>
@@ -2725,6 +3137,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Space bar ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab251d50b95897e7c69219ea2d3fe1e97"></a>
@@ -2747,6 +3162,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Substract key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2771,6 +3188,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the T key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0d775a126b75313576041cdaa1ce5fde"></a>
@@ -2793,6 +3213,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Tab key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2817,6 +3239,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Tilde key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a217742d32bedc411969d0b9fc8695d0c"></a>
@@ -2840,6 +3265,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the U key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="aeac99170e4a0b5a4a0b58beda53875d5"></a>
@@ -2862,6 +3290,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns true if the Up key ispressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the key is pressed. </dd></dl>
 
 </div>
 </div>
@@ -2886,6 +3316,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the V key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="abbfd652fcf142863462910076a5298dd"></a>
@@ -2908,6 +3341,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the W key ispressed. </p>
 
 </div>
 </div>
@@ -2932,6 +3368,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the X key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac15b70f1cb6b0cbecdeed7c363922411"></a>
@@ -2955,6 +3394,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Y key ispressed. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac9855a7877c01f7d29f4a4d10217bfc1"></a>
@@ -2977,6 +3419,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the key is pressed. </p>
+<p>returns true if the Z key ispressed. </p>
 
 </div>
 </div>
@@ -3002,6 +3447,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>the deleted assignment opperator. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6410f07ddc53561a82d5328d8b330aab"></a>
@@ -3017,12 +3464,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>The update method to recheck every key. </p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_keyboard_a6410f07ddc53561a82d5328d8b330aab_icgraph.png" border="0" usemap="#class_keyboard_a6410f07ddc53561a82d5328d8b330aab_icgraph" alt=""/></div>
 <map name="class_keyboard_a6410f07ddc53561a82d5328d8b330aab_icgraph" id="class_keyboard_a6410f07ddc53561a82d5328d8b330aab_icgraph">
-<area shape="rect" id="node2" href="class_keyboard.html#ad6b0bb849d6bb7cdf63091e40b5f5f7f" title="Keyboard::Keyboard" alt="" coords="189,5,329,32"/><area shape="rect" id="node3" href="class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="177,56,340,83"/><area shape="rect" id="node4" href="class_screen_manager.html#abd5e01420eef9552b281de8539b95c75" title="ScreenManager::run" alt="" coords="388,56,527,83"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="575,56,625,83"/></map>
+<area shape="rect" id="node2" href="class_keyboard.html#ad6b0bb849d6bb7cdf63091e40b5f5f7f" title="The default Constructor. " alt="" coords="177,5,317,32"/></map>
 </div>
 </p>
 
@@ -3047,6 +3496,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the A Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae54476dd4f2f090740aa42dd230b9f24"></a>
@@ -3066,6 +3517,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Add Key. </p>
 
 </div>
 </div>
@@ -3087,6 +3540,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the B Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a78eb7c6bed698fe88c89ef8ce2071eab"></a>
@@ -3106,6 +3561,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Backslash Key. </p>
 
 </div>
 </div>
@@ -3127,6 +3584,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Backspace Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8e9a644f450a387c8b0becfec29e0eba"></a>
@@ -3146,6 +3605,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the C Key. </p>
 
 </div>
 </div>
@@ -3167,6 +3628,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Comma Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a913ff21c18119ddf7a4185c84e0e7449"></a>
@@ -3186,6 +3649,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the D Key. </p>
 
 </div>
 </div>
@@ -3207,6 +3672,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Dash Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a12aee03fe365cff63bda09114de1f6ba"></a>
@@ -3226,6 +3693,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Delete Key. </p>
 
 </div>
 </div>
@@ -3247,6 +3716,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Devide Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac93e12f7dfbb6bdb55e48b4b39d13bcb"></a>
@@ -3266,6 +3737,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Down Key. </p>
 
 </div>
 </div>
@@ -3287,6 +3760,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the E Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac07897d6a729a6da93f08d8a05d51d32"></a>
@@ -3306,6 +3781,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the End Key. </p>
 
 </div>
 </div>
@@ -3327,6 +3804,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Equal Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8e951ed09368ad149881cd7b775020aa"></a>
@@ -3346,6 +3825,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Escape Key. </p>
 
 </div>
 </div>
@@ -3367,6 +3848,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a230cedc083e5e797586368406006f715"></a>
@@ -3386,6 +3869,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F1 Key. </p>
 
 </div>
 </div>
@@ -3407,6 +3892,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F10 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac78bb167a053765400b29d98a99d2f0a"></a>
@@ -3426,6 +3913,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F11 Key. </p>
 
 </div>
 </div>
@@ -3447,6 +3936,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F12 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a2bd5b83f4f3dadebbb759e9770428caa"></a>
@@ -3466,6 +3957,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F13 Key. </p>
 
 </div>
 </div>
@@ -3487,6 +3980,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F14 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a46dfde14483d2a67e5da167cde929f01"></a>
@@ -3506,6 +4001,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F15 Key. </p>
 
 </div>
 </div>
@@ -3527,6 +4024,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F2 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4851d2aad6287c28d4be87b38715e09b"></a>
@@ -3546,6 +4045,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F3 Key. </p>
 
 </div>
 </div>
@@ -3567,6 +4068,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F4 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8b6d5bd9c4d91754cea4365439c4145a"></a>
@@ -3586,6 +4089,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F5 Key. </p>
 
 </div>
 </div>
@@ -3607,6 +4112,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F6 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a27ea74cf4ee8b232d1603055c3baaf9c"></a>
@@ -3626,6 +4133,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F7 Key. </p>
 
 </div>
 </div>
@@ -3647,6 +4156,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the F8 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6a8a5f933309045eb8b04f7fe1631f1a"></a>
@@ -3666,6 +4177,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the F9 Key. </p>
 
 </div>
 </div>
@@ -3687,6 +4200,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the G Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5756caddc794320748593954cbd35a2a"></a>
@@ -3706,6 +4221,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the H Key. </p>
 
 </div>
 </div>
@@ -3727,6 +4244,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Home Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a59f5f1879a371a750deaef44730f6c8e"></a>
@@ -3746,6 +4265,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the I Key. </p>
 
 </div>
 </div>
@@ -3767,6 +4288,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Insert Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a79e10d1e2486a150419889ac513386b9"></a>
@@ -3786,6 +4309,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the J Key. </p>
 
 </div>
 </div>
@@ -3807,6 +4332,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the K Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ad314cbbe55e6d9d699f9c4a3d673dc0e"></a>
@@ -3826,6 +4353,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the L Key. </p>
 
 </div>
 </div>
@@ -3847,6 +4376,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Left Alt Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a2f9d2e47356ccdeb8cf9b6380b91c2d7"></a>
@@ -3866,6 +4397,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Left Bracket Key. </p>
 
 </div>
 </div>
@@ -3887,6 +4420,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Left Control Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac77efb57a3008e9694cc2da7b3230c77"></a>
@@ -3906,6 +4441,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Left Key. </p>
 
 </div>
 </div>
@@ -3927,6 +4464,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Left Shift Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0d39d5e2e0573e00fa0fb331baf08d39"></a>
@@ -3946,6 +4485,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Left System Key. </p>
 
 </div>
 </div>
@@ -3967,6 +4508,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the M Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="afaeb2278bbc8f4971d1f43cee9765900"></a>
@@ -3986,6 +4529,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Menu Key. </p>
 
 </div>
 </div>
@@ -4007,6 +4552,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Multiply Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9c13f7665efcec0323466f50080dd90f"></a>
@@ -4026,6 +4573,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the N Key. </p>
 
 </div>
 </div>
@@ -4047,6 +4596,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Num0 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a835bf1e4085d8f539a374f38fcf44a52"></a>
@@ -4066,6 +4617,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Num1 Key. </p>
 
 </div>
 </div>
@@ -4087,6 +4640,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Num2 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="acd66a6febc527dd70cfec532efb4cbba"></a>
@@ -4106,6 +4661,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Num3 Key. </p>
 
 </div>
 </div>
@@ -4127,6 +4684,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Num4 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a54e89c0853c5b83cb0cb33243c161c93"></a>
@@ -4146,6 +4705,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Num5 Key. </p>
 
 </div>
 </div>
@@ -4167,6 +4728,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Num6 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab22734e5959de997b58bc1b2c8a63b1e"></a>
@@ -4186,6 +4749,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Num7 Key. </p>
 
 </div>
 </div>
@@ -4207,6 +4772,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Num8 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a946af06657d756d7a2eeebd4c7435af9"></a>
@@ -4226,6 +4793,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Num9 Key. </p>
 
 </div>
 </div>
@@ -4247,6 +4816,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Numpad0 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7a942433aebf6d02e99dff569c2e79b2"></a>
@@ -4266,6 +4837,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Numpad1 Key. </p>
 
 </div>
 </div>
@@ -4287,6 +4860,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Numpad2 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="adc1b251e798213a691b706356852d437"></a>
@@ -4306,6 +4881,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Numpad3 Key. </p>
 
 </div>
 </div>
@@ -4327,6 +4904,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Numpad4 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac9881923cbed6c05b9b406c63a1eddb0"></a>
@@ -4346,6 +4925,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Numpad5 Key. </p>
 
 </div>
 </div>
@@ -4367,6 +4948,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Numpad6 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae78f281e5bd1f8fd60539eeeee66d75d"></a>
@@ -4386,6 +4969,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Numpad7 Key. </p>
 
 </div>
 </div>
@@ -4407,6 +4992,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Numpad8 Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5a52aa251bd832db1a472db757276e7e"></a>
@@ -4426,6 +5013,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Numpad9 Key. </p>
 
 </div>
 </div>
@@ -4447,6 +5036,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the O Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a0a1ccbf5bdd2ca101d91f6aeb12b0003"></a>
@@ -4466,6 +5057,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the P Key. </p>
 
 </div>
 </div>
@@ -4487,6 +5080,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the PageDown Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7250e2957e758f84c12fe70fed725f8c"></a>
@@ -4506,6 +5101,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the PageUp Key. </p>
 
 </div>
 </div>
@@ -4547,6 +5144,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Period Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a73542918c6ffdd4915925fff6aea1eb5"></a>
@@ -4566,6 +5165,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Q Key. </p>
 
 </div>
 </div>
@@ -4587,6 +5188,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Quote Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a43732e3f8a2a179490d70bbca9c9cbf7"></a>
@@ -4606,6 +5209,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the R Key. </p>
 
 </div>
 </div>
@@ -4627,6 +5232,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Right Alt Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6924305b6bab6e1743c4f30566022e03"></a>
@@ -4646,6 +5253,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Right Bracket Key. </p>
 
 </div>
 </div>
@@ -4667,6 +5276,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Right Control Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a145aa386b22fd7c1068a336b5e7b8022"></a>
@@ -4686,6 +5297,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Return Key. </p>
 
 </div>
 </div>
@@ -4707,6 +5320,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Right Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a24b00a96a25f3bce3d1bad1e3fc2c600"></a>
@@ -4726,6 +5341,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Right Shift Key. </p>
 
 </div>
 </div>
@@ -4747,6 +5364,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Right System Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="aafafb740df9ac23e0fdbac7b85ca5902"></a>
@@ -4766,6 +5385,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the S Key. </p>
 
 </div>
 </div>
@@ -4787,6 +5408,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Semicolon Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a603303cab1a11552d040900389cfb284"></a>
@@ -4806,6 +5429,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Slash Key. </p>
 
 </div>
 </div>
@@ -4827,6 +5452,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Space Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="acc099cfa6a8396bf58f59d6464a159ee"></a>
@@ -4846,6 +5473,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Substract Key. </p>
 
 </div>
 </div>
@@ -4867,6 +5496,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the T Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a67632f0d061db111d70a6909387c61d2"></a>
@@ -4886,6 +5517,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the Tab Key. </p>
 
 </div>
 </div>
@@ -4907,6 +5540,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Tilde Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="a73a0cb0a587e4aea584d64486c95996b"></a>
@@ -4926,6 +5561,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the U Key. </p>
 
 </div>
 </div>
@@ -4947,6 +5584,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Up Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae41741f501d169e8671242bae37c608f"></a>
@@ -4966,6 +5605,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the V Key. </p>
 
 </div>
 </div>
@@ -4987,6 +5628,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the W Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="afde15308c9554c8abaf8054b105b9507"></a>
@@ -5006,6 +5649,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains The status of the X Key. </p>
 
 </div>
 </div>
@@ -5027,6 +5672,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Y Key. </p>
+
 </div>
 </div>
 <a class="anchor" id="abbae1e2f05e366553c81c136a0f3f970"></a>
@@ -5047,6 +5694,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains The status of the Z Key. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -5059,7 +5708,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_keyboard.html">Keyboard</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('class_layer.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class is responsible for the different layers a gamescreen can be composed of.  
+ <a href="class_layer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_layer_8hpp_source.html">Layer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Layer:</div>
@@ -134,42 +137,64 @@ Collaboration diagram for Layer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f623c7c4737dc29ecc86978d243ac6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a8f623c7c4737dc29ecc86978d243ac6f">Layer</a> ()</td></tr>
+<tr class="memdesc:a8f623c7c4737dc29ecc86978d243ac6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a8f623c7c4737dc29ecc86978d243ac6f">More...</a><br/></td></tr>
 <tr class="separator:a8f623c7c4737dc29ecc86978d243ac6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1ba4804451dfe6cc357194e42762ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a1b1ba4804451dfe6cc357194e42762ae">~Layer</a> ()</td></tr>
+<tr class="memdesc:a1b1ba4804451dfe6cc357194e42762ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor.  <a href="#a1b1ba4804451dfe6cc357194e42762ae">More...</a><br/></td></tr>
 <tr class="separator:a1b1ba4804451dfe6cc357194e42762ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971c3f8d301e250aded4cf0c0b9ad544"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:a971c3f8d301e250aded4cf0c0b9ad544"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method relais the update signal to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>.  <a href="#a971c3f8d301e250aded4cf0c0b9ad544">More...</a><br/></td></tr>
 <tr class="separator:a971c3f8d301e250aded4cf0c0b9ad544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a008068a5a6bd4dd274bb01bf0246cfaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
+<tr class="memdesc:a008068a5a6bd4dd274bb01bf0246cfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method relais the draw signal to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>.  <a href="#a008068a5a6bd4dd274bb01bf0246cfaf">More...</a><br/></td></tr>
 <tr class="separator:a008068a5a6bd4dd274bb01bf0246cfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c59677e3c56a7fd5e3dc985bdb9b4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a57c59677e3c56a7fd5e3dc985bdb9b4c">isEnabled</a> ()</td></tr>
+<tr class="memdesc:a57c59677e3c56a7fd5e3dc985bdb9b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns true if the layer is enabled.  <a href="#a57c59677e3c56a7fd5e3dc985bdb9b4c">More...</a><br/></td></tr>
 <tr class="separator:a57c59677e3c56a7fd5e3dc985bdb9b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a91415e6bdc2fdb75ae0ac8498868f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a46a91415e6bdc2fdb75ae0ac8498868f">isDrawing</a> ()</td></tr>
+<tr class="memdesc:a46a91415e6bdc2fdb75ae0ac8498868f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns true if the layer should draw.  <a href="#a46a91415e6bdc2fdb75ae0ac8498868f">More...</a><br/></td></tr>
 <tr class="separator:a46a91415e6bdc2fdb75ae0ac8498868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2892b95b2df74446d89e4a6388f0c88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ac2892b95b2df74446d89e4a6388f0c88">isUpdating</a> ()</td></tr>
+<tr class="memdesc:ac2892b95b2df74446d89e4a6388f0c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns true if the layer should update.  <a href="#ac2892b95b2df74446d89e4a6388f0c88">More...</a><br/></td></tr>
 <tr class="separator:ac2892b95b2df74446d89e4a6388f0c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b9de1ac0f3eaa8274b8d0a901a825c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c">setEnabled</a> (bool b)</td></tr>
+<tr class="memdesc:a68b9de1ac0f3eaa8274b8d0a901a825c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Method sets the layer enabled.  <a href="#a68b9de1ac0f3eaa8274b8d0a901a825c">More...</a><br/></td></tr>
 <tr class="separator:a68b9de1ac0f3eaa8274b8d0a901a825c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4f62b4c031e7c2f2d5635ccd38ddd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1">setDrawing</a> (bool b)</td></tr>
+<tr class="memdesc:a0a4f62b4c031e7c2f2d5635ccd38ddd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Method sets the layer to draw.  <a href="#a0a4f62b4c031e7c2f2d5635ccd38ddd1">More...</a><br/></td></tr>
 <tr class="separator:a0a4f62b4c031e7c2f2d5635ccd38ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0595efe93dbd63b05339f35399d1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad">setUpdating</a> (bool b)</td></tr>
+<tr class="memdesc:a0e0595efe93dbd63b05339f35399d1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Method sets the layer to update.  <a href="#a0e0595efe93dbd63b05339f35399d1ad">More...</a><br/></td></tr>
 <tr class="separator:a0e0595efe93dbd63b05339f35399d1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbfd549c4d1da2e4a2d78a33586c95e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk_manager.html">ChunkManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1">getChunkManager</a> ()</td></tr>
+<tr class="memdesc:afbfd549c4d1da2e4a2d78a33586c95e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns an pointer to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>  <a href="#afbfd549c4d1da2e4a2d78a33586c95e1">More...</a><br/></td></tr>
 <tr class="separator:afbfd549c4d1da2e4a2d78a33586c95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e7a6db5ee252c8ea9c44a21aaf2b0c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a1e7a6db5ee252c8ea9c44a21aaf2b0c9">UpdateHandle</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)=0</td></tr>
+<tr class="memdesc:a1e7a6db5ee252c8ea9c44a21aaf2b0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">a custom update which will be called by the regular update function.  <a href="#a1e7a6db5ee252c8ea9c44a21aaf2b0c9">More...</a><br/></td></tr>
 <tr class="separator:a1e7a6db5ee252c8ea9c44a21aaf2b0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af9f9c9a8c4a053bd829a06273df297bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#af9f9c9a8c4a053bd829a06273df297bd">enabled</a></td></tr>
+<tr class="memdesc:af9f9c9a8c4a053bd829a06273df297bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the enable status.  <a href="#af9f9c9a8c4a053bd829a06273df297bd">More...</a><br/></td></tr>
 <tr class="separator:af9f9c9a8c4a053bd829a06273df297bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64902a81921ba2fc792d044392b14ecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a64902a81921ba2fc792d044392b14ecc">willDraw</a></td></tr>
+<tr class="memdesc:a64902a81921ba2fc792d044392b14ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the draw status.  <a href="#a64902a81921ba2fc792d044392b14ecc">More...</a><br/></td></tr>
 <tr class="separator:a64902a81921ba2fc792d044392b14ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3badeb437135a265c931f4ee728a48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#a8c3badeb437135a265c931f4ee728a48">willUpdate</a></td></tr>
+<tr class="memdesc:a8c3badeb437135a265c931f4ee728a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the update status.  <a href="#a8c3badeb437135a265c931f4ee728a48">More...</a><br/></td></tr>
 <tr class="separator:a8c3badeb437135a265c931f4ee728a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5408f6d27ad51d73df507296f16c811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chunk_manager.html">ChunkManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_layer.html#ab5408f6d27ad51d73df507296f16c811">Chunks</a></td></tr>
+<tr class="memdesc:ab5408f6d27ad51d73df507296f16c811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>.  <a href="#ab5408f6d27ad51d73df507296f16c811">More...</a><br/></td></tr>
 <tr class="separator:ab5408f6d27ad51d73df507296f16c811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is responsible for the different layers a gamescreen can be composed of. </p>
+<p>This Class is responsible for cutting up a gamescreen in layers. this way you can keep components sepperated who are on different depth levels. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8f623c7c4737dc29ecc86978d243ac6f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,6 +207,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The default constructor. </p>
 
 </div>
 </div>
@@ -197,6 +224,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The destructor. </p>
 
 </div>
 </div>
@@ -233,12 +262,21 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This method relais the draw signal to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>Contains the sfml renderwindow to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>contains the offset to draw upon. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph.png" border="0" usemap="#class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph" alt=""/></div>
 <map name="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph" id="class_layer_a008068a5a6bd4dd274bb01bf0246cfaf_cgraph">
-<area shape="rect" id="node2" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="144,31,291,57"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="339,31,435,57"/><area shape="rect" id="node4" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="483,31,601,57"/><area shape="rect" id="node5" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="649,5,855,32"/><area shape="rect" id="node6" href="class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="672,56,832,83"/></map>
+<area shape="rect" id="node2" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="144,31,291,57"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="339,31,435,57"/><area shape="rect" id="node4" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="483,31,601,57"/><area shape="rect" id="node5" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="returns true if the drawable interface has been filled. " alt="" coords="649,5,855,32"/><area shape="rect" id="node6" href="class_game_component.html#a63c3e40531340490712b789d0d821743" title="The Draw interface method. Used to act on the draw signal. " alt="" coords="672,56,832,83"/></map>
 </div>
 </p>
 
@@ -265,12 +303,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns an pointer to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph.png" border="0" usemap="#class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph" alt=""/></div>
 <map name="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph" id="class_layer_afbfd549c4d1da2e4a2d78a33586c95e1_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="220,5,409,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="457,5,656,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="704,5,892,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="940,5,991,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="220,5,409,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="457,5,656,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="704,5,892,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="940,5,991,32"/></map>
 </div>
 </p>
 
@@ -297,6 +338,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This method returns true if the layer should draw. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if this layer should draw. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a57c59677e3c56a7fd5e3dc985bdb9b4c"></a>
@@ -320,6 +364,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This method returns true if the layer is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if enabled. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ac2892b95b2df74446d89e4a6388f0c88"></a>
@@ -342,6 +389,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This method returns true if the layer should update. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if this layer should update. </dd></dl>
 
 </div>
 </div>
@@ -367,12 +417,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This Method sets the layer to draw. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Contains the boolean value to draw. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1_icgraph.png" border="0" usemap="#class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1_icgraph" alt=""/></div>
 <map name="class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1_icgraph" id="class_layer_a0a4f62b4c031e7c2f2d5635ccd38ddd1_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="180,5,369,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="417,5,616,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="664,5,852,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="900,5,951,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="180,5,369,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="417,5,616,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="664,5,852,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="900,5,951,32"/></map>
 </div>
 </p>
 
@@ -400,12 +458,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This Method sets the layer enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Contains the boolean value of the enablement. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph.png" border="0" usemap="#class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph" alt=""/></div>
 <map name="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph" id="class_layer_a68b9de1ac0f3eaa8274b8d0a901a825c_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="180,5,369,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="417,5,616,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="664,5,852,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="900,5,951,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="180,5,369,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="417,5,616,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="664,5,852,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="900,5,951,32"/></map>
 </div>
 </p>
 
@@ -433,12 +499,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This Method sets the layer to update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Contains the boolean value to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph.png" border="0" usemap="#class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph" alt=""/></div>
 <map name="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph" id="class_layer_a0e0595efe93dbd63b05339f35399d1ad_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="184,5,373,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="421,5,620,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="668,5,856,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="904,5,955,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="184,5,373,32"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="421,5,620,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="668,5,856,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="904,5,955,32"/></map>
 </div>
 </p>
 
@@ -466,12 +540,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>This method relais the update signal to the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains all data required for the update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_layer_a971c3f8d301e250aded4cf0c0b9ad544_cgraph.png" border="0" usemap="#class_layer_a971c3f8d301e250aded4cf0c0b9ad544_cgraph" alt=""/></div>
 <map name="class_layer_a971c3f8d301e250aded4cf0c0b9ad544_cgraph" id="class_layer_a971c3f8d301e250aded4cf0c0b9ad544_cgraph">
-<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="156,379,315,405"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="405,147,513,173"/><area shape="rect" id="node22" href="class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf" title="This method returns the chunk to the right. " alt="" coords="402,197,517,224"/><area shape="rect" id="node23" href="class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa" title="This method returns the chunk to the left. " alt="" coords="406,248,513,275"/><area shape="rect" id="node24" href="class_chunk.html#a59eb282f08711420c1e966e30aab47e3" title="This method returns the chunk to the bottom. " alt="" coords="396,299,523,325"/><area shape="rect" id="node25" href="class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="363,349,556,376"/><area shape="rect" id="node26" href="class_window_manager.html#a6c6ca24d553fcbc205ca6eba14eea324" title="WindowManager::getCamera\lPosition" alt="" coords="365,401,554,442"/><area shape="rect" id="node27" href="class_chunk.html#a0438a8693210393fadc5105dd315adb8" title="This method returns the real position of the chunk. " alt="" coords="380,467,539,493"/><area shape="rect" id="node28" href="class_chunk.html#a331e5916d9976679df82da5764bd7d64" title="This method returns the size of the chunk. " alt="" coords="404,517,515,544"/><area shape="rect" id="node29" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="365,569,554,610"/><area shape="rect" id="node30" href="class_chunk.html#a161929ca5dcfa0e1a798999f989fe2f8" title="This method returns the chunk to the top. " alt="" coords="406,635,513,661"/><area shape="rect" id="node4" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="616,5,796,32"/><area shape="rect" id="node5" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="623,56,789,83"/><area shape="rect" id="node6" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="604,107,808,149"/><area shape="rect" id="node11" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="removes all the &quot;Dead&quot; components from the chunk but does not delete them. " alt="" coords="611,173,801,214"/><area shape="rect" id="node12" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="653,239,759,265"/><area shape="rect" id="node17" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="654,303,758,329"/><area shape="rect" id="node7" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="1106,125,1302,152"/><area shape="rect" id="node8" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="875,12,1033,39"/><area shape="rect" id="node9" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="877,188,1031,215"/><area shape="rect" id="node10" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="GameComponent::setPosition" alt="" coords="856,63,1052,89"/><area shape="rect" id="node13" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="883,239,1025,265"/><area shape="rect" id="node14" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="GameComponent::getCollidable" alt="" coords="1101,283,1307,309"/><area shape="rect" id="node15" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="1131,232,1277,259"/><area shape="rect" id="node16" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="GameComponent::Collide" alt="" coords="1119,181,1289,208"/><area shape="rect" id="node18" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="884,321,1024,348"/><area shape="rect" id="node19" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="GameComponent::getSensor" alt="" coords="1109,333,1299,360"/><area shape="rect" id="node20" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="GameComponent::hasCollidable" alt="" coords="1100,384,1308,411"/><area shape="rect" id="node21" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="1124,435,1284,461"/></map>
+<area shape="rect" id="node2" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="156,425,315,452"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="405,147,513,173"/><area shape="rect" id="node22" href="class_chunk.html#ad13a4e8ac481c7de6a70b3fa461418cf" title="This method returns the chunk to the right. " alt="" coords="402,197,517,224"/><area shape="rect" id="node23" href="class_chunk.html#a43c3b2b5995d06baec16ab9935a315fa" title="This method returns the chunk to the left. " alt="" coords="406,248,513,275"/><area shape="rect" id="node24" href="class_chunk.html#a59eb282f08711420c1e966e30aab47e3" title="This method returns the chunk to the bottom. " alt="" coords="396,299,523,325"/><area shape="rect" id="node25" href="class_utils.html#ad50ce773764e9114decc8c415cd38d3e" title="Utils::getInstance" alt="" coords="398,349,521,376"/><area shape="rect" id="node26" href="class_utils.html#aede459dfa214e6c0b6f49e768a0616ac" title="Utils::log" alt="" coords="423,400,496,427"/><area shape="rect" id="node27" href="class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="363,451,556,477"/><area shape="rect" id="node28" href="class_window_manager.html#a6c6ca24d553fcbc205ca6eba14eea324" title="WindowManager::getCamera\lPosition" alt="" coords="365,502,554,543"/><area shape="rect" id="node29" href="class_chunk.html#a0438a8693210393fadc5105dd315adb8" title="This method returns the real position of the chunk. " alt="" coords="380,568,539,595"/><area shape="rect" id="node30" href="class_chunk.html#a331e5916d9976679df82da5764bd7d64" title="This method returns the size of the chunk. " alt="" coords="404,619,515,645"/><area shape="rect" id="node31" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="365,670,554,711"/><area shape="rect" id="node32" href="class_chunk.html#a161929ca5dcfa0e1a798999f989fe2f8" title="This method returns the chunk to the top. " alt="" coords="406,736,513,763"/><area shape="rect" id="node4" href="class_spawner.html#a9b6caf4f8e980acd1537050792ab8583" title="Spawner::ComponentCount" alt="" coords="616,5,796,32"/><area shape="rect" id="node5" href="class_spawner.html#a2cb984bed31cef93edcb9dcfc27f47d0" title="Spawner::popComponent" alt="" coords="623,56,789,83"/><area shape="rect" id="node6" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="604,107,808,149"/><area shape="rect" id="node11" href="class_chunk.html#aa7f84e97b0fd555faeb811c747a6d26d" title="removes all the &quot;Dead&quot; components from the chunk but does not delete them. " alt="" coords="611,173,801,214"/><area shape="rect" id="node12" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="653,239,759,265"/><area shape="rect" id="node17" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="654,303,758,329"/><area shape="rect" id="node7" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="1106,125,1302,152"/><area shape="rect" id="node8" href="class_chunk.html#aae4f8da15c8d73f2c6da55642aa8ca72" title="a function to simplify the ifstatements in Chunk::MoveComponentToNextChunk " alt="" coords="875,12,1033,39"/><area shape="rect" id="node9" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="877,188,1031,215"/><area shape="rect" id="node10" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d" title="sets the position of the object " alt="" coords="856,63,1052,89"/><area shape="rect" id="node13" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="883,239,1025,265"/><area shape="rect" id="node14" href="class_game_component.html#a09eae8038373202d058179080643f75b" title="returns the Collidable interface if it has been filled. " alt="" coords="1101,283,1307,309"/><area shape="rect" id="node15" href="class_collidable.html#ae28c60e857bf31a5eeebd4972341a0a7" title="returns a sf::FloatRect containing the position and size of the component. " alt="" coords="1131,232,1277,259"/><area shape="rect" id="node16" href="class_game_component.html#a333932780a30df552333d02669c593bc" title="The collide interface method. Used to act on a collision. " alt="" coords="1119,181,1289,208"/><area shape="rect" id="node18" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="884,321,1024,348"/><area shape="rect" id="node19" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12" title="returns the Sensor interface if it has been filled. " alt="" coords="1109,333,1299,360"/><area shape="rect" id="node20" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311" title="returns true if the collidable interface has been filled. " alt="" coords="1100,384,1308,411"/><area shape="rect" id="node21" href="class_sensor.html#a10dcb96d63d3991eff95b47f626d0e4c" title="Sensor::addSeenObject" alt="" coords="1124,435,1284,461"/></map>
 </div>
 </p>
 
@@ -499,6 +581,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>a custom update which will be called by the regular update function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains the data required for the update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>implement this shit. </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_layer.html#a97b36d082a4b5dd7e145773fca666490">ExampleLayer</a>.</p>
 
 </div>
@@ -522,6 +613,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains the <a class="el" href="class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above...">ChunkManager</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="af9f9c9a8c4a053bd829a06273df297bd"></a>
@@ -541,6 +634,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains the enable status. </p>
 
 </div>
 </div>
@@ -562,6 +657,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains the draw status. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8c3badeb437135a265c931f4ee728a48"></a>
@@ -582,6 +679,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Contains the update status. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -594,7 +693,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_layer.html">Layer</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

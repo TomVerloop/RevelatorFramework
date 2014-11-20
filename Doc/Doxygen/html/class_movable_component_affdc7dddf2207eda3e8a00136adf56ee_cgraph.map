@@ -1,5 +1,5 @@
 <map id="MovableComponent::Update" name="MovableComponent::Update">
-<area shape="rect" id="node2" href="$class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8" title="Keyboard::getInstance" alt="" coords="258,5,410,32"/>
+<area shape="rect" id="node2" href="$class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8" title="Returns the Keyboard instance. " alt="" coords="258,5,410,32"/>
 <area shape="rect" id="node3" href="$class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae" title="Sensor::SeenObjectCount" alt="" coords="247,56,421,83"/>
 <area shape="rect" id="node4" href="$class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14" title="Sensor::getSeenObject" alt="" coords="255,107,413,133"/>
 <area shape="rect" id="node5" href="$class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="237,157,431,184"/>

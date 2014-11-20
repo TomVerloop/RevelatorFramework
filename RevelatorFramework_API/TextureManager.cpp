@@ -1,4 +1,4 @@
-#include "stdafx.h"
+
 #include "TextureManager.hpp"
 
 std::ifstream & operator>>(std::ifstream & Input, sf::IntRect & Rhs)

@@ -7,5 +7,6 @@ var searchData=
   ['period',['Period',['../class_keyboard.html#ab214ea962d31b8437bc0b162001574dc',1,'Keyboard']]],
   ['playingmusic',['PlayingMusic',['../class_audio_manager.html#a8309e75d7e8ac5ecf53d5d8e787d8dc8',1,'AudioManager']]],
   ['position',['position',['../class_collidable.html#aa6c2e113d920df8c0d5da2a244f924bd',1,'Collidable::position()'],['../class_game_component.html#acc3109bb4ae36112eb8796e067160c59',1,'GameComponent::Position()']]],
+  ['printlog',['PrintLog',['../class_utils.html#ab51aed3a77f526fdd1dbc2e2e4c25a9b',1,'Utils']]],
   ['pureposition',['PurePosition',['../class_chunk.html#ace1577872b1189bc7fd88a9b3817ce98',1,'Chunk']]]
 ];

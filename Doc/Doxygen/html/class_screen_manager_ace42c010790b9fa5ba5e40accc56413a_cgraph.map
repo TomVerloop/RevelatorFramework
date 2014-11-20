@@ -1,4 +1,4 @@
 <map id="ScreenManager::Draw" name="ScreenManager::Draw">
-<area shape="rect" id="node2" href="$class_game_screen.html#afb11360ac509f47ca47929c254a8b67d" title="This pure virtual method will be responsible for drawing on the screen. " alt="" coords="232,5,367,32"/>
+<area shape="rect" id="node2" href="$class_game_screen.html#afb11360ac509f47ca47929c254a8b67d" title="relais the draw signal to all of its layers. " alt="" coords="232,5,367,32"/>
 <area shape="rect" id="node3" href="$class_window_manager.html#a7051ab4ec34157357d2fc029b5283ba0" title="WindowManager::getWindow" alt="" coords="204,56,395,83"/>
 </map>

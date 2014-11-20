@@ -1,19 +1,19 @@
 <map id="ScreenManager::getInstance" name="ScreenManager::getInstance">
-<area shape="rect" id="node2" href="$class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d" title="GameFactory::getInstance" alt="" coords="253,67,429,93"/>
+<area shape="rect" id="node2" href="$class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d" title="creates a instance of the gamefactory and returns a reference to it. " alt="" coords="253,67,429,93"/>
 <area shape="rect" id="node3" href="$class_screen_manager.html#a2e6e206c2ff265c534c802898c9c078b" title="ScreenManager::addScreen" alt="" coords="249,117,432,144"/>
-<area shape="rect" id="node4" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="241,168,440,195"/>
+<area shape="rect" id="node4" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="241,168,440,195"/>
 <area shape="rect" id="node17" href="$class_screen_manager.html#ac7ebe41395bf83cc60c13e4fb502babd" title="ScreenManager::setActive\lScreen" alt="" coords="253,230,428,271"/>
 <area shape="rect" id="node5" href="$class_producer_package.html#aba29d881795d34f87986a1ad06de58a3" title="ProducerPackage::clear" alt="" coords="502,107,663,133"/>
-<area shape="rect" id="node6" href="$class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="488,157,677,184"/>
-<area shape="rect" id="node16" href="$class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="GameScreen::addLayer" alt="" coords="503,208,662,235"/>
-<area shape="rect" id="node7" href="$class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="781,5,908,32"/>
-<area shape="rect" id="node8" href="$class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="779,56,910,83"/>
-<area shape="rect" id="node9" href="$class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="781,107,908,133"/>
-<area shape="rect" id="node10" href="$class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="761,157,928,184"/>
+<area shape="rect" id="node6" href="$class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="488,157,677,184"/>
+<area shape="rect" id="node16" href="$class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="adds a layer to the gamescreen " alt="" coords="503,208,662,235"/>
+<area shape="rect" id="node7" href="$class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="This Method sets the layer enabled. " alt="" coords="781,5,908,32"/>
+<area shape="rect" id="node8" href="$class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="This Method sets the layer to update. " alt="" coords="779,56,910,83"/>
+<area shape="rect" id="node9" href="$class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="This Method sets the layer to draw. " alt="" coords="781,107,908,133"/>
+<area shape="rect" id="node10" href="$class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="returns an pointer to the ChunkManager " alt="" coords="761,157,928,184"/>
 <area shape="rect" id="node11" href="$class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="745,208,944,235"/>
 <area shape="rect" id="node12" href="$class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="725,259,964,285"/>
-<area shape="rect" id="node15" href="$class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="749,310,941,351"/>
+<area shape="rect" id="node15" href="$class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="Produces a game object with the registered producer. " alt="" coords="749,310,941,351"/>
 <area shape="rect" id="node13" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="1012,259,1167,285"/>
-<area shape="rect" id="node14" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="1215,259,1411,285"/>
-<area shape="rect" id="node18" href="$class_game_screen.html#a76e44a105b36f32b68a0ba7a325971b0" title="GameScreen::Entry" alt="" coords="514,259,651,285"/>
+<area shape="rect" id="node14" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="1215,259,1411,285"/>
+<area shape="rect" id="node18" href="$class_game_screen.html#a76e44a105b36f32b68a0ba7a325971b0" title="this function will be called at the moment a gamescreen becomes the active screen. [in] object Contains an EntryObject which is currently unused. " alt="" coords="514,259,651,285"/>
 </map>

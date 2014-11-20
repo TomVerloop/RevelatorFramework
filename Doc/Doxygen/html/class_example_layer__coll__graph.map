@@ -1,5 +1,5 @@
 <map id="ExampleLayer" name="ExampleLayer">
-<area shape="rect" id="node2" href="$class_layer.html" title="{Layer\n|# enabled\l# willDraw\l# willUpdate\l|+ Layer()\l+ ~Layer()\l+ Update()\l+ Draw()\l+ isEnabled()\l+ isDrawing()\l+ isUpdating()\l+ setEnabled()\l+ setDrawing()\l+ setUpdating()\l+ getChunkManager()\l+ UpdateHandle()\l}" alt="" coords="38,823,185,1091"/>
+<area shape="rect" id="node2" href="$class_layer.html" title="This class is responsible for the different layers a gamescreen can be composed of. " alt="" coords="38,823,185,1091"/>
 <area shape="rect" id="node3" href="$class_chunk_manager.html" title="This class contains a reference to the first chunk. and the one the camera hovers above..." alt="" coords="29,595,193,760"/>
 <area shape="rect" id="node4" href="$class_chunk.html" title="This Class represents a small portion of a screen. " alt="" coords="5,161,217,517"/>
 <area shape="rect" id="node5" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="60,5,163,112"/>

@@ -1,5 +1,5 @@
-#include "WindowManager.hpp"
 
+#include "WindowManager.hpp"
 
 WindowManager::WindowManager()
 {
@@ -57,5 +57,5 @@ void WindowManager::InitWindow(sf::VideoMode video,std::string Name)
 		delete window;
 		window = nullptr;
 	}
-	window = new sf::RenderWindow(video, Name);
+	window = new sf::RenderWindow(sf::VideoMode::VideoMode(1920,1080), Name,sf::Style::Fullscreen);
 }

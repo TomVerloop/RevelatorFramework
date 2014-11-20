@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('class_game_factory.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This Singleton Manages the creation and deletion of almost any component where there is a Producer for.  
+ <a href="class_game_factory.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_factory_8hpp_source.html">GameFactory.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for GameFactory:</div>
@@ -127,59 +130,86 @@ Collaboration diagram for GameFactory:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cbbb4c198cab19386d67bfe7891b785"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0cbbb4c198cab19386d67bfe7891b785">~GameFactory</a> ()</td></tr>
+<tr class="memdesc:a0cbbb4c198cab19386d67bfe7891b785"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default destructor.  <a href="#a0cbbb4c198cab19386d67bfe7891b785">More...</a><br/></td></tr>
 <tr class="separator:a0cbbb4c198cab19386d67bfe7891b785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad293f5a8811d9106753916cef819fbce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_screen.html">GameScreen</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce">ProduceScreen</a> (std::string screenname)</td></tr>
+<tr class="memdesc:ad293f5a8811d9106753916cef819fbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a gamescreen from text according to its name.  <a href="#ad293f5a8811d9106753916cef819fbce">More...</a><br/></td></tr>
 <tr class="separator:ad293f5a8811d9106753916cef819fbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77df8b5e97869b7d7b667c0852191e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a77df8b5e97869b7d7b667c0852191e20">RegisterObjectProducer</a> (std::string Name, <a class="el" href="class_game_object_producer.html">GameObjectProducer</a> *producer)</td></tr>
+<tr class="memdesc:a77df8b5e97869b7d7b667c0852191e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a component producer to the factory which it can use to make new components.  <a href="#a77df8b5e97869b7d7b667c0852191e20">More...</a><br/></td></tr>
 <tr class="separator:a77df8b5e97869b7d7b667c0852191e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a20ae04c8ff992ad080b9742f5831c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a3a20ae04c8ff992ad080b9742f5831c0">RegisterLayerProducer</a> (std::string Name, <a class="el" href="class_layer_producer.html">LayerProducer</a> *producer)</td></tr>
+<tr class="memdesc:a3a20ae04c8ff992ad080b9742f5831c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a layer producer to the factory which it can use to make new layers.  <a href="#a3a20ae04c8ff992ad080b9742f5831c0">More...</a><br/></td></tr>
 <tr class="separator:a3a20ae04c8ff992ad080b9742f5831c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c85f8654dd2c3aeb7a2b17df05cceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ad3c85f8654dd2c3aeb7a2b17df05cceb">RegisterScreenProducer</a> (std::string Name, <a class="el" href="class_game_screen_producer.html">GameScreenProducer</a> *producer)</td></tr>
+<tr class="memdesc:ad3c85f8654dd2c3aeb7a2b17df05cceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Screen producer to the factory which it can use to make new layers.  <a href="#ad3c85f8654dd2c3aeb7a2b17df05cceb">More...</a><br/></td></tr>
 <tr class="separator:ad3c85f8654dd2c3aeb7a2b17df05cceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521cf5410b97240789a9cc54404d6a2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f">ProduceGameObject</a> (std::string Name)</td></tr>
+<tr class="memdesc:a521cf5410b97240789a9cc54404d6a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a game object with the registered producer.  <a href="#a521cf5410b97240789a9cc54404d6a2f">More...</a><br/></td></tr>
 <tr class="separator:a521cf5410b97240789a9cc54404d6a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed92342411d80d6080294c29ac2c54e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0ed92342411d80d6080294c29ac2c54e">ProduceGameObject</a> (std::string Name, <a class="el" href="class_producer_package.html">ProducerPackage</a> package)</td></tr>
+<tr class="memdesc:a0ed92342411d80d6080294c29ac2c54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a game object with the registered producer.  <a href="#a0ed92342411d80d6080294c29ac2c54e">More...</a><br/></td></tr>
 <tr class="separator:a0ed92342411d80d6080294c29ac2c54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a130a6b0bff752fdd8223616a5f046f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a7a130a6b0bff752fdd8223616a5f046f">DeleteDecommisioned</a> ()</td></tr>
+<tr class="memdesc:a7a130a6b0bff752fdd8223616a5f046f"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all components maked as dead.  <a href="#a7a130a6b0bff752fdd8223616a5f046f">More...</a><br/></td></tr>
 <tr class="separator:a7a130a6b0bff752fdd8223616a5f046f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a694a26c694da014dc5ced9d85a2aaaa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a694a26c694da014dc5ced9d85a2aaaa1">GameFactory</a> (const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;utils)=delete</td></tr>
+<tr class="memdesc:a694a26c694da014dc5ced9d85a2aaaa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted copy constructor.  <a href="#a694a26c694da014dc5ced9d85a2aaaa1">More...</a><br/></td></tr>
 <tr class="separator:a694a26c694da014dc5ced9d85a2aaaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e48fb53d87829930bbc447133d9c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ac9e48fb53d87829930bbc447133d9c25">operator=</a> (const <a class="el" href="class_game_factory.html">GameFactory</a> &amp;utils)=delete</td></tr>
+<tr class="memdesc:ac9e48fb53d87829930bbc447133d9c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">deleted assignment opperator.  <a href="#ac9e48fb53d87829930bbc447133d9c25">More...</a><br/></td></tr>
 <tr class="separator:ac9e48fb53d87829930bbc447133d9c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_factory.html">GameFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d">getInstance</a> ()</td></tr>
+<tr class="memdesc:a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a instance of the gamefactory and returns a reference to it.  <a href="#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d">More...</a><br/></td></tr>
 <tr class="separator:a0b1eef0e66b8f6ff8277f6d5fb4b8e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a37c039131801be05d138bd76bb125ab3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a37c039131801be05d138bd76bb125ab3">GameFactory</a> ()</td></tr>
+<tr class="memdesc:a37c039131801be05d138bd76bb125ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default constructor.  <a href="#a37c039131801be05d138bd76bb125ab3">More...</a><br/></td></tr>
 <tr class="separator:a37c039131801be05d138bd76bb125ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c24ad925bf672c6fb721dfaaf993f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d">ProduceLayer</a> (std::string layername, int ChunkSize, const int <a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a>, bool enabled, bool willupdate, bool willdraw, <a class="el" href="class_producer_package.html">ProducerPackage</a> package, std::string layertype)</td></tr>
+<tr class="memdesc:a0c24ad925bf672c6fb721dfaaf993f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a layer by values provided by the function <a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. ">GameFactory::ProduceScreen</a>.  <a href="#a0c24ad925bf672c6fb721dfaaf993f9d">More...</a><br/></td></tr>
 <tr class="separator:a0c24ad925bf672c6fb721dfaaf993f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7ab6a968cb7af49813407fe66927c126"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a7ab6a968cb7af49813407fe66927c126">Layers</a></td></tr>
+<tr class="memdesc:a7ab6a968cb7af49813407fe66927c126"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a linked list of all layers.  <a href="#a7ab6a968cb7af49813407fe66927c126">More...</a><br/></td></tr>
 <tr class="separator:a7ab6a968cb7af49813407fe66927c126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77496a7ea1e2fa54acb18c499b3bd3bb"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chunk.html">Chunk</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a77496a7ea1e2fa54acb18c499b3bd3bb">Chunks</a></td></tr>
+<tr class="memdesc:a77496a7ea1e2fa54acb18c499b3bd3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a linked list of all chunks.  <a href="#a77496a7ea1e2fa54acb18c499b3bd3bb">More...</a><br/></td></tr>
 <tr class="separator:a77496a7ea1e2fa54acb18c499b3bd3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a8135f6d6b1b60c0d08b39340b34cc"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_screen.html">GameScreen</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a16a8135f6d6b1b60c0d08b39340b34cc">Screens</a></td></tr>
+<tr class="memdesc:a16a8135f6d6b1b60c0d08b39340b34cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a linked list of all screens.  <a href="#a16a8135f6d6b1b60c0d08b39340b34cc">More...</a><br/></td></tr>
 <tr class="separator:a16a8135f6d6b1b60c0d08b39340b34cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fc6360610babaf3d2d880f782772b3"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_game_component.html">GameComponent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#a90fc6360610babaf3d2d880f782772b3">Components</a></td></tr>
+<tr class="memdesc:a90fc6360610babaf3d2d880f782772b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a linked list of all components.  <a href="#a90fc6360610babaf3d2d880f782772b3">More...</a><br/></td></tr>
 <tr class="separator:a90fc6360610babaf3d2d880f782772b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab72819fc3f241243d44827f75e0a2886"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="class_game_object_producer.html">GameObjectProducer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#ab72819fc3f241243d44827f75e0a2886">ObjectProducers</a></td></tr>
+<tr class="memdesc:ab72819fc3f241243d44827f75e0a2886"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a map of all object producers.  <a href="#ab72819fc3f241243d44827f75e0a2886">More...</a><br/></td></tr>
 <tr class="separator:ab72819fc3f241243d44827f75e0a2886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65ba67e6c3fc56ec228c801e02352c8"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="class_game_screen_producer.html">GameScreenProducer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#aa65ba67e6c3fc56ec228c801e02352c8">ScreenProducers</a></td></tr>
+<tr class="memdesc:aa65ba67e6c3fc56ec228c801e02352c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a map of all screen producers.  <a href="#aa65ba67e6c3fc56ec228c801e02352c8">More...</a><br/></td></tr>
 <tr class="separator:aa65ba67e6c3fc56ec228c801e02352c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfadca1996a3982f4b45c67ced1520f2"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="class_layer_producer.html">LayerProducer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_factory.html#adfadca1996a3982f4b45c67ced1520f2">LayerProducers</a></td></tr>
+<tr class="memdesc:adfadca1996a3982f4b45c67ced1520f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a map of all layer producers.  <a href="#adfadca1996a3982f4b45c67ced1520f2">More...</a><br/></td></tr>
 <tr class="separator:adfadca1996a3982f4b45c67ced1520f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Singleton Manages the creation and deletion of almost any component where there is a Producer for. </p>
+<p>This Class is Singleton defined. It creates and deletes all components made by a Producer. It can make those from text files located in the resource folder. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>A Singleton </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0cbbb4c198cab19386d67bfe7891b785"></a>
 <div class="memitem">
 <div class="memproto">
@@ -192,6 +222,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The default destructor. </p>
 
 </div>
 </div>
@@ -217,6 +249,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>deleted copy constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a37c039131801be05d138bd76bb125ab3"></a>
@@ -240,6 +274,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>the default constructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -255,6 +291,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>deletes all components maked as dead. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -287,6 +325,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>creates a instance of the gamefactory and returns a reference to it. </p>
+<dl class="section return"><dt>Returns</dt><dd>Contains the singleton instance of the gamefactory </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -321,6 +362,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>deleted assignment opperator. </p>
+
 </div>
 </div>
 <a class="anchor" id="a521cf5410b97240789a9cc54404d6a2f"></a>
@@ -337,12 +380,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Produces a game object with the registered producer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Name</td><td>Contains the name of the producer to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a pointer to the newly created <a class="el" href="class_game_component.html" title="This Class is the base of every component contained in any game. ">GameComponent</a>. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph.png" border="0" usemap="#class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph" alt=""/></div>
 <map name="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph" id="class_game_factory_a521cf5410b97240789a9cc54404d6a2f_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="245,5,435,32"/><area shape="rect" id="node6" href="class_spawner.html#ae2e88e63fbb94df841800bd239d1a348" title="Spawner::pushComponent" alt="" coords="253,56,427,83"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="483,5,681,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="729,5,917,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="965,5,1016,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="245,5,435,32"/><area shape="rect" id="node6" href="class_spawner.html#ae2e88e63fbb94df841800bd239d1a348" title="Spawner::pushComponent" alt="" coords="253,56,427,83"/><area shape="rect" id="node3" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="483,5,681,32"/><area shape="rect" id="node4" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="729,5,917,32"/><area shape="rect" id="node5" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="965,5,1016,32"/></map>
 </div>
 </p>
 
@@ -371,6 +423,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Produces a game object with the registered producer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Name</td><td>Contains the name of the producer to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>Contains the parameters the producer uses to construct the new object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a pointer to the newly created <a class="el" href="class_game_component.html" title="This Class is the base of every component contained in any game. ">GameComponent</a>. </dd></dl>
 
 </div>
 </div>
@@ -442,12 +504,27 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Produces a layer by values provided by the function <a class="el" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. ">GameFactory::ProduceScreen</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">layername</td><td>Contains the name of the layer to construct. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ChunkSize</td><td>Contains the size all chunks in the layer should be. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Chunks</td><td>Contains the ammount of chunks there should be on a row. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>Contains the boolean value for if the layer should be enabled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">willupdate</td><td>Contains the boolean value for if the layer should update. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">willdraw</td><td>contains the boolean value for if the layer should draw. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains the parameters for the producer to use to construct the layer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layertype</td><td>contains the layer typename. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph.png" border="0" usemap="#class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph" alt=""/></div>
 <map name="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph" id="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_cgraph">
-<area shape="rect" id="node2" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="299,5,425,32"/><area shape="rect" id="node3" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="297,56,427,83"/><area shape="rect" id="node4" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="299,107,425,133"/><area shape="rect" id="node5" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="279,157,445,184"/><area shape="rect" id="node6" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="263,208,461,235"/><area shape="rect" id="node7" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="243,259,481,285"/><area shape="rect" id="node10" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="266,310,458,351"/><area shape="rect" id="node8" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="529,259,684,285"/><area shape="rect" id="node9" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="732,259,928,285"/></map>
+<area shape="rect" id="node2" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="This Method sets the layer enabled. " alt="" coords="299,5,425,32"/><area shape="rect" id="node3" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="This Method sets the layer to update. " alt="" coords="297,56,427,83"/><area shape="rect" id="node4" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="This Method sets the layer to draw. " alt="" coords="299,107,425,133"/><area shape="rect" id="node5" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="returns an pointer to the ChunkManager " alt="" coords="279,157,445,184"/><area shape="rect" id="node6" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="263,208,461,235"/><area shape="rect" id="node7" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="243,259,481,285"/><area shape="rect" id="node10" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="Produces a game object with the registered producer. " alt="" coords="266,310,458,351"/><area shape="rect" id="node8" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="529,259,684,285"/><area shape="rect" id="node9" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="732,259,928,285"/></map>
 </div>
 </p>
 
@@ -456,7 +533,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph.png" border="0" usemap="#class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph" alt=""/></div>
 <map name="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph" id="class_game_factory_a0c24ad925bf672c6fb721dfaaf993f9d_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="243,5,441,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="489,5,677,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="725,5,776,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="243,5,441,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="489,5,677,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="725,5,776,32"/></map>
 </div>
 </p>
 
@@ -476,12 +553,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Produces a gamescreen from text according to its name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">screenname</td><td>Containst the name of the screen to make. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a pointer to a game screen. </dd></dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph.png" border="0" usemap="#class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph" alt=""/></div>
 <map name="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph" id="class_game_factory_ad293f5a8811d9106753916cef819fbce_cgraph">
-<area shape="rect" id="node2" href="class_producer_package.html#aba29d881795d34f87986a1ad06de58a3" title="ProducerPackage::clear" alt="" coords="266,107,427,133"/><area shape="rect" id="node3" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="252,157,441,184"/><area shape="rect" id="node13" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="GameScreen::addLayer" alt="" coords="267,208,426,235"/><area shape="rect" id="node4" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="545,5,672,32"/><area shape="rect" id="node5" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="543,56,674,83"/><area shape="rect" id="node6" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="545,107,672,133"/><area shape="rect" id="node7" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="525,157,692,184"/><area shape="rect" id="node8" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="509,208,708,235"/><area shape="rect" id="node9" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="489,259,728,285"/><area shape="rect" id="node12" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="513,310,705,351"/><area shape="rect" id="node10" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="776,259,931,285"/><area shape="rect" id="node11" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="979,259,1175,285"/></map>
+<area shape="rect" id="node2" href="class_producer_package.html#aba29d881795d34f87986a1ad06de58a3" title="ProducerPackage::clear" alt="" coords="266,107,427,133"/><area shape="rect" id="node3" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="252,157,441,184"/><area shape="rect" id="node13" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b" title="adds a layer to the gamescreen " alt="" coords="267,208,426,235"/><area shape="rect" id="node4" href="class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="This Method sets the layer enabled. " alt="" coords="545,5,672,32"/><area shape="rect" id="node5" href="class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="This Method sets the layer to update. " alt="" coords="543,56,674,83"/><area shape="rect" id="node6" href="class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="This Method sets the layer to draw. " alt="" coords="545,107,672,133"/><area shape="rect" id="node7" href="class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="returns an pointer to the ChunkManager " alt="" coords="525,157,692,184"/><area shape="rect" id="node8" href="class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="509,208,708,235"/><area shape="rect" id="node9" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="489,259,728,285"/><area shape="rect" id="node12" href="class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="Produces a game object with the registered producer. " alt="" coords="513,310,705,351"/><area shape="rect" id="node10" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="776,259,931,285"/><area shape="rect" id="node11" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="979,259,1175,285"/></map>
 </div>
 </p>
 
@@ -520,6 +606,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Registers a layer producer to the factory which it can use to make new layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Name</td><td>Contains the name on which the producer can be called. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">producer</td><td>Contains a pointer to the layer producer to register. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -554,6 +649,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Registers a component producer to the factory which it can use to make new components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Name</td><td>Contains the name on which the producer can be called. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">producer</td><td>Contains a pointer to the object producer to register. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -590,6 +694,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Registers a Screen producer to the factory which it can use to make new layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Name</td><td>Contains the name on which the producer can be called. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">producer</td><td>Contains a pointer to the screen producer to register. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -620,6 +733,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains a linked list of all chunks. </p>
+
 </div>
 </div>
 <a class="anchor" id="a90fc6360610babaf3d2d880f782772b3"></a>
@@ -639,6 +754,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>contains a linked list of all components. </p>
 
 </div>
 </div>
@@ -660,6 +777,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains a map of all layer producers. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7ab6a968cb7af49813407fe66927c126"></a>
@@ -679,6 +798,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>contains a linked list of all layers. </p>
 
 </div>
 </div>
@@ -700,6 +821,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains a map of all object producers. </p>
+
 </div>
 </div>
 <a class="anchor" id="aa65ba67e6c3fc56ec228c801e02352c8"></a>
@@ -719,6 +842,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>contains a map of all screen producers. </p>
 
 </div>
 </div>
@@ -740,6 +865,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains a linked list of all screens. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -752,7 +879,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_factory.html">GameFactory</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

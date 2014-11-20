@@ -25,19 +25,19 @@ void MovableComponent::Collide(GameComponent * colider)
 
 void MovableComponent::Update(const UpdateData & updateobject)
 {
-	if (Keyboard::getInstance().getUp() || Keyboard::getInstance().getW())
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || Keyboard::getInstance().getW())
 	{
 		this->Position->y -= 0.1f;
 	}
-	if (Keyboard::getInstance().getDown() || Keyboard::getInstance().getS())
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || Keyboard::getInstance().getS())
 	{
 		this->Position->y += 0.1f;
 	}
-	if (Keyboard::getInstance().getLeft() || Keyboard::getInstance().getA())
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || Keyboard::getInstance().getA())
 	{
 		this->Position->x -= 0.1f;
 	}
-	if (Keyboard::getInstance().getRight() || Keyboard::getInstance().getD())
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || Keyboard::getInstance().getD())
 	{
 		this->Position->x += 0.1f;
 	}

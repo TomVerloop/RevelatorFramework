@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Revelator Framework", "index.html", [
+    [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],

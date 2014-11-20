@@ -1,3 +1,3 @@
 <map id="ExampleComponentProducer::Produce" name="ExampleComponentProducer::Produce">
-<area shape="rect" id="node2" href="$class_example_component_producer.html#a63aba60e4b967000da407340505838de" title="ExampleComponentProducer\l::Produce" alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node2" href="$class_example_component_producer.html#a63aba60e4b967000da407340505838de" title="A pure virtual function for producing game components without producer packages. " alt="" coords="244,5,435,47"/>
 </map>

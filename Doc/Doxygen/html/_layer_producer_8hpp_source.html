@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -109,24 +109,31 @@ $(document).ready(function(){initNavTree('_layer_producer_8hpp_source.html','');
 </div><!--header-->
 <div class="contents">
 <a href="_layer_producer_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_layer_8hpp.html">Layer.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_producer_package_8hpp.html">ProducerPackage.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_layer_producer.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layer_producer.html">LayerProducer</a></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>() = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="ttc" id="class_layer_producer_html_a80eaa2d71da1e4b9150a14c92516d3e2"><div class="ttname"><a href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">LayerProducer::Produce</a></div><div class="ttdeci">virtual Layer * Produce()=0</div></div>
-<div class="ttc" id="class_layer_producer_html_a7b3ed114fd9cae6ee77ccead38066d3b"><div class="ttname"><a href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">LayerProducer::~LayerProducer</a></div><div class="ttdeci">~LayerProducer()</div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:10</div></div>
-<div class="ttc" id="class_layer_producer_html_a0301ebdf75429cfd1815ded361ff655f"><div class="ttname"><a href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer::LayerProducer</a></div><div class="ttdeci">LayerProducer()</div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:5</div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_layer_8hpp.html">Layer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_producer_package_8hpp.html">ProducerPackage.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_layer_producer.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_layer_producer.html">LayerProducer</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    __declspec(dllexport) <a class="code" href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">~LayerProducer</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>() = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> Package) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    __declspec(dllexport) <span class="keyword">virtual</span> <a class="code" href="class_layer.html">Layer</a> * <a class="code" href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">Produce</a>(<a class="code" href="class_producer_package.html">ProducerPackage</a> * Package) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="ttc" id="class_layer_producer_html_a80eaa2d71da1e4b9150a14c92516d3e2"><div class="ttname"><a href="class_layer_producer.html#a80eaa2d71da1e4b9150a14c92516d3e2">LayerProducer::Produce</a></div><div class="ttdeci">virtual Layer * Produce()=0</div><div class="ttdoc">A pure virtual function for producing layers without producer packages. </div></div>
+<div class="ttc" id="class_layer_producer_html_a7b3ed114fd9cae6ee77ccead38066d3b"><div class="ttname"><a href="class_layer_producer.html#a7b3ed114fd9cae6ee77ccead38066d3b">LayerProducer::~LayerProducer</a></div><div class="ttdeci">~LayerProducer()</div><div class="ttdoc">the destructor. </div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:10</div></div>
+<div class="ttc" id="class_layer_producer_html_a0301ebdf75429cfd1815ded361ff655f"><div class="ttname"><a href="class_layer_producer.html#a0301ebdf75429cfd1815ded361ff655f">LayerProducer::LayerProducer</a></div><div class="ttdeci">LayerProducer()</div><div class="ttdoc">the default contstructor. </div><div class="ttdef"><b>Definition:</b> LayerProducer.cpp:5</div></div>
 <div class="ttc" id="class_producer_package_html"><div class="ttname"><a href="class_producer_package.html">ProducerPackage</a></div><div class="ttdef"><b>Definition:</b> ProducerPackage.hpp:4</div></div>
-<div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.hpp:11</div></div>
-<div class="ttc" id="class_layer_producer_html"><div class="ttname"><a href="class_layer_producer.html">LayerProducer</a></div><div class="ttdef"><b>Definition:</b> LayerProducer.hpp:4</div></div>
+<div class="ttc" id="class_layer_html"><div class="ttname"><a href="class_layer.html">Layer</a></div><div class="ttdoc">This class is responsible for the different layers a gamescreen can be composed of. </div><div class="ttdef"><b>Definition:</b> Layer.hpp:23</div></div>
+<div class="ttc" id="class_layer_producer_html"><div class="ttname"><a href="class_layer_producer.html">LayerProducer</a></div><div class="ttdoc">This Abstract class is used to produce any LAyer. </div><div class="ttdef"><b>Definition:</b> LayerProducer.hpp:17</div></div>
 <div class="ttc" id="_producer_package_8hpp_html"><div class="ttname"><a href="_producer_package_8hpp.html">ProducerPackage.hpp</a></div></div>
 <div class="ttc" id="_layer_8hpp_html"><div class="ttname"><a href="_layer_8hpp.html">Layer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -135,7 +142,7 @@ $(document).ready(function(){initNavTree('_layer_producer_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97c2f744e7299225ccb83c227e8f5e90.html">RevelatorFramework_API</a></li><li class="navelem"><a class="el" href="_layer_producer_8hpp.html">LayerProducer.hpp</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:29 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:34 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

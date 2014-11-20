@@ -1,5 +1,5 @@
 <map id="GameScreen::addLayer" name="GameScreen::addLayer">
-<area shape="rect" id="node2" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="212,5,411,32"/>
+<area shape="rect" id="node2" href="$class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="212,5,411,32"/>
 <area shape="rect" id="node3" href="$class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="459,5,647,32"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="695,5,745,32"/>
 </map>

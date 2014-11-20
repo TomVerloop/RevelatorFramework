@@ -1,5 +1,5 @@
 <map id="Chunk::Sense" name="Chunk::Sense">
 <area shape="rect" id="node2" href="$class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="157,5,265,32"/>
 <area shape="rect" id="node3" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="313,5,472,32"/>
-<area shape="rect" id="node4" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="520,5,623,32"/>
+<area shape="rect" id="node4" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="520,5,623,32"/>
 </map>

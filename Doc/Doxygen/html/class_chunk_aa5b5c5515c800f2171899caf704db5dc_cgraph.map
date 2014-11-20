@@ -1,3 +1,3 @@
 <map id="Chunk::addComponent" name="Chunk::addComponent">
-<area shape="rect" id="node2" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="208,29,404,56"/>
+<area shape="rect" id="node2" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="208,29,404,56"/>
 </map>

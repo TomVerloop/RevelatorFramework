@@ -5,10 +5,11 @@
 #include "MovableComponentProducer.hpp"
 #include "ExampleLayerProducer.hpp"
 #include "ExampleScreenProducer.hpp"
-
+#include <Utils.hpp>
 
 int main(int argc, char* argv[])
 {
+	Utils::getInstance().setPrintLog(true);
 	GameFactory::getInstance().RegisterObjectProducer("ExampleComponent", new ExampleComponentProducer());
 	GameFactory::getInstance().RegisterObjectProducer("MovableComponent", new MovableComponentProducer());
 	GameFactory::getInstance().RegisterLayerProducer("ExampleLayer",new ExampleLayerProducer());

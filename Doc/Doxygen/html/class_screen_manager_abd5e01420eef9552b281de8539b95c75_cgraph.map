@@ -1,13 +1,9 @@
 <map id="ScreenManager::run" name="ScreenManager::run">
-<area shape="rect" id="node2" href="$class_window_manager.html#a7051ab4ec34157357d2fc029b5283ba0" title="WindowManager::getWindow" alt="" coords="427,5,617,32"/>
-<area shape="rect" id="node3" href="$class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="192,233,355,260"/>
-<area shape="rect" id="node11" href="$class_screen_manager.html#ace42c010790b9fa5ba5e40accc56413a" title="ScreenManager::Draw" alt="" coords="198,56,349,83"/>
-<area shape="rect" id="node4" href="$class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8" title="Keyboard::getInstance" alt="" coords="446,107,598,133"/>
-<area shape="rect" id="node5" href="$class_keyboard.html#a6410f07ddc53561a82d5328d8b330aab" title="Keyboard::update" alt="" coords="460,157,584,184"/>
-<area shape="rect" id="node6" href="$class_mouse.html#a96ed80e3232b68b34368c8f1f79f5cff" title="Mouse::getInstance" alt="" coords="454,208,590,235"/>
-<area shape="rect" id="node7" href="$class_mouse.html#add9756fabb1ae55d56e10b930e5592b6" title="Mouse::Update" alt="" coords="467,259,577,285"/>
-<area shape="rect" id="node8" href="$class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce" title="GameScreen::Update" alt="" coords="449,309,595,336"/>
-<area shape="rect" id="node9" href="$class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d" title="GameFactory::getInstance" alt="" coords="434,360,610,387"/>
-<area shape="rect" id="node10" href="$class_game_factory.html#a7a130a6b0bff752fdd8223616a5f046f" title="GameFactory::DeleteDecommisioned" alt="" coords="403,411,641,437"/>
-<area shape="rect" id="node12" href="$class_game_screen.html#afb11360ac509f47ca47929c254a8b67d" title="This pure virtual method will be responsible for drawing on the screen. " alt="" coords="455,56,589,83"/>
+<area shape="rect" id="node2" href="$class_window_manager.html#a7051ab4ec34157357d2fc029b5283ba0" title="WindowManager::getWindow" alt="" coords="427,157,617,184"/>
+<area shape="rect" id="node3" href="$class_screen_manager.html#acdc42b918d0c758bba56247977003210" title="ScreenManager::Update" alt="" coords="192,69,355,96"/>
+<area shape="rect" id="node7" href="$class_screen_manager.html#ace42c010790b9fa5ba5e40accc56413a" title="ScreenManager::Draw" alt="" coords="198,196,349,223"/>
+<area shape="rect" id="node4" href="$class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce" title="relais the update signal to all of its layers. " alt="" coords="449,56,595,83"/>
+<area shape="rect" id="node5" href="$class_game_factory.html#a0b1eef0e66b8f6ff8277f6d5fb4b8e0d" title="creates a instance of the gamefactory and returns a reference to it. " alt="" coords="434,107,610,133"/>
+<area shape="rect" id="node6" href="$class_game_factory.html#a7a130a6b0bff752fdd8223616a5f046f" title="deletes all components maked as dead. " alt="" coords="403,5,641,32"/>
+<area shape="rect" id="node8" href="$class_game_screen.html#afb11360ac509f47ca47929c254a8b67d" title="relais the draw signal to all of its layers. " alt="" coords="455,208,589,235"/>
 </map>

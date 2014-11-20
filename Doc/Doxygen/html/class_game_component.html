@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('class_game_component.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This Class is the base of every component contained in any game.  
+ <a href="class_game_component.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_component_8hpp_source.html">GameComponent.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GameComponent:</div>
@@ -134,62 +137,94 @@ Collaboration diagram for GameComponent:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7109f4539ef3d4e92868298df54b7ecd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a7109f4539ef3d4e92868298df54b7ecd">GameComponent</a> ()</td></tr>
+<tr class="memdesc:a7109f4539ef3d4e92868298df54b7ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a7109f4539ef3d4e92868298df54b7ecd">More...</a><br/></td></tr>
 <tr class="separator:a7109f4539ef3d4e92868298df54b7ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1eefc88d46d10f869939a7bab5a498b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ac1eefc88d46d10f869939a7bab5a498b">GameComponent</a> (float x, float y)</td></tr>
+<tr class="memdesc:ac1eefc88d46d10f869939a7bab5a498b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor which takes a position.  <a href="#ac1eefc88d46d10f869939a7bab5a498b">More...</a><br/></td></tr>
 <tr class="separator:ac1eefc88d46d10f869939a7bab5a498b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3338305ddce8cb75296ba23e1c29cf0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a3338305ddce8cb75296ba23e1c29cf0f">GameComponent</a> (sf::Vector2f Pos)</td></tr>
+<tr class="memdesc:a3338305ddce8cb75296ba23e1c29cf0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor which takes a position.  <a href="#a3338305ddce8cb75296ba23e1c29cf0f">More...</a><br/></td></tr>
 <tr class="separator:a3338305ddce8cb75296ba23e1c29cf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ff61bad044ac587cf2f066d5b4afa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#af4ff61bad044ac587cf2f066d5b4afa0">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)=0</td></tr>
+<tr class="memdesc:af4ff61bad044ac587cf2f066d5b4afa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Update interface method. Used to act on the update signal.  <a href="#af4ff61bad044ac587cf2f066d5b4afa0">More...</a><br/></td></tr>
 <tr class="separator:af4ff61bad044ac587cf2f066d5b4afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a333932780a30df552333d02669c593bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a333932780a30df552333d02669c593bc">Collide</a> (<a class="el" href="class_game_component.html">GameComponent</a> *colider)=0</td></tr>
+<tr class="memdesc:a333932780a30df552333d02669c593bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The collide interface method. Used to act on a collision.  <a href="#a333932780a30df552333d02669c593bc">More...</a><br/></td></tr>
 <tr class="separator:a333932780a30df552333d02669c593bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c3e40531340490712b789d0d821743"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a63c3e40531340490712b789d0d821743">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)=0</td></tr>
+<tr class="memdesc:a63c3e40531340490712b789d0d821743"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Draw interface method. Used to act on the draw signal.  <a href="#a63c3e40531340490712b789d0d821743">More...</a><br/></td></tr>
 <tr class="separator:a63c3e40531340490712b789d0d821743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af46404f1244c38687bb60ffc3644e5"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5">getPosition</a> ()</td></tr>
+<tr class="memdesc:a6af46404f1244c38687bb60ffc3644e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the object.  <a href="#a6af46404f1244c38687bb60ffc3644e5">More...</a><br/></td></tr>
 <tr class="separator:a6af46404f1244c38687bb60ffc3644e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8aab42cfcc1f683584dd0434e2839d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d">setPosition</a> (sf::Vector2f pos)</td></tr>
+<tr class="memdesc:a5c8aab42cfcc1f683584dd0434e2839d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the position of the object  <a href="#a5c8aab42cfcc1f683584dd0434e2839d">More...</a><br/></td></tr>
 <tr class="separator:a5c8aab42cfcc1f683584dd0434e2839d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a83de3b78cc5ce0f43316dd45de20d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d">hasDrawable</a> ()</td></tr>
+<tr class="memdesc:ae5a83de3b78cc5ce0f43316dd45de20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the drawable interface has been filled.  <a href="#ae5a83de3b78cc5ce0f43316dd45de20d">More...</a><br/></td></tr>
 <tr class="separator:ae5a83de3b78cc5ce0f43316dd45de20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8595ee50d296557bcf1af3ba5283c311"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311">hasCollidable</a> ()</td></tr>
+<tr class="memdesc:a8595ee50d296557bcf1af3ba5283c311"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the collidable interface has been filled.  <a href="#a8595ee50d296557bcf1af3ba5283c311">More...</a><br/></td></tr>
 <tr class="separator:a8595ee50d296557bcf1af3ba5283c311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61ba1bd218ff2aca92443c89375c222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#af61ba1bd218ff2aca92443c89375c222">hasSensor</a> ()</td></tr>
+<tr class="memdesc:af61ba1bd218ff2aca92443c89375c222"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the sensor interface has been filled.  <a href="#af61ba1bd218ff2aca92443c89375c222">More...</a><br/></td></tr>
 <tr class="separator:af61ba1bd218ff2aca92443c89375c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e938bb93586ad8820316368065c174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ae6e938bb93586ad8820316368065c174">hasSpawner</a> ()</td></tr>
+<tr class="memdesc:ae6e938bb93586ad8820316368065c174"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the spawner interface has been filled.  <a href="#ae6e938bb93586ad8820316368065c174">More...</a><br/></td></tr>
 <tr class="separator:ae6e938bb93586ad8820316368065c174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5db3e878b861296d6cc3a0f4ee6528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a6b5db3e878b861296d6cc3a0f4ee6528">getDrawable</a> ()</td></tr>
+<tr class="memdesc:a6b5db3e878b861296d6cc3a0f4ee6528"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_drawable.html">Drawable</a> interface if it has been filled.  <a href="#a6b5db3e878b861296d6cc3a0f4ee6528">More...</a><br/></td></tr>
 <tr class="separator:a6b5db3e878b861296d6cc3a0f4ee6528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09eae8038373202d058179080643f75b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collidable.html">Collidable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a09eae8038373202d058179080643f75b">getCollidable</a> ()</td></tr>
+<tr class="memdesc:a09eae8038373202d058179080643f75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. ">Collidable</a> interface if it has been filled.  <a href="#a09eae8038373202d058179080643f75b">More...</a><br/></td></tr>
 <tr class="separator:a09eae8038373202d058179080643f75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca864b925be82f9c54711c75dc7be12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sensor.html">Sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12">getSensor</a> ()</td></tr>
+<tr class="memdesc:afca864b925be82f9c54711c75dc7be12"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_sensor.html">Sensor</a> interface if it has been filled.  <a href="#afca864b925be82f9c54711c75dc7be12">More...</a><br/></td></tr>
 <tr class="separator:afca864b925be82f9c54711c75dc7be12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6db9e2e5f501ca360b08a7fc6a19644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_spawner.html">Spawner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ab6db9e2e5f501ca360b08a7fc6a19644">getSpawner</a> ()</td></tr>
+<tr class="memdesc:ab6db9e2e5f501ca360b08a7fc6a19644"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_spawner.html">Spawner</a> interface if it has been filled.  <a href="#ab6db9e2e5f501ca360b08a7fc6a19644">More...</a><br/></td></tr>
 <tr class="separator:ab6db9e2e5f501ca360b08a7fc6a19644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e49eab60da094bf8731f065bfafc71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a12e49eab60da094bf8731f065bfafc71">isDead</a> ()</td></tr>
+<tr class="memdesc:a12e49eab60da094bf8731f065bfafc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the object is decommisioned.  <a href="#a12e49eab60da094bf8731f065bfafc71">More...</a><br/></td></tr>
 <tr class="separator:a12e49eab60da094bf8731f065bfafc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e79bc4a1927f039ce345daa1a084c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#aa5e79bc4a1927f039ce345daa1a084c5">setDead</a> (bool dead)</td></tr>
+<tr class="memdesc:aa5e79bc4a1927f039ce345daa1a084c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets if this component should be decommisioned.  <a href="#aa5e79bc4a1927f039ce345daa1a084c5">More...</a><br/></td></tr>
 <tr class="separator:aa5e79bc4a1927f039ce345daa1a084c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab1037207fec65ac5fe65dec1e22f0566"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ab1037207fec65ac5fe65dec1e22f0566">Name</a></td></tr>
+<tr class="memdesc:ab1037207fec65ac5fe65dec1e22f0566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Containst the name of the gamecomponent.  <a href="#ab1037207fec65ac5fe65dec1e22f0566">More...</a><br/></td></tr>
 <tr class="separator:ab1037207fec65ac5fe65dec1e22f0566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d794e78280785eb956eaff044f74b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ac8d794e78280785eb956eaff044f74b2">ID</a></td></tr>
+<tr class="memdesc:ac8d794e78280785eb956eaff044f74b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the ID of the gamecomponent.  <a href="#ac8d794e78280785eb956eaff044f74b2">More...</a><br/></td></tr>
 <tr class="separator:ac8d794e78280785eb956eaff044f74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3109bb4ae36112eb8796e067160c59"><td class="memItemLeft" align="right" valign="top">sf::Vector2f *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acc3109bb4ae36112eb8796e067160c59">Position</a></td></tr>
+<tr class="memdesc:acc3109bb4ae36112eb8796e067160c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the position of the gamecomponent.  <a href="#acc3109bb4ae36112eb8796e067160c59">More...</a><br/></td></tr>
 <tr class="separator:acc3109bb4ae36112eb8796e067160c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb73190345f4933825e9c8b8d5030438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acb73190345f4933825e9c8b8d5030438">drawable</a></td></tr>
+<tr class="memdesc:acb73190345f4933825e9c8b8d5030438"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the drawable interface of the gamecomponent.  <a href="#acb73190345f4933825e9c8b8d5030438">More...</a><br/></td></tr>
 <tr class="separator:acb73190345f4933825e9c8b8d5030438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91bd3600bd5964b55c7806dcfd1c862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collidable.html">Collidable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#aa91bd3600bd5964b55c7806dcfd1c862">collidable</a></td></tr>
+<tr class="memdesc:aa91bd3600bd5964b55c7806dcfd1c862"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the collidable interface of the gamecomponent.  <a href="#aa91bd3600bd5964b55c7806dcfd1c862">More...</a><br/></td></tr>
 <tr class="separator:aa91bd3600bd5964b55c7806dcfd1c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad585bf57df228afc83fbf777142e51bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sensor.html">Sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ad585bf57df228afc83fbf777142e51bd">sensor</a></td></tr>
+<tr class="memdesc:ad585bf57df228afc83fbf777142e51bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the sensor interface of the gamecomponent.  <a href="#ad585bf57df228afc83fbf777142e51bd">More...</a><br/></td></tr>
 <tr class="separator:ad585bf57df228afc83fbf777142e51bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15caaab21ec2e8eb9d438a25afbef4da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_spawner.html">Spawner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a15caaab21ec2e8eb9d438a25afbef4da">spawner</a></td></tr>
+<tr class="memdesc:a15caaab21ec2e8eb9d438a25afbef4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the spawner interface of the gamecomponent.  <a href="#a15caaab21ec2e8eb9d438a25afbef4da">More...</a><br/></td></tr>
 <tr class="separator:a15caaab21ec2e8eb9d438a25afbef4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78058666ddc8662775b13b82e4b615a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a78058666ddc8662775b13b82e4b615a9">DeadComponent</a></td></tr>
+<tr class="memdesc:a78058666ddc8662775b13b82e4b615a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the decommmision state of the component.  <a href="#a78058666ddc8662775b13b82e4b615a9">More...</a><br/></td></tr>
 <tr class="separator:a78058666ddc8662775b13b82e4b615a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Class is the base of every component contained in any game. </p>
+<p>This Class is the base of every component contained in any game. It's the container of all interfaces to the game. for example the drawable and collidable objects in this abstract class can be specified which interfaces it has and how it should react to their events. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7109f4539ef3d4e92868298df54b7ecd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -202,6 +237,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The default constructor. </p>
 
 </div>
 </div>
@@ -229,6 +266,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor which takes a position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The X axis of the position of the component. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The Y axis of the position of the component. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3338305ddce8cb75296ba23e1c29cf0f"></a>
@@ -244,6 +290,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor which takes a position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Pos</td><td>containst the x and y position of the component. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -270,6 +324,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The collide interface method. Used to act on a collision. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colider</td><td>Contains the component it collided with.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="class_example_component.html#a6ab733042d45aaa046201f486ece06b5">ExampleComponent</a>, and <a class="el" href="class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b">MovableComponent</a>.</p>
 
 <p><div class="dynheader">
@@ -277,7 +339,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a333932780a30df552333d02669c593bc_icgraph.png" border="0" usemap="#class_game_component_a333932780a30df552333d02669c593bc_icgraph" alt=""/></div>
 <map name="class_game_component_a333932780a30df552333d02669c593bc_icgraph" id="class_game_component_a333932780a30df552333d02669c593bc_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="224,5,367,32"/><area shape="rect" id="node3" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="415,5,521,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="569,5,677,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="725,5,884,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="932,5,1035,32"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="224,5,367,32"/><area shape="rect" id="node3" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="415,5,521,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="569,5,677,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="725,5,884,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="932,5,1035,32"/></map>
 </div>
 </p>
 
@@ -315,6 +377,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>The Draw interface method. Used to act on the draw signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>contains the sfml renderwindow to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>contains the offset to draw upon.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc">ExampleComponent</a>, and <a class="el" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429">MovableComponent</a>.</p>
 
 <p><div class="dynheader">
@@ -322,7 +393,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a63c3e40531340490712b789d0d821743_icgraph.png" border="0" usemap="#class_game_component_a63c3e40531340490712b789d0d821743_icgraph" alt=""/></div>
 <map name="class_game_component_a63c3e40531340490712b789d0d821743_icgraph" id="class_game_component_a63c3e40531340490712b789d0d821743_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="213,5,332,32"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="380,5,476,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="524,5,671,32"/><area shape="rect" id="node5" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="719,5,809,32"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="213,5,332,32"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="380,5,476,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="524,5,671,32"/><area shape="rect" id="node5" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="This method relais the draw signal to the ChunkManager. " alt="" coords="719,5,809,32"/></map>
 </div>
 </p>
 
@@ -349,12 +420,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns the <a class="el" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. ">Collidable</a> interface if it has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the <a class="el" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. ">Collidable</a> interface if it has been filled. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a09eae8038373202d058179080643f75b_icgraph.png" border="0" usemap="#class_game_component_a09eae8038373202d058179080643f75b_icgraph" alt=""/></div>
 <map name="class_game_component_a09eae8038373202d058179080643f75b_icgraph" id="class_game_component_a09eae8038373202d058179080643f75b_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="260,5,400,32"/><area shape="rect" id="node7" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="259,56,401,83"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="451,5,555,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="604,31,712,57"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="760,31,919,57"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="967,31,1069,57"/><area shape="rect" id="node8" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="449,56,556,83"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="260,5,400,32"/><area shape="rect" id="node7" href="class_chunk.html#a41f009780aa4934be3f839a4518616ed" title="This method calculates the collision of a single component. " alt="" coords="259,56,401,83"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="451,5,555,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="604,31,712,57"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="760,31,919,57"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="967,31,1069,57"/><area shape="rect" id="node8" href="class_chunk.html#a48ee3a744acf3492cdf221037f0b7822" title="This method calls Chunk::CollideSingle for every component in the chunk. " alt="" coords="449,56,556,83"/></map>
 </div>
 </p>
 
@@ -381,6 +455,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns the <a class="el" href="class_drawable.html">Drawable</a> interface if it has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the <a class="el" href="class_drawable.html">Drawable</a> interface if it has been filled. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6af46404f1244c38687bb60ffc3644e5"></a>
@@ -404,12 +481,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the position of the object. </p>
+<dl class="section return"><dt>Returns</dt><dd>a 2d float vector containing the position of the object. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a6af46404f1244c38687bb60ffc3644e5_icgraph.png" border="0" usemap="#class_game_component_a6af46404f1244c38687bb60ffc3644e5_icgraph" alt=""/></div>
 <map name="class_game_component_a6af46404f1244c38687bb60ffc3644e5_icgraph" id="class_game_component_a6af46404f1244c38687bb60ffc3644e5_icgraph">
-<area shape="rect" id="node2" href="class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc" title="ExampleComponent::Draw" alt="" coords="249,5,425,32"/><area shape="rect" id="node3" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429" title="MovableComponent::Draw" alt="" coords="251,56,423,83"/><area shape="rect" id="node4" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="260,181,415,208"/><area shape="rect" id="node5" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="491,107,695,149"/><area shape="rect" id="node9" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="473,181,712,208"/><area shape="rect" id="node6" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="801,115,909,141"/><area shape="rect" id="node7" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="1017,115,1176,141"/><area shape="rect" id="node8" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="1287,115,1389,141"/><area shape="rect" id="node10" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="GameFactory::ProduceLayer" alt="" coords="760,181,949,208"/><area shape="rect" id="node11" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="997,181,1196,208"/><area shape="rect" id="node12" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="1244,181,1432,208"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1480,181,1531,208"/></map>
+<area shape="rect" id="node2" href="class_example_component.html#a385a5f04cdf04e91c8340632a1af9edc" title="The Draw interface method. Used to act on the draw signal. " alt="" coords="249,5,425,32"/><area shape="rect" id="node3" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429" title="The Draw interface method. Used to act on the draw signal. " alt="" coords="251,56,423,83"/><area shape="rect" id="node4" href="class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="260,181,415,208"/><area shape="rect" id="node5" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="491,107,695,149"/><area shape="rect" id="node9" href="class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="473,181,712,208"/><area shape="rect" id="node6" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="801,115,909,141"/><area shape="rect" id="node7" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="1017,115,1176,141"/><area shape="rect" id="node8" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="1287,115,1389,141"/><area shape="rect" id="node10" href="class_game_factory.html#a0c24ad925bf672c6fb721dfaaf993f9d" title="Produces a layer by values provided by the function GameFactory::ProduceScreen. " alt="" coords="760,181,949,208"/><area shape="rect" id="node11" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="997,181,1196,208"/><area shape="rect" id="node12" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="1244,181,1432,208"/><area shape="rect" id="node13" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1480,181,1531,208"/></map>
 </div>
 </p>
 
@@ -436,12 +516,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns the <a class="el" href="class_sensor.html">Sensor</a> interface if it has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the <a class="el" href="class_sensor.html">Sensor</a> interface if it has been filled. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_afca864b925be82f9c54711c75dc7be12_icgraph.png" border="0" usemap="#class_game_component_afca864b925be82f9c54711c75dc7be12_icgraph" alt=""/></div>
 <map name="class_game_component_afca864b925be82f9c54711c75dc7be12_icgraph" id="class_game_component_afca864b925be82f9c54711c75dc7be12_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="244,5,384,32"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="432,5,536,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="584,5,692,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="740,5,899,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="947,5,1049,32"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="244,5,384,32"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="432,5,536,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="584,5,692,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="740,5,899,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="947,5,1049,32"/></map>
 </div>
 </p>
 
@@ -468,6 +551,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns the <a class="el" href="class_spawner.html">Spawner</a> interface if it has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns the <a class="el" href="class_spawner.html">Spawner</a> interface if it has been filled. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8595ee50d296557bcf1af3ba5283c311"></a>
@@ -491,12 +577,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the collidable interface has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the collidable interface has been filled. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a8595ee50d296557bcf1af3ba5283c311_icgraph.png" border="0" usemap="#class_game_component_a8595ee50d296557bcf1af3ba5283c311_icgraph" alt=""/></div>
 <map name="class_game_component_a8595ee50d296557bcf1af3ba5283c311_icgraph" id="class_game_component_a8595ee50d296557bcf1af3ba5283c311_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="261,5,401,32"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="449,5,553,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="601,5,709,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="757,5,916,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="964,5,1067,32"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#ab038489f8de577890226307499da10af" title="This method calculates the vision of a single component. " alt="" coords="261,5,401,32"/><area shape="rect" id="node3" href="class_chunk.html#a78f140c690751b838b0a7e09a51e6936" title="This method calls Chunk::SenseSingle for every component in the chunk. " alt="" coords="449,5,553,32"/><area shape="rect" id="node4" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="601,5,709,32"/><area shape="rect" id="node5" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="757,5,916,32"/><area shape="rect" id="node6" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="964,5,1067,32"/></map>
 </div>
 </p>
 
@@ -523,12 +612,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the drawable interface has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the drawable interface has been filled. </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d_icgraph.png" border="0" usemap="#class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d_icgraph" alt=""/></div>
 <map name="class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d_icgraph" id="class_game_component_ae5a83de3b78cc5ce0f43316dd45de20d_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="259,5,377,32"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="425,5,521,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="569,5,716,32"/><area shape="rect" id="node5" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="764,5,855,32"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="259,5,377,32"/><area shape="rect" id="node3" href="class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="425,5,521,32"/><area shape="rect" id="node4" href="class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="569,5,716,32"/><area shape="rect" id="node5" href="class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="This method relais the draw signal to the ChunkManager. " alt="" coords="764,5,855,32"/></map>
 </div>
 </p>
 
@@ -555,6 +647,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the sensor interface has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the sensor interface has been filled. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ae6e938bb93586ad8820316368065c174"></a>
@@ -578,6 +673,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>returns true if the spawner interface has been filled. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the spawner interface has been filled. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a12e49eab60da094bf8731f065bfafc71"></a>
@@ -600,6 +698,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>returns true if the object is decommisioned. </p>
+<dl class="section return"><dt>Returns</dt><dd>returns true if the object is decommisioned. </dd></dl>
 
 </div>
 </div>
@@ -625,6 +726,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>sets if this component should be decommisioned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dead</td><td>if true it decommisions the component. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a5c8aab42cfcc1f683584dd0434e2839d"></a>
@@ -649,12 +758,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>sets the position of the object </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Contains a 2d float vector containing the position to put this object upon. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_component_a5c8aab42cfcc1f683584dd0434e2839d_icgraph.png" border="0" usemap="#class_game_component_a5c8aab42cfcc1f683584dd0434e2839d_icgraph" alt=""/></div>
 <map name="class_game_component_a5c8aab42cfcc1f683584dd0434e2839d_icgraph" id="class_game_component_a5c8aab42cfcc1f683584dd0434e2839d_icgraph">
-<area shape="rect" id="node2" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="249,5,453,47"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="501,13,609,39"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="657,13,816,39"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="864,13,967,39"/></map>
+<area shape="rect" id="node2" href="class_chunk.html#a749ea52ccf2c2905408c35e43545b6e0" title="This method checks if a component still resides inside the chunk if not it will push it to the next c..." alt="" coords="249,5,453,47"/><area shape="rect" id="node3" href="class_chunk.html#a98a8a36b0197668d37994f77b2952084" title="This method pushes the update signal to all its components. " alt="" coords="501,13,609,39"/><area shape="rect" id="node4" href="class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="657,13,816,39"/><area shape="rect" id="node5" href="class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="864,13,967,39"/></map>
 </div>
 </p>
 
@@ -682,6 +799,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>The Update interface method. Used to act on the update signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains the data used in an update.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="class_example_component.html#a5891dd45e21cc525a275e10596ad3607">ExampleComponent</a>, and <a class="el" href="class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee">MovableComponent</a>.</p>
 
 </div>
@@ -705,6 +830,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains the collidable interface of the gamecomponent. </p>
+
 </div>
 </div>
 <a class="anchor" id="a78058666ddc8662775b13b82e4b615a9"></a>
@@ -724,6 +851,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>contains the decommmision state of the component. </p>
 
 </div>
 </div>
@@ -745,6 +874,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains the drawable interface of the gamecomponent. </p>
+
 </div>
 </div>
 <a class="anchor" id="ac8d794e78280785eb956eaff044f74b2"></a>
@@ -764,6 +895,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Contains the ID of the gamecomponent. </p>
 
 </div>
 </div>
@@ -785,6 +918,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Containst the name of the gamecomponent. </p>
+
 </div>
 </div>
 <a class="anchor" id="acc3109bb4ae36112eb8796e067160c59"></a>
@@ -804,6 +939,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>contains the position of the gamecomponent. </p>
 
 </div>
 </div>
@@ -825,6 +962,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains the sensor interface of the gamecomponent. </p>
+
 </div>
 </div>
 <a class="anchor" id="a15caaab21ec2e8eb9d438a25afbef4da"></a>
@@ -845,6 +984,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains the spawner interface of the gamecomponent. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -857,7 +998,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_component.html">GameComponent</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:36 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

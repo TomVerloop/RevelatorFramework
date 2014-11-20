@@ -17,6 +17,7 @@ var searchData=
   ['setleftbottom',['setLeftBottom',['../class_chunk.html#a690d801cad525f106f11fca76855c785',1,'Chunk']]],
   ['setlefttop',['setLeftTop',['../class_chunk.html#a24564a4a5eb9e05857939e23ed213914',1,'Chunk']]],
   ['setposition',['setPosition',['../class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d',1,'GameComponent']]],
+  ['setprintlog',['setPrintLog',['../class_utils.html#a007d375c12ff44326f963c9dccfb9e4f',1,'Utils']]],
   ['setright',['setRight',['../class_chunk.html#a670d58217b329583811b5380f25700d6',1,'Chunk']]],
   ['setrightbottom',['setRightBottom',['../class_chunk.html#aadab4832f4d1c4618b7232a1503d8aed',1,'Chunk']]],
   ['setrighttop',['setRightTop',['../class_chunk.html#a8c19057f7360349f5d214bfa50d51900',1,'Chunk']]],

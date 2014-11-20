@@ -1,11 +1,11 @@
 <map id="GameFactory::ProduceLayer" name="GameFactory::ProduceLayer">
-<area shape="rect" id="node2" href="$class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="Layer::setEnabled" alt="" coords="299,5,425,32"/>
-<area shape="rect" id="node3" href="$class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="Layer::setUpdating" alt="" coords="297,56,427,83"/>
-<area shape="rect" id="node4" href="$class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="Layer::setDrawing" alt="" coords="299,107,425,133"/>
-<area shape="rect" id="node5" href="$class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="Layer::getChunkManager" alt="" coords="279,157,445,184"/>
+<area shape="rect" id="node2" href="$class_layer.html#a68b9de1ac0f3eaa8274b8d0a901a825c" title="This Method sets the layer enabled. " alt="" coords="299,5,425,32"/>
+<area shape="rect" id="node3" href="$class_layer.html#a0e0595efe93dbd63b05339f35399d1ad" title="This Method sets the layer to update. " alt="" coords="297,56,427,83"/>
+<area shape="rect" id="node4" href="$class_layer.html#a0a4f62b4c031e7c2f2d5635ccd38ddd1" title="This Method sets the layer to draw. " alt="" coords="299,107,425,133"/>
+<area shape="rect" id="node5" href="$class_layer.html#afbfd549c4d1da2e4a2d78a33586c95e1" title="returns an pointer to the ChunkManager " alt="" coords="279,157,445,184"/>
 <area shape="rect" id="node6" href="$class_chunk_manager.html#a0b4794622d5e281a55f9bc99950201dc" title="Sets a chunk as the first chunk. " alt="" coords="263,208,461,235"/>
 <area shape="rect" id="node7" href="$class_chunk_manager.html#ac59d1f14da9114ebcce7cefa2bbcefc6" title="Adds a component to the first chunk which is then pushed through the chunks untill its in the correct..." alt="" coords="243,259,481,285"/>
-<area shape="rect" id="node10" href="$class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="GameFactory::ProduceGame\lObject" alt="" coords="266,310,458,351"/>
+<area shape="rect" id="node10" href="$class_game_factory.html#a521cf5410b97240789a9cc54404d6a2f" title="Produces a game object with the registered producer. " alt="" coords="266,310,458,351"/>
 <area shape="rect" id="node8" href="$class_chunk.html#aa5b5c5515c800f2171899caf704db5dc" title="This method adds a gamecomponent to the chunk or pushes it to the next if it is out of bounds..." alt="" coords="529,259,684,285"/>
-<area shape="rect" id="node9" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="732,259,928,285"/>
+<area shape="rect" id="node9" href="$class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="732,259,928,285"/>
 </map>

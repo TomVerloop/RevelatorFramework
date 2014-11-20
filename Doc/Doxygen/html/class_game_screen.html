@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('class_game_screen.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class is used to manager different screens a game can contain.  
+ <a href="class_game_screen.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_screen_8hpp_source.html">GameScreen.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GameScreen:</div>
@@ -134,23 +137,31 @@ Collaboration diagram for GameScreen:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae68a867285e0aba9d2b22bff690616ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ae68a867285e0aba9d2b22bff690616ac">GameScreen</a> ()</td></tr>
+<tr class="memdesc:ae68a867285e0aba9d2b22bff690616ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default constructor.  <a href="#ae68a867285e0aba9d2b22bff690616ac">More...</a><br/></td></tr>
 <tr class="separator:ae68a867285e0aba9d2b22bff690616ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d25dfce42d72954aab40dbccbf1a0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a0d25dfce42d72954aab40dbccbf1a0b1">~GameScreen</a> ()</td></tr>
+<tr class="memdesc:a0d25dfce42d72954aab40dbccbf1a0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the destructor.  <a href="#a0d25dfce42d72954aab40dbccbf1a0b1">More...</a><br/></td></tr>
 <tr class="separator:a0d25dfce42d72954aab40dbccbf1a0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85617e2d9232b03a9a0149a9e6d43ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ad85617e2d9232b03a9a0149a9e6d43ce">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)</td></tr>
+<tr class="memdesc:ad85617e2d9232b03a9a0149a9e6d43ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">relais the update signal to all of its layers.  <a href="#ad85617e2d9232b03a9a0149a9e6d43ce">More...</a><br/></td></tr>
 <tr class="separator:ad85617e2d9232b03a9a0149a9e6d43ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb11360ac509f47ca47929c254a8b67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#afb11360ac509f47ca47929c254a8b67d">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
-<tr class="memdesc:afb11360ac509f47ca47929c254a8b67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This pure virtual method will be responsible for drawing on the screen.  <a href="#afb11360ac509f47ca47929c254a8b67d">More...</a><br/></td></tr>
+<tr class="memdesc:afb11360ac509f47ca47929c254a8b67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">relais the draw signal to all of its layers.  <a href="#afb11360ac509f47ca47929c254a8b67d">More...</a><br/></td></tr>
 <tr class="separator:afb11360ac509f47ca47929c254a8b67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14685a397e9c9c0ec971f648eeb1ec8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a14685a397e9c9c0ec971f648eeb1ec8b">addLayer</a> (std::string name, <a class="el" href="class_layer.html">Layer</a> *layer)</td></tr>
+<tr class="memdesc:a14685a397e9c9c0ec971f648eeb1ec8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a layer to the gamescreen  <a href="#a14685a397e9c9c0ec971f648eeb1ec8b">More...</a><br/></td></tr>
 <tr class="separator:a14685a397e9c9c0ec971f648eeb1ec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7d3aad324a781cd22599b56903fb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ace7d3aad324a781cd22599b56903fb43">removeLayer</a> (std::string name)</td></tr>
+<tr class="memdesc:ace7d3aad324a781cd22599b56903fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a layer from the gamescreen  <a href="#ace7d3aad324a781cd22599b56903fb43">More...</a><br/></td></tr>
 <tr class="separator:ace7d3aad324a781cd22599b56903fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd7cd68d80fc29593703ee1741b8996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#accd7cd68d80fc29593703ee1741b8996">getLayer</a> (std::string name)</td></tr>
+<tr class="memdesc:accd7cd68d80fc29593703ee1741b8996"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a layer from the gamescreen  <a href="#accd7cd68d80fc29593703ee1741b8996">More...</a><br/></td></tr>
 <tr class="separator:accd7cd68d80fc29593703ee1741b8996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ffce37600960d6c8885bf071461998c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a5ffce37600960d6c8885bf071461998c">UpdateHandle</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject)=0</td></tr>
+<tr class="memdesc:a5ffce37600960d6c8885bf071461998c"><td class="mdescLeft">&#160;</td><td class="mdescRight">a custom update handler function not used yet.  <a href="#a5ffce37600960d6c8885bf071461998c">More...</a><br/></td></tr>
 <tr class="separator:a5ffce37600960d6c8885bf071461998c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e44a105b36f32b68a0ba7a325971b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#a76e44a105b36f32b68a0ba7a325971b0">Entry</a> (<a class="el" href="class_entry_object.html">EntryObject</a> object)=0</td></tr>
+<tr class="memdesc:a76e44a105b36f32b68a0ba7a325971b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function will be called at the moment a gamescreen becomes the active screen. [in] object Contains an <a class="el" href="class_entry_object.html">EntryObject</a> which is currently unused.  <a href="#a76e44a105b36f32b68a0ba7a325971b0">More...</a><br/></td></tr>
 <tr class="separator:a76e44a105b36f32b68a0ba7a325971b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_drawable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_drawable.html">Drawable</a></td></tr>
 <tr class="memitem:aac88608db6081da479c772c96636acb1 inherit pub_methods_class_drawable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#aac88608db6081da479c772c96636acb1">Drawable</a> ()</td></tr>
@@ -163,9 +174,16 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab134d175092c247558838f11d66e9493"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_layer.html">Layer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_screen.html#ab134d175092c247558838f11d66e9493">Layers</a></td></tr>
+<tr class="memdesc:ab134d175092c247558838f11d66e9493"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains a map of layers.  <a href="#ab134d175092c247558838f11d66e9493">More...</a><br/></td></tr>
 <tr class="separator:ab134d175092c247558838f11d66e9493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to manager different screens a game can contain. </p>
+<p>This Class is used to manage different screens a game can contain. it will send update and draw signals to all layers it is populated with. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae68a867285e0aba9d2b22bff690616ac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -178,6 +196,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the default constructor. </p>
 
 </div>
 </div>
@@ -193,6 +213,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the destructor. </p>
 
 </div>
 </div>
@@ -221,12 +243,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>adds a layer to the gamescreen </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the layer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contains</td><td>a pointer to the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph.png" border="0" usemap="#class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph" alt=""/></div>
 <map name="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph" id="class_game_screen_a14685a397e9c9c0ec971f648eeb1ec8b_icgraph">
-<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="GameFactory::ProduceScreen" alt="" coords="212,5,411,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="459,5,647,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="695,5,745,32"/></map>
+<area shape="rect" id="node2" href="class_game_factory.html#ad293f5a8811d9106753916cef819fbce" title="Produces a gamescreen from text according to its name. " alt="" coords="212,5,411,32"/><area shape="rect" id="node3" href="class_screen_manager.html#ad4281372c025d4c80696299b0e8a1fbd" title="ScreenManager::getInstance" alt="" coords="459,5,647,32"/><area shape="rect" id="node4" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="695,5,745,32"/></map>
 </div>
 </p>
 
@@ -264,11 +295,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>This pure virtual method will be responsible for drawing on the screen. </p>
+<p>relais the draw signal to all of its layers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>contains the sfml renderwindow used to draw upon. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">contains</td><td>the offset at which the component will be drawn. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>Contains the sfml render window to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>contains the offset to draw upon. </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,6 +339,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>this function will be called at the moment a gamescreen becomes the active screen. [in] object Contains an <a class="el" href="class_entry_object.html">EntryObject</a> which is currently unused. </p>
+
 <p>Implemented in <a class="el" href="class_example_test_screen.html#ac125607c70fd06f1a56c97f4f93cdd8b">ExampleTestScreen</a>.</p>
 
 <p><div class="dynheader">
@@ -335,6 +368,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>returns a layer from the gamescreen </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>contains a pointer to the layer </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ace7d3aad324a781cd22599b56903fb43"></a>
@@ -351,6 +393,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>removes a layer from the gamescreen </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>contains the name of the layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ad85617e2d9232b03a9a0149a9e6d43ce"></a>
@@ -366,6 +416,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>relais the update signal to all of its layers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>Contains the update information for the layers. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -400,6 +458,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>a custom update handler function not used yet. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>implement a use for this </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_test_screen.html#a44f0c5ae87832e341d6eb9b44f811969">ExampleTestScreen</a>.</p>
 
 </div>
@@ -423,6 +484,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>contains a map of layers. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -435,7 +498,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_screen.html">GameScreen</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

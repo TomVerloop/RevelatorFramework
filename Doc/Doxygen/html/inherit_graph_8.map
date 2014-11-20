@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_game_screen_producer.html" title="GameScreenProducer" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node1" href="$class_game_screen_producer.html" title="This class is responsible for producing custom gamescreens. " alt="" coords="5,5,156,32"/>
 <area shape="rect" id="node2" href="$class_example_screen_producer.html" title="ExampleScreenProducer" alt="" coords="204,5,371,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="Chunk::Draw" name="Chunk::Draw">
 <area shape="rect" id="node2" href="$class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="149,31,268,57"/>
-<area shape="rect" id="node3" href="$class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="GameComponent::hasDrawable" alt="" coords="316,5,521,32"/>
-<area shape="rect" id="node4" href="$class_game_component.html#a63c3e40531340490712b789d0d821743" title="GameComponent::Draw" alt="" coords="339,56,499,83"/>
+<area shape="rect" id="node3" href="$class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d" title="returns true if the drawable interface has been filled. " alt="" coords="316,5,521,32"/>
+<area shape="rect" id="node4" href="$class_game_component.html#a63c3e40531340490712b789d0d821743" title="The Draw interface method. Used to act on the draw signal. " alt="" coords="339,56,499,83"/>
 </map>

@@ -2,5 +2,5 @@
 <area shape="rect" id="node2" href="$class_chunk.html#a238c9e4adf0dfc78d6b8c778aec66e69" title="This method pushes the draw signal to all its components. " alt="" coords="259,5,377,32"/>
 <area shape="rect" id="node3" href="$class_chunk.html#a3203da1471b5572e0dd2cd82e6dceb42" title="This method pushes the DrawSelf signal to all its neighboring chunks and itself. " alt="" coords="425,5,521,32"/>
 <area shape="rect" id="node4" href="$class_chunk_manager.html#a9cb7e15589f54b6937a2b12711403450" title="Sends the draw signal to the active chunk for it to ripple through the rest. " alt="" coords="569,5,716,32"/>
-<area shape="rect" id="node5" href="$class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="Layer::Draw" alt="" coords="764,5,855,32"/>
+<area shape="rect" id="node5" href="$class_layer.html#a008068a5a6bd4dd274bb01bf0246cfaf" title="This method relais the draw signal to the ChunkManager. " alt="" coords="764,5,855,32"/>
 </map>

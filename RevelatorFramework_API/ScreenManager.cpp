@@ -1,4 +1,6 @@
+
 #include "ScreenManager.hpp"
+#include "Utils.hpp"
 
 ScreenManager & ScreenManager::getInstance()
 {
@@ -14,7 +16,6 @@ ScreenManager::ScreenManager()
 	ActiveScreen = nullptr;
 	Window = &WindowManager::getInstance();
 	Window->InitWindow(sf::VideoMode(800, 800), "AI Simulation");
-	AudioManager::getInstance().PlayMusic("Music_01");
 }
 
 ScreenManager::~ScreenManager()
@@ -24,20 +25,20 @@ ScreenManager::~ScreenManager()
 
 void ScreenManager::Update(const UpdateData & updateobject)
 {
-	Keyboard::getInstance().update();
-	Mouse::getInstance().Update();
 	if (ActiveScreen != nullptr)
 	{
 		ActiveScreen->Update(updateobject);
 	}
 	GameFactory::getInstance().DeleteDecommisioned();
+
 }
 
 void ScreenManager::Draw()
 {
 	if (ActiveScreen != nullptr)
 	{
-		ActiveScreen->Draw(*Window->getWindow(), sf::Vector2f{0.f,0.f});
+
+		ActiveScreen->Draw(*Window->getWindow(), sf::Vector2f{ 0.f, 0.f });
 	}
 }
 
@@ -57,18 +58,20 @@ void ScreenManager::setActiveScreen(std::string name,EntryObject object)
 
 void ScreenManager::run()
 {
+	sf::Clock clock;
 	while (Window->getWindow()->isOpen())
 	{
 		sf::Event event;
 		while (Window->getWindow()->pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
+			if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 				Window->getWindow()->close();
 		}
 		UpdateData data;
 		Update(data);
 		Window->getWindow()->clear();
-		Draw();
+		Draw(); 
+
 		Window->getWindow()->display();
 	}
 }

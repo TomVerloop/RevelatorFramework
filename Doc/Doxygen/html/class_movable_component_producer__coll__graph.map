@@ -1,3 +1,3 @@
 <map id="MovableComponentProducer" name="MovableComponentProducer">
-<area shape="rect" id="node2" href="$class_game_object_producer.html" title="{GameObjectProducer\n||+ GameObjectProducer()\l+ ~GameObjectProducer()\l+ Produce()\l+ Produce()\l+ Produce()\l}" alt="" coords="25,5,200,141"/>
+<area shape="rect" id="node2" href="$class_game_object_producer.html" title="This Abstract class is used to produce any gamecomponent. " alt="" coords="25,5,200,141"/>
 </map>

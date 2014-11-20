@@ -1,0 +1,618 @@
+screen chunks 79
+MoveCamera 3
+screen chunks 12
+MoveCamera 2
+screen chunks 11
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 10
+MoveCamera 3
+screen chunks 13
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 7
+MoveCamera 3
+screen chunks 11
+MoveCamera 3
+screen chunks 10
+MoveCamera 4
+screen chunks 9
+MoveCamera 4
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 4
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 4
+screen chunks 8
+MoveCamera 4
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 61
+MoveCamera 4
+screen chunks 10
+MoveCamera 4
+screen chunks 14
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 4
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 10
+MoveCamera 4
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 4
+screen chunks 11
+MoveCamera 3
+screen chunks 10
+MoveCamera 2
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 164
+MoveCamera 3
+screen chunks 925
+MoveCamera 3
+screen chunks 1890
+MoveCamera 2
+screen chunks 231
+MoveCamera 3
+screen chunks 257
+MoveCamera 2
+screen chunks 1912
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 494
+MoveCamera 3
+screen chunks 7
+MoveCamera 2
+screen chunks 6
+MoveCamera 3
+screen chunks 444
+MoveCamera 3
+screen chunks 272
+MoveCamera 3
+screen chunks 10
+MoveCamera 2
+screen chunks 477
+MoveCamera 3
+screen chunks 265
+MoveCamera 2
+screen chunks 7
+MoveCamera 5
+screen chunks 455
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 7
+MoveCamera 3
+screen chunks 268
+MoveCamera 3
+screen chunks 218
+MoveCamera 3
+screen chunks 198
+MoveCamera 2
+screen chunks 239
+MoveCamera 3
+screen chunks 208
+MoveCamera 2
+screen chunks 310
+MoveCamera 3
+screen chunks 239
+MoveCamera 2
+screen chunks 7
+MoveCamera 3
+screen chunks 1754
+MoveCamera 2
+screen chunks 101
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 262
+MoveCamera 3
+screen chunks 1771
+MoveCamera 2
+screen chunks 515
+MoveCamera 3
+screen chunks 7
+MoveCamera 3
+screen chunks 7
+MoveCamera 2
+screen chunks 7
+MoveCamera 3
+screen chunks 953
+MoveCamera 3
+screen chunks 7
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 159
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 170
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 11
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 10
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 12
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 3
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 8
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 2
+screen chunks 9
+MoveCamera 3
+screen chunks 11
+MoveCamera 3
+screen chunks 95
+MoveCamera 3

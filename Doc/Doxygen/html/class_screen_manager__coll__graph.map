@@ -1,5 +1,5 @@
 <map id="ScreenManager" name="ScreenManager">
-<area shape="rect" id="node2" href="$class_game_screen.html" title="{GameScreen\n|&#45; Layers\l|+ GameScreen()\l+ ~GameScreen()\l+ Update()\l+ Draw()\l+ addLayer()\l+ removeLayer()\l+ getLayer()\l+ UpdateHandle()\l+ Entry()\l}" alt="" coords="5,176,132,371"/>
+<area shape="rect" id="node2" href="$class_game_screen.html" title="This class is used to manager different screens a game can contain. " alt="" coords="5,176,132,371"/>
 <area shape="rect" id="node3" href="$class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="17,5,120,112"/>
 <area shape="rect" id="node4" href="$class_window_manager.html" title="{WindowManager\n|&#45; window\l&#45; CameraPosition\l|+ ~WindowManager()\l+ getWindow()\l+ getCameraPosition()\l+ setCameraPosition()\l+ MoveCamera()\l+ InitWindow()\l+ WindowManager()\l+ operator=()\l+ getInstance()\l&#45; WindowManager()\l}" alt="" coords="157,161,309,385"/>
 </map>

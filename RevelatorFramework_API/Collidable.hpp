@@ -27,8 +27,8 @@ public:
 
 	/*!
 	*	\brief The constructor wich keeps it at the same position as the gamecomponent.
-	*	\paramp[in] position Contains a pointer to the position of the gamecomponent. used to keep them on the same place.
-	*	\paramp[in] size contains the size of the components.
+	*	\param[in] position Contains a pointer to the position of the gamecomponent. used to keep them on the same place.
+	*	\param[in] size contains the size of the components.
 	*/
 	__declspec(dllexport) Collidable(sf::Vector2f * position, sf::Vector2f size);
 

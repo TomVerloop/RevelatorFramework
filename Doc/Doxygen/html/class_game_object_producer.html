@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ $(document).ready(function(){initNavTree('class_game_object_producer.html','');}
 </div><!--header-->
 <div class="contents">
 
+<p>This Abstract class is used to produce any gamecomponent.  
+ <a href="class_game_object_producer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_object_producer_8hpp_source.html">GameObjectProducer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GameObjectProducer:</div>
@@ -131,17 +134,28 @@ Collaboration diagram for GameObjectProducer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a38c70d3fba5ec49e549da7affbcf12d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a38c70d3fba5ec49e549da7affbcf12d2">GameObjectProducer</a> ()</td></tr>
+<tr class="memdesc:a38c70d3fba5ec49e549da7affbcf12d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default contstructor.  <a href="#a38c70d3fba5ec49e549da7affbcf12d2">More...</a><br/></td></tr>
 <tr class="separator:a38c70d3fba5ec49e549da7affbcf12d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c862260fa83341a0b2fc8b1cad3ca5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a77c862260fa83341a0b2fc8b1cad3ca5">~GameObjectProducer</a> ()</td></tr>
+<tr class="memdesc:a77c862260fa83341a0b2fc8b1cad3ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">the destructor.  <a href="#a77c862260fa83341a0b2fc8b1cad3ca5">More...</a><br/></td></tr>
 <tr class="separator:a77c862260fa83341a0b2fc8b1cad3ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10fa0f90fc8bb4720073818298ea16be"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a10fa0f90fc8bb4720073818298ea16be">Produce</a> ()=0</td></tr>
+<tr class="memdesc:a10fa0f90fc8bb4720073818298ea16be"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing game components without producer packages.  <a href="#a10fa0f90fc8bb4720073818298ea16be">More...</a><br/></td></tr>
 <tr class="separator:a10fa0f90fc8bb4720073818298ea16be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da5f02801c8b16cbf7b26daeade1513"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a2da5f02801c8b16cbf7b26daeade1513">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> Package)=0</td></tr>
+<tr class="memdesc:a2da5f02801c8b16cbf7b26daeade1513"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing game components with producer packages.  <a href="#a2da5f02801c8b16cbf7b26daeade1513">More...</a><br/></td></tr>
 <tr class="separator:a2da5f02801c8b16cbf7b26daeade1513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572ce99f29ffaa2beb0231756281d403"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_component.html">GameComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_producer.html#a572ce99f29ffaa2beb0231756281d403">Produce</a> (<a class="el" href="class_producer_package.html">ProducerPackage</a> *Package)=0</td></tr>
+<tr class="memdesc:a572ce99f29ffaa2beb0231756281d403"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual function for producing game components with producer packages.  <a href="#a572ce99f29ffaa2beb0231756281d403">More...</a><br/></td></tr>
 <tr class="separator:a572ce99f29ffaa2beb0231756281d403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This Abstract class is used to produce any gamecomponent. </p>
+<p>By implementing this abstract class you can register that class to create custom components for your game. </p>
+<dl class="section author"><dt>Author</dt><dd>Tom Verloop </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2014-2015 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a38c70d3fba5ec49e549da7affbcf12d2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +168,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the default contstructor. </p>
 
 </div>
 </div>
@@ -169,6 +185,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>the destructor. </p>
 
 </div>
 </div>
@@ -193,6 +211,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A pure virtual function for producing game components without producer packages. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamecomponent.  </dd></dl>
 
 <p>Implemented in <a class="el" href="class_example_component_producer.html#a63aba60e4b967000da407340505838de">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#afcef390a20c515da93a8ef1971e59b90">MovableComponentProducer</a>.</p>
 
@@ -220,6 +241,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing game components with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a reference to a producerpackage used to construct the game component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamecomponent.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_component_producer.html#aeb985b69039c1db83c5826c01f31f53c">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#a909d2617235b049286660251050e7e8b">MovableComponentProducer</a>.</p>
 
 </div>
@@ -246,6 +276,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A pure virtual function for producing game components with producer packages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">package</td><td>contains a pointer to a producerpackage used to construct the game component with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the constructed gamecomponent.  </dd></dl>
+
 <p>Implemented in <a class="el" href="class_example_component_producer.html#a177b5d9088f69aed43d10c9b2b8f2c01">ExampleComponentProducer</a>, and <a class="el" href="class_movable_component_producer.html#a1b83286374915b711d4b8f55cc024cbc">MovableComponentProducer</a>.</p>
 
 </div>
@@ -260,7 +299,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_object_producer.html">GameObjectProducer</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:41 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

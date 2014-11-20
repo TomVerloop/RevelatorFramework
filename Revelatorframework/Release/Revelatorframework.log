@@ -1,51 +1,22 @@
-﻿Build started 5/11/2014 4:43:57 PM.
-     1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Revelatorframework\Revelatorframework.vcxproj" on node 2 (Rebuild target(s)).
-     1>ClCompile:
-         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML-2.1\include" /Zi /nologo /W3 /WX /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt UpdateData.cpp Chunk.cpp ChunkManager.cpp Collidable.cpp Drawable.cpp ExampleComponent.cpp GameComponent.cpp GameFactory.cpp GameScreen.cpp Layer.cpp main.cpp MovableComponent.cpp Rectangle.cpp ScreenManager.cpp ScreenTransaction.cpp Sensor.cpp Spawner.cpp Utils.cpp WindowManager.cpp
-         UpdateData.cpp
-         Chunk.cpp
-         ChunkManager.cpp
-         Collidable.cpp
-         Drawable.cpp
-         ExampleComponent.cpp
-         GameComponent.cpp
-         GameFactory.cpp
-         GameScreen.cpp
-         Layer.cpp
-         main.cpp
-         MovableComponent.cpp
-         Rectangle.cpp
-         ScreenManager.cpp
-         ScreenTransaction.cpp
-         Sensor.cpp
-         Spawner.cpp
-         Utils.cpp
-         WindowManager.cpp
-       Link:
-         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-audio.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.lib" /MACHINE:X86 /SAFESEH Release\UpdateData.obj
-         Release\Chunk.obj
-         Release\ChunkManager.obj
-         Release\Collidable.obj
-         Release\Drawable.obj
-         Release\ExampleComponent.obj
-         Release\GameComponent.obj
-         Release\GameFactory.obj
-         Release\GameScreen.obj
-         Release\Layer.obj
+﻿Build started 19/11/2014 1:57:36 PM.
+     1>Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Revelatorframework\Revelatorframework.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\SFML-2.1\lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" "sfml-graphics.lib" "sfml-window.lib" "sfml-audio.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.lib" /MACHINE:X86 /SAFESEH Release\ExampleComponent.obj
+         Release\ExampleComponentProducer.obj
+         Release\ExampleLayer.obj
+         Release\ExampleLayerProducer.obj
+         Release\ExampleScreenProducer.obj
+         Release\ExampleTestScreen.obj
          Release\main.obj
          Release\MovableComponent.obj
-         Release\Rectangle.obj
-         Release\ScreenManager.obj
-         Release\ScreenTransaction.obj
-         Release\Sensor.obj
-         Release\Spawner.obj
-         Release\Utils.obj
-         Release\WindowManager.obj
+         Release\MovableComponentProducer.obj
+         "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\RevelatorFramework_API.lib"
+            Creating library D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.lib and object D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.exp
          Generating code
          Finished generating code
          Revelatorframework.vcxproj -> D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Release\Revelatorframework.exe
-     1>Done Building Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Revelatorframework\Revelatorframework.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "D:\Users\tom\Documents\Visual Studio 2013\Projects\Revelatorframework\Revelatorframework\Revelatorframework.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:08.98
+Time Elapsed 00:00:02.32

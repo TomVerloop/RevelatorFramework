@@ -33,7 +33,7 @@
    <div id="projectname">Revelator Framework
    &#160;<span id="projectnumber">1</span>
    </div>
-   <div id="projectbrief">A simple sfml based game engine</div>
+   <div id="projectbrief">A simple sfml based game engine.</div>
   </td>
  </tr>
  </tbody>
@@ -120,14 +120,14 @@ Inheritance diagram for MovableComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_movable_component__inherit__graph.png" border="0" usemap="#_movable_component_inherit__map" alt="Inheritance graph"/></div>
 <map name="_movable_component_inherit__map" id="_movable_component_inherit__map">
-<area shape="rect" id="node2" href="class_game_component.html" title="{GameComponent\n|# Name\l# ID\l# Position\l# drawable\l# collidable\l# sensor\l# spawner\l# DeadComponent\l|+ GameComponent()\l+ GameComponent()\l+ GameComponent()\l+ Update()\l+ Collide()\l+ Draw()\l+ getPosition()\l+ setPosition()\l+ hasDrawable()\l+ hasCollidable()\land 8 more...\l}" alt="" coords="15,5,158,332"/></map>
+<area shape="rect" id="node2" href="class_game_component.html" title="This Class is the base of every component contained in any game. " alt="" coords="15,5,158,332"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for MovableComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_movable_component__coll__graph.png" border="0" usemap="#_movable_component_coll__map" alt="Collaboration graph"/></div>
 <map name="_movable_component_coll__map" id="_movable_component_coll__map">
-<area shape="rect" id="node2" href="class_game_component.html" title="{GameComponent\n|# Name\l# ID\l# Position\l# DeadComponent\l|+ GameComponent()\l+ GameComponent()\l+ GameComponent()\l+ Update()\l+ Collide()\l+ Draw()\l+ getPosition()\l+ setPosition()\l+ hasDrawable()\l+ hasCollidable()\land 8 more...\l}" alt="" coords="231,477,374,745"/><area shape="rect" id="node3" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. " alt="" coords="11,5,117,185"/><area shape="rect" id="node4" href="class_sensor.html" title="{Sensor\n|&#45; VisionRange\l&#45; SeenObjects\l|+ Sensor()\l+ ~Sensor()\l+ addSeenObject()\l+ getSeenObject()\l+ SeenObjectCount()\l+ GetVisionRadius()\l+ DrawVision()\l}" alt="" coords="105,235,249,415"/><area shape="rect" id="node5" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ Spawner()\l+ ~Spawner()\l+ pushComponent()\l+ popComponent()\l+ ComponentCount()\l}" alt="" coords="274,257,417,393"/><area shape="rect" id="node6" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="441,271,543,378"/></map>
+<area shape="rect" id="node2" href="class_game_component.html" title="This Class is the base of every component contained in any game. " alt="" coords="231,477,374,745"/><area shape="rect" id="node3" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. " alt="" coords="11,5,117,185"/><area shape="rect" id="node4" href="class_sensor.html" title="{Sensor\n|&#45; VisionRange\l&#45; SeenObjects\l|+ Sensor()\l+ ~Sensor()\l+ addSeenObject()\l+ getSeenObject()\l+ SeenObjectCount()\l+ GetVisionRadius()\l+ DrawVision()\l}" alt="" coords="105,235,249,415"/><area shape="rect" id="node5" href="class_spawner.html" title="{Spawner\n|&#45; Components\l|+ Spawner()\l+ ~Spawner()\l+ pushComponent()\l+ popComponent()\l+ ComponentCount()\l}" alt="" coords="274,257,417,393"/><area shape="rect" id="node6" href="class_drawable.html" title="{Drawable\n||+ Drawable()\l+ ~Drawable()\l+ Draw()\l}" alt="" coords="441,271,543,378"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -137,61 +137,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aedc5ac024682262c99436b2b5fadddc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movable_component.html#aedc5ac024682262c99436b2b5fadddc1">~MovableComponent</a> ()</td></tr>
 <tr class="separator:aedc5ac024682262c99436b2b5fadddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab32fd53c29a29ddcd68f1bb38a5f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movable_component.html#a5ab32fd53c29a29ddcd68f1bb38a5f2b">Collide</a> (<a class="el" href="class_game_component.html">GameComponent</a> *colider) override</td></tr>
+<tr class="memdesc:a5ab32fd53c29a29ddcd68f1bb38a5f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The collide interface method. Used to act on a collision.  <a href="#a5ab32fd53c29a29ddcd68f1bb38a5f2b">More...</a><br/></td></tr>
 <tr class="separator:a5ab32fd53c29a29ddcd68f1bb38a5f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affdc7dddf2207eda3e8a00136adf56ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee">Update</a> (const <a class="el" href="class_update_data.html">UpdateData</a> &amp;updateobject) override</td></tr>
+<tr class="memdesc:affdc7dddf2207eda3e8a00136adf56ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Update interface method. Used to act on the update signal.  <a href="#affdc7dddf2207eda3e8a00136adf56ee">More...</a><br/></td></tr>
 <tr class="separator:affdc7dddf2207eda3e8a00136adf56ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c4dad8db642791c52d7fc5e9a92429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movable_component.html#a75c4dad8db642791c52d7fc5e9a92429">Draw</a> (sf::RenderWindow &amp;window, sf::Vector2f offset)</td></tr>
+<tr class="memdesc:a75c4dad8db642791c52d7fc5e9a92429"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Draw interface method. Used to act on the draw signal.  <a href="#a75c4dad8db642791c52d7fc5e9a92429">More...</a><br/></td></tr>
 <tr class="separator:a75c4dad8db642791c52d7fc5e9a92429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_game_component.html">GameComponent</a></td></tr>
 <tr class="memitem:a7109f4539ef3d4e92868298df54b7ecd inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a7109f4539ef3d4e92868298df54b7ecd">GameComponent</a> ()</td></tr>
+<tr class="memdesc:a7109f4539ef3d4e92868298df54b7ecd inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#a7109f4539ef3d4e92868298df54b7ecd">More...</a><br/></td></tr>
 <tr class="separator:a7109f4539ef3d4e92868298df54b7ecd inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1eefc88d46d10f869939a7bab5a498b inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ac1eefc88d46d10f869939a7bab5a498b">GameComponent</a> (float x, float y)</td></tr>
+<tr class="memdesc:ac1eefc88d46d10f869939a7bab5a498b inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor which takes a position.  <a href="#ac1eefc88d46d10f869939a7bab5a498b">More...</a><br/></td></tr>
 <tr class="separator:ac1eefc88d46d10f869939a7bab5a498b inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3338305ddce8cb75296ba23e1c29cf0f inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a3338305ddce8cb75296ba23e1c29cf0f">GameComponent</a> (sf::Vector2f Pos)</td></tr>
+<tr class="memdesc:a3338305ddce8cb75296ba23e1c29cf0f inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor which takes a position.  <a href="#a3338305ddce8cb75296ba23e1c29cf0f">More...</a><br/></td></tr>
 <tr class="separator:a3338305ddce8cb75296ba23e1c29cf0f inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6af46404f1244c38687bb60ffc3644e5 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5">getPosition</a> ()</td></tr>
+<tr class="memdesc:a6af46404f1244c38687bb60ffc3644e5 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the object.  <a href="#a6af46404f1244c38687bb60ffc3644e5">More...</a><br/></td></tr>
 <tr class="separator:a6af46404f1244c38687bb60ffc3644e5 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8aab42cfcc1f683584dd0434e2839d inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a5c8aab42cfcc1f683584dd0434e2839d">setPosition</a> (sf::Vector2f pos)</td></tr>
+<tr class="memdesc:a5c8aab42cfcc1f683584dd0434e2839d inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the position of the object  <a href="#a5c8aab42cfcc1f683584dd0434e2839d">More...</a><br/></td></tr>
 <tr class="separator:a5c8aab42cfcc1f683584dd0434e2839d inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a83de3b78cc5ce0f43316dd45de20d inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ae5a83de3b78cc5ce0f43316dd45de20d">hasDrawable</a> ()</td></tr>
+<tr class="memdesc:ae5a83de3b78cc5ce0f43316dd45de20d inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the drawable interface has been filled.  <a href="#ae5a83de3b78cc5ce0f43316dd45de20d">More...</a><br/></td></tr>
 <tr class="separator:ae5a83de3b78cc5ce0f43316dd45de20d inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8595ee50d296557bcf1af3ba5283c311 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a8595ee50d296557bcf1af3ba5283c311">hasCollidable</a> ()</td></tr>
+<tr class="memdesc:a8595ee50d296557bcf1af3ba5283c311 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the collidable interface has been filled.  <a href="#a8595ee50d296557bcf1af3ba5283c311">More...</a><br/></td></tr>
 <tr class="separator:a8595ee50d296557bcf1af3ba5283c311 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61ba1bd218ff2aca92443c89375c222 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#af61ba1bd218ff2aca92443c89375c222">hasSensor</a> ()</td></tr>
+<tr class="memdesc:af61ba1bd218ff2aca92443c89375c222 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the sensor interface has been filled.  <a href="#af61ba1bd218ff2aca92443c89375c222">More...</a><br/></td></tr>
 <tr class="separator:af61ba1bd218ff2aca92443c89375c222 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e938bb93586ad8820316368065c174 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ae6e938bb93586ad8820316368065c174">hasSpawner</a> ()</td></tr>
+<tr class="memdesc:ae6e938bb93586ad8820316368065c174 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the spawner interface has been filled.  <a href="#ae6e938bb93586ad8820316368065c174">More...</a><br/></td></tr>
 <tr class="separator:ae6e938bb93586ad8820316368065c174 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5db3e878b861296d6cc3a0f4ee6528 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a6b5db3e878b861296d6cc3a0f4ee6528">getDrawable</a> ()</td></tr>
+<tr class="memdesc:a6b5db3e878b861296d6cc3a0f4ee6528 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_drawable.html">Drawable</a> interface if it has been filled.  <a href="#a6b5db3e878b861296d6cc3a0f4ee6528">More...</a><br/></td></tr>
 <tr class="separator:a6b5db3e878b861296d6cc3a0f4ee6528 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09eae8038373202d058179080643f75b inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collidable.html">Collidable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a09eae8038373202d058179080643f75b">getCollidable</a> ()</td></tr>
+<tr class="memdesc:a09eae8038373202d058179080643f75b inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_collidable.html" title="This Class holds data used to manage the collision of a gamecomponent. ">Collidable</a> interface if it has been filled.  <a href="#a09eae8038373202d058179080643f75b">More...</a><br/></td></tr>
 <tr class="separator:a09eae8038373202d058179080643f75b inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca864b925be82f9c54711c75dc7be12 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sensor.html">Sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#afca864b925be82f9c54711c75dc7be12">getSensor</a> ()</td></tr>
+<tr class="memdesc:afca864b925be82f9c54711c75dc7be12 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_sensor.html">Sensor</a> interface if it has been filled.  <a href="#afca864b925be82f9c54711c75dc7be12">More...</a><br/></td></tr>
 <tr class="separator:afca864b925be82f9c54711c75dc7be12 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6db9e2e5f501ca360b08a7fc6a19644 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_spawner.html">Spawner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ab6db9e2e5f501ca360b08a7fc6a19644">getSpawner</a> ()</td></tr>
+<tr class="memdesc:ab6db9e2e5f501ca360b08a7fc6a19644 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_spawner.html">Spawner</a> interface if it has been filled.  <a href="#ab6db9e2e5f501ca360b08a7fc6a19644">More...</a><br/></td></tr>
 <tr class="separator:ab6db9e2e5f501ca360b08a7fc6a19644 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e49eab60da094bf8731f065bfafc71 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a12e49eab60da094bf8731f065bfafc71">isDead</a> ()</td></tr>
+<tr class="memdesc:a12e49eab60da094bf8731f065bfafc71 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if the object is decommisioned.  <a href="#a12e49eab60da094bf8731f065bfafc71">More...</a><br/></td></tr>
 <tr class="separator:a12e49eab60da094bf8731f065bfafc71 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e79bc4a1927f039ce345daa1a084c5 inherit pub_methods_class_game_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#aa5e79bc4a1927f039ce345daa1a084c5">setDead</a> (bool dead)</td></tr>
+<tr class="memdesc:aa5e79bc4a1927f039ce345daa1a084c5 inherit pub_methods_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets if this component should be decommisioned.  <a href="#aa5e79bc4a1927f039ce345daa1a084c5">More...</a><br/></td></tr>
 <tr class="separator:aa5e79bc4a1927f039ce345daa1a084c5 inherit pub_methods_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_game_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_game_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_game_component.html">GameComponent</a></td></tr>
 <tr class="memitem:ab1037207fec65ac5fe65dec1e22f0566 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ab1037207fec65ac5fe65dec1e22f0566">Name</a></td></tr>
+<tr class="memdesc:ab1037207fec65ac5fe65dec1e22f0566 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Containst the name of the gamecomponent.  <a href="#ab1037207fec65ac5fe65dec1e22f0566">More...</a><br/></td></tr>
 <tr class="separator:ab1037207fec65ac5fe65dec1e22f0566 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d794e78280785eb956eaff044f74b2 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ac8d794e78280785eb956eaff044f74b2">ID</a></td></tr>
+<tr class="memdesc:ac8d794e78280785eb956eaff044f74b2 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the ID of the gamecomponent.  <a href="#ac8d794e78280785eb956eaff044f74b2">More...</a><br/></td></tr>
 <tr class="separator:ac8d794e78280785eb956eaff044f74b2 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3109bb4ae36112eb8796e067160c59 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top">sf::Vector2f *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acc3109bb4ae36112eb8796e067160c59">Position</a></td></tr>
+<tr class="memdesc:acc3109bb4ae36112eb8796e067160c59 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the position of the gamecomponent.  <a href="#acc3109bb4ae36112eb8796e067160c59">More...</a><br/></td></tr>
 <tr class="separator:acc3109bb4ae36112eb8796e067160c59 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb73190345f4933825e9c8b8d5030438 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#acb73190345f4933825e9c8b8d5030438">drawable</a></td></tr>
+<tr class="memdesc:acb73190345f4933825e9c8b8d5030438 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the drawable interface of the gamecomponent.  <a href="#acb73190345f4933825e9c8b8d5030438">More...</a><br/></td></tr>
 <tr class="separator:acb73190345f4933825e9c8b8d5030438 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91bd3600bd5964b55c7806dcfd1c862 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collidable.html">Collidable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#aa91bd3600bd5964b55c7806dcfd1c862">collidable</a></td></tr>
+<tr class="memdesc:aa91bd3600bd5964b55c7806dcfd1c862 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the collidable interface of the gamecomponent.  <a href="#aa91bd3600bd5964b55c7806dcfd1c862">More...</a><br/></td></tr>
 <tr class="separator:aa91bd3600bd5964b55c7806dcfd1c862 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad585bf57df228afc83fbf777142e51bd inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sensor.html">Sensor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#ad585bf57df228afc83fbf777142e51bd">sensor</a></td></tr>
+<tr class="memdesc:ad585bf57df228afc83fbf777142e51bd inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the sensor interface of the gamecomponent.  <a href="#ad585bf57df228afc83fbf777142e51bd">More...</a><br/></td></tr>
 <tr class="separator:ad585bf57df228afc83fbf777142e51bd inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15caaab21ec2e8eb9d438a25afbef4da inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_spawner.html">Spawner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a15caaab21ec2e8eb9d438a25afbef4da">spawner</a></td></tr>
+<tr class="memdesc:a15caaab21ec2e8eb9d438a25afbef4da inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the spawner interface of the gamecomponent.  <a href="#a15caaab21ec2e8eb9d438a25afbef4da">More...</a><br/></td></tr>
 <tr class="separator:a15caaab21ec2e8eb9d438a25afbef4da inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78058666ddc8662775b13b82e4b615a9 inherit pro_attribs_class_game_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_component.html#a78058666ddc8662775b13b82e4b615a9">DeadComponent</a></td></tr>
+<tr class="memdesc:a78058666ddc8662775b13b82e4b615a9 inherit pro_attribs_class_game_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">contains the decommmision state of the component.  <a href="#a78058666ddc8662775b13b82e4b615a9">More...</a><br/></td></tr>
 <tr class="separator:a78058666ddc8662775b13b82e4b615a9 inherit pro_attribs_class_game_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -249,6 +275,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The collide interface method. Used to act on a collision. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colider</td><td>Contains the component it collided with.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_game_component.html#a333932780a30df552333d02669c593bc">GameComponent</a>.</p>
 
 </div>
@@ -285,6 +319,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The Draw interface method. Used to act on the draw signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">window</td><td>contains the sfml renderwindow to draw upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>contains the offset to draw upon.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_game_component.html#a63c3e40531340490712b789d0d821743">GameComponent</a>.</p>
 
 <p><div class="dynheader">
@@ -292,7 +335,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_movable_component_a75c4dad8db642791c52d7fc5e9a92429_cgraph.png" border="0" usemap="#class_movable_component_a75c4dad8db642791c52d7fc5e9a92429_cgraph" alt=""/></div>
 <map name="class_movable_component_a75c4dad8db642791c52d7fc5e9a92429_cgraph" id="class_movable_component_a75c4dad8db642791c52d7fc5e9a92429_cgraph">
-<area shape="rect" id="node2" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2" title="This pure virtual method will be responsible for drawing on the screen. " alt="" coords="267,5,379,32"/><area shape="rect" id="node3" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="GameComponent::getPosition" alt="" coords="225,56,421,83"/></map>
+<area shape="rect" id="node2" href="class_drawable.html#a0e24de52eeb44555872c70f3adf854d2" title="This pure virtual method will be responsible for drawing on the screen. " alt="" coords="267,5,379,32"/><area shape="rect" id="node3" href="class_game_component.html#a6af46404f1244c38687bb60ffc3644e5" title="Returns the position of the object. " alt="" coords="225,56,421,83"/></map>
 </div>
 </p>
 
@@ -320,6 +363,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>The Update interface method. Used to act on the update signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">updateobject</td><td>contains the data used in an update.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_game_component.html#af4ff61bad044ac587cf2f066d5b4afa0">GameComponent</a>.</p>
 
 <p><div class="dynheader">
@@ -327,7 +378,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_movable_component_affdc7dddf2207eda3e8a00136adf56ee_cgraph.png" border="0" usemap="#class_movable_component_affdc7dddf2207eda3e8a00136adf56ee_cgraph" alt=""/></div>
 <map name="class_movable_component_affdc7dddf2207eda3e8a00136adf56ee_cgraph" id="class_movable_component_affdc7dddf2207eda3e8a00136adf56ee_cgraph">
-<area shape="rect" id="node2" href="class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8" title="Keyboard::getInstance" alt="" coords="258,5,410,32"/><area shape="rect" id="node3" href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae" title="Sensor::SeenObjectCount" alt="" coords="247,56,421,83"/><area shape="rect" id="node4" href="class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14" title="Sensor::getSeenObject" alt="" coords="255,107,413,133"/><area shape="rect" id="node5" href="class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="237,157,431,184"/><area shape="rect" id="node6" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="239,209,429,250"/></map>
+<area shape="rect" id="node2" href="class_keyboard.html#a09fc76a431abc21dba175b10bc4a1ec8" title="Returns the Keyboard instance. " alt="" coords="258,5,410,32"/><area shape="rect" id="node3" href="class_sensor.html#ade01c8ff6de8daec5755b39bf4a57eae" title="Sensor::SeenObjectCount" alt="" coords="247,56,421,83"/><area shape="rect" id="node4" href="class_sensor.html#ac707ee7af9bd9adcdcb17d126582cc14" title="Sensor::getSeenObject" alt="" coords="255,107,413,133"/><area shape="rect" id="node5" href="class_window_manager.html#a4f5e8cf13cbe4f2d80f3dbcf7f3fb2eb" title="WindowManager::getInstance" alt="" coords="237,157,431,184"/><area shape="rect" id="node6" href="class_window_manager.html#a5ee838ab6472ae7fcfd607831a8228d1" title="WindowManager::setCamera\lPosition" alt="" coords="239,209,429,250"/></map>
 </div>
 </p>
 
@@ -343,7 +394,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_movable_component.html">MovableComponent</a></li>
-    <li class="footer">Generated on Sat Nov 15 2014 16:11:42 for Revelator Framework by
+    <li class="footer">Generated on Thu Nov 20 2014 13:00:37 for Revelator Framework by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

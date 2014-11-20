@@ -1,6 +1,6 @@
+
 #include "ChunkManager.hpp"
-
-
+#include "utils.hpp"
 ChunkManager::ChunkManager()
 {
 
@@ -14,8 +14,10 @@ ChunkManager::~ChunkManager()
 
 void ChunkManager::Update(const UpdateData & updateobject)
 {
+	sf::Clock clock;
 	Chunk * c = FirstChunk;
 	bool GoingRight = true;
+	clock.restart();
 	while (c != NULL)
 	{
 		c->Update(updateobject);
@@ -33,6 +35,9 @@ void ChunkManager::Update(const UpdateData & updateobject)
 			GoingRight = !GoingRight;
 		}
 	}
+	Utils::getInstance().log("", "screen chunks " + std::to_string(clock.getElapsedTime().asMicroseconds()));
+
+	clock.restart();
 	sf::Vector2f v = WindowManager::getInstance().getCameraPosition();
 	while (v.x < ActiveChunk->getPurePosition().x
 		|| v.y < ActiveChunk->getPurePosition().y
@@ -69,6 +74,8 @@ void ChunkManager::Update(const UpdateData & updateobject)
 				WindowManager::getInstance().setCameraPosition(sf::Vector2f{ WindowManager::getInstance().getCameraPosition().x, ActiveChunk->getPurePosition().y + ActiveChunk->getSize() });
 		}
 	}
+	Utils::getInstance().log("", "MoveCamera " + std::to_string(clock.getElapsedTime().asMicroseconds()));
+
 }
 
 void ChunkManager::Draw(sf::RenderWindow & window, sf::Vector2f offset)

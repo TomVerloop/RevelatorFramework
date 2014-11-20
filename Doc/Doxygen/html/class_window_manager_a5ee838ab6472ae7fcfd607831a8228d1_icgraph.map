@@ -1,6 +1,6 @@
 <map id="WindowManager::setCameraPosition" name="WindowManager::setCameraPosition">
-<area shape="rect" id="node2" href="$class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="MovableComponent::Update" alt="" coords="251,5,435,32"/>
+<area shape="rect" id="node2" href="$class_movable_component.html#affdc7dddf2207eda3e8a00136adf56ee" title="The Update interface method. Used to act on the update signal. " alt="" coords="251,5,435,32"/>
 <area shape="rect" id="node3" href="$class_chunk_manager.html#a1c6b1c312b12233d18c2bad68b933cdf" title="Sends the update signal to the first chunk for it to ripple through the rest. " alt="" coords="264,56,423,83"/>
 <area shape="rect" id="node5" href="$class_window_manager.html#abbc66e888f2a67ab0203357005bc89d8" title="WindowManager::MoveCamera" alt="" coords="243,107,444,133"/>
-<area shape="rect" id="node4" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="Layer::Update" alt="" coords="492,56,595,83"/>
+<area shape="rect" id="node4" href="$class_layer.html#a971c3f8d301e250aded4cf0c0b9ad544" title="This method relais the update signal to the ChunkManager. " alt="" coords="492,56,595,83"/>
 </map>

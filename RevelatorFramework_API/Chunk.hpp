@@ -6,7 +6,7 @@
 #include "Drawable.hpp"
 #include "Collidable.hpp"
 
-enum __declspec(dllexport) Position
+enum class __declspec(dllexport) Position
 {
 	topleft, top, topright, center, left, right, bottomleft, bottom, bottomright
 };

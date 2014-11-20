@@ -1,5 +1,5 @@
-#include "GameComponent.hpp"
 
+#include "GameComponent.hpp"
 
 GameComponent::GameComponent() :
 drawable{ nullptr },

@@ -13,7 +13,7 @@ var searchData=
   ['removescreen',['removeScreen',['../class_screen_manager.html#a9bb115d54e94b72618361f4a347e26c8',1,'ScreenManager']]],
   ['resource_2eh',['resource.h',['../resource_8h.html',1,'']]],
   ['return',['Return',['../class_keyboard.html#a145aa386b22fd7c1068a336b5e7b8022',1,'Keyboard']]],
-  ['right',['Right',['../class_chunk.html#a0bcf134e2aba0ca49370272c2b3f17a4',1,'Chunk::Right()'],['../class_keyboard.html#adf9fac46978406d8828c6699156b61d8',1,'Keyboard::Right()'],['../_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83af763d610923b0c4614e8ecd65212666a',1,'right():&#160;Chunk.hpp']]],
+  ['right',['Right',['../class_chunk.html#a0bcf134e2aba0ca49370272c2b3f17a4',1,'Chunk::Right()'],['../class_keyboard.html#adf9fac46978406d8828c6699156b61d8',1,'Keyboard::Right()'],['../_chunk_8hpp.html#ab91b34ae619fcdfcba4522b4f335bf83a7c4f29407893c334a6cb7a87bf045c0d',1,'right():&#160;Chunk.hpp']]],
   ['rightbottom',['RightBottom',['../class_chunk.html#afded01a9a67540c9f64dde5776021f4b',1,'Chunk']]],
   ['righttop',['RightTop',['../class_chunk.html#a8a7593c89d4fe5ed193e68b9ed40016b',1,'Chunk']]],
   ['rshift',['RShift',['../class_keyboard.html#a24b00a96a25f3bce3d1bad1e3fc2c600',1,'Keyboard']]],
